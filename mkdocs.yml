@@ -9,6 +9,7 @@ extra_css:
 
 pages:
 - Home: 'index.md'
+- OSG Operations Mission: 'mission.md'
 
 markdown_extensions:
   - admonition
