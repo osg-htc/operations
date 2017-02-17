@@ -9,9 +9,9 @@ before_script:
 - pip install MarkdownHighlight
 script:
 - openssl aes-256-cbc -K $encrypted_be7c46cf21b0_key -iv $encrypted_be7c46cf21b0_iv -in ops-deploy-key.enc -out ops-deploy-key -d
-- chmod 600 deploy-key
+- chmod 600 ops-deploy-key
 - eval `ssh-agent -s`
-- ssh-add deploy-key
+- ssh-add ops-deploy-key
 - git config user.name "Automatic Publish"
 - git config user.email "rquick@iu.edu"
 - git remote add gh-token "${GH_REF}";
