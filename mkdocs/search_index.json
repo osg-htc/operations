@@ -2,13 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OSG Operations\n\n\nWelcome to OSG Operations", 
+            "text": "OSG Operations\n\n\nWelcome to OSG Operations\n\n\nContact Information\n\n\nOpen a Ticket\n\nEmail: goc@opensciencegrid.org\nMailing List: osg-operations@opensciencegrid.org\nPhone: +1-317-274-5260\nFollow us on Twitter: @OSGGOC\n\n\nRegistration (Contact, Resource, VO, or Project)\n\n\nRegister with OSG", 
             "title": "Home"
         }, 
         {
             "location": "/#osg-operations", 
             "text": "Welcome to OSG Operations", 
             "title": "OSG Operations"
+        }, 
+        {
+            "location": "/#contact-information", 
+            "text": "Open a Ticket \nEmail: goc@opensciencegrid.org\nMailing List: osg-operations@opensciencegrid.org\nPhone: +1-317-274-5260\nFollow us on Twitter: @OSGGOC", 
+            "title": "Contact Information"
+        }, 
+        {
+            "location": "/#registration-contact-resource-vo-or-project", 
+            "text": "Register with OSG", 
+            "title": "Registration (Contact, Resource, VO, or Project)"
         }, 
         {
             "location": "/mission/", 
