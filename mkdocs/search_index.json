@@ -9,6 +9,16 @@
             "location": "/#osg-operations", 
             "text": "Welcome to OSG Operations", 
             "title": "OSG Operations"
+        }, 
+        {
+            "location": "/mission/", 
+            "text": "OSG Operations Mission\n\n\nThe mission of OSG Operations is to maintain and improve distributed high throughput computing services to support research communities.\n\n\nThis is accomplished by:\n   * Operating and maintaining our services in a user-oriented, robust, and reliable manner.\n   * Developing a professional and skilled staff dedicated to a service philosophy.\n   * Managing resources responsibly, efficiently, and with accountability.\n   * Evaluating and continually improving the actions, methods and processes that allow the OSG to operate.", 
+            "title": "OSG Operations Mission"
+        }, 
+        {
+            "location": "/mission/#osg-operations-mission", 
+            "text": "The mission of OSG Operations is to maintain and improve distributed high throughput computing services to support research communities.  This is accomplished by:\n   * Operating and maintaining our services in a user-oriented, robust, and reliable manner.\n   * Developing a professional and skilled staff dedicated to a service philosophy.\n   * Managing resources responsibly, efficiently, and with accountability.\n   * Evaluating and continually improving the actions, methods and processes that allow the OSG to operate.", 
+            "title": "OSG Operations Mission"
         }
     ]
 }
