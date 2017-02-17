@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "OSG Operations\n\n\nWelcome to OSG Operations", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#osg-operations", 
+            "text": "Welcome to OSG Operations", 
+            "title": "OSG Operations"
+        }
+    ]
+}
