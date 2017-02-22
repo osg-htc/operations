@@ -6,7 +6,7 @@
    * [GOC weekly calendar](http://www.google.com/calendar/embed?src=c1htpcfoe6btrtc7n3uddg8mvs%40group.calendar.google.com&ctz=America/New_York)
 
 ## Operations Last Week
-#### Summary
+#### Summaries and Reports
    * [GOC Services Availability/Reliability](http://tinyurl.com/pre26vw)
    * Current Status: <img src="http://steige.grid.iu.edu/steige/status_current.png">
    * [Accounting report](http://reports.grid.iu.edu/reports/current.apel)
@@ -17,7 +17,6 @@
    * <img src="http://osg-flock.grid.iu.edu/monitoring/condor/condor_7day.png" width='630' height='390'  /><br>
 
 #### Grid Operations Center
-   * 4th level bullet text
    
 #### FermiGrid Ops
 
@@ -28,37 +27,37 @@
 
 ## Operations This Week
 
-### Grid Operations Center
+#### Grid Operations Center
 
-### FermiGrid Ops
+#### FermiGrid Ops
 
-### WMS Glide In Factory
+#### WMS Glide In Factory
 
-### OSG-Connect
+#### OSG-Connect
 
 ## New Registrations
 
-### Virtual Organizations
+#### Virtual Organizations
 | Name | VO URL | Other Info | Ticket |
 | ---- | ------ | ---------- | ------ |
 
-### Support Centers
+#### Support Centers
 | Name | Other Info | Ticket |
 | ---- | ---------- | ------ |
 
-### Resources
+#### Resources
 | Name | Support Center | Resource URL | Other Info | Ticket |
 | ---- | -------------- | ------------ | ---------- | ------ |
 
-### Removed from OSG
+#### Removed from OSG
 | Name | Other Info | Ticket |
 | ---- | ---------- | ------ |
 
 ## OSG PKI
 
-### OSG RA Items & CA Questions
+#### OSG RA Items & CA Questions
 
-### OSG RA Over 5 Day Report
+#### OSG RA Over 5 Day Report
 |Request ID	|Age days	|Requester	|Requester Email		|Request |
 | --------- | ------- | --------- | ----------------- | ------ |
 
