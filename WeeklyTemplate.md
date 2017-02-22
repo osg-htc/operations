@@ -6,6 +6,7 @@
    * [GOC weekly calendar](http://www.google.com/calendar/embed?src=c1htpcfoe6btrtc7n3uddg8mvs%40group.calendar.google.com&ctz=America/New_York)
 
 ## Operations Last Week
+####
    * [GOC Services Availability/Reliability](http://tinyurl.com/pre26vw)
    * Current Status: <img src="http://steige.grid.iu.edu/steige/status_current.png">
    * [Accounting report](http://reports.grid.iu.edu/reports/current.apel)
