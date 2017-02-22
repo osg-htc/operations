@@ -13,3 +13,13 @@ Welcome to OSG Operations
 # Registration (Contact, Resource, VO, or Project)
 
 [Register with OSG](https://oim.grid.iu.edu/oim/home)
+
+# Current Meeting Minutes
+
+Are available at this [Link](WeeklyMinutes)
+
+For Minutes Prior to 12-February-2017 Please Visit the [Archive](https://twiki.grid.iu.edu/bin/view/Production/WeeklyProductionMeetings)
+
+## Meeting Template
+
+[WeeklyTemplate](WeeklyTemplate)
