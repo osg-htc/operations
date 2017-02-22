@@ -15,13 +15,13 @@
    * <img src="http://gratiaweb1.grid.iu.edu/gratiastatic/today/osg_wall_hours.png"/>
    * <img src="http://osg-flock.grid.iu.edu/monitoring/condor/condor_7day.png" width='630' height='390'  /><br>
 
-### Grid Operations Center
+#### Grid Operations Center
 
-### FermiGrid Ops
+#### FermiGrid Ops
 
-### WMS Glide In Factory
+#### WMS Glide In Factory
 
-### OSG-Connect
+#### OSG-Connect
    * <img src='http://osgconnect.net/accounting-summary/data/osg/daily_hours_by_project.png'>
 
 ## Operations This Week
