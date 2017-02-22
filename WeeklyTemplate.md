@@ -5,7 +5,7 @@
    * Attending: 
    * [GOC weekly calendar](http://www.google.com/calendar/embed?src=c1htpcfoe6btrtc7n3uddg8mvs%40group.calendar.google.com&ctz=America/New_York)
 
-# Operations Last Week
+## Operations Last Week
    * [GOC Services Availability/Reliability](http://tinyurl.com/pre26vw)
    * Current Status: <img src="http://steige.grid.iu.edu/steige/status_current.png">
    * [Accounting report](http://reports.grid.iu.edu/reports/current.apel)
@@ -15,65 +15,64 @@
    * <img src="http://gratiaweb1.grid.iu.edu/gratiastatic/today/osg_wall_hours.png"/>
    * <img src="http://osg-flock.grid.iu.edu/monitoring/condor/condor_7day.png" width='630' height='390'  /><br>
 
-## Grid Operations Center
+### Grid Operations Center
 
-## FermiGrid Ops
+### FermiGrid Ops
 
-## WMS Glide In Factory
+### WMS Glide In Factory
 
-## OSG-Connect
+### OSG-Connect
    * <img src='http://osgconnect.net/accounting-summary/data/osg/daily_hours_by_project.png'>
 
-# Operations This Week
+## Operations This Week
 
-## Grid Operations Center
+### Grid Operations Center
 
-## FermiGrid Ops
+### FermiGrid Ops
 
-## WMS Glide In Factory
+### WMS Glide In Factory
 
-## OSG-Connect
+### OSG-Connect
 
-# New Registrations
+## New Registrations
 
-## Virtual Organizations
+### Virtual Organizations
 | Name | VO URL | Other Info | Ticket |
 | ---- | ------ | ---------- | ------ |
 
-## Support Centers
+### Support Centers
 | Name | Other Info | Ticket |
 | ---- | ---------- | ------ |
 
-## Resources
+### Resources
 | Name | Support Center | Resource URL | Other Info | Ticket |
 | ---- | -------------- | ------------ | ---------- | ------ |
 
-## Removed from OSG
+### Removed from OSG
 | Name | Other Info | Ticket |
 | ---- | ---------- | ------ |
 
-# OSG PKI
+## OSG PKI
 
-## OSG RA Items & CA Questions
+### OSG RA Items & CA Questions
 
-## OSG RA Over 5 Day Report
+### OSG RA Over 5 Day Report
 |Request ID	|Age days	|Requester	|Requester Email		|Request |
 | --------- | ------- | --------- | ----------------- | ------ |
 
-# GOC Tickets
+## GOC Tickets
 
-%TABLE{ sort="on" }%
 | *Ticket #* | Support Center | Action/Summary | GOC Assignee | Notes | VO Present? %X% %Y%|
 | ---------- | -------------- | -------------- | ------------ | ----- | ------------------ |
 
-   * [Veiw Open GOC Tickets](https://ticket.grid.iu.edu/goc/list/open) | [OSG Operations Metrics](https://twiki.grid.iu.edu/bin/view/Operations/TicketReports) |[Operational Service Overview](http://myosg.grid.iu.edu/miscstatus?count_sg_1&count_active=on&count_enabled=on&datasource=status)
+   * [View Open GOC Tickets](https://ticket.grid.iu.edu/goc/list/open) | [OSG Operations Metrics](https://twiki.grid.iu.edu/bin/view/Operations/TicketReports) |[Operational Service Overview](http://myosg.grid.iu.edu/miscstatus?count_sg_1&count_active=on&count_enabled=on&datasource=status)
 
 
-# WLCG & EGI Operations
+## WLCG & EGI Operations
 
-# Security
+## Security
    * Vulnerabilities/Incidents
 
-# AOB
+## AOB
 
-# Action Items from Meeting
+## Action Items from Meeting
