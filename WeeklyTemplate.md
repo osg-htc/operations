@@ -66,7 +66,7 @@
 | *Ticket #* | Support Center | Action/Summary | GOC Assignee | Notes | VO Present? %X% %Y%|
 | ---------- | -------------- | -------------- | ------------ | ----- | ------------------ |
 
-   * [View Open GOC Tickets](https://ticket.grid.iu.edu/goc/list/open) | [OSG Operations Metrics](https://twiki.grid.iu.edu/bin/view/Operations/TicketReports) |[Operational Service Overview](http://myosg.grid.iu.edu/miscstatus?count_sg_1&count_active=on&count_enabled=on&datasource=status)
+   * [View Open GOC Tickets](https://ticket.grid.iu.edu/goc/list/open) | [OSG Operations Metrics](https://twiki.grid.iu.edu/bin/view/Operations/TicketReports) | [Operational Service Overview](http://myosg.grid.iu.edu/miscstatus?count_sg_1&count_active=on&count_enabled=on&datasource=status)
 
 
 ## WLCG & EGI Operations
