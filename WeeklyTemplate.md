@@ -7,7 +7,7 @@
 
 # Operations Last Week
    * [GOC Services Availability/Reliability](http://tinyurl.com/pre26vw)
-   * Current Status: [<img src="http://steige.grid.iu.edu/steige/status_current.png">]
+   * Current Status: <img src="http://steige.grid.iu.edu/steige/status_current.png">
    * [Accounting report](http://reports.grid.iu.edu/reports/current.apel)
    * [Version report](http://reports.grid.iu.edu/reports/versiondump-latest.txt)
       * [Condensed version](http://reports.grid.iu.edu/reports/version_summary.txt)
