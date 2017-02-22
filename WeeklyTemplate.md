@@ -16,7 +16,8 @@
    * <img src="http://osg-flock.grid.iu.edu/monitoring/condor/condor_7day.png" width='630' height='390'  /><br>
 
 #### Grid Operations Center
-
+   * 4th level bullet text
+   
 #### FermiGrid Ops
 
 #### WMS Glide In Factory
