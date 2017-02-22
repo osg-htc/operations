@@ -11,7 +11,7 @@
    * [Accounting report](http://reports.grid.iu.edu/reports/current.apel)
    * [Version report](http://reports.grid.iu.edu/reports/versiondump-latest.txt)
       * [Condensed version](http://reports.grid.iu.edu/reports/version_summary.txt)
-   * [Capacit report](http://reports.grid.iu.edu/reports/capacitydump-latest.txt)
+   * [Capacity report](http://reports.grid.iu.edu/reports/capacitydump-latest.txt)
    * <img src="http://gratiaweb1.grid.iu.edu/gratiastatic/today/osg_wall_hours.png"/>
    * <img src="http://osg-flock.grid.iu.edu/monitoring/condor/condor_7day.png" width='630' height='390'  /><br>
 
