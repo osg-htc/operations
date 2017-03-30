@@ -11,9 +11,7 @@
 | 1.4 | 11-30-2009 | Rob Quick | FNAL Updates |
 
 ## Executive Summary
-This SLA is an agreement between OSG Operations at Indiana University and the OSG Management describing details of the MyOSG presentation tools. The MyOSG service runs on hardware at Indiana University a\
-nd gathers data from several OSG sources including but not limited to: RSV, OIM, BDII, GIP-Validator, and Gratia. MyOSG displays information from many different sources in many different formats. This SL\
-A is inclusive only of selected service used to provide job level decisions or data movement, most notably the XML status based information. A complete list of services presented is in Appendix B.
+This SLA is an agreement between OSG Operations at Indiana University and the OSG Management describing details of the MyOSG presentation tools. The MyOSG service runs on hardware at Indiana University and gathers data from several OSG sources including but not limited to: RSV, OIM, BDII, GIP-Validator, and Gratia. MyOSG displays information from many different sources in many different formats. This SLA is inclusive only of selected service used to provide job level decisions or data movement, most notably the XML status based information. A complete list of services presented is in Appendix B.
 
 ## Owners
 The MyOSG SLA is owned by OSG Operations Center and Indiana University and will be reviewed and agreed upon by the OSG Executive Team.
@@ -22,13 +20,10 @@ The MyOSG SLA is owned by OSG Operations Center and Indiana University and will 
 ### Name
 GOC Production MyOSG
 ### Description
-The GOC Production MyOSG service presents information from several OSG information sources and presents the information in various forms including web page, Universal Widget API, and XML. The MyOSG servi\
-ce consists of a web server and software consolidators to translate incoming data from several sources to be displayed in MyOSG.
+The GOC Production MyOSG service presents information from several OSG information sources and presents the information in various forms including web page, Universal Widget API, and XML. The MyOSG service consists of a web server and software consolidators to translate incoming data from several sources to be displayed in MyOSG.
 
 ## Security Considerations
-MyOSG distributes some private contact information based on certificate authentication. It will be subject to Indiana University institutional policy. Direct access to any of the hardware or software wil\
-l be restricted to OSG Operations staff. Other OSG staff, upon request and GOC review, may be given access to a development version of MyOSG for experimenting with new software, changes in information pr\
-oviders, or for other testing. OSG Operations reserves the right to allow or not allow such requests based on its internal review.
+MyOSG distributes some private contact information based on certificate authentication. It will be subject to Indiana University institutional policy. Direct access to any of the hardware or software will be restricted to OSG Operations staff. Other OSG staff, upon request and GOC review, may be given access to a development version of MyOSG for experimenting with new software, changes in information providers, or for other testing. OSG Operations reserves the right to allow or not allow such requests based on its internal review.
 
 ## Service Target Response Priorities and Response Times
 
@@ -37,9 +32,7 @@ This section deals with unplanned outages. Please see [[#Requests_for_Service_En
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
 | *Work Outage* | * * | * * | * * |
-| The issue causes a full service outage rendering the status information provided by MyOSG used by any other OSG services to move data or submit jobs | The issue causes a full service outage rendering t\
-he status information provided by MyOSG used by any other OSG services to move data or submit jobs | The issue causes short (less than 15 minute) periods of unstable or inconsistent performance | The iss\
-ue causes minor (less than 5 minutes) periods of unstable or inconsistent performance |
+| The issue causes a full service outage rendering the status information provided by MyOSG used by any other OSG services to move data or submit jobs | The issue causes a full service outage rendering the status information provided by MyOSG used by any other OSG services to move data or submit jobs | The issue causes short (less than 15 minute) periods of unstable or inconsistent performance | The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance |
 | *Number of Clients Affected* | * * | * * | * * |
 | The issue affects all MyOSG users | The issue affects a subset of MyOSG users | The issue may or may not affect all MyOSG users | The issue affects only a small number of MyOSG users |
 | *Workaround* | * * | * * | * * |
@@ -47,8 +40,7 @@ ue causes minor (less than 5 minutes) periods of unstable or inconsistent perfor
 | *Response Time* | * * | * * | * * |
 | Within one (1) hour | Issue will be addressed by the next business day | Within the next business day | Within the next business day |
 | *Resolution Time* | * * | * * | * * |
-| The maximum acceptable resolution time is four (4) continuous hours, after initial response time | The maximum acceptable resolution time is 24 continuous hours, after the initial response time | The m\
-aximum acceptable resolution time is five (7) business days | The maximum acceptable resolution time is (30) business days |
+| The maximum acceptable resolution time is four (4) continuous hours, after initial response time | The maximum acceptable resolution time is 24 continuous hours, after the initial response time | The maximum acceptable resolution time is five (7) business days | The maximum acceptable resolution time is (30) business days |
 | *Escalates Every* | * * | * * | * * |
 | One Hour | Two Hour | One Day | One Week |
 
@@ -61,37 +53,26 @@ aximum acceptable resolution time is five (7) business days | The maximum accept
 | 3rd | OSG Production Coordinator |
 | 4th | OSG Technical Director and Executive Director |
 
-Detailed information on contacts are viewable on the following [[https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_sho\
-wfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7\
-daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1][MyOSG URL]], and are \
-maintained within the [[https://oim.grid.iu.edu][OSG Information Management]] system (for editing purposes only).
+Detailed information on contacts are viewable on the following [[https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1][MyOSG URL]], and are maintained within the [[https://oim.grid.iu.edu][OSG Information Management]] system (for editing purposes only).
 
-Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [[https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes][Operations]] and [[https://twiki.grid.iu.edu/bin/\
-view/Production/WeeklyProductionMeetings][Production]] meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [[https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes][Operations]] and [[https://twiki.grid.iu.edu/bin/view/Production/WeeklyProductionMeetings][Production]] meetings.
 
 ## Service Availability and Outages
-The GOC will strive for 99% service availability. If service availability falls below 99% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitte\
-d to the OSG stakeholders for plans to restore an acceptable level of service availability.
+The GOC will strive for 99% service availability. If service availability falls below 99% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
 
-A maximum of two non-scheduled outages will be accepted by OSG during each six month period of service. If the GOC experiences more than the allotted outage, a service plan will be submitted to the OSG s\
-takeholders with plans to restore the service to an acceptable level of operations.
+A maximum of two non-scheduled outages will be accepted by OSG during each six month period of service. If the GOC experiences more than the allotted outage, a service plan will be submitted to the OSG stakeholders with plans to restore the service to an acceptable level of operations.
 
 ## Service Support Hours
-The MyOSG service is supported 24x7 by the GOC and Indiana University. Critical and High level issues will result in response within (1) hour. All other issues will be investigated by the next business d\
-ay.
+The MyOSG service is supported 24x7 by the GOC and Indiana University. Critical and High level issues will result in response within (1) hour. All other issues will be investigated by the next business day.
 
 ## Service Off-Hours Support Procedures
-All MyOSG issues should be reported to the GOC immediately by [[http://ticket.grid.iu.edu][trouble ticket]] web submission. If the problem is deemed critical, a GOC staff member will be alerted immediate\
-ly.
+All MyOSG issues should be reported to the GOC immediately by [[http://ticket.grid.iu.edu][trouble ticket]] web submission. If the problem is deemed critical, a GOC staff member will be alerted immediately.
 
 ## Requests for Service Enhancements
 
 This section deals with planned maintenance outages. Please see [[#Service_Target_Response_Prioriti][Service Target Response Priorities and Response Times]] for information on unplanned outages.
 
-The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. No alteration or deletions will be brought t\
-o the production MyOSG without a minimum of ten (10) business days of testing. New human-interface features or new machine readable interfaces may be brought to production with five (5) business days of \
-testing from the feature requester. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG c\
-ommunity.
+The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. No alteration or deletions will be brought to the production MyOSG without a minimum of ten (10) business days of testing. New human-interface features or new machine readable interfaces may be brought to production with five (5) business days of testing from the feature requester. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.
 
 ## Customer Problem Reporting
 The GOC provides operators 24x7x365. MyOSG problems should be reported immediately by one of the following mechanisms.
@@ -106,22 +87,18 @@ MyOSG Customers agree to:
 
    * Use the MyOSG to gather information about OSG resources for purposes of VO approved work only.
    * Alert the GOC if they are going to use the MyOSG in a non-standard way, this includes testing or anticipated mass increases in usage.
-   * Contact the GOC by means outlined in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Customer_Problem_Reporting][Customer Problem Reporting]] section of this document \
-if they encounter any service issues.
+   * Contact the GOC by means outlined in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Customer_Problem_Reporting][Customer Problem Reporting]] section of this document if they encounter any service issues.
    * Be willing and available to provide critical information within one hour of reporting a critical or high priority incident or one business day for any other criticality.
-   * Provide testing for MyOSG-ITB within the time frame defined in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Requests_for_Service_Enhancement][Requests for Service E\
-nhancements]] section.
+   * Provide testing for MyOSG-ITB within the time frame defined in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Requests_for_Service_Enhancement][Requests for Service Enhancements]] section.
    * Alert the GOC and MyOSG developers when problems are encountered during testing.
-   * The customer or GOC will be allowed to request an additional ten (10) business days of testing if problems are encountered or testing is not completed at then end of the initial ten (10) business da\
-y testing period. The customer must alert the GOC two (2) business days before the scheduled release if they would like this additional testing time.
+   * The customer or GOC will be allowed to request an additional ten (10) business days of testing if problems are encountered or testing is not completed at then end of the initial ten (10) business day testing period. The customer must alert the GOC two (2) business days before the scheduled release if they would like this additional testing time.
 
 ### OSG Operations Responsibilities
 General responsibilities:
    * Create and add appropriate documentation to the OSG TWiki for appropriate use of MyOSG.
    * Meet response times associated with the priority assigned to Customer issues.
    * Maintain appropriately trained staff.
-   * Notify the community of any changes to the machine readable MyOSG pages without (20) business days notification. Notification will be sent to the OSG-Operations mailing list and to each OSG Support \
-Center, along with discussion in the [[https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes][OSG Operations Meeting]].
+   * Notify the community of any changes to the machine readable MyOSG pages without (20) business days notification. Notification will be sent to the OSG-Operations mailing list and to each OSG Support Center, along with discussion in the [[https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes][OSG Operations Meeting]].
    * Operations will provide backward compatible views to the best of our ability, due to changes requested in OIM or MyOSG by OSG stakeholders this can not be guaranteed.
    * OSG Operations will provide the legacy VORS view through the life of the OSG Project. This view can be seen at http://myosg.grid.iu.edu/wizardsummary/legacyvorscsv.
    * Insure the compatibility of downtime XML data for six (6) months.
@@ -182,16 +159,14 @@ The following hardware services are provided:
    * Diagnosis. OSG Operations will diagnose problems with service related hardware.
    * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.
 
-Performing repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts\
- will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.
+Performing repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.
 
 Obtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.
 
    * Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.
 
 ## Software Services
-Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [[https://twi\
-ki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#OSG_Operations_Responsibilities][OSG Operations Responsibilities]] section of this document.
+Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#OSG_Operations_Responsibilities][OSG Operations Responsibilities]] section of this document.
 
 ## Software Costs
 IU and the Grid Operations Center bears all costs for new and replacement software.
@@ -207,3 +182,19 @@ IU and the Grid Operations Center bears all costs for new and replacement softwa
 | Month | Year | Availability | Reliability |
 | ----- | ---- | ------------ | ----------- |
 | May | 2010 | 100.00% | 100.00% |
+| June | 2010 | 100.00% | 100.00% |
+| July | 2010 | 99.98% | 99.98% |
+| August | 2010 | 99.93% | 99.93% |
+| September | 2010 | 99.95% | 100.00% |
+| October | 2010 | 99.98% | 99.98% |
+| November | 2010 | 99.91% | 99.91% |
+| December | 2010 | 99.98% | 99.98% |
+| January | 2011 | 99.98% | 99.98% |
+| February | 2011 | 99.93% | 99.93% |
+| March | 2011 | 99.91% | 99.91% |
+| April | 2011 | 99.98% | 99.98% |
+
+   * [[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]
+
+
+
