@@ -53,10 +53,10 @@ This section deals with unplanned outages. Please see [[#Requests_for_Service_En
 | 3rd | OSG Production Coordinator |
 | 4th | OSG Technical Director and Executive Director |
 
-Detailed information on contacts are viewable on the following [[https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1][MyOSG URL]], and are maintained within
-the [[https://oim.grid.iu.edu][OSG Information Management]] system (for editing purposes only).
+Detailed information on contacts are viewable on the following [MyOSG URL](https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1), and are maintained within
+the [OSG Information Management](https://oim.grid.iu.edu) system (for editing purposes only).
 
-Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [[https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes][Operations]] and [[https://twiki.grid.iu.edu/bin/view/Production/WeeklyProductionMeetings][Production]] meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes) and
 
 ## Service Availability and Outages
 The GOC will strive for 99% service availability. If service availability falls below 99% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
@@ -67,7 +67,7 @@ A maximum of two non-scheduled outages will be accepted by OSG during each six m
 The MyOSG service is supported 24x7 by the GOC and Indiana University. Critical and High level issues will result in response within (1) hour. All other issues will be investigated by the next business day.
 
 ## Service Off-Hours Support Procedures
-All MyOSG issues should be reported to the GOC immediately by [[http://ticket.grid.iu.edu][trouble ticket]] web submission. If the problem is deemed critical, a GOC staff member will be alerted immediately.
+All MyOSG issues should be reported to the GOC immediately by [trouble ticket](http://ticket.grid.iu.edu) web submission. If the problem is deemed critical, a GOC staff member will be alerted immediately.
 
 ## Requests for Service Enhancements
 
@@ -88,9 +88,9 @@ MyOSG Customers agree to:
 
    * Use the MyOSG to gather information about OSG resources for purposes of VO approved work only.
    * Alert the GOC if they are going to use the MyOSG in a non-standard way, this includes testing or anticipated mass increases in usage.
-   * Contact the GOC by means outlined in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Customer_Problem_Reporting][Customer Problem Reporting]] section of this document if they encounter any service issues.
+   * Contact the GOC by means outlined in the [Customer Problem Reporting](https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Customer_Problem_Reporting) section of this document if they encounter any service issues.
    * Be willing and available to provide critical information within one hour of reporting a critical or high priority incident or one business day for any other criticality.
-   * Provide testing for MyOSG-ITB within the time frame defined in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Requests_for_Service_Enhancement][Requests for Service Enhancements]] section.
+   * Provide testing for MyOSG-ITB within the time frame defined in the [Requests for Service Enhancements](https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#Requests_for_Service_Enhancement) section.
    * Alert the GOC and MyOSG developers when problems are encountered during testing.
    * The customer or GOC will be allowed to request an additional ten (10) business days of testing if problems are encountered or testing is not completed at then end of the initial ten (10) business day testing period. The customer must alert the GOC two (2) business days before the scheduled release if they would like this additional testing time.
 
@@ -99,7 +99,7 @@ General responsibilities:
    * Create and add appropriate documentation to the OSG TWiki for appropriate use of MyOSG.
    * Meet response times associated with the priority assigned to Customer issues.
    * Maintain appropriately trained staff.
-   * Notify the community of any changes to the machine readable MyOSG pages without (20) business days notification. Notification will be sent to the OSG-Operations mailing list and to each OSG Support Center, along with discussion in the [[https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes][OSG Operations Meeting]].
+   * Notify the community of any changes to the machine readable MyOSG pages without (20) business days notification. Notification will be sent to the OSG-Operations mailing list and to each OSG Support Center, along with discussion in the [OSG Operations Meeting](https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes).
    * Operations will provide backward compatible views to the best of our ability, due to changes requested in OIM or MyOSG by OSG stakeholders this can not be guaranteed.
    * OSG Operations will provide the legacy VORS view through the life of the OSG Project. This view can be seen at http://myosg.grid.iu.edu/wizardsummary/legacyvorscsv.
    * Insure the compatibility of downtime XML data for six (6) months.
@@ -167,7 +167,7 @@ Obtaining repair services: The Service Provider analyst will recommend a service
    * Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.
 
 ## Software Services
-Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [[https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#OSG_Operations_Responsibilities][OSG Operations Responsibilities]] section of this document.
+Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [OSG Operations Responsibilities](https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement#OSG_Operations_Responsibilities) section of this document.
 
 ## Software Costs
 IU and the Grid Operations Center bears all costs for new and replacement software.
