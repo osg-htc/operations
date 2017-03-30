@@ -4,6 +4,7 @@
 
 ## Version Control
 | *Version Number* | *Date* | *Author* | *Comments* |
+| ----------------- | ------ | -------- | ----------- |
 | [1.1](https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement?rev=2) | 5-26-2009 | Rob Quick | First Draft |
 | [1.2](https://twiki.grid.iu.edu/bin/view/Operations/MyOSGServiceLevelAgreement?rev=7) | 9-10-2009 | Rob Quick | Second Draft |
 | 1.3 | 9-15-2009 | Rob Quick | Final Draft, Ready for Circulation |
