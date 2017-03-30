@@ -53,7 +53,8 @@ This section deals with unplanned outages. Please see [[#Requests_for_Service_En
 | 3rd | OSG Production Coordinator |
 | 4th | OSG Technical Director and Executive Director |
 
-Detailed information on contacts are viewable on the following [[https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1][MyOSG URL]], and are maintained within the [[https://oim.grid.iu.edu][OSG Information Management]] system (for editing purposes only).
+Detailed information on contacts are viewable on the following [[https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1][MyOSG URL]], and are maintained within
+the [[https://oim.grid.iu.edu][OSG Information Management]] system (for editing purposes only).
 
 Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [[https://twiki.grid.iu.edu/bin/view/Operations/ProductionMeetingMinutes][Operations]] and [[https://twiki.grid.iu.edu/bin/view/Production/WeeklyProductionMeetings][Production]] meetings.
 
