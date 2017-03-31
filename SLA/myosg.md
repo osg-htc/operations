@@ -27,7 +27,7 @@ MyOSG distributes some private contact information based on certificate authenti
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [[#Requests_for_Service_Enhancement][Requests for Service Enhancement]] for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests_for_Service_Enhancement](#Requests for Service Enhancement) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
