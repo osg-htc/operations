@@ -71,7 +71,7 @@ All MyOSG issues should be reported to the GOC immediately by [trouble ticket](h
 
 ## Requests for Service Enhancements
 
-This section deals with planned maintenance outages. Please see [[#Service_Target_Response_Prioriti][Service Target Response Priorities and Response Times]] for information on unplanned outages.
+This section deals with planned maintenance outages. Please see [Service Target Response Priorities and Response Times](#service-target-response-priorities-and-Response-times) for information on unplanned outages.
 
 The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. No alteration or deletions will be brought to the production MyOSG without a minimum of ten (10) business days of testing. New human-interface features or new machine readable interfaces may be brought to production with five (5) business days of testing from the feature requester. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.
 
