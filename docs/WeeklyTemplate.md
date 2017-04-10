@@ -10,10 +10,8 @@
    * [GOC Services Availability/Reliability](http://tinyurl.com/pre26vw)
    * Current Status: <img src="http://steige.grid.iu.edu/steige/status_current.png">
    * [Accounting report](http://reports.grid.iu.edu/reports/current.apel)
-   * [Version report](http://reports.grid.iu.edu/reports/versiondump-latest.txt)
-      * [Condensed version](http://reports.grid.iu.edu/reports/version_summary.txt)
-   * [Capacity report](http://reports.grid.iu.edu/reports/capacitydump-latest.txt)
-   * <img src="http://gratiaweb1.grid.iu.edu/gratiastatic/today/osg_wall_hours.png"/>
+   * [OSG CPU hours](http://tinyurl.com/mf96b88)
+      * please note, this is a link to the replacement for the gratia derived image used previously
    * <img src="http://osg-flock.grid.iu.edu/monitoring/condor/condor_7day.png" width='630' height='390'  /><br>
 
 #### Grid Operations Center
