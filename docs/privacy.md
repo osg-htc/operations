@@ -3,7 +3,7 @@
 2011-12-13
 
 ## Applicability
-This privacy notice applies only to the OSG services hosted at Indiana University ([https://github.com/opensciencegrid/operations/blob/master/SLA/IUPrivacyPolicy](https://twiki.grid.iu.edu/bin/view/Operations/IUPrivacyPolicy)) and explains our practices concerning the collection, use, and disclosure of visitor information. Visitor information collected by OSG services hosted at Indiana University will be used only as outlined in this privacy notice.
+This privacy notice applies only to the OSG services hosted at Indiana University and explains our practices concerning the collection, use, and disclosure of visitor information. Visitor information collected by OSG services hosted at Indiana University will be used only as outlined in this privacy notice.
 
 Other units at the university may collect and use visitor information in different ways. Therefore, visitors to other university web sites should review the privacy notices for the particular sites they visit. OSG services hosted at Indiana University is not responsible for the content of other web sites or for the privacy practices of web sites outside the scope of this notice.
 
