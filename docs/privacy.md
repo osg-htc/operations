@@ -101,8 +101,7 @@ Other than sharing your information with other appropriate university personnel 
 
 ## Security
 
-Due to the rapidly evolving nature of information technologies, no transmission of data over the Internet can be guaranteed to be completely secure. While we are committed to protecting the privacy of our visitors, we cannot guarantee the security of any information that you transmit to University web sites, and you do so at your own risk. However, once we receive your information, we will use reasonable safeguards consistent with prevailing industry standa
-rds and commensurate with the sensitivity of the data being stored to maintain the security of that information on our systems.
+Due to the rapidly evolving nature of information technologies, no transmission of data over the Internet can be guaranteed to be completely secure. While we are committed to protecting the privacy of our visitors, we cannot guarantee the security of any information that you transmit to University web sites, and you do so at your own risk. However, once we receive your information, we will use reasonable safeguards consistent with prevailing industry standards and commensurate with the sensitivity of the data being stored to maintain the security of that information on our systems.
 
 In addition, we will comply with all applicable Federal, State and local laws regarding the privacy and security of visitor information.
 
