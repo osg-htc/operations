@@ -111,7 +111,7 @@ We have appropriate security measures in place in our physical facilities to pro
 ## Privacy Notice Changes
 
 From time to time, we may use visitor information for new, unanticipated uses not previously disclosed in our privacy notice.
-   *We will post the policy changes to our Website to notify you of these changes and provide you with the ability to opt out of these new uses. If you are concerned about how your information is used, you should check back at our Website periodically.
+We will post the policy changes to our Website to notify you of these changes and provide you with the ability to opt out of these new uses. If you are concerned about how your information is used, you should check back at our Website periodically.
 
 ## Contact Information
 
