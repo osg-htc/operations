@@ -24,11 +24,11 @@ When you view pages on our site, the web server automatically collects certain t
 Continued use of our web site indicates consent to the collection, use, and disclosure of this information as described in this notice.
 
 This technical information is retained in detail for up to 30 days.
-###Information Used For Contact
+### Information Used For Contact
 
 If you supply us with your postal/mailing address, you will only receive the information for which you provided us your address.
 
-###Information Sharing
+### Information Sharing
 
 We may share aggregate, non-personally-identifiable information with other entities or organizations.
 
