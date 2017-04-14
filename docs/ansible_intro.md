@@ -80,3 +80,23 @@ with specific properties
     - { src: 'ifcfg-lo', dest: '/etc/sysconfig/network-scripts/ifcfg-lo', mode: '0644'}
     - { src: 'mash_koji_config', dest: '/etc/mash_koji_config', mode: '0644'}
 ```
+
+### Service levels (development, ITB, production)
+
+As set up at OSGO, the installation scripts can detect ITB (or dev) instances and production instances.
+To the extent possible, the playbooks and configuration files are identical for all levels of service.
+When required, specific files can be specified for production/dev and conditional actions taken. Also,
+for services with multiple instances (repo1 and repo2, for example) identical commands (other than
+the instance number) and identical Ansible files are used to build the instances.
+
+#### An Ansible conditional
+
+```
+- name: Yum install of components needed on production
+  when: "'-itb' not in inventory_hostname_short"
+  yum: state=installed name={{ item }}
+  with_items:
+    - condor
+    - httpd
+    - mysql-server
+```
