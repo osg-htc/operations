@@ -15,7 +15,7 @@ and referred to via DNS aliases simply as myosg. Incomming traffic (e.g. to myos
 instance via an [LVS](http://www.linuxvirtualserver.org/) server. It is possible to configure LVS to route
 to a specific instance and thus ignore the other.
 
-Proposed here is a modification to the maintenance that exploits this feature. Multihomed services can be
+Proposed here is a modification to the maintenance process that exploits this feature. Multihomed services can be
 modified at any time as follows: The ITB instance will be modified and the modification described in an announcement.
 After a 1 week testing period, the modifications will be propagated to the production machines using
 the LVS mechanism to make the service appear uninturrupted. Only multihomed services will be covered by
