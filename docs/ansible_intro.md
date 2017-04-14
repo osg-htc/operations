@@ -18,4 +18,47 @@ a standard means to document a service instance in an easily readable and unders
 
 Ansible, as implemented at Operations, provides a means to specify and build a VM. The VM host
 machine, Operating System, number of CPUs, amount of RAM and size of /usr/local are specified
-in a standard way on the master machine. Any data or configuration file
+in a standard way on the master machine. Any data or configuration files needed for the service
+are also stored on the master. One or more so-called playbooks specify any action needed to 
+build a service machine. These files are all, in turn, checked into an SVN repository and under
+version control.
+
+To install a service machine, the running instance (if there is one) is shutdown on the VM host.
+By convention, these machines have serial numbers. For example, the current VM for repo1.grid.iu.edu
+could be repo1.7. The ansibile installation script is invoked on the master machine and VM hosts are
+searched for running instances of the specified service machine. If none are found, a new instance
+(with an incremented serial number) is created to the specifications found on the master machine.
+Basic OS installation and user creation is handled automaitically. The machine is started and Ansible
+completes the installation of the service according to the rules provided in the playbooks.
+On completion there is a not running repo1.7 (as a backup) and a newly updated repo1.8.
+
+### Some examples
+
+Follow are excerpts from sundry playbooks and specification files for actual services.
+
+##### Specify a VM
+---
+distro: 6
+cpus: 2
+ram: 2G
+disk: 256GB
+
+##### Install the basics
+
+- name: Cleanup osg-release
+  shell: 'rpm -e osg-release'
+
+- name: Install osg 3.3
+  shell: 'rpm -U /net/nas01/Public/tmp/osg-3.3-el6-release-latest.rpm'
+
+##### Install a list of components
+
+- name: Yum install of components needed on production
+  yum: state=installed name={{ item }}
+  with_items:
+    - php
+    - php-common
+    - php-xml
+    - mash
+    - xinetd
+
