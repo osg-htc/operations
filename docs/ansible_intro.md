@@ -37,22 +37,25 @@ On completion there is a not running repo1.7 (as a backup) and a newly updated r
 Follow are excerpts from sundry playbooks and specification files for actual services.
 
 ##### Specify a VM
----
+```---
 distro: 6
 cpus: 2
 ram: 2G
 disk: 256GB
+```
 
 ##### Install the basics
-
+```
 - name: Cleanup osg-release
   shell: 'rpm -e osg-release'
 
 - name: Install osg 3.3
   shell: 'rpm -U /net/nas01/Public/tmp/osg-3.3-el6-release-latest.rpm'
+```
 
 ##### Install a list of components
 
+```
 - name: Yum install of components needed on production
   yum: state=installed name={{ item }}
   with_items:
@@ -61,4 +64,4 @@ disk: 256GB
     - php-xml
     - mash
     - xinetd
-
+```
