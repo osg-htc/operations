@@ -10,7 +10,7 @@ like a scripted SSH with lots of bells and whistles. Ansible happens to be writt
 ### Ansible at Operations
 
 Standardizing configuration management is a long standing goal and we have achieved this goal for 
-operational services. All SLA covered services (except MuOSG, coming soon) for which OSGO has responsibility (and OASIS)
+operational services. All SLA covered services (except MyOSG, coming soon) for which OSGO has responsibility (and OASIS)
 can now be installed by any member of the operations staff. Furthermore, this mechanism provides
 a standard means to document a service instance in an easily readable and understandable way.
 
