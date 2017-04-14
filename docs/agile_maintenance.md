@@ -1,7 +1,8 @@
 ## Summary Description
 
 Currently OSG Operations performs maintenance (bug fixes, service enhancements, OS updates, etc.)
-on a schedule described [here](Tom, Link please). This policy keeps users informed as to activities
+on a schedule described [here](https://github.com/opensciencegrid/operations/blob/master/docs/maintenance_schedule.md).
+This policy keeps users informed as to activities
 in progress and prevents *unexpected* outages. Proposed here is a procedure that maintains the intended
 features of the maintenance policy and improves Operations ability to respond quickly to requests and problems.
 
