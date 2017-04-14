@@ -36,7 +36,7 @@ On completion there is a not running repo1.7 (as a backup) and a newly updated r
 
 Follow are excerpts from sundry playbooks and specification files for actual services.
 
-##### Specify a VM
+#### Specify a VM
 ```---
 distro: 6
 cpus: 2
@@ -44,7 +44,7 @@ ram: 2G
 disk: 256GB
 ```
 
-##### Install the basics
+#### Install the basics
 ```
 - name: Cleanup osg-release
   shell: 'rpm -e osg-release'
@@ -53,7 +53,7 @@ disk: 256GB
   shell: 'rpm -U /net/nas01/Public/tmp/osg-3.3-el6-release-latest.rpm'
 ```
 
-##### Install a list of components
+#### Install a list of components
 
 ```
 - name: Yum install of components needed on production
@@ -66,7 +66,7 @@ disk: 256GB
     - xinetd
 ```
 
-##### Listed actions with multiple parameters
+#### Listed actions with multiple parameters
 
 The following pulls files from the master and installs them in specific locations
 with specific properties
