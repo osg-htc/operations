@@ -56,7 +56,7 @@ disk: 256GB
 #### Install a list of components
 
 ```
-- name: Yum install of components needed on production
+- name: Yum install of needed components
   yum: state=installed name={{ item }}
   with_items:
     - php
