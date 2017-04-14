@@ -13,3 +13,9 @@ Standardizing configuration management is a long standing goal and we have achie
 operational services. Any SLA covered service for which OSGO has responsibility (and OASIS)
 can now be installed by any member of the operations staff. Furthermore, this mechanism provides
 a standard means to document a service instance in an easily readable and understandable way.
+
+### How it works
+
+Ansible, as implemented at Operations, provides a means to specify and build a VM. The VM host
+machine, Operating System, number of CPUs, amount of RAM and size of /usr/local are specified
+in a standard way on the master machine. Any data or configuration file
