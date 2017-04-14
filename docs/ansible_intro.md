@@ -32,6 +32,10 @@ Basic OS installation and user creation is handled automaitically. The machine i
 completes the installation of the service according to the rules provided in the playbooks.
 On completion there is a not running repo1.7 (as a backup) and a newly updated repo1.8.
 
+Most service machines can be installed from scratch in less than 15 minutes, none require more than
+1 hour. Most of the 15 minutes is taken by firstboot activities. The longest to install is repo,
+the majority of the installation time is fetching and unpacking an archive of its content.
+
 ### Some examples
 
 Follow are excerpts from sundry playbooks and specification files for actual services.
