@@ -65,3 +65,18 @@ disk: 256GB
     - mash
     - xinetd
 ```
+
+##### Listed actions with multiple parameters
+
+The following pulls files from the master and installs them in specific locations
+with specific properties
+
+```
+- name: Install machine content
+  copy: owner=root group=root mode={{ item.mode }} dest={{ item.dest }} src={{ item.src }}
+  with_items:
+    - { src: '60-local-repo' ,  dest: '/etc/iptables.d/60-local-repo' , mode: '0744' }
+    - { src: 'httpd.conf', dest: '/etc/httpd/conf/httpd.conf', mode: '0644'}
+    - { src: 'ifcfg-lo', dest: '/etc/sysconfig/network-scripts/ifcfg-lo', mode: '0644'}
+    - { src: 'mash_koji_config', dest: '/etc/mash_koji_config', mode: '0644'}
+```
