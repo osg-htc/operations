@@ -24,11 +24,27 @@ When you view pages on our site, the web server automatically collects certain t
 Continued use of our web site indicates consent to the collection, use, and disclosure of this information as described in this notice.
 
 This technical information is retained in detail for up to 30 days.
-###Information Used For Contact
+
+### Active/Manual/Voluntary Collection
+
+Other than automatically collected technical information about your visit (described above, or cookies described below), we may ask you to provide information voluntarily, such as through forms or other manual input - in order to make products and services available to you, to maintain and manage our relationship with you, including providing associated services or to better understand and serve your needs. This information is generally retained as long as you continue to maintain a relationship with us. Your providing this information is wholly voluntary. However, not providing the requested information (or subsequently asking that the data be
+removed) may affect our ability to deliver the products or service for which the information is needed. Providing the requested information indicates your consent to the collection, use, and disclosure of this information as described in this notice. Information we may actively collect could include:
+
+   * name
+   * address
+   * telephone number
+   * OSG specific information such as VO membership, Institutional affiliation etc.
+
+### Cookies
+A [cookie](https://kb.iu.edu/data/agwm.html) is a small data file that is written to your hard drive that contains information about your visit to a web page. If you prefer not to receive cookies, you may configure your browser to not to accept them at all, or to notify and require approval before accepting new cookies. Some web pages/sites may not function properly if the cookies are turned off, or you may have to provide the same information each time you visit those pages.
+
+Our site does not use cookies to store information about your actions or choices on pages associated with our site.
+
+### Information Used For Contact
 
 If you supply us with your postal/mailing address, you will only receive the information for which you provided us your address.
 
-###Information Sharing
+### Information Sharing
 
 We may share aggregate, non-personally-identifiable information with other entities or organizations.
 
@@ -48,24 +64,8 @@ We may make some personally-identifiable information available, such as:
    * other contact information, such as address or telephone number
 
 Except as provided in the Disclosure of Information section below, we do not attempt to use the technical information discussed in this section to identify individual visitors.
-
-### Active/Manual/Voluntary Collection
-
-Other than automatically collected technical information about your visit (described above, or cookies described below), we may ask you to provide information voluntarily, such as through forms or other manual input - in order to make products and services available to you, to maintain and manage our relationship with you, including providing associated services or to better understand and serve your needs. This information is generally retained as long as you continue to maintain a relationship with us. Your providing this information is wholly voluntary. However, not providing the requested information (or subsequently asking that the data be
-removed) may affect our ability to deliver the products or service for which the information is needed. Providing the requested information indicates your consent to the collection, use, and disclosure of this information as described in this notice. Information we may actively collect could include:
-
-   * name
-   * address
-   * telephone number
-   * OSG specific information such as VO membership, Institutional affiliation etc.
-
-### Cookies
-A [cookie](https://kb.iu.edu/data/agwm.html) is a small data file that is written to your hard drive that contains information about your visit to a web page. If you prefer not to receive cookies, you may configure your browser to not to accept them at all, or to notify and require approval before accepting new cookies. Some web pages/sites may not function properly if the cookies are turned off, or you may have to provide the same information each time you visit those pages.
-
-Our site does not use cookies to store information about your actions or choices on pages associated with our site.
-
 ### Children
-This site is not directed to children under 13 years of age, does not sell products or services intended for purchase by children, and does not knowingly collect or store any personal information, even in aggregat e, about children under the age of 13. We encourage parents and teachers to be involved in children's Internet explorations. It is particularly important for parents to guide their children when they are asked to provide personal i nformation online.
+This site is not directed to children under 13 years of age, does not sell products or services intended for purchase by children, and does not knowingly collect or store any personal information, even in aggregate, about children under the age of 13. We encourage parents and teachers to be involved in children's Internet explorations. It is particularly important for parents to guide their children when they are asked to provide personal information online.
 
 ### Use of Third Party Services
 This website uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses "cookies" (described above) to help the website analyze how users use the site. The information generated by the cookie about your use of the website (including possibly your IP address) will be transmitted to and stored by Google.
