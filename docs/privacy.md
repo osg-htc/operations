@@ -2,6 +2,13 @@
 ## Effective date
 2011-12-13
 
+### Modification history
+2017-04-19
+   * Converted format to this document
+   * moved "Information Used For Contact" subsection to "Active/Manual/Voluntary Collection" section
+   * moved "Information Sharing" subsection to "Active/Manual/Voluntary Collection" section
+   * removed extraneous spaces in several loctions
+   
 ## Applicability
 This privacy notice applies only to the OSG services hosted at Indiana University and explains our practices concerning the collection, use, and disclosure of visitor information. Visitor information collected by OSG services hosted at Indiana University will be used only as outlined in this privacy notice.
 
