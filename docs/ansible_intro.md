@@ -104,3 +104,16 @@ the instance number) and identical Ansible files are used to build the instances
     - httpd
     - mysql-server
 ```
+
+## Ansible in a nutshell
+   * Ansiblr encapsulates all aspects of a service
+      * VM specification, OS, RAM, CPU, /usr/local/ all service details
+   * All operations services (except MyOSG) are under Ansible based configuration management
+      * MyOSG is currently being added
+   * Ansible is invoked by a master machine, not run by the target machine
+   * It can update a running machine or build a new one
+   * Handles development, ITB and production instances with a single playbook
+      * ensures, to the extent possible, the testing instances are identical to the production instances
+   * We are gaining experience and working on a "Best Practices" guide
+      * Software team has expressed interest in participating in this
+      
