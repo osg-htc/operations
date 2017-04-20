@@ -110,7 +110,7 @@ the instance number) and identical Ansible files are used to build the instances
    * All operations services (except MyOSG) are under Ansible based configuration management
       * MyOSG is currently being added
    * Ansible encapsulates all aspects of a service
-      * VM specification, OS, RAM, CPU, /usr/local/ all service details
+      * VM specification, OS, RAM, CPU, /usr/local/, all service configuration and packages
    * Ansible is invoked by a master machine, not run by the target machine
    * It can update a running machine or build a new one
    * Handles development, ITB and production instances with a single playbook
