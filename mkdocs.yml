@@ -12,6 +12,14 @@ pages:
 - OSG Operations Mission: 'mission.md'
 - Weekly Ops Meeting Minutes:
   - '1 May 2017': 'WeeklyMinutes/1May2017.md'
+  - '24 April 2017': 'WeeklyMinutes/24Apr2017.md'
+  - '17 April 2017': 'WeeklyMinutes/17Apr2017.md'
+  - '10 April 2017': 'WeeklyMinutes/10Apr2017.md'
+  - '3 April 2017': 'WeeklyMinutes/3Apr2017.md'
+  - '27 March 2017': 'WeeklyMinutes/27Mar2017.md'
+  - '20 March 2017': 'WeeklyMinutes/20Mar2017.md'
+  - '13 March 2017': 'WeeklyMinutes/13Mar2017.md'
+  - '27 February 2017': 'WeeklyMinutes/27Feb2017.md'
 
 markdown_extensions:
   - admonition
