@@ -23,6 +23,8 @@
 #### OSG-Connect
    * <img src='http://osgconnect.net/accounting-summary/data/osg/daily_hours_by_project.png'>
 
+#### Gracc operations
+
 ## Operations This Week
 
 #### Grid Operations Center
@@ -32,6 +34,8 @@
 #### WMS Glide In Factory
 
 #### OSG-Connect
+
+#### Gracc operations
 
 ## New Registrations
 
