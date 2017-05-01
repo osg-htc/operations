@@ -1,4 +1,4 @@
-# Production Meeting Weekly Index
+# Operations Meeting Weekly Index
 
 ## 2017
    * [01 May 2017](01May2017.md)
