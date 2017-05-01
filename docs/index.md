@@ -16,7 +16,7 @@ Welcome to OSG Operations
 
 # Current Meeting Minutes
 
-Are available at this [Link](WeeklyMinutes/PastMeetings.md)
+Are available at this [Link](WeeklyMinutes/MeetingIndex.md)
 
 For Minutes Prior to 12-February-2017 Please Visit the [Archive](https://twiki.grid.iu.edu/bin/view/Production/WeeklyProductionMeetings)
 
