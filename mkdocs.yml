@@ -10,6 +10,8 @@ extra_css:
 pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
+- Weekly Ops Meeting Minutes:
+  - '1 May 2017': 'WeeklyMinutes/1May2017.md'
 
 markdown_extensions:
   - admonition
