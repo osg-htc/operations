@@ -1,4 +1,3 @@
-
 site_name: OSG Documentation
 site_url: https://opensciencegrid.github.io/operations
 repo_url: https://github.com/opensciencegrid/operations
@@ -10,7 +9,7 @@ extra_css:
 pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
-- Weekly Ops Meeting Minutes:
+- Weekly Minutes:
   - '1 May 2017': 'WeeklyMinutes/1May2017.md'
   - '24 April 2017': 'WeeklyMinutes/24Apr2017.md'
   - '17 April 2017': 'WeeklyMinutes/17Apr2017.md'
