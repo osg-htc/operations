@@ -39,6 +39,1216 @@
             "location": "/mission/#osg-operations-mission", 
             "text": "The mission of OSG Operations is to maintain and improve distributed high throughput computing services to support research communities.  This is accomplished by:   Operating and maintaining our services in a user-oriented, robust, and reliable manner.  Developing a professional and skilled staff dedicated to a service philosophy.  Managing resources responsibly, efficiently, and with accountability.  Evaluating and continually improving the actions, methods and processes that allow the OSG to operate.", 
             "title": "OSG Operations Mission"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/", 
+            "text": "Operations Meeting May 1st, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Tom L., Steve T., Marina K., Kyle G., Rob Q., Jeny T., Marian Z.\n\n\nGOC weekly calendar\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status: \n\n\nAccounting report\n\n\nOSG CPU hours\n\n\nplease note, this is a link to the replacement for the gratia derived image used previously\n\n\n\n\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nRelease. OIM, MyOSG, Display, Ticket Exchange\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\n\n\n\n\nGracc operations\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nRelease note is being prepared now\n\n\n\n\nFermiGrid Ops (will not be appearing henceforth)\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nGracc operations\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n\n\nNo unapproved aged requests.\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present? \nX\n \nY\n\n\n\n\n\n\n\n\n\n\nhttps://ticket.grid.iu.edu/33639\n\n\nFNAL\n\n\nAwaiting site name\n\n\nKyle\n\n\n\n\n\n\n\n\n\n\nhttps://ticket.grid.iu.edu/33608\n\n\nUSATLAS\n\n\nBNL StashCache down?\n\n\nKyle\n\n\nIs Hiro the admin? Anyone else?\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\n\n\nMeeting is tomorrow as today is May Day\n\n\n\n\nSecurity\n\n\n\n\nVulnerabilities/Incidents\n\n\n\n\nAOB\n\n\nAction Items from Meeting\n\n\n\n\nTom and Marian will look at the \"Forbidden\" error on reports.grid.iu.edu.", 
+            "title": "1 May 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#operations-meeting-may-1st-2017", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending: Tom L., Steve T., Marina K., Kyle G., Rob Q., Jeny T., Marian Z.  GOC weekly calendar", 
+            "title": "Operations Meeting May 1st, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status:   Accounting report  OSG CPU hours  please note, this is a link to the replacement for the gratia derived image used previously", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#grid-operations-center", 
+            "text": "Release. OIM, MyOSG, Display, Ticket Exchange", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#wms-glide-in-factory", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#osg-connect", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#gracc-operations", 
+            "text": "", 
+            "title": "Gracc operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#grid-operations-center_1", 
+            "text": "Release note is being prepared now", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#fermigrid-ops-will-not-be-appearing-henceforth", 
+            "text": "", 
+            "title": "FermiGrid Ops (will not be appearing henceforth)"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#wms-glide-in-factory_1", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#osg-connect_1", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#gracc-operations_1", 
+            "text": "", 
+            "title": "Gracc operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request       No unapproved aged requests.", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?  X   Y      https://ticket.grid.iu.edu/33639  FNAL  Awaiting site name  Kyle      https://ticket.grid.iu.edu/33608  USATLAS  BNL StashCache down?  Kyle  Is Hiro the admin? Anyone else?       View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#wlcg-egi-operations", 
+            "text": "Meeting is tomorrow as today is May Day", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#security", 
+            "text": "Vulnerabilities/Incidents", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/01May2017/#action-items-from-meeting", 
+            "text": "Tom and Marian will look at the \"Forbidden\" error on reports.grid.iu.edu.", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/", 
+            "text": "Operations Meeting Apr 24, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: \n\n\nGOC weekly calendar\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nOSG CPU hours\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nProduction release\n\n\nRelease note\n\n\n\n\n\n\nMyOSG updates have already been done on April 18th to accomodate gratiaweb retirement.  Accounting and reports are moving from FNAL and IU to UNL\n\n\nITB and internal services OS updates \n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nGracc operations\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nProduction release\n\n\nDisplay, OIM, TX updates\n\n\nProduction OS Updates\n\n\n\n\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nGracc operations\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n3478\n\n\n25\n\n\nJeffrey D Anderson\n\n\nJDAnderson@lbl.gov\n\n\nLBNL\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\nWLCG \n EGI Operations\n\n\n\n\nReminded WLCG about Gratia - GRACC transition\n\n\n\n\nSecurity\n\n\n\n\nVulnerability in NSS  reported in CVE-2017-5461 (https://access.redhat.com/security/cve/cve-2017-5461). Potential DoS and arbitrary code execution.\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "24 April 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#operations-meeting-apr-24-2017", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending:   GOC weekly calendar", 
+            "title": "Operations Meeting Apr 24, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   OSG CPU hours", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#grid-operations-center", 
+            "text": "Production release  Release note    MyOSG updates have already been done on April 18th to accomodate gratiaweb retirement.  Accounting and reports are moving from FNAL and IU to UNL  ITB and internal services OS updates", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#wms-glide-in-factory", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#osg-connect", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#gracc-operations", 
+            "text": "", 
+            "title": "Gracc operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#grid-operations-center_1", 
+            "text": "Production release  Display, OIM, TX updates  Production OS Updates", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#fermigrid-ops_1", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#wms-glide-in-factory_1", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#osg-connect_1", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#gracc-operations_1", 
+            "text": "", 
+            "title": "Gracc operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request      3478  25  Jeffrey D Anderson  JDAnderson@lbl.gov  LBNL", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#wlcg-egi-operations", 
+            "text": "Reminded WLCG about Gratia - GRACC transition", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#security", 
+            "text": "Vulnerability in NSS  reported in CVE-2017-5461 (https://access.redhat.com/security/cve/cve-2017-5461). Potential DoS and arbitrary code execution.", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/24Apr2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/", 
+            "text": "Operations Meeting Apr 17, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: \n\n\nGOC weekly calendar\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nOSG CPU hours\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nProduction release\n\n\nRelease note\n\n\n\n\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\n\n\nUpgraded GOC factory to glideinWMS 3.2.18\n\n\n\n\nOSG-Connect\n\n\n\n\n2.1 M cpu hours used this week\n\n\n37 active users\n\n\n31 active projects\n\n\n\n\nGracc operations\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nITB release\n\n\nDisplay, MyOSG, OIM, TX updates\n\n\n\n\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\n\n\nNo changes planned\n\n\n\n\nOSG-Connect\n\n\n\n\nNo changes planned\n\n\n\n\nGracc operations\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nGRACC\n\n\nWill support issues with GRACC Collector\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nAlexandre Thiery\n\n\nalexandre.thiery@iee.unibe.ch\n\n\n\n\n\n\n\n\n\n\n9\n\n\nJonathan Shortt\n\n\njonathan.shortt@ucdenver.edu\n\n\n\n\n\n\n\n\n\n\n11\n\n\nAobo Li\n\n\nliaobo77@bu.edu\n\n\n\n\n\n\n\n\n\n\n13\n\n\nAndrea Giovannucci\n\n\nagiovannucci@flatironinstitute.org\n\n\n\n\n\n\n\n\n\n\n25\n\n\nEric Machado\n\n\nemachado@uw.edu\n\n\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nLinux Kernel local privilege escalation vulnerability: [[CVE-2017-2636][https://access.redhat.com/security/vulnerabilities/CVE-2017-2636]]\n\n\nScott has requested/is working on a \"data security\" white paper.\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "17 April 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#operations-meeting-apr-17-2017", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending:   GOC weekly calendar", 
+            "title": "Operations Meeting Apr 17, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   OSG CPU hours", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#grid-operations-center", 
+            "text": "Production release  Release note", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#wms-glide-in-factory", 
+            "text": "Upgraded GOC factory to glideinWMS 3.2.18", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#osg-connect", 
+            "text": "2.1 M cpu hours used this week  37 active users  31 active projects", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#gracc-operations", 
+            "text": "", 
+            "title": "Gracc operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#grid-operations-center_1", 
+            "text": "ITB release  Display, MyOSG, OIM, TX updates", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#fermigrid-ops_1", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#wms-glide-in-factory_1", 
+            "text": "No changes planned", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#osg-connect_1", 
+            "text": "No changes planned", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#gracc-operations_1", 
+            "text": "", 
+            "title": "Gracc operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#support-centers", 
+            "text": "Name  Other Info  Ticket      GRACC  Will support issues with GRACC Collector", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request       6  Alexandre Thiery  alexandre.thiery@iee.unibe.ch      9  Jonathan Shortt  jonathan.shortt@ucdenver.edu      11  Aobo Li  liaobo77@bu.edu      13  Andrea Giovannucci  agiovannucci@flatironinstitute.org      25  Eric Machado  emachado@uw.edu", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?       View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#security", 
+            "text": "Linux Kernel local privilege escalation vulnerability: [[CVE-2017-2636][https://access.redhat.com/security/vulnerabilities/CVE-2017-2636]]  Scott has requested/is working on a \"data security\" white paper.", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/17Apr2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/", 
+            "text": "Operations Meeting Apr 10, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: \n\n\nGOC weekly calendar\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nOSG CPU hours\n\n\nplease note, this is a link to the replacement for the gratia derived image used previously\n\n\n\n\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nITB release\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\n\n\nUpgrade SDSC factory to glideinWMS 3.2.18\n\n\nfixes show stopper bug in 3.2.17 where stuck pid file prevents service from restarting until removed\n\n\n\n\n\n\n\n\nOSG-Connect\n\n\n\n\n1.7 M cpu hours provided\n\n\n33 active users\n\n\n28 active projects\n\n\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nProduction release\n\n\nThere is a request to change the technology of the Production meeting (Tuesday, 4:00 eastern) notes\n\n\nScott would really rather avoid multiple formats for this/that meeting\n\n\n\n\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\n\n\nplan to upgrade GOC Production factory to glideinWMS 3.2.18\n\n\n\n\nOSG-Connect\n\n\n\n\nNo changes planned\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nJetstream-CE-1\n\n\nosg-glidein-factory\n\n\nhttps://jetstream-cloud.org\n\n\n\n\nhttps://ticket.grid.iu.edu/33348\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nPurdue-Hadoop-HTCE\n\n\nthis resource was only intended to be transitional\n\n\nhttps://ticket.grid.iu.edu/33367\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n3436\n\n\n11\n\n\nJeffrey D Anderson\n\n\n\n\nLBNL\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nNo new vulnerabilities/incidents\n\n\nPending announcement for VOMS-admin software package.\n\n\nKoji website certificate showing errors due to bad certificate domain. The certificate has been issued for koji.chtc.wisc.edu\n\n\nOn April 11, 2017, there will be a minor code update for the CILogon Service. No downtime expected.\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "10 April 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#operations-meeting-apr-10-2017", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending:   GOC weekly calendar", 
+            "title": "Operations Meeting Apr 10, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   OSG CPU hours  please note, this is a link to the replacement for the gratia derived image used previously", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#grid-operations-center", 
+            "text": "ITB release", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#wms-glide-in-factory", 
+            "text": "Upgrade SDSC factory to glideinWMS 3.2.18  fixes show stopper bug in 3.2.17 where stuck pid file prevents service from restarting until removed", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#osg-connect", 
+            "text": "1.7 M cpu hours provided  33 active users  28 active projects", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#grid-operations-center_1", 
+            "text": "Production release  There is a request to change the technology of the Production meeting (Tuesday, 4:00 eastern) notes  Scott would really rather avoid multiple formats for this/that meeting", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#fermigrid-ops_1", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#wms-glide-in-factory_1", 
+            "text": "plan to upgrade GOC Production factory to glideinWMS 3.2.18", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#osg-connect_1", 
+            "text": "No changes planned", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket      Jetstream-CE-1  osg-glidein-factory  https://jetstream-cloud.org   https://ticket.grid.iu.edu/33348", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket      Purdue-Hadoop-HTCE  this resource was only intended to be transitional  https://ticket.grid.iu.edu/33367", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request      3436  11  Jeffrey D Anderson   LBNL", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?       View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#security", 
+            "text": "No new vulnerabilities/incidents  Pending announcement for VOMS-admin software package.  Koji website certificate showing errors due to bad certificate domain. The certificate has been issued for koji.chtc.wisc.edu  On April 11, 2017, there will be a minor code update for the CILogon Service. No downtime expected.", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/10Apr2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/", 
+            "text": "Operations Meeting April 3, 2017\n\n\n\n\n13:00 Eastern \n\n\nhttps://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Scott, Kyle, Steve, Merina, Jeny, Grigorie, Suchandra, Jeff, Tom\n\n\nGOC weekly calendar\n\n\nMinutes location\n\n\n\n\nAnnouncements\n\n\n\n\nCenter for Network and Storage-Enabled Collaborative Computational Science\n 18-19/May\n\n\nCall for mentors\n at PEARC17, NOLA 9-13/July \n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nAccounting report\n\n\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nProduction release\n\n\n\n\nFermiGrid Ops\n\n\n\n\nvoms.opensciencegrid.org was converted to alias and pointed to voms.grid.iu.edu on Wed. 3/29.\n\n\nvo-client-package not installed at all sites yet so some sites took new OSG voms proxies to be invalid\n\n\nworkaround was to change config of voms@IU to sign proxies with old DN voms1.opensciencegrid.org.\n\n\n\n\nWMS Glide In Factory\n\n\n\n\nMarty Kandes has accepted a new job at SDSC and last week was his last week on factory ops\n\n\nI will be covering Martys shifts until we hire a replacement; we have two potential candidates\n\n\n\n\nOSG-Connect\n\n\n\n\n~1.9M cpu hours last week\n\n\n32 active users\n\n\n26 active projects\n\n\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nITB release\n\n\nBDII SLA has expired. poweroff tomorrow.\n\n\n\n\nFermiGrid Ops\n\n\n\n\nwill take old VOMS database offline as of Wed. 4/5/17 unless there are exceptions\n\n\nGOC staff should remove most of the Fermilab people from being vo-admins of OSG VO.\n\n\n\n\nWMS Glide In Factory\n\n\n\n\nNo changes planned\n\n\n\n\nOSG-Connect\n\n\n\n\nNo changes planned\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nMIT_CampusFactory\n\n\nUSCMS_T2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n3403\n\n\n24\n\n\nEvelyn Jagoda\n\n\n\n\nSCDA\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\n\n\nReported that we were working on availabilty calculation for WLCG resource\n\n\n\n\nSecurity\n\n\n\n\nPreparing announcement for VOMS-admin: https://ticket.opensciencegrid.org/33099\n\n\nIssue reported at https://ticket.opensciencegrid.org/33278 concerning credential caching on HT-condor CE which leads to delayed effect on GUMS banning.\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "3 April 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#operations-meeting-april-3-2017", 
+            "text": "13:00 Eastern   https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending: Scott, Kyle, Steve, Merina, Jeny, Grigorie, Suchandra, Jeff, Tom  GOC weekly calendar  Minutes location", 
+            "title": "Operations Meeting April 3, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#announcements", 
+            "text": "Center for Network and Storage-Enabled Collaborative Computational Science  18-19/May  Call for mentors  at PEARC17, NOLA 9-13/July", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   Accounting report", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#grid-operations-center", 
+            "text": "Production release", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#fermigrid-ops", 
+            "text": "voms.opensciencegrid.org was converted to alias and pointed to voms.grid.iu.edu on Wed. 3/29.  vo-client-package not installed at all sites yet so some sites took new OSG voms proxies to be invalid  workaround was to change config of voms@IU to sign proxies with old DN voms1.opensciencegrid.org.", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#wms-glide-in-factory", 
+            "text": "Marty Kandes has accepted a new job at SDSC and last week was his last week on factory ops  I will be covering Martys shifts until we hire a replacement; we have two potential candidates", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#osg-connect", 
+            "text": "~1.9M cpu hours last week  32 active users  26 active projects", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#grid-operations-center_1", 
+            "text": "ITB release  BDII SLA has expired. poweroff tomorrow.", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#fermigrid-ops_1", 
+            "text": "will take old VOMS database offline as of Wed. 4/5/17 unless there are exceptions  GOC staff should remove most of the Fermilab people from being vo-admins of OSG VO.", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#wms-glide-in-factory_1", 
+            "text": "No changes planned", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#osg-connect_1", 
+            "text": "No changes planned", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket      MIT_CampusFactory  USCMS_T2", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request      3403  24  Evelyn Jagoda   SCDA", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?       View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#wlcg-egi-operations", 
+            "text": "Reported that we were working on availabilty calculation for WLCG resource", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#security", 
+            "text": "Preparing announcement for VOMS-admin: https://ticket.opensciencegrid.org/33099  Issue reported at https://ticket.opensciencegrid.org/33278 concerning credential caching on HT-condor CE which leads to delayed effect on GUMS banning.", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/3Apr2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/", 
+            "text": "Operations Meeting March 27, 2017\n\n\n\n\n13:00 Eastern \n\n\nhttps://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Scott, Kyle, Suchandra, Jeny, Marina, Tom, Elizabeth\n\n\nGOC weekly calendar\n\n\nMinutes location\n\n\n\n\nAnnouncements\n\n\n\n\nCenter for Network and Storage-Enabled Collaborative Computational Science\n 18-19/May\n\n\nCall for mentors\n at PEARC17, NOLA 9-13/July \n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nAccounting report\n\n\nVersion report - obsolete with BDII\n\n\nCondensed version - obsolete with BDII\n\n\n\n\n\n\nCapacity report - obsolete with BDII\n\n\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nITB release, no issues encountered.\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nProduction release, \nRelease note\n\n\nBDII SLA expires on Friday.\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\nNo maintenance planned\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nPurdue-LSST\n\n\nCSC\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n3403\n\n\n14\n\n\nEvelyn Jagoda\n\n\n\n\nSCDA\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nhttps://ticket.opensciencegrid.org/33099\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "27 March 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#operations-meeting-march-27-2017", 
+            "text": "13:00 Eastern   https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending: Scott, Kyle, Suchandra, Jeny, Marina, Tom, Elizabeth  GOC weekly calendar  Minutes location", 
+            "title": "Operations Meeting March 27, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#announcements", 
+            "text": "Center for Network and Storage-Enabled Collaborative Computational Science  18-19/May  Call for mentors  at PEARC17, NOLA 9-13/July", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   Accounting report  Version report - obsolete with BDII  Condensed version - obsolete with BDII    Capacity report - obsolete with BDII", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#grid-operations-center", 
+            "text": "ITB release, no issues encountered.", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#wms-glide-in-factory", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#osg-connect", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#grid-operations-center_1", 
+            "text": "Production release,  Release note  BDII SLA expires on Friday.", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#fermigrid-ops_1", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#wms-glide-in-factory_1", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#osg-connect_1", 
+            "text": "No maintenance planned", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket      Purdue-LSST  CSC", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request      3403  14  Evelyn Jagoda   SCDA", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?       View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#security", 
+            "text": "https://ticket.opensciencegrid.org/33099", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Mar2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/", 
+            "text": "Operations Meeting March 20, 2017\n\n\n\n\n13:00 Eastern \n\n\nhttps://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Scott, Kyle, Grigorie, Steve T., Marina, Jeff, Jeny, Elizabeth\n\n\nGOC weekly calendar\n\n\nMinutes location\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nAccounting report\n\n\nVersion report - obsolete with BDII\n\n\nCondensed version - obsolete with BDII\n\n\n\n\n\n\nCapacity report - obsolete with BDII\n\n\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nNo release\n\n\nLast notice for BDII \nsent\n\n\nNo support after 31/Mar, no power after 4/Apr\n\n\n\n\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\n\n\n~1.1M cpu hours\n\n\n32 active users\n\n\n27 active projects\n\n\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nTicket exchange problems, believed to be fixed. Please report any observed problems.\n\n\nITB release, release note in preparation\n\n\ncollector1/2, data1/2, repo1/2, OS updates (all services) scheduled so far\n\n\n\n\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\nNo maintenance planned\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nscosg16\n\n\nGLUEX\n\n\nhttps://scicomp.jlab.org\n\n\n\n\nhttps://ticket.grid.iu.edu/33006\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nNYSGRID VO\n\n\nno longer has users\n\n\nhttps://ticket.grid.iu.edu/33027\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n3403\n\n\n14\n\n\nEvelyn Jagoda\n\n\n\n\nSCDA\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "20 March 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#operations-meeting-march-20-2017", 
+            "text": "13:00 Eastern   https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending: Scott, Kyle, Grigorie, Steve T., Marina, Jeff, Jeny, Elizabeth  GOC weekly calendar  Minutes location", 
+            "title": "Operations Meeting March 20, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   Accounting report  Version report - obsolete with BDII  Condensed version - obsolete with BDII    Capacity report - obsolete with BDII", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#grid-operations-center", 
+            "text": "No release  Last notice for BDII  sent  No support after 31/Mar, no power after 4/Apr", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#wms-glide-in-factory", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#osg-connect", 
+            "text": "~1.1M cpu hours  32 active users  27 active projects", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#grid-operations-center_1", 
+            "text": "Ticket exchange problems, believed to be fixed. Please report any observed problems.  ITB release, release note in preparation  collector1/2, data1/2, repo1/2, OS updates (all services) scheduled so far", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#fermigrid-ops_1", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#wms-glide-in-factory_1", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#osg-connect_1", 
+            "text": "No maintenance planned", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket      scosg16  GLUEX  https://scicomp.jlab.org   https://ticket.grid.iu.edu/33006", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket      NYSGRID VO  no longer has users  https://ticket.grid.iu.edu/33027", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request      3403  14  Evelyn Jagoda   SCDA", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?       View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#security", 
+            "text": "", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Mar2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/", 
+            "text": "Operations Meeting March 13, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Steve, Marina, Gregorie, Tom, Scott, Elizabeth, Suchandra, Jeff, Jeny\n\n\nGOC weekly calendar\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nAccounting report\n\n\nVersion report\n\n\nCondensed version\n\n\n\n\n\n\nCapacity report\n\n\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nNo release, AHM\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\n\n\nNo issues to report\n\n\n\n\nOSG-Connect\n\n\n\n\n\n\n~ 1.1M cpu hours\n\n\n55 active users\n\n\n27 active projects\n\n\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nNo release, AHM\n\n\nNext cycle, condor collectors, repo1/2, minor operations on OIM, MyOSG\n\n\nSome internal machines.\n\n\nRHEL5 status board\n\n\nBDII failure on Sunday (12/Mar), is2. As of 31/Mar SLA expires.\n\n\nPerfSonar components temporarily have \"development\" status.\n\n\nExperts have access without release schedule constraints.\n\n\n\n\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\n\n\nNo changes planned\n\n\n\n\nOSG-Connect\n\n\n\n\nNo changes planned\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nVulnerabilities/Incidents\n\n\nVulnerability found in Apache Struts CVE-2017-5638. A flaw in the Jakarta Multipart parser can enable an attacker to craft a malicious message and have it executed by an Apache webserver using Struts 2.3.5 to Struts 2.3.31, andStruts 2.5 to 2.5.10. This vulnerability can be used to execute code within the context of the web server. This vulnerability is being exploited actively.\n\n\n\n\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "13 March 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#operations-meeting-march-13-2017", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending: Steve, Marina, Gregorie, Tom, Scott, Elizabeth, Suchandra, Jeff, Jeny  GOC weekly calendar", 
+            "title": "Operations Meeting March 13, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   Accounting report  Version report  Condensed version    Capacity report", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#grid-operations-center", 
+            "text": "No release, AHM", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#wms-glide-in-factory", 
+            "text": "No issues to report", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#osg-connect", 
+            "text": "~ 1.1M cpu hours  55 active users  27 active projects", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#grid-operations-center_1", 
+            "text": "No release, AHM  Next cycle, condor collectors, repo1/2, minor operations on OIM, MyOSG  Some internal machines.  RHEL5 status board  BDII failure on Sunday (12/Mar), is2. As of 31/Mar SLA expires.  PerfSonar components temporarily have \"development\" status.  Experts have access without release schedule constraints.", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#fermigrid-ops_1", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#wms-glide-in-factory_1", 
+            "text": "No changes planned", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#osg-connect_1", 
+            "text": "No changes planned", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?       View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#security", 
+            "text": "Vulnerabilities/Incidents  Vulnerability found in Apache Struts CVE-2017-5638. A flaw in the Jakarta Multipart parser can enable an attacker to craft a malicious message and have it executed by an Apache webserver using Struts 2.3.5 to Struts 2.3.31, andStruts 2.5 to 2.5.10. This vulnerability can be used to execute code within the context of the web server. This vulnerability is being exploited actively.", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/13Mar2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/", 
+            "text": "Operations Meeting February 27, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: \n\n\nGOC weekly calendar\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability/Reliability\n\n\nCurrent Status\n: \n\n\nAccounting report\n\n\nVersion report\n\n\nCondensed version\n\n\n\n\n\n\nCapacity report\n\n\n\n\n\n\n\n\nGrid Operations Center\n\n\n\n\nITB release, \nRelease note\n\n\nVOMS will be delayed\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\n\n\n~940K cpu hours \n\n\n39 active users\n\n\n30 active projects\n\n\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nProduction release\n\n\n\n\nFermiGrid Ops\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\nNo planned updates\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\numd-squid\n\n\nUSCMS T3\n\n\n\n\n\n\n\n\n\n\n\n\nUSCMS-FNAL-WC1-SE2\n\n\nUSCMS\n\n\n\n\n\n\n\n\n\n\n\n\nHOSTED_OSU_CE\n\n\nUC CI\n\n\n\n\n\n\n\n\n\n\n\n\nFermilab Public dCache\n\n\nFermilab\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nRequest ID\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n32730\n\n\n5 days\n\n\nJean-Jack  Riethoven\n\n\njeanjack@unl.edu\n\n\nUser Certificate Request for Jean Jack Riethoven(VO:HCC)\n\n\n\n\n\n\n32618\n\n\n20 days\n\n\nLee    Albee\n\n\nlee.albee@yahoo.com\n\n\nUser Certificate Request for Lee Albee(VO:SCDA)\n\n\n\n\n\n\n32606\n\n\n21 days\n\n\nGrace  Jane Gollinger\n\n\ngjgollinger@pitt.edu\n\n\nUser Certificate Request for Grace Jane Gollinger(VO:T2K)\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present?\n\n\n\n\n\n\n\n\n\n\nhttps://ticket.grid.iu.edu/32746\n\n\n\n\nWho is registering this?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nVulnerabilities/Incidents\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "27 February 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#operations-meeting-february-27-2017", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending:   GOC weekly calendar", 
+            "title": "Operations Meeting February 27, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#summaries-and-reports", 
+            "text": "GOC Services Availability/Reliability  Current Status :   Accounting report  Version report  Condensed version    Capacity report", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#grid-operations-center", 
+            "text": "ITB release,  Release note  VOMS will be delayed", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#fermigrid-ops", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#wms-glide-in-factory", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#osg-connect", 
+            "text": "~940K cpu hours   39 active users  30 active projects", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#grid-operations-center_1", 
+            "text": "Production release", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#fermigrid-ops_1", 
+            "text": "", 
+            "title": "FermiGrid Ops"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#wms-glide-in-factory_1", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#osg-connect_1", 
+            "text": "No planned updates", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket      umd-squid  USCMS T3       USCMS-FNAL-WC1-SE2  USCMS       HOSTED_OSU_CE  UC CI       Fermilab Public dCache  Fermilab", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#osg-ra-over-5-day-report", 
+            "text": "Request ID  Age days  Requester  Requester Email  Request      32730  5 days  Jean-Jack  Riethoven  jeanjack@unl.edu  User Certificate Request for Jean Jack Riethoven(VO:HCC)    32618  20 days  Lee    Albee  lee.albee@yahoo.com  User Certificate Request for Lee Albee(VO:SCDA)    32606  21 days  Grace  Jane Gollinger  gjgollinger@pitt.edu  User Certificate Request for Grace Jane Gollinger(VO:T2K)", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?      https://ticket.grid.iu.edu/32746   Who is registering this?         View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#security", 
+            "text": "Vulnerabilities/Incidents", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/27Feb2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
         }
     ]
 }
