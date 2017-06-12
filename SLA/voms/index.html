@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>VOMS - OSG Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "VOMS";
+    var mkdocs_page_input_path = "SLA/voms.md";
+    var mkdocs_page_url = "/SLA/voms/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> OSG Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../mission/">OSG Operations Mission</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Weekly Minutes</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/22May2017/">22 May 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/15May2017/">15 May 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/08May2017/">8 May 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/01May2017/">1 May 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/24Apr2017/">24 April 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/17Apr2017/">17 April 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/10Apr2017/">10 April 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/3Apr2017/">3 April 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/27Mar2017/">27 March 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/20Mar2017/">20 March 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/13Mar2017/">13 March 2017</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../WeeklyMinutes/27Feb2017/">27 February 2017</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Service Level Agreements</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">VOMS</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#osg-mis-csiu-and-osgedu-voms-service-level-agreement">OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#version-control">Version Control</a></li>
+        
+            <li><a class="toctree-l4" href="#executive-summary">Executive Summary</a></li>
+        
+            <li><a class="toctree-l4" href="#owners">Owners</a></li>
+        
+            <li><a class="toctree-l4" href="#service-name-and-description">Service Name and Description</a></li>
+        
+            <li><a class="toctree-l4" href="#security-considerations">Security Considerations</a></li>
+        
+            <li><a class="toctree-l4" href="#service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</a></li>
+        
+            <li><a class="toctree-l4" href="#escalation-contacts">Escalation Contacts</a></li>
+        
+            <li><a class="toctree-l4" href="#service-availability-and-outages">Service Availability and Outages</a></li>
+        
+            <li><a class="toctree-l4" href="#service-support-hours">Service Support Hours</a></li>
+        
+            <li><a class="toctree-l4" href="#service-off-hours-support-procedures">Service Off-Hours Support Procedures</a></li>
+        
+            <li><a class="toctree-l4" href="#requests-for-service-enhancement">Requests for Service Enhancement</a></li>
+        
+            <li><a class="toctree-l4" href="#customer-problem-reporting">Customer Problem Reporting</a></li>
+        
+            <li><a class="toctree-l4" href="#responsibilities">Responsibilities</a></li>
+        
+            <li><a class="toctree-l4" href="#service-measuring-and-reporting">Service Measuring and Reporting</a></li>
+        
+            <li><a class="toctree-l4" href="#sla-validity-period">SLA Validity Period</a></li>
+        
+            <li><a class="toctree-l4" href="#sla-review-procedure">SLA Review Procedure</a></li>
+        
+            <li><a class="toctree-l4" href="#references">References</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#appendix-a-customer-information">Appendix A - Customer Information</a></li>
+    
+
+    <li class="toctree-l3"><a href="#appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#appendix-c-supported-hardware-and-software">Appendix C - Supported Hardware and Software</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#supported-hardware">Supported Hardware</a></li>
+        
+            <li><a class="toctree-l4" href="#hardware-services">Hardware Services</a></li>
+        
+            <li><a class="toctree-l4" href="#software-services">Software Services</a></li>
+        
+            <li><a class="toctree-l4" href="#software-costs">Software Costs</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#appendix-d-approval">Appendix D - Approval</a></li>
+    
+
+    <li class="toctree-l3"><a href="#appendix-e-metric-reports">Appendix E - Metric Reports</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#comments">Comments</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">OSG Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Service Level Agreements &raquo;</li>
+        
+      
+    
+    <li>VOMS</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/voms.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="osg-mis-csiu-and-osgedu-voms-service-level-agreement">OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement</h1>
+<h2 id="version-control">Version Control</h2>
+<table>
+<thead>
+<tr>
+<th><em>Version Number</em></th>
+<th><em>Date</em></th>
+<th><em>Author</em></th>
+<th><em>Comments</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1</td>
+<td>3-18-2010</td>
+<td>Rob Quick</td>
+<td>First Draft</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>3-18-2011</td>
+<td>Rob Quick</td>
+<td>Updated for CSIU</td>
+</tr>
+</tbody>
+</table>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>This SLA is an agreement between OSG Operations and the MIS, CSIU, and OSGEDU VOs and Stakeholders describing details of the VOMS Service. The VOMS is used for membership services related to the VOs mentioned in the title of this document. The VOMS service runs on hardware at Indiana University and provides the VOMS user membership service. The web address for the TWiki is https://voms.grid.iu.edu:8443.</p>
+<h2 id="owners">Owners</h2>
+<p>This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the serviced VOs.</p>
+<h2 id="service-name-and-description">Service Name and Description</h2>
+<h3 id="name">Name</h3>
+<p>MIS, CSIU, and OSGEDU VOMS.</p>
+<h3 id="description">Description</h3>
+<p>The VOMS is used for membership services related to the VOs mentioned in the title of this document.</p>
+<h2 id="security-considerations">Security Considerations</h2>
+<p>VOMS Administration is limited to the staff of the VOs represented. Read access to non-secure information is public.</p>
+<h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</h2>
+<p>This section deals with unplanned outages. Please see <a href="#requests-for-service-enhancement">Requests for Service Enhancement</a> for information on planned maintenance outages.</p>
+<table>
+<thead>
+<tr>
+<th>Critical</th>
+<th>High</th>
+<th>Elevated</th>
+<th>Normal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Work Outage</em></td>
+<td>* *</td>
+<td>* *</td>
+<td>* *</td>
+</tr>
+<tr>
+<td>The VOMS Service does not have critical priority</td>
+<td>The issue causes a full service outage rendering the VOMS unavailable for registration or distribution</td>
+<td>The issue causes short (less than 15 minute) periods of unstable or inconsistent performance</td>
+<td>The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance</td>
+</tr>
+<tr>
+<td><em>Number of Clients Affected</em></td>
+<td>* *</td>
+<td>* *</td>
+<td>* *</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>The issue affects all VOMS users</td>
+<td>The issue may or may not affect all users</td>
+<td>The issue affects only a small number of users</td>
+</tr>
+<tr>
+<td><em>Response Time</em></td>
+<td>* *</td>
+<td>* *</td>
+<td>* *</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>Within the next business day</td>
+<td>Within the next business day</td>
+<td>Within five (5) business days</td>
+</tr>
+<tr>
+<td><em>Resolution Time</em></td>
+<td>* *</td>
+<td>* *</td>
+<td>* *</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>The maximum acceptable resolution time is one full (1) business day</td>
+<td>The maximum acceptable resolution time is five (5) business days</td>
+<td>The maximum acceptable resolution time is thirty (30) business days</td>
+</tr>
+<tr>
+<td><em>Escalates Every</em></td>
+<td>* *</td>
+<td>* *</td>
+<td>* *</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>One Day</td>
+<td>One Week</td>
+<td>One Month</td>
+</tr>
+</tbody>
+</table>
+<h2 id="escalation-contacts">Escalation Contacts</h2>
+<table>
+<thead>
+<tr>
+<th><em>Escalation Level</em></th>
+<th><em>OSG Contact</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1st</td>
+<td>OSG Operations Infrastructure Lead</td>
+</tr>
+<tr>
+<td>2nd</td>
+<td>OSG Operations Coordinator</td>
+</tr>
+<tr>
+<td>3rd</td>
+<td>OSG Production Coordinator</td>
+</tr>
+<tr>
+<td>4th</td>
+<td>OSG Technical Director and Executive Director</td>
+</tr>
+</tbody>
+</table>
+<p>Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly <a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">Operations</a> and
+<a href="https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes">Production</a> meetings.</p>
+<h2 id="service-availability-and-outages">Service Availability and Outages</h2>
+<p>The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.</p>
+<h2 id="service-support-hours">Service Support Hours</h2>
+<p>The software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.</p>
+<h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures</h2>
+<p>All software issues should be reported to the GOC immediately by <a href="https://ticket.grid.iu.edu/goc/open">trouble ticket</a> web submission.</p>
+<h2 id="requests-for-service-enhancement">Requests for Service Enhancement</h2>
+<p>This section deals with planned maintenance outages. Please see <a href="#service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</a> for information on unplanned outages.</p>
+<p>The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.</p>
+<h2 id="customer-problem-reporting">Customer Problem Reporting</h2>
+<p>The GOC provides operators 24x7x365. VOMS service problems should be reported immediately by one of the following mechanisms.</p>
+<ul>
+<li>Creating a problem ticket at https://ticket.grid.iu.edu/goc/open (<em>preferred</em>)</li>
+<li>Calling the GOC phone at 317-278-9699</li>
+<li>Emailing a description to goc@opensciencegrid.org</li>
+</ul>
+<h2 id="responsibilities">Responsibilities</h2>
+<h3 id="customer-responsibilities">Customer Responsibilities</h3>
+<p>OSG TWiki customers agree to:</p>
+<ul>
+<li>Use the OSG VOMS service for purposes of VO or OSG approved work only.</li>
+<li>Alert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.</li>
+<li>Contact the GOC by means outlined in the <a href="#customer-problem-reporting">Customer Problem Reporting</a> section of this document if they encounter any service issues.</li>
+<li>Be willing and available to provide information within one business day for any High level issues reported.</li>
+<li>Provide testing for the VOMS service within the time frame defined in the <a href="#requests-for-service-enhancement">Requests for Service Enhancements</a> section.</li>
+<li>Alert the GOC when problems are encountered during testing.</li>
+</ul>
+<h3 id="osg-operations-responsibilities">OSG Operations Responsibilities</h3>
+<p>General responsibilities:
+   * Create and add appropriate documentation to the VOMS users for appropriate use of the VOMS service.
+   * Meet response times associated with the priority assigned to Customer issues.
+   * Maintain appropriately trained staff.
+   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
+   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.</p>
+<p>GOC Service Desk Responsibilities:
+   * Log and track all Customer requests for service through the OSG ticketing system.</p>
+<p>Database &amp; Application Services responsibilities:
+   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.
+   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.</p>
+<h2 id="service-measuring-and-reporting">Service Measuring and Reporting</h2>
+<p>The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):</p>
+<table>
+<thead>
+<tr>
+<th><em>Report Name</em></th>
+<th><em>Reporting Interval</em></th>
+<th><em>Delivery Method</em></th>
+<th><em>Responsible Party</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>System Uptime</td>
+<td>Monthly</td>
+<td>Web Posting</td>
+<td>GOC</td>
+</tr>
+<tr>
+<td>Service Uptime</td>
+<td>Monthly</td>
+<td>Web Posting</td>
+<td>GOC</td>
+</tr>
+<tr>
+<td>Report of Critical and High Priority Issues</td>
+<td>Quarterly</td>
+<td>Web Posting</td>
+<td>GOC</td>
+</tr>
+</tbody>
+</table>
+<p>These reports will be posted in Appendix E of this document.</p>
+<h2 id="sla-validity-period">SLA Validity Period</h2>
+<p>This SLA will be in affect for one year.</p>
+<h2 id="sla-review-procedure">SLA Review Procedure</h2>
+<p>This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.</p>
+<h2 id="references">References</h2>
+<h1 id="appendix-a-customer-information">Appendix A - Customer Information</h1>
+<p>All VO end-users who are members of the MIS, CSIU, or OSGEDU VO and OSG Staff are considered customers.</p>
+<h1 id="appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies</h1>
+<p>The VOMS service is dependent on the following services to collect and distribute information:
+   * Local Network, Hardware, OS, VOMS Software, and Apache</p>
+<h1 id="appendix-c-supported-hardware-and-software">Appendix C - Supported Hardware and Software</h1>
+<h2 id="supported-hardware">Supported Hardware</h2>
+<p>The following hardware is supported:
+   * Physical devices used to provide the service.
+   * Physical devices used to provide the environment used to house the service.</p>
+<h2 id="hardware-services">Hardware Services</h2>
+<p>The following hardware services are provided:
+   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.
+   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.
+   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.
+   * Diagnosis. OSG Operations will diagnose problems with service related hardware.
+   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.</p>
+<p>Performing repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.</p>
+<p>Obtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.</p>
+<ul>
+<li>Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.</li>
+</ul>
+<h2 id="software-services">Software Services</h2>
+<p>Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the <a href="#osg-operations-responsibilities">OSG Operations Responsibilities</a> section of this document.</p>
+<h2 id="software-costs">Software Costs</h2>
+<p>IU and the Grid Operations Center bears all costs for new and replacement software.</p>
+<h1 id="appendix-d-approval">Appendix D - Approval</h1>
+<table>
+<thead>
+<tr>
+<th><em>Approved By</em></th>
+<th><em>Position</em></th>
+<th><em>Date</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="appendix-e-metric-reports">Appendix E - Metric Reports</h1>
+<ul>
+<li>[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]</li>
+</ul>
+<h3 id="comments">Comments</h3>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../WeeklyMinutes/27Feb2017/" class="btn btn-neutral" title="27 February 2017"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/opensciencegrid/operations" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../WeeklyMinutes/27Feb2017/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
