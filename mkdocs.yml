@@ -22,7 +22,7 @@ pages:
   - '20 March 2017': 'WeeklyMinutes/20Mar2017.md'
   - '13 March 2017': 'WeeklyMinutes/13Mar2017.md'
   - '27 February 2017': 'WeeklyMinutes/27Feb2017.md'
-- Service Level Agreements
+- Service Level Agreements:
   - 'VOMS': 'SLA/voms.md'
 
 markdown_extensions:
