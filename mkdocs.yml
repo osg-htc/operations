@@ -24,6 +24,9 @@ pages:
   - '27 February 2017': 'WeeklyMinutes/27Feb2017.md'
 - Service Level Agreements:
   - 'VOMS': 'SLA/voms.md'
+  - 'MyOSG': 'SLA/myosg.md'
+  - 'OASIS': 'SLA/oasis-replica.md'
+  - 'OIM': 'SLA/oim.md'
 
 markdown_extensions:
   - admonition
