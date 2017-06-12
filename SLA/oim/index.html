@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>VOMS - OSG Documentation</title>
+  <title>OIM - OSG Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "VOMS";
-    var mkdocs_page_input_path = "SLA/voms.md";
-    var mkdocs_page_url = "/SLA/voms/";
+    var mkdocs_page_name = "OIM";
+    var mkdocs_page_input_path = "SLA/oim.md";
+    var mkdocs_page_url = "/SLA/oim/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -117,12 +117,24 @@
 		
     <span class="caption-text">Service Level Agreements</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../voms/">VOMS</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../myosg/">MyOSG</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../oasis-replica/">OASIS</a>
+                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">VOMS</a>
+    <a class="current" href="./">OIM</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#osg-mis-csiu-and-osgedu-voms-service-level-agreement">OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement</a></li>
+    <li class="toctree-l3"><a href="#osg-information-management-service-level-agreement">OSG Information Management Service Level Agreement</a></li>
     
         <ul>
         
@@ -189,26 +201,8 @@
 
     <li class="toctree-l3"><a href="#appendix-e-metric-reports">Appendix E - Metric Reports</a></li>
     
-        <ul>
-        
-            <li><a class="toctree-l4" href="#comments">Comments</a></li>
-        
-        </ul>
-    
 
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../myosg/">MyOSG</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../oasis-replica/">OASIS</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../oim/">OIM</a>
                 </li>
     </ul>
 	    </li>
@@ -239,10 +233,10 @@
         
       
     
-    <li>VOMS</li>
+    <li>OIM</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/voms.md"
+        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/oim.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -252,7 +246,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="osg-mis-csiu-and-osgedu-voms-service-level-agreement">OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement</h1>
+                <h1 id="osg-information-management-service-level-agreement">OSG Information Management Service Level Agreement</h1>
 <h2 id="version-control">Version Control</h2>
 <table>
 <thead>
@@ -266,29 +260,30 @@
 <tbody>
 <tr>
 <td>1.1</td>
-<td>3-18-2010</td>
+<td>3-17-2010</td>
 <td>Rob Quick</td>
 <td>First Draft</td>
 </tr>
 <tr>
 <td>1.2</td>
-<td>3-18-2011</td>
+<td>4-2-2013</td>
 <td>Rob Quick</td>
-<td>Updated for CSIU</td>
+<td>New additions due to OSG PKI Interface</td>
 </tr>
 </tbody>
 </table>
 <h2 id="executive-summary">Executive Summary</h2>
-<p>This SLA is an agreement between OSG Operations and the MIS, CSIU, and OSGEDU VOs and Stakeholders describing details of the VOMS Service. The VOMS is used for membership services related to the VOs mentioned in the title of this document. The VOMS service runs on hardware at Indiana University and provides the VOMS user membership service. The web address for the TWiki is https://voms.grid.iu.edu:8443.</p>
+<p>This SLA is an agreement between OSG Operations and the OSG Management and Stakeholders describing details of the OSG Information Management (OIM) registration and topology database and it's API. The OIM service runs on hardware at Indiana University and provides a resource topology database along with a registration API.</p>
 <h2 id="owners">Owners</h2>
-<p>This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the serviced VOs.</p>
+<p>This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.</p>
 <h2 id="service-name-and-description">Service Name and Description</h2>
 <h3 id="name">Name</h3>
-<p>MIS, CSIU, and OSGEDU VOMS.</p>
+<p>Production OIM Service</p>
 <h3 id="description">Description</h3>
-<p>The VOMS is used for membership services related to the VOs mentioned in the title of this document.</p>
+<p>The OIM service is the topology management system for the OSG. It holds information about people and resources involved in the OSG. The OIM service consists of a MySQL database and a web-based API.</p>
+<p>OIM is also used to satisfy certificate requests made by OSG users.</p>
 <h2 id="security-considerations">Security Considerations</h2>
-<p>VOMS Administration is limited to the staff of the VOs represented. Read access to non-secure information is public.</p>
+<p>All information collected and distributed by the OIM is protected by OSG RA certificate authentication. While some information is deemed public, there is restricted access to personal information such as contact email and phone records.</p>
 <h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</h2>
 <p>This section deals with unplanned outages. Please see <a href="#requests-for-service-enhancement">Requests for Service Enhancement</a> for information on planned maintenance outages.</p>
 <table>
@@ -308,8 +303,8 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>The VOMS Service does not have critical priority</td>
-<td>The issue causes a full service outage rendering the VOMS unavailable for registration or distribution</td>
+<td>The OIM Service does not have critical priority</td>
+<td>The issue causes a full service outage rendering OIM unavailable for registration or distribution</td>
 <td>The issue causes short (less than 15 minute) periods of unstable or inconsistent performance</td>
 <td>The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance</td>
 </tr>
@@ -321,7 +316,7 @@
 </tr>
 <tr>
 <td>N/A</td>
-<td>The issue affects all VOMS users</td>
+<td>The issue affects all OIM users</td>
 <td>The issue may or may not affect all users</td>
 <td>The issue affects only a small number of users</td>
 </tr>
@@ -390,6 +385,7 @@
 </tr>
 </tbody>
 </table>
+<p>Detailed information on contacts are viewable on the following <a href="https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&amp;summary_attrs_showhierarchy=on&amp;summary_attrs_showservice=on&amp;summary_attrs_showfqdn=on&amp;summary_attrs_showcontact=on&amp;gip_status_attrs_showtestresults=on&amp;gip_status_attrs_showfqdn=on&amp;account_type=cumulative_hours&amp;ce_account_type=gip_vo&amp;se_account_type=vo_transfer_volume&amp;start_type=7daysago&amp;start_date=09/15/2009&amp;end_type=now&amp;end_date=09/15/2009&amp;site_10047=on&amp;rg=on&amp;rg_246=on&amp;gridtype=on&amp;gridtype_1=on&amp;voown=on&amp;voown_25=on&amp;active=on&amp;active_value=1&amp;disable_value=1">MyOSG URL</a>, and are maintained within the</p>
 <p>Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly <a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">Operations</a> and
 <a href="https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes">Production</a> meetings.</p>
 <h2 id="service-availability-and-outages">Service Availability and Outages</h2>
@@ -397,35 +393,37 @@
 <h2 id="service-support-hours">Service Support Hours</h2>
 <p>The software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.</p>
 <h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures</h2>
-<p>All software issues should be reported to the GOC immediately by <a href="https://ticket.grid.iu.edu/goc/open">trouble ticket</a> web submission.</p>
+<p>All software issues should be reported to the GOC immediately by <a href="https://ticket.grid.iu.edu/goc/oim">trouble ticket</a> web submission.</p>
 <h2 id="requests-for-service-enhancement">Requests for Service Enhancement</h2>
 <p>This section deals with planned maintenance outages. Please see <a href="#service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</a> for information on unplanned outages.</p>
 <p>The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.</p>
 <h2 id="customer-problem-reporting">Customer Problem Reporting</h2>
-<p>The GOC provides operators 24x7x365. VOMS service problems should be reported immediately by one of the following mechanisms.</p>
+<p>The GOC provides operators 24x7x365. OIM service problems should be reported immediately by one of the following mechanisms.</p>
 <ul>
-<li>Creating a problem ticket at https://ticket.grid.iu.edu/goc/open (<em>preferred</em>)</li>
+<li>Creating a problem ticket at https://ticket.grid.iu.edu/goc/oim (<em>preferred</em>)</li>
 <li>Calling the GOC phone at 317-278-9699</li>
 <li>Emailing a description to goc@opensciencegrid.org</li>
 </ul>
 <h2 id="responsibilities">Responsibilities</h2>
 <h3 id="customer-responsibilities">Customer Responsibilities</h3>
-<p>OSG TWiki customers agree to:</p>
+<p>OIM customers agree to:</p>
 <ul>
-<li>Use the OSG VOMS service for purposes of VO or OSG approved work only.</li>
-<li>Alert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.</li>
-<li>Contact the GOC by means outlined in the <a href="#customer-problem-reporting">Customer Problem Reporting</a> section of this document if they encounter any service issues.</li>
+<li>Use the OIM service for purposes of VO or OSG approved work only.</li>
+<li>Alert the GOC if they are going to use the OIM Service in a non-standard way, this includes testing or anticipated mass increases in usage.</li>
+<li>Contact the GOC by means outlined in the <a href="https://github.com/opensciencegrid/operations/blob/master/SLA/oim.md#customer-problem-reporting">Customer Problem Reporting</a> section of this document if they encounter any service issues.</li>
 <li>Be willing and available to provide information within one business day for any High level issues reported.</li>
-<li>Provide testing for the VOMS service within the time frame defined in the <a href="#requests-for-service-enhancement">Requests for Service Enhancements</a> section.</li>
+<li>Provide testing for the OSG OIM service within the time frame defined in the <a href="https://github.com/opensciencegrid/operations/blob/master/SLA/oim.md#requests-for-service-enhancement">Requests for Service Enhancements</a> section.</li>
 <li>Alert the GOC when problems are encountered during testing.</li>
 </ul>
 <h3 id="osg-operations-responsibilities">OSG Operations Responsibilities</h3>
 <p>General responsibilities:
-   * Create and add appropriate documentation to the VOMS users for appropriate use of the VOMS service.
+   * Create and add appropriate documentation to the OSG TWiki for appropriate use of the OIM.
    * Meet response times associated with the priority assigned to Customer issues.
    * Maintain appropriately trained staff.
    * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
-   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.</p>
+   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.
+Proposed Change:
+   * Update the OSG RA and GA communities of changes that affect the OIM PKI usage.</p>
 <p>GOC Service Desk Responsibilities:
    * Log and track all Customer requests for service through the OSG ticketing system.</p>
 <p>Database &amp; Application Services responsibilities:
@@ -470,10 +468,10 @@
 <p>This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.</p>
 <h2 id="references">References</h2>
 <h1 id="appendix-a-customer-information">Appendix A - Customer Information</h1>
-<p>All VO end-users who are members of the MIS, CSIU, or OSGEDU VO and OSG Staff are considered customers.</p>
+<p>All OIM service end-users who are members of an OSG VO and OSG Staff are considered customers.</p>
 <h1 id="appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies</h1>
-<p>The VOMS service is dependent on the following services to collect and distribute information:
-   * Local Network, Hardware, OS, VOMS Software, and Apache</p>
+<p>The OIM service is dependent on the following services to collect and distribute information:
+   * Local Network, Hardware, OS, Apache, and MySQL</p>
 <h1 id="appendix-c-supported-hardware-and-software">Appendix C - Supported Hardware and Software</h1>
 <h2 id="supported-hardware">Supported Hardware</h2>
 <p>The following hardware is supported:
@@ -516,7 +514,6 @@
 <ul>
 <li>[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]</li>
 </ul>
-<h3 id="comments">Comments</h3>
               
             </div>
           </div>
@@ -524,10 +521,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../myosg/" class="btn btn-neutral float-right" title="MyOSG">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../../WeeklyMinutes/27Feb2017/" class="btn btn-neutral" title="27 February 2017"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../oasis-replica/" class="btn btn-neutral" title="OASIS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -555,10 +550,8 @@
           <a href="https://github.com/opensciencegrid/operations" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../WeeklyMinutes/27Feb2017/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../oasis-replica/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../myosg/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

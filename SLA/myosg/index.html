@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>VOMS - OSG Documentation</title>
+  <title>MyOSG - OSG Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "VOMS";
-    var mkdocs_page_input_path = "SLA/voms.md";
-    var mkdocs_page_url = "/SLA/voms/";
+    var mkdocs_page_name = "MyOSG";
+    var mkdocs_page_input_path = "SLA/myosg.md";
+    var mkdocs_page_url = "/SLA/myosg/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -117,12 +117,16 @@
 		
     <span class="caption-text">Service Level Agreements</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../voms/">VOMS</a>
+                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">VOMS</a>
+    <a class="current" href="./">MyOSG</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#osg-mis-csiu-and-osgedu-voms-service-level-agreement">OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement</a></li>
+    <li class="toctree-l3"><a href="#myosg-service-level-agreement">MyOSG Service Level Agreement</a></li>
     
         <ul>
         
@@ -187,20 +191,10 @@
     <li class="toctree-l3"><a href="#appendix-d-approval">Appendix D - Approval</a></li>
     
 
-    <li class="toctree-l3"><a href="#appendix-e-metric-reports">Appendix E - Metric Reports</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#comments">Comments</a></li>
-        
-        </ul>
+    <li class="toctree-l3"><a href="#appendix-e-availability-and-reliability-publishing">Appendix E - Availability and Reliability Publishing</a></li>
     
 
     </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../myosg/">MyOSG</a>
                 </li>
                 <li class="">
                     
@@ -239,10 +233,10 @@
         
       
     
-    <li>VOMS</li>
+    <li>MyOSG</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/voms.md"
+        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/myosg.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -252,7 +246,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="osg-mis-csiu-and-osgedu-voms-service-level-agreement">OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement</h1>
+                <h1 id="myosg-service-level-agreement">MyOSG Service Level Agreement</h1>
 <h2 id="version-control">Version Control</h2>
 <table>
 <thead>
@@ -265,30 +259,42 @@
 </thead>
 <tbody>
 <tr>
-<td>1.1</td>
-<td>3-18-2010</td>
+<td><a href="https://github.com/opensciencegrid/operations/blob/master/SLA/MyOSGServiceLevelAgreement?rev=2">1.1</a></td>
+<td>5-26-2009</td>
 <td>Rob Quick</td>
 <td>First Draft</td>
 </tr>
 <tr>
-<td>1.2</td>
-<td>3-18-2011</td>
+<td><a href="https://github.com/opensciencegrid/operations/blob/master/SLA/MyOSGServiceLevelAgreement?rev=7">1.2</a></td>
+<td>9-10-2009</td>
 <td>Rob Quick</td>
-<td>Updated for CSIU</td>
+<td>Second Draft</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>9-15-2009</td>
+<td>Rob Quick</td>
+<td>Final Draft, Ready for Circulation</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>11-30-2009</td>
+<td>Rob Quick</td>
+<td>FNAL Updates</td>
 </tr>
 </tbody>
 </table>
 <h2 id="executive-summary">Executive Summary</h2>
-<p>This SLA is an agreement between OSG Operations and the MIS, CSIU, and OSGEDU VOs and Stakeholders describing details of the VOMS Service. The VOMS is used for membership services related to the VOs mentioned in the title of this document. The VOMS service runs on hardware at Indiana University and provides the VOMS user membership service. The web address for the TWiki is https://voms.grid.iu.edu:8443.</p>
+<p>This SLA is an agreement between OSG Operations at Indiana University and the OSG Management describing details of the MyOSG presentation tools. The MyOSG service runs on hardware at Indiana University and gathers data from several OSG sources including but not limited to: RSV, OIM, BDII, GIP-Validator, and Gratia. MyOSG displays information from many different sources in many different formats. This SLA is inclusive only of selected service used to provide job level decisions or data movement, most notably the XML status based information. A complete list of services presented is in Appendix B.</p>
 <h2 id="owners">Owners</h2>
-<p>This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the serviced VOs.</p>
+<p>The MyOSG SLA is owned by OSG Operations Center and Indiana University and will be reviewed and agreed upon by the OSG Executive Team.</p>
 <h2 id="service-name-and-description">Service Name and Description</h2>
 <h3 id="name">Name</h3>
-<p>MIS, CSIU, and OSGEDU VOMS.</p>
+<p>GOC Production MyOSG</p>
 <h3 id="description">Description</h3>
-<p>The VOMS is used for membership services related to the VOs mentioned in the title of this document.</p>
+<p>The GOC Production MyOSG service presents information from several OSG information sources and presents the information in various forms including web page, Universal Widget API, and XML. The MyOSG service consists of a web server and software consolidators to translate incoming data from several sources to be displayed in MyOSG.</p>
 <h2 id="security-considerations">Security Considerations</h2>
-<p>VOMS Administration is limited to the staff of the VOs represented. Read access to non-secure information is public.</p>
+<p>MyOSG distributes some private contact information based on certificate authentication. It will be subject to Indiana University institutional policy. Direct access to any of the hardware or software will be restricted to OSG Operations staff. Other OSG staff, upon request and GOC review, may be given access to a development version of MyOSG for experimenting with new software, changes in information providers, or for other testing. OSG Operations reserves the right to allow or not allow such requests based on its internal review.</p>
 <h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</h2>
 <p>This section deals with unplanned outages. Please see <a href="#requests-for-service-enhancement">Requests for Service Enhancement</a> for information on planned maintenance outages.</p>
 <table>
@@ -308,8 +314,8 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>The VOMS Service does not have critical priority</td>
-<td>The issue causes a full service outage rendering the VOMS unavailable for registration or distribution</td>
+<td>The issue causes a full service outage rendering the status information provided by MyOSG used by any other OSG services to move data or submit jobs</td>
+<td>The issue causes a full service outage rendering the status information provided by MyOSG used by any other OSG services to move data or submit jobs</td>
 <td>The issue causes short (less than 15 minute) periods of unstable or inconsistent performance</td>
 <td>The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance</td>
 </tr>
@@ -320,10 +326,22 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>N/A</td>
-<td>The issue affects all VOMS users</td>
-<td>The issue may or may not affect all users</td>
-<td>The issue affects only a small number of users</td>
+<td>The issue affects all MyOSG users</td>
+<td>The issue affects a subset of MyOSG users</td>
+<td>The issue may or may not affect all MyOSG users</td>
+<td>The issue affects only a small number of MyOSG users</td>
+</tr>
+<tr>
+<td><em>Workaround</em></td>
+<td>* *</td>
+<td>* *</td>
+<td>* *</td>
+</tr>
+<tr>
+<td>No workaround will be necessary</td>
+<td>No workaround will be necessary</td>
+<td>No workaround will be necessary</td>
+<td>No workaround will be necessary</td>
 </tr>
 <tr>
 <td><em>Response Time</em></td>
@@ -332,10 +350,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>N/A</td>
+<td>Within one (1) hour</td>
+<td>Issue will be addressed by the next business day</td>
 <td>Within the next business day</td>
 <td>Within the next business day</td>
-<td>Within five (5) business days</td>
 </tr>
 <tr>
 <td><em>Resolution Time</em></td>
@@ -344,10 +362,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>N/A</td>
-<td>The maximum acceptable resolution time is one full (1) business day</td>
-<td>The maximum acceptable resolution time is five (5) business days</td>
-<td>The maximum acceptable resolution time is thirty (30) business days</td>
+<td>The maximum acceptable resolution time is four (4) continuous hours, after initial response time</td>
+<td>The maximum acceptable resolution time is 24 continuous hours, after the initial response time</td>
+<td>The maximum acceptable resolution time is five (7) business days</td>
+<td>The maximum acceptable resolution time is (30) business days</td>
 </tr>
 <tr>
 <td><em>Escalates Every</em></td>
@@ -356,10 +374,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>N/A</td>
+<td>One Hour</td>
+<td>Two Hour</td>
 <td>One Day</td>
 <td>One Week</td>
-<td>One Month</td>
 </tr>
 </tbody>
 </table>
@@ -390,47 +408,54 @@
 </tr>
 </tbody>
 </table>
+<p>Detailed information on contacts are viewable on the following <a href="https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&amp;summary_attrs_showhierarchy=on&amp;summary_attrs_showservice=on&amp;summary_attrs_showfqdn=on&amp;summary_attrs_showcontact=on&amp;gip_status_attrs_showtestresults=on&amp;gip_status_attrs_showfqdn=on&amp;account_type=cumulative_hours&amp;ce_account_type=gip_vo&amp;se_account_type=vo_transfer_volume&amp;start_type=7daysago&amp;start_date=09/15/2009&amp;end_type=now&amp;end_date=09/15/2009&amp;site_10047=on&amp;rg=on&amp;rg_246=on&amp;gridtype=on&amp;gridtype_1=on&amp;voown=on&amp;voown_25=on&amp;active=on&amp;active_value=1&amp;disable_value=1">MyOSG URL</a>, and are maintained within
+the <a href="https://oim.grid.iu.edu">OSG Information Management</a> system (for editing purposes only).</p>
 <p>Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly <a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">Operations</a> and
 <a href="https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes">Production</a> meetings.</p>
 <h2 id="service-availability-and-outages">Service Availability and Outages</h2>
-<p>The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.</p>
+<p>The GOC will strive for 99% service availability. If service availability falls below 99% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.</p>
+<p>A maximum of two non-scheduled outages will be accepted by OSG during each six month period of service. If the GOC experiences more than the allotted outage, a service plan will be submitted to the OSG stakeholders with plans to restore the service to an acceptable level of operations.</p>
 <h2 id="service-support-hours">Service Support Hours</h2>
-<p>The software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.</p>
+<p>The MyOSG service is supported 24x7 by the GOC and Indiana University. Critical and High level issues will result in response within (1) hour. All other issues will be investigated by the next business day.</p>
 <h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures</h2>
-<p>All software issues should be reported to the GOC immediately by <a href="https://ticket.grid.iu.edu/goc/open">trouble ticket</a> web submission.</p>
+<p>All MyOSG issues should be reported to the GOC immediately by <a href="http://ticket.grid.iu.edu">trouble ticket</a> web submission. If the problem is deemed critical, a GOC staff member will be alerted immediately.</p>
 <h2 id="requests-for-service-enhancement">Requests for Service Enhancement</h2>
 <p>This section deals with planned maintenance outages. Please see <a href="#service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</a> for information on unplanned outages.</p>
-<p>The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.</p>
+<p>The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. No alteration or deletions will be brought to the production MyOSG without a minimum of ten (10) business days of testing. New human-interface features or new machine readable interfaces may be brought to production with five (5) business days of testing from the feature requester. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.</p>
 <h2 id="customer-problem-reporting">Customer Problem Reporting</h2>
-<p>The GOC provides operators 24x7x365. VOMS service problems should be reported immediately by one of the following mechanisms.</p>
+<p>The GOC provides operators 24x7x365. MyOSG problems should be reported immediately by one of the following mechanisms.</p>
 <ul>
-<li>Creating a problem ticket at https://ticket.grid.iu.edu/goc/open (<em>preferred</em>)</li>
+<li>Creating a problem ticket at https://ticket.grid.iu.edu/goc (<em>preferred</em>)</li>
 <li>Calling the GOC phone at 317-278-9699</li>
 <li>Emailing a description to goc@opensciencegrid.org</li>
 </ul>
 <h2 id="responsibilities">Responsibilities</h2>
 <h3 id="customer-responsibilities">Customer Responsibilities</h3>
-<p>OSG TWiki customers agree to:</p>
+<p>MyOSG Customers agree to:</p>
 <ul>
-<li>Use the OSG VOMS service for purposes of VO or OSG approved work only.</li>
-<li>Alert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.</li>
-<li>Contact the GOC by means outlined in the <a href="#customer-problem-reporting">Customer Problem Reporting</a> section of this document if they encounter any service issues.</li>
-<li>Be willing and available to provide information within one business day for any High level issues reported.</li>
-<li>Provide testing for the VOMS service within the time frame defined in the <a href="#requests-for-service-enhancement">Requests for Service Enhancements</a> section.</li>
-<li>Alert the GOC when problems are encountered during testing.</li>
+<li>Use the MyOSG to gather information about OSG resources for purposes of VO approved work only.</li>
+<li>Alert the GOC if they are going to use the MyOSG in a non-standard way, this includes testing or anticipated mass increases in usage.</li>
+<li>Contact the GOC by means outlined in the <a href="https://github.com/opensciencegrid/operations/blob/master/SLA/MyOSGServiceLevelAgreement#customer-problem-reporting">Customer Problem Reporting</a> section of this document if they encounter any service issues.</li>
+<li>Be willing and available to provide critical information within one hour of reporting a critical or high priority incident or one business day for any other criticality.</li>
+<li>Provide testing for MyOSG-ITB within the time frame defined in the <a href="https://github.com/opensciencegrid/operations/blob/master/SLA/MyOSGServiceLevelAgreement#requests-for-service-enhancement">Requests for Service Enhancements</a> section.</li>
+<li>Alert the GOC and MyOSG developers when problems are encountered during testing.</li>
+<li>The customer or GOC will be allowed to request an additional ten (10) business days of testing if problems are encountered or testing is not completed at then end of the initial ten (10) business day testing period. The customer must alert the GOC two (2) business days before the scheduled release if they would like this additional testing time.</li>
 </ul>
 <h3 id="osg-operations-responsibilities">OSG Operations Responsibilities</h3>
 <p>General responsibilities:
-   * Create and add appropriate documentation to the VOMS users for appropriate use of the VOMS service.
+   * Create and add appropriate documentation to the OSG TWiki for appropriate use of MyOSG.
    * Meet response times associated with the priority assigned to Customer issues.
    * Maintain appropriately trained staff.
-   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
-   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.</p>
+   * Notify the community of any changes to the machine readable MyOSG pages without (20) business days notification. Notification will be sent to the OSG-Operations mailing list and to each OSG Support Center, along with discussion in the <a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">OSG Operations Meeting</a>.
+   * Operations will provide backward compatible views to the best of our ability, due to changes requested in OIM or MyOSG by OSG stakeholders this can not be guaranteed.
+   * Insure the compatibility of downtime XML data for six (6) months.
+   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.</p>
 <p>GOC Service Desk Responsibilities:
    * Log and track all Customer requests for service through the OSG ticketing system.</p>
 <p>Database &amp; Application Services responsibilities:
-   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.
-   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.</p>
+   * Schedule maintenance (downtime) outside of normal business hours (Eastern Time) unless circumstances warrant performing maintenance at another time.
+   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to production workload.
+   * Alert the community of scheduled maintenance periods at least five business days prior to the start of a service affecting maintenance window.</p>
 <h2 id="service-measuring-and-reporting">Service Measuring and Reporting</h2>
 <p>The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):</p>
 <table>
@@ -463,22 +488,27 @@
 </tr>
 </tbody>
 </table>
-<p>These reports will be posted in Appendix E of this document.</p>
 <h2 id="sla-validity-period">SLA Validity Period</h2>
 <p>This SLA will be in affect for one year.</p>
 <h2 id="sla-review-procedure">SLA Review Procedure</h2>
 <p>This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.</p>
 <h2 id="references">References</h2>
 <h1 id="appendix-a-customer-information">Appendix A - Customer Information</h1>
-<p>All VO end-users who are members of the MIS, CSIU, or OSGEDU VO and OSG Staff are considered customers.</p>
+<p>All MyOSG end-users who are members of an OSG VO are considered customers.</p>
 <h1 id="appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies</h1>
-<p>The VOMS service is dependent on the following services to collect and distribute information:
-   * Local Network, Hardware, OS, VOMS Software, and Apache</p>
+<p>MyOSG is critically dependent on the following services to serve status information:
+   * Local Network, Hardware, OS, Apache and MySQL on the MyOSG instance</p>
+<p>MyOSG using the following OSG services to display information but is not directly dependent on their uptime:
+   * OIM (Dependent on Replicated OIM Instance; if OIM is down, cached information is used)
+   * RSV Data Collection (Dependent on RSV results; if RSV collector or site-RSV-clients are down, then cached information is used)
+   * BDII
+   * GIP-Validator
+   * Gratia (Nebraska Interface)</p>
 <h1 id="appendix-c-supported-hardware-and-software">Appendix C - Supported Hardware and Software</h1>
 <h2 id="supported-hardware">Supported Hardware</h2>
 <p>The following hardware is supported:
-   * Physical devices used to provide the service.
-   * Physical devices used to provide the environment used to house the service.</p>
+   * Physical devices used to provide the MyOSG service.
+   * Physical devices used to provide the environment used to house the MyOSG service.</p>
 <h2 id="hardware-services">Hardware Services</h2>
 <p>The following hardware services are provided:
    * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.
@@ -492,7 +522,8 @@
 <li>Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.</li>
 </ul>
 <h2 id="software-services">Software Services</h2>
-<p>Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the <a href="#osg-operations-responsibilities">OSG Operations Responsibilities</a> section of this document.</p>
+<p>Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth
+in the <a href="#osg-operations-responsibilities">OSG Operations Responsibilities</a> section of this document.</p>
 <h2 id="software-costs">Software Costs</h2>
 <p>IU and the Grid Operations Center bears all costs for new and replacement software.</p>
 <h1 id="appendix-d-approval">Appendix D - Approval</h1>
@@ -506,17 +537,110 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Rob Quick</td>
+<td>OSG Operations Coordinator</td>
+<td>11-10-09</td>
+</tr>
+<tr>
+<td>Abhishek Singh Rana <br> (Based on public review by VOs; <br> input from Fermilab-VO &amp; Gratia, <br> NYSGrid, SBGrid, STAR)</td>
+<td>VOs Group Coordinator</td>
+<td>12-04-2009</td>
+</tr>
+<tr>
+<td>Brian Bockelman</td>
+<td>MyOSG Liason / Measurements and Metrics</td>
+<td>11-10-2009</td>
 </tr>
 </tbody>
 </table>
-<h1 id="appendix-e-metric-reports">Appendix E - Metric Reports</h1>
+<h1 id="appendix-e-availability-and-reliability-publishing">Appendix E - Availability and Reliability Publishing</h1>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Year</th>
+<th>Availability</th>
+<th>Reliability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>May</td>
+<td>2010</td>
+<td>100.00%</td>
+<td>100.00%</td>
+</tr>
+<tr>
+<td>June</td>
+<td>2010</td>
+<td>100.00%</td>
+<td>100.00%</td>
+</tr>
+<tr>
+<td>July</td>
+<td>2010</td>
+<td>99.98%</td>
+<td>99.98%</td>
+</tr>
+<tr>
+<td>August</td>
+<td>2010</td>
+<td>99.93%</td>
+<td>99.93%</td>
+</tr>
+<tr>
+<td>September</td>
+<td>2010</td>
+<td>99.95%</td>
+<td>100.00%</td>
+</tr>
+<tr>
+<td>October</td>
+<td>2010</td>
+<td>99.98%</td>
+<td>99.98%</td>
+</tr>
+<tr>
+<td>November</td>
+<td>2010</td>
+<td>99.91%</td>
+<td>99.91%</td>
+</tr>
+<tr>
+<td>December</td>
+<td>2010</td>
+<td>99.98%</td>
+<td>99.98%</td>
+</tr>
+<tr>
+<td>January</td>
+<td>2011</td>
+<td>99.98%</td>
+<td>99.98%</td>
+</tr>
+<tr>
+<td>February</td>
+<td>2011</td>
+<td>99.93%</td>
+<td>99.93%</td>
+</tr>
+<tr>
+<td>March</td>
+<td>2011</td>
+<td>99.91%</td>
+<td>99.91%</td>
+</tr>
+<tr>
+<td>April</td>
+<td>2011</td>
+<td>99.98%</td>
+<td>99.98%</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]</li>
 </ul>
-<h3 id="comments">Comments</h3>
               
             </div>
           </div>
@@ -524,10 +648,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../myosg/" class="btn btn-neutral float-right" title="MyOSG">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../oasis-replica/" class="btn btn-neutral float-right" title="OASIS">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../WeeklyMinutes/27Feb2017/" class="btn btn-neutral" title="27 February 2017"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../voms/" class="btn btn-neutral" title="VOMS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -555,10 +679,10 @@
           <a href="https://github.com/opensciencegrid/operations" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../WeeklyMinutes/27Feb2017/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../voms/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../myosg/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../oasis-replica/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
