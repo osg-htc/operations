@@ -22,7 +22,7 @@ GOC Service Desk
 The OSG Operations Team provides several service desk administrative and contact services for the OSG. These include front line contact, community notification of OSG events, issue troubleshooting and tracking, and other administrative tasks necessary for the smooth operation of the OSG Collaboration.
 
 ## Security Considerations
-Physical access to the GRNOC Phone lines is restricted by keycard access, access to the [[goc@opensciencegrid.org][goc at opensciencegrid dot org]] is restricted by shared password authentication. GOC related tools with access to non-public information are restricted by DOE Certificate Authority Authentication.
+Physical access to the GRNOC Phone lines is restricted by keycard access, access to the [goc@opensciencegrid.org](goc at opensciencegrid dot org) is restricted by shared password authentication. GOC related tools with access to non-public information are restricted by DOE Certificate Authority Authentication.
 
 ## Contact Points
 
