@@ -128,8 +128,8 @@ All OSG collaborators and VO representatives are considered customers.
 | Approved By | Position | Date |
 | ----------- | -------- | ---- |
 | Rob Quick | Operations Coordinator | |
-| Dan Fraser | Production Coordinator | |
-| Ruth Pordes | OSG Excutive Director | |
+| Miron Livny | Technical Director | |
+| Frank Wuerthwein | OSG Excutive Director | |
 
 
 -- Main.RobQ - 21 May 2010
