@@ -1,2 +1,2 @@
-# Future Home of OSG Operations Webpages
+# Home of OSG Operations Webpages
 OSG Operations Web Pages
