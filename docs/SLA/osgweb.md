@@ -32,7 +32,7 @@ The web application has access control in that all content changes are tagged an
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -56,7 +56,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | 3rd | |
 | 4th | |
 
-Any ongoing "High" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/blob/master/SLA/ProductionMeetingMinutes) and
+Any ongoing "High" or "Elevated" level issues will be discussed at the weekly Operations and Production meetings.
 
 ## Service Availability and Outages
 
@@ -70,7 +70,7 @@ All software issues should be reported to the GOC by [trouble ticket](https://ti
 
 ## Requests for Service Enhancements
 
-This section deals with planned maintenance outages. Please see [Service Target Response Priorities and Response Times](#service-target-response-prioriti) for information on unplanned outages.
+This section deals with planned maintenance outages. Please see [Service Target Response Priorities and Response Times](#service-target-response-priorities-and-response-times) for information on unplanned outages.
 
 The Service Providers will respond to customer requests for service enhancements based on the Fermilab Computing Division's determination of the necessity and desirability of the enhancement. The Fermilab Computing Division reserves the right to enhance the physical environment of the service based on Fermilab needs. No enhancement will occur without advanced notice to the OSG Executive Team.
 

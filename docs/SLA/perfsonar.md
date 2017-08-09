@@ -30,7 +30,7 @@ All information collected and distributed by PerfSonar is public.
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -57,7 +57,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 Detailed information on contacts are viewable on the following [MyOSG URL](http://tinyurl.com/owo4olg),
 and are maintained within the [OSG Information Management](https://oim.grid.iu.edu) system (for editing purposes only).
 
-Any ongoing "High" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/blob/master/SLA/ProductionMeetingMinutes) and
+Any ongoing "High" or "Elevated" level issues will be discussed at the weekly Operations and Production meetings.
 
 ## Service Availability and Outages
 
@@ -71,7 +71,7 @@ All software issues should be reported to the GOC immediately by [trouble ticket
 
 ## Requests for Service Enhancements
 
-This section deals with planned maintenance outages. Please see [Service Target Response Priorities and Response Times](#service-target-response-prioriti) for information on unplanned outages.
+This section deals with planned maintenance outages. Please see [Service Target Response Priorities and Response Times](#service-target-response-priorities-and-response-times) for information on unplanned outages.
 
 The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.
 
@@ -88,9 +88,9 @@ PerfSonar customers agree to:
 
    * Use the PerfSonar service for purposes of VO or OSG approved work only.
    * Alert the GOC if they are going to use the Service in a non-standard way, this includes testing or anticipated mass increases in usage.
-   * Contact the GOC by means outlined in the [Customer Problem Reporting](https://github.com/opensciencegrid/operations/blob/master/SLA/PSServiceLevelAgreement#customer-problem-reporting) section of this document if they encounter any service issues.
+   * Contact the GOC by means outlined in the [Customer Problem Reporting](#customer-problem-reporting) section of this document if they encounter any service issues.
    * Be willing and available to provide information within one business day for any High level issues reported.
-   * Provide testing for the Service within the time frame defined in the [Requests for Service Enhancements](https://github.com/opensciencegrid/operations/blob/master/SLA/PSServiceLevelAgreement#requests-for-service-enhancement) section.
+   * Provide testing for the Service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancements) section.
    * Alert the GOC when problems are encountered during testing.
 
 ### Responsibilities
@@ -101,7 +101,7 @@ GOC responsibilities:
    * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.
    * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.
    * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
-   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.
+   * Make changes and updates within the normal GOC [release schedule](https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule.md)   
    * Perform initial troubleshooting consistent with provided documentation in the event of service failure.
    * Update the [service operations document](https://docs.google.com/document/d/1l144BSo-88M0cLMMjKcKMIE-Q5s21X-w3lYl-0Pn_08/edit#heading=h.n5qqmobbm4g4) when new problems, solutions or troubleshooting methodologies are found.
    * Contact the appropriate parties in the event initial trouble shooting fails to restore service.

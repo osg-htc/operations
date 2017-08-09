@@ -38,7 +38,7 @@ The GlideinWMS factory service operators are free to share summary and/or anonym
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -64,7 +64,7 @@ Critical Level Security Issues will be elevated immediately to the OSG Security 
 
 Detailed information on contacts are viewable on the following [MyOSG URL](https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1), and are maintained within the
 
-Any ongoing "High" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/blob/master/SLA/ProductionMeetingMinutes) and
+Any ongoing "High" or "Elevated" level issues will be discussed at the weekly Operations and Production meetings.
 
 ## Service Availability and Outages
 The GOC will strive for 90% service availability. If service availability falls below 90% monthly as monitored by the GOC a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.

@@ -27,7 +27,7 @@ All information collected and distributed by the OSG TX is either public and fre
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -53,7 +53,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 
 Detailed information on contacts are viewable on the following [MyOSG URL](https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1), and are maintained within the
 
-Any ongoing "High" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/blob/master/SLA/ProductionMeetingMinutes) and
+Any ongoing "High" or "Elevated" level issues will be discussed at the weekly Operations and Production meetings.
 
 ## Service Availability and Outages
 
@@ -67,7 +67,7 @@ All software issues should be reported to the GOC immediately by [trouble ticket
 
 ## Requests for Service Enhancements
 
-This section deals with planned maintenance outages. Please see [Service Target Response Priorities and Response Times](#service-target-response-prioriti) for information on unplanned outages.
+This section deals with planned maintenance outages. Please see [Service Target Response Priorities and Response Times](#service-target-response-priorities-and-response-times) for information on unplanned outages.
 
 The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.
 
@@ -86,7 +86,7 @@ ITB BDII customers agree to:
    * Alert the GOC if they are going to use the OSG TX Service in a non-standard way, this includes testing or anticipated mass increases in usage.
    * Contact the GOC by means outlined in the [Customer Problem Reporting](#customer-problem-reporting) section of this document if they encounter any service issues.
    * Be willing and available to provide information within one business day for any High level issues reported.
-   * Provide testing for the OSG TX service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancement) section.
+   * Provide testing for the OSG TX service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancements) section.
    * Alert the GOC when problems are encountered during testing.
 
 ### OSG Operations Responsibilities
@@ -95,8 +95,7 @@ General responsibilities:
    * Meet response times associated with the priority assigned to Customer issues.
    * Maintain appropriately trained staff.
    * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
-   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.
-
+   * Make changes and updates within the normal GOC [release schedule](https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule.md)
 GOC Service Desk Responsibilities:
    * Log and track all Customer requests for service through the OSG ticketing system.
 

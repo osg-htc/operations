@@ -27,7 +27,7 @@ All information in the OSG Display is publicly readable. Write access is not all
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -51,7 +51,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | 3rd | OSG Production Coordinator |
 | 4th | OSG Technical Director and Executive Director |
 
-Any ongoing "High" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/blob/master/SLA/ProductionMeetingMinutes) and
+Any ongoing "High" or "Elevated" level issues will be discussed at the weekly Operations and Production meetings.
 
 ## Service Availability and Outages
 
@@ -84,7 +84,7 @@ OSG Display customers agree to:
    * Alert the GOC if they are going to use the OSG Display in a non-standard way, this includes testing or anticipated mass increases in usage.
    * Contact the GOC by means outlined in the [Customer Problem Reporting](#customer-problem-reporting) section of this document if they encounter any service issues.
    * Be willing and available to provide information within one business day for any High level issues reported.
-   * Provide testing for the OSG Display service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancement) section.
+   * Provide testing for the OSG Display service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancements) section.
    * Alert the GOC when problems are encountered during testing.
 
 ### OSG Operations Responsibilities
@@ -93,7 +93,7 @@ General responsibilities:
    * Meet response times associated with the priority assigned to Customer issues.
    * Maintain appropriately trained staff.
    * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
-   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.
+   * Make changes and updates within the normal GOC [release schedule](https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule.md)
    * Alert Gratia Operations (via Fermigrid) of potential data dependency problems when stale data is reported or observed in the OSG Display.
 
 

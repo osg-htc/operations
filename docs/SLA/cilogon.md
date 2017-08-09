@@ -38,7 +38,7 @@ The CILogon Service also provides CILogon Basic CA. The CILogon Basic CA is a se
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 ### CILogon OSG CA - Certificate signing backend
 | Critical | High | Elevated | Normal |
@@ -76,7 +76,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | help@cilogon.org |
 | jbasney@illinois.edu |
 
-Any ongoing "High" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/blob/master/SLA/ProductionMeetingMinutes) and
+Any ongoing "High" or "Elevated" level issues will be discussed at the weekly Operations and Production meetings.
 
 ## Service Availability and Outages
 
