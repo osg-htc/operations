@@ -56,8 +56,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | 3rd | |
 | 4th | |
 
-Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and
-[Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and [Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
 
 ## Service Availability and Outages
 

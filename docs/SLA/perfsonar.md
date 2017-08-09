@@ -57,8 +57,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 Detailed information on contacts are viewable on the following [MyOSG URL](http://tinyurl.com/owo4olg),
 and are maintained within the [OSG Information Management](https://oim.grid.iu.edu) system (for editing purposes only).
 
-Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and
-[Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and [Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
 
 ## Service Availability and Outages
 
