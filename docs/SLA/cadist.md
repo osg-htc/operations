@@ -96,7 +96,7 @@ General responsibilities:
    * Meet response times associated with the priority assigned to Customer issues.
    * Maintain appropriately trained staff.
    * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
-   * Make changes and updates within the normal GOC [release schedule](https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule)
+   * Make changes and updates within the normal GOC [release schedule](https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule.md)
 
 GOC Service Desk Responsibilities:
    * Log and track all Customer requests for service through the OSG ticketing system.
