@@ -55,8 +55,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 
 Detailed information on contacts are viewable on the following [Software Cache Contacts URL](https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&downtime_attrs_showpast=&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&bdiitree_type=total_jobs&bdii_object=service&bdii_server=is-osg&start_type=7daysago&start_date=09%2F15%2F2009&end_type=now&end_date=09%2F15%2F2009&site_10047=on&rg=on&rg_270=on&gridtype=on&gridtype_1=on&service_central_value=0&service_hidden_value=0&voown=on&voown_25=on&active=on&active_value=1&disable_value=1), and are maintained within the
 
-Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations(https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and
-[Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and [Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
 
 ## Service Availability and Outages
 The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
