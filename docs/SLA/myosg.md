@@ -27,7 +27,7 @@ MyOSG distributes some private contact information based on certificate authenti
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -91,7 +91,7 @@ MyOSG Customers agree to:
    * Alert the GOC if they are going to use the MyOSG in a non-standard way, this includes testing or anticipated mass increases in usage.
    * Contact the GOC by means outlined in the [Customer Problem Reporting](https://github.com/opensciencegrid/operations/blob/master/SLA/MyOSGServiceLevelAgreement#customer-problem-reporting) section of this document if they encounter any service issues.
    * Be willing and available to provide critical information within one hour of reporting a critical or high priority incident or one business day for any other criticality.
-   * Provide testing for MyOSG-ITB within the time frame defined in the [Requests for Service Enhancements](https://github.com/opensciencegrid/operations/blob/master/SLA/MyOSGServiceLevelAgreement#requests-for-service-enhancement) section.
+   * Provide testing for MyOSG-ITB within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancements) section.
    * Alert the GOC and MyOSG developers when problems are encountered during testing.
    * The customer or GOC will be allowed to request an additional ten (10) business days of testing if problems are encountered or testing is not completed at then end of the initial ten (10) business day testing period. The customer must alert the GOC two (2) business days before the scheduled release if they would like this additional testing time.
 

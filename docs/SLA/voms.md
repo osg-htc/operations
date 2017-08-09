@@ -28,7 +28,7 @@ VOMS Administration is limited to the staff of the VOs represented. Read access 
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -86,7 +86,7 @@ OSG TWiki customers agree to:
    * Alert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.
    * Contact the GOC by means outlined in the [Customer Problem Reporting](#customer-problem-reporting) section of this document if they encounter any service issues.
    * Be willing and available to provide information within one business day for any High level issues reported.
-   * Provide testing for the VOMS service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancement) section.
+   * Provide testing for the VOMS service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancements) section.
    * Alert the GOC when problems are encountered during testing.
 
 ### OSG Operations Responsibilities

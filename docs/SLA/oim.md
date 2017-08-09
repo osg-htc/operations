@@ -30,7 +30,7 @@ All information collected and distributed by the OIM is protected by OSG RA cert
 
 ## Service Target Response Priorities and Response Times
 
-This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancement) for information on planned maintenance outages.
+This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
@@ -90,7 +90,7 @@ OIM customers agree to:
    * Alert the GOC if they are going to use the OIM Service in a non-standard way, this includes testing or anticipated mass increases in usage.
    * Contact the GOC by means outlined in the [Customer Problem Reporting](https://github.com/opensciencegrid/operations/blob/master/SLA/oim.md#customer-problem-reporting) section of this document if they encounter any service issues.
    * Be willing and available to provide information within one business day for any High level issues reported.
-   * Provide testing for the OSG OIM service within the time frame defined in the [Requests for Service Enhancements](https://github.com/opensciencegrid/operations/blob/master/SLA/oim.md#requests-for-service-enhancement) section.
+   * Provide testing for the OSG OIM service within the time frame defined in the [Requests for Service Enhancements](#requests-for-service-enhancements) section.
    * Alert the GOC when problems are encountered during testing.
 
 ### OSG Operations Responsibilities

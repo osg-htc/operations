@@ -76,7 +76,8 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | help@cilogon.org |
 | jbasney@illinois.edu |
 
-Any ongoing "High" or "Elevated" level issues will be discussed at the weekly Operations and Production meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and
+[Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
 
 ## Service Availability and Outages
 
