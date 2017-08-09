@@ -153,7 +153,7 @@ Obtaining repair services: The Service Provider analyst will recommend a service
    * Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.
 
 ## Software Services
-Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [OSG Operations Responsibilities](https://github.com/opensciencegrid/operations/blob/master/SLA/SoftwareCacheServiceLevelAgreement#osg-operations-responsibilities) section of this document.
+Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [OSG Operations Responsibilities](#osg-operations-responsibilities) section of this document.
 
 ## Software Costs
 IU and the Grid Operations Center bears all costs for new and replacement software.
