@@ -63,7 +63,7 @@ by staff, "steige.grid.iu.edu", for example.
 A utility machine shall be operated
 so as to best satisfy the requirements of any dependent services. For example,
 the YUM replica are stable and contain fixed content except when being updated
-to facilitate upcoming maintenace of their dependent services. Dependence of
+to facilitate upcoming maintenance of their dependent services. Dependence of
 service machines on a utility machine may (or may not) be constant in time.
 Determination of the dependency status of a utility machine shall be at the
 discretion of the corresponding service maintainer/developer.
