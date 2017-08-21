@@ -33,6 +33,7 @@ The next step is to generate a proxy and log into =oasis-login.opensciencegrid.o
 
 In case the user can be mapped to more than one account, specify it explicitly in a command like this
 <pre class="screen">
+[user@client ~]$ gsissh -o GSSAPIDelegateCredentials=yes ouser.VO@oasis-login.opensciencegrid.org
 </pre>
 
 
