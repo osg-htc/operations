@@ -10,6 +10,7 @@ pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
 - Weekly Minutes:
+  - '21 August 2017': 'WeeklyMinutes/21Aug2017.md'
   - '14 August 2017': 'WeeklyMinutes/14Aug2017.md'
   - '07 August 2017': 'WeeklyMinutes/07Aug2017.md'
   - '31 July 2017': 'WeeklyMinutes/31Jul2017.md'
