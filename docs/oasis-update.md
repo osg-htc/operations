@@ -27,6 +27,8 @@ The GOC will enable OASIS for your VO in [OIM](https://oim.grid.iu.edu/oim/home)
 ## Log in with GSISSH
 The next step is to generate a proxy and log into =oasis-login.opensciencegrid.org= with =gsissh=. These commands should be run on a computer that has the [[InstallOSGClient][OSG client]] software. First make sure that your grid certificate is installed in =~/.globus/usercred.p12= on that computer and that it is mode 600, then run these commands:
 <pre class="screen">
+[user@client ~]$ voms-proxy-init -voms VO
+[user@client ~]$ gsissh -o GSSAPIDelegateCredentials=yes oasis-login.opensciencegrid.org
 </pre>
 
 In case the user can be mapped to more than one account, specify it explicitly in a command like this
