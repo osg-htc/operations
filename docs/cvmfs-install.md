@@ -1,19 +1,17 @@
-# %SPACEOUT{ "Install cvmfs" }%
-
----# About this Document
+# About this Document
 
 Here we describe how to install the [cvmfs](http://cernvm.cern.ch/portal/filesystem) (Cern-VM file system) client.
 This document is intended for system administrators who wish to install
 this client to have access to files distributed by cvmfs servers via HTTP.
 
 #ApplicableVersions
----# Applicable Versions
+# Applicable Versions
 
 This document addresses installation instructions for the latest version of cvmfs, which is only available in OSG 3.3 (supported OS versions: EL6 and EL7). OSG 3.2 (supported OS versions: EL5 and EL6) only receives security updates so it does not have the latest cvmfs version. The installation instructions for the older version are the same, but the verification results will be different as noted below.
 
----# Requirements
+# Requirements
 
----## Host and OS
+## Host and OS
 
    * OS is %SUPPORTED_OS%. See section about [applicable versions](#applicableversions) above for differences in supported EL versoins.
    * Root access
@@ -21,7 +19,7 @@ This document addresses installation instructions for the latest version of cvmf
    * fuse should be installed (or will be as part of the installation)
    * Sufficient (~20GB+20%) cache space reserved, preferably in a separate filesystem (details [below](#4-3-configuring-cvmfs))
 
----## Users and Groups
+## Users and Groups
 
 This installation will create one user unless it already exists:
 
@@ -38,25 +36,25 @@ In addition, if the fuse rpm is not for some reason already installed, installin
 | =fuse= | FUSE service account | =cvmfs= |
 
 
----## Networking
+## Networking
 
 You will need network access to a local squid server such as the [[InstallFrontierSquid][squid distributed by OSG]].
 The squid will need out-bound access to cvmfs stratum 1 servers.
 
----## Upgrading
+## Upgrading
 
 When upgrading from a cvmfs version older than 2.1.20, delete the setting of CVMFS_SERVER_URL in =/etc/cvmfs/domain.d/cern.ch.local=. If that's the only thing in the file (which is likely) then delete the whole file.
 
----# Install Instructions
+# Install Instructions
 
 
----## Installing cvmfs
+## Installing cvmfs
 
 The following will install cvmfs from the OSG yum repository. It will also install cern public keys as well as fuse and autofs if you do not have them, and it will install the configuration for the OSG cvmfs distribution which is called OASIS.
 <pre class="rootscreen">
 </pre>
 
----## Setup of fuse and automount
+## Setup of fuse and automount
 
 Create or edit =/etc/fuse.conf=. It should contain the following in order to allow fuse to do proper file ownership:
 <pre class=file>
@@ -75,7 +73,7 @@ Stopping automount: %GREEN%[ OK ]%ENDCOLOR%
 Starting automount: %GREEN%[ OK ]%ENDCOLOR%
 </pre>
 
----## Configuring cvmfs
+## Configuring cvmfs
 
 Create or edit =/etc/cvmfs/default.local=, a file that controls the cvmfs configuration. Below is a sample configuration, but please note that you will need to *edit the parts in %RED%red%ENDCOLOR%*. In particular, the =CVMFS_HTTP_PROXY= line below must be edited for your site.
 
@@ -95,7 +93,7 @@ of the potential load that could be put upon the stratum one servers.
 Set up the cache limit in =CVMFS_QUOTA_LIMIT= (in MB). The recommended value for most applications is 20000 MB. This is the combined limit for all but the osgstorage.org repositories. This cache will be stored in =/var/lib/cvmfs= by default; to override the location, set =CVMFS_CACHE_BASE= in =/etc/cvmfs/default.local=. Note that an additional 1000 MB is allocated for a separate osgstorage.org repositories cache in =$CVMFS_CACHE_BASE/osgstorage=. To be safe, make sure that at least 20% more than $CVMFS_QUOTA_LIMIT + 1000 MB of space stays available for cvmfs in that filesystem. This is very important, since if that space is not available it can cause many I/O errors and application crashes. Many system administrators choose to put the cache space in a separate filesystem, which is a good way to manage it.
 
 
----# Verifying cvmfs
+# Verifying cvmfs
 
 After cvmfs is installed, you should be able to see the =/cvmfs= directory. But note that it will initially appear to be empty:
 
@@ -120,7 +118,7 @@ cms.cern.ch glast.egi.eu oasis.opensciencegrid.org
 </pre>
 
 
----## Troubleshooting problems
+## Troubleshooting problems
 
 If no directories exist under =/cvmfs/=, you can try the following steps to debug:
 
@@ -130,7 +128,7 @@ If no directories exist under =/cvmfs/=, you can try the following steps to debu
    * <p>If you have changed settings in =/etc/cvmfs/default.local=, and they do not seem to be taking effect, note that there are other configuration files that can override the settings. See the comments at the beginning of =/etc/cvmfs/default.conf= regarding the order in which configuration files are evaluated and look for old files that may have been left from a previous installation.</p>
    * <p>More things to try are in the [upstream documentation](http://cernvm.cern.ch/portal/filesystem/debugmount).</p>
 
----# Starting and Stopping services
+# Starting and Stopping services
 
 Once it is set up, cvmfs is always automatically started when one of the repositories are accessed.
 
@@ -144,7 +142,7 @@ Unmounting /cvmfs/glast.egi.eu: OK
 Unmounting /cvmfs/nova.osgstorage.org: OK
 </pre>
 
----# Screendump of Install
+# Screendump of Install
 
 
 mode="div"
@@ -301,7 +299,7 @@ Unmounting /cvmfs/glast.egi.eu: OK
 Unmounting /cvmfs/nova.osgstorage.org: OK
 [root@fermicloud123 ~]# </pre>
 
----# File Locations
+# File Locations
 
 
 | *Service/Process* | *Configuration File* | *Description* |
@@ -314,7 +312,7 @@ Unmounting /cvmfs/nova.osgstorage.org: OK
 
 
 
----# How to get Help?
+# How to get Help?
 
 If you cannot resolve the problem, there are several ways to receive help:
 
@@ -324,7 +322,7 @@ If you cannot resolve the problem, there are several ways to receive help:
 
 For a full set of help options, see [[HelpProcedure][Help Procedure]].
 
----# References
+# References
 
    * http://cernvm.cern.ch/portal/filesystem/techinformation
    * https://cvmfs.readthedocs.io/en/latest/
