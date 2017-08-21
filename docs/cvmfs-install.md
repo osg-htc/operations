@@ -318,8 +318,6 @@ If you cannot resolve the problem, there are several ways to receive help:
    * For community support and best-effort software team support contact osg-cvmfs@opensciencegrid.org.
    * For general CERN VM FileSystem support contact cernvm.support@cern.ch.
 
-For a full set of help options, see [[HelpProcedure][Help Procedure]].
-
 # References
 
    * http://cernvm.cern.ch/portal/filesystem/techinformation
