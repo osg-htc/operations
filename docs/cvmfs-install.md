@@ -51,6 +51,7 @@ When upgrading from a cvmfs version older than 2.1.20, delete the setting of CVM
 
 The following will install cvmfs from the OSG yum repository. It will also install cern public keys as well as fuse and autofs if you do not have them, and it will install the configuration for the OSG cvmfs distribution which is called OASIS.
 <pre class="rootscreen">
+[root@client ~]$ yum install osg-oasis
 </pre>
 
 ## Setup of fuse and automount
