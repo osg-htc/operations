@@ -300,9 +300,8 @@ Unmounting /cvmfs/nova.osgstorage.org: OK
 
 # File Locations
 
-
 | *Service/Process* | *Configuration File* | *Description* |
-| --------/-------- | -------------------- | ------------- |
+| ----------------- | -------------------- | ------------- |
 |cvmfs|/etc/cvmfs/default.local|cvmfs environment settings and repository setup|
 |fuse|/etc/fuse.conf|fuse settings|
 |automount|/etc/auto.master|automount settings|
