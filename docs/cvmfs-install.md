@@ -16,7 +16,7 @@ This document addresses installation instructions for the latest version of cvmf
    * Root access
    * autofs should be installed
    * fuse should be installed (or will be as part of the installation)
-   * Sufficient (~20GB+20%) cache space reserved, preferably in a separate filesystem (details [below](#4-3-configuring-cvmfs))
+   * Sufficient (~20GB+20%) cache space reserved, preferably in a separate filesystem (details [below](#configuring-cvmfs))
 
 ## Users and Groups
 
