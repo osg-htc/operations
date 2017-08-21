@@ -4,7 +4,6 @@ Here we describe how to install the [cvmfs](http://cernvm.cern.ch/portal/filesys
 This document is intended for system administrators who wish to install
 this client to have access to files distributed by cvmfs servers via HTTP.
 
-#ApplicableVersions
 # Applicable Versions
 
 This document addresses installation instructions for the latest version of cvmfs, which is only available in OSG 3.3 (supported OS versions: EL6 and EL7). OSG 3.2 (supported OS versions: EL5 and EL6) only receives security updates so it does not have the latest cvmfs version. The installation instructions for the older version are the same, but the verification results will be different as noted below.
