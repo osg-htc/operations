@@ -12,7 +12,7 @@ This document addresses installation instructions for the latest version of cvmf
 
 ## Host and OS
 
-   * OS is %SUPPORTED_OS%. See section about [applicable versions](#applicableversions) above for differences in supported EL versoins.
+   * OS is %SUPPORTED_OS%. See section about [applicable versions](#applicable-versions) above for differences in supported EL versoins.
    * Root access
    * autofs should be installed
    * fuse should be installed (or will be as part of the installation)
