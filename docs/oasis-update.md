@@ -53,6 +53,7 @@ NOTE that =/stage/oasis/$VO= is not your home directory, which you can use for s
 
 As OASIS manager for the VO requests an oasis update with:
 <pre class="screen">
+[user@client ~]$ osg-oasis-update
 </pre>
 This command queues a process to sync the content of OASIS with the content of =/stage/oasis/$VO=
 
@@ -67,13 +68,15 @@ Although CVMFS provides a POSIX filesystem, it does not work well with all types
 
 After =osg-oasis-update= completes and the changes have been propagated to the CVMFS stratum 1 servers (typically between 0 and 60 minutes, but possibly longer if the servers are busy with updates of other repositories) then the changes can be visible under =/cvmfs/oasis.opensciencegrid.org= on a computer that has the [[InstallCvmfs][CVMFS client installed]]. A client normally only checks for updates if at least an hour has passed since it last checked, but people who have superuser access on the client machine can force it to check again with
 <pre class="screen">
+[root@client ~]$ cvmfs_talk -i oasis.opensciencegrid.org remount
 </pre>
 This can be done while the filesystem is mounted (despite what the name sounds like it does not do umount/mount). If the filesystem is not mounted, it will automatically check for new updates the next time it is mounted.
 
 In order to find out if an update has reached the CVMFS stratum 1 server, you can find out the latest =osg-oasis-update= time seen by the stratum 1 most favored by your CVMFS client with the following long command on your client machine:
 
 <pre class="screen">
-cat -v|sed -n '/^T/{s/^T//p;q;}') sec"
+[user@client ~]$ date -d "1970-1-1 GMT + $(wget -qO- $(attr -qg host /cvmfs/oasis.opensciencegrid.org)/.cvmfspublished | \
+                                                            cat -v|sed -n '/^T/{s/^T//p;q;}') sec"
 </pre>
 
 # References
