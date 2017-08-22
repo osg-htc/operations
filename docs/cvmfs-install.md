@@ -37,7 +37,7 @@ In addition, if the fuse rpm is not for some reason already installed, installin
 
 ## Networking
 
-You will need network access to a local squid server such as the [[InstallFrontierSquid][squid distributed by OSG]].
+You will need network access to a local squid server such as the [InstallFrontierSquid](squid distributed by OSG).
 The squid will need out-bound access to cvmfs stratum 1 servers.
 
 ## Upgrading
