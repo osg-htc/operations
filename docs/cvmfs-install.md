@@ -24,15 +24,15 @@ This installation will create one user unless it already exists:
 
 | *User* | *Comment* |
 | ------ | --------- |
-| <pre><i>cvmfs</i><pre> | CernVM-FS service account |
+| cvmfs | CernVM-FS service account |
 
 The installation will also create a cvmfs group and default the cvmfs user to that group.
 In addition, if the fuse rpm is not for some reason already installed, installing cvmfs will also install fuse and that will create another group:
 
 | *Group* | *Comment* | *Group members* |
 | ------- | --------- | --------------- |
-| =cvmfs= | CernVM-FS service account | none |
-| =fuse= | FUSE service account | =cvmfs= |
+| cvmfs | CernVM-FS service account | none |
+| fuse | FUSE service account | cvmfs |
 
 
 ## Networking
@@ -42,7 +42,7 @@ The squid will need out-bound access to cvmfs stratum 1 servers.
 
 ## Upgrading
 
-When upgrading from a cvmfs version older than 2.1.20, delete the setting of CVMFS_SERVER_URL in =/etc/cvmfs/domain.d/cern.ch.local=. If that's the only thing in the file (which is likely) then delete the whole file.
+When upgrading from a cvmfs version older than 2.1.20, delete the setting of CVMFS_SERVER_URL in /etc/cvmfs/domain.d/cern.ch.local . If that's the only thing in the file (which is likely) then delete the whole file.
 
 # Install Instructions
 
@@ -56,12 +56,12 @@ The following will install cvmfs from the OSG yum repository. It will also insta
 
 ## Setup of fuse and automount
 
-Create or edit =/etc/fuse.conf=. It should contain the following in order to allow fuse to do proper file ownership:
+Create or edit /etc/fuse.conf. It should contain the following in order to allow fuse to do proper file ownership:
 <pre class=file>
 user_allow_other
 </pre>
 
-Create or edit =/etc/auto.master=. It should contain the following in order to allow cvmfs to automount:
+Create or edit /etc/auto.master. It should contain the following in order to allow cvmfs to automount:
 
 <pre class=file>
 /cvmfs /etc/auto.cvmfs
@@ -75,7 +75,7 @@ Starting automount: [ OK ]
 
 ## Configuring cvmfs
 
-Create or edit =/etc/cvmfs/default.local=, a file that controls the cvmfs configuration. Below is a sample configuration, but please note that you will need to *edit the parts in* **bold** face. In particular, the =CVMFS_HTTP_PROXY= line below must be edited for your site.
+Create or edit /etc/cvmfs/default.local, a file that controls the cvmfs configuration. Below is a sample configuration, but please note that you will need to *edit the parts in* **bold** face. In particular, the CVMFS_HTTP_PROXY line below must be edited for your site.
 
 <pre class="file">
 CVMFS_REPOSITORIES="`echo $((echo oasis.opensciencegrid.org;echo cms.cern.ch;ls /cvmfs)|sort -u)|tr ' ' ,`"
@@ -83,24 +83,24 @@ CVMFS_QUOTA_LIMIT=**20000**
 CVMFS_HTTP_PROXY=**"http://squid.example.com:3128"**
 </pre>
 
-CVMFS by default allows any repository to be mounted. The recommended =CVMFS_REPOSITORIES= setting is what it is above so that tools such as =cvmfs_config= and =cvmfs_talk= that use known repositories will use two common repositories plus any additional that have been mounted. You may want to choose a different set of always-known repositories. A full list of cern.ch repositories is found at http://cernvm.cern.ch/portal/cvmfs/examples.
+CVMFS by default allows any repository to be mounted. The recommended CVMFS_REPOSITORIES setting is what it is above so that tools such as cvmfs_config and cvmfs_talk that use known repositories will use two common repositories plus any additional that have been mounted. You may want to choose a different set of always-known repositories. A full list of cern.ch repositories is found at http://cernvm.cern.ch/portal/cvmfs/examples.
 
-Set up a list of cvmfs HTTP proxies to retrieve from in =CVMFS_HTTP_PROXY=. If you do not have any squid at your site follow the instructions to [[InstallFrontierSquid][install squid from OSG]]. Vertical bars separating proxies means to load balance between them and try them all before continuing.
+Set up a list of cvmfs HTTP proxies to retrieve from in CVMFS_HTTP_PROXY. If you do not have any squid at your site follow the instructions to [InstallFrontierSquid](install squid from OSG). Vertical bars separating proxies means to load balance between them and try them all before continuing.
 A semicolon between proxies means to try that one only after the previous ones have failed. A special proxy called DIRECT can be placed last
 in the list to indicate directly connecting to servers if all other proxies fail. This is acceptable for small sites but discouraged for large sites because
 of the potential load that could be put upon the stratum one servers.
 
-Set up the cache limit in =CVMFS_QUOTA_LIMIT= (in MB). The recommended value for most applications is 20000 MB. This is the combined limit for all but the osgstorage.org repositories. This cache will be stored in =/var/lib/cvmfs= by default; to override the location, set =CVMFS_CACHE_BASE= in =/etc/cvmfs/default.local=. Note that an additional 1000 MB is allocated for a separate osgstorage.org repositories cache in =$CVMFS_CACHE_BASE/osgstorage=. To be safe, make sure that at least 20% more than $CVMFS_QUOTA_LIMIT + 1000 MB of space stays available for cvmfs in that filesystem. This is very important, since if that space is not available it can cause many I/O errors and application crashes. Many system administrators choose to put the cache space in a separate filesystem, which is a good way to manage it.
+Set up the cache limit in CVMFS_QUOTA_LIMIT (in MB). The recommended value for most applications is 20000 MB. This is the combined limit for all but the osgstorage.org repositories. This cache will be stored in =/var/lib/cvmfs= by default; to override the location, set CVMFS_CACHE_BASE in /etc/cvmfs/default.local. Note that an additional 1000 MB is allocated for a separate osgstorage.org repositories cache in $CVMFS_CACHE_BASE/osgstorage. To be safe, make sure that at least 20% more than $CVMFS_QUOTA_LIMIT + 1000 MB of space stays available for cvmfs in that filesystem. This is very important, since if that space is not available it can cause many I/O errors and application crashes. Many system administrators choose to put the cache space in a separate filesystem, which is a good way to manage it.
 
 
 # Verifying cvmfs
 
-After cvmfs is installed, you should be able to see the =/cvmfs= directory. But note that it will initially appear to be empty:
+After cvmfs is installed, you should be able to see the /cvmfs directory. But note that it will initially appear to be empty:
 
 <pre class="screen">
 </pre>
 
-Directories within =/cvmfs= will not be mounted until you examine them. For instance:
+Directories within /cvmfs will not be mounted until you examine them. For instance:
 
 <pre class="screen">
 total 1
@@ -120,12 +120,12 @@ cms.cern.ch glast.egi.eu oasis.opensciencegrid.org
 
 ## Troubleshooting problems
 
-If no directories exist under =/cvmfs/=, you can try the following steps to debug:
+If no directories exist under /cvmfs/, you can try the following steps to debug:
 
-   * <p>Mount it manually =mkdir /mnt/cvmfs= then =mount -t cvmfs REPOSITORYNAME /mnt/cvmfs= where REPOSITORYNAME is the repository, for example config-osg.opensciencegrid.org (this is the best one to try first because other repositories require it to be mounted). If this works, then cvmfs is working, but there is a problem with automount.</p>
-   * <p>If that doesn't work and doesn't give any explanatory errors, try =cvmfs_config chksetup= or =cvmfs_config showconfig REPOSITORYNAME= to verify your setup.</p>
+   * <p>Mount it manually mkdir /mnt/cvmfs then mount -t cvmfs REPOSITORYNAME /mnt/cvmfs where REPOSITORYNAME is the repository, for example config-osg.opensciencegrid.org (this is the best one to try first because other repositories require it to be mounted). If this works, then cvmfs is working, but there is a problem with automount.</p>
+   * <p>If that doesn't work and doesn't give any explanatory errors, try cvmfs_config chksetup or cvmfs_config showconfig REPOSITORYNAME to verify your setup.</p>
    * <p>If chksetup reports access problems to proxies, it may be caused by access control settings in the squids.</p>
-   * <p>If you have changed settings in =/etc/cvmfs/default.local=, and they do not seem to be taking effect, note that there are other configuration files that can override the settings. See the comments at the beginning of =/etc/cvmfs/default.conf= regarding the order in which configuration files are evaluated and look for old files that may have been left from a previous installation.</p>
+   * <p>If you have changed settings in /etc/cvmfs/default.local, and they do not seem to be taking effect, note that there are other configuration files that can override the settings. See the comments at the beginning of =/etc/cvmfs/default.conf= regarding the order in which configuration files are evaluated and look for old files that may have been left from a previous installation.</p>
    * More things to try are in the [upstream documentation](http://cernvm.cern.ch/portal/filesystem/debugmount)
 
 # Starting and Stopping services
