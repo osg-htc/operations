@@ -80,8 +80,8 @@ Create or edit /etc/cvmfs/default.local, a file that controls the cvmfs configur
 
 <pre class="file">
 CVMFS_REPOSITORIES="`echo $((echo oasis.opensciencegrid.org;echo cms.cern.ch;ls /cvmfs)|sort -u)|tr ' ' ,`"
-CVMFS_QUOTA_LIMIT=**20000**
-CVMFS_HTTP_PROXY=**"http://squid.example.com:3128"**
+CVMFS_QUOTA_LIMIT=<b>20000</b>
+CVMFS_HTTP_PROXY=<b>"http://squid.example.com:3128"</b>
 </pre>
 
 CVMFS by default allows any repository to be mounted. The recommended CVMFS_REPOSITORIES setting is what it is above so that tools such as cvmfs_config and cvmfs_talk that use known repositories will use two common repositories plus any additional that have been mounted. You may want to choose a different set of always-known repositories. A full list of cern.ch repositories is found at http://cernvm.cern.ch/portal/cvmfs/examples.
