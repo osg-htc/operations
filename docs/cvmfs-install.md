@@ -104,6 +104,8 @@ If you use SELinux and change CVMFS_CACHE_BASE, then the new cache directory mus
 After cvmfs is installed, you should be able to see the /cvmfs directory. But note that it will initially appear to be empty:
 
 <pre class="screen">
+[user@client ~]$ ls /cvmfs
+[user@client ~]$
 </pre>
 
 Directories within /cvmfs will not be mounted until you examine them. For instance:
@@ -123,6 +125,8 @@ atlas.cern.ch config-osg.opensciencegrid.org nova.osgstorage.org
 cms.cern.ch glast.egi.eu oasis.opensciencegrid.org
 </pre>
 
+<pre><b>Note:</b></pre>
+cvmfs client versions older than 2.2.0 (for example in OSG 3.2) will not mount the config-osg.opensci
 
 ## Troubleshooting problems
 
