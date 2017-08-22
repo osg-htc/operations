@@ -93,7 +93,12 @@ of the potential load that could be put upon the stratum one servers.
 
 Set up the cache limit in CVMFS_QUOTA_LIMIT (in MB). The recommended value for most applications is 20000 MB. This is the combined limit for all but the osgstorage.org repositories. This cache will be stored in =/var/lib/cvmfs= by default; to override the location, set CVMFS_CACHE_BASE in /etc/cvmfs/default.local. Note that an additional 1000 MB is allocated for a separate osgstorage.org repositories cache in $CVMFS_CACHE_BASE/osgstorage. To be safe, make sure that at least 20% more than $CVMFS_QUOTA_LIMIT + 1000 MB of space stays available for cvmfs in that filesystem. This is very important, since if that space is not available it can cause many I/O errors and application crashes. Many system administrators choose to put the cache space in a separate filesystem, which is a good way to manage it.
 
+<pre><b>Warning:</b></pre>
+If you use SELinux and change CVMFS_CACHE_BASE, then the new cache directory must be labelled with SELinux type cvmfs_cache_t. This can be done by executing the following command:
 
+<pre>
+[user@client ~]$ chcon -R -t cvmfs_cache_t <b>$CVMFS_CACHE_BASE</b>
+</pre>
 # Verifying cvmfs
 
 After cvmfs is installed, you should be able to see the /cvmfs directory. But note that it will initially appear to be empty:
