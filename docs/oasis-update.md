@@ -16,7 +16,7 @@ To begin the process to distribute software on OASIS using the service hosted at
    * have a personal grid certificate. The process for getting one is detailed [here](https://www.opensciencegrid.org/bin/view/Documentation/Release3/CertificateUserGet).
    * register that certificate in [OIM](http://oim.grid.iu.edu/oim/home). In order to register, the certificate has to be
    * be associated with a VO that is registered in OIM. The list of registered VOs appears [here](http://oim.grid.iu.edu/oim/vo).
-   * register your certificate in the %LINK_GLOSSARY_VOMS% for your %LINK_GLOSSARY_VO%. Click on the VO name that you're associated with in the above list and in the VO page click on the _"Membership Services URL"_ to register with that VO VOMS.
+   * register your certificate in the VOMS for your VO. Click on the VO name that you're associated with in the above list and in the VO page click on the _"Membership Services URL"_ to register with that VO VOMS.
 
 # How to use OASIS
 ## Enable OASIS
