@@ -126,7 +126,7 @@ If no directories exist under =/cvmfs/=, you can try the following steps to debu
    * <p>If that doesn't work and doesn't give any explanatory errors, try =cvmfs_config chksetup= or =cvmfs_config showconfig REPOSITORYNAME= to verify your setup.</p>
    * <p>If chksetup reports access problems to proxies, it may be caused by access control settings in the squids.</p>
    * <p>If you have changed settings in =/etc/cvmfs/default.local=, and they do not seem to be taking effect, note that there are other configuration files that can override the settings. See the comments at the beginning of =/etc/cvmfs/default.conf= regarding the order in which configuration files are evaluated and look for old files that may have been left from a previous installation.</p>
-   * <p>More things to try are in the [upstream documentation](http://cernvm.cern.ch/portal/filesystem/debugmount).</p>
+   * More things to try are in the [upstream documentation](http://cernvm.cern.ch/portal/filesystem/debugmount)
 
 # Starting and Stopping services
 
