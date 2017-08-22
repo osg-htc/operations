@@ -8,7 +8,7 @@ This document is intended for System Administrators who are installing frontier-
 
 # Applicable Versions
 
-The applicable software versions for this document are %RED%OSG Version >= 3.4.0%ENDCOLOR%. The version of frontier-squid installed should be %RED% >= 3.5.24-3.1%ENDCOLOR%. When using an %RED%OSG Version < 3.4.0%ENDCOLOR% and a frontier-squid version in the %RED% 2.7STABLE9 %ENDCOLOR% series, refer to the [old upstream install documentation](https://twiki.cern.ch/twiki/bin/view/Frontier/OldInstallSquid) instead of the current links included below. There are some incompatibilities between the two versions, so if you are upgrading from a 2.7STABLE9 version to a 3.5 version, see the
+The applicable software versions for this document are <pre><b>OSG Version >= 3.4.0</b></pre>. The version of frontier-squid installed should be <pre><b> >= 3.5.24-3.1</b></pre>. When using an <pre><b>OSG Version < 3.4.0</b></pre> and a frontier-squid version in the <pre><b> 2.7STABLE9 </b></pre> series, refer to the [old upstream install documentation](https://twiki.cern.ch/twiki/bin/view/Frontier/OldInstallSquid) instead of the current links included below. There are some incompatibilities between the two versions, so if you are upgrading from a 2.7STABLE9 version to a 3.5 version, see the
 
 # About Frontier Squid
 
@@ -90,10 +90,10 @@ Stopping frontier-squid:
 
 # Testing Frontier Squid
 
-As any user on another computer, do the following (where %RED%yoursquid.your.domain%ENDCOLOR% is the fully qualified domain name of your squid server):
+As any user on another computer, do the following (where <pre><b>yoursquid.your.domain</b></pre> is the fully qualified domain name of your squid server):
 <pre class="screen">
-X-Cache: MISS from %RED%yoursquid.your.domain%ENDCOLOR%
-X-Cache: HIT from %RED%yoursquid.your.domain%ENDCOLOR%
+X-Cache: MISS from <pre><b>yoursquid.your.domain</b></pre>
+X-Cache: HIT from <pre><b>yoursquid.your.domain</b></pre>
 </pre>
 
 If the grep doesn't print anything, try removing it from the pipeline to see if errors are obvious. If the second try says MISS again, something is probably wrong with the squid cache writes. Look at the squid [access.log file](https://twiki.cern.ch/twiki/bin/view/Frontier/InstallSquid#Log_file_contents) to try to see what's wrong.
