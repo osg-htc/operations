@@ -52,13 +52,13 @@ The addresses of the WLCG monitoring servers for use in firewalls are listed in 
 
 ## Installing Frontier Squid
 
-After meeting the requirements in the previous section, install frontier-squid with this command: <pre class="rootscreen">
-<pre>
+After meeting the requirements in the previous section, install frontier-squid with this command: 
+<pre class="rootscreen">
 [root@client ~]$ yum install frontier-squid
 </pre>
 
-Then enable it to start at boot time with this command: <pre class="rootscreen">
-<pre>
+Then enable it to start at boot time with this command:
+<pre class="rootscreen">
 [root@client ~]$ chkconfig frontier-squid on
 </pre>
 
