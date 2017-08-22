@@ -96,8 +96,6 @@ Stopping frontier-squid:
 [root@client ~]$ service frontier-squid stop
 </pre>
 
-
-
 # Testing Frontier Squid
 
 As any user on another computer, do the following (where <pre><b>yoursquid.your.domain</b></pre> is the fully qualified domain name of your squid server):
