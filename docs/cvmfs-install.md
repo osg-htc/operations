@@ -69,18 +69,18 @@ Create or edit =/etc/auto.master=. It should contain the following in order to a
 
 Restart autofs to make the change take effect:
 <pre class="rootscreen">
-Stopping automount: %GREEN%[ OK ]%ENDCOLOR%
-Starting automount: %GREEN%[ OK ]%ENDCOLOR%
+Stopping automount: [ OK ]
+Starting automount: [ OK ]
 </pre>
 
 ## Configuring cvmfs
 
-Create or edit =/etc/cvmfs/default.local=, a file that controls the cvmfs configuration. Below is a sample configuration, but please note that you will need to *edit the parts in %RED%red%ENDCOLOR%*. In particular, the =CVMFS_HTTP_PROXY= line below must be edited for your site.
+Create or edit =/etc/cvmfs/default.local=, a file that controls the cvmfs configuration. Below is a sample configuration, but please note that you will need to *edit the parts in* **bold** face. In particular, the =CVMFS_HTTP_PROXY= line below must be edited for your site.
 
 <pre class="file">
 CVMFS_REPOSITORIES="`echo $((echo oasis.opensciencegrid.org;echo cms.cern.ch;ls /cvmfs)|sort -u)|tr ' ' ,`"
-CVMFS_QUOTA_LIMIT=%RED%20000%ENDCOLOR%
-CVMFS_HTTP_PROXY=%RED%"http://squid.example.com:3128"%ENDCOLOR%
+CVMFS_QUOTA_LIMIT=**20000**
+CVMFS_HTTP_PROXY=**"http://squid.example.com:3128"**
 </pre>
 
 CVMFS by default allows any repository to be mounted. The recommended =CVMFS_REPOSITORIES= setting is what it is above so that tools such as =cvmfs_config= and =cvmfs_talk= that use known repositories will use two common repositories plus any additional that have been mounted. You may want to choose a different set of always-known repositories. A full list of cern.ch repositories is found at http://cernvm.cern.ch/portal/cvmfs/examples.
