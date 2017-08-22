@@ -154,13 +154,6 @@ Unmounting /cvmfs/nova.osgstorage.org: OK
 
 # Screendump of Install
 
-
-mode="div"
-showlink="Click here for a full installation example."
-hidelink="Hide the example"
-showimgleft="%ICONURLPATH{toggleopen-small}%"
-hideimgleft="%ICONURLPATH{toggleclose-small}%"
-}%
 <pre class="screen">
 [root@fermicloud123 ~]# rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 Retrieving http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
