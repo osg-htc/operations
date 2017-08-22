@@ -69,6 +69,7 @@ Create or edit /etc/auto.master. It should contain the following in order to all
 
 Restart autofs to make the change take effect:
 <pre class="rootscreen">
+[root@client ~]$ service autofs restart
 Stopping automount: [ OK ]
 Starting automount: [ OK ]
 </pre>
