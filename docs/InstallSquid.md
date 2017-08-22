@@ -67,8 +67,10 @@ Then enable it to start at boot time with this command:
 ## Configuring the Frontier Squid Service
 
 To configure the Frontier Squid service itself:
+<pre><b>Note: An important difference between the standard Squid software and the Frontier Squid variant is that Frontier Squid changes are in /etc/squid/customize.sh instead of /etc/squid/squid.conf</b></pre>
 
 1. Follow the [upstream Frontier Squid documentation](https://twiki.cern.ch/twiki/bin/view/Frontier/InstallSquid), in
+the [configuration section](https://twiki.cern.ch/twiki/bin/view/Frontier/InstallSquid#Configuration)
 1. Enable, start, and test the service (as described below)
 1. Enable WLCG monitoring as described in the [upstream documentation on enabling monitoring](https://twiki.cern.ch/twiki/bin/view/Frontier/InstallSquid#Enabling_monitoring) and
 
