@@ -24,7 +24,7 @@ This installation will create one user unless it already exists:
 
 | *User* | *Comment* |
 | ------ | --------- |
-| =cvmfs= | CernVM-FS service account |
+| <pre><i>cvmfs</i><pre> | CernVM-FS service account |
 
 The installation will also create a cvmfs group and default the cvmfs user to that group.
 In addition, if the fuse rpm is not for some reason already installed, installing cvmfs will also install fuse and that will create another group:
