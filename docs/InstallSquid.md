@@ -53,8 +53,14 @@ The addresses of the WLCG monitoring servers for use in firewalls are listed in 
 ## Installing Frontier Squid
 
 After meeting the requirements in the previous section, install frontier-squid with this command: <pre class="rootscreen">
+<pre>
+[root@client ~]$ yum install frontier-squid
+</pre>
 
 Then enable it to start at boot time with this command: <pre class="rootscreen">
+<pre>
+[root@client ~]$ chkconfig frontier-squid on
+</pre>
 
 # Configuring Frontier Squid
 
@@ -80,10 +86,12 @@ To configure the OSG Compute Element (CE) to know about your Frontier Squid serv
 
 Starting frontier-squid:
 <pre class="rootscreen">
+[root@client ~]$ service frontier-squid start
 </pre>
 
 Stopping frontier-squid:
 <pre class="rootscreen">
+[root@client ~]$ service frontier-squid stop
 </pre>
 
 
@@ -92,6 +100,8 @@ Stopping frontier-squid:
 
 As any user on another computer, do the following (where <pre><b>yoursquid.your.domain</b></pre> is the fully qualified domain name of your squid server):
 <pre class="screen">
+[user@client ~]$ export http_proxy=<b>http://yoursquid.your.domain:3128<b>
+[user@client ~]$ wget -qdO/dev/null http://frontier.cern.ch 2>&1|grep X-Cache
 X-Cache: MISS from <pre><b>yoursquid.your.domain</b></pre>
 X-Cache: HIT from <pre><b>yoursquid.your.domain</b></pre>
 </pre>
