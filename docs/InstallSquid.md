@@ -8,7 +8,7 @@ This document is intended for System Administrators who are installing frontier-
 
 # Applicable Versions
 
-The applicable software versions for this document are <pre><b>OSG Version >= 3.4.0</b></pre>. The version of frontier-squid installed should be <pre><b> >= 3.5.24-3.1</b></pre>. When using an <pre><b>OSG Version < 3.4.0</b></pre> and a frontier-squid version in the <pre><b> 2.7STABLE9 </b></pre> series, refer to the [old upstream install documentation](https://twiki.cern.ch/twiki/bin/view/Frontier/OldInstallSquid) instead of the current links included below. There are some incompatibilities between the two versions, so if you are upgrading from a 2.7STABLE9 version to a 3.5 version, see the
+The applicable software versions for this document are <pre><b>OSG Version >= 3.4.0</b></pre> The version of frontier-squid installed should be <pre><b> >= 3.5.24-3.1</b></pre> When using an <pre><b>OSG Version < 3.4.0</b></pre> and a frontier-squid version in the <pre><b> 2.7STABLE9 </b></pre> series, refer to the [old upstream install documentation](https://twiki.cern.ch/twiki/bin/view/Frontier/OldInstallSquid) instead of the current links included below. There are some incompatibilities between the two versions, so if you are upgrading from a 2.7STABLE9 version to a 3.5 version, see the
 
 # About Frontier Squid
 
