@@ -102,8 +102,9 @@ As any user on another computer, do the following (where <pre><b>yoursquid.your.
 <pre class="screen">
 [user@client ~]$ export http_proxy=<b>http://yoursquid.your.domain:3128<b>
 [user@client ~]$ wget -qdO/dev/null http://frontier.cern.ch 2>&1|grep X-Cache
-X-Cache: MISS from <pre><b>yoursquid.your.domain</b></pre>
-X-Cache: HIT from <pre><b>yoursquid.your.domain</b></pre>
+X-Cache: MISS from <b>yoursquid.your.domain</b>
+[user@client ~]$ wget -qdO/dev/null http://frontier.cern.ch 2>&1|grep X-Cache
+X-Cache: HIT from<b>yoursquid.your.domain</b>
 </pre>
 
 If the grep doesn't print anything, try removing it from the pipeline to see if errors are obvious. If the second try says MISS again, something is probably wrong with the squid cache writes. Look at the squid [access.log file](https://twiki.cern.ch/twiki/bin/view/Frontier/InstallSquid#Log_file_contents) to try to see what's wrong.
