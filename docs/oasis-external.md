@@ -1,7 +1,7 @@
 
 # Procedures for handling OASIS externally-hosted CVMFS repositories
 
-   *Technical information contained here is believed to be reliable but administrative procedures, particularly as concerns organizational entities outside the OSG, should be considered unapproved proposals.*
+   **Technical information contained here is believed to be reliable but administrative procedures, particularly as concerns organizational entities outside the OSG, should be considered unapproved proposals.**
 
 
 <noautolink>
