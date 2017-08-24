@@ -12,7 +12,7 @@ OASIS is the OSG Application Software Installation Service. It is the recommende
 
 
 # About this Document
-This document describes the detailed procedures for dealing with CVMFS repositories that are part of the OASIS system but are not hosted at the OSG Global Operations Center (GOC). Rather, they are hosted at the home institution of a Virtual Organization (VO). The procedures include the steps performed by both the GOC and by the repository service administrator. If you are only interested in using an OASIS repository that is hosted at the GOC, see instead [[UpdateOasis]].
+This document describes the detailed procedures for dealing with CVMFS repositories that are part of the OASIS system but are not hosted at the OSG Global Operations Center (GOC). Rather, they are hosted at the home institution of a Virtual Organization (VO). The procedures include the steps performed by both the GOC and by the repository service administrator. If you are only interested in using an OASIS repository that is hosted at the GOC, see instead [UpdateOasis](oasis-update.md).
 
 
 # Policies
