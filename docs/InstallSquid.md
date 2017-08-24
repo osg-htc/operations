@@ -31,7 +31,7 @@ If you will be supporting the Frontier application at your site, review the [ups
 # Requirements
 
 ## Host and OS
-   * OS is %SUPPORTED_OS%.
+   * OS is is Red Hat Enterprise Linux 6, 7, and variants.
    * Root access
 
 ## Users
