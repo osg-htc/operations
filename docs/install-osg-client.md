@@ -32,7 +32,11 @@ You'll find more client specific details also in the [Firewall section](#firewal
 
 ## Minimum Version
 
-Starting on 11 February 2014, all OSG-issued Digicert certificates (host, service, and personal) use the SHA-2 algorithm. Some software in the Worker Node Client - notably <pre><span style="color: #F60;">dCache SRM client</span><pre> - must be on a recent version to support SHA-2 certificates.
+Starting on 11 February 2014, all OSG-issued Digicert certificates (host, service, and personal) use the SHA-2 algorithm. Some software in the Worker Node Client notably 
+<pre><span style="color: #F60;">
+dCache SRM client
+</span></pre>
+must be on a recent version to support SHA-2 certificates.
 
 
 #ClientContents
