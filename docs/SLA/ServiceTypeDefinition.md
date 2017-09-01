@@ -27,7 +27,7 @@ testing period. This implies the ITB and production instances of
 service machines can be modified independently. A service will not have production
 status unless an ITB instance meeting these criteria exists. Outside periods 
 governed by SLA, modification and availability of an ITB instance is at the
-discretion of the service maintainer/developer.
+discretion of the site operations lead.
 
 The period an ITB instance is subject to SLA ends when
 the proposed change is released to production or it is known the instance
@@ -66,4 +66,4 @@ the YUM replica are stable and contain fixed content except when being updated
 to facilitate upcoming maintenance of their dependent services. Dependence of
 service machines on a utility machine may (or may not) be constant in time.
 Determination of the dependency status of a utility machine shall be at the
-discretion of the corresponding service maintainer/developer.
+discretion of the corresponding site operations lead.
