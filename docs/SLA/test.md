@@ -59,32 +59,24 @@ Make sure that port 8000 is available to the internet through any firewalls.
 
 # Procedure to add an externally-hosted repository to OASIS
 1. A VO representative who will have responsibility for the contents of the repository chooses a name for the repository. This name should be the name of the VO or be derived from it (or a project in the VO for the case of the OSG VO), and in a domain that has a secured master key. The recommended domain name for a new repository that originates at an OSG site is opensciencegrid.org. The full name used as an example in this document is *repo.domain.name*. Note: the VO representative's name will be registered in OIM as an OASIS manager for the VO, and names can be added or changed later with GOC tickets. If there is more than one repository for the VO, all the OASIS managers are assumed to be contacts for all the repositories.
-
 1. Using whatever mechanism is appropriate at their institution, the VO representative requests the local CVMFS repository service administrator to create this repository called =repo.domain.name=.
-
 1. The repository service administrator creates the repository with these command like these, where ownerid is the user id that will have write access:
-
- <pre class="rootscreen">
- [root@client ~]$ echo -e "*tt-tnofilett16384" >>/etc/security/limits.conf
- [root@client ~]$ ulimit -n 16384
- [root@client ~]$ cvmfs_server mkfs -o ownerid repo.domain.name
- [root@client ~]$ echo "CVMFS_AUTO_TAG=false" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
- [root@client ~]$ (echo Order deny,allow;echo Deny from all;echo Allow from 127.0.0.1;echo Allow from ::1;echo Allow from  129.79.53.0/24;echo Allow from 2001:18e8:2:6::/56) >/srv/cvmfs/repo.domain.name/.htaccess 
- </pre>
-
- If you might be hosting any hardlinks that span directories (e.g. the git package) and are using aufs (that is, EL6), also do the following:
- 
- <pre class="rootscreen">
- [root@client ~]$ echo "CVMFS_IGNORE_XDIR_HARDLINKS=true" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
- </pre>
- 
- Verify that the repository is readable over http with the following command:
- <pre class="rootscreen">
- [root@client ~]$ wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
- </pre>
- 
- That should print several lines including some gibberish at the end.
- 
+<pre class="rootscreen">
+[root@client ~]$ echo -e "*tt-tnofilett16384" >>/etc/security/limits.conf
+[root@client ~]$ ulimit -n 16384
+[root@client ~]$ cvmfs_server mkfs -o ownerid repo.domain.name
+[root@client ~]$ echo "CVMFS_AUTO_TAG=false" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
+[root@client ~]$ (echo Order deny,allow;echo Deny from all;echo Allow from 127.0.0.1;echo Allow from ::1;echo Allow from 129.79.53.0/24;echo Allow from 2001:18e8:2:6::/56) >/srv/cvmfs/repo.domain.name/.htaccess
+</pre>
+If you might be hosting any hardlinks that span directories (e.g. the git package) and are using aufs (that is, EL6), also do the following:
+<pre class="rootscreen">
+[root@client ~]$ echo "CVMFS_IGNORE_XDIR_HARDLINKS=true" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
+</pre>
+Verify that the repository is readable over http with the following command:
+<pre class="rootscreen">
+[root@client ~]$ wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
+</pre>
+That should print several lines including some gibberish at the end.
 1. The repository service administrator next creates a [GOC ticket](https://ticket.grid.iu.edu/goc/submit) using the following format:
 <pre class="file">
 Please add a new CVMFS repository to OASIS for VO voname using the URL
@@ -92,6 +84,7 @@ http://fully.qualified.domain:8000/cvmfs/repo.domain.name
 by doing step #5 at
 https://twiki.grid.iu.edu/bin/view/Documentation/Release3/OasisExternalRepositories
 The VO responsible manager will be Vorep Name.
+
 </pre>
 replacing "voname" with the VO's name, "fully.qualified.domain" with the full name of the repository server, "repo.domain.name" with the full name of the repository, and "Vorep Name" with the name of the VO representative.
 1. The GOC representative next ensures that the repository service administrator is a valid representative of a host site for the VO. This can be done by (a) the GOC representative already having a relationship with the person or (b) the GOC representative contacting the VO manager to find out. The GOC representative makes sure that the repo.domain.name in the URL is derived from the VO name. Next, on the oasis machine the GOC representative temporarily installs the oasis signing key and runs [add_osg_repository](http://svn.usatlas.bnl.gov/svn/oasis/oasis-server/trunk/bin/add_osg_repository), giving it as a parameter the given URL. This will download the =.cvmfswhitelist= file from the repository, sign it, publish it back on the oasis http server, and set it to be re-signed every time repository keys are signed (which is about every 20 days). The ticket should remain open because there's another step to do after the next step.
