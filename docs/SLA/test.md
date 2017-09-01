@@ -61,6 +61,7 @@ Make sure that port 8000 is available to the internet through any firewalls.
 1. A VO representative who will have responsibility for the contents of the repository chooses a name for the repository. This name should be the name of the VO or be derived from it (or a project in the VO for the case of the OSG VO), and in a domain that has a secured master key. The recommended domain name for a new repository that originates at an OSG site is opensciencegrid.org. The full name used as an example in this document is *repo.domain.name*. Note: the VO representative's name will be registered in OIM as an OASIS manager for the VO, and names can be added or changed later with GOC tickets. If there is more than one repository for the VO, all the OASIS managers are assumed to be contacts for all the repositories.
 1. Using whatever mechanism is appropriate at their institution, the VO representative requests the local CVMFS repository service administrator to create this repository called =repo.domain.name=.
 1. The repository service administrator creates the repository with these command like these, where ownerid is the user id that will have write access:
+
  <pre class="rootscreen">
  [root@client ~]$ echo -e "*tt-tnofilett16384" >>/etc/security/limits.conf
  [root@client ~]$ ulimit -n 16384
@@ -69,15 +70,17 @@ Make sure that port 8000 is available to the internet through any firewalls.
  [root@client ~]$ (echo Order deny,allow;echo Deny from all;echo Allow from 127.0.0.1;echo Allow from ::1;echo Allow from  129.79.53.0/24;echo Allow from 2001:18e8:2:6::/56) >/srv/cvmfs/repo.domain.name/.htaccess 
  </pre>
  If you might be hosting any hardlinks that span directories (e.g. the git package) and are using aufs (that is, EL6), also do  the following:
+ 
  <pre class="rootscreen">
  [root@client ~]$ echo "CVMFS_IGNORE_XDIR_HARDLINKS=true" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
  </pre>
+ 
  Verify that the repository is readable over http with the following command:
  <pre class="rootscreen">
  [root@client ~]$ wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
  </pre>
+ 
  That should print several lines including some gibberish at the end.
-{:start="4"}
 1. The repository service administrator next creates a [GOC ticket](https://ticket.grid.iu.edu/goc/submit) using the following format:
 <pre class="file">
 Please add a new CVMFS repository to OASIS for VO voname using the URL
