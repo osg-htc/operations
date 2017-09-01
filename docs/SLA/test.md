@@ -14,7 +14,9 @@ OASIS is the OSG Application Software Installation Service. It is the recommende
 # About this Document
 This document describes the detailed procedures for dealing with CVMFS repositories that are part of the OASIS system but are not hosted at the OSG Global Operations Center (GOC). Rather, they are hosted at the home institution of a Virtual Organization (VO). The procedures include the steps performed by both the GOC and by the repository service administrator. If you are only interested in using an OASIS repository that is hosted at the GOC, see instead [[UpdateOasis]].
 
+
 see:{"Documentation/DocumentationTeam/DocConventions" section="Header"}%
+
 see:{"Documentation/DocumentationTeam/DocConventions" section="CommandLine"}%
 
 # Policies
@@ -31,26 +33,26 @@ This document doesn't cover requirements for the GOC computers since those are a
 
 This is a procedure for installing it on a Redhat EL6-based system:
 <pre class="rootscreen">
-rpm -i https://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-release-latest.noarch.rpm
-rpm -i https://repo.grid.iu.edu/osg/3.3/osg-3.3-el6-release-latest.rpm
-yum install --enablerepo=cernvm-kernel --disablerepo=cernvm kernel aufs2-util cvmfs-server.x86_64 cvmfs.x86_64 cvmfs-config-osg
-echo "cvmfs_server mount -a" >>/etc/rc.local
-reboot
+[root@client ~]$ rpm -i https://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-release-latest.noarch.rpm
+[root@client ~]$ rpm -i https://repo.grid.iu.edu/osg/3.3/osg-3.3-el6-release-latest.rpm
+[root@client ~]$ yum install --enablerepo=cernvm-kernel --disablerepo=cernvm kernel aufs2-util cvmfs-server.x86_64 cvmfs.x86_64 cvmfs-config-osg
+[root@client ~]$ echo "cvmfs_server mount -a" >>/etc/rc.local
+[root@client ~]$ reboot
 </pre>
 
 This is the procedure for installing on a Redhat EL7.3-based system:
 <pre class="rootscreen">
-rpm -i https://repo.grid.iu.edu/osg/3.3/osg-3.3-el7-release-latest.rpm
-yum install cvmfs-server.x86_64 osg-oasis
-echo "cvmfs_server mount -a" >>/etc/rc.local
+[root@client ~]$ rpm -i https://repo.grid.iu.edu/osg/3.3/osg-3.3-el7-release-latest.rpm
+[root@client ~]$ yum install cvmfs-server.x86_64 osg-oasis
+[root@client ~]$ echo "cvmfs_server mount -a" >>/etc/rc.local
 </pre>
 
 In addition, apache should listen on port 8000, have KeepAlive enabled, and be started. Use commands like these:
 <pre class="rootscreen">
-echo Listen 8000 >>/etc/httpd/conf.d/cvmfs.conf
-echo KeepAlive on >>/etc/httpd/conf.d/cvmfs.conf
-chkconfig httpd on
-service httpd start
+[root@client ~]$ echo Listen 8000 >>/etc/httpd/conf.d/cvmfs.conf
+[root@client ~]$ echo KeepAlive on >>/etc/httpd/conf.d/cvmfs.conf
+[root@client ~]$ chkconfig httpd on
+[root@client ~]$ service httpd start
 </pre>
 Make sure that port 8000 is available to the internet through any firewalls.
 
@@ -60,19 +62,19 @@ Make sure that port 8000 is available to the internet through any firewalls.
 1. Using whatever mechanism is appropriate at their institution, the VO representative requests the local CVMFS repository service administrator to create this repository called =repo.domain.name=.
 1. The repository service administrator creates the repository with these command like these, where ownerid is the user id that will have write access:
 <pre class="rootscreen">
-echo -e "*tt-tnofilett16384" >>/etc/security/limits.conf
-ulimit -n 16384
-cvmfs_server mkfs -o ownerid repo.domain.name
-echo "CVMFS_AUTO_TAG=false" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
-(echo Order deny,allow;echo Deny from all;echo Allow from 127.0.0.1;echo Allow from ::1;echo Allow from 129.79.53.0/24;echo Allow from 2001:18e8:2:6::/56) >/srv/cvmfs/repo.domain.name/.htaccess
+[root@client ~]$ echo -e "*tt-tnofilett16384" >>/etc/security/limits.conf
+[root@client ~]$ ulimit -n 16384
+[root@client ~]$ cvmfs_server mkfs -o ownerid repo.domain.name
+[root@client ~]$ echo "CVMFS_AUTO_TAG=false" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
+[root@client ~]$ (echo Order deny,allow;echo Deny from all;echo Allow from 127.0.0.1;echo Allow from ::1;echo Allow from 129.79.53.0/24;echo Allow from 2001:18e8:2:6::/56) >/srv/cvmfs/repo.domain.name/.htaccess
 </pre>
 If you might be hosting any hardlinks that span directories (e.g. the git package) and are using aufs (that is, EL6), also do the following:
 <pre class="rootscreen">
-echo "CVMFS_IGNORE_XDIR_HARDLINKS=true" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
+[root@client ~]$ echo "CVMFS_IGNORE_XDIR_HARDLINKS=true" >>/etc/cvmfs/repositories.d/repo.domain.name/server.conf
 </pre>
 Verify that the repository is readable over http with the following command:
 <pre class="rootscreen">
-wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
+[root@client ~]$ wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
 </pre>
 That should print several lines including some gibberish at the end.
 1. The repository service administrator next creates a [GOC ticket](https://ticket.grid.iu.edu/goc/submit) using the following format:
@@ -88,17 +90,17 @@ replacing "voname" with the VO's name, "fully.qualified.domain" with the full na
 1. The GOC representative next ensures that the repository service administrator is a valid representative of a host site for the VO. This can be done by (a) the GOC representative already having a relationship with the person or (b) the GOC representative contacting the VO manager to find out. The GOC representative makes sure that the repo.domain.name in the URL is derived from the VO name. Next, on the oasis machine the GOC representative temporarily installs the oasis signing key and runs [add_osg_repository](http://svn.usatlas.bnl.gov/svn/oasis/oasis-server/trunk/bin/add_osg_repository), giving it as a parameter the given URL. This will download the =.cvmfswhitelist= file from the repository, sign it, publish it back on the oasis http server, and set it to be re-signed every time repository keys are signed (which is about every 20 days). The ticket should remain open because there's another step to do after the next step.
 1. If the repository name matches =*.opensciencegrid.org= or =*.osgstorage.org=, the GOC representative responds in the ticket to ask that step #6 be done; all other repositories (such as =*.egi.eu=) skip this step. The repository service administrator next executes the following commands (replacing repo.opensciencegrid.org with repo.osgstorage.org when needed):
 <pre class="rootscreen">
-wget -O /srv/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist http://oasis.opensciencegrid.org/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist
-/bin/cp /etc/cvmfs/keys/opensciencegrid.org/opensciencegrid.org.pub /etc/cvmfs/keys/repo.opensciencegrid.org.pub
+[root@client ~]$ wget -O /srv/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist http://oasis.opensciencegrid.org/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist
+[root@client ~]$ /bin/cp /etc/cvmfs/keys/opensciencegrid.org/opensciencegrid.org.pub /etc/cvmfs/keys/repo.opensciencegrid.org.pub
 </pre>
 Next the administrator verifies that a publish operation using the owner's privileges succeeds by making sure there's no errors from the following commands replacing "ownerid" with the owner's username:
 <pre class="rootscreen">
-su ownerid -c "cvmfs_server transaction repo.opensciencegrid.org"
-su ownerid -c "cvmfs_server publish repo.opensciencegrid.org"
+[root@client ~]$ su ownerid -c "cvmfs_server transaction repo.opensciencegrid.org"
+[root@client ~]$ su ownerid -c "cvmfs_server publish repo.opensciencegrid.org"
 </pre>
 If that works then add the wget command to a daily cron:
 <pre class="rootscreen">
-echo "5 4 * * * ownerid cd /srv/cvmfs/repo.opensciencgrid.org && wget -qO .cvmfswhitelist.new http://oasis.opensciencegrid.org/cvmfs/repo.opensciencgrid.org/.cvmfswhitelist && mv .cvmfswhitelist.new .cvmfswhitelist" >>/etc/cron.d/fetch-cvmfs-whitelist
+[root@client ~]$ echo "5 4 * * * ownerid cd /srv/cvmfs/repo.opensciencgrid.org && wget -qO .cvmfswhitelist.new http://oasis.opensciencegrid.org/cvmfs/repo.opensciencgrid.org/.cvmfswhitelist && mv .cvmfswhitelist.new .cvmfswhitelist" >>/etc/cron.d/fetch-cvmfs-whitelist
 </pre>
 Note that this eliminates the need for the repository service administrator to periodically use "cvmfs_server resign" to update .cvmfswhitelist.
 Then the repository service administrator goes back to the open GOC ticket and asks to proceed to step #7.
