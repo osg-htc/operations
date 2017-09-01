@@ -77,6 +77,7 @@ Make sure that port 8000 is available to the internet through any firewalls.
  [root@client ~]$ wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
  </pre>
  That should print several lines including some gibberish at the end.
+{:start="4"}
 1. The repository service administrator next creates a [GOC ticket](https://ticket.grid.iu.edu/goc/submit) using the following format:
 <pre class="file">
 Please add a new CVMFS repository to OASIS for VO voname using the URL
