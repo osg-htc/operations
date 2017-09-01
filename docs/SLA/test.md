@@ -78,32 +78,31 @@ Make sure that port 8000 is available to the internet through any firewalls.
     </pre>
     That should print several lines including some gibberish at the end.
 1. The repository service administrator next creates a [GOC ticket](https://ticket.grid.iu.edu/goc/submit) using the following format:
-<pre class="file">
-Please add a new CVMFS repository to OASIS for VO voname using the URL
-http://fully.qualified.domain:8000/cvmfs/repo.domain.name
-by doing step #5 at
-https://twiki.grid.iu.edu/bin/view/Documentation/Release3/OasisExternalRepositories
-The VO responsible manager will be Vorep Name.
-
-</pre>
-replacing "voname" with the VO's name, "fully.qualified.domain" with the full name of the repository server, "repo.domain.name" with the full name of the repository, and "Vorep Name" with the name of the VO representative.
+    <pre class="file">
+    Please add a new CVMFS repository to OASIS for VO voname using the URL
+    http://fully.qualified.domain:8000/cvmfs/repo.domain.name
+    by doing step #5 at
+    https://twiki.grid.iu.edu/bin/view/Documentation/Release3/OasisExternalRepositories
+    The VO responsible manager will be Vorep Name.
+    </pre>
+    replacing "voname" with the VO's name, "fully.qualified.domain" with the full name of the repository server, "repo.domain.name" with the full name of the repository, and "Vorep Name" with the name of the VO representative.
 1. The GOC representative next ensures that the repository service administrator is a valid representative of a host site for the VO. This can be done by (a) the GOC representative already having a relationship with the person or (b) the GOC representative contacting the VO manager to find out. The GOC representative makes sure that the repo.domain.name in the URL is derived from the VO name. Next, on the oasis machine the GOC representative temporarily installs the oasis signing key and runs [add_osg_repository](http://svn.usatlas.bnl.gov/svn/oasis/oasis-server/trunk/bin/add_osg_repository), giving it as a parameter the given URL. This will download the =.cvmfswhitelist= file from the repository, sign it, publish it back on the oasis http server, and set it to be re-signed every time repository keys are signed (which is about every 20 days). The ticket should remain open because there's another step to do after the next step.
 1. If the repository name matches =*.opensciencegrid.org= or =*.osgstorage.org=, the GOC representative responds in the ticket to ask that step #6 be done; all other repositories (such as =*.egi.eu=) skip this step. The repository service administrator next executes the following commands (replacing repo.opensciencegrid.org with repo.osgstorage.org when needed):
-<pre class="rootscreen">
-[root@client ~]$ wget -O /srv/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist http://oasis.opensciencegrid.org/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist
-[root@client ~]$ /bin/cp /etc/cvmfs/keys/opensciencegrid.org/opensciencegrid.org.pub /etc/cvmfs/keys/repo.opensciencegrid.org.pub
-</pre>
-Next the administrator verifies that a publish operation using the owner's privileges succeeds by making sure there's no errors from the following commands replacing "ownerid" with the owner's username:
-<pre class="rootscreen">
-[root@client ~]$ su ownerid -c "cvmfs_server transaction repo.opensciencegrid.org"
-[root@client ~]$ su ownerid -c "cvmfs_server publish repo.opensciencegrid.org"
-</pre>
-If that works then add the wget command to a daily cron:
-<pre class="rootscreen">
-[root@client ~]$ echo "5 4 * * * ownerid cd /srv/cvmfs/repo.opensciencgrid.org && wget -qO .cvmfswhitelist.new http://oasis.opensciencegrid.org/cvmfs/repo.opensciencgrid.org/.cvmfswhitelist && mv .cvmfswhitelist.new .cvmfswhitelist" >>/etc/cron.d/fetch-cvmfs-whitelist
-</pre>
-Note that this eliminates the need for the repository service administrator to periodically use "cvmfs_server resign" to update .cvmfswhitelist.
-Then the repository service administrator goes back to the open GOC ticket and asks to proceed to step #7.
+    <pre class="rootscreen">
+    [root@client ~]$ wget -O /srv/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist       http://oasis.opensciencegrid.org/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist
+    [root@client ~]$ /bin/cp /etc/cvmfs/keys/opensciencegrid.org/opensciencegrid.org.pub        /etc/cvmfs/keys/repo.opensciencegrid.org.pub
+    </pre>
+    Next the administrator verifies that a publish operation using the owner's privileges succeeds by making sure there's no errors from the following commands replacing "ownerid" with the owner's username:
+    <pre class="rootscreen">
+    [root@client ~]$ su ownerid -c "cvmfs_server transaction repo.opensciencegrid.org"
+    [root@client ~]$ su ownerid -c "cvmfs_server publish repo.opensciencegrid.org"  
+    </pre>
+    If that works then add the wget command to a daily cron:
+    <pre class="rootscreen">
+    [root@client ~]$ echo "5 4 * * * ownerid cd /srv/cvmfs/repo.opensciencgrid.org && wget -qO .cvmfswhitelist.new      http://oasis.opensciencegrid.org/cvmfs/repo.opensciencgrid.org/.cvmfswhitelist && mv .cvmfswhitelist.new .cvmfswhitelist"   >>/etc/cron.d/fetch-cvmfs-whitelist
+    </pre>
+    Note that this eliminates the need for the repository service administrator to periodically use "cvmfs_server resign" to    update .cvmfswhitelist.
+    Then the repository service administrator goes back to the open GOC ticket and asks to proceed to step #7.
 1. If domain.name is a new domain that has not been distributed before, the GOC representative next places a copy of the domain.name.pub public key from domain.name into /srv/etc/keys on both oasis-replica and oasis-replica-itb. If the GOC representative does not have that key, he or she can ask the repository service representative in the ticket how to get it. In addition, in order to support cvmfs client versions 2.2.X (both older and newer clients do not need it), a symbolic link of <domain.name>.conf has to be made in /cvmfs/config-osg.opensciencegrid.org/etc/cvmfs/domain.d pointing to default.conf. This symbolic link has to be created on the oasis-itb machine's copy of the config-osg.opensciencegrid.org repository and then copied to production with the copy_config_osg command on the oasis machine.
 1. The GOC representative then adds the URL in OIM under OASIS Repo URLs for the VO. The repository will then be added to the GOC stratum 1 and the FNAL stratum 1 within an hour.
 1. The GOC representative then asks the administrators of the BNL stratum 1 to also add the new repository. He should set up his stratum 1s to read from =http://oasis-replica.opensciencegrid.org:8000/cvmfs/repo.domain.name=. When he has reported back that the replication is ready, the GOC representative reports in the ticket that the repository is ready on the OSG and closes the ticket.
