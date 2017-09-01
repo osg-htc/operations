@@ -77,7 +77,7 @@ Verify that the repository is readable over http with the following command:
 [root@client ~]$ wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
 </pre>
 That should print several lines including some gibberish at the end.
-1. The repository service administrator next creates a [GOC ticket](https://ticket.grid.iu.edu/goc/submit) using the following format:
+4. The repository service administrator next creates a [GOC ticket](https://ticket.grid.iu.edu/goc/submit) using the following format:
 <pre class="file">
 Please add a new CVMFS repository to OASIS for VO voname using the URL
 http://fully.qualified.domain:8000/cvmfs/repo.domain.name
