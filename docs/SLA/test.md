@@ -1,7 +1,7 @@
 
 # Procedures for handling OASIS externally-hosted CVMFS repositories
 
-   *Technical information contained here is believed to be reliable but administrative procedures, particularly as concerns organizational entities outside the OSG, should be considered unapproved proposals.*
+*Technical information contained here is believed to be reliable but administrative procedures, particularly as concerns organizational entities outside the OSG, should be considered unapproved proposals.*
 
 
 <noautolink>
@@ -130,59 +130,3 @@ Then the repository service administrator goes back to the open GOC ticket and a
 
 </noautolink>
 
-<-- CONTENT MANAGEMENT PROJECT
-############################################################################################################
-DEAR DOCUMENT OWNER
-===================
-
-Thank you for claiming ownership for this document Please fill in your FirstLast name here:
-   * Local OWNER = DaveDykstra
-
-Please define the document area, choose one of the defined areas from the next line
-DOC_AREA = (ComputeElement|Storage|VO|Security|User|Monitoring|General|Trash/Trash/Integration|Operations|Tier3)
-   * Local DOC_AREA = General
-
-define the primary role the document serves, choose one of the defined roles from the next line
-DOC_ROLE = (EndUser|Student|Developer|SysAdmin|VOManager)
-   * Local DOC_ROLE = SysAdmin
-
-Please define the document type, choose one of the defined types from the next line
-DOC_TYPE = (Troubleshooting|Training|Installation|HowTo|Planning|Navigation|Knowledge)
-   * Local DOC_TYPE = HowTo
-
-Please define if this document in general needs to be reviewed before release ( %YES% | %NO% )
-   * Local INCLUDE_REVIEW = %YES%
-
-Please define if this document in general needs to be tested before release ( %YES% | %NO% )
-   * Local INCLUDE_TEST = %NO%
-
-change to %YES% once the document is ready to be reviewed and back to %NO% if that is not the case
-   * Local REVIEW_READY = %YES%
-
-change to %YES% once the document is ready to be tested and back to %NO% if that is not the case
-   * Local TEST_READY = %YES%
-
-change to %YES% only if the document has passed the review and the test (if applicable) and is ready for release
-   * Local RELEASE_READY = %YES%
-
-
-DEAR DOCUMENT REVIEWER
-======================
-
-Thank for reviewing this document Please fill in your FirstLast name here:
-   * Local REVIEWER = ScottTeige
-
-Please define the review status for this document to be in progress ( %IN_PROGRESS% ), failed ( %NO% ) or passed ( %YES% )
-   * Local REVIEW_PASSED = %YES%
-
-
-DEAR DOCUMENT TESTER
-====================
-
-Thank for testing this document Please fill in your FirstLast name here:
-   * Local TESTER =
-
-Please define the test status for this document to be in progress ( %IN_PROGRESS% ), failed ( %NO% ) or passed ( %YES% )
-   * Local TEST_PASSED = %IN_PROGRESS%
-############################################################################################################
--->
