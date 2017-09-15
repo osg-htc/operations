@@ -1,5 +1,3 @@
-%DOC_STATUS_TABLE%
-
 # Glide-In Factory Service Level Agreement
 
 ## About This Document
@@ -150,62 +148,3 @@ This SLA will renew automatically on a yearly basis unless change or update is r
    * GLOW
    * GlueX
    * IceCube
-
-<-- CONTENT MANAGEMENT PROJECT
-############################################################################################################
-DEAR DOCUMENT OWNER
-===================
-
-Thank you for claiming ownership for this document Please fill in your FirstLast name here:
-   * Local OWNER = RobQ
-
-Please define the document area, choose one of the defined areas from the next line
-DOC_AREA = (ComputeElement|General|Trash/Trash/Integration|Monitoring|Operations|Security|Storage|Trash/Tier3|User|VO)
-   * Local DOC_AREA = Operations
-
-define the primary role the document serves, choose one of the defined roles from the next line
-DOC_ROLE = (Developer|Documenter|Scientist|Student|SysAdmin|VOManager)
-   * Local DOC_ROLE = VOManager
-
-Please define the document type, choose one of the defined types from the next line
-DOC_TYPE = (HowTo|Installation|Knowledge|Navigation|Planning|Training|Troubleshooting)
-   * Local DOC_TYPE = Knowledge
-
-Please define if this document in general needs to be reviewed before release ( %YES% | %NO% )
-   * Local INCLUDE_REVIEW = %YES%
-
-Please define if this document in general needs to be tested before release ( %YES% | %NO% )
-   * Local INCLUDE_TEST = %NO%
-
-change to %YES% once the document is ready to be reviewed and back to %NO% if that is not the case
-   * Local REVIEW_READY = %YES%
-
-change to %YES% once the document is ready to be tested and back to %NO% if that is not the case
-   * Local TEST_READY = %NO%
-
-change to %YES% only if the document has passed the review and the test (if applicable) and is ready for release
-   * Local RELEASE_READY = %YES%
-
-
-DEAR DOCUMENT REVIEWER
-======================
-
-Thank for reviewing this document Please fill in your FirstLast name here:
-   * Local REVIEWER = ElizabethChism
-
-Please define the review status for this document to be in progress ( %IN_PROGRESS% ), failed ( %NO% ) or passed ( %YES% )
-   * Local REVIEW_PASSED = %YES%
-
-
-DEAR DOCUMENT TESTER
-====================
-
-Thank for testing this document Please fill in your FirstLast name here:
-   * Local TESTER = ElizabethChism
-
-Please define the test status for this document to be in progress ( %IN_PROGRESS% ), failed ( %NO% ) or passed ( %YES% )
-   * Local TEST_PASSED = %YES%
-############################################################################################################
--->
-
-### Comments
