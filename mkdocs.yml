@@ -9,6 +9,11 @@ extra_css:
 pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
+- Service Level Agreements:
+  - 'VOMS': 'SLA/voms.md'
+  - 'MyOSG': 'SLA/myosg.md'
+  - 'OASIS': 'SLA/oasis-replica.md'
+  - 'OIM': 'SLA/oim.md'
 - Weekly Minutes:
   - '25 September 2017': 'WeeklyMinutes/25Sep2017.md'
   - '18 September 2017': 'WeeklyMinutes/18Sep2017.md'
@@ -39,11 +44,6 @@ pages:
   - '20 March 2017': 'WeeklyMinutes/20Mar2017.md'
   - '13 March 2017': 'WeeklyMinutes/13Mar2017.md'
   - '27 February 2017': 'WeeklyMinutes/27Feb2017.md'
-- Service Level Agreements:
-  - 'VOMS': 'SLA/voms.md'
-  - 'MyOSG': 'SLA/myosg.md'
-  - 'OASIS': 'SLA/oasis-replica.md'
-  - 'OIM': 'SLA/oim.md'
 
 markdown_extensions:
   - admonition
