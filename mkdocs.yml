@@ -1,4 +1,4 @@
-site_name: OSG Documentation
+site_name: OSG Operations
 site_url: https://opensciencegrid.github.io/operations
 repo_url: https://github.com/opensciencegrid/operations
 theme: readthedocs
