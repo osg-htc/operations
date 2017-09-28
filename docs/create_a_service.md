@@ -2,6 +2,16 @@
 
 There are a series of steps needed to create a fully supported service at IU.
 
+## Obtain a name and IP numbers for the service
+
+Send email to the DNS administrators ay IU requesting DNS entries for the new service name be made.
+Expect a 24 hour delay after the request for the new entry to propagate to actual servers.
+Acknowledgement of the request should occur within 2 buisiness hours of it being made.
+
+## Get the new service name registered in IU-operations ldap server
+
+*Ask Tom to do the Tom magic*
+
 ## Define the service in ansible
 
 In the following it is assumed you'll be working on collab.grid.iu.edu.
