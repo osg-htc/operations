@@ -4,6 +4,30 @@ There are a series of steps needed to create a fully supported service at IU.
 
 ## Define the service in ansible
 
+In the following it is assumed you have svn installed and configured to use
+GOC ansible. By convention the anme of the new service is svc_name.
+
+The steps required to add a new service are:
+<pre>
+cd install/ansible
+# create svc_name.yaml, copy and edit an existng file
+svn add svc_name.yaml
+# modify the existing inventory files to include the new service
+</pre>
+
+<pre>
+cd install/ansible/group_vars
+# create svc_name.yaml, copy and edit an existng file
+svn add svc_name.yaml
+cd install/ansible/host_vars
+# create svc_name.grid.iu.edu.yaml, copy and edit an existng file
+svn add svc_name.grid.iu.edu.yaml
+cd install/ansible/roles
+# create the directory to contain the playbooks for the service
+mkdir svc_name
+cp -r oasis svc_name
+</pre>
+
 ## Enable monitoring of the service
 
 ### Location of the monitoring source
@@ -47,9 +71,10 @@ The first line (which must the the first line of the output) is the reported sta
 values are: OK, WARNING, CRITICAL and UNKNOWN. Calculation of the value is service dependent and should
 reflect experience to date associated with operation of the service.
 
-The remaining lines may be in any order and should be clear.
+The remaining lines may be in any order. filesystem_use is the filesystem reporting the largest
+used fraction of all systems on the machine.
 
-In addition to the manditory content, * any * additional information may be included. Commonly included
+In addition to the manditory content, *any* additional information may be included. Commonly included
 information includes the results of any tests used to define the service status. For example:
 <pre>
 condor_running:yes
