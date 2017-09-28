@@ -14,7 +14,7 @@ cd install/ansible
 svn add svc_name.yaml
 # modify the existing inventory files to include the new service
 </pre>
-This is the base playbook for creation of a VM
+The above is the base playbook for creation of a VM
 
 <pre>
 cd install/ansible/group_vars
