@@ -42,8 +42,10 @@ This directory typically contains three sub-directories, files, handlers and tas
 
 Files is where any required files needed for a VM are located. 60-local-rules for iptables is an example.
 
-Handlers and Tasks contains the actual playbooks used to build the service. Many examples exist and can be consulted.
-
+Handlers and Tasks contains the actual playbooks used to build the service.
+The files contained in these directories must be edited to the specifices of the service being built.
+Many examples exist and can be consulted.
+ 
 Finally, build the service machine:
 <pre>
 cd install
