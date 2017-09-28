@@ -47,6 +47,7 @@ Handlers and Tasks contains the actual playbooks used to build the service. Many
 Finally, build the service machine:
 <pre>
 cd install
+svn commit
 ./install.rb svc_name.grid.iu.edu
 </pre>
 Upon completion the newly made VM should be running on the specified VM host.
