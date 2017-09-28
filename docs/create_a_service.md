@@ -83,6 +83,12 @@ must be created to periodically execute the custom status reporting code.
 At IU, this script writes status information to a shared file system common to
 all services operated there.
 
+If the above conventions as to the location of the script and its name are followed
+there is a script on puppet.grid.iu.edu that will automatically add the script
+from the shared file system to the official puppet repository and install it
+on the service VM. Currently this installation script is privately owned by
+Scott Teige but can be made public as needed.
+
 ### The format of the monitor report file
 
 The monitoring script writes a file to /net/nas01/Public/status/svc_name/stamp
@@ -142,7 +148,8 @@ perfsonar
 production
 swamp
 </pre>
-all in the same directory as the catalog.
+all in the same directory as the catalog. No further action is required at this time, the
+results will eventually (within one hour) be presented at locations described below.
 
 ## Where to see the results
 
