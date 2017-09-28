@@ -41,7 +41,7 @@ kernel:2.6.32-696.10.2.el6.x86_64
 filesystem_use:/var at 18%
 Memory:1020088 kB
 Cores:1
-<pre>
+</pre>
 
 The first line (which must the the first line of the output) is the reported status. The only allowed
 values are: OK, WARNING, CRITICAL and UNKNOWN.
