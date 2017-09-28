@@ -4,8 +4,8 @@ There are a series of steps needed to create a fully supported service at IU.
 
 ## Define the service in ansible
 
-In the following it is assumed you have svn installed and configured to use
-GOC ansible. By convention the anme of the new service is svc_name.
+In the following it is assumed you'll be working on collab.grid.iu.edu.
+By convention the name of the new service is svc_name.
 
 The steps required to add a new service are:
 <pre>
