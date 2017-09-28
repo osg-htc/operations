@@ -14,19 +14,42 @@ cd install/ansible
 svn add svc_name.yaml
 # modify the existing inventory files to include the new service
 </pre>
+This is the base playbook for creation of a VM
 
 <pre>
 cd install/ansible/group_vars
-# create svc_name.yaml, copy and edit an existng file
+# create svc_name.yaml, copy and edit an existing file
 svn add svc_name.yaml
+</pre>
+This file specifies the operating system version, the number of virtual cores and the allocated memory and disk
+space in /usr/local.
+
+<pre>
 cd install/ansible/host_vars
 # create svc_name.grid.iu.edu.yaml, copy and edit an existng file
 svn add svc_name.grid.iu.edu.yaml
+</pre>
+This file also specifies the operating system version, the number of virtual cores and the allocated memory and disk
+space in /usr/local. Additionally, it specifies on which VM host the service VM will be created.
+
+<pre>
 cd install/ansible/roles
 # create the directory to contain the playbooks for the service
 mkdir svc_name
 cp -r oasis svc_name
 </pre>
+This directory typically contains three sub-directories, files, handlers and tasks.
+
+Files is where any required files needed for a VM are located. 60-local-rules for iptables is an example.
+
+Handlers and Tasks contains the actual playbooks used to build the service. Many examples exist and can be consulted.
+
+Finally, build the service machine:
+<pre>
+cd install
+./install.rb svc_name.grid.iu.edu
+</pre>
+Upon completion the newly made VM should be running on the specified VM host.
 
 ## Enable monitoring of the service
 
