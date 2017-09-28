@@ -125,3 +125,32 @@ is the version of the RPM used to install the service running on the machine. Th
 a human readable version of the manditory timestamp field and is, by convention the last field in the status
 output.
 
+## Configure Monitor to show the results
+
+The name of the service must be added to a overall list of services operated at IU 
+(a *catalog*) and to a particular subgroup of that catalog. This is done by adding
+the name of the service to files on monitor.grid.iu.edu. The catalog file is
+<pre>
+/usr/local/availability/report-lists/status_overview
+</pre>
+and the available group files are
+<pre>
+goc_utilities
+hosts
+itb
+perfsonar
+production
+swamp
+</pre>
+all in the same directory as the catalog.
+
+## Where to see the results
+
+<pre>
+http://monitor.grid.iu.edu/availability/status_overview.html
+</pre>
+shows the status for all services currently in the catalog.
+<pre>
+http://monitor.grid.iu.edu/availability/production.html
+</pre>
+shows the status for all services in the *production* service group.
