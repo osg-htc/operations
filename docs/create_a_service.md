@@ -80,7 +80,14 @@ nor is it required to exist in the above directory. If it is not named status_st
 </pre>
 must be created to periodically execute the custom status reporting code.
 
+At IU, this script writes status information to a shared file system common to
+all services operated there.
+
 ### The format of the monitor report file
+
+The monitoring script writes a file to /net/nas01/Public/status/svc_name/stamp
+containing the status and certain other required information. The script is executed
+periodically by a crontab entry created when the VM was initially built.
 
 There are a few manditory key:value fields in the output of the reporting code. Follows
 is the minimum, manditory output:
