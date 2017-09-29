@@ -6,7 +6,7 @@ There are a series of steps needed to create a fully supported service at IU.
 
 Send email to the DNS administrators at IU requesting DNS entries for the new service name be made.
 Expect a 24 hour delay after the request for the new entry to propagate to actual servers.
-Acknowledgement of the request should occur within 2 buisiness hours of it being made.
+Acknowledgement of the request should occur within 2 business hours of it being made.
 
 Example:
 <pre>
