@@ -98,16 +98,29 @@ nor is it required to exist in the above directory. If it is not named status_st
 <pre>
 /etc/cron.d/
 </pre>
-must be created to periodically execute the custom status reporting code.
+must be created on the target machine to periodically execute the custom status reporting code.
 
 At IU, this script writes status information to a shared file system common to
 all services operated there.
 
-If the above conventions as to the location of the script and its name are followed
-there is a script on puppet.grid.iu.edu that will automatically add the script
-from the shared file system to the official puppet repository and install it
-on the service VM. Currently this installation script is privately owned by
-Scott Teige but can be made public as needed.
+Installing the script on the target machine(s) is accomplished on puppet.grid.iu.edu by:
+<pre>
+cp -f /net/nas01/Public/status/svc_name/status_stamp.sh /etc/puppet/env/development/modules/status_stamp/files/svc_name
+export EDITOR=emacs
+cd /etc/puppet/env/development/
+svn commit
+cd /etc/puppet/env/testing/
+svn update
+cd /etc/puppet/env/production/
+svn update
+</pre>
+
+The script will be in place within 30 minutes and executed on the target machine within 45 minutes.
+These can be expidited a su on the target machine:
+<pre>
+puppet agent -t
+/usr/local/status_stamp/svc_name/status_stamp.sh
+</pre>
 
 ### The format of the monitor report file
 
