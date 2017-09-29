@@ -26,12 +26,16 @@ Thanks!
 
 In the following it is assumed you'll be working on collab.grid.iu.edu.
 By convention the name of the new service is svc_name.
-
+These code snippets can be executed by giving values to
+<pre>
+$home
+$svc_name
+</pre>
 The steps required to add a new service are:
 <pre>
 cd $home/install/ansible
 # create svc_name.yaml, copy and edit an existng file
-svn add svc_name.yaml
+svn add $svc_name.yaml
 # modify the existing inventory files to include the new service
 </pre>
 The above is the base playbook for creation of a VM
@@ -39,7 +43,7 @@ The above is the base playbook for creation of a VM
 <pre>
 cd $home/install/ansible/group_vars
 # create svc_name.yaml, copy and edit an existing file
-svn add svc_name.yaml
+svn add $svc_name.yaml
 </pre>
 This file specifies the operating system version, the number of virtual cores and the allocated memory and disk
 space in /usr/local.
@@ -47,7 +51,7 @@ space in /usr/local.
 <pre>
 cd $home/install/ansible/host_vars
 # create svc_name.grid.iu.edu.yaml, copy and edit an existng file
-svn add svc_name.grid.iu.edu.yaml
+svn add $svc_name.grid.iu.edu.yaml
 </pre>
 This file also specifies the operating system version, the number of virtual cores and the allocated memory and disk
 space in /usr/local. Additionally, it specifies on which VM host the service VM will be created.
@@ -55,8 +59,8 @@ space in /usr/local. Additionally, it specifies on which VM host the service VM 
 <pre>
 cd $home/install/ansible/roles
 # create the directory to contain the playbooks for the service
-mkdir svc_name
-cp -r oasis svc_name
+mkdir $svc_name
+cp -r oasis $svc_name
 </pre>
 This directory typically contains three sub-directories, files, handlers and tasks.
 
@@ -70,7 +74,7 @@ Finally, build the service machine:
 <pre>
 cd $home/install
 svn commit
-./install.rb svc_name.grid.iu.edu
+./install.rb $svc_name.grid.iu.edu
 </pre>
 Upon completion the newly made VM should be running on the specified VM host.
 
@@ -100,12 +104,11 @@ nor is it required to exist in the above directory. If it is not named status_st
 </pre>
 must be created on the target machine to periodically execute the custom status reporting code.
 
-At IU, this script writes status information to a shared file system common to
-all services operated there.
+At IU, this script writes status information to a shared file system common to all services operated there.
 
 Installing the script on the target machine(s) is accomplished on puppet.grid.iu.edu by:
 <pre>
-cp -f /net/nas01/Public/status/svc_name/status_stamp.sh /etc/puppet/env/development/modules/status_stamp/files/svc_name
+cp -f /net/nas01/Public/status/$svc_name/status_stamp.sh /etc/puppet/env/development/modules/status_stamp/files/$svc_name
 export EDITOR=emacs
 cd /etc/puppet/env/development/
 svn commit
@@ -116,10 +119,11 @@ svn update
 </pre>
 
 The script will be in place within 30 minutes and executed on the target machine within 45 minutes.
-These can be expidited a su on the target machine:
+These can be expidited as su on the target machine:
 <pre>
 puppet agent -t
-/usr/local/status_stamp/svc_name/status_stamp.sh
+export svc_name=`hostname | awk -F. '{print $1}'`
+/usr/local/status_stamp/$svc_name/status_stamp.sh
 </pre>
 
 ### The format of the monitor report file
