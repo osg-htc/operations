@@ -4,9 +4,19 @@ There are a series of steps needed to create a fully supported service at IU.
 
 ## Obtain a name and IP numbers for the service
 
-Send email to the DNS administrators ay IU requesting DNS entries for the new service name be made.
+Send email to the DNS administrators at IU requesting DNS entries for the new service name be made.
 Expect a 24 hour delay after the request for the new entry to propagate to actual servers.
 Acknowledgement of the request should occur within 2 buisiness hours of it being made.
+
+Example:
+<pre>
+To: dns-admin@indiana.edu
+Subject: New hostname in 129.79.53.0/24
+Hi Laura et al.,
+If you could, please register this new hostname with an IP in the 129.79.53.0/24 range (VLAN 259's public IP range):
+vjneal.grid.iu.edu
+Thanks!
+</pre>
 
 ## Get the new service name registered in IU-operations ldap server
 
