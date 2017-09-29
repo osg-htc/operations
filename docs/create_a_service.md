@@ -11,10 +11,11 @@ Acknowledgement of the request should occur within 2 business hours of it being 
 Example:
 <pre>
 To: dns-admin@indiana.edu
-Subject: New hostname in 129.79.53.0/24
+Subject: DNS request for a new hostname
+
 Hi Laura et al.,
-If you could, please register this new hostname with an IP in the 129.79.53.0/24 range (VLAN 259's public IP range):
-vjneal.grid.iu.edu
+I'd like to request a new hostname, myosg-dev.grid.iu.edu, be assigned to an unused IP address in the VLAN 259 public address ranges (129.79.53.0/24, 2001:18e8:2:6::/64). Thank you!
+
 Thanks!
 </pre>
 
