@@ -24,13 +24,18 @@ Thanks!
 
 ## Define the service in ansible
 
-In the following it is assumed you'll be working on collab.grid.iu.edu.
-By convention the name of the new service is svc_name.
-These code snippets can be executed by giving values to
+In the following it is assumed you'll be working on collab.grid.iu.edu. By convention the name of the new service is svc_name. These code snippets can be executed by giving values to
 <pre>
 $home
 $svc_name
 </pre>
+
+Before you begin get a current version of the code repository. Execute:
+<pre>
+cd $home/install
+svn update
+</pre>
+
 The steps required to add a new service are:
 <pre>
 cd $home/install/ansible
