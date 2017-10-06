@@ -12,8 +12,12 @@ The overall status of our services can be seen here: [Scott Home page](http://st
    * Hosts
    * PerfSonar
 
+#### Goal: Get this into a time series database
+
 ## Availability
 ### http://monitor.grid.iu.edu/availability/avail_24_overview.html
+
+#### Goal: Derive this from the time series database
 
 ## Configuration 
 ### http://steige.grid.iu.edu/steige/service_1506514004.csv
@@ -21,6 +25,8 @@ This is created (on steige.grid.iu.edu) by
 <pre>
 source catalog.sh > /net/nas01/Public/tmp/service_1506514004.csv
 </pre>
+
+#### Goal: Time series database
 
 # Common Thread
 All of these are derived from the "status_stamp.sh" script that runs on every machine. /etc/cron.d contains (for example)
