@@ -4,6 +4,7 @@
 
 ## Status
 ### http://monitor.grid.iu.edu/availability/production.html
+The overall status of our services can be seen here: [Scott Home page](http://steige.grid.iu.edu/steige/textw.html)
 #### Service groups
    * Production
    * ITB
