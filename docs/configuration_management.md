@@ -16,6 +16,10 @@ The overall status of our services can be seen here: [Scott Home page](http://st
 
 ## Availability
 ### http://monitor.grid.iu.edu/availability/avail_24_overview.html
+This is created (on monitor.grid.iu.edu) by a cron job running:
+<pre>
+/usr/local/availability/make_avail24_board
+</pre>
 
 #### Goal: Derive this from the time series database
 
@@ -23,6 +27,7 @@ The overall status of our services can be seen here: [Scott Home page](http://st
 ### http://steige.grid.iu.edu/steige/service_1506514004.csv
 This is created (on steige.grid.iu.edu) by
 <pre>
+/usr/local/availability/make_status_board
 source catalog.sh > /net/nas01/Public/tmp/service_1506514004.csv
 </pre>
 
