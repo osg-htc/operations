@@ -37,7 +37,6 @@ This is created (on monitor.grid.iu.edu) by a cron job running:
 ### http://steige.grid.iu.edu/steige/service_1506514004.csv
 This is created (on steige.grid.iu.edu) by
 <pre>
-/usr/local/availability/make_status_board
 source catalog.sh > /net/nas01/Public/tmp/service_1506514004.csv
 </pre>
 
