@@ -22,7 +22,7 @@ source catalog.sh > /net/nas01/Public/tmp/service_1506514004.csv
 </pre>
 
 # Common Thread
-All of these are derived from the "status_stamp.sh" script that runs on every machine.
+All of these are derived from the "status_stamp.sh" script that runs on every machine. /etc/cron.d contains (for example)
 <pre>
 drwxr-xr-x   2 root root  4096 May 16 14:40 .
 drwxr-xr-x 124 root root 12288 Oct  6 03:20 ..
@@ -72,4 +72,19 @@ crlsync         fw           monitor-itb     psds1              rsvprocess2     
 csiu            glidein      munin           psds2              rsvprocess-itb  vm05              yum-internal-c7
 csiu-itb        glidein-int  myosg1          psds-itb1          swamp1          vm06
 data1           handle-dev   myosg2          psds-itb2          swamp2          vm07
+</pre>
+On puppet.grid.iu.edu (in scotts home directory as "push_status.sh") is a script that will update a status_stamp.sh file:
+<pre>
+#!/bin/bash
+
+for arg in "$@"; do
+   cp -f /net/nas01/Public/status/$arg/status_stamp.sh /etc/puppet/env/development/modules/status_stamp/files/$arg
+done
+export EDITOR=emacs
+cd /etc/puppet/env/development/
+svn commit
+cd /etc/puppet/env/testing/
+svn update
+cd /etc/puppet/env/production/
+svn update
 </pre>
