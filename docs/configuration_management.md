@@ -17,7 +17,7 @@ The overall status of our services can be seen here: [Scott Home page](http://st
 
 ## Configuration 
 ### http://steige.grid.iu.edu/steige/service_1506514004.csv
-This is created by
+This is created (on steige.grid.iu.edu) by
 <pre>
 source catalog.sh > /net/nas01/Public/tmp/service_1506514004.csv
 </pre>
@@ -46,6 +46,23 @@ where status_stamp contains
 
 1,16,31,46 * * * * root [[ -x /usr/local/status_stamp/status_stamp.sh ]] && /usr/local/status_stamp/status_stamp.sh
 </pre>
+and creates a file like this:
+<pre>
+OK
+timestamp:1507293601
+uptime:1809855.26
+kernel:2.6.32-696.10.1.el6.x86_64
+normalized load:0%
+filesystem_use:/ at 33%
+/boot at 7%
+java_running:yes
+Memory:131706516 kB
+Cores:48
+Sizeof /usr/local:48G
+generated:Fri Oct  6 08:40:01 EDT 2017
+</pre>
+[Service Creation](https://github.com/opensciencegrid/operations/blob/master/docs/create_a_service.md) contains details
+on how to make a status_stamp.sh script including the constraints on the format of its output.
 
 ## Updating a status_stamp_file
 The definitive source code is maintained by puppet and exists on the target machine. I like to keep a local copy
