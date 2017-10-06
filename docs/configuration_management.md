@@ -22,6 +22,41 @@ which is made by a cron job on monitor.grid.iu.edu:
 */10 * * * * root /usr/local/availability/make_status_board
 </pre>
 
+The history of the status is preserved here:
+<pre>
+ /net/nas01/Public/status_archive
+ </pre>
+ which contains *many* files with names like this
+ <pre>
+...
+1492917019  1495790419  1498662013  1501535408  1504417816  1507291203
+1492917620  1495791020  1498662611  1501536007  1504418419  1507291803
+1492918220  1495791619  1498663212  1501536609  1504419016  1507292404
+1492918820  1495792219  1498663812  1501537208  1504419616  1507293005
+1492919420  1495792821  1498664412  1501537808  1504420218  1507293603
+1492920021  1495793420  1498665010  1501538409  1504420816  1507294203
+...
+</pre>
+each of these contains lines like this:
+<pre>
+...
+cobbler:0
+collector1:0
+collector2:0
+collector-itb:0
+confluence:0
+crlsync:0
+csiu:0
+csiu-itb:0
+data1:0
+data2:0
+data-itb:0
+devm01:0
+devm02:0
+devm04:0
+...
+</pre>
+
 #### Goal: Get this into a time series database
 
 ## Availability
