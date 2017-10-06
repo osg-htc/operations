@@ -5,6 +5,7 @@
 ## Status
 ### http://monitor.grid.iu.edu/availability/production.html
 The overall status of our services can be seen here: [Scott Home page](http://steige.grid.iu.edu/steige/textw.html)
+
 #### Service groups
    * Production
    * ITB
@@ -12,13 +13,22 @@ The overall status of our services can be seen here: [Scott Home page](http://st
    * Hosts
    * PerfSonar
 
+The status of the individual Service groups can be seen, for example, here:
+<pre>
+http://monitor.grid.iu.edu/availability/production.html
+</pre>
+which is made by a cron job on monitor.grid.iu.edu:
+<pre>
+*/10 * * * * root /usr/local/availability/make_status_board
+</pre>
+
 #### Goal: Get this into a time series database
 
 ## Availability
 ### http://monitor.grid.iu.edu/availability/avail_24_overview.html
 This is created (on monitor.grid.iu.edu) by a cron job running:
 <pre>
-/usr/local/availability/make_avail24_board
+5 * * * * root /usr/local/availability/make_avail24_board
 </pre>
 
 #### Goal: Derive this from the time series database
