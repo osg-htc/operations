@@ -1,4 +1,7 @@
 # Operations
+## Useful documents
+[Service Creation](https://github.com/opensciencegrid/operations/blob/master/docs/create_a_service.md)
+
 ## Status
 ### http://monitor.grid.iu.edu/availability/production.html
 ## Availability
