@@ -1,4 +1,4 @@
-# Adding a new service at the GOC
+# Adding a new service at the IU-ops
 
 There are a series of steps needed to create a fully supported service at IU.
 
