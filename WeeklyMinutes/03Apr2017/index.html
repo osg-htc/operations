@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>27 March 2017 - OSG Operations</title>
+  <title>3 April 2017 - OSG Operations</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "27 March 2017";
-    var mkdocs_page_input_path = "WeeklyMinutes/27Mar2017.md";
-    var mkdocs_page_url = "/WeeklyMinutes/27Mar2017/";
+    var mkdocs_page_name = "3 April 2017";
+    var mkdocs_page_input_path = "WeeklyMinutes/03Apr2017.md";
+    var mkdocs_page_url = "/WeeklyMinutes/03Apr2017/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -193,16 +193,12 @@
                     
     <a class="" href="../10Apr2017/">10 April 2017</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="../03Apr2017/">3 April 2017</a>
-                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">27 March 2017</a>
+    <a class="current" href="./">3 April 2017</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#operations-meeting-march-27-2017">Operations Meeting March 27, 2017</a></li>
+    <li class="toctree-l3"><a href="#operations-meeting-april-3-2017">Operations Meeting April 3, 2017</a></li>
     
         <ul>
         
@@ -230,6 +226,10 @@
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../27Mar2017/">27 March 2017</a>
                 </li>
                 <li class="">
                     
@@ -272,10 +272,10 @@
         
       
     
-    <li>27 March 2017</li>
+    <li>3 April 2017</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/WeeklyMinutes/27Mar2017.md"
+        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/WeeklyMinutes/03Apr2017.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -285,12 +285,12 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="operations-meeting-march-27-2017">Operations Meeting March 27, 2017</h1>
+                <h1 id="operations-meeting-april-3-2017">Operations Meeting April 3, 2017</h1>
 <ul>
 <li>13:00 Eastern </li>
 <li>https://IU.zoom.us/j/865253152</li>
 <li>(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#</li>
-<li>Attending: Scott, Kyle, Suchandra, Jeny, Marina, Tom, Elizabeth</li>
+<li>Attending: Scott, Kyle, Steve, Merina, Jeny, Grigorie, Suchandra, Jeff, Tom</li>
 <li><a href="http://www.google.com/calendar/embed?src=c1htpcfoe6btrtc7n3uddg8mvs%40group.calendar.google.com&amp;ctz=America/New_York">GOC weekly calendar</a></li>
 <li><a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">Minutes location</a></li>
 </ul>
@@ -305,32 +305,48 @@
 <li><a href="http://tinyurl.com/pre26vw">GOC Services Availability/Reliability</a></li>
 <li><a href="http://myosg.grid.iu.edu/miscstatus/index?datasource=status&amp;count_sg_1=on&amp;count_active=on&amp;count_enabled=on">Current Status</a>: <img src="http://steige.grid.iu.edu/steige/status_current.png"></li>
 <li><a href="http://reports.grid.iu.edu/reports/current.apel">Accounting report</a></li>
-<li>Version report - obsolete with BDII<ul>
-<li>Condensed version - obsolete with BDII</li>
-</ul>
-</li>
-<li>Capacity report - obsolete with BDII</li>
-<li><img src="http://gratiaweb1.grid.iu.edu/gratiastatic/today/osg_wall_hours.png"/></li>
-<li><img src="http://osg-flock.grid.iu.edu/monitoring/condor/condor_7day.png" width='630' height='390'  /><br></li>
+<li><img src="http://steige.grid.iu.edu/steige/prod-hours2Apr2017.png"/></li>
+<li><img src="http://steige.grid.iu.edu/steige/flock3Apr2017.png" width='630' height='390'  /><br></li>
 </ul>
 <h4 id="grid-operations-center">Grid Operations Center</h4>
 <ul>
-<li>ITB release, no issues encountered.</li>
+<li>Production release</li>
 </ul>
 <h4 id="fermigrid-ops">FermiGrid Ops</h4>
+<ul>
+<li>voms.opensciencegrid.org was converted to alias and pointed to voms.grid.iu.edu on Wed. 3/29.</li>
+<li>vo-client-package not installed at all sites yet so some sites took new OSG voms proxies to be invalid</li>
+<li>workaround was to change config of voms@IU to sign proxies with old DN voms1.opensciencegrid.org.</li>
+</ul>
 <h4 id="wms-glide-in-factory">WMS Glide In Factory</h4>
+<ul>
+<li>Marty Kandes has accepted a new job at SDSC and last week was his last week on factory ops</li>
+<li>I will be covering Martys shifts until we hire a replacement; we have two potential candidates</li>
+</ul>
 <h4 id="osg-connect">OSG-Connect</h4>
+<ul>
+<li>~1.9M cpu hours last week</li>
+<li>32 active users</li>
+<li>26 active projects</li>
+</ul>
 <h2 id="operations-this-week">Operations This Week</h2>
 <h4 id="grid-operations-center_1">Grid Operations Center</h4>
 <ul>
-<li>Production release, <a href="http://osggoc.blogspot.com/2017/03/goc-service-update-tuesday-march-28th.html">Release note</a></li>
-<li>BDII SLA expires on Friday.</li>
+<li>ITB release</li>
+<li>BDII SLA has expired. poweroff tomorrow.</li>
 </ul>
 <h4 id="fermigrid-ops_1">FermiGrid Ops</h4>
+<ul>
+<li>will take old VOMS database offline as of Wed. 4/5/17 unless there are exceptions</li>
+<li>GOC staff should remove most of the Fermilab people from being vo-admins of OSG VO.</li>
+</ul>
 <h4 id="wms-glide-in-factory_1">WMS Glide In Factory</h4>
+<ul>
+<li>No changes planned</li>
+</ul>
 <h4 id="osg-connect_1">OSG-Connect</h4>
 <ul>
-<li>No maintenance planned</li>
+<li>No changes planned</li>
 </ul>
 <h2 id="new-registrations">New Registrations</h2>
 <h4 id="virtual-organizations">Virtual Organizations</h4>
@@ -382,8 +398,8 @@
 </thead>
 <tbody>
 <tr>
-<td>Purdue-LSST</td>
-<td>CSC</td>
+<td>MIT_CampusFactory</td>
+<td>USCMS_T2</td>
 <td></td>
 <td></td>
 <td></td>
@@ -423,7 +439,7 @@
 <tbody>
 <tr>
 <td>3403</td>
-<td>14</td>
+<td>24</td>
 <td>Evelyn Jagoda</td>
 <td></td>
 <td>SCDA</td>
@@ -457,9 +473,13 @@
 <li><a href="https://ticket.grid.iu.edu/goc/list/open">View Open GOC Tickets</a> | <a href="https://twiki.grid.iu.edu/bin/view/Operations/TicketReports">OSG Operations Metrics</a> | <a href="http://myosg.grid.iu.edu/miscstatus?count_sg_1&amp;count_active=on&amp;count_enabled=on&amp;datasource=status">Operational Service Overview</a></li>
 </ul>
 <h2 id="wlcg-egi-operations">WLCG &amp; EGI Operations</h2>
+<ul>
+<li>Reported that we were working on availabilty calculation for WLCG resource</li>
+</ul>
 <h2 id="security">Security</h2>
 <ul>
-<li>https://ticket.opensciencegrid.org/33099</li>
+<li>Preparing announcement for VOMS-admin: https://ticket.opensciencegrid.org/33099</li>
+<li>Issue reported at https://ticket.opensciencegrid.org/33278 concerning credential caching on HT-condor CE which leads to delayed effect on GUMS banning.</li>
 </ul>
 <h2 id="aob">AOB</h2>
 <h2 id="action-items-from-meeting">Action Items from Meeting</h2>
@@ -470,10 +490,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../20Mar2017/" class="btn btn-neutral float-right" title="20 March 2017">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../27Mar2017/" class="btn btn-neutral float-right" title="27 March 2017">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../03Apr2017/" class="btn btn-neutral" title="3 April 2017"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../10Apr2017/" class="btn btn-neutral" title="10 April 2017"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -501,10 +521,10 @@
           <a href="https://github.com/opensciencegrid/operations" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../03Apr2017/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../10Apr2017/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../20Mar2017/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../27Mar2017/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>OASIS - OSG Operations</title>
+  <title>XDLogin - OSG Operations</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "OASIS";
-    var mkdocs_page_input_path = "SLA/oasis-replica.md";
-    var mkdocs_page_url = "/SLA/oasis-replica/";
+    var mkdocs_page_name = "XDLogin";
+    var mkdocs_page_input_path = "SLA/xdlogin.md";
+    var mkdocs_page_url = "/SLA/xdlogin/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -62,24 +62,12 @@
 		
     <span class="caption-text">Service Level Agreements</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../xdlogin/">XDLogin</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../voms/">VOMS</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../myosg/">MyOSG</a>
-                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">OASIS</a>
+    <a class="current" href="./">XDLogin</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#oasis-replica-service-level-agreement">OASIS Replica Service Level Agreement</a></li>
+    <li class="toctree-l3"><a href="#xd-login-service-level-agreement">XD-Login Service Level Agreement</a></li>
     
         <ul>
         
@@ -103,7 +91,7 @@
         
             <li><a class="toctree-l4" href="#service-off-hours-support-procedures">Service Off-Hours Support Procedures</a></li>
         
-            <li><a class="toctree-l4" href="#requests-for-service-enhancement">Requests for Service Enhancement</a></li>
+            <li><a class="toctree-l4" href="#requests-for-service-enhancements">Requests for Service Enhancements</a></li>
         
             <li><a class="toctree-l4" href="#customer-problem-reporting">Customer Problem Reporting</a></li>
         
@@ -148,6 +136,18 @@
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../voms/">VOMS</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../myosg/">MyOSG</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../oasis-replica/">OASIS</a>
                 </li>
                 <li class="">
                     
@@ -313,10 +313,10 @@
         
       
     
-    <li>OASIS</li>
+    <li>XDLogin</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/oasis-replica.md"
+        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/xdlogin.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -326,7 +326,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="oasis-replica-service-level-agreement">OASIS Replica Service Level Agreement</h1>
+                <h1 id="xd-login-service-level-agreement">XD-Login Service Level Agreement</h1>
 <h2 id="version-control">Version Control</h2>
 <table>
 <thead>
@@ -340,30 +340,26 @@
 <tbody>
 <tr>
 <td>0.1</td>
-<td>2-27-2013</td>
+<td>2-18-2013</td>
 <td>Scott Teige</td>
 <td>First Draft</td>
-</tr>
-<tr>
-<td>0.2</td>
-<td>3-28-2013</td>
-<td>Rob Quick</td>
-<td>Revision of First Draft</td>
 </tr>
 </tbody>
 </table>
 <h2 id="executive-summary">Executive Summary</h2>
-<p>This SLA is an agreement between OSG Operations and the OSG Management and Stakeholders describing details of the OASIS software distribution system.</p>
+<p>This SLA is an agreement between OSG Operations, Information Sciences Institute (ISI) and the OSG Management and Stakeholders describing details
+of the OSG-XD job submission system.</p>
 <h2 id="owners">Owners</h2>
-<p>This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.</p>
+<p>This SLA is owned by OSG Operations, Indiana University and ISI and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.</p>
 <h2 id="service-name-and-description">Service Name and Description</h2>
 <h3 id="name">Name</h3>
-<p>OASIS (OSG Application and Software Installation Service) system</p>
+<p>The service is built on two physical machines hosted by the GOC. These are
+the production XD-Login job submission node and an adjunct machine, OSG-FLOCK.</p>
 <h3 id="description">Description</h3>
-<p>The OASIS service provides OSG Virtual Organizations with a central location for application software. The content hosted on OASIS can be made available on OSG compute resources. The service consists of three virtual machines, a stratum 0 CERN Virtual Machine File System (CVMFS) server, a stratum 1 replica of the stratum 0 and a node accessible for login by VO OASIS managers.</p>
-<p>This SLA covers the stratum 1 replica. The stratum 0 and login SLA is available <a href="https://opensciencegrid.org/bin/view/Operations/OASISServiceLevelAgreement">here</a>.</p>
+<p>The XD-Login submission node allows OSG resources to be accessed by XSEDE users. A complete description is available <a href="https://www.xsede.org/osg-user-guide">here.</a></p>
 <h2 id="security-considerations">Security Considerations</h2>
-<p>The OASIS replica is accessible for login only by GOC and OSG technology group staff. It is publicly available as read-only.</p>
+<p>The XD-Login submission node supports Single Sign On through the XSEDE User Portal, and also from the command line using gsissh with a grid certificate for authentication.
+OSG-FLOCK is not publicly accesible.</p>
 <h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</h2>
 <p>This section deals with unplanned outages. Please see <a href="#requests-for-service-enhancements">Requests for Service Enhancement</a> for information on planned maintenance outages.</p>
 <table>
@@ -383,10 +379,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>The issue causes a full service or customer outage or a compromise to all stratum 1 replicas</td>
-<td>The issue causes a full service outage or a compromise on the GOC replica instance</td>
-<td>The issue causes short (less than 5 minute) periods of unstable or inconsistent performance</td>
-<td>The issue causes minor (less than 10 seconds) periods of unstable or inconsistent performance</td>
+<td>This Service does not have critical priority</td>
+<td>The issue causes a full service outage rendering the service unavailable</td>
+<td>The issue causes short (less than 15 minute) periods of unstable or inconsistent performance</td>
+<td>The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance</td>
 </tr>
 <tr>
 <td><em>Number of Clients Affected</em></td>
@@ -395,22 +391,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>The issue affects all replica users or OSG resources</td>
-<td>The issue affects all replica users or OSG resources</td>
-<td>The issue may or may not affect all replica users or OSG resources</td>
-<td>The issue affects only a small number of replica users or OSG resources</td>
-</tr>
-<tr>
-<td><em>Workaround</em></td>
-<td>* *</td>
-<td>* *</td>
-<td>* *</td>
-</tr>
-<tr>
-<td>All replicas are unavailable</td>
-<td>replica failover mechanisms are used to direct usage away from the source of the outage</td>
-<td>replica failover mechanisms are used to direct usage away from the source of the outage</td>
-<td>No workaround will be necessary</td>
+<td>N/A</td>
+<td>The issue affects all users</td>
+<td>The issue may or may not affect all users</td>
+<td>The issue affects only a small number of users</td>
 </tr>
 <tr>
 <td><em>Response Time</em></td>
@@ -419,10 +403,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>Within one (1) hour</td>
-<td>Workaround is addressed within (1) hour. Issue will be addressed by the next business day</td>
+<td>N/A</td>
 <td>Within the next business day</td>
 <td>Within the next business day</td>
+<td>Within five (5) business days</td>
 </tr>
 <tr>
 <td><em>Resolution Time</em></td>
@@ -431,10 +415,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>The maximum acceptable resolution time is four (4) continuous hours, after initial response time</td>
-<td>The maximum acceptable resolution time is 24 continuous hours, after the initial response time</td>
-<td>The maximum acceptable resolution time is five (7) business days</td>
-<td>The maximum acceptable resolution time is (30) business days</td>
+<td>N/A</td>
+<td>The maximum acceptable resolution time is one full (1) business day</td>
+<td>The maximum acceptable resolution time is five (5) business days</td>
+<td>The maximum acceptable resolution time is thirty (30) business days</td>
 </tr>
 <tr>
 <td><em>Escalates Every</em></td>
@@ -443,10 +427,10 @@
 <td>* *</td>
 </tr>
 <tr>
-<td>One Hour</td>
-<td>Two Hour</td>
+<td>N/A</td>
 <td>One Day</td>
 <td>One Week</td>
+<td>One Month</td>
 </tr>
 </tbody>
 </table>
@@ -480,37 +464,41 @@
 <p>Detailed information on contacts are viewable on the following <a href="https://myosg.grid.iu.edu/rgsummary/index?summary_attrs_showhierarchy=on&amp;summary_attrs_showservice=on&amp;summary_attrs_showfqdn=on&amp;summary_attrs_showcontact=on&amp;gip_status_attrs_showtestresults=on&amp;downtime_attrs_showpast=&amp;account_type=cumulative_hours&amp;ce_account_type=gip_vo&amp;se_account_type=vo_transfer_volume&amp;bdiitree_type=total_jobs&amp;bdii_object=service&amp;bdii_server=is-osg&amp;start_type=7daysago&amp;start_date=09<span style="color:red">2F15</span>2F2009&amp;end_type=now&amp;end_date=09<span style="color:red">2F15</span>2F2009&amp;site_10047=on&amp;rg=on&amp;rg_336=on&amp;gridtype=on&amp;gridtype_1=on&amp;active=on&amp;active_value=1&amp;disable_value=1">MyOSG URL</a>, and are maintained within the</p>
 <p>Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly <a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">Operations</a> and <a href="https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes">Production</a> meetings.</p>
 <h2 id="service-availability-and-outages">Service Availability and Outages</h2>
-<p>The GOC will strive for 99% service availability. If service availability falls below 99% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.</p>
+<p>The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.</p>
 <h2 id="service-support-hours">Service Support Hours</h2>
 <p>The service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.</p>
 <h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures</h2>
-<p>Users should contact the GOC via the <a href="https://ticket.grid.iu.edu/goc/submit">GOC trouble ticket</a> system.</p>
-<h2 id="requests-for-service-enhancement">Requests for Service Enhancement</h2>
+<p>XSEDE users should report problems via the <a href="https://tickets.xsede.org">XSEDE trouble ticket</a> system. Others should contact the GOC via the</p>
+<h2 id="requests-for-service-enhancements">Requests for Service Enhancements</h2>
 <p>This section deals with planned maintenance outages. Please see <a href="#service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</a> for information on unplanned outages.</p>
 <p>The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.</p>
 <h2 id="customer-problem-reporting">Customer Problem Reporting</h2>
 <p>The GOC provides operators 24x7x365. Service problems should be reported immediately by one of the following mechanisms.</p>
 <ul>
-<li>Creating a problem ticket at https://ticket.grid.iu.edu/goc/submit (<em>preferred</em>)</li>
-<li>Emailing a description to goc@opensciencegrid.org</li>
+<li>Creating a problem ticket at https://tickets.xsede.org (<em>preferred for XSEDE users</em>)</li>
+<li>Creating a problem ticket at https://ticket.grid.iu.edu/goc/submit (<em>preferred for other users</em>)</li>
+<li>Emailing a description to XD-Login-support@opensciencegrid.org</li>
 <li>Calling the GOC phone at 317-278-9699</li>
 </ul>
 <h2 id="responsibilities">Responsibilities</h2>
 <h3 id="customer-responsibilities">Customer Responsibilities</h3>
-<p>OASIS customers agree to:</p>
+<p>XD-Login customers agree to:</p>
 <ul>
-<li>Use the service for purposes of OSG approved work only.</li>
+<li>Use the service for purposes of XSEDE or OSG approved work only.</li>
 <li>Alert the GOC if they are going to use the Service in a non-standard way, this includes testing or anticipated mass increases in usage.</li>
-<li>Contact support by means outlined in the <a href="https://github.com/opensciencegrid/operations/blob/master/SLA/OASISServiceLevelAgreement#customer-problem-reporting">Customer Problem Reporting</a> section of this document if they encounter any service issues.</li>
+<li>Contact support by means outlined in the <a href="#customer-problem-reporting">Customer Problem Reporting</a> section of this document if they encounter any service issues.</li>
 <li>Be willing and available to provide information within one business day for any High level issues reported.</li>
 </ul>
 <h3 id="responsibilities_1">Responsibilities</h3>
 <p>GOC operations:
    * Maintain the physical machine hosting the service
    * Assure the service is accessible via its advertised URL
-   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.
-   * Meet response times associated with the priority assigned by users.
-   * Maintain appropriately trained staff.</p>
+   * Make changes and updates within the normal GOC <a href="https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule.md">release schedule</a>
+   * Meet response times associated with the priority assigned by users for issues related to the hardware.
+   * Maintain appropriately trained staff.
+   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.</p>
+<p>ISI:
+   * Is responsible for all aspects of the service not listed above.</p>
 <p>GOC Service Desk Responsibilities:
    * Log and track all Customer requests for service through the OSG ticketing system.</p>
 <p>Database &amp; Application Services responsibilities:
@@ -552,11 +540,11 @@
 <h2 id="sla-validity-period">SLA Validity Period</h2>
 <p>This SLA will be in affect for one year.</p>
 <h2 id="sla-review-procedure">SLA Review Procedure</h2>
-<p>This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.</p>
+<p>This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, a representitive of ISI, the OSG Executive Team or the Stakeholders.</p>
 <h2 id="references">References</h2>
 <h1 id="appendix-a-customer-information">Appendix A - Customer Information</h1>
-<p>All service end-users who are members of an OASIS enabled VO and OSG Staff are considered customers.
-Any VO can be OASIS enabled on request but it is anticipated that LHC associated VOs will use their existing CVMFS instances and will have no need for OASIS.</p>
+<p>All service end-users who are members of an OSG VO and OSG Staff are considered customers.
+All XSEDE staff and all XSEDE users with an OSG allocation are also customers.</p>
 <h1 id="appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies</h1>
 <p>The service is dependent on the following services to collect and distribute information:
    * Local Network and Hardware</p>
@@ -578,9 +566,9 @@ Any VO can be OASIS enabled on request but it is anticipated that LHC associated
 <li>Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.</li>
 </ul>
 <h2 id="software-services">Software Services</h2>
-<p>Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the <a href="#osg-operations-responsibilities">OSG Operations Responsibilities</a> section of this document.</p>
+<p>Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the <a href="https://github.com/opensciencegrid/operations/blob/master/SLA/XDLoginServiceLevelAgreement#osg-operations-responsibilities">OSG Operations Responsibilities</a> section of this document.</p>
 <h2 id="software-costs">Software Costs</h2>
-<p>IU and the Grid Operations Center bears all costs for new and replacement software contingent on the OSG Grant.</p>
+<p>IU and the Grid Operations Center bears all costs for new and replacement software.</p>
 <h1 id="appendix-d-approval">Appendix D - Approval</h1>
 <table>
 <thead>
@@ -609,10 +597,10 @@ Any VO can be OASIS enabled on request but it is anticipated that LHC associated
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../oim/" class="btn btn-neutral float-right" title="OIM">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../voms/" class="btn btn-neutral float-right" title="VOMS">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../myosg/" class="btn btn-neutral" title="MyOSG"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../mission/" class="btn btn-neutral" title="OSG Operations Mission"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -640,10 +628,10 @@ Any VO can be OASIS enabled on request but it is anticipated that LHC associated
           <a href="https://github.com/opensciencegrid/operations" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../myosg/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../mission/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../oim/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../voms/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
