@@ -1,6 +1,7 @@
 # Operations Meeting Weekly Index
 
 ## 2017
+   * [16 October 2017](16Oct2017.md)
    * [09 October 2017](09Oct2017.md)
    * [02 October 2017](02Oct2017.md)
    * [25 September 2017](25Sep2017.md)
