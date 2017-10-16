@@ -10,7 +10,7 @@ pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
 - Service Level Agreements:
-  - 'XDLogin': 'sdlogin.md'
+  - 'XDLogin': 'SLA/xdlogin.md'
   - 'VOMS': 'SLA/voms.md'
   - 'MyOSG': 'SLA/myosg.md'
   - 'OASIS': 'SLA/oasis-replica.md'
