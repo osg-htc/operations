@@ -37,7 +37,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
 | *Description* | * * | * * | * * |
-| This service does not have critical priority  | The issue prevents any new slots from joining the Condor pool | The issue causes the pilots death or instability at some sites, reducing the ability of the Condor pool to do science | The issue prevents effective monitoring or full utilization of the Condor pool |
+| This service does not have critical priority  | The issue prevents any use of the service | The issue prevents some acceptable uses of the service | The issue causes degraded performance of the service |
 | *Response Time* | * * | * * | * * |
 | N/A | Within 4 business hours | Within 2 business days | Within 10 business days |
 | *Resolution Time* | * * | * * | * * |
