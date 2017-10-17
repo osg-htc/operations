@@ -60,7 +60,7 @@ Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly 
 
 ## Service Availability and Outages
 The IU-OPS will strive for 97% service availability. If service [availability](http://monitor.grid.iu.edu/availability/avail_month_overview.html) 
-falls below 97% monthly as monitored by IU-ops a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
+falls below 97% monthly as monitored by IU-OPS a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
 
 Availability will be determined by the algorithm documented [here](http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh)
 
@@ -99,7 +99,7 @@ The GOC will provide the customer with the following reports in the intervals in
 
 | *Report Name* | *Reporting Interval* | *Delivery Method* | *Responsible Party* |
 | ------------- | -------------------- | ----------------- | ------------------- |
-| System Availability and Reliability | Monthly | Web Posting | IU-OPS |
+| System Availability and Reliability | Monthly | [Web Posting](http://monitor.grid.iu.edu/availability/avail_month_overview.html) | IU-OPS |
 
 ## SLA Validity Period
 
