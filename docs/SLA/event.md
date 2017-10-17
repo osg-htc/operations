@@ -99,7 +99,7 @@ The GOC will provide the customer with the following reports in the intervals in
 
 | *Report Name* | *Reporting Interval* | *Delivery Method* | *Responsible Party* |
 | ------------- | -------------------- | ----------------- | ------------------- |
-| System Availability and Reliability | Monthly | [Web Posting](http://monitor.grid.iu.edu/availability/avail_month_overview.html) | IU-OPS |
+| System Availability | Monthly | [Web Posting](http://monitor.grid.iu.edu/availability/avail_month_overview.html) | IU-OPS |
 
 ## SLA Validity Period
 
