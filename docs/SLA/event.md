@@ -59,10 +59,10 @@ Detailed information on contacts are viewable on the following [MyOSG URL](https
 Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and [Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
 
 ## Service Availability and Outages
-The IU-OPS will strive for 97% service availability. If service [availability(http://monitor.grid.iu.edu/availability/avail_month_overview.html) 
+The IU-OPS will strive for 97% service availability. If service [availability](http://monitor.grid.iu.edu/availability/avail_month_overview.html) 
 falls below 97% monthly as monitored by IU-ops a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
 
-Availability will be determined by the algorithm documented [here(http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh)
+Availability will be determined by the algorithm documented [here](http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh)
 
 ## Service Support Hours
 This service will be run for 24x7, but support will primarily be within business hours. The exception is for security incidents.
