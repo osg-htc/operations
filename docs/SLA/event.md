@@ -26,8 +26,9 @@ zzzz
 
 ## Security Considerations
 All data transmitted or recieved via this service 
-must meet the requirements of the [IU privacy policy](https://github.com/opensciencegrid/operations/blob/master/docs/privacy.md)
-
+is subject to the terms of the
+[IU privacy policy](https://github.com/opensciencegrid/operations/blob/master/docs/privacy.md).
+In particular all data transmitted shall be considered disclosable without condition.
 
 ## Service Target Response Priorities and Response Times
 
