@@ -37,13 +37,13 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | Critical | High | Elevated | Normal |
 | -------- | ---- | -------- | ------ |
 | *Description* | * * | * * | * * |
-| The issue can cause a likely security incident | The issue prevents any new slots from joining the Condor pool | The issue causes the pilots death or instability at some sites, reducing the ability of the Condor pool to do science | The issue prevents effective monitoring or full utilization of the Condor pool |
+| This service does not have critical priority  | The issue prevents any new slots from joining the Condor pool | The issue causes the pilots death or instability at some sites, reducing the ability of the Condor pool to do science | The issue prevents effective monitoring or full utilization of the Condor pool |
 | *Response Time* | * * | * * | * * |
-| Within 4 business hours or within 24 hours, whatever is shorter | Within 4 business hours | Within 2 business days | Within 10 business days |
+| N/A | Within 4 business hours | Within 2 business days | Within 10 business days |
 | *Resolution Time* | * * | * * | * * |
-| Containment within 24 hours. Remediation within 1 business day. | Within One Business Day | The maximum acceptable resolution time is five (5) business days | The maximum acceptable resolution time is ten (10) business days |
+| N/A| Within One Business Day | The maximum acceptable resolution time is five (5) business days | The maximum acceptable resolution time is ten (10) business days |
 | *Escalates Every* | * * | * * | * * |
-| One Day | Two Days | Five Days | Ten Days |
+| N/A | Two Days | Five Days | Ten Days |
 
 ## Escalation Contacts
 
