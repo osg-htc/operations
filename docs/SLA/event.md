@@ -81,8 +81,7 @@ IU-OPS will give 1 week of warning prior to any change in the RabbitMQ service v
    * The exception is for code changes that are deemed critical by IU-OPS staff.
    A critical change can be deployed immediately if approved by the Production or Operations manager.
   
-OSG Operations will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case if the downtime and changes cause further issues.
-
+OSG Operations will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case the downtime or changes cause further issues. Exceptions to this are given in the [responsibilities](#Responsibilities) section below.
 
 ## Customer Problem Reporting
 The IU-OPS provides operators 24x7x365. Message bus related problems should be reported immediately by one of the following mechanisms.
@@ -96,7 +95,7 @@ The IU-OPS provides operators 24x7x365. Message bus related problems should be r
    * A RabbitMQ service will be run by IU-OPS and made accessible to registered users.
    * Users of the service are responsible for backup of any data transferred by the system.
    * Individual users agree to use the system in such a way as to allow reasonable access to others.
-   * IU-OPS reserves the right to impose access limits without notice as required to allow reasonable access.
+   * IU-OPS reserves the right to deploy configuration changes (including access limits) without notice as required to allow reasonable access.
    * IU-OPS will coordinate with user groups during maintenace if so requested by the group. It is the responsibilty of the group to have a representitive available if coordination is requested.
 
 ## Service Measuring and Reporting
