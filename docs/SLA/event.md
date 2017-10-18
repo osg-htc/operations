@@ -22,7 +22,8 @@ OSG RabbitMQ Message Bus
 
 ### Description
 The grid-facing component of this service available for use by all OSG VOs.
-zzzz
+Service subscribers access queues to exchange data using point-to-point or publish and subscribe patterns.
+See [this](https://en.wikipedia.org/wiki/Message_queuing_service) for further discussion.
 
 ## Security Considerations
 All data transmitted or recieved via this service 
