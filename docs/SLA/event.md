@@ -65,6 +65,8 @@ falls below 95% monthly as monitored by IU-OPS a root cause analysis and service
 
 Availability will be determined by the algorithm documented [here](http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh)
 
+Users must be aware that during maintenance the system my be rebooted and data loss may result.
+
 ## Service Support Hours
 This service will operate 24x7, but support will be within business hours. The exception is for security incidents.
 
@@ -89,11 +91,10 @@ The IU-OPS provides operators 24x7x365. Message bus related problems should be r
    * Calling the GOC phone at 317-278-9699
    * Emailing a description to goc@opensciencegrid.org
 
-
 ## Responsibilities
 
    * A RabbitMQ message will be run by IU-OPS and accessible to registered users of the service.
-   
+   * Users of the service are responsible for backup of any data transferred by the system.
 
 ## Service Measuring and Reporting
 The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):
