@@ -16,6 +16,7 @@ pages:
   - 'OASIS': 'SLA/oasis-replica.md'
   - 'OIM': 'SLA/oim.md'
 - Weekly Minutes:
+  - '23 October 2017': 'WeeklyMinutes/23Oct2017.md'
   - '16 October 2017': 'WeeklyMinutes/16Oct2017.md'
   - '9 October 2017': 'WeeklyMinutes/09Oct2017.md'
   - '2 October 2017': 'WeeklyMinutes/02Oct2017.md'
