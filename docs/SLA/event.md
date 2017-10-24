@@ -6,7 +6,7 @@ This document details a service level agreement which outlines production expect
 ## Version Control
 | *Version Number* | *Date* | *Author* | *Comments* |
 | ---------------- | ------ | -------- | ---------- |
-| 1.1 | 10-17-2017 | Scott Teige | First Draft |
+| 1.1 | 10-24-2017 | Scott Teige | First Draft |
 
 
 ## Executive Summary
