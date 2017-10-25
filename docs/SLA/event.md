@@ -53,7 +53,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | 1st | OSG Operations Infrastructure Lead |
 | 2nd | OSG Operations Coordinator |
 | 3rd | OSG Production Coordinator |
-| 4th | OSG Technical Director and Executive Director |
+| 4th | OSG Executive Director |
 
 Detailed information on contacts are viewable on the following [MyOSG URL](https://oim.grid.iu.edu/oim/resourceedit?id=906)
 
