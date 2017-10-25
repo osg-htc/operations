@@ -1,4 +1,4 @@
-# RabbitMQ message bus Service Level Agreement
+# RabbitMQ Message Bus Service Level Agreement
 
 ## About This Document
 This document details a service level agreement which outlines production expectations for event1.grid.iu.edu and defines general support infrastructure for the service.
@@ -23,10 +23,10 @@ OSG RabbitMQ Message Bus
 ### Description
 The grid-facing component of this service available for use by all OSG VOs and service providers.
 Service subscribers access queues to exchange data using point-to-point or publish and subscribe patterns.
-See [this](https://en.wikipedia.org/wiki/Message_queuing_service) for further discussion.
+See [the Wikipedia article on message queueing services](https://en.wikipedia.org/wiki/Message_queuing_service) for further discussion.
 
 ## Security Considerations
-All data transmitted or recieved via this service 
+All data transmitted or received via this service 
 is subject to the terms of the
 [IU privacy policy](https://github.com/opensciencegrid/operations/blob/master/docs/privacy.md).
 In particular all data transmitted to or by the service shall be considered disclosable without condition.
@@ -55,7 +55,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | 3rd | OSG Production Coordinator |
 | 4th | OSG Executive Director |
 
-Detailed information on contacts are viewable on the following [MyOSG URL](https://oim.grid.iu.edu/oim/resourceedit?id=906)
+Detailed information on contacts are viewable [in MyOSG](https://oim.grid.iu.edu/oim/resourceedit?id=906).
 
 Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and [Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
 
@@ -63,18 +63,18 @@ Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly 
 The IU-OPS will strive for 95% service availability. If service [availability](http://monitor.grid.iu.edu/availability/avail_month_overview.html) 
 falls below 95% monthly as monitored by IU-OPS a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
 
-Availability will be determined by the algorithm documented [here](http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh)
+Availability will be determined by the algorithm documented [here](http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh).
 
-Users must be aware that during maintenance the system my be rebooted and data loss may result.
+Users must be aware that during maintenance the system may be rebooted and data loss may result.
 
 ## Service Support Hours
 This service will operate 24x7, but support will be within business hours. The exception is for security incidents.
 
 ## Service Off-Hours Support Procedures
-All operational issues should be reported as per [Customer Problem Reporting](#customer-problem-reporting) section.
+All operational issues should be reported as described in [the Customer Problem Reporting](#customer-problem-reporting) section.
 
 ## Requests for Service Enhancements
-IU-OPS will provide enhancement capabilities as they are released by the [RabbitMQ](https://www.rabbitmq.com/) project. Requests for customization of the deployed service may be made; IU-OPS has sole discretion as to their implemntation and deployment schedule.
+IU-OPS will provide enhancement capabilities as they are released by the [RabbitMQ](https://www.rabbitmq.com/) project. Requests for customization of the deployed service may be made; IU-OPS has sole discretion as to their implementation and deployment schedule.
 
 IU-OPS will give 1 week of warning prior to any change in the RabbitMQ service version. At any time during this week, Stakeholders are permitted to request a delay for up to 1 week after the originally scheduled upgrade.
 
@@ -107,11 +107,11 @@ The IU-OPS will provide the customer with the following reports in the intervals
 
 ## SLA Validity Period
 
-This SLA will be in affect for one year.
+This SLA will be in effect for one year.
 
 ## SLA Review Procedure
 
-This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.
+This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders.
 
 ## References
 
@@ -119,5 +119,3 @@ This SLA will renew automatically on a yearly basis unless change or update is r
 | Approved By | Position | Date |
 | ----------- | -------- | ---- |
 | | | |
-
-
