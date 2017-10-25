@@ -79,7 +79,7 @@ OSG Operations will provide enhancement capabilities as they are released by the
 IU-OPS will give 1 week of warning prior to any change in the RabbitMQ service version. At any time during this week, Stakeholders are permitted to request a delay for up to 1 week after the originally scheduled upgrade.
 
    * The exception is for code changes that are deemed critical by IU-OPS staff.
-   A critical change can be deployed immediately if approved by the Production or Operations manager.
+   A critical change can be deployed immediately if approved by the Production or Operations coordinator.
   
 OSG Operations will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case the downtime or changes cause further issues. Exceptions to this are given in the [responsibilities](#Responsibilities) section below.
 
