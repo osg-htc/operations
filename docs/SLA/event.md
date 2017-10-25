@@ -29,7 +29,7 @@ See [this](https://en.wikipedia.org/wiki/Message_queuing_service) for further di
 All data transmitted or recieved via this service 
 is subject to the terms of the
 [IU privacy policy](https://github.com/opensciencegrid/operations/blob/master/docs/privacy.md).
-In particular all data transmitted shall be considered disclosable without condition.
+In particular all data transmitted to or by the service shall be considered disclosable without condition.
 
 ## Service Target Response Priorities and Response Times
 
