@@ -74,14 +74,14 @@ This service will operate 24x7, but support will be within business hours. The e
 All operational issues should be reported as per [Customer Problem Reporting](#customer-problem-reporting) section.
 
 ## Requests for Service Enhancements
-OSG Operations will provide enhancement capabilities as they are released by the [RabbitMQ](https://www.rabbitmq.com/) project. Requests for customization of the deployed service may be made; IU-OPS has sole discretion as to their implemntation and deployment schedule.
+IU-OPS will provide enhancement capabilities as they are released by the [RabbitMQ](https://www.rabbitmq.com/) project. Requests for customization of the deployed service may be made; IU-OPS has sole discretion as to their implemntation and deployment schedule.
 
 IU-OPS will give 1 week of warning prior to any change in the RabbitMQ service version. At any time during this week, Stakeholders are permitted to request a delay for up to 1 week after the originally scheduled upgrade.
 
    * The exception is for code changes that are deemed critical by IU-OPS staff.
    A critical change can be deployed immediately if approved by the Production or Operations coordinator.
   
-OSG Operations will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case the downtime or changes cause further issues. Exceptions to this are given in the [responsibilities](#Responsibilities) section below.
+IU-OPS will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case the downtime or changes cause further issues. Exceptions to this are given in the [responsibilities](#Responsibilities) section below.
 
 ## Customer Problem Reporting
 The IU-OPS provides operators 24x7x365. Message bus related problems should be reported immediately by one of the following mechanisms.
@@ -99,7 +99,7 @@ The IU-OPS provides operators 24x7x365. Message bus related problems should be r
    * IU-OPS will coordinate with user groups during maintenace if so requested by the group. It is the responsibilty of the group to have a representitive available if coordination is requested.
 
 ## Service Measuring and Reporting
-The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):
+The IU-OPS will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):
 
 | *Report Name* | *Reporting Interval* | *Delivery Method* | *Responsible Party* |
 | ------------- | -------------------- | ----------------- | ------------------- |
