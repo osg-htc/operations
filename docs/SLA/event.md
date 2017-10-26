@@ -108,7 +108,7 @@ This SLA will remain valid unless a change is requested by the OSG Operations Co
 
 ## Version Control
 | *Version Number* | *Date* | *Author* | *Comments* |
-| ---------------- | ------ | -------- | ---------- |
+| ---------------- | ------ | -------- | ------------------- |
 | 1.1 | 10-24-2017 | Scott Teige | First Draft |
 | 1.2 | 10-26-2017 | Scott Teige | Encorporate comments from Software and Technology Investigation Coordinators|
 
