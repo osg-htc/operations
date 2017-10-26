@@ -44,9 +44,9 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | *Escalates Every* | * * | * * | * * |
 | N/A | Two Days | Five Days | Ten Days |
 
-| *Outage Type* | *Description | *Response Time* | *Resolution Time* | *Escalation Rate* |
+| *Outage Type* | *Description* | *Response Time*  | *Resolution Time* | *Escalation Rate*  |
 | -------- | -------------------------------------------- | ----------------------- | ---------------- | ---------------- |
-| Critical | This service does not have critical priority | Within 4 business hours | 2 business days  | 2 business days  |
+| Critical | This service does not have critical priority | N/A                     | N/A              | N/A  |
 | High     | The issue prevents any use of the service    | Within 2 business days  | 5 business days  | 5 business days  |
 | Elevated | The issue prevents some acceptable uses      | Within 5 business days  | 10 business days | 10 business days |
 | Normal   | The issue causes degraded performance        | Within 10 business days | 30 business days | 30 business days |
