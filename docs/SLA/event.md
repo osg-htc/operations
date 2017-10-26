@@ -102,7 +102,7 @@ The IU-OPS will provide the customer with the following reports in the intervals
 
 ## SLA Review Procedure
 
-This SLA will renew automatically unless a change is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders.
+This SLA will remain valid unless a change is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders and agreed to by the service operator (Consistent with [Requests for Service Enhancements](requests_for_service_enhancements) 
 
 ## References
 
