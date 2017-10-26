@@ -102,7 +102,7 @@ The IU-OPS will provide the customer with the following reports in the intervals
 
 ## SLA Review Procedure
 
-This SLA will remain valid unless a change is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders and agreed to by the service operator (Consistent with [Requests for Service Enhancements](#requests-for-service-enhancements) )
+This SLA will remain valid unless a change is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders and agreed to by the service operator (consistent with [Requests for Service Enhancements](#requests-for-service-enhancements) )
 
 ## References
 
@@ -110,6 +110,9 @@ This SLA will remain valid unless a change is requested by the OSG Operations Co
 | *Version Number* | *Date* | *Author* | *Comments* |
 | ---------------- | ------ | -------- | ---------- |
 | 1.1 | 10-24-2017 | Scott Teige | First Draft |
+| 1.2 | 10-26-2017 | Scott Teige | Encorporate comments from Software and Technology Investigation Coordinators|
+
+
 
 # Appendix A - Approval
 | Approved By | Position | Date |
