@@ -3,15 +3,13 @@
 ## About This Document
 This document details a service level agreement which outlines production expectations for event1.grid.iu.edu and defines general support infrastructure for the service.
 
-## Version Control
-| *Version Number* | *Date* | *Author* | *Comments* |
-| ---------------- | ------ | -------- | ---------- |
-| 1.1 | 10-24-2017 | Scott Teige | First Draft |
 
 
 ## Executive Summary
 This SLA is an agreement between OSG and OSG Stakeholders pertaining to the operation of the OSG RabbitMQ message bus.
-This service allows short, text based messages to be exchanged between OSG operated computers.
+This service allows short, text based messages to be exchanged between OSG operated computers. Anticipated uses include 
+transport of accounting information to GRACC and network performance metrics to perfsonar. An overall service availability
+of 95% is requested, a level that reflects the current understanding of the frequency of external events causing service failures or degradation.
 
 ## Owners
 This SLA is owned by IU OSG Operations (IU-OPS). It will be reviewed by and agreed upon by the OSG Executive Team.
@@ -45,6 +43,12 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | N/A| Within One Business Day | The maximum acceptable resolution time is five (5) business days | The maximum acceptable resolution time is ten (10) business days |
 | *Escalates Every* | * * | * * | * * |
 | N/A | Two Days | Five Days | Ten Days |
+
+| *Outage Type* | *Description | *Response Time* | *Resolution Time* | *Escalation Rate* |
+| Critical | This service does not have critical priority | Within 4 business hours | 2 business days  | 2 business days |
+| High     | The issue prevents any use of the service    | Within 2 business days  | 5 business days  | 5 business days |
+| Elevated | The issue prevents some acceptable uses      | Within 5 business days  | 10 business days | 10 business days |
+| Normal   | The issue causes degraded performance        | Within 10 business days | 30 business days | 30 business days |
 
 ## Escalation Contacts
 
@@ -114,6 +118,11 @@ This SLA will be in effect for one year.
 This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders.
 
 ## References
+
+## Version Control
+| *Version Number* | *Date* | *Author* | *Comments* |
+| ---------------- | ------ | -------- | ---------- |
+| 1.1 | 10-24-2017 | Scott Teige | First Draft |
 
 # Appendix A - Approval
 | Approved By | Position | Date |
