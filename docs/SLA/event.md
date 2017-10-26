@@ -58,7 +58,7 @@ Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly 
 The IU-OPS will strive for 95% service availability. If service [availability](http://monitor.grid.iu.edu/availability/avail_month_overview.html) 
 falls below 95% monthly as monitored by IU-OPS a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.
 
-Availability will be determined by the algorithm documented [here](http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh).
+Availability will be determined by IU-OPS using the algorithm documented [here](http://monitor.grid.iu.edu/availability/status/event1/status_stamp.sh). This algorithm is designed to provide early warning of actual failure using current best understanding of the service and experience gained from previous failures. As such IU-OPS may modify it as approprate to relect operational experience. IU-OPS agrees to not modify it to artificially improve the availability measurement. 
 
 Users must be aware that during maintenance the system may be rebooted and data loss may result.
 
