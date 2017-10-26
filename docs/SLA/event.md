@@ -88,7 +88,7 @@ The IU-OPS provides operators 24x7x365. Message bus related problems should be r
 ## Responsibilities
 
    * A RabbitMQ service will be run by IU-OPS and made accessible to registered users.
-   * Users of the service are responsible for backup of any data transferred by the system.
+   * Because no computer system is 100% reliable, users must be aware that unscheduled service failure may result in data loss. Users of the service are responsible for backup of any data transferred by the system.
    * Individual users agree to use the system in such a way as to allow reasonable access to others.
    * IU-OPS reserves the right to deploy configuration changes (including access limits) without notice as required to allow reasonable access.
    * IU-OPS will coordinate with user groups during maintenace if so requested by the group. It is the responsibilty of the group to have a representitive available if coordination is requested.
