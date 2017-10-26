@@ -33,16 +33,6 @@ In particular all data transmitted to or by the service shall be considered disc
 
 This section deals with unplanned outages. Please see [Requests for Service Enhancement](#requests-for-service-enhancements) for information on planned maintenance outages.
 
-| Critical | High | Elevated | Normal |
-| -------- | ---- | -------- | ------ |
-| *Description* | * * | * * | * * |
-| This service does not have critical priority  | The issue prevents any use of the service | The issue prevents some acceptable uses of the service | The issue causes degraded performance of the service |
-| *Response Time* | * * | * * | * * |
-| N/A | Within 4 business hours | Within 2 business days | Within 10 business days |
-| *Resolution Time* | * * | * * | * * |
-| N/A| Within One Business Day | The maximum acceptable resolution time is five (5) business days | The maximum acceptable resolution time is ten (10) business days |
-| *Escalates Every* | * * | * * | * * |
-| N/A | Two Days | Five Days | Ten Days |
 
 | *Outage Type* | *Description* | *Response Time*  | *Resolution Time* | *Escalation Rate*  |
 | -------- | -------------------------------------------- | ----------------------- | ---------------- | ---------------- |
@@ -79,7 +69,7 @@ This service will operate 24x7, but support will be within business hours. The e
 All operational issues should be reported as described in [the Customer Problem Reporting](#customer-problem-reporting) section.
 
 ## Requests for Service Enhancements
-IU-OPS will provide enhancement capabilities as they are released by the [RabbitMQ](https://www.rabbitmq.com/) project. Requests for customization of the deployed service may be made; IU-OPS has sole discretion as to their implementation and deployment schedule.
+IU-OPS will provide enhancement capabilities as they are released by the [RabbitMQ](https://www.rabbitmq.com/) project. Requests for customization of the deployed service may be made; IU-OPS has ultimate discretion as to their implementation and deployment schedule but will strive to accomodate requests consistent with available effort and other operational time constraints.
 
 IU-OPS will give 1 week of warning prior to any change in the RabbitMQ service version. At any time during this week, Stakeholders are permitted to request a delay for up to 1 week after the originally scheduled upgrade.
 
@@ -110,13 +100,9 @@ The IU-OPS will provide the customer with the following reports in the intervals
 | ------------- | -------------------- | ----------------- | ------------------- |
 | System Availability | Monthly | [Web Posting](http://monitor.grid.iu.edu/availability/avail_month_overview.html) | IU-OPS |
 
-## SLA Validity Period
-
-This SLA will be in effect for one year.
-
 ## SLA Review Procedure
 
-This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders.
+This SLA will renew automatically unless a change is requested by the OSG Operations Coordinator, the OSG Executive Team, or the Stakeholders.
 
 ## References
 
