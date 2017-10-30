@@ -20,3 +20,4 @@
    * nor is it required/suggested for use elsewhere
    * But lite is a subset of heavy
    
+<img src="http://steige.grid.iu.edu/steige/30Oct2017.snapshot.png" width='630' height='100'  /><br
