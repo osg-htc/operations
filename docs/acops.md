@@ -31,4 +31,4 @@
    * This mechanism also implements:
       * Alarm generation (the part than can be generated on the monitored machine)
       * Availability calculation
-   <img src="http://steige.grid.iu.edu/steige/state.png" width='630' height='180'  /><br>   
+   <img src="http://steige.grid.iu.edu/steige/state.png" width='930' height='180'  /><br>   
