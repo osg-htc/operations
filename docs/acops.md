@@ -1,7 +1,7 @@
 # Communication
 # Operations
 ## Key Acomplishments and Events
-### "GOC" is now IU-OPS. I made that up, am not married to it and open to suggestions.
+### Part of "GOC" is now IU-OPS. I made that up, am not married to it and open to suggestions.
    * Begs the question, how to represent other operational sites here?
    
 ### Previously reported we were "near capacity"
