@@ -1,7 +1,9 @@
+# Communication
+# Operations
 ## "GOC" is now IU-OPS. I made that up, am not married to it and open to suggestions.
    * Begs the question, how to represent other operational site here?
    
-## Previouly I had reported we were "near capacity"
+## Previously I had reported we were "near capacity"
    * Reporting here on how issues leading to that statement have been addressed.
    
 ### Have switched to a flexible maintenance schedule
