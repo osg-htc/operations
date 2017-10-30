@@ -15,10 +15,12 @@
    * All ansible playbooks are backed up
    
 ## Have adopted a key idea from FitSM (discussed below)
-   * The Configuration Management Database is the concept
+   * The Configuration Management Database (CMDB) is the concept
    * This is not a "lite weight" idea
    * nor is it required/suggested for use elsewhere
    * But lite is a subset of heavy
-   
+   * A "Snapshot" of all service configurations is taken before and after any maintenance
+   * Here are a few lines from the CMDB:
 <img src="http://steige.grid.iu.edu/steige/snapshot.png" width='630' height='80'  /><br>
+   * The snapshots are dated and can be compared:
 <img src="http://steige.grid.iu.edu/steige/delta.png" width='630' height='80'  /><br>
