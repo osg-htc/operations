@@ -20,4 +20,5 @@
    * nor is it required/suggested for use elsewhere
    * But lite is a subset of heavy
    
-<img src="http://steige.grid.iu.edu/steige/snapshot.png" width='630' height='100'  /><br
+<img src="http://steige.grid.iu.edu/steige/snapshot.png" width='630' height='80'  /><br>
+<img src="http://steige.grid.iu.edu/steige/delta.png" width='630' height='80'  /><br>
