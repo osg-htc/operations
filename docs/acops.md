@@ -21,6 +21,6 @@
    * But lite is a subset of heavy
    * A "Snapshot" of all service configurations is taken before and after any maintenance
    * Here are a few lines from the CMDB:
-<img src="http://steige.grid.iu.edu/steige/snapshot.png" width='630' height='80'  /><br>
+<img src="http://steige.grid.iu.edu/steige/snapshot.png" width='630' height='60'  /><br>
    * The snapshots are dated and can be compared:
 <img src="http://steige.grid.iu.edu/steige/delta.png" width='630' height='80'  /><br>
