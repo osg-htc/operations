@@ -37,3 +37,5 @@
    <img src="http://steige.grid.iu.edu/steige/state.png" width='930' height='180'  /><br>   
 ## Perfsonar remains a development level service
 ## Research of SSO and CILogon 2.0 for authentication to Ops services and beyond.
+## SLA for the RabbitMQ message bus submitted for comments and approval
+
