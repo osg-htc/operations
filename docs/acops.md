@@ -1,4 +1,4 @@
-# Communication
+# Outreach
 # Operations
 ## Key Acomplishments and Events
 ### Part of "GOC" is now IU-OPS. I made that up, am not married to it and open to suggestions.
