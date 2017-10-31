@@ -17,11 +17,10 @@
    * All ansible playbooks under version control
    * All ansible playbooks are backed up
    
-#### Have adopted a key idea from FitSM
-   * The Configuration Management Database (CMDB) is the concept
-   * This is not a "lite weight" idea
-   * nor is it required/suggested for use elsewhere
-   * But lite is a subset of heavy
+#### Have adopted some key ideas from FitSM
+##### The Configuration Management Database (CMDB)
+   * This is not a "lite weight" idea nor is it required/suggested for use elsewhere
+      * But lite is a subset of heavy
    * A "Snapshot" of all service configurations is taken before and after any maintenance
    * Here are a few lines from a snapshot:
 <img src="http://steige.grid.iu.edu/steige/snapshot.png" width='630' height='60'  /><br>
