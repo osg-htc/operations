@@ -327,6 +327,11 @@
 <h4 id="grid-operations">Grid Operations</h4>
 <h4 id="wms-glide-in-factory">WMS Glide In Factory</h4>
 <h4 id="osg-connect">OSG-Connect</h4>
+<ul>
+<li>953K cpu hours</li>
+<li>49 active users</li>
+<li>35 active projects</li>
+</ul>
 <h4 id="gracc-operations">GRACC operations</h4>
 <h2 id="operations-this-week">Operations This Week</h2>
 <h4 id="grid-operations-center">Grid Operations Center</h4>
@@ -335,6 +340,9 @@
 </ul>
 <h4 id="wms-glide-in-factory_1">WMS Glide In Factory</h4>
 <h4 id="osg-connect_1">OSG-Connect</h4>
+<ul>
+<li>No planned maintenance</li>
+</ul>
 <h4 id="gracc-operations_1">GRACC operations</h4>
 <h2 id="new-registrations">New Registrations</h2>
 <h4 id="virtual-organizations">Virtual Organizations</h4>
@@ -386,26 +394,30 @@
 </thead>
 <tbody>
 <tr>
-<td>MWT2 - Multiple Resources</td>
-<td>MWT2 IU/UIUC/UC</td>
+<td>SU-ITS-CE3</td>
+<td>CSC</td>
+<td></td>
+<td>Syracuse CE</td>
+<td></td>
+</tr>
+<tr>
+<td>#### Removed from OSG</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-</tbody>
-</table>
-<h4 id="removed-from-osg">Removed from OSG</h4>
-<table>
-<thead>
 <tr>
-<th>Name</th>
-<th>Other Info</th>
-<th>Ticket</th>
-</tr>
-</thead>
-<tbody>
-<tr>
+<td>Name</td>
+<td>Other Info</td>
+<td>Ticket</td>
 <td></td>
+<td></td>
+</tr>
+<tr>
+<td>----</td>
+<td>----------</td>
+<td>------</td>
 <td></td>
 <td></td>
 </tr>
@@ -426,18 +438,11 @@
 </thead>
 <tbody>
 <tr>
-<td>35238</td>
-<td>9 days, 16 hours, 43 minutes</td>
-<td>Jason Gallicchio</td>
-<td>jason@hmc.edu</td>
-<td>User Certificate Request for Jason Gallicchio(VO:SPT)</td>
-</tr>
-<tr>
-<td>35152</td>
-<td>17 days, 19 hours, 40 minutes</td>
-<td>Saeid Houshmandyar</td>
-<td>houshmandyar@austin.utexas.edu</td>
-<td>User Certificate Request for Saeid Houshmandyar(VO:FusionGrid)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -468,12 +473,9 @@
 <li><a href="https://ticket.grid.iu.edu/goc/list/open">View Open GOC Tickets</a> | <a href="https://twiki.grid.iu.edu/bin/view/Operations/TicketReports">OSG Operations Metrics</a> | <a href="http://myosg.grid.iu.edu/miscstatus?count_sg_1&amp;count_active=on&amp;count_enabled=on&amp;datasource=status">Operational Service Overview</a></li>
 </ul>
 <h2 id="wlcg-egi-operations">WLCG &amp; EGI Operations</h2>
-<ul>
-<li>Working with Hiro, Xin, Helmut, and Guenter to get Belle II resources into GGUS</li>
-</ul>
 <h2 id="security">Security</h2>
 <ul>
-<li>Multiple vulnerabilities in the Linux kernel affecting Singularity. The most critical one is in the XFRM framework, used by the Linux kernel for transforming packets (published in March 2017). Previously, we believed the vulnerability did not pose a risk for the OSG infrastructure. As the relevant technology-preview kernel features are beginning to be used by our community, EGI and OSG have re-evaluated the risk profile and consider it 'CRITICAL' for sites with this rare configuration.</li>
+<li>A new security vulnerability with critical severity has been found in SLURM. SLURM is an open-source HPC workload manager. The vulnerability resides in the plugin named SPANK and it allows privilege escalation: any user can execute code as root. https://ticket.opensciencegrid.org/35293</li>
 </ul>
 <h2 id="aob">AOB</h2>
 <h2 id="action-items-from-meeting">Action Items from Meeting</h2>
