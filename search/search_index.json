@@ -841,6 +841,141 @@
             "title": "Appendix E - Metric Reports"
         }, 
         {
+            "location": "/WeeklyMinutes/20Nov2017/", 
+            "text": "Operations Meeting November 20th, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: \n\n\nRegrets: \n\n\nGOC weekly calendar\n\n\nOperations Slack Channel\n\n\n\n\nAnnouncements\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\n??-OPS Services Availability\n\n\nCurrent Status\n\n\nPerfSonar components moved \nhere\n\n\n\n\n\n\nOSG CPU hours\n\n\nLocal submit host summary\n\n\nStashCache\n\n\n[TB served]\n\n\n[Cache hit fraction]\n\n\nTB served and hit fraction summary\n\n\n\n\n\n\n\n\nGrid Operations\n\n\n\n\nITB Release\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nGRACC operations\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nProduction Release\n\n\nRabbitMQ and MyOSG updates\n\n\n\n\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nGRACC operations\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nTicket Number\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\nN/A\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present? \nX\n \nY\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "20 November 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#operations-meeting-november-20th-2017", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending:   Regrets:   GOC weekly calendar  Operations Slack Channel", 
+            "title": "Operations Meeting November 20th, 2017"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#announcements", 
+            "text": "", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#summaries-and-reports", 
+            "text": "??-OPS Services Availability  Current Status  PerfSonar components moved  here    OSG CPU hours  Local submit host summary  StashCache  [TB served]  [Cache hit fraction]  TB served and hit fraction summary", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#grid-operations", 
+            "text": "ITB Release", 
+            "title": "Grid Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#wms-glide-in-factory", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#osg-connect", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#gracc-operations", 
+            "text": "", 
+            "title": "GRACC operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#grid-operations-center", 
+            "text": "Production Release  RabbitMQ and MyOSG updates", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#wms-glide-in-factory_1", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#osg-connect_1", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#gracc-operations_1", 
+            "text": "", 
+            "title": "GRACC operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#osg-ra-over-5-day-report", 
+            "text": "Ticket Number  Age days  Requester  Requester Email  Request      N/A", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?  X   Y                View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#security", 
+            "text": "", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/20Nov2017/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
             "location": "/WeeklyMinutes/13Nov2017/", 
             "text": "Operations Meeting November 13th, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Scott, Marina, Kyle, Elizabeth, Jeny, Jeff, Tom, Suchandra\n\n\nRegrets: GRACC ops\n\n\nGOC weekly calendar\n\n\nOperations Slack Channel\n\n\n\n\nAnnouncements\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\n??-OPS Services Availability\n\n\nCurrent Status\n\n\nPerfSonar components moved \nhere\n\n\n\n\n\n\nOSG CPU hours\n\n\nLocal submit host summary\n\n\nStashCache\n\n\n[TB served]\n\n\n[Cache hit fraction]\n\n\nTB served and hit fraction summary\n\n\n\n\n\n\n\n\nGrid Operations\n\n\n\n\nProduction Release\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\n687K cpu hours \n\n\n49 active users\n\n\n33 active projects\n\n\n\n\nGRACC operations\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nITB Release\n\n\nRabbitMQ and MyOSG updates\n\n\n\n\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\nNo planned maintenance\n\n\n\n\nGRACC operations\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nSWT2_CPB_SQUID\n\n\nUSCMS T2\n\n\n\n\n\n\n\n\n\n\n\n\nUTA_SWT2_Squid\n\n\nUSCMS T2\n\n\n\n\n\n\n\n\n\n\n\n\nCancerComputer_Kitchener_CE\n\n\nCCSUP\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nTicket Number\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\nN/A\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present? \nX\n \nY\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\nAOB\n\n\nAction Items from Meeting", 
             "title": "13 November 2017"
