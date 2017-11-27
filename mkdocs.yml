@@ -16,6 +16,7 @@ pages:
   - 'MyOSG': 'SLA/myosg.md'
   - 'OASIS': 'SLA/oasis-replica.md'
   - 'OIM': 'SLA/oim.md'
+- External OASIS repositories: 'external-oasis-repos.md'
 - Weekly Minutes:
   - '27 November 2017': 'WeeklyMinutes/27Nov2017.md'
   - '20 November 2017': 'WeeklyMinutes/20Nov2017.md'
