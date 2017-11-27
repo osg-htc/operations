@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>OSG Operations Mission - OSG Operations</title>
+  <title>External OASIS repositories - OSG Operations</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "OSG Operations Mission";
-    var mkdocs_page_input_path = "mission.md";
-    var mkdocs_page_url = "/mission/";
+    var mkdocs_page_name = "External OASIS repositories";
+    var mkdocs_page_input_path = "external-oasis-repos.md";
+    var mkdocs_page_url = "/external-oasis-repos/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -53,15 +53,9 @@
     <a class="" href="..">Home</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">OSG Operations Mission</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#osg-operations-mission">OSG Operations Mission</a></li>
-    
-
-    </ul>
+    <a class="" href="../mission/">OSG Operations Mission</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -91,9 +85,27 @@
     </ul>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <a class="" href="../external-oasis-repos/">External OASIS repositories</a>
+    <a class="current" href="./">External OASIS repositories</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#external-oasis-repositories">External OASIS Repositories</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#requests-to-host-a-repository-on-oasis">Requests to Host a Repository on OASIS</a></li>
+        
+            <li><a class="toctree-l3" href="#requests-to-change-the-url-of-an-external-repository">Requests to Change the URL of an External Repository</a></li>
+        
+            <li><a class="toctree-l3" href="#requests-to-remove-an-external-repository">Requests to Remove an External Repository</a></li>
+        
+            <li><a class="toctree-l3" href="#requests-to-blank-an-external-repository">Requests to Blank an External Repository</a></li>
+        
+        </ul>
+    
+
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -273,10 +285,10 @@
     
       
     
-    <li>OSG Operations Mission</li>
+    <li>External OASIS repositories</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/mission.md"
+        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/external-oasis-repos.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -286,15 +298,74 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="osg-operations-mission">OSG Operations Mission</h1>
-<p>The mission of OSG Operations is to maintain and improve distributed high throughput computing services to support research communities.</p>
-<p>This is accomplished by:</p>
+                <h1 id="external-oasis-repositories">External OASIS Repositories</h1>
+<p>We offer hosting of non-OSG CVMFS repositories on OASIS. This means that requests to create, rename, remove, or blanking OASIS repositories will come in as GOC tickets. This document contains instructions for handling those tickets.</p>
+<div class="admonition note">
+<p class="admonition-title">Also see</p>
 <ul>
-<li>Operating and maintaining our services in a user-oriented, robust, and reliable manner.</li>
-<li>Developing a professional and skilled staff dedicated to a service philosophy.</li>
-<li>Managing resources responsibly, efficiently, and with accountability.</li>
-<li>Evaluating and continually improving the actions, methods and processes that allow the OSG to operate.</li>
+<li><a href="https://opensciencegrid.github.io/technology/policy/external-oasis-repos/">Policy for OSG Mirroring of External CVMFS repositories</a></li>
+<li><a href="https://opensciencegrid.github.io/docs/data/external-oasis-repos/">External OASIS repository</a></li>
 </ul>
+</div>
+<h2 id="requests-to-host-a-repository-on-oasis">Requests to Host a Repository on OASIS</h2>
+<ol>
+<li>
+<p>Ensure that the repository administrator is valid for the VO. This can be done by (a) OSG already having a
+    relationship with the person or (b) the contacting the VO manager to find out.  Review the URL and verify verify
+    that it is appropriate for the VO.</p>
+</li>
+<li>
+<p>Add the repository URL in OIM under the VO's OASIS repository URLs. This should cause the repository's configuration
+    to be added to the GOC Stratum-0 within 15 minutes.</p>
+</li>
+<li>
+<p>If the respository ends in a new domain name that has not been distributed before, place a copy of the
+    <code>domain.name.pub</code> public key from <code>domain.name</code> into <code>/srv/etc/keys</code> on both <code>oasis-replica</code> and
+    <code>oasis-replica-itb</code>. If you do not have that key, ask the repository service representative how to obtain it.  In
+    order to support CVMFS client versions 2.2.X, make a symbolic link of <code>domain.name.conf</code>
+    <code>/cvmfs/config-osg.opensciencegrid.org/etc/cvmfs/domain.d</code> pointing to <code>default.conf</code>. This symbolic link has to be
+    created on the <code>oasis-itb</code> machine's copy of the <code>config-osg.opensciencegrid.org</code> repository and then copied to
+    production with the <code>copy_config_osg</code> command on the oasis machine.</p>
+</li>
+<li>
+<p>If the repository name matches <code>*.opensciencegrid.org</code> or <code>*.osgstorage.org</code>, respond to the ticket to ask the
+    administrator to continue with their next step, and wait until the admin has updated the ticket to indicate that they
+    have completed their step. All other repositories (such as <code>*.egi.eu</code>), continue with the next internal step.</p>
+</li>
+<li>
+<p>Ask the administrator of the BNL stratum 1 to also add the new repository.  The BNL Stratum-1 operator
+    should set the service to read from
+    <code>http://oasis-replica.opensciencegrid.org:8000/cvmfs/<span style="color:red">example.opensciencegrid.org</span></code>.  When the BNL
+    Stratum-1 operator has reported back that the replication is ready, respond to the ticket that the repository is
+    fully replicated on the OSG and close the ticket.</p>
+</li>
+</ol>
+<h2 id="requests-to-change-the-url-of-an-external-repository">Requests to Change the URL of an External Repository</h2>
+<p>If there is a request to change the URL of an external repository, update the registered value in OIM for the VO in <code>OASIS Repo URLs</code>.</p>
+<h2 id="requests-to-remove-an-external-repository">Requests to Remove an External Repository</h2>
+<ol>
+<li>After validating that the ticket submitter is authorized by the VO's OASIS manager, delete the registered value
+    for <span style="color:red">example.opensciencegrid.org</span> in OIM for the VO in OASIS Repo URLs.</li>
+<li>Add the FNAL and BNL Stratum-1 operators to the ticket and ask them to remove the repository.  Wait for the
+    Stratum-1 operators to finish before proceeding.</li>
+<li>Run <code>cvmfs_server rmfs -f <span style="color:red">example.opensciencegrid.org</span></code> and <code>rm -r
+    /oasissrv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></code> on <code>oasis-replica-itb</code> and <code>oasis-replica</code></li>
+<li>Run the following command on <code>oasis-itb</code> and <code>oasis</code>:<pre><code>:::console
+rm -r /srv/cvmfs/<span style="color:red">example.opensciencegrid.org</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="requests-to-blank-an-external-repository">Requests to Blank an External Repository</h2>
+<ol>
+<li>If there is a need to shut down the distribution of a repository, run <code>blank_osg_repository</code> on <code>oasis-replica</code> and
+    give it the full name of the repository. This will rename the repository directories to a name with the current
+    timestamp and replace it with a blank repository.  It includes a step to run on the <code>oasis</code> machine, and attempts to
+    do it with <code>ssh</code>, but if that fails it prints instructions on how to finish by logging in to the <code>oasis</code> machine
+    manually.</li>
+<li>When it is time to put the repository back into production, run <code>unblank_osg_repository</code> on <code>oasis-replica</code> and
+    gives it the full name of the repository again. This will find the directory with the old timestamp and put it back
+    into service. This step also attempts to <code>ssh</code> to the <code>oasis</code> machine.</li>
+</ol>
               
             </div>
           </div>
@@ -302,10 +373,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../SLA/xdlogin/" class="btn btn-neutral float-right" title="XDLogin">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../WeeklyMinutes/27Nov2017/" class="btn btn-neutral float-right" title="27 November 2017">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../SLA/oim/" class="btn btn-neutral" title="OIM"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -333,10 +404,10 @@
           <a href="https://github.com/opensciencegrid/operations/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../SLA/oim/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../SLA/xdlogin/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../WeeklyMinutes/27Nov2017/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
