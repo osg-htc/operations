@@ -4,9 +4,6 @@ repo_url: https://github.com/opensciencegrid/operations/
 theme: 
   name: readthedocs
 
-extra_css:
-  - css/extra.css
-
 pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
