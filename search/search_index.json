@@ -872,7 +872,7 @@
         }, 
         {
             "location": "/WeeklyMinutes/04Dec2017/", 
-            "text": "Operations Meeting December 4th, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Scott, Lisa, Kyle, Marina, Tom, Suchandra, Jeny, Marian\n\n\nRegrets: \n\n\nGOC weekly calendar\n\n\nOperations Slack Channel\n\n\n\n\nAnnouncements\n\n\n\n\nCall canceled 25/Dec, 1/Jan\n\n\nDuring the holidays, 317-275-9699 for any problems. \n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\n??-OPS Services Availability\n\n\nCurrent Status\n\n\nPerfSonar components moved \nhere\n\n\n\n\n\n\nOSG CPU hours\n\n\nLocal submit host summary\n\n\n\n\nGrid Operations\n\n\n\n\nGRACC is now using a hosted RabbitMQ service. Better alarms.\n\n\nPerfSonar data now flowing through hosted RabbitMQ.\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nStashCache operations\n\n\n\n\nTB served\n: xxx\n\n\nCache hit fraction\n: yyy\n\n\nStashCache delivered xxx TB of data at a cache hit rate of yyy%\n\n\n\n\nGRACC operations\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nITB release, release note in preparation\n\n\nOasis components\n\n\n\n\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nStashCache operations\n\n\nGRACC operations\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG_US_NDSU_CCAST_CLUSTER2\n\n\nHosted CE UChicago\n\n\n\n\n\n\n\n\n\n\n\n\nOSG_IN_IUCAA_SARATHI\n\n\nHosted CE UChicago\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nTicket Number\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n35447\n\n\n11 days, 23 hours, 18 minutes\n\n\nJunji Naganoma\n\n\njunji@rice.edu\n\n\nUser Certificate Request for Junji Naganoma(VO:XENON)\n\n\n\n\n\n\n35349\n\n\n23 days, 12 hours, 51 minutes\n\n\nJoaquin Chung\n\n\njoaquin.chung@gatech.edu\n\n\nUser Certificate Request for Joaquin Chung(VO:ANL)\n\n\n\n\n\n\n35334\n\n\n24 days, 17 hours, 41 minutes\n\n\nPAUL PRAVEEN NAKKA\n\n\npnp63@mst.edu\n\n\nUser Certificate Request for PAUL PRAVEEN NAKKA(VO:SBGrid)\n\n\n\n\n\n\n## GOC Tickets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTicket Sync problem last Wednesday.  There was no (that I saw) communication of a certificate update from GGUS, which broke ticket exchange.  I have contacted GGUS to make sure we receive communications.\n\n\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present? \nX\n \nY\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nNo new vulnerabilities or incidents.\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "text": "Operations Meeting December 4th, 2017\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Scott, Lisa, Kyle, Marina, Tom, Suchandra, Jeny, Marian\n\n\nRegrets: \n\n\nGOC weekly calendar\n\n\nOperations Slack Channel\n\n\n\n\nAnnouncements\n\n\n\n\nCall canceled 25/Dec, 1/Jan\n\n\nDuring the holidays, 317-275-9699 for any problems. \n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\n??-OPS Services Availability\n\n\nCurrent Status\n\n\nPerfSonar components moved \nhere\n\n\n\n\n\n\nOSG CPU hours\n\n\nLocal submit host summary\n\n\n\n\nGrid Operations\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\n980K cpu hours\n\n\n51 active users\n\n\n46 active projects\n\n\n\n\nStashCache operations\n\n\n\n\nTB served\n: 20.8TB\n\n\nCache hit fraction\n: 264.5T\n\n\nStashCache delivered 264.5 TB of data at a cache hit rate of 92%\n\n\n\n\nGRACC operations\n\n\n\n\nGRACC is now using a hosted RabbitMQ service. Better alarms.\n\n\nPerfSonar data now flowing through hosted RabbitMQ.\n\n\nproblem upload gratia data for NET2, \nGOC #35513\n\n\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nITB release, release note in preparation\n\n\nOasis components\n\n\n\n\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\n\n\nNo planned maintenance\n\n\n\n\nStashCache operations\n\n\nGRACC operations\n\n\n\n\nproblem upload gratia data for NET2, \nGOC #35513\n\n\nworking on new GRACC FE to replace old host\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\nOSG_US_NDSU_CCAST_CLUSTER2\n\n\nHosted CE UChicago\n\n\n\n\n\n\n\n\n\n\n\n\nOSG_IN_IUCAA_SARATHI\n\n\nHosted CE UChicago\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nTicket Number\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n35447\n\n\n11 days, 23 hours, 18 minutes\n\n\nJunji Naganoma\n\n\njunji@rice.edu\n\n\nUser Certificate Request for Junji Naganoma(VO:XENON)\n\n\n\n\n\n\n35349\n\n\n23 days, 12 hours, 51 minutes\n\n\nJoaquin Chung\n\n\njoaquin.chung@gatech.edu\n\n\nUser Certificate Request for Joaquin Chung(VO:ANL)\n\n\n\n\n\n\n35334\n\n\n24 days, 17 hours, 41 minutes\n\n\nPAUL PRAVEEN NAKKA\n\n\npnp63@mst.edu\n\n\nUser Certificate Request for PAUL PRAVEEN NAKKA(VO:SBGrid)\n\n\n\n\n\n\n## GOC Tickets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTicket Sync problem last Wednesday.  There was no (that I saw) communication of a certificate update from GGUS, which broke ticket exchange.  I have contacted GGUS to make sure we receive communications.\n\n\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present? \nX\n \nY\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nNo new vulnerabilities or incidents.\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
             "title": "4 December 2017"
         }, 
         {
@@ -897,7 +897,7 @@
         }, 
         {
             "location": "/WeeklyMinutes/04Dec2017/#grid-operations", 
-            "text": "GRACC is now using a hosted RabbitMQ service. Better alarms.  PerfSonar data now flowing through hosted RabbitMQ.", 
+            "text": "", 
             "title": "Grid Operations"
         }, 
         {
@@ -907,17 +907,17 @@
         }, 
         {
             "location": "/WeeklyMinutes/04Dec2017/#osg-connect", 
-            "text": "", 
+            "text": "980K cpu hours  51 active users  46 active projects", 
             "title": "OSG-Connect"
         }, 
         {
             "location": "/WeeklyMinutes/04Dec2017/#stashcache-operations", 
-            "text": "TB served : xxx  Cache hit fraction : yyy  StashCache delivered xxx TB of data at a cache hit rate of yyy%", 
+            "text": "TB served : 20.8TB  Cache hit fraction : 264.5T  StashCache delivered 264.5 TB of data at a cache hit rate of 92%", 
             "title": "StashCache operations"
         }, 
         {
             "location": "/WeeklyMinutes/04Dec2017/#gracc-operations", 
-            "text": "", 
+            "text": "GRACC is now using a hosted RabbitMQ service. Better alarms.  PerfSonar data now flowing through hosted RabbitMQ.  problem upload gratia data for NET2,  GOC #35513", 
             "title": "GRACC operations"
         }, 
         {
@@ -937,7 +937,7 @@
         }, 
         {
             "location": "/WeeklyMinutes/04Dec2017/#osg-connect_1", 
-            "text": "", 
+            "text": "No planned maintenance", 
             "title": "OSG-Connect"
         }, 
         {
@@ -947,7 +947,7 @@
         }, 
         {
             "location": "/WeeklyMinutes/04Dec2017/#gracc-operations_1", 
-            "text": "", 
+            "text": "problem upload gratia data for NET2,  GOC #35513  working on new GRACC FE to replace old host", 
             "title": "GRACC operations"
         }, 
         {
