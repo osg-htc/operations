@@ -18,6 +18,7 @@ pages:
   - 'OIM': 'SLA/oim.md'
 - External OASIS repositories: 'external-oasis-repos.md'
 - Weekly Minutes:
+  - '11 December 2017': 'WeeklyMinutes/11Dec2017.md'
   - '4 December 2017': 'WeeklyMinutes/04Dec2017.md'
   - '27 November 2017': 'WeeklyMinutes/27Nov2017.md'
   - '20 November 2017': 'WeeklyMinutes/20Nov2017.md'
