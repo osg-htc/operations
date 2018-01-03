@@ -1,6 +1,6 @@
 # Responsibility Matrix
 
-| Service         | Owner   | Support Address          | Contact                                | Service Catalog | Service Portfolio |
+| Service         | Owner   | Support Address          | Management Contact                     | Service Catalog | Service Portfolio |
 |-----------------|---------|--------------------------|----------------------------------------|-----------------|-------------------|
 | Display         | IU-HTC  | help@opensciencegrid.org | Rob Quick (rquick@iu.edu)              |                 |                   |
 | GlideIn-Factory | UCSD    | help@opensciencegrid.org | Rob Quick (rquick@iu.edu)              |                 |                   |
