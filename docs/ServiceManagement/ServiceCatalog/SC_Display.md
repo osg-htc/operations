@@ -10,4 +10,4 @@
 | Service Level Agreement | [Link](https://github.com/opensciencegrid/operations/blob/master/docs/SLA/display.md) |
 | Support Unit        | OSG Operations | 
 | Support Contact Address | help@opensciencegrid.org | 
-| Dependencies | GRACC |
+| Dependencies | GRACC, OIM |
