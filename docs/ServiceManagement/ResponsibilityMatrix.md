@@ -1,9 +1,9 @@
 # Responsibility Matrix
 
-| Service         | Owner   | Support Address          | Management Contact                     | Service Catalog | Service Portfolio |
+| Service         | Owner   | Support Address          | Area Coordinator Contact                     | Service Catalog | Service Portfolio |
 |-----------------|---------|--------------------------|----------------------------------------|-----------------|-------------------|
 | Display         | IU-HTC  | help@opensciencegrid.org | Rob Quick (rquick@iu.edu)              | [Link](https://github.com/opensciencegrid/operations/blob/master/docs/ServiceManagement/ServiceCatalog/SC_Display.md)                |                   |
-| GlideIn-Factory | UCSD    | help@opensciencegrid.org | Jeff Dost (jdost@ucsd.edu), Rob Quick (rquick@iu.edu)              | [Link](https://github.com/opensciencegrid/operations/blob/master/docs/ServiceManagement/ServiceCatalog/SC_GlideInFactory.md)                |                   |
+| GlideIn-Factory | UCSD    | help@opensciencegrid.org | Rob Quick (rquick@iu.edu)              | [Link](https://github.com/opensciencegrid/operations/blob/master/docs/ServiceManagement/ServiceCatalog/SC_GlideInFactory.md)                |                   |
 | GRACC           | UNL-HCC |                          | Brian Bockelman (bbockelm@cse.unl.edu) |                 |                   | 
 | Hosted-CE       | UC      |                          | Rob Gardner (rwg@uchicago.edu)         |                 |                   |
 | OIM             | IU-HTC  | help@opensciencegrid.org | Rob Quick (rquick@iu.edu)              |                 |                   |
