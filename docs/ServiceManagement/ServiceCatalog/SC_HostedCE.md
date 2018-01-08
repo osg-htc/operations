@@ -1,8 +1,8 @@
-# Service Catalog for the OSG Display Service
+# Service Catalog for the OSG Hosted-CE Service
 
-| Service Catalog     | OSG HostedCE | 
+| Service Catalog     | OSG Hosted-CE | 
 |---------------------|-------------|
-| Service Name        | OSG HostedCE | 
+| Service Name        | OSG Hosted-CE | 
 | Service Status      | Active      |
 | Service Description | Provides Compute Element (CE) interface to campus compute clusters. |
 | Service Users       | OSG and other VO Glidein Factories |
