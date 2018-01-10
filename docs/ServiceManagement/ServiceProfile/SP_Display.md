@@ -15,3 +15,6 @@
 | Additional Service Components | Monitoring, Availability calculation, Configuration Management Database entries. | 
 | Support Contact Address | help@opensciencegrid.org | 
 | Dependencies | GRACC, OIM |
+| Cost to Provide | Unused |
+| Funding Source | Unused | 
+| Pricing | Unused | 
