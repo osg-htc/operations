@@ -20,13 +20,7 @@
     
         
     <url>
-     <loc>https://opensciencegrid.github.io/operations//SLA/xdlogin/</loc>
-     <lastmod>2018-01-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://opensciencegrid.github.io/operations//SLA/voms/</loc>
+     <loc>https://opensciencegrid.github.io/operations//SLA/collector/</loc>
      <lastmod>2018-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -45,6 +39,18 @@
         
     <url>
      <loc>https://opensciencegrid.github.io/operations//SLA/oim/</loc>
+     <lastmod>2018-01-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://opensciencegrid.github.io/operations//SLA/voms/</loc>
+     <lastmod>2018-01-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://opensciencegrid.github.io/operations//SLA/xdlogin/</loc>
      <lastmod>2018-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>

@@ -36,329 +36,134 @@
             "title": "OSG Operations Mission"
         }, 
         {
-            "location": "/SLA/xdlogin/", 
-            "text": "XD-Login Service Level Agreement\n\n\nVersion Control\n\n\n\n\n\n\n\n\nVersion Number\n\n\nDate\n\n\nAuthor\n\n\nComments\n\n\n\n\n\n\n\n\n\n\n0.1\n\n\n2-18-2013\n\n\nScott Teige\n\n\nFirst Draft\n\n\n\n\n\n\n\n\nExecutive Summary\n\n\nThis SLA is an agreement between OSG Operations, Information Sciences Institute (ISI) and the OSG Management and Stakeholders describing details\nof the OSG-XD job submission system.\n\n\nOwners\n\n\nThis SLA is owned by OSG Operations, Indiana University and ISI and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.\n\n\nService Name and Description\n\n\nName\n\n\nThe service is built on two physical machines hosted by the GOC. These are\nthe production XD-Login job submission node and an adjunct machine, OSG-FLOCK.\n\n\nDescription\n\n\nThe XD-Login submission node allows OSG resources to be accessed by XSEDE users. A complete description is available \nhere.\n\n\nSecurity Considerations\n\n\nThe XD-Login submission node supports Single Sign On through the XSEDE User Portal, and also from the command line using gsissh with a grid certificate for authentication.\nOSG-FLOCK is not publicly accesible.\n\n\nService Target Response Priorities and Response Times\n\n\nThis section deals with unplanned outages. Please see \nRequests for Service Enhancement\n for information on planned maintenance outages.\n\n\n\n\n\n\n\n\nCritical\n\n\nHigh\n\n\nElevated\n\n\nNormal\n\n\n\n\n\n\n\n\n\n\nWork Outage\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nThis Service does not have critical priority\n\n\nThe issue causes a full service outage rendering the service unavailable\n\n\nThe issue causes short (less than 15 minute) periods of unstable or inconsistent performance\n\n\nThe issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance\n\n\n\n\n\n\nNumber of Clients Affected\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe issue affects all users\n\n\nThe issue may or may not affect all users\n\n\nThe issue affects only a small number of users\n\n\n\n\n\n\nResponse Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nWithin the next business day\n\n\nWithin the next business day\n\n\nWithin five (5) business days\n\n\n\n\n\n\nResolution Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe maximum acceptable resolution time is one full (1) business day\n\n\nThe maximum acceptable resolution time is five (5) business days\n\n\nThe maximum acceptable resolution time is thirty (30) business days\n\n\n\n\n\n\nEscalates Every\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nOne Day\n\n\nOne Week\n\n\nOne Month\n\n\n\n\n\n\n\n\nEscalation Contacts\n\n\n\n\n\n\n\n\nEscalation Level\n\n\nOSG Contact\n\n\n\n\n\n\n\n\n\n\n1st\n\n\nOSG Operations Infrastructure Lead\n\n\n\n\n\n\n2nd\n\n\nOSG Operations Coordinator\n\n\n\n\n\n\n3rd\n\n\nOSG Production Coordinator\n\n\n\n\n\n\n4th\n\n\nOSG Technical Director and Executive Director\n\n\n\n\n\n\n\n\nDetailed information on contacts are viewable on the following \n2F15\n2F2009\nend_type=now\nend_date=09\n2F15\n2F2009\nsite_10047=on\nrg=on\nrg_336=on\ngridtype=on\ngridtype_1=on\nactive=on\nactive_value=1\ndisable_value=1\">MyOSG URL\n, and are maintained within the\n\n\nAny ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly \nOperations\n and \nProduction\n meetings.\n\n\nService Availability and Outages\n\n\nThe GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.\n\n\nService Support Hours\n\n\nThe service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.\n\n\nService Off-Hours Support Procedures\n\n\nXSEDE users should report problems via the \nXSEDE trouble ticket\n system. Others should contact the GOC via the\n\n\nRequests for Service Enhancements\n\n\nThis section deals with planned maintenance outages. Please see \nService Target Response Priorities and Response Times\n for information on unplanned outages.\n\n\nThe OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.\n\n\nCustomer Problem Reporting\n\n\nThe GOC provides operators 24x7x365. Service problems should be reported immediately by one of the following mechanisms.\n\n\n\n\nCreating a problem ticket at https://tickets.xsede.org (\npreferred for XSEDE users\n)\n\n\nCreating a problem ticket at https://ticket.grid.iu.edu/goc/submit (\npreferred for other users\n)\n\n\nEmailing a description to XD-Login-support@opensciencegrid.org\n\n\nCalling the GOC phone at 317-278-9699\n\n\n\n\nResponsibilities\n\n\nCustomer Responsibilities\n\n\nXD-Login customers agree to:\n\n\n\n\nUse the service for purposes of XSEDE or OSG approved work only.\n\n\nAlert the GOC if they are going to use the Service in a non-standard way, this includes testing or anticipated mass increases in usage.\n\n\nContact support by means outlined in the \nCustomer Problem Reporting\n section of this document if they encounter any service issues.\n\n\nBe willing and available to provide information within one business day for any High level issues reported.\n\n\n\n\nResponsibilities\n\n\nGOC operations:\n   * Maintain the physical machine hosting the service\n   * Assure the service is accessible via its advertised URL\n   * Make changes and updates within the normal GOC \nrelease schedule\n\n   * Meet response times associated with the priority assigned by users for issues related to the hardware.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.\n\n\nISI:\n   * Is responsible for all aspects of the service not listed above.\n\n\nGOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.\n\n\nDatabase \n Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.\n\n\nService Measuring and Reporting\n\n\nThe GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):\n\n\n\n\n\n\n\n\nReport Name\n\n\nReporting Interval\n\n\nDelivery Method\n\n\nResponsible Party\n\n\n\n\n\n\n\n\n\n\nSystem Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nService Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nReport of Critical and High Priority Issues\n\n\nQuarterly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\n\n\nThese reports will be posted in Appendix E of this document.\n\n\nSLA Validity Period\n\n\nThis SLA will be in affect for one year.\n\n\nSLA Review Procedure\n\n\nThis SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, a representitive of ISI, the OSG Executive Team or the Stakeholders.\n\n\nReferences\n\n\nAppendix A - Customer Information\n\n\nAll service end-users who are members of an OSG VO and OSG Staff are considered customers.\nAll XSEDE staff and all XSEDE users with an OSG allocation are also customers.\n\n\nAppendix B - Other Service Dependencies\n\n\nThe service is dependent on the following services to collect and distribute information:\n   * Local Network and Hardware\n\n\nAppendix C - Supported Hardware and Software\n\n\nSupported Hardware\n\n\nThe following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.\n\n\nHardware Services\n\n\nThe following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.\n\n\nPerforming repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.\n\n\nObtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.\n\n\n\n\nBackup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.\n\n\n\n\nSoftware Services\n\n\nService Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the \nOSG Operations Responsibilities\n section of this document.\n\n\nSoftware Costs\n\n\nIU and the Grid Operations Center bears all costs for new and replacement software.\n\n\nAppendix D - Approval\n\n\n\n\n\n\n\n\nApproved By\n\n\nPosition\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAppendix E - Metric Reports\n\n\n\n\n[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]", 
-            "title": "XDLogin"
+            "location": "/SLA/collector/", 
+            "text": "GOC Condor Collector Service Level Agreement\n\n\nAbout This Document\n\n\nThis document details a service level agreement which outlines production expectations for the GOC Condor Collector and defines general support infrastructure for the service.\n\n\nVersion Control\n\n\n\n\n\n\n\n\nVersion Number\n\n\nDate\n\n\nAuthor\n\n\nComments\n\n\n\n\n\n\n\n\n\n\n1.1\n\n\n9-24-2014\n\n\nScott Teige\n\n\nFirst Draft\n\n\n\n\n\n\n\n\nExecutive Summary\n\n\nThis SLA is an agreement between OSG and OSG Stakeholders pertaining to the operation of the OSG Condor Collector service.\n\n\nOwners\n\n\nThe Condor Collector SLA is owned by OSG Operations. It will be reviewed by and agreed upon by the OSG Executive Team.\n\n\nService Name and Description\n\n\nName\n\n\nGOC Condor Collector\n\n\nDescription\n\n\nThe grid-facing component of the HTCondor compute element system available for use by all OSG VOs.\n\n\nSecurity Considerations\n\n\nAll information associated with the service is covered by the Indiana University \nprivacy policy\n.\nEffect of compromise of this service are limited to the service. A compromise may make the service unusable by compute elements using it.\n\n\nService Target Response Priorities and Response Times\n\n\nThis section deals with unplanned outages. Please see \nRequests for Service Enhancement\n for information on planned maintenance outages.\n\n\n\n\n\n\n\n\nCritical\n\n\nHigh\n\n\nElevated\n\n\nNormal\n\n\n\n\n\n\n\n\n\n\nDescription\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nThis service does not have critical priority\n\n\nThis service does not have high priority\n\n\nThis issue prevents all new sites from advertising in the info service or clients from querying the service. This issue causes intermittent drops of updates or query failures.\n\n\nThe issue prevents effective monitoring or full utilization of the Condor pool\n\n\n\n\n\n\nResponse Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nN/A\n\n\nWithin 2 business days\n\n\nWithin 10 business days\n\n\n\n\n\n\nResolution Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nN/A\n\n\nThe maximum acceptable resolution time is five (5) business days\n\n\nThe maximum acceptable resolution time is ten (10) business days\n\n\n\n\n\n\nEscalates Every\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nN/A\n\n\nFive Days\n\n\nTen Days\n\n\n\n\n\n\n\n\nEscalation Contacts\n\n\n\n\n\n\n\n\nEscalation Level\n\n\nOSG Contact\n\n\n\n\n\n\n\n\n\n\n1st\n\n\nOSG Operations Infrastructure Lead\n\n\n\n\n\n\n2nd\n\n\nOSG Operations Coordinator\n\n\n\n\n\n\n3rd\n\n\nOSG Production Coordinator\n\n\n\n\n\n\n4th\n\n\nOSG Technical Director and Executive Director\n\n\n\n\n\n\n\n\nCritical Level Security Issues will be elevated immediately to the OSG Security Team.\n\n\nDetailed information on contacts are viewable on the following \nMyOSG URL\n, and are maintained within the\n\n\nAny ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly \nOperations\n and \nProduction\n meetings.\n\n\nService Availability and Outages\n\n\nThe GOC will strive for 90% service availability. If service availability falls below 90% monthly as monitored by the GOC a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.\n\n\nReliability and availability will be determined by 2 critical RSV probes and the OSG availability algorithm.\n   * One probe will verify the Condor collector is queryable whenever the host is pingable (i.e., reasonably not a network failure).\n   * The other probe will verify an automatically generated configuration file has been updated recently\n\n\nService Support Hours\n\n\nThis service will be run for 24x7, but support will primarily be within business hours. The exception is for security incidents.\n\n\nService Off-Hours Support Procedures\n\n\nAll operational issues should be reported as per \nCustomer Problem Reporting\n section.\n\n\nRequests for Service Enhancements\n\n\nOSG Operations will provide enhancement capabilities only as they are released by the HTCondor project or OSG Technology Group.\nRequests for customization of the deployed service may be made; OSG Operations has the right of up to one month of testing of any change.\n\n\nOSG will give 1 week of warning prior to any change in the Collector service version.\nAt any time during this week, Stakeholders are permitted to request a delay for up to 1 week after the originally scheduled upgrade.\n\n\nOSG Operations will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case if the downtime and changes cause further issues.\n\n\nCustomer Problem Reporting\n\n\nThe GOC provides operators 24x7x365. Problems should be reported immediately by one of the following mechanisms.\n\n\n\n\nCreating a problem ticket at https://ticket.grid.iu.edu/goc/open (\npreferred\n)\n\n\nCalling the GOC phone at 317-278-9699\n\n\nEmailing a description to goc@opensciencegrid.org\n\n\n\n\nResponsibilities\n\n\n\n\nThe Collector will be run by OSG Operations and accessible to HTCondor compute elements.\n\n\nProblems not associated with the hardware, operating system or network are the responsibilty of the Technology Group.\n\n\n\n\nService Measuring and Reporting\n\n\nThe GOC will provide the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):\n\n\n\n\n\n\n\n\nReport Name\n\n\nReporting Interval\n\n\nDelivery Method\n\n\nResponsible Party\n\n\n\n\n\n\n\n\n\n\nSystem Availability and Reliability\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\n\n\nSLA Validity Period\n\n\nThis SLA will be in affect for one year.\n\n\nSLA Review Procedure\n\n\nThis SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.\n\n\nReferences\n\n\nAppendix A - Approval\n\n\n\n\n\n\n\n\nApproved By\n\n\nPosition\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n-- CONTENT MANAGEMENT PROJECT\n\n\n\n\nDEAR DOCUMENT OWNER\n\n\nThank you for claiming ownership for this document Please fill in your FirstLast name here:\n   * Local OWNER = RobQ\n\n\nPlease define the document area, choose one of the defined areas from the next line\nDOC_AREA = (ComputeElement|General|Trash/Trash/Integration|Monitoring|Operations|Security|Storage|Trash/Tier3|User|VO)\n   * Local DOC_AREA = Operations\n\n\ndefine the primary role the document serves, choose one of the defined roles from the next line\nDOC_ROLE = (Developer|Documenter|Scientist|Student|SysAdmin|VOManager)\n   * Local DOC_ROLE = VOManager\n\n\nPlease define the document type, choose one of the defined types from the next line\nDOC_TYPE = (HowTo|Installation|Knowledge|Navigation|Planning|Training|Troubleshooting)\n   * Local DOC_TYPE = Knowledge\n\n\nPlease define if this document in general needs to be reviewed before release ( \nYES\n | \nNO\n )\n   * Local INCLUDE_REVIEW = \nYES\n\n\nPlease define if this document in general needs to be tested before release ( \nYES\n | \nNO\n )\n   * Local INCLUDE_TEST = \nNO\n\n\nchange to \nYES\n once the document is ready to be reviewed and back to \nNO\n if that is not the case\n   * Local REVIEW_READY = \nYES\n\n\nchange to \nYES\n once the document is ready to be tested and back to \nNO\n if that is not the case\n   * Local TEST_READY = \nNO\n\n\nchange to \nYES\n only if the document has passed the review and the test (if applicable) and is ready for release\n   * Local RELEASE_READY = \nNO\n\n\nDEAR DOCUMENT REVIEWER\n\n\nThank for reviewing this document Please fill in your FirstLast name here:\n   * Local REVIEWER = ScottTeige\n\n\nPlease define the review status for this document to be in progress ( \nIN_PROGRESS\n ), failed ( \nNO\n ) or passed ( \nYES\n )\n   * Local REVIEW_PASSED = \nYES\n\n\nDEAR DOCUMENT TESTER\n\n\nThank for testing this document Please fill in your FirstLast name here:\n   * Local TESTER = ScottTeige\n\n\nPlease define the test status for this document to be in progress ( \nIN_PROGRESS\n ), failed ( \nNO\n ) or passed ( \nYES\n )\n   * Local TEST_PASSED = \nIN_PROGRESS\n\n\n\n\n--", 
+            "title": "HTCondor Collector"
         }, 
         {
-            "location": "/SLA/xdlogin/#xd-login-service-level-agreement", 
+            "location": "/SLA/collector/#goc-condor-collector-service-level-agreement", 
             "text": "", 
-            "title": "XD-Login Service Level Agreement"
+            "title": "GOC Condor Collector Service Level Agreement"
         }, 
         {
-            "location": "/SLA/xdlogin/#version-control", 
-            "text": "Version Number  Date  Author  Comments      0.1  2-18-2013  Scott Teige  First Draft", 
+            "location": "/SLA/collector/#about-this-document", 
+            "text": "This document details a service level agreement which outlines production expectations for the GOC Condor Collector and defines general support infrastructure for the service.", 
+            "title": "About This Document"
+        }, 
+        {
+            "location": "/SLA/collector/#version-control", 
+            "text": "Version Number  Date  Author  Comments      1.1  9-24-2014  Scott Teige  First Draft", 
             "title": "Version Control"
         }, 
         {
-            "location": "/SLA/xdlogin/#executive-summary", 
-            "text": "This SLA is an agreement between OSG Operations, Information Sciences Institute (ISI) and the OSG Management and Stakeholders describing details\nof the OSG-XD job submission system.", 
+            "location": "/SLA/collector/#executive-summary", 
+            "text": "This SLA is an agreement between OSG and OSG Stakeholders pertaining to the operation of the OSG Condor Collector service.", 
             "title": "Executive Summary"
         }, 
         {
-            "location": "/SLA/xdlogin/#owners", 
-            "text": "This SLA is owned by OSG Operations, Indiana University and ISI and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.", 
+            "location": "/SLA/collector/#owners", 
+            "text": "The Condor Collector SLA is owned by OSG Operations. It will be reviewed by and agreed upon by the OSG Executive Team.", 
             "title": "Owners"
         }, 
         {
-            "location": "/SLA/xdlogin/#service-name-and-description", 
+            "location": "/SLA/collector/#service-name-and-description", 
             "text": "", 
             "title": "Service Name and Description"
         }, 
         {
-            "location": "/SLA/xdlogin/#name", 
-            "text": "The service is built on two physical machines hosted by the GOC. These are\nthe production XD-Login job submission node and an adjunct machine, OSG-FLOCK.", 
+            "location": "/SLA/collector/#name", 
+            "text": "GOC Condor Collector", 
             "title": "Name"
         }, 
         {
-            "location": "/SLA/xdlogin/#description", 
-            "text": "The XD-Login submission node allows OSG resources to be accessed by XSEDE users. A complete description is available  here.", 
+            "location": "/SLA/collector/#description", 
+            "text": "The grid-facing component of the HTCondor compute element system available for use by all OSG VOs.", 
             "title": "Description"
         }, 
         {
-            "location": "/SLA/xdlogin/#security-considerations", 
-            "text": "The XD-Login submission node supports Single Sign On through the XSEDE User Portal, and also from the command line using gsissh with a grid certificate for authentication.\nOSG-FLOCK is not publicly accesible.", 
+            "location": "/SLA/collector/#security-considerations", 
+            "text": "All information associated with the service is covered by the Indiana University  privacy policy .\nEffect of compromise of this service are limited to the service. A compromise may make the service unusable by compute elements using it.", 
             "title": "Security Considerations"
         }, 
         {
-            "location": "/SLA/xdlogin/#service-target-response-priorities-and-response-times", 
-            "text": "This section deals with unplanned outages. Please see  Requests for Service Enhancement  for information on planned maintenance outages.     Critical  High  Elevated  Normal      Work Outage  * *  * *  * *    This Service does not have critical priority  The issue causes a full service outage rendering the service unavailable  The issue causes short (less than 15 minute) periods of unstable or inconsistent performance  The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance    Number of Clients Affected  * *  * *  * *    N/A  The issue affects all users  The issue may or may not affect all users  The issue affects only a small number of users    Response Time  * *  * *  * *    N/A  Within the next business day  Within the next business day  Within five (5) business days    Resolution Time  * *  * *  * *    N/A  The maximum acceptable resolution time is one full (1) business day  The maximum acceptable resolution time is five (5) business days  The maximum acceptable resolution time is thirty (30) business days    Escalates Every  * *  * *  * *    N/A  One Day  One Week  One Month", 
+            "location": "/SLA/collector/#service-target-response-priorities-and-response-times", 
+            "text": "This section deals with unplanned outages. Please see  Requests for Service Enhancement  for information on planned maintenance outages.     Critical  High  Elevated  Normal      Description  * *  * *  * *    This service does not have critical priority  This service does not have high priority  This issue prevents all new sites from advertising in the info service or clients from querying the service. This issue causes intermittent drops of updates or query failures.  The issue prevents effective monitoring or full utilization of the Condor pool    Response Time  * *  * *  * *    N/A  N/A  Within 2 business days  Within 10 business days    Resolution Time  * *  * *  * *    N/A  N/A  The maximum acceptable resolution time is five (5) business days  The maximum acceptable resolution time is ten (10) business days    Escalates Every  * *  * *  * *    N/A  N/A  Five Days  Ten Days", 
             "title": "Service Target Response Priorities and Response Times"
         }, 
         {
-            "location": "/SLA/xdlogin/#escalation-contacts", 
-            "text": "Escalation Level  OSG Contact      1st  OSG Operations Infrastructure Lead    2nd  OSG Operations Coordinator    3rd  OSG Production Coordinator    4th  OSG Technical Director and Executive Director     Detailed information on contacts are viewable on the following  2F15 2F2009 end_type=now end_date=09 2F15 2F2009 site_10047=on rg=on rg_336=on gridtype=on gridtype_1=on active=on active_value=1 disable_value=1\">MyOSG URL , and are maintained within the  Any ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly  Operations  and  Production  meetings.", 
+            "location": "/SLA/collector/#escalation-contacts", 
+            "text": "Escalation Level  OSG Contact      1st  OSG Operations Infrastructure Lead    2nd  OSG Operations Coordinator    3rd  OSG Production Coordinator    4th  OSG Technical Director and Executive Director     Critical Level Security Issues will be elevated immediately to the OSG Security Team.  Detailed information on contacts are viewable on the following  MyOSG URL , and are maintained within the  Any ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly  Operations  and  Production  meetings.", 
             "title": "Escalation Contacts"
         }, 
         {
-            "location": "/SLA/xdlogin/#service-availability-and-outages", 
-            "text": "The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.", 
+            "location": "/SLA/collector/#service-availability-and-outages", 
+            "text": "The GOC will strive for 90% service availability. If service availability falls below 90% monthly as monitored by the GOC a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.  Reliability and availability will be determined by 2 critical RSV probes and the OSG availability algorithm.\n   * One probe will verify the Condor collector is queryable whenever the host is pingable (i.e., reasonably not a network failure).\n   * The other probe will verify an automatically generated configuration file has been updated recently", 
             "title": "Service Availability and Outages"
         }, 
         {
-            "location": "/SLA/xdlogin/#service-support-hours", 
-            "text": "The service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.", 
+            "location": "/SLA/collector/#service-support-hours", 
+            "text": "This service will be run for 24x7, but support will primarily be within business hours. The exception is for security incidents.", 
             "title": "Service Support Hours"
         }, 
         {
-            "location": "/SLA/xdlogin/#service-off-hours-support-procedures", 
-            "text": "XSEDE users should report problems via the  XSEDE trouble ticket  system. Others should contact the GOC via the", 
+            "location": "/SLA/collector/#service-off-hours-support-procedures", 
+            "text": "All operational issues should be reported as per  Customer Problem Reporting  section.", 
             "title": "Service Off-Hours Support Procedures"
         }, 
         {
-            "location": "/SLA/xdlogin/#requests-for-service-enhancements", 
-            "text": "This section deals with planned maintenance outages. Please see  Service Target Response Priorities and Response Times  for information on unplanned outages.  The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.", 
+            "location": "/SLA/collector/#requests-for-service-enhancements", 
+            "text": "OSG Operations will provide enhancement capabilities only as they are released by the HTCondor project or OSG Technology Group.\nRequests for customization of the deployed service may be made; OSG Operations has the right of up to one month of testing of any change.  OSG will give 1 week of warning prior to any change in the Collector service version.\nAt any time during this week, Stakeholders are permitted to request a delay for up to 1 week after the originally scheduled upgrade.  OSG Operations will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case if the downtime and changes cause further issues.", 
             "title": "Requests for Service Enhancements"
         }, 
         {
-            "location": "/SLA/xdlogin/#customer-problem-reporting", 
-            "text": "The GOC provides operators 24x7x365. Service problems should be reported immediately by one of the following mechanisms.   Creating a problem ticket at https://tickets.xsede.org ( preferred for XSEDE users )  Creating a problem ticket at https://ticket.grid.iu.edu/goc/submit ( preferred for other users )  Emailing a description to XD-Login-support@opensciencegrid.org  Calling the GOC phone at 317-278-9699", 
+            "location": "/SLA/collector/#customer-problem-reporting", 
+            "text": "The GOC provides operators 24x7x365. Problems should be reported immediately by one of the following mechanisms.   Creating a problem ticket at https://ticket.grid.iu.edu/goc/open ( preferred )  Calling the GOC phone at 317-278-9699  Emailing a description to goc@opensciencegrid.org", 
             "title": "Customer Problem Reporting"
         }, 
         {
-            "location": "/SLA/xdlogin/#responsibilities", 
-            "text": "", 
+            "location": "/SLA/collector/#responsibilities", 
+            "text": "The Collector will be run by OSG Operations and accessible to HTCondor compute elements.  Problems not associated with the hardware, operating system or network are the responsibilty of the Technology Group.", 
             "title": "Responsibilities"
         }, 
         {
-            "location": "/SLA/xdlogin/#customer-responsibilities", 
-            "text": "XD-Login customers agree to:   Use the service for purposes of XSEDE or OSG approved work only.  Alert the GOC if they are going to use the Service in a non-standard way, this includes testing or anticipated mass increases in usage.  Contact support by means outlined in the  Customer Problem Reporting  section of this document if they encounter any service issues.  Be willing and available to provide information within one business day for any High level issues reported.", 
-            "title": "Customer Responsibilities"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#responsibilities_1", 
-            "text": "GOC operations:\n   * Maintain the physical machine hosting the service\n   * Assure the service is accessible via its advertised URL\n   * Make changes and updates within the normal GOC  release schedule \n   * Meet response times associated with the priority assigned by users for issues related to the hardware.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.  ISI:\n   * Is responsible for all aspects of the service not listed above.  GOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.  Database   Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.", 
-            "title": "Responsibilities"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#service-measuring-and-reporting", 
-            "text": "The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):     Report Name  Reporting Interval  Delivery Method  Responsible Party      System Uptime  Monthly  Web Posting  GOC    Service Uptime  Monthly  Web Posting  GOC    Report of Critical and High Priority Issues  Quarterly  Web Posting  GOC     These reports will be posted in Appendix E of this document.", 
+            "location": "/SLA/collector/#service-measuring-and-reporting", 
+            "text": "The GOC will provide the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):     Report Name  Reporting Interval  Delivery Method  Responsible Party      System Availability and Reliability  Monthly  Web Posting  GOC", 
             "title": "Service Measuring and Reporting"
         }, 
         {
-            "location": "/SLA/xdlogin/#sla-validity-period", 
+            "location": "/SLA/collector/#sla-validity-period", 
             "text": "This SLA will be in affect for one year.", 
             "title": "SLA Validity Period"
         }, 
         {
-            "location": "/SLA/xdlogin/#sla-review-procedure", 
-            "text": "This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, a representitive of ISI, the OSG Executive Team or the Stakeholders.", 
-            "title": "SLA Review Procedure"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#references", 
-            "text": "", 
-            "title": "References"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#appendix-a-customer-information", 
-            "text": "All service end-users who are members of an OSG VO and OSG Staff are considered customers.\nAll XSEDE staff and all XSEDE users with an OSG allocation are also customers.", 
-            "title": "Appendix A - Customer Information"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#appendix-b-other-service-dependencies", 
-            "text": "The service is dependent on the following services to collect and distribute information:\n   * Local Network and Hardware", 
-            "title": "Appendix B - Other Service Dependencies"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#appendix-c-supported-hardware-and-software", 
-            "text": "", 
-            "title": "Appendix C - Supported Hardware and Software"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#supported-hardware", 
-            "text": "The following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.", 
-            "title": "Supported Hardware"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#hardware-services", 
-            "text": "The following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.  Performing repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.  Obtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.   Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.", 
-            "title": "Hardware Services"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#software-services", 
-            "text": "Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the  OSG Operations Responsibilities  section of this document.", 
-            "title": "Software Services"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#software-costs", 
-            "text": "IU and the Grid Operations Center bears all costs for new and replacement software.", 
-            "title": "Software Costs"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#appendix-d-approval", 
-            "text": "Approved By  Position  Date", 
-            "title": "Appendix D - Approval"
-        }, 
-        {
-            "location": "/SLA/xdlogin/#appendix-e-metric-reports", 
-            "text": "[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]", 
-            "title": "Appendix E - Metric Reports"
-        }, 
-        {
-            "location": "/SLA/voms/", 
-            "text": "OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement\n\n\nVersion Control\n\n\n\n\n\n\n\n\nVersion Number\n\n\nDate\n\n\nAuthor\n\n\nComments\n\n\n\n\n\n\n\n\n\n\n1.1\n\n\n3-18-2010\n\n\nRob Quick\n\n\nFirst Draft\n\n\n\n\n\n\n1.2\n\n\n3-18-2011\n\n\nRob Quick\n\n\nUpdated for CSIU\n\n\n\n\n\n\n\n\nExecutive Summary\n\n\nThis SLA is an agreement between OSG Operations and the MIS, CSIU, and OSGEDU VOs and Stakeholders describing details of the VOMS Service. The VOMS is used for membership services related to the VOs mentioned in the title of this document. The VOMS service runs on hardware at Indiana University and provides the VOMS user membership service. The web address for the TWiki is https://voms.grid.iu.edu:8443.\n\n\nOwners\n\n\nThis SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the serviced VOs.\n\n\nService Name and Description\n\n\nName\n\n\nMIS, CSIU, and OSGEDU VOMS.\n\n\nDescription\n\n\nThe VOMS is used for membership services related to the VOs mentioned in the title of this document.\n\n\nSecurity Considerations\n\n\nVOMS Administration is limited to the staff of the VOs represented. Read access to non-secure information is public.\n\n\nService Target Response Priorities and Response Times\n\n\nThis section deals with unplanned outages. Please see \nRequests for Service Enhancement\n for information on planned maintenance outages.\n\n\n\n\n\n\n\n\nCritical\n\n\nHigh\n\n\nElevated\n\n\nNormal\n\n\n\n\n\n\n\n\n\n\nWork Outage\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nThe VOMS Service does not have critical priority\n\n\nThe issue causes a full service outage rendering the VOMS unavailable for registration or distribution\n\n\nThe issue causes short (less than 15 minute) periods of unstable or inconsistent performance\n\n\nThe issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance\n\n\n\n\n\n\nNumber of Clients Affected\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe issue affects all VOMS users\n\n\nThe issue may or may not affect all users\n\n\nThe issue affects only a small number of users\n\n\n\n\n\n\nResponse Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nWithin the next business day\n\n\nWithin the next business day\n\n\nWithin five (5) business days\n\n\n\n\n\n\nResolution Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe maximum acceptable resolution time is one full (1) business day\n\n\nThe maximum acceptable resolution time is five (5) business days\n\n\nThe maximum acceptable resolution time is thirty (30) business days\n\n\n\n\n\n\nEscalates Every\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nOne Day\n\n\nOne Week\n\n\nOne Month\n\n\n\n\n\n\n\n\nEscalation Contacts\n\n\n\n\n\n\n\n\nEscalation Level\n\n\nOSG Contact\n\n\n\n\n\n\n\n\n\n\n1st\n\n\nOSG Operations Infrastructure Lead\n\n\n\n\n\n\n2nd\n\n\nOSG Operations Coordinator\n\n\n\n\n\n\n3rd\n\n\nOSG Production Coordinator\n\n\n\n\n\n\n4th\n\n\nOSG Technical Director and Executive Director\n\n\n\n\n\n\n\n\nAny ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly \nOperations\n and \nProduction\n meetings.\n\n\nService Availability and Outages\n\n\nThe GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.\n\n\nService Support Hours\n\n\nThe software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.\n\n\nService Off-Hours Support Procedures\n\n\nAll software issues should be reported to the GOC immediately by \ntrouble ticket\n web submission.\n\n\nRequests for Service Enhancement\n\n\nThis section deals with planned maintenance outages. Please see \nService Target Response Priorities and Response Times\n for information on unplanned outages.\n\n\nThe OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.\n\n\nCustomer Problem Reporting\n\n\nThe GOC provides operators 24x7x365. VOMS service problems should be reported immediately by one of the following mechanisms.\n\n\n\n\nCreating a problem ticket at https://ticket.grid.iu.edu/goc/open (\npreferred\n)\n\n\nCalling the GOC phone at 317-278-9699\n\n\nEmailing a description to goc@opensciencegrid.org\n\n\n\n\nResponsibilities\n\n\nCustomer Responsibilities\n\n\nOSG TWiki customers agree to:\n\n\n\n\nUse the OSG VOMS service for purposes of VO or OSG approved work only.\n\n\nAlert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.\n\n\nContact the GOC by means outlined in the \nCustomer Problem Reporting\n section of this document if they encounter any service issues.\n\n\nBe willing and available to provide information within one business day for any High level issues reported.\n\n\nProvide testing for the VOMS service within the time frame defined in the \nRequests for Service Enhancements\n section.\n\n\nAlert the GOC when problems are encountered during testing.\n\n\n\n\nOSG Operations Responsibilities\n\n\nGeneral responsibilities:\n   * Create and add appropriate documentation to the VOMS users for appropriate use of the VOMS service.\n   * Meet response times associated with the priority assigned to Customer issues.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.\n   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.\n\n\nGOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.\n\n\nDatabase \n Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.\n\n\nService Measuring and Reporting\n\n\nThe GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):\n\n\n\n\n\n\n\n\nReport Name\n\n\nReporting Interval\n\n\nDelivery Method\n\n\nResponsible Party\n\n\n\n\n\n\n\n\n\n\nSystem Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nService Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nReport of Critical and High Priority Issues\n\n\nQuarterly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\n\n\nThese reports will be posted in Appendix E of this document.\n\n\nSLA Validity Period\n\n\nThis SLA will be in affect for one year.\n\n\nSLA Review Procedure\n\n\nThis SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.\n\n\nReferences\n\n\nAppendix A - Customer Information\n\n\nAll VO end-users who are members of the MIS, CSIU, or OSGEDU VO and OSG Staff are considered customers.\n\n\nAppendix B - Other Service Dependencies\n\n\nThe VOMS service is dependent on the following services to collect and distribute information:\n   * Local Network, Hardware, OS, VOMS Software, and Apache\n\n\nAppendix C - Supported Hardware and Software\n\n\nSupported Hardware\n\n\nThe following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.\n\n\nHardware Services\n\n\nThe following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.\n\n\nPerforming repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.\n\n\nObtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.\n\n\n\n\nBackup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.\n\n\n\n\nSoftware Services\n\n\nService Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the \nOSG Operations Responsibilities\n section of this document.\n\n\nSoftware Costs\n\n\nIU and the Grid Operations Center bears all costs for new and replacement software.\n\n\nAppendix D - Approval\n\n\n\n\n\n\n\n\nApproved By\n\n\nPosition\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAppendix E - Metric Reports\n\n\n\n\n[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]\n\n\n\n\nComments", 
-            "title": "VOMS"
-        }, 
-        {
-            "location": "/SLA/voms/#osg-mis-csiu-and-osgedu-voms-service-level-agreement", 
-            "text": "", 
-            "title": "OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement"
-        }, 
-        {
-            "location": "/SLA/voms/#version-control", 
-            "text": "Version Number  Date  Author  Comments      1.1  3-18-2010  Rob Quick  First Draft    1.2  3-18-2011  Rob Quick  Updated for CSIU", 
-            "title": "Version Control"
-        }, 
-        {
-            "location": "/SLA/voms/#executive-summary", 
-            "text": "This SLA is an agreement between OSG Operations and the MIS, CSIU, and OSGEDU VOs and Stakeholders describing details of the VOMS Service. The VOMS is used for membership services related to the VOs mentioned in the title of this document. The VOMS service runs on hardware at Indiana University and provides the VOMS user membership service. The web address for the TWiki is https://voms.grid.iu.edu:8443.", 
-            "title": "Executive Summary"
-        }, 
-        {
-            "location": "/SLA/voms/#owners", 
-            "text": "This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the serviced VOs.", 
-            "title": "Owners"
-        }, 
-        {
-            "location": "/SLA/voms/#service-name-and-description", 
-            "text": "", 
-            "title": "Service Name and Description"
-        }, 
-        {
-            "location": "/SLA/voms/#name", 
-            "text": "MIS, CSIU, and OSGEDU VOMS.", 
-            "title": "Name"
-        }, 
-        {
-            "location": "/SLA/voms/#description", 
-            "text": "The VOMS is used for membership services related to the VOs mentioned in the title of this document.", 
-            "title": "Description"
-        }, 
-        {
-            "location": "/SLA/voms/#security-considerations", 
-            "text": "VOMS Administration is limited to the staff of the VOs represented. Read access to non-secure information is public.", 
-            "title": "Security Considerations"
-        }, 
-        {
-            "location": "/SLA/voms/#service-target-response-priorities-and-response-times", 
-            "text": "This section deals with unplanned outages. Please see  Requests for Service Enhancement  for information on planned maintenance outages.     Critical  High  Elevated  Normal      Work Outage  * *  * *  * *    The VOMS Service does not have critical priority  The issue causes a full service outage rendering the VOMS unavailable for registration or distribution  The issue causes short (less than 15 minute) periods of unstable or inconsistent performance  The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance    Number of Clients Affected  * *  * *  * *    N/A  The issue affects all VOMS users  The issue may or may not affect all users  The issue affects only a small number of users    Response Time  * *  * *  * *    N/A  Within the next business day  Within the next business day  Within five (5) business days    Resolution Time  * *  * *  * *    N/A  The maximum acceptable resolution time is one full (1) business day  The maximum acceptable resolution time is five (5) business days  The maximum acceptable resolution time is thirty (30) business days    Escalates Every  * *  * *  * *    N/A  One Day  One Week  One Month", 
-            "title": "Service Target Response Priorities and Response Times"
-        }, 
-        {
-            "location": "/SLA/voms/#escalation-contacts", 
-            "text": "Escalation Level  OSG Contact      1st  OSG Operations Infrastructure Lead    2nd  OSG Operations Coordinator    3rd  OSG Production Coordinator    4th  OSG Technical Director and Executive Director     Any ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly  Operations  and  Production  meetings.", 
-            "title": "Escalation Contacts"
-        }, 
-        {
-            "location": "/SLA/voms/#service-availability-and-outages", 
-            "text": "The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.", 
-            "title": "Service Availability and Outages"
-        }, 
-        {
-            "location": "/SLA/voms/#service-support-hours", 
-            "text": "The software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.", 
-            "title": "Service Support Hours"
-        }, 
-        {
-            "location": "/SLA/voms/#service-off-hours-support-procedures", 
-            "text": "All software issues should be reported to the GOC immediately by  trouble ticket  web submission.", 
-            "title": "Service Off-Hours Support Procedures"
-        }, 
-        {
-            "location": "/SLA/voms/#requests-for-service-enhancement", 
-            "text": "This section deals with planned maintenance outages. Please see  Service Target Response Priorities and Response Times  for information on unplanned outages.  The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.", 
-            "title": "Requests for Service Enhancement"
-        }, 
-        {
-            "location": "/SLA/voms/#customer-problem-reporting", 
-            "text": "The GOC provides operators 24x7x365. VOMS service problems should be reported immediately by one of the following mechanisms.   Creating a problem ticket at https://ticket.grid.iu.edu/goc/open ( preferred )  Calling the GOC phone at 317-278-9699  Emailing a description to goc@opensciencegrid.org", 
-            "title": "Customer Problem Reporting"
-        }, 
-        {
-            "location": "/SLA/voms/#responsibilities", 
-            "text": "", 
-            "title": "Responsibilities"
-        }, 
-        {
-            "location": "/SLA/voms/#customer-responsibilities", 
-            "text": "OSG TWiki customers agree to:   Use the OSG VOMS service for purposes of VO or OSG approved work only.  Alert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.  Contact the GOC by means outlined in the  Customer Problem Reporting  section of this document if they encounter any service issues.  Be willing and available to provide information within one business day for any High level issues reported.  Provide testing for the VOMS service within the time frame defined in the  Requests for Service Enhancements  section.  Alert the GOC when problems are encountered during testing.", 
-            "title": "Customer Responsibilities"
-        }, 
-        {
-            "location": "/SLA/voms/#osg-operations-responsibilities", 
-            "text": "General responsibilities:\n   * Create and add appropriate documentation to the VOMS users for appropriate use of the VOMS service.\n   * Meet response times associated with the priority assigned to Customer issues.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.\n   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.  GOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.  Database   Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.", 
-            "title": "OSG Operations Responsibilities"
-        }, 
-        {
-            "location": "/SLA/voms/#service-measuring-and-reporting", 
-            "text": "The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):     Report Name  Reporting Interval  Delivery Method  Responsible Party      System Uptime  Monthly  Web Posting  GOC    Service Uptime  Monthly  Web Posting  GOC    Report of Critical and High Priority Issues  Quarterly  Web Posting  GOC     These reports will be posted in Appendix E of this document.", 
-            "title": "Service Measuring and Reporting"
-        }, 
-        {
-            "location": "/SLA/voms/#sla-validity-period", 
-            "text": "This SLA will be in affect for one year.", 
-            "title": "SLA Validity Period"
-        }, 
-        {
-            "location": "/SLA/voms/#sla-review-procedure", 
+            "location": "/SLA/collector/#sla-review-procedure", 
             "text": "This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.", 
             "title": "SLA Review Procedure"
         }, 
         {
-            "location": "/SLA/voms/#references", 
+            "location": "/SLA/collector/#references", 
             "text": "", 
             "title": "References"
         }, 
         {
-            "location": "/SLA/voms/#appendix-a-customer-information", 
-            "text": "All VO end-users who are members of the MIS, CSIU, or OSGEDU VO and OSG Staff are considered customers.", 
-            "title": "Appendix A - Customer Information"
+            "location": "/SLA/collector/#appendix-a-approval", 
+            "text": "Approved By  Position  Date            -- CONTENT MANAGEMENT PROJECT", 
+            "title": "Appendix A - Approval"
         }, 
         {
-            "location": "/SLA/voms/#appendix-b-other-service-dependencies", 
-            "text": "The VOMS service is dependent on the following services to collect and distribute information:\n   * Local Network, Hardware, OS, VOMS Software, and Apache", 
-            "title": "Appendix B - Other Service Dependencies"
+            "location": "/SLA/collector/#dear-document-owner", 
+            "text": "Thank you for claiming ownership for this document Please fill in your FirstLast name here:\n   * Local OWNER = RobQ  Please define the document area, choose one of the defined areas from the next line\nDOC_AREA = (ComputeElement|General|Trash/Trash/Integration|Monitoring|Operations|Security|Storage|Trash/Tier3|User|VO)\n   * Local DOC_AREA = Operations  define the primary role the document serves, choose one of the defined roles from the next line\nDOC_ROLE = (Developer|Documenter|Scientist|Student|SysAdmin|VOManager)\n   * Local DOC_ROLE = VOManager  Please define the document type, choose one of the defined types from the next line\nDOC_TYPE = (HowTo|Installation|Knowledge|Navigation|Planning|Training|Troubleshooting)\n   * Local DOC_TYPE = Knowledge  Please define if this document in general needs to be reviewed before release (  YES  |  NO  )\n   * Local INCLUDE_REVIEW =  YES  Please define if this document in general needs to be tested before release (  YES  |  NO  )\n   * Local INCLUDE_TEST =  NO  change to  YES  once the document is ready to be reviewed and back to  NO  if that is not the case\n   * Local REVIEW_READY =  YES  change to  YES  once the document is ready to be tested and back to  NO  if that is not the case\n   * Local TEST_READY =  NO  change to  YES  only if the document has passed the review and the test (if applicable) and is ready for release\n   * Local RELEASE_READY =  NO", 
+            "title": "DEAR DOCUMENT OWNER"
         }, 
         {
-            "location": "/SLA/voms/#appendix-c-supported-hardware-and-software", 
-            "text": "", 
-            "title": "Appendix C - Supported Hardware and Software"
+            "location": "/SLA/collector/#dear-document-reviewer", 
+            "text": "Thank for reviewing this document Please fill in your FirstLast name here:\n   * Local REVIEWER = ScottTeige  Please define the review status for this document to be in progress (  IN_PROGRESS  ), failed (  NO  ) or passed (  YES  )\n   * Local REVIEW_PASSED =  YES", 
+            "title": "DEAR DOCUMENT REVIEWER"
         }, 
         {
-            "location": "/SLA/voms/#supported-hardware", 
-            "text": "The following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.", 
-            "title": "Supported Hardware"
-        }, 
-        {
-            "location": "/SLA/voms/#hardware-services", 
-            "text": "The following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.  Performing repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.  Obtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.   Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.", 
-            "title": "Hardware Services"
-        }, 
-        {
-            "location": "/SLA/voms/#software-services", 
-            "text": "Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the  OSG Operations Responsibilities  section of this document.", 
-            "title": "Software Services"
-        }, 
-        {
-            "location": "/SLA/voms/#software-costs", 
-            "text": "IU and the Grid Operations Center bears all costs for new and replacement software.", 
-            "title": "Software Costs"
-        }, 
-        {
-            "location": "/SLA/voms/#appendix-d-approval", 
-            "text": "Approved By  Position  Date", 
-            "title": "Appendix D - Approval"
-        }, 
-        {
-            "location": "/SLA/voms/#appendix-e-metric-reports", 
-            "text": "[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]", 
-            "title": "Appendix E - Metric Reports"
-        }, 
-        {
-            "location": "/SLA/voms/#comments", 
-            "text": "", 
-            "title": "Comments"
+            "location": "/SLA/collector/#dear-document-tester", 
+            "text": "Thank for testing this document Please fill in your FirstLast name here:\n   * Local TESTER = ScottTeige  Please define the test status for this document to be in progress (  IN_PROGRESS  ), failed (  NO  ) or passed (  YES  )\n   * Local TEST_PASSED =  IN_PROGRESS", 
+            "title": "DEAR DOCUMENT TESTER"
         }, 
         {
             "location": "/SLA/myosg/", 
@@ -837,6 +642,331 @@
         }, 
         {
             "location": "/SLA/oim/#appendix-e-metric-reports", 
+            "text": "[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]", 
+            "title": "Appendix E - Metric Reports"
+        }, 
+        {
+            "location": "/SLA/voms/", 
+            "text": "OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement\n\n\nVersion Control\n\n\n\n\n\n\n\n\nVersion Number\n\n\nDate\n\n\nAuthor\n\n\nComments\n\n\n\n\n\n\n\n\n\n\n1.1\n\n\n3-18-2010\n\n\nRob Quick\n\n\nFirst Draft\n\n\n\n\n\n\n1.2\n\n\n3-18-2011\n\n\nRob Quick\n\n\nUpdated for CSIU\n\n\n\n\n\n\n\n\nExecutive Summary\n\n\nThis SLA is an agreement between OSG Operations and the MIS, CSIU, and OSGEDU VOs and Stakeholders describing details of the VOMS Service. The VOMS is used for membership services related to the VOs mentioned in the title of this document. The VOMS service runs on hardware at Indiana University and provides the VOMS user membership service. The web address for the TWiki is https://voms.grid.iu.edu:8443.\n\n\nOwners\n\n\nThis SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the serviced VOs.\n\n\nService Name and Description\n\n\nName\n\n\nMIS, CSIU, and OSGEDU VOMS.\n\n\nDescription\n\n\nThe VOMS is used for membership services related to the VOs mentioned in the title of this document.\n\n\nSecurity Considerations\n\n\nVOMS Administration is limited to the staff of the VOs represented. Read access to non-secure information is public.\n\n\nService Target Response Priorities and Response Times\n\n\nThis section deals with unplanned outages. Please see \nRequests for Service Enhancement\n for information on planned maintenance outages.\n\n\n\n\n\n\n\n\nCritical\n\n\nHigh\n\n\nElevated\n\n\nNormal\n\n\n\n\n\n\n\n\n\n\nWork Outage\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nThe VOMS Service does not have critical priority\n\n\nThe issue causes a full service outage rendering the VOMS unavailable for registration or distribution\n\n\nThe issue causes short (less than 15 minute) periods of unstable or inconsistent performance\n\n\nThe issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance\n\n\n\n\n\n\nNumber of Clients Affected\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe issue affects all VOMS users\n\n\nThe issue may or may not affect all users\n\n\nThe issue affects only a small number of users\n\n\n\n\n\n\nResponse Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nWithin the next business day\n\n\nWithin the next business day\n\n\nWithin five (5) business days\n\n\n\n\n\n\nResolution Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe maximum acceptable resolution time is one full (1) business day\n\n\nThe maximum acceptable resolution time is five (5) business days\n\n\nThe maximum acceptable resolution time is thirty (30) business days\n\n\n\n\n\n\nEscalates Every\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nOne Day\n\n\nOne Week\n\n\nOne Month\n\n\n\n\n\n\n\n\nEscalation Contacts\n\n\n\n\n\n\n\n\nEscalation Level\n\n\nOSG Contact\n\n\n\n\n\n\n\n\n\n\n1st\n\n\nOSG Operations Infrastructure Lead\n\n\n\n\n\n\n2nd\n\n\nOSG Operations Coordinator\n\n\n\n\n\n\n3rd\n\n\nOSG Production Coordinator\n\n\n\n\n\n\n4th\n\n\nOSG Technical Director and Executive Director\n\n\n\n\n\n\n\n\nAny ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly \nOperations\n and \nProduction\n meetings.\n\n\nService Availability and Outages\n\n\nThe GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.\n\n\nService Support Hours\n\n\nThe software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.\n\n\nService Off-Hours Support Procedures\n\n\nAll software issues should be reported to the GOC immediately by \ntrouble ticket\n web submission.\n\n\nRequests for Service Enhancement\n\n\nThis section deals with planned maintenance outages. Please see \nService Target Response Priorities and Response Times\n for information on unplanned outages.\n\n\nThe OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.\n\n\nCustomer Problem Reporting\n\n\nThe GOC provides operators 24x7x365. VOMS service problems should be reported immediately by one of the following mechanisms.\n\n\n\n\nCreating a problem ticket at https://ticket.grid.iu.edu/goc/open (\npreferred\n)\n\n\nCalling the GOC phone at 317-278-9699\n\n\nEmailing a description to goc@opensciencegrid.org\n\n\n\n\nResponsibilities\n\n\nCustomer Responsibilities\n\n\nOSG TWiki customers agree to:\n\n\n\n\nUse the OSG VOMS service for purposes of VO or OSG approved work only.\n\n\nAlert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.\n\n\nContact the GOC by means outlined in the \nCustomer Problem Reporting\n section of this document if they encounter any service issues.\n\n\nBe willing and available to provide information within one business day for any High level issues reported.\n\n\nProvide testing for the VOMS service within the time frame defined in the \nRequests for Service Enhancements\n section.\n\n\nAlert the GOC when problems are encountered during testing.\n\n\n\n\nOSG Operations Responsibilities\n\n\nGeneral responsibilities:\n   * Create and add appropriate documentation to the VOMS users for appropriate use of the VOMS service.\n   * Meet response times associated with the priority assigned to Customer issues.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.\n   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.\n\n\nGOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.\n\n\nDatabase \n Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.\n\n\nService Measuring and Reporting\n\n\nThe GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):\n\n\n\n\n\n\n\n\nReport Name\n\n\nReporting Interval\n\n\nDelivery Method\n\n\nResponsible Party\n\n\n\n\n\n\n\n\n\n\nSystem Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nService Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nReport of Critical and High Priority Issues\n\n\nQuarterly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\n\n\nThese reports will be posted in Appendix E of this document.\n\n\nSLA Validity Period\n\n\nThis SLA will be in affect for one year.\n\n\nSLA Review Procedure\n\n\nThis SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.\n\n\nReferences\n\n\nAppendix A - Customer Information\n\n\nAll VO end-users who are members of the MIS, CSIU, or OSGEDU VO and OSG Staff are considered customers.\n\n\nAppendix B - Other Service Dependencies\n\n\nThe VOMS service is dependent on the following services to collect and distribute information:\n   * Local Network, Hardware, OS, VOMS Software, and Apache\n\n\nAppendix C - Supported Hardware and Software\n\n\nSupported Hardware\n\n\nThe following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.\n\n\nHardware Services\n\n\nThe following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.\n\n\nPerforming repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.\n\n\nObtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.\n\n\n\n\nBackup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.\n\n\n\n\nSoftware Services\n\n\nService Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the \nOSG Operations Responsibilities\n section of this document.\n\n\nSoftware Costs\n\n\nIU and the Grid Operations Center bears all costs for new and replacement software.\n\n\nAppendix D - Approval\n\n\n\n\n\n\n\n\nApproved By\n\n\nPosition\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAppendix E - Metric Reports\n\n\n\n\n[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]\n\n\n\n\nComments", 
+            "title": "VOMS"
+        }, 
+        {
+            "location": "/SLA/voms/#osg-mis-csiu-and-osgedu-voms-service-level-agreement", 
+            "text": "", 
+            "title": "OSG MIS, CSIU, and OSGEDU VOMS Service Level Agreement"
+        }, 
+        {
+            "location": "/SLA/voms/#version-control", 
+            "text": "Version Number  Date  Author  Comments      1.1  3-18-2010  Rob Quick  First Draft    1.2  3-18-2011  Rob Quick  Updated for CSIU", 
+            "title": "Version Control"
+        }, 
+        {
+            "location": "/SLA/voms/#executive-summary", 
+            "text": "This SLA is an agreement between OSG Operations and the MIS, CSIU, and OSGEDU VOs and Stakeholders describing details of the VOMS Service. The VOMS is used for membership services related to the VOs mentioned in the title of this document. The VOMS service runs on hardware at Indiana University and provides the VOMS user membership service. The web address for the TWiki is https://voms.grid.iu.edu:8443.", 
+            "title": "Executive Summary"
+        }, 
+        {
+            "location": "/SLA/voms/#owners", 
+            "text": "This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the serviced VOs.", 
+            "title": "Owners"
+        }, 
+        {
+            "location": "/SLA/voms/#service-name-and-description", 
+            "text": "", 
+            "title": "Service Name and Description"
+        }, 
+        {
+            "location": "/SLA/voms/#name", 
+            "text": "MIS, CSIU, and OSGEDU VOMS.", 
+            "title": "Name"
+        }, 
+        {
+            "location": "/SLA/voms/#description", 
+            "text": "The VOMS is used for membership services related to the VOs mentioned in the title of this document.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/SLA/voms/#security-considerations", 
+            "text": "VOMS Administration is limited to the staff of the VOs represented. Read access to non-secure information is public.", 
+            "title": "Security Considerations"
+        }, 
+        {
+            "location": "/SLA/voms/#service-target-response-priorities-and-response-times", 
+            "text": "This section deals with unplanned outages. Please see  Requests for Service Enhancement  for information on planned maintenance outages.     Critical  High  Elevated  Normal      Work Outage  * *  * *  * *    The VOMS Service does not have critical priority  The issue causes a full service outage rendering the VOMS unavailable for registration or distribution  The issue causes short (less than 15 minute) periods of unstable or inconsistent performance  The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance    Number of Clients Affected  * *  * *  * *    N/A  The issue affects all VOMS users  The issue may or may not affect all users  The issue affects only a small number of users    Response Time  * *  * *  * *    N/A  Within the next business day  Within the next business day  Within five (5) business days    Resolution Time  * *  * *  * *    N/A  The maximum acceptable resolution time is one full (1) business day  The maximum acceptable resolution time is five (5) business days  The maximum acceptable resolution time is thirty (30) business days    Escalates Every  * *  * *  * *    N/A  One Day  One Week  One Month", 
+            "title": "Service Target Response Priorities and Response Times"
+        }, 
+        {
+            "location": "/SLA/voms/#escalation-contacts", 
+            "text": "Escalation Level  OSG Contact      1st  OSG Operations Infrastructure Lead    2nd  OSG Operations Coordinator    3rd  OSG Production Coordinator    4th  OSG Technical Director and Executive Director     Any ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly  Operations  and  Production  meetings.", 
+            "title": "Escalation Contacts"
+        }, 
+        {
+            "location": "/SLA/voms/#service-availability-and-outages", 
+            "text": "The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.", 
+            "title": "Service Availability and Outages"
+        }, 
+        {
+            "location": "/SLA/voms/#service-support-hours", 
+            "text": "The software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.", 
+            "title": "Service Support Hours"
+        }, 
+        {
+            "location": "/SLA/voms/#service-off-hours-support-procedures", 
+            "text": "All software issues should be reported to the GOC immediately by  trouble ticket  web submission.", 
+            "title": "Service Off-Hours Support Procedures"
+        }, 
+        {
+            "location": "/SLA/voms/#requests-for-service-enhancement", 
+            "text": "This section deals with planned maintenance outages. Please see  Service Target Response Priorities and Response Times  for information on unplanned outages.  The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.", 
+            "title": "Requests for Service Enhancement"
+        }, 
+        {
+            "location": "/SLA/voms/#customer-problem-reporting", 
+            "text": "The GOC provides operators 24x7x365. VOMS service problems should be reported immediately by one of the following mechanisms.   Creating a problem ticket at https://ticket.grid.iu.edu/goc/open ( preferred )  Calling the GOC phone at 317-278-9699  Emailing a description to goc@opensciencegrid.org", 
+            "title": "Customer Problem Reporting"
+        }, 
+        {
+            "location": "/SLA/voms/#responsibilities", 
+            "text": "", 
+            "title": "Responsibilities"
+        }, 
+        {
+            "location": "/SLA/voms/#customer-responsibilities", 
+            "text": "OSG TWiki customers agree to:   Use the OSG VOMS service for purposes of VO or OSG approved work only.  Alert the GOC if they are going to use the VOMS Service in a non-standard way, this includes testing or anticipated mass increases in usage.  Contact the GOC by means outlined in the  Customer Problem Reporting  section of this document if they encounter any service issues.  Be willing and available to provide information within one business day for any High level issues reported.  Provide testing for the VOMS service within the time frame defined in the  Requests for Service Enhancements  section.  Alert the GOC when problems are encountered during testing.", 
+            "title": "Customer Responsibilities"
+        }, 
+        {
+            "location": "/SLA/voms/#osg-operations-responsibilities", 
+            "text": "General responsibilities:\n   * Create and add appropriate documentation to the VOMS users for appropriate use of the VOMS service.\n   * Meet response times associated with the priority assigned to Customer issues.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.\n   * Make changes and updates within the normal GOC release schedule documented at https://github.com/opensciencegrid/operations/blob/master/SLA/ReleaseSchedule.  GOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.  Database   Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.", 
+            "title": "OSG Operations Responsibilities"
+        }, 
+        {
+            "location": "/SLA/voms/#service-measuring-and-reporting", 
+            "text": "The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):     Report Name  Reporting Interval  Delivery Method  Responsible Party      System Uptime  Monthly  Web Posting  GOC    Service Uptime  Monthly  Web Posting  GOC    Report of Critical and High Priority Issues  Quarterly  Web Posting  GOC     These reports will be posted in Appendix E of this document.", 
+            "title": "Service Measuring and Reporting"
+        }, 
+        {
+            "location": "/SLA/voms/#sla-validity-period", 
+            "text": "This SLA will be in affect for one year.", 
+            "title": "SLA Validity Period"
+        }, 
+        {
+            "location": "/SLA/voms/#sla-review-procedure", 
+            "text": "This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.", 
+            "title": "SLA Review Procedure"
+        }, 
+        {
+            "location": "/SLA/voms/#references", 
+            "text": "", 
+            "title": "References"
+        }, 
+        {
+            "location": "/SLA/voms/#appendix-a-customer-information", 
+            "text": "All VO end-users who are members of the MIS, CSIU, or OSGEDU VO and OSG Staff are considered customers.", 
+            "title": "Appendix A - Customer Information"
+        }, 
+        {
+            "location": "/SLA/voms/#appendix-b-other-service-dependencies", 
+            "text": "The VOMS service is dependent on the following services to collect and distribute information:\n   * Local Network, Hardware, OS, VOMS Software, and Apache", 
+            "title": "Appendix B - Other Service Dependencies"
+        }, 
+        {
+            "location": "/SLA/voms/#appendix-c-supported-hardware-and-software", 
+            "text": "", 
+            "title": "Appendix C - Supported Hardware and Software"
+        }, 
+        {
+            "location": "/SLA/voms/#supported-hardware", 
+            "text": "The following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.", 
+            "title": "Supported Hardware"
+        }, 
+        {
+            "location": "/SLA/voms/#hardware-services", 
+            "text": "The following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.  Performing repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.  Obtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.   Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.", 
+            "title": "Hardware Services"
+        }, 
+        {
+            "location": "/SLA/voms/#software-services", 
+            "text": "Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the  OSG Operations Responsibilities  section of this document.", 
+            "title": "Software Services"
+        }, 
+        {
+            "location": "/SLA/voms/#software-costs", 
+            "text": "IU and the Grid Operations Center bears all costs for new and replacement software.", 
+            "title": "Software Costs"
+        }, 
+        {
+            "location": "/SLA/voms/#appendix-d-approval", 
+            "text": "Approved By  Position  Date", 
+            "title": "Appendix D - Approval"
+        }, 
+        {
+            "location": "/SLA/voms/#appendix-e-metric-reports", 
+            "text": "[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]", 
+            "title": "Appendix E - Metric Reports"
+        }, 
+        {
+            "location": "/SLA/voms/#comments", 
+            "text": "", 
+            "title": "Comments"
+        }, 
+        {
+            "location": "/SLA/xdlogin/", 
+            "text": "XD-Login Service Level Agreement\n\n\nVersion Control\n\n\n\n\n\n\n\n\nVersion Number\n\n\nDate\n\n\nAuthor\n\n\nComments\n\n\n\n\n\n\n\n\n\n\n0.1\n\n\n2-18-2013\n\n\nScott Teige\n\n\nFirst Draft\n\n\n\n\n\n\n\n\nExecutive Summary\n\n\nThis SLA is an agreement between OSG Operations, Information Sciences Institute (ISI) and the OSG Management and Stakeholders describing details\nof the OSG-XD job submission system.\n\n\nOwners\n\n\nThis SLA is owned by OSG Operations, Indiana University and ISI and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.\n\n\nService Name and Description\n\n\nName\n\n\nThe service is built on two physical machines hosted by the GOC. These are\nthe production XD-Login job submission node and an adjunct machine, OSG-FLOCK.\n\n\nDescription\n\n\nThe XD-Login submission node allows OSG resources to be accessed by XSEDE users. A complete description is available \nhere.\n\n\nSecurity Considerations\n\n\nThe XD-Login submission node supports Single Sign On through the XSEDE User Portal, and also from the command line using gsissh with a grid certificate for authentication.\nOSG-FLOCK is not publicly accesible.\n\n\nService Target Response Priorities and Response Times\n\n\nThis section deals with unplanned outages. Please see \nRequests for Service Enhancement\n for information on planned maintenance outages.\n\n\n\n\n\n\n\n\nCritical\n\n\nHigh\n\n\nElevated\n\n\nNormal\n\n\n\n\n\n\n\n\n\n\nWork Outage\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nThis Service does not have critical priority\n\n\nThe issue causes a full service outage rendering the service unavailable\n\n\nThe issue causes short (less than 15 minute) periods of unstable or inconsistent performance\n\n\nThe issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance\n\n\n\n\n\n\nNumber of Clients Affected\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe issue affects all users\n\n\nThe issue may or may not affect all users\n\n\nThe issue affects only a small number of users\n\n\n\n\n\n\nResponse Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nWithin the next business day\n\n\nWithin the next business day\n\n\nWithin five (5) business days\n\n\n\n\n\n\nResolution Time\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nThe maximum acceptable resolution time is one full (1) business day\n\n\nThe maximum acceptable resolution time is five (5) business days\n\n\nThe maximum acceptable resolution time is thirty (30) business days\n\n\n\n\n\n\nEscalates Every\n\n\n* *\n\n\n* *\n\n\n* *\n\n\n\n\n\n\nN/A\n\n\nOne Day\n\n\nOne Week\n\n\nOne Month\n\n\n\n\n\n\n\n\nEscalation Contacts\n\n\n\n\n\n\n\n\nEscalation Level\n\n\nOSG Contact\n\n\n\n\n\n\n\n\n\n\n1st\n\n\nOSG Operations Infrastructure Lead\n\n\n\n\n\n\n2nd\n\n\nOSG Operations Coordinator\n\n\n\n\n\n\n3rd\n\n\nOSG Production Coordinator\n\n\n\n\n\n\n4th\n\n\nOSG Technical Director and Executive Director\n\n\n\n\n\n\n\n\nDetailed information on contacts are viewable on the following \n2F15\n2F2009\nend_type=now\nend_date=09\n2F15\n2F2009\nsite_10047=on\nrg=on\nrg_336=on\ngridtype=on\ngridtype_1=on\nactive=on\nactive_value=1\ndisable_value=1\">MyOSG URL\n, and are maintained within the\n\n\nAny ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly \nOperations\n and \nProduction\n meetings.\n\n\nService Availability and Outages\n\n\nThe GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.\n\n\nService Support Hours\n\n\nThe service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.\n\n\nService Off-Hours Support Procedures\n\n\nXSEDE users should report problems via the \nXSEDE trouble ticket\n system. Others should contact the GOC via the\n\n\nRequests for Service Enhancements\n\n\nThis section deals with planned maintenance outages. Please see \nService Target Response Priorities and Response Times\n for information on unplanned outages.\n\n\nThe OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.\n\n\nCustomer Problem Reporting\n\n\nThe GOC provides operators 24x7x365. Service problems should be reported immediately by one of the following mechanisms.\n\n\n\n\nCreating a problem ticket at https://tickets.xsede.org (\npreferred for XSEDE users\n)\n\n\nCreating a problem ticket at https://ticket.grid.iu.edu/goc/submit (\npreferred for other users\n)\n\n\nEmailing a description to XD-Login-support@opensciencegrid.org\n\n\nCalling the GOC phone at 317-278-9699\n\n\n\n\nResponsibilities\n\n\nCustomer Responsibilities\n\n\nXD-Login customers agree to:\n\n\n\n\nUse the service for purposes of XSEDE or OSG approved work only.\n\n\nAlert the GOC if they are going to use the Service in a non-standard way, this includes testing or anticipated mass increases in usage.\n\n\nContact support by means outlined in the \nCustomer Problem Reporting\n section of this document if they encounter any service issues.\n\n\nBe willing and available to provide information within one business day for any High level issues reported.\n\n\n\n\nResponsibilities\n\n\nGOC operations:\n   * Maintain the physical machine hosting the service\n   * Assure the service is accessible via its advertised URL\n   * Make changes and updates within the normal GOC \nrelease schedule\n\n   * Meet response times associated with the priority assigned by users for issues related to the hardware.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.\n\n\nISI:\n   * Is responsible for all aspects of the service not listed above.\n\n\nGOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.\n\n\nDatabase \n Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.\n\n\nService Measuring and Reporting\n\n\nThe GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):\n\n\n\n\n\n\n\n\nReport Name\n\n\nReporting Interval\n\n\nDelivery Method\n\n\nResponsible Party\n\n\n\n\n\n\n\n\n\n\nSystem Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nService Uptime\n\n\nMonthly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\nReport of Critical and High Priority Issues\n\n\nQuarterly\n\n\nWeb Posting\n\n\nGOC\n\n\n\n\n\n\n\n\nThese reports will be posted in Appendix E of this document.\n\n\nSLA Validity Period\n\n\nThis SLA will be in affect for one year.\n\n\nSLA Review Procedure\n\n\nThis SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, a representitive of ISI, the OSG Executive Team or the Stakeholders.\n\n\nReferences\n\n\nAppendix A - Customer Information\n\n\nAll service end-users who are members of an OSG VO and OSG Staff are considered customers.\nAll XSEDE staff and all XSEDE users with an OSG allocation are also customers.\n\n\nAppendix B - Other Service Dependencies\n\n\nThe service is dependent on the following services to collect and distribute information:\n   * Local Network and Hardware\n\n\nAppendix C - Supported Hardware and Software\n\n\nSupported Hardware\n\n\nThe following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.\n\n\nHardware Services\n\n\nThe following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.\n\n\nPerforming repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.\n\n\nObtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.\n\n\n\n\nBackup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.\n\n\n\n\nSoftware Services\n\n\nService Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the \nOSG Operations Responsibilities\n section of this document.\n\n\nSoftware Costs\n\n\nIU and the Grid Operations Center bears all costs for new and replacement software.\n\n\nAppendix D - Approval\n\n\n\n\n\n\n\n\nApproved By\n\n\nPosition\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAppendix E - Metric Reports\n\n\n\n\n[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]", 
+            "title": "XDLogin"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#xd-login-service-level-agreement", 
+            "text": "", 
+            "title": "XD-Login Service Level Agreement"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#version-control", 
+            "text": "Version Number  Date  Author  Comments      0.1  2-18-2013  Scott Teige  First Draft", 
+            "title": "Version Control"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#executive-summary", 
+            "text": "This SLA is an agreement between OSG Operations, Information Sciences Institute (ISI) and the OSG Management and Stakeholders describing details\nof the OSG-XD job submission system.", 
+            "title": "Executive Summary"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#owners", 
+            "text": "This SLA is owned by OSG Operations, Indiana University and ISI and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.", 
+            "title": "Owners"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#service-name-and-description", 
+            "text": "", 
+            "title": "Service Name and Description"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#name", 
+            "text": "The service is built on two physical machines hosted by the GOC. These are\nthe production XD-Login job submission node and an adjunct machine, OSG-FLOCK.", 
+            "title": "Name"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#description", 
+            "text": "The XD-Login submission node allows OSG resources to be accessed by XSEDE users. A complete description is available  here.", 
+            "title": "Description"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#security-considerations", 
+            "text": "The XD-Login submission node supports Single Sign On through the XSEDE User Portal, and also from the command line using gsissh with a grid certificate for authentication.\nOSG-FLOCK is not publicly accesible.", 
+            "title": "Security Considerations"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#service-target-response-priorities-and-response-times", 
+            "text": "This section deals with unplanned outages. Please see  Requests for Service Enhancement  for information on planned maintenance outages.     Critical  High  Elevated  Normal      Work Outage  * *  * *  * *    This Service does not have critical priority  The issue causes a full service outage rendering the service unavailable  The issue causes short (less than 15 minute) periods of unstable or inconsistent performance  The issue causes minor (less than 5 minutes) periods of unstable or inconsistent performance    Number of Clients Affected  * *  * *  * *    N/A  The issue affects all users  The issue may or may not affect all users  The issue affects only a small number of users    Response Time  * *  * *  * *    N/A  Within the next business day  Within the next business day  Within five (5) business days    Resolution Time  * *  * *  * *    N/A  The maximum acceptable resolution time is one full (1) business day  The maximum acceptable resolution time is five (5) business days  The maximum acceptable resolution time is thirty (30) business days    Escalates Every  * *  * *  * *    N/A  One Day  One Week  One Month", 
+            "title": "Service Target Response Priorities and Response Times"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#escalation-contacts", 
+            "text": "Escalation Level  OSG Contact      1st  OSG Operations Infrastructure Lead    2nd  OSG Operations Coordinator    3rd  OSG Production Coordinator    4th  OSG Technical Director and Executive Director     Detailed information on contacts are viewable on the following  2F15 2F2009 end_type=now end_date=09 2F15 2F2009 site_10047=on rg=on rg_336=on gridtype=on gridtype_1=on active=on active_value=1 disable_value=1\">MyOSG URL , and are maintained within the  Any ongoing \"Normal\" or \"Elevated\" level issues will be discussed at the weekly  Operations  and  Production  meetings.", 
+            "title": "Escalation Contacts"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#service-availability-and-outages", 
+            "text": "The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.", 
+            "title": "Service Availability and Outages"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#service-support-hours", 
+            "text": "The service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.", 
+            "title": "Service Support Hours"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#service-off-hours-support-procedures", 
+            "text": "XSEDE users should report problems via the  XSEDE trouble ticket  system. Others should contact the GOC via the", 
+            "title": "Service Off-Hours Support Procedures"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#requests-for-service-enhancements", 
+            "text": "This section deals with planned maintenance outages. Please see  Service Target Response Priorities and Response Times  for information on unplanned outages.  The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.", 
+            "title": "Requests for Service Enhancements"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#customer-problem-reporting", 
+            "text": "The GOC provides operators 24x7x365. Service problems should be reported immediately by one of the following mechanisms.   Creating a problem ticket at https://tickets.xsede.org ( preferred for XSEDE users )  Creating a problem ticket at https://ticket.grid.iu.edu/goc/submit ( preferred for other users )  Emailing a description to XD-Login-support@opensciencegrid.org  Calling the GOC phone at 317-278-9699", 
+            "title": "Customer Problem Reporting"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#responsibilities", 
+            "text": "", 
+            "title": "Responsibilities"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#customer-responsibilities", 
+            "text": "XD-Login customers agree to:   Use the service for purposes of XSEDE or OSG approved work only.  Alert the GOC if they are going to use the Service in a non-standard way, this includes testing or anticipated mass increases in usage.  Contact support by means outlined in the  Customer Problem Reporting  section of this document if they encounter any service issues.  Be willing and available to provide information within one business day for any High level issues reported.", 
+            "title": "Customer Responsibilities"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#responsibilities_1", 
+            "text": "GOC operations:\n   * Maintain the physical machine hosting the service\n   * Assure the service is accessible via its advertised URL\n   * Make changes and updates within the normal GOC  release schedule \n   * Meet response times associated with the priority assigned by users for issues related to the hardware.\n   * Maintain appropriately trained staff.\n   * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.  ISI:\n   * Is responsible for all aspects of the service not listed above.  GOC Service Desk Responsibilities:\n   * Log and track all Customer requests for service through the OSG ticketing system.  Database   Application Services responsibilities:\n   * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.\n   * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.", 
+            "title": "Responsibilities"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#service-measuring-and-reporting", 
+            "text": "The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):     Report Name  Reporting Interval  Delivery Method  Responsible Party      System Uptime  Monthly  Web Posting  GOC    Service Uptime  Monthly  Web Posting  GOC    Report of Critical and High Priority Issues  Quarterly  Web Posting  GOC     These reports will be posted in Appendix E of this document.", 
+            "title": "Service Measuring and Reporting"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#sla-validity-period", 
+            "text": "This SLA will be in affect for one year.", 
+            "title": "SLA Validity Period"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#sla-review-procedure", 
+            "text": "This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, a representitive of ISI, the OSG Executive Team or the Stakeholders.", 
+            "title": "SLA Review Procedure"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#references", 
+            "text": "", 
+            "title": "References"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#appendix-a-customer-information", 
+            "text": "All service end-users who are members of an OSG VO and OSG Staff are considered customers.\nAll XSEDE staff and all XSEDE users with an OSG allocation are also customers.", 
+            "title": "Appendix A - Customer Information"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#appendix-b-other-service-dependencies", 
+            "text": "The service is dependent on the following services to collect and distribute information:\n   * Local Network and Hardware", 
+            "title": "Appendix B - Other Service Dependencies"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#appendix-c-supported-hardware-and-software", 
+            "text": "", 
+            "title": "Appendix C - Supported Hardware and Software"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#supported-hardware", 
+            "text": "The following hardware is supported:\n   * Physical devices used to provide the service.\n   * Physical devices used to provide the environment used to house the service.", 
+            "title": "Supported Hardware"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#hardware-services", 
+            "text": "The following hardware services are provided:\n   * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.\n   * Installation. OSG Operations will install, configure and customize system hardware and operating systems.\n   * Upgrades. OSG Operations is responsible for specifying and recommending for purchase any hardware upgrades.\n   * Diagnosis. OSG Operations will diagnose problems with service related hardware.\n   * Repair. OSG Operations analysts are not hardware technicians and receive no training in hardware maintenance, nor do we have the test equipment and tools necessary to do such work.  Performing repairs under warranty: Any work to be performed under warranty may be referred to the warranty service provider at the discretion of the Service Provider analyst(s). Service Provider analysts will not undertake work that will void warranties on customer hardware unless specifically requested and authorized by customer's management in writing.  Obtaining repair services: The Service Provider analyst will recommend a service vendor whenever he/she feels the repair work requires specialized skills or tools.   Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.", 
+            "title": "Hardware Services"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#software-services", 
+            "text": "Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the  OSG Operations Responsibilities  section of this document.", 
+            "title": "Software Services"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#software-costs", 
+            "text": "IU and the Grid Operations Center bears all costs for new and replacement software.", 
+            "title": "Software Costs"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#appendix-d-approval", 
+            "text": "Approved By  Position  Date", 
+            "title": "Appendix D - Approval"
+        }, 
+        {
+            "location": "/SLA/xdlogin/#appendix-e-metric-reports", 
             "text": "[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]", 
             "title": "Appendix E - Metric Reports"
         }, 
