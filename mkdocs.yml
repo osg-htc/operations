@@ -11,7 +11,7 @@ pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
 - Service Level Agreements:
-  - 'HTCondor Collector':'SLA/collector.md'
+  - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
   - 'OASIS': 'SLA/oasis-replica.md'
   - 'OIM': 'SLA/oim.md'
