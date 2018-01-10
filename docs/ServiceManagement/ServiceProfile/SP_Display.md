@@ -1,4 +1,4 @@
-# Service Catalog for the OSG Display Service
+# Service Portfolio for the OSG Display Service
 
 | Service Portfolio     | OSG Display | 
 |-----------------------|-------------|
