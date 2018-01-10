@@ -1,22 +1,20 @@
 # Outreach
 ## Key Accomplishments and Events
-   * Molcryst article posted - https://www.opensciencegrid.org/machine-learning-insights-into-molecular-science-using-the-open-science-grid/
-   * Globus statement distributed.
-   * Communicated PEARC17 Award - Best Software and Data Paper - Data access for LIGO on the OSG
-      * Brian Bockelman, Duncan Brown, Peter Couvares, Edgar Hernandez, Derek Weitzel, Frank Wurthwein
-   * Sent communication about CODATA/RDA school in Sao Paulo 
-   * Published Astronomy Article: https://www.opensciencegrid.org/astronomy-archives-are-creating-new-science-every-day/
-   * Sent Security Exercise heads-up announcement to OSG Staff
-   * Sent OSG PKI Training Call
-   * Communicated Change Management Changes for Operations
-   * First All-Hands Meeting Announcement Sent
-   * Small note about LIGO/Nobel Prize: https://www.opensciencegrid.org/ligo-collaborators-win-2017-nobel-prize-in-physics/
-   * Put SciNode in contact with proper LIGO people - https://sciencenode.org/feature/ligo-and-osg-launch-multi-messenger-astronomy-era-.php
-## Ongoing
-   * LIGO Article
-   * DES Leads for article
-   * IceCube story information from Frank
-   * Contact with GlueX about article - They seem to have disappeared.  Will continue pinging.
+
+  * LIGO Article Posted - https://www.opensciencegrid.org/ligo-virgo/
+  * Summer School Article Posted - https://www.opensciencegrid.org/osg-user-school-2017/
+  * LIGO/VIRGO Joint Article Help - https://www.egi.eu/about/newsletters/ligo-virgo-collaboration-the-search-for-gravitational-waves/
+  * goc@opensciencegrid.org transitioned to help@opensciencegrid.org
+  * TWiki Redirections in place (Still needs some minor tweaking)
+  * TWiki Landing page in place as a catch all
+  
+## Ongoing/Upcoming
+   * TWiki vm shutdown date?
+   * All Hands Meeting communication/planning beginning
+   * African School of Physics Planning to start
+   * First Article - IceCube story information from Frank
+   * Second article - DES Leads for article
+   * Need to work with ScienceNode to push this quarter’s article forward.
    
 # Operations
 ## Key Accomplishments and Events
