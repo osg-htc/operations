@@ -20,6 +20,13 @@
    
 # Operations
 ## Key Accomplishments and Events
+
+### Service Management Documents 
+   * Based on FitSM Service Catalog/Service Portfolio with modifications to keep lightweight.
+   * Initially collected Service Management data for Display, GlideIn Factory, GRACC, HostedCE, and OIM. 
+   * Draft view at https://github.com/opensciencegrid/operations/blob/master/docs/ServiceManagement/ResponsibilityMatrix.md 
+   * Still need to define scope, get security requirements, add authorization for internal content, and make it easier to veiw/navigate. 
+   * Looking for more services to add, and input on the current entries. 
    
 #### TWiki retirement
    * Also looking at other retirement possibilities.
