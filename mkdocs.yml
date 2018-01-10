@@ -11,11 +11,12 @@ pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
 - Service Level Agreements:
-  - 'XDLogin': 'SLA/xdlogin.md'
-  - 'VOMS': 'SLA/voms.md'
+  - 'HTCondor Collector':'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
   - 'OASIS': 'SLA/oasis-replica.md'
   - 'OIM': 'SLA/oim.md'
+  - 'VOMS': 'SLA/voms.md'
+  - 'XDLogin': 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
 - Weekly Minutes:
   - '8 January 2018': 'WeeklyMinutes/08Jan2018.md'
