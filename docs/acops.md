@@ -24,6 +24,9 @@
 # Operations
 ## Key Accomplishments and Events
    
+#### TWiki retirement
+   * Also looking at other retirement possibilities.
+   
 #### Have switched to a flexible maintenance schedule
    * Have not actually used it yet.
    
