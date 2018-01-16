@@ -17,19 +17,19 @@ Requests to Host a Repository on OASIS
 1.  Add the repository URL in OIM under the VO's OASIS repository URLs. This should cause the repository's configuration
     to be added to the GOC Stratum-0 within 15 minutes.
 
-1.  If the respository ends in a new domain name that has not been distributed before, place a copy of the
-    `domain.name.pub` public key from `domain.name` into `/srv/etc/keys` on both `oasis-replica` and
-    `oasis-replica-itb`. If you do not have that key, ask the repository service representative how to obtain it.  In
-    order to support CVMFS client versions 2.2.X, make a symbolic link of `domain.name.conf`
+1.  If the respository ends in a new domain name `domain.name`that has not been distributed before, then place a copy of the
+    `domain.name.pub` public key into `/srv/etc/keys` on both `oasis-replica` and
+    `oasis-replica-itb`. If you do not have that key, then ask the repository service representative how to obtain it.  In
+    order to support CVMFS client versions 2.2.X, also make a symbolic link of `domain.name.conf`
     `/cvmfs/config-osg.opensciencegrid.org/etc/cvmfs/domain.d` pointing to `default.conf`. This symbolic link has to be
     created on the `oasis-itb` machine's copy of the `config-osg.opensciencegrid.org` repository and then copied to
     production with the `copy_config_osg` command on the oasis machine.
 
-1.  If the repository name matches `*.opensciencegrid.org` or `*.osgstorage.org`, respond to the ticket to ask the
-    administrator to continue with their next step, and wait until the admin has updated the ticket to indicate that they
-    have completed their step. All other repositories (such as `*.egi.eu`), continue with the next internal step.
+1.  If the repository name matches `*.opensciencegrid.org` or `*.osgstorage.org`, then respond to the ticket to ask the
+    administrator to continue with their next step (their step 4), and wait until the admin has updated the ticket to indicate that they
+    have completed their step. Else if the repository name is in some other domain (such as `*.egi.eu`), continue directly to the next internal step.
 
-1.  Ask the administrator of the BNL stratum 1 to also add the new repository.  The BNL Stratum-1 operator
+1.  Ask the administrator of the BNL stratum 1 John DeStefano also add the new repository.  The BNL Stratum-1 administrator
     should set the service to read from
     `http://oasis-replica.opensciencegrid.org:8000/cvmfs/%RED%example.opensciencegrid.org%ENDCOLOR%`.  When the BNL
     Stratum-1 operator has reported back that the replication is ready, respond to the ticket that the repository is
