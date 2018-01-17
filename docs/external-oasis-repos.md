@@ -25,9 +25,10 @@ Requests to Host a Repository on OASIS
     created on the `oasis-itb` machine's copy of the `config-osg.opensciencegrid.org` repository and then copied to
     production with the `copy_config_osg` command on the oasis machine.
 
-1.  If the repository name matches `*.opensciencegrid.org` or `*.osgstorage.org`, then respond to the ticket to ask the
-    administrator to continue with their next step (their step 4), and wait until the admin has updated the ticket to indicate that they
-    have completed their step. Else if the repository name is in some other domain (such as `*.egi.eu`), continue directly to the next internal step.
+1.  If the repository name does not match `*.opensciencegrid.org` or `*.osgstorage.org`, skip this step and go on to your next step.
+    If it does match one of those two patterns, then respond to the ticket to tell the administrator to continue with their next step (their step 4).  
+    We don't want them to continue before 15 minutes has elapsed after step 2 above, so either wait that much time or tell them the time they may proceed (15 minutes after you updated OIM).
+    Then wait until the admin has updated the ticket to indicate that they have completed their step before moving on. 
 
 1.  Ask the administrator of the BNL stratum 1 John DeStefano also add the new repository.  The BNL Stratum-1 administrator
     should set the service to read from
@@ -38,7 +39,8 @@ Requests to Host a Repository on OASIS
 Requests to Change the URL of an External Repository
 ----------------------------------------------------
 
-If there is a request to change the URL of an external repository, update the registered value in OIM for the VO in `OASIS Repo URLs`.
+If there is a request to change the URL of an external repository, update the registered value in OIM for the VO in `OASIS Repo URLs`.  
+Tell the requester that it is ready 15 minutes after OIM is updated.
 
 Requests to Remove an External Repository
 -----------------------------------------
