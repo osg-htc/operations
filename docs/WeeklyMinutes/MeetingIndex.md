@@ -1,6 +1,7 @@
 # Operations Meeting Weekly Index
 
 ## 2018
+   * [19 February 2018](19Feb2018.md)
    * [12 February 2018](12Feb2018.md)
    * [05 February 2018](05Feb2018.md)
    * [29 January 2018](29Jan2018.md)
