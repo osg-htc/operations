@@ -4,6 +4,7 @@
 | *Version Number* | *Date* | *Author* | *Comments* |
 | ---------------- | ------ | -------- | ---------- |
 | 1.1 | 9-2-2015 | Scott Teige | First Draft |
+| 1.2 | 2-21-2018 | Scott Teige | Add psetf and psrsv |
 
 
 
@@ -19,10 +20,9 @@ This SLA is owned by OSG Operations and Indiana University and will be reviewed 
 ## Service Name and Description
 ### Name
 GOC PerfSonar Components
-
 ### Description
-A preliminary description of the service is available [here](https://docs.google.com/document/d/1l144BSo-88M0cLMMjKcKMIE-Q5s21X-w3lYl-0Pn_08/edit#heading=h.n5qqmobbm4g4) The components
-labeled "psds" and "Cassandra" are covered by this agreement.
+A preliminary description of the service is available [here](https://docs.google.com/document/d/1l144BSo-88M0cLMMjKcKMIE-Q5s21X-w3lYl-0Pn_08/edit#heading=h.n5qqmobbm4g4) The covered components
+are: cassandra1, cassandra2, cassandra3, psds0, psds1, psds2, psetf and psrsv. Also included here is the physical machine hosting these components: psvm01 (see Appendix C)
 
 ## Security Considerations
 
