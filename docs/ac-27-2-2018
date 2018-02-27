@@ -13,14 +13,19 @@
    * OIM, Ticket and MyOSG
    * Need different communication mechanism for "Major" changes
       * Got multiple "You didn't tell me" messages
+      
 #### PerfSonar to production
    * Tune up diagnostics, tune up allocation of resources
    * Must hit 97% availability
    * Shawn et al. agree to go production
    * [Before and After picture](http://steige.grid.iu.edu/steige/perfs.png)
+   
 #### TWiki is retired
    * SymLink exists
-   * Machines are turned off
+   * TWiki-itb is turned off
+   * TWiki turned off last week, requested to turn it back on.
+      * I propose 15/Mar drop dead for TWiki drop dead
+      
 #### RSV cleanup
    * Roughly every 6 months
    * Ordinary and low risk operation, just takes a while
