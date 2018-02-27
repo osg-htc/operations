@@ -5,9 +5,6 @@
 ## Ongoing
 
 
-   
-   
-   
 # Operations
 ## Key Accomplishments and Events
 
@@ -16,21 +13,23 @@
    * OIM, Ticket and MyOSG
    * Need different communication mechanism for "Major" changes
       * Got multiple "You didn't tell me" messages
-     
 #### PerfSonar to production
    * Tune up diagnostics, tune up allocation of resources
    * Must hit 97% availability
    * Shawn et al. agree to go production
-
+   * [Before and After picture](http://steige.grid.iu.edu/steige/perfs.png)
 #### TWiki is retired
    * SymLink exists
    * Machines are turned off
-
 #### RSV cleanup
    * Roughly every 6 months
    * Ordinary and low risk operation, just takes a while
    * Need exists because of excessive logging levels
    * Will probably automate before next report
+   * [Disk use](http://steige.grid.iu.edu/steige/rsv-ac.png)
+
+
+
 
    
 
