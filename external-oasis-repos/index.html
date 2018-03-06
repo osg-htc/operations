@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-  <link href="../css/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -116,6 +115,34 @@
 		
     <span class="caption-text">Weekly Minutes</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../WeeklyMinutes/05Mar2018/">5 March 2018</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../WeeklyMinutes/26Feb2018/">26 February 2018</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../WeeklyMinutes/19Feb2018/">19 February 2018</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../WeeklyMinutes/12Feb2018/">12 February 2018</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../WeeklyMinutes/05Feb2018/">5 February 2018</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../WeeklyMinutes/29Jan2018/">29 January 2018</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../WeeklyMinutes/22Jan2018/">22 January 2018</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../WeeklyMinutes/08Jan2018/">8 January 2018</a>
@@ -339,21 +366,22 @@
     to be added to the GOC Stratum-0 within 15 minutes.</p>
 </li>
 <li>
-<p>If the respository ends in a new domain name that has not been distributed before, place a copy of the
-    <code>domain.name.pub</code> public key from <code>domain.name</code> into <code>/srv/etc/keys</code> on both <code>oasis-replica</code> and
-    <code>oasis-replica-itb</code>. If you do not have that key, ask the repository service representative how to obtain it.  In
-    order to support CVMFS client versions 2.2.X, make a symbolic link of <code>domain.name.conf</code>
+<p>If the respository ends in a new domain name <code>domain.name</code>that has not been distributed before, then place a copy of the
+    <code>domain.name.pub</code> public key into <code>/srv/etc/keys</code> on both <code>oasis-replica</code> and
+    <code>oasis-replica-itb</code>. If you do not have that key, then ask the repository service representative how to obtain it.  In
+    order to support CVMFS client versions 2.2.X, also make a symbolic link of <code>domain.name.conf</code>
     <code>/cvmfs/config-osg.opensciencegrid.org/etc/cvmfs/domain.d</code> pointing to <code>default.conf</code>. This symbolic link has to be
     created on the <code>oasis-itb</code> machine's copy of the <code>config-osg.opensciencegrid.org</code> repository and then copied to
     production with the <code>copy_config_osg</code> command on the oasis machine.</p>
 </li>
 <li>
-<p>If the repository name matches <code>*.opensciencegrid.org</code> or <code>*.osgstorage.org</code>, respond to the ticket to ask the
-    administrator to continue with their next step, and wait until the admin has updated the ticket to indicate that they
-    have completed their step. All other repositories (such as <code>*.egi.eu</code>), continue with the next internal step.</p>
+<p>If the repository name does not match <code>*.opensciencegrid.org</code> or <code>*.osgstorage.org</code>, skip this step and go on to your next step.
+    If it does match one of those two patterns, then respond to the ticket to tell the administrator to continue with their next step (their step 4).<br />
+    We don't want them to continue before 15 minutes has elapsed after step 2 above, so either wait that much time or tell them the time they may proceed (15 minutes after you updated OIM).
+    Then wait until the admin has updated the ticket to indicate that they have completed their step before moving on. </p>
 </li>
 <li>
-<p>Ask the administrator of the BNL stratum 1 to also add the new repository.  The BNL Stratum-1 operator
+<p>Ask the administrator of the BNL stratum 1 John DeStefano also add the new repository.  The BNL Stratum-1 administrator
     should set the service to read from
     <code>http://oasis-replica.opensciencegrid.org:8000/cvmfs/<span style="color:red">example.opensciencegrid.org</span></code>.  When the BNL
     Stratum-1 operator has reported back that the replication is ready, respond to the ticket that the repository is
@@ -361,7 +389,8 @@
 </li>
 </ol>
 <h2 id="requests-to-change-the-url-of-an-external-repository">Requests to Change the URL of an External Repository</h2>
-<p>If there is a request to change the URL of an external repository, update the registered value in OIM for the VO in <code>OASIS Repo URLs</code>.</p>
+<p>If there is a request to change the URL of an external repository, update the registered value in OIM for the VO in <code>OASIS Repo URLs</code>.<br />
+Tell the requester that it is ready 15 minutes after OIM is updated.</p>
 <h2 id="requests-to-remove-an-external-repository">Requests to Remove an External Repository</h2>
 <ol>
 <li>After validating that the ticket submitter is authorized by the VO's OASIS manager, delete the registered value
@@ -393,7 +422,7 @@ rm -r /srv/cvmfs/<span style="color:red">example.opensciencegrid.org</span>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../WeeklyMinutes/08Jan2018/" class="btn btn-neutral float-right" title="8 January 2018">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../WeeklyMinutes/05Mar2018/" class="btn btn-neutral float-right" title="5 March 2018">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../SLA/xdlogin/" class="btn btn-neutral" title="XDLogin"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -427,7 +456,7 @@ rm -r /srv/cvmfs/<span style="color:red">example.opensciencegrid.org</span>
         <span><a href="../SLA/xdlogin/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../WeeklyMinutes/08Jan2018/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../WeeklyMinutes/05Mar2018/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
