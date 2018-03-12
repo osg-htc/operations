@@ -1001,6 +1001,151 @@
             "title": "Requests to Blank an External Repository"
         }, 
         {
+            "location": "/WeeklyMinutes/12Mar2018/", 
+            "text": "Operations Meeting March 12th, 2018\n\n\n\n\n13:00 Eastern \n\n\nJoin from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n\n\n(US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n\n\nAttending: Derek, Marina, Scott, Kyle, Sarah, Elizabeth, Jeny, Suchandra, Jeff, Tom, Marco Macheroni (Glidin ops)\n\n\nRegrets: \n\n\nGOC weekly calendar\n\n\nOperations Slack Channel\n\n\n\n\nAnnouncements\n\n\n\n\nNext Meeting (19/Mar) Cancelled, All Hands Meeting.\n\n\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability\n\n\nCurrent Status\n\n\nPerfSonar components moved \nhere\n\n\n\n\n\n\nOSG CPU hours\n\n\nLocal submit host summary\n\n\n\n\nGrid Operations Center\n\n\n\n\nSession length decided, 24 hours\n\n\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nStashCache operations\n\n\n\n\nTB served\n: TB\n\n\nCache hits\n: TB \n\n\nStashCache delivered TB of data at a cache hit rate of %\n\n\n\n\nGRACC operations\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\nWMS Glide In Factory\n\n\nOSG-Connect\n\n\nStashCache operations\n\n\nGRACC operations\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nTicket Number\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present? \nX\n \nY\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\nAOB\n\n\nAction Items from Meeting", 
+            "title": "12 March 2018"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#operations-meeting-march-12th-2018", 
+            "text": "13:00 Eastern   Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152  (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#  Attending: Derek, Marina, Scott, Kyle, Sarah, Elizabeth, Jeny, Suchandra, Jeff, Tom, Marco Macheroni (Glidin ops)  Regrets:   GOC weekly calendar  Operations Slack Channel", 
+            "title": "Operations Meeting March 12th, 2018"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#announcements", 
+            "text": "Next Meeting (19/Mar) Cancelled, All Hands Meeting.", 
+            "title": "Announcements"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#operations-last-week", 
+            "text": "", 
+            "title": "Operations Last Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#summaries-and-reports", 
+            "text": "GOC Services Availability  Current Status  PerfSonar components moved  here    OSG CPU hours  Local submit host summary", 
+            "title": "Summaries and Reports"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#grid-operations-center", 
+            "text": "Session length decided, 24 hours", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#wms-glide-in-factory", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#osg-connect", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#stashcache-operations", 
+            "text": "TB served : TB  Cache hits : TB   StashCache delivered TB of data at a cache hit rate of %", 
+            "title": "StashCache operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#gracc-operations", 
+            "text": "", 
+            "title": "GRACC operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#operations-this-week", 
+            "text": "", 
+            "title": "Operations This Week"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#grid-operations-center_1", 
+            "text": "", 
+            "title": "Grid Operations Center"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#wms-glide-in-factory_1", 
+            "text": "", 
+            "title": "WMS Glide In Factory"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#osg-connect_1", 
+            "text": "", 
+            "title": "OSG-Connect"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#stashcache-operations_1", 
+            "text": "", 
+            "title": "StashCache operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#gracc-operations_1", 
+            "text": "", 
+            "title": "GRACC operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#new-registrations", 
+            "text": "", 
+            "title": "New Registrations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#virtual-organizations", 
+            "text": "Name  VO URL  Other Info  Ticket", 
+            "title": "Virtual Organizations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#support-centers", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Support Centers"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#resources", 
+            "text": "Name  Support Center  Resource URL  Other Info  Ticket", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#removed-from-osg", 
+            "text": "Name  Other Info  Ticket", 
+            "title": "Removed from OSG"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#osg-pki", 
+            "text": "", 
+            "title": "OSG PKI"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#osg-ra-items-ca-questions", 
+            "text": "", 
+            "title": "OSG RA Items &amp; CA Questions"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#osg-ra-over-5-day-report", 
+            "text": "Ticket Number  Age days  Requester  Requester Email  Request", 
+            "title": "OSG RA Over 5 Day Report"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#goc-tickets", 
+            "text": "Ticket #  Support Center  Action/Summary  GOC Assignee  Notes  VO Present?  X   Y                View Open GOC Tickets  |  OSG Operations Metrics  |  Operational Service Overview", 
+            "title": "GOC Tickets"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#wlcg-egi-operations", 
+            "text": "", 
+            "title": "WLCG &amp; EGI Operations"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#security", 
+            "text": "", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#aob", 
+            "text": "", 
+            "title": "AOB"
+        }, 
+        {
+            "location": "/WeeklyMinutes/12Mar2018/#action-items-from-meeting", 
+            "text": "", 
+            "title": "Action Items from Meeting"
+        }, 
+        {
             "location": "/WeeklyMinutes/05Mar2018/", 
             "text": "## Operations Meeting March 5th, 2018\n   * 13:00 Eastern \n   * Join from PC, Mac, Linux, iOS or Android: https://IU.zoom.us/j/865253152\n   * (US Toll): +1 408-638-0968, PIN: 865-253-152# or +1 646-558-8656, PIN 865-253-152#\n   * Attending: Derek, Marina, Scott, Kyle, Sarah, Elizabeth, Jeny, Suchandra, Jeff, Tom, Marco Macheroni (Glidin ops)\n   * Regrets: \n   * \nGOC weekly calendar\n\n   * \nOperations Slack Channel\n\n\nAnnouncements\n\n\nOperations Last Week\n\n\nSummaries and Reports\n\n\n\n\nGOC Services Availability\n\n\nCurrent Status\n\n\nPerfSonar components moved \nhere\n\n\n\n\n\n\nOSG CPU hours\n\n\nLocal submit host summary\n\n\n\n\nGrid Operations Center\n\n\n\n\nticket exchange not working with FNAL, configuration change, far end.\n\n\n\n\nWMS Glide In Factory\n\n\n\n\nBegan training Marco Mascheroni, new factory operator at UCSD  \n\n\nFactory ops is short staffed last week and this week, so limited time dedicated to ops requests\n\n\n\n\n\n\n\n\nOSG-Connect\n\n\n\n\n1.38M wall hours (69% of last week)\n\n\n42 active users\n\n\n32 active projects\n\n\n\n\nStashCache operations\n\n\n\n\nTB served\n: 330.5TB\n\n\nCache hits\n: 324.8TB \n\n\nStashCache delivered 330.5TB of data at a cache hit rate of 98%\n\n\n\n\nGRACC operations\n\n\n\n\nI would like to spend some time defining \"Availability\" of GRACC (what metric to use)\n\n\nFor now, availibiltiy for GRACC is defined as:\n\n\nHTTPS connection returning status ok of the backend ElasticSearch service\n\n\nHTTPS connection to Grafana service (gracc homepage) returning status ok\n\n\nCheck_MK Availability reports 100% for the last week.\n\n\nAvailability for Feburary: 99.98%\n\n\n\n\n\n\n\n\nGRACC disk usage went down 96GB to 14.11TB of ~20TB of space.\n\n\n\n\nA periodic service deletes old indexes we don't care about.\n\n\nIt's possible that some indexes that were big were deleted.\n\n\n\n\n\n\n\n\nITB GRACC is malfunctioning.  Some issue with authentication tokens with RabbitMQ (though, they shouldn't have changed).  Incoming records are 'paused'.\n\n\n\n\nThough... not much coming into ITB these days.\n\n\n\n\nOperations This Week\n\n\nGrid Operations Center\n\n\n\n\nITB release this week, a heavy release. Note in preparation.\n\n\nCollector, Jira, OIM, Oasis, Repo, Ticket and Operating system updates.\n\n\n\n\n\n\nRequesting security input on session length, associated with SSO \n36302\n\n\n\n\nWMS Glide In Factory\n\n\n\n\nUpgrading SDSC factory to gwms 3.2.21 Tue 3/6  \n\n\nTue 3/6 disalbing glexec and enabling singularity at ~100 CMS sites    \n\n\nNon-CMS frontend admins were warned \n\n\nref: https://ggus.eu/index.php?mode=ticket_info\nticket_id=133708\n\n\n\n\n\n\n\n\nOSG-Connect\n\n\n\n\nNo planned maintenance \n\n\n\n\nStashCache operations\n\n\n\n\nDebug CVMFS / StashCache GeoLocation.  Want to just confirm that it is all working as expected.\n\n\nIntegrate new changes to XRootD that should allow for better monitoring.\n\n\n\n\nGRACC operations\n\n\n\n\nWork on SLA\n\n\nWork on Availability metrics\n\n\n\n\nNew Registrations\n\n\nVirtual Organizations\n\n\n\n\n\n\n\n\nName\n\n\nVO URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Centers\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResources\n\n\n\n\n\n\n\n\nName\n\n\nSupport Center\n\n\nResource URL\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemoved from OSG\n\n\n\n\n\n\n\n\nName\n\n\nOther Info\n\n\nTicket\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOSG PKI\n\n\nOSG RA Items \n CA Questions\n\n\nOSG RA Over 5 Day Report\n\n\n\n\n\n\n\n\nTicket Number\n\n\nAge days\n\n\nRequester\n\n\nRequester Email\n\n\nRequest\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGOC Tickets\n\n\n\n\n\n\n\n\nTicket #\n\n\nSupport Center\n\n\nAction/Summary\n\n\nGOC Assignee\n\n\nNotes\n\n\nVO Present? \nX\n \nY\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView Open GOC Tickets\n | \nOSG Operations Metrics\n | \nOperational Service Overview\n\n\n\n\nWLCG \n EGI Operations\n\n\nSecurity\n\n\n\n\nMultiple security announcements were/are being sent:\n\n\nOSG-SEC-2018-02-27 Disable weak ciphers in SSL: a reminder to site admins to watch their SSL configuration.\n\n\nOSG-SEC-2018-03-05 Vulnerability in Singularity\n\n\nOSG-SEC-2018-03-XX Vulnerability in SAML\n\n\nInvestigating a vulnerability in SLURM (assessment is pending)\n\n\n\n\n\n\n\n\nAOB\n\n\nAction Items from Meeting", 
             "title": "5 March 2018"
