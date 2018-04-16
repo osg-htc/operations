@@ -16,6 +16,8 @@ pages:
   - 'XDLogin': 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
 - Weekly Minutes:
+  - '16 April 2018': 'WeeklyMinutes/16Apr2018.md'
+  - '9 April 2018': 'WeeklyMinutes/09Apr2018.md'
   - '2 April 2018': 'WeeklyMinutes/02Apr2018.md'
   - '26 March 2018': 'WeeklyMinutes/26Mar2018.md'
   - '12 March 2018': 'WeeklyMinutes/12Mar2018.md'
