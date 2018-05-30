@@ -1,3 +1,5 @@
+## Expiration
+Effective June 1st, 2018, no OSG services will be hosted at Indiana University and this policy becomes inactive.
 
 ## Effective date
 2011-12-13
