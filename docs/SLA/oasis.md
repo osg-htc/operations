@@ -21,7 +21,7 @@ OASIS (OSG Application and Software Installation Service)
 
 The OASIS service provides OSG Virtual Organizations with a central location for application software. The content hosted on OASIS can be made available on OSG compute resources. The service consists of three virtual machines, a stratum 0 CERN Virtual Machine File System (CVMFS) server, a stratum 1 replica of the stratum 0 and a node accessible for login by VO OASIS managers.
 
-This SLA covers the stratum 0 server and the interactive login node only. The stratum 1 SLA is available [here](https://opensciencegrid.org/bin/view/Operations/ReplicaServiceLevelAgreement).
+This SLA covers the stratum 0 server and the interactive login node only. The stratum 1 SLA is available [here](/SLA/oasis-replica.md).
 
 ## Security Considerations
 
