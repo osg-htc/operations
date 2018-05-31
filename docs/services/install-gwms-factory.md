@@ -79,10 +79,10 @@ Installation Procedure
 
 As with all OSG software installations, there are some one-time (per host) steps to prepare in advance:
 
-- Ensure the host has a [supported operating system](/release/supported_platforms)
+- Ensure the host has a [supported operating system](https://opensciencegrid.org/docs/release/supported_platforms/)
 - Obtain root access to the host
-- Prepare the [required Yum repositories](/common/yum)
-- Install [CA certificates](/common/ca)
+- Prepare the [required Yum repositories](https://opensciencegrid.org/docs/common/yum/)
+- Install [CA certificates](https://opensciencegrid.org/docs/common/ca/)
 
 ### Installing HTCondor
 
@@ -99,8 +99,6 @@ You need to have HTCondor installed before installing the GlideinWMS Factory. If
         :::console
         root@host # yum install glideinwms-switchboard --enablerepo=osg-upcoming
  
-See [this HTCondor document](htcondor.org) for more information on the different options.
-
 ### Installing HTCondor-BOSCO
 
 If you plan to send jobs using [direct batch submission](http://glideinwms.fnal.gov/doc.prd/recipes/batch.html) (aka BOSCO), then you need also the **condor-bosco** package. You'll have to install the package and remove one of its files `/etc/condor/config.d/60-campus_factory.config` because it interferes with the Factory configuration.
