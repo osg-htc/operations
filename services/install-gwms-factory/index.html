@@ -1,0 +1,1810 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.opensciencegrid.org/operations/services/install-gwms-factory/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Installing GlideinWMS Factory - OSG Operations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#glideinwms-factory-installation" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                OSG Operations
+              </span>
+              <span class="md-header-nav__topic">
+                Installing GlideinWMS Factory
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    OSG Operations
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../mission/" title="OSG Operations Mission" class="md-nav__link">
+      OSG Operations Mission
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Installing GlideinWMS Factory
+      </label>
+    
+    <a href="./" title="Installing GlideinWMS Factory" class="md-nav__link md-nav__link--active">
+      Installing GlideinWMS Factory
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-starting" title="Before Starting" class="md-nav__link">
+    Before Starting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" title="Requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-and-os" title="Host and OS" class="md-nav__link">
+    Host and OS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" title="Users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificates" title="Certificates" class="md-nav__link">
+    Certificates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking" title="Networking" class="md-nav__link">
+    Networking
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewalls" title="Firewalls" class="md-nav__link">
+    Firewalls
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-procedure" title="Installation Procedure" class="md-nav__link">
+    Installation Procedure
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-htcondor" title="Installing HTCondor" class="md-nav__link">
+    Installing HTCondor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-htcondor-bosco" title="Installing HTCondor-BOSCO" class="md-nav__link">
+    Installing HTCondor-BOSCO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-gwms-factory" title="Install GWMS Factory" class="md-nav__link">
+    Install GWMS Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-and-install-the-factory-rpm" title="Download and install the Factory RPM" class="md-nav__link">
+    Download and install the Factory RPM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-htcondor-tarballs" title="Download HTCondor tarballs" class="md-nav__link">
+    Download HTCondor tarballs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-procedure" title="Configuration Procedure" class="md-nav__link">
+    Configuration Procedure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-the-factory" title="Configuring the Factory" class="md-nav__link">
+    Configuring the Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-configuration" title="Security configuration" class="md-nav__link">
+    Security configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entry-configuration" title="Entry configuration" class="md-nav__link">
+    Entry configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-tarballs" title="Configuring Tarballs" class="md-nav__link">
+    Configuring Tarballs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-htcondor" title="Configuring HTCondor" class="md-nav__link">
+    Configuring HTCondor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm" title="Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM" class="md-nav__link">
+    Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restarting-htcondor" title="Restarting HTCondor" class="md-nav__link">
+    Restarting HTCondor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-htcondor-privilege-separation" title="Configuring HTCondor Privilege Separation" class="md-nav__link">
+    Configuring HTCondor Privilege Separation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-htcondor-grid-mapfile" title="Create a HTCondor grid mapfile." class="md-nav__link">
+    Create a HTCondor grid mapfile.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reconfiguring-glideinwms" title="Reconfiguring GlideinWMS" class="md-nav__link">
+    Reconfiguring GlideinWMS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-glideinwms" title="Upgrading GlideinWMS" class="md-nav__link">
+    Upgrading GlideinWMS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-activation-and-deactivation" title="Service Activation and Deactivation" class="md-nav__link">
+    Service Activation and Deactivation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validating-glideinwms-factory" title="Validating GlideinWMS Factory" class="md-nav__link">
+    Validating GlideinWMS Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-web-server-configuration-for-the-monitoring" title="Check Web server configuration for the monitoring" class="md-nav__link">
+    Check Web server configuration for the monitoring
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-glideinwms-factory" title="Troubleshooting GlideinWMS Factory" class="md-nav__link">
+    Troubleshooting GlideinWMS Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-locations" title="File Locations" class="md-nav__link">
+    File Locations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increase-the-log-level-and-change-rotation-policies" title="Increase the log level and change rotation policies" class="md-nav__link">
+    Increase the log level and change rotation policies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failed-authentication-errors" title="Failed authentication errors" class="md-nav__link">
+    Failed authentication errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glideins-start-but-do-not-connect-to-user-pool-vo-frontend" title="Glideins start but do not connect to User pool / VO Frontend" class="md-nav__link">
+    Glideins start but do not connect to User pool / VO Frontend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough" title="Glideins start but fail before running job with error "Proxy not long lived enough"" class="md-nav__link">
+    Glideins start but fail before running job with error "Proxy not long lived enough"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condor_root_switchboard-errors" title="Condor_root_switchboard errors" class="md-nav__link">
+    Condor_root_switchboard errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Service Level Agreements
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Service Level Agreements
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/collector/" title="HTCondor Collector" class="md-nav__link">
+      HTCondor Collector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/myosg/" title="MyOSG" class="md-nav__link">
+      MyOSG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/oasis/" title="OASIS (Draft)" class="md-nav__link">
+      OASIS (Draft)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/oasis-replica/" title="OASIS Replica" class="md-nav__link">
+      OASIS Replica
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/oim/" title="OIM" class="md-nav__link">
+      OIM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/voms/" title="VOMS" class="md-nav__link">
+      VOMS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/xdlogin/" title="XDLogin" class="md-nav__link">
+      XDLogin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../external-oasis-repos/" title="External OASIS repositories" class="md-nav__link">
+      External OASIS repositories
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-starting" title="Before Starting" class="md-nav__link">
+    Before Starting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" title="Requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-and-os" title="Host and OS" class="md-nav__link">
+    Host and OS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" title="Users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificates" title="Certificates" class="md-nav__link">
+    Certificates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking" title="Networking" class="md-nav__link">
+    Networking
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewalls" title="Firewalls" class="md-nav__link">
+    Firewalls
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-procedure" title="Installation Procedure" class="md-nav__link">
+    Installation Procedure
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-htcondor" title="Installing HTCondor" class="md-nav__link">
+    Installing HTCondor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-htcondor-bosco" title="Installing HTCondor-BOSCO" class="md-nav__link">
+    Installing HTCondor-BOSCO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-gwms-factory" title="Install GWMS Factory" class="md-nav__link">
+    Install GWMS Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-and-install-the-factory-rpm" title="Download and install the Factory RPM" class="md-nav__link">
+    Download and install the Factory RPM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-htcondor-tarballs" title="Download HTCondor tarballs" class="md-nav__link">
+    Download HTCondor tarballs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-procedure" title="Configuration Procedure" class="md-nav__link">
+    Configuration Procedure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-the-factory" title="Configuring the Factory" class="md-nav__link">
+    Configuring the Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-configuration" title="Security configuration" class="md-nav__link">
+    Security configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entry-configuration" title="Entry configuration" class="md-nav__link">
+    Entry configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-tarballs" title="Configuring Tarballs" class="md-nav__link">
+    Configuring Tarballs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-htcondor" title="Configuring HTCondor" class="md-nav__link">
+    Configuring HTCondor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm" title="Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM" class="md-nav__link">
+    Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restarting-htcondor" title="Restarting HTCondor" class="md-nav__link">
+    Restarting HTCondor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-htcondor-privilege-separation" title="Configuring HTCondor Privilege Separation" class="md-nav__link">
+    Configuring HTCondor Privilege Separation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-htcondor-grid-mapfile" title="Create a HTCondor grid mapfile." class="md-nav__link">
+    Create a HTCondor grid mapfile.
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reconfiguring-glideinwms" title="Reconfiguring GlideinWMS" class="md-nav__link">
+    Reconfiguring GlideinWMS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-glideinwms" title="Upgrading GlideinWMS" class="md-nav__link">
+    Upgrading GlideinWMS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-activation-and-deactivation" title="Service Activation and Deactivation" class="md-nav__link">
+    Service Activation and Deactivation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validating-glideinwms-factory" title="Validating GlideinWMS Factory" class="md-nav__link">
+    Validating GlideinWMS Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-web-server-configuration-for-the-monitoring" title="Check Web server configuration for the monitoring" class="md-nav__link">
+    Check Web server configuration for the monitoring
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-glideinwms-factory" title="Troubleshooting GlideinWMS Factory" class="md-nav__link">
+    Troubleshooting GlideinWMS Factory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-locations" title="File Locations" class="md-nav__link">
+    File Locations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increase-the-log-level-and-change-rotation-policies" title="Increase the log level and change rotation policies" class="md-nav__link">
+    Increase the log level and change rotation policies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failed-authentication-errors" title="Failed authentication errors" class="md-nav__link">
+    Failed authentication errors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glideins-start-but-do-not-connect-to-user-pool-vo-frontend" title="Glideins start but do not connect to User pool / VO Frontend" class="md-nav__link">
+    Glideins start but do not connect to User pool / VO Frontend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough" title="Glideins start but fail before running job with error "Proxy not long lived enough"" class="md-nav__link">
+    Glideins start but fail before running job with error "Proxy not long lived enough"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condor_root_switchboard-errors" title="Condor_root_switchboard errors" class="md-nav__link">
+    Condor_root_switchboard errors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/install-gwms-factory.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="glideinwms-factory-installation">GlideinWMS Factory Installation<a class="headerlink" href="#glideinwms-factory-installation" title="Permanent link">&para;</a></h1>
+<p>This document describes how to install a Glidein Workflow Managment System (GlideinWMS) Factory instance. </p>
+<p>This document assumes expertise with HTCondor and familiarity with the GlideinWMS software.  It <strong>does not</strong> cover anything but the simplest possible install.   Please consult the <a href="http://glideinwms.fnal.gov/doc.prd/install.html">GlideinWMS reference documentation</a> for advanced topics, including non-root, non-RPM-based installation.  In this document the terms glidein and pilot (job) will be used interchangeably.</p>
+<p><img alt="GlideinWMS Architecture" src="../../img/gwms_arch.png" /></p>
+<p>This parts covers these primary components of the GlideinWMS system:</p>
+<ul>
+<li><strong>WMS Collector / Schedd</strong>: A set of <code>condor_collector</code> and <code>condor_schedd</code> processes that allow the submission of pilots to Grid entries.  </li>
+<li><strong>GlideinWMS Factory</strong>: The process submitting the pilots when needed</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We really recommend you to <strong>use the OSG provided Factory and not to install your own</strong>. A <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">VO Frontend</a> is sufficient to submit your jobs and to decide scheduling policies. And this will avoid for you the complexity to deal directly with grid/cloud sites. If you really need you own Factory be aware that it is a complex component and may require a non trivial maintenance effort.</p>
+</div>
+<h2 id="before-starting">Before Starting<a class="headerlink" href="#before-starting" title="Permanent link">&para;</a></h2>
+<p>Before starting the installation process, consider the following points (consulting <a href="#reference">the Reference section below</a> as needed):</p>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
+<h4 id="host-and-os">Host and OS<a class="headerlink" href="#host-and-os" title="Permanent link">&para;</a></h4>
+<ul>
+<li>A host to install the <strong>GlideinWMS Factory</strong> (pristine node). </li>
+<li>Currently most of our testing has been done on Scientific Linux 6 and 7.</li>
+<li>Root access</li>
+</ul>
+<p>The GlideinWMS Factory has the following requirements:</p>
+<ul>
+<li><strong>CPU</strong>: 4-8 cores for a large installation (1 should suffice on a small install)</li>
+<li><strong>RAM</strong>: 4-8GB on a large installation (1GB should suffice for small installs)</li>
+<li><strong>Disk</strong>:  10GB will be plenty sufficient for all the binaries, config and log files related to GlideinWMS.  If you are a large site with need to keep significant history and logs, you may want to allocate 100GB+ to store long histories.</li>
+</ul>
+<h4 id="users">Users<a class="headerlink" href="#users" title="Permanent link">&para;</a></h4>
+<p>The GlideinWMS Factory installation will create the following users unless they are <strong>already created</strong>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">User</th>
+<th align="left">Default uid</th>
+<th align="left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">condor</td>
+<td align="left">none</td>
+<td align="left">HTCondor user (installed via dependencies).</td>
+</tr>
+<tr>
+<td align="left">gfactory</td>
+<td align="left">none</td>
+<td align="left">This user runs the GlideinWMS VO factory.</td>
+</tr>
+</tbody>
+</table>
+<p>To verify that the user <em>gfactory</em> has <em>gfactory</em> as primary group check the output of </p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> getent passwd gfactory <span class="p">|</span> cut -d: -f4 <span class="p">|</span> xargs getent group
+</pre></div>
+
+
+<p>It should be the <code>gfactory</code> group. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you get another one, you just need to modify the <strong>PrivSep Kernel configuration file</strong> <code>/etc/condor/privsep_config</code> as indicated above and establish the corresponding GID. The lists that you see in this file, specify the IDs of all users and groups that HTCondor jobs may use on the given execute machine. In other words, users and groups that HTCondor will be allowed to act on behalf of.</p>
+</div>
+<h4 id="certificates">Certificates<a class="headerlink" href="#certificates" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th align="left">Certificate</th>
+<th align="left">User that owns certificate</th>
+<th align="left">Path to certificate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Host certificate</td>
+<td align="left">root</td>
+<td align="left">/etc/grid-security/hostcert.pem  /etc/grid-security/hostkey.pem</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://opensciencegrid.org/docs/security/host-certs">Here</a> are instructions to request a host certificate.</p>
+<p>The host <strong>certificate/key</strong> is used for authorization,  however, authorization between the Factory and the GlideinWMS collector is done by file system authentication.</p>
+<h4 id="networking">Networking<a class="headerlink" href="#networking" title="Permanent link">&para;</a></h4>
+<h5 id="firewalls">Firewalls<a class="headerlink" href="#firewalls" title="Permanent link">&para;</a></h5>
+<p>It must be on the public internet, with at least one port open to the world; all worker nodes will load data from this node trough HTTP. Note that worker nodes will also need outbound access in order to access this HTTP port. </p>
+<h2 id="installation-procedure">Installation Procedure<a class="headerlink" href="#installation-procedure" title="Permanent link">&para;</a></h2>
+<p>As with all OSG software installations, there are some one-time (per host) steps to prepare in advance:</p>
+<ul>
+<li>Ensure the host has a <a href="https://opensciencegrid.org/docs/release/supported_platforms/">supported operating system</a></li>
+<li>Obtain root access to the host</li>
+<li>Prepare the <a href="https://opensciencegrid.org/docs/common/yum/">required Yum repositories</a></li>
+<li>Install <a href="https://opensciencegrid.org/docs/common/ca/">CA certificates</a></li>
+</ul>
+<h3 id="installing-htcondor">Installing HTCondor<a class="headerlink" href="#installing-htcondor" title="Permanent link">&para;</a></h3>
+<p>Most required software is installed from the Factory RPM installation. HTCondor is the only exception since there are <a href="https://research.cs.wisc.edu/htcondor/downloads/">many different ways to install it</a>, using the RPM system or not. 
+You need to have HTCondor installed before installing the GlideinWMS Factory. If yum cannot find a HTCondor RPM, it will install the dummy <strong>empty-condor</strong> RPM, assuming that you installed HTCondor using a tarball distribution.</p>
+<ol>
+<li>
+<p>If you don't have HTCondor already installed, you can install the HTCondor RPM from the OSG repository:</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install condor.x86_64
+</pre></div>
+
+
+</li>
+<li>
+<p>If you have installed HTCondor version &gt; 8.7.2, you must install the <code>glideinwms-switchboard</code>:</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install glideinwms-switchboard --enablerepo<span class="o">=</span>osg-upcoming
+</pre></div>
+
+
+</li>
+</ol>
+<h3 id="installing-htcondor-bosco">Installing HTCondor-BOSCO<a class="headerlink" href="#installing-htcondor-bosco" title="Permanent link">&para;</a></h3>
+<p>If you plan to send jobs using <a href="http://glideinwms.fnal.gov/doc.prd/recipes/batch.html">direct batch submission</a> (aka BOSCO), then you need also the <strong>condor-bosco</strong> package. You'll have to install the package and remove one of its files <code>/etc/condor/config.d/60-campus_factory.config</code> because it interferes with the Factory configuration.</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install condor-bosco
+<span class="gp">root@host #</span> rm /etc/condor/config.d/60-campus_factory.config
+<span class="gp">root@host #</span> touch /etc/condor/config.d/60-campus_factory.config
+</pre></div>
+
+
+<h3 id="install-gwms-factory">Install GWMS Factory<a class="headerlink" href="#install-gwms-factory" title="Permanent link">&para;</a></h3>
+<h4 id="download-and-install-the-factory-rpm">Download and install the Factory RPM<a class="headerlink" href="#download-and-install-the-factory-rpm" title="Permanent link">&para;</a></h4>
+<p>Install the RPM and dependencies (be prepared for a lot of dependencies).</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install glideinwms-factory
+</pre></div>
+
+
+<p>This will install the current production release verified and tested by OSG with default HTCondor configuration.
+This command will install the GlideinWMS Factory, HTCondor, the OSG client, and all the required dependencies.</p>
+<p>If you wish to install a different version of GlideinWMS, add the "--enablerepo" argument to the command as follows:</p>
+<ul>
+<li><code>yum install --enablerepo=osg-testing glideinwms-factory</code>: The most recent production release, still in testing phase.  This will usually match the current tarball version on the <a href="http://glideinwms.fnal.gov/doc.prd/index.html">GlideinWMS home page</a>.
+    (The osg-release production version may lag behind the tarball release by a few weeks as it is verified and packaged by OSG).  Note that this will also take the osg-testing versions of all dependencies as well.</li>
+<li><code>yum install --enablerepo=osg-upcoming glideinwms-factory</code>:  The most recent development series release, ie version 3.3.x release.  This has newer features such as cloud submission support, but is less tested.</li>
+</ul>
+<h4 id="download-htcondor-tarballs">Download HTCondor tarballs<a class="headerlink" href="#download-htcondor-tarballs" title="Permanent link">&para;</a></h4>
+<p>You will need to download HTCondor tarballs for each architecture that <strong>you want to deploy pilots on</strong>.
+At this point, GlideinWMS factory does not support pulling HTCondor binaries from your system area.
+Suggested is that you put these binaries in <code>/var/lib/gwms-factory/condor</code> but any <strong>gfactory</strong> accessible location should suffice.</p>
+<h2 id="configuration-procedure">Configuration Procedure<a class="headerlink" href="#configuration-procedure" title="Permanent link">&para;</a></h2>
+<p>After installing the RPM you need to configure the components of the GlideinWMS Factory:</p>
+<ol>
+<li>Edit Factory configuration options</li>
+<li>Edit HTCondor configuration options</li>
+<li>Create a HTCondor grid map file</li>
+<li>Reconfigure and Start Factory</li>
+</ol>
+<h2 id="configuring-the-factory">Configuring the Factory<a class="headerlink" href="#configuring-the-factory" title="Permanent link">&para;</a></h2>
+<p>The configuration file is <code>/etc/gwms-factory/glideinWMS.xml</code>.  The next steps will describe each line that you will need to edit for most cases, but you may want to review the whole file to be sure that it is configured correctly.</p>
+<h3 id="security-configuration">Security configuration<a class="headerlink" href="#security-configuration" title="Permanent link">&para;</a></h3>
+<p>In the security section, you will need to provide <strong>each Frontend</strong> that is allowed to communicate with the Factory:</p>
+<div class="codehilite"><pre><span></span>security key_length=&quot;2048&quot; pub_key=&quot;RSA&quot; remove_old_cred_age=&quot;30&quot; remove_old_cred_freq=&quot;24&quot; reuse_oldkey_onstartup_gracetime=&quot;900&quot;&gt;
+  <span class="nt">&lt;frontends&gt;</span>
+     <span class="nt">&lt;frontend</span> <span class="na">identity=</span><span class="s">&quot;vofrontend_service@FACTORY_COLLECTOR_HOSTNAME&quot;</span> <span class="na">name=</span><span class="s">&quot;<span style="color:red">ORANGE</span>vofrontend_sec_name</span>&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;security_classes&gt;</span>
+           <span class="nt">&lt;security_class</span> <span class="na">name=</span><span class="s">&quot;<span style="color:red">frontend_sec_class</span>&quot;</span> <span class="na">username=</span><span class="s">&quot;frontend&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/security_classes&gt;</span>
+     <span class="nt">&lt;/frontend&gt;</span>
+  <span class="nt">&lt;/frontends&gt;</span>
+<span class="nt">&lt;/security&gt;</span>
+</pre></div>
+
+
+<p>These attributes are very important to get exactly right or the Frontend will not be trusted.  This should match one of the <strong>factory</strong> and <strong>security</strong> sections of the Frontend configuration <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/#osg-factory-access">Configuring the GlideinWMS Frontend</a> in the following way:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a snippet from the Frontend configuration (for reference), not the Factory that you are configuring now!</p>
+</div>
+<p>For the factory section:</p>
+<div class="codehilite"><pre><span></span># from frontend.xml
+<span class="nt">&lt;factory</span> <span class="na">query_expr=</span><span class="s">&#39;((stringListMember(&quot;VO&quot;, GLIDEIN_Supported_VOs)))&#39;</span><span class="nt">&gt;</span>
+....
+   <span class="nt">&lt;collectors&gt;</span>
+      <span class="nt">&lt;collector</span> <span class="na">DN=</span><span class="s">&quot;/DC=org/DC=doegrids/OU=Services/CN=FACTORY_COLLECTOR_HOSTNAME&quot;</span> 
+      <span class="na">comment=</span><span class="s">&quot;Define factory collector globally for simplicity&quot;</span>            
+      <span class="na">factory_identity=</span><span class="s">&quot;gfactory@FACTORY_COLLECTOR_HOSTNAME&quot;</span> 
+      <span class="na">my_identity=</span><span class="s">&quot;<span style="color:green">username</span>@FACTORY_COLLECTOR_HOSTNAME&quot;</span> 
+      <span class="na">node=</span><span class="s">&quot;FACTORY_COLLECTOR_HOSTNAME&quot;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/collectors&gt;</span>
+<span class="nt">&lt;/factory&gt;</span>
+</pre></div>
+
+
+<p>For the security:</p>
+<div class="codehilite"><pre><span></span># from frontend.xml
+<span class="nt">&lt;security</span> <span class="na">classad_proxy=</span><span class="s">&quot;/tmp/vo_proxy&quot;</span> <span class="na">proxy_DN=</span><span class="s">&quot;DN of vo_proxy&quot;</span>
+      <span class="na">proxy_selection_plugin=</span><span class="s">&quot;ProxyAll&quot;</span>
+      <span class="na">security_name=</span><span class="s">&quot;The security name, this is used by factory&quot;</span>
+      <span class="na">sym_key=</span><span class="s">&quot;aes_256_cbc&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;credentials&gt;</span>
+         <span class="nt">&lt;credential</span> <span class="na">absfname=</span><span class="s">&quot;/tmp/pilot_proxy&quot;</span> <span class="na">security_class=</span><span class="s">&quot;frontend&quot;</span>
+         <span class="na">trust_domain=</span><span class="s">&quot;OSG&quot;</span> <span class="na">type=</span><span class="s">&quot;grid_proxy&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/credentials&gt;</span>
+<span class="nt">&lt;/security&gt;</span>        
+</pre></div>
+
+
+<p>Note that the identity of the Frontend must match what HTCondor authenticates the DN of the frontend to.  In <code>/etc/condor/certs/condor_mapfile</code>, there must be an entry with <strong>vofrontend_service</strong> definition (in this case):</p>
+<div class="codehilite"><pre><span></span>GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=Services\/CN\=Some\ Name\ 834323</span>$&quot; <span style="color:green">vofrontend_service</span>
+</pre></div>
+
+
+<h3 id="entry-configuration">Entry configuration<a class="headerlink" href="#entry-configuration" title="Permanent link">&para;</a></h3>
+<p>Entries are grid/cloud endpoints (aka Compute Elements, or gatekeepers) that can accept job requests and run pilots (which will run user jobs).
+Each entry needs to be configured to communicate to a specific gatekeeper.</p>
+<p>An example test entry is provided in the default GlideinWMS configuration file.  At the very least, you will need to modify the entry line:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;entry</span> <span class="na">name=</span><span class="s">&quot;<span style="color:red">ENTRY_NAME</span>&quot;</span> <span class="na">enabled=</span><span class="s">&quot;True&quot;</span> <span class="na">auth_method=</span><span class="s">&quot;grid_proxy&quot;</span> <span class="na">trust_domain=</span><span class="s">&quot;OSG&quot;</span> 
+<span class="na">gatekeeper=</span><span class="s">&quot;<span style="color:red">gatekeeper.domain.tld/jobmanager-type</span>&quot;</span> <span class="na">gridtype=</span><span class="s">&quot;gt2&quot;</span> <span class="na">rsl=</span><span class="s">&quot;(queue=default)(jobtype=single)&quot;</span>
+<span class="na">schedd_name=</span><span class="s">&quot;<span style="color:red">schedd_glideins2@FACTORY_HOSTNAME</span>&quot;</span> <span class="na">verbosity=</span><span class="s">&quot;std&quot;</span> <span class="na">work_dir=</span><span class="s">&quot;OSG&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<p>You will need to modify the entry <strong>name</strong> and <strong>gatekeeper</strong>.  This will determine the gatekeeper that you access.  Specific gatekeepers often require specific "rsl" attributes that determine the job queue that you are submitting to, or other attributes.  Add them in the <em>rsl</em> attribute.  </p>
+<p>Also, be sure to distribute your entries across the various HTCondor schedd work managers to balance load.  To see the available schedd use <code>condor_status -schedd -l | grep Name</code>.  </p>
+<p>Several schedd options are configured by default for you:  <em>schedd_glideins2, schedd_glideins3, schedd_glideins4, schedd_glideins5</em>, as well as the default <em>schedd</em>. This can be modified in the HTCondor configuration.  Add any specific options, such as limitations on jobs/pilots or glexec/voms requirements in the entry section below the above line. More details are in the <a href="http://glideinwms.fnal.gov/doc.prd/factory/configuration.html">GlideinWMS Factory configuration guide</a>.</p>
+<p>!!! warning
+      If there is no match between <em>auth_metod</em> and <em>trust_domain</em> of the entry and the <em>type</em> and <em>trust_domain</em> listed in one of the <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">credentials of one of the Frontends</a> using this Factory, then no job can run on that entry.</p>
+<p>The Factory must advertise the correct Resource Name of each entry for accounting purposes. Then the Factory must also advertise in the entry all the attributes that will allow to match the query expression used in the Frontends connecting to this Factory (e.g. <code>&lt;factory query_expr='((stringListMember("<span style="color:red">PINK</span>VO</span>", GLIDEIN_Supported_VOs)))'&gt;</code> as explained in the <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">VO frontend configuration document</a> ). </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Keep an eye on this part as we're dealing with singularity.
+Then you must advertise correctly if the site supports <strong>gLExec</strong>.
+If it does not set <em>GLEXEC_BIN</em> to <em>NONE</em>, if <strong>gLExec</strong> is installed via OSG set it to <strong>OSG</strong>, 
+otherwise set it to the path of gLExec.</p>
+</div>
+<p>For example this snippet advertises <strong>GLIDEIN_Supported_VOs</strong> attribute with the supported VO so that can be used with the query above in the VO frontend and says that the resource does not support gLExec:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;entry</span> <span class="na">name=</span><span class="s">&quot;RESOURCE_NAME&quot;</span> <span class="err">...</span>
+   <span class="err">&lt;config</span><span class="nt">&gt;</span>
+   ...
+      <span class="nt">&lt;attrs&gt;</span>
+      ...
+         <span class="nt">&lt;attr</span> <span class="na">name=</span><span class="s">&quot;GLIDEIN_Supported_VOs&quot;</span> <span class="na">const=</span><span class="s">&quot;True&quot;</span> <span class="na">glidein_publish=</span><span class="s">&quot;True&quot;</span> <span class="na">job_publish=</span><span class="s">&quot;True&quot;</span> 
+         <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;<span style="color:red">PINK</span>VO</span>&quot;</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;attr</span> <span class="na">name=</span><span class="s">&quot;GLEXEC_BIN&quot;</span> <span class="na">const=</span><span class="s">&quot;True&quot;</span> <span class="na">glidein_publish=</span><span class="s">&quot;False&quot;</span> <span class="na">job_publish=</span><span class="s">&quot;False&quot;</span> <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> 
+         <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;<span style="color:red">NONE</span>&quot;</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;attr</span> <span class="na">name=</span><span class="s">&quot;GLIDEIN_Resource_Name&quot;</span> <span class="na">const=</span><span class="s">&quot;True&quot;</span> <span class="na">glidein_publish=</span><span class="s">&quot;True&quot;</span> <span class="na">job_publish=</span><span class="s">&quot;True&quot;</span> 
+       <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;<span style="color:red">SiteNameFromOIM</span>&quot;</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;/attrs&gt;</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Specially if jobs are sent to OSG resources, it is very important to set the GLIDEIN_Resource_Name and to be consistent with the Resource Name reported in OIM because that name will be used for job accounting in Gratia. It should be the name of the Resource in OIM or the name of the Resource Group (specially if there are many gatekeepers submitting to the same cluster).</p>
+<p>More information on options can be found <a href="http://glideinwms.fnal.gov/doc.prd/factory/configuration.html">here</a></p>
+</div>
+<h3 id="configuring-tarballs">Configuring Tarballs<a class="headerlink" href="#configuring-tarballs" title="Permanent link">&para;</a></h3>
+<p>Each pilot will download HTCondor binaries from the staging area.  Often, multiple binaries are needed to support various architectures and platforms. 
+Currently, you will need to provide at least one tarball for GlideinWMS to use.  (Using the system binaries is currently not supported).</p>
+<p>Download a HTCondor tarball from <a href="http://research.cs.wisc.edu/condor/downloads-v2/download.pl">here</a>.  Suggested is to put the binaries in <code>/var/lib/gwms-factory/condor</code>, but any factory-accessible location will do just fine.</p>
+<p>Once you have downloaded the tarball, configure it in <code>/etc/gwms-factory/glideinWMS.xml</code> like in the following:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;condor_tarball</span> <span class="na">arch=</span><span class="s">&quot;default&quot;</span> <span class="na">base_dir=</span><span class="s">&quot;/var/lib/gwms-factory/condor/condor-8.7.6-x86_64_RedHat6-stripped&quot;</span> <span class="na">os=</span><span class="s">&quot;rhel6&quot;</span> <span class="na">version=</span><span class="s">&quot;default&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<p>Remember also to modify the <code>condor_os</code> and <code>condor_arch</code> attributes in the entries (the configured Compute Elements) to pick the correct HTCondor binary.
+<a href="http://glideinwms.fnal.gov/doc.prd/factory/configuration.html#tarballs">Here</a> are more details on using multiple HTCondor binaries. Note that is sufficient to set the <code>base_dir</code>; the reconfigure command will prepare the tarball and add it to the XML config file.</p>
+<h2 id="configuring-htcondor">Configuring HTCondor<a class="headerlink" href="#configuring-htcondor" title="Permanent link">&para;</a></h2>
+<p>The HTCondor configuration for the Factory is placed in <code>/etc/condor/config.d</code>.</p>
+<ul>
+<li>00_gwms_factory_general.config</li>
+<li>00-restart_peaceful.config</li>
+<li>01_gwms_factory_collectors.config</li>
+<li>02_gwms_factory_schedds.config</li>
+<li>03_gwms_local.config</li>
+<li>10-batch_gahp_blahp.config</li>
+</ul>
+<p>Get rid of the pre-loaded HTCondor default</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> rm /etc/condor/config.d/00personal_condor.config
+<span class="gp">root@host #</span> touch /etc/condor/config.d/00personal_condor.config
+</pre></div>
+
+
+<p>For most installations, the items you need to modify are in <code>03_gwms_factory_local.config</code>.  The lines you will have to edit are:</p>
+<ol>
+<li>Credentials of the machine.  You can either run using a proxy, or a service certificate.  It is recommended to use a host certificate and specify its location in the variables <code>GSI_DAEMON_CERT</code> and <code>GSI_DAEMON_KEY</code>.  The host certificate should be owned by <strong>root</strong> and have the correct permissions, 600.</li>
+<li>HTCondor ids in the form UID.GID (both are integers)</li>
+<li>HTCondor admin email. Will receive messages when services fail.</li>
+</ol>
+<div class="codehilite"><pre><span></span>#-- HTCondor user: condor
+CONDOR_IDS =
+#--  Contact (via email) when problems occur
+CONDOR_ADMIN =
+
+############################
+# GSI Security config
+############################
+#-- Grid Certificate directory
+GSI_DAEMON_TRUSTED_CA_DIR= /etc/grid-security/certificates
+
+#-- Credentials
+GSI_DAEMON_CERT =  /etc/grid-security/hostcert.pem
+GSI_DAEMON_KEY  =  /etc/grid-security/hostkey.pem
+
+#-- HTCondor mapfile
+CERTIFICATE_MAPFILE= /etc/condor/certs/condor_mapfile
+
+###################################
+# Whitelist of HTCondor daemon DNs
+###################################
+#DAEMON_LIST = COLLECTOR, MASTER, NEGOTIATOR, SCHEDD, STARTD
+</pre></div>
+
+
+<h4 id="using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm">Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM<a class="headerlink" href="#using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm" title="Permanent link">&para;</a></h4>
+<p>The above procedure will work if you are using the OSG HTCondor RPMS. You can verify that you used the OSG HTCondor RPM by using <code>yum list condor</code>. The version name should include "osg", e.g. <code>8.6.9-1.1.osg34.el7</code>.</p>
+<p>If you are using the UW Madison HTCondor RPMS, be aware of the following changes:</p>
+<ul>
+<li>This HTCondor RPM uses a file <code>/etc/condor/condor_config.local</code> to add your local machine slot to the user pool.</li>
+<li>If you want to disable this behavior (recommended), you should blank out that file or comment out the line in <code>/etc/condor/condor_config</code> for LOCAL_CONFIG_FILE. (Make sure that LOCAL_CONFIG_DIR is set to <code>/etc/condor/config.d</code>)</li>
+<li>Note that the variable LOCAL_DIR is set differently in UW Madison and OSG RPMs. This should not cause any more problems in the Glideinwms RPMs, but please take note if you use this variable in your job submissions or other customizations.</li>
+</ul>
+<p>In general if you are using a non OSG RPM or if you added custom configuration files for HTCondor please check the order of the configuration files:</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> condor_config_val -config
+<span class="go">Configuration source:</span>
+<span class="go">    /etc/condor/condor_config</span>
+<span class="go">Local configuration sources:</span>
+<span class="go">    /etc/condor/config.d/00-restart_peaceful.config</span>
+<span class="go">    /etc/condor/config.d/00_gwms_factory_general.config</span>
+<span class="go">    /etc/condor/config.d/01_gwms_factory_collectors.config</span>
+<span class="go">    /etc/condor/config.d/02_gwms_factory_schedds.config</span>
+<span class="go">    /etc/condor/config.d/03_gwms_local.config</span>
+<span class="go">    /etc/condor/config.d/10-batch_gahp_blahp.config</span>
+<span class="go">    /etc/condor/condor_config.local</span>
+</pre></div>
+
+
+<h4 id="restarting-htcondor">Restarting HTCondor<a class="headerlink" href="#restarting-htcondor" title="Permanent link">&para;</a></h4>
+<p>After configuring HTCondor, be sure to restart HTCondor:</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> service condor restart
+</pre></div>
+
+
+<h4 id="configuring-htcondor-privilege-separation">Configuring HTCondor Privilege Separation<a class="headerlink" href="#configuring-htcondor-privilege-separation" title="Permanent link">&para;</a></h4>
+<p>Lastly, verify the settings in <code>/etc/condor/privsep_config</code>.  By default,
+the values in this file should not need to be modified.  However,
+if your user/group differs from <em>gfactory</em> / <em>gfactory</em>, or if you are operating
+a Factory with multiple frontends, you will have to modify this file.</p>
+<p>This file controls the HTCondor root switchboard, which allows the Factory
+to change permissions of files, specifically the proxies and files
+passed to it by the frontends.</p>
+<div class="codehilite"><pre><span></span>valid-caller-uids = gfactory
+valid-caller-gids = gfactory
+valid-target-uids = fecmsucsd : fehcc : fecmscern
+valid-target-gids = fecmsucsd : fehcc : fecmscern
+valid-dirs = /var/lib/gwms-factory/client-proxies
+valid-dirs = /var/lib/gwms-factory/client-logs
+valid-dirs = /var/log/gwms-factory/client
+valid-dirs = /var/lib/gwms-factory
+valid-dirs = /var/log/gwms-factory
+procd-executable = /usr/sbin/condor_procd
+</pre></div>
+
+
+<p>Thus, the <em>valid-called-uids</em> and <em>valid-caller-gids</em> should match the user/group of your Factory user.
+The <em>valid-target-uids</em> and <em>valid-target-gids</em> should be a colon-separated list of all the frontend
+users and groups.  This should match the security_classes section in <code>/etc/gwms-factory/glideinWMS.xml</code>.</p>
+<h2 id="create-a-htcondor-grid-mapfile">Create a HTCondor grid mapfile.<a class="headerlink" href="#create-a-htcondor-grid-mapfile" title="Permanent link">&para;</a></h2>
+<p>The HTCondor grid mapfile <code>/etc/condor/certs/condor_mapfile</code> is used for authentication between the glidein running on a remote worker node, and the local collector.  HTCondor uses the mapfile to map certificates to pseudo-users on the local machine.  It is important that you map the DN's of each frontend you are talking to.</p>
+<p>Below is an example mapfile, by default found in <code>/etc/condor/certs/condor_mapfile</code>:</p>
+<div class="codehilite"><pre><span></span>GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=People\/CN\=Some\ Name\ 123456$&quot; frontend
+GSI (.*) anonymous
+FS (.*) \1 
+</pre></div>
+
+
+<p>Each frontend needs a line that maps to the user specified in the identity argument in the frontend security section of the Factory configuration.</p>
+<h3 id="reconfiguring-glideinwms">Reconfiguring GlideinWMS<a class="headerlink" href="#reconfiguring-glideinwms" title="Permanent link">&para;</a></h3>
+<p>After changing the configuration of GlideinWMS and making sure that Factory is running, use the following table to find the appropriate command for your operating system (run as <code>root</code>):</p>
+<table>
+<thead>
+<tr>
+<th align="left">If your operating system is...</th>
+<th align="left">Run the following command...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Enterprise Linux 7</td>
+<td align="left"><code>systemctl reload gwms-factory</code></td>
+</tr>
+<tr>
+<td align="left">Enterprise Linux 6</td>
+<td align="left"><code>service gwms-factory reconfig</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="upgrading-glideinwms">Upgrading GlideinWMS<a class="headerlink" href="#upgrading-glideinwms" title="Permanent link">&para;</a></h3>
+<p>Before you start the Factory service for the first time or after an update of the RPM or after you change GlideinWMS scripts, you should always use the GlideinWMS "upgrade" command. To do so:</p>
+<ol>
+<li>
+<p>Make sure the <code>condor</code> and <code>gwms-factory</code> services are stopped (in EL6 this will be done for you).</p>
+</li>
+<li>
+<p>Issue the upgrade command:</p>
+</li>
+<li>
+<p>If you are using Enterprise Linux 7:</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> /usr/sbin/gwms-factory upgrade
+</pre></div>
+
+
+</li>
+<li>
+<p>If you are using Enterprise Linux 6:</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> service gwms-factory upgrade
+</pre></div>
+
+
+</li>
+<li>
+<p>Start the <code>condor</code> and <code>gwms-factory</code> services (see next part).</p>
+</li>
+</ol>
+<h3 id="service-activation-and-deactivation">Service Activation and Deactivation<a class="headerlink" href="#service-activation-and-deactivation" title="Permanent link">&para;</a></h3>
+<p>To <em>start the Factory</em> you must start also <strong>HTCondor</strong> and the <strong>Web server</strong> beside the Factory itself:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
+<span class="gp">root@host #</span> service condor start
+<span class="gp">root@host #</span> service httpd start
+<span class="gp">root@host #</span> service gwms-factory start
+
+<span class="gp">#</span> <span style="color:red"> For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
+<span class="gp">root@host #</span> systemctl start condor
+<span class="gp">root@host #</span> systemctl start httpd
+<span class="gp">root@host #</span> systemctl start gwms-factory
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you successfully start using the Factory service, anytime you change the <code>/etc/gwms-factory/glideinWMS.xml</code> file you will need to run a reconfig/reload command. If you change also some code you need the upgrade command mentioned above:</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red"> For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
+<span class="gp">root@host #</span> service gwms-factory reconfig
+
+
+<span class="gp">#</span> <span style="color:red"> But the situation is a bit more complicated in RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7 due to systemd restrictions</span>
+<span class="gp">#</span> <span style="color:green"> For reconfig:</span>
+<span class="go">A. <span style="color:red"> when the Factory is running</span></span>
+<span class="go">A.1 <span style="color:red"> without any additional options</span></span>
+<span class="gp">root@host #</span> /usr/sbin/gwms-factory reconfig</span>
+<span class="go">or</span>
+<span class="gp">root@host #</span> systemctl reload gwms-factory
+
+<span class="go">A.2 <span style="color:red"> if you want to give additional options </span></span>
+<span class="go">systemctl stop gwms-factory</span>
+<span class="go">/usr/sbin/gwms-factory reconfig &quot;and your options&quot;</span>
+<span class="go">systemctl start gwms-factory</span>
+
+<span class="go">B. <span style="color:red"> when the Factory is NOT running </span></span>
+<span class="gp">root@host #</span> /usr/sbin/gwms-factory reconfig <span class="o">(</span><span class="s2">&quot;and your options&quot;</span><span class="o">)</span>
+</pre></div>
+
+
+<p>To enable the services so that they restart after a reboot:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red"># For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
+<span class="gp">root@host #</span> /sbin/chkconfig fetch-crl-cron on 
+<span class="gp">root@host #</span> /sbin/chkconfig fetch-crl-boot on 
+<span class="gp">root@host #</span> /sbin/chkconfig condor on
+<span class="gp">root@host #</span> /sbin/chkconfig httpd on
+<span class="gp">root@host #</span> /sbin/chkconfig gwms-factory on
+<span class="gp">#</span> <span style="color:red"># For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> fetch-crl-cron 
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> fetch-crl-boot
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> condor 
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> httpd 
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> gwms-factory
+</pre></div>
+
+
+<p>To stop the Factory:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6 </span>
+<span class="gp">root@host #</span> service gwms-factory stop
+<span class="gp">#</span> <span style="color:red">For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
+<span class="gp">root@host #</span> systemctl stop gwms-factory
+</pre></div>
+
+
+<p>And you can stop also the other services if you are not using them independently of the Factory.</p>
+<h2 id="validating-glideinwms-factory">Validating GlideinWMS Factory<a class="headerlink" href="#validating-glideinwms-factory" title="Permanent link">&para;</a></h2>
+<p>The complete validation of the Factory is the submission of actual jobs.</p>
+<p>You can also check that the services are up and running:</p>
+<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> condor_status -any
+
+<span class="go">MyType               TargetType           Name</span>
+
+<span class="go">glidefactoryclient   None                 12345_TEST_ENTRY@gfactory_instance@</span>
+<span class="go">glideclient          None                 12345_TEST_ENTRY@gfactory_instance@</span>
+<span class="go">glidefactory         None                 TEST_ENTRY@gfactory_instance@</span>
+<span class="go">glidefactoryglobal   None                 gfactory_instance@gfactory_ser</span>
+<span class="go">glideclientglobal    None                 gfactory_instance@gfactory_ser</span>
+<span class="go">Scheduler            None                 hostname.fnal.gov</span>
+<span class="go">DaemonMaster         None                 hostname.fnal.gov</span>
+<span class="go">Negotiator           None                 hostname.fnal.gov</span>
+<span class="go">Scheduler            None                 schedd_glideins2@hostname</span>
+<span class="go">Scheduler            None                 schedd_glideins3@hostname</span>
+<span class="go">Scheduler            None                 schedd_glideins4@hostname</span>
+<span class="go">Scheduler            None                 schedd_glideins5@hostname</span>
+<span class="go">Collector            None                 wmscollector_service@hostname</span>
+</pre></div>
+
+
+<ul>
+<li>
+<p>You should have one "glidefactory" classAd for each entry that you have enabled.
+If you have already configured the frontends, you will also have one glidefactoryclient and one glideclient classAd for each frontend / entry.</p>
+</li>
+<li>
+<p>You can check also the monitoring Web page: <code>http://YOUR_HOST_FQDN/factory/monitor/</code></p>
+</li>
+<li>
+<p>You can also test the local submission of a job to a resource using the test script <em>local_start.sh</em> but you must first install the <a href="https://opensciencegrid.org/docs/worker-node/install-wn/">OSG client tools</a> and generate a proxy. After that you can run the test (replace ENTRY_NAME with the name of one of the entries in <code>/etc/gwms-factory/glideinWMS.xml</code>):</p>
+</li>
+</ul>
+<h4 id="check-web-server-configuration-for-the-monitoring">Check Web server configuration for the monitoring<a class="headerlink" href="#check-web-server-configuration-for-the-monitoring" title="Permanent link">&para;</a></h4>
+<p>Verify path and specially the URL for the GlideinWMS files served by your web server:</p>
+<div class="codehilite"><pre><span></span>stage base_dir=&quot;/var/lib/gwms-factory/web-area/stage&quot; use_symlink=&quot;True&quot; web_base_url=&quot;http://HOSTNAME:PORT/factory/stage&quot;
+</pre></div>
+
+
+<p><strong>This will determine the location of your web server</strong>.  Make sure that the URL is visible. Depending on your firewall or the one of your organization, you may need to change the port here and in the httpd configuration (by modifying the "Listen" directive in <code>/etc/httpd/conf/httpd.conf</code>).  Note that web servers are an often an attacked piece of infrastruture, so you may want to go through the Apache configuration in <code>/etc/httpd/conf/httpd.conf</code> and disable unneeded modules.</p>
+<h2 id="troubleshooting-glideinwms-factory">Troubleshooting GlideinWMS Factory<a class="headerlink" href="#troubleshooting-glideinwms-factory" title="Permanent link">&para;</a></h2>
+<h3 id="file-locations">File Locations<a class="headerlink" href="#file-locations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="left">File Description</th>
+<th align="left">File Location</th>
+<th align="left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Configuration file</td>
+<td align="left">/etc/gwms-factory/glideinWMS.xml</td>
+<td align="left">Main configuration file</td>
+</tr>
+<tr>
+<td align="left">Logs</td>
+<td align="left">/var/log/gwms-factory/server/factory</td>
+<td align="left">Overall server logs</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">/var/log/gwms-factory/server/entry_NAME</td>
+<td align="left">Specific entry logs (generally more useful)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">/var/log/gwms-factory/client</td>
+<td align="left">Glidein Pilot logs seperated by user and entry</td>
+</tr>
+<tr>
+<td align="left">Startup script</td>
+<td align="left">/etc/init.d/gwms-factory</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Web Directory</td>
+<td align="left">/var/lib/gwms-factory/web-area</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Web Base</td>
+<td align="left">/var/lib/gwms-factory/web-base</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Working Directory</td>
+<td align="left">/var/lib/gwms-factory/work-dir/</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="increase-the-log-level-and-change-rotation-policies">Increase the log level and change rotation policies<a class="headerlink" href="#increase-the-log-level-and-change-rotation-policies" title="Permanent link">&para;</a></h3>
+<p>You can increase the log level of the frontend. To add a log file with all the log information add the following line with all the message types in the <code>process_log</code> section of <code>/etc/gwms-factory/glideinWMS.xml</code>:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;log_retention&gt;</span>
+   <span class="nt">&lt;process_logs&gt;</span>
+       <span class="nt">&lt;process_log</span> <span class="na">extension=</span><span class="s">&quot;all&quot;</span> <span class="na">max_days=</span><span class="s">&quot;7.0&quot;</span> <span class="na">max_mbytes=</span><span class="s">&quot;100.0&quot;</span> <span class="na">min_days=</span><span class="s">&quot;3.0&quot;</span> <span class="na">msg_types=</span><span class="s">&quot;DEBUG,EXCEPTION,INFO,ERROR,ERR&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<p>You can also change the rotation policy and choose whether compress the rotated files, all in the same section of the config files:</p>
+<ul>
+<li>max_bytes is the max size of the log files</li>
+<li>max_days it will be rotated.</li>
+<li>compression specifies if rotated files are compressed</li>
+<li>backup_count is the number of rotated log files kept</li>
+</ul>
+<p>Further details are in the <a href="http://glideinwms.fnal.gov/doc.prd/frontend/configuration.html#process_logs">reference documentation</a>.</p>
+<h3 id="failed-authentication-errors">Failed authentication errors<a class="headerlink" href="#failed-authentication-errors" title="Permanent link">&para;</a></h3>
+<p>If you get messages such as these in the logs, the Factory does not trust the frontend and will not submit glideins.</p>
+<div class="codehilite"><pre><span></span><span class="go">WARNING: Client fermicloud128-fnal-gov_OSG_gWMSFrontend.main (secid: frontend_name) not in white list. Skipping request</span>
+</pre></div>
+
+
+<p>This error means that the frontend name in the security section of the Factory does not match the <code>security_name</code> in the frontend.</p>
+<div class="codehilite"><pre><span></span><span class="go">Client fermicloud128-fnal-gov_OSG_gWMSFrontend.main (secid: frontend_name) is not coming from a trusted source;</span>
+<span class="go"> AuthenticatedIdentity vofrontend_condor@fermicloud130.fnal.gov!=vofrontend_factory@fermicloud130.fnal.gov. </span>
+<span class="go">Skipping for security reasons.</span>
+</pre></div>
+
+
+<p>This error means that the identity in the security section of the Factory does not match what the <code>/etc/condor/certs/condor_mapfile</code> authenticates the Frontend to in HTCondor (!Authenticated Identity in the classad).</p>
+<p>Make sure the attributes are correctly lined up as in the Frontend security configuration section above.</p>
+<h3 id="glideins-start-but-do-not-connect-to-user-pool-vo-frontend">Glideins start but do not connect to User pool / VO Frontend<a class="headerlink" href="#glideins-start-but-do-not-connect-to-user-pool-vo-frontend" title="Permanent link">&para;</a></h3>
+<p>Check the appropriate job err and out logs in <code>/var/log/gwms-factory/client</code> to see if any errors were reported.
+Often, this will be a pilot unable to access a web server or with an invalid proxy.  Also, verify that the <code>condor_mapfile</code> is correct on the VO Frontend's user pool collector and configuration.</p>
+<h3 id="glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough">Glideins start but fail before running job with error "Proxy not long lived enough"<a class="headerlink" href="#glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough" title="Permanent link">&para;</a></h3>
+<p>If the glideins are running on a resource (entry) but the jobs are not running and the log files in <code>/var/log/gwms-factory/client/user_frontend/glidein_gfactory_instance/ENTRY_NAME</code> report an error like "Proxy not long lived enough (86096 s left), shortened retire time ...",  then probably the HTCondor RLM on the Compute Element is delegating the proxy and shortening its lifespan.</p>
+<p>This can be fixed by setting <code>DELEGATE_JOB_GSI_CREDENTIALS = FALSE</code> as suggested in the <a href="https://opensciencegrid.org/docs/#installing-and-configuring-the-compute-element">CE install document</a>.</p>
+<h3 id="condor_root_switchboard-errors">Condor_root_switchboard errors<a class="headerlink" href="#condor_root_switchboard-errors" title="Permanent link">&para;</a></h3>
+<p>Make sure that you run <code>service gwms-factory upgrade</code> instead of the more light-weight <code>service gwms-factory reconfig</code>
+to ensure that all scripts are created correctly. Just make sure that gwms-factory is stopped.</p>
+<p>Next verify <code>/etc/condor/privsep_config</code> to make sure the users and groups are listed correctly.</p>
+<p>Lastly, verify that permissions are correct.  The parent directories (all the way to the root) of all valid-dirs in the file must be owned by root.</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://glideinwms.fnal.gov/doc.prd/">http://glideinwms.fnal.gov/doc.prd/</a></li>
+<li><a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">https://opensciencegrid.org/docs/other/install-gwms-frontend/</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../mission/" title="OSG Operations Mission" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                OSG Operations Mission
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../SLA/collector/" title="HTCondor Collector" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                HTCondor Collector
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.1",url:{base:"../.."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-69012-29","opensciencegrid.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

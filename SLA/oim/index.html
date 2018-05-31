@@ -1,433 +1,807 @@
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>OIM - OSG Operations</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "OIM";
-    var mkdocs_page_input_path = "SLA/oim.md";
-    var mkdocs_page_url = "/SLA/oim/";
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> OSG Operations</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.opensciencegrid.org/operations/SLA/oim/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>OIM - OSG Operations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#osg-information-management-service-level-agreement" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../../mission/">OSG Operations Mission</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Service Level Agreements</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../collector/">HTCondor Collector</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../myosg/">MyOSG</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../oasis-replica/">OASIS</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">OIM</a>
-    <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#osg-information-management-service-level-agreement">OSG Information Management Service Level Agreement</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#version-control">Version Control</a></li>
-        
-            <li><a class="toctree-l4" href="#executive-summary">Executive Summary</a></li>
-        
-            <li><a class="toctree-l4" href="#owners">Owners</a></li>
-        
-            <li><a class="toctree-l4" href="#service-name-and-description">Service Name and Description</a></li>
-        
-            <li><a class="toctree-l4" href="#security-considerations">Security Considerations</a></li>
-        
-            <li><a class="toctree-l4" href="#service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</a></li>
-        
-            <li><a class="toctree-l4" href="#escalation-contacts">Escalation Contacts</a></li>
-        
-            <li><a class="toctree-l4" href="#service-availability-and-outages">Service Availability and Outages</a></li>
-        
-            <li><a class="toctree-l4" href="#service-support-hours">Service Support Hours</a></li>
-        
-            <li><a class="toctree-l4" href="#service-off-hours-support-procedures">Service Off-Hours Support Procedures</a></li>
-        
-            <li><a class="toctree-l4" href="#requests-for-service-enhancement">Requests for Service Enhancement</a></li>
-        
-            <li><a class="toctree-l4" href="#customer-problem-reporting">Customer Problem Reporting</a></li>
-        
-            <li><a class="toctree-l4" href="#responsibilities">Responsibilities</a></li>
-        
-            <li><a class="toctree-l4" href="#service-measuring-and-reporting">Service Measuring and Reporting</a></li>
-        
-            <li><a class="toctree-l4" href="#sla-validity-period">SLA Validity Period</a></li>
-        
-            <li><a class="toctree-l4" href="#sla-review-procedure">SLA Review Procedure</a></li>
-        
-            <li><a class="toctree-l4" href="#references">References</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#appendix-a-customer-information">Appendix A - Customer Information</a></li>
-    
-
-    <li class="toctree-l3"><a href="#appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies</a></li>
-    
-
-    <li class="toctree-l3"><a href="#appendix-c-supported-hardware-and-software">Appendix C - Supported Hardware and Software</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#supported-hardware">Supported Hardware</a></li>
-        
-            <li><a class="toctree-l4" href="#hardware-services">Hardware Services</a></li>
-        
-            <li><a class="toctree-l4" href="#software-services">Software Services</a></li>
-        
-            <li><a class="toctree-l4" href="#software-costs">Software Costs</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#appendix-d-approval">Appendix D - Approval</a></li>
-    
-
-    <li class="toctree-l3"><a href="#appendix-e-metric-reports">Appendix E - Metric Reports</a></li>
-    
-
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../voms/">VOMS</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../xdlogin/">XDLogin</a>
-                </li>
-    </ul>
-	    </li>
+              <span class="md-header-nav__topic">
+                OSG Operations
+              </span>
+              <span class="md-header-nav__topic">
+                OIM
+              </span>
+            
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../../external-oasis-repos/">External OASIS repositories</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Weekly Minutes</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/23Apr2018/">23 April 2018 - Cancelled</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/16Apr2018/">16 April 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/09Apr2018/">9 April 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/02Apr2018/">2 April 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/26Mar2018/">26 March 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/12Mar2018/">12 March 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/05Mar2018/">5 March 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/26Feb2018/">26 February 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/19Feb2018/">19 February 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/12Feb2018/">12 February 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/05Feb2018/">5 February 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/29Jan2018/">29 January 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/22Jan2018/">22 January 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/08Jan2018/">8 January 2018</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/18Dec2017/">18 December 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/11Dec2017/">11 December 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/04Dec2017/">4 December 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/27Nov2017/">27 November 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/20Nov2017/">20 November 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/13Nov2017/">13 November 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/06Nov2017/">6 November 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/30Oct2017/">30 October 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/23Oct2017/">23 October 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/16Oct2017/">16 October 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/09Oct2017/">9 October 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/02Oct2017/">2 October 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/25Sep2017/">25 September 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/18Sep2017/">18 September 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/11Sep2017/">11 September 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/28Aug2017/">28 August 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/21Aug2017/">21 August 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/14Aug2017/">14 August 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/07Aug2017/">07 August 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/31Jul2017/">31 July 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/24Jul2017/">24 July 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/17Jul2017/">17 July 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/10Jul2017/">10 July 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/03Jul2017/">03 July 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/26Jun2017/">26 June 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/19Jun2017/">19 June 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/12Jun2017/">12 June 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/05Jun2017/">05 June 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/22May2017/">22 May 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/15May2017/">15 May 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/08May2017/">8 May 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/01May2017/">1 May 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/24Apr2017/">24 April 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/17Apr2017/">17 April 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/10Apr2017/">10 April 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/03Apr2017/">3 April 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/27Mar2017/">27 March 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/20Mar2017/">20 March 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/13Mar2017/">13 March 2017</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../WeeklyMinutes/27Feb2017/">27 February 2017</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+        </div>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">OSG Operations</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
+      <div class="md-flex__cell md-flex__cell--shrink">
         
-          <li>Service Level Agreements &raquo;</li>
-        
-      
-    
-    <li>OIM</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/oim.md"
-          class="icon icon-github"> Edit on GitHub</a>
-      
-    </li>
-  </ul>
-  <hr/>
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main">
-            <div class="section">
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    OSG Operations
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../mission/" title="OSG Operations Mission" class="md-nav__link">
+      OSG Operations Mission
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/install-gwms-factory/" title="Installing GlideinWMS Factory" class="md-nav__link">
+      Installing GlideinWMS Factory
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Service Level Agreements
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Service Level Agreements
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../collector/" title="HTCondor Collector" class="md-nav__link">
+      HTCondor Collector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../myosg/" title="MyOSG" class="md-nav__link">
+      MyOSG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../oasis/" title="OASIS (Draft)" class="md-nav__link">
+      OASIS (Draft)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../oasis-replica/" title="OASIS Replica" class="md-nav__link">
+      OASIS Replica
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        OIM
+      </label>
+    
+    <a href="./" title="OIM" class="md-nav__link md-nav__link--active">
+      OIM
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-control" title="Version Control" class="md-nav__link">
+    Version Control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" title="Executive Summary" class="md-nav__link">
+    Executive Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#owners" title="Owners" class="md-nav__link">
+    Owners
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-name-and-description" title="Service Name and Description" class="md-nav__link">
+    Service Name and Description
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" title="Name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" title="Description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-considerations" title="Security Considerations" class="md-nav__link">
+    Security Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-target-response-priorities-and-response-times" title="Service Target Response Priorities and Response Times" class="md-nav__link">
+    Service Target Response Priorities and Response Times
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation-contacts" title="Escalation Contacts" class="md-nav__link">
+    Escalation Contacts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-availability-and-outages" title="Service Availability and Outages" class="md-nav__link">
+    Service Availability and Outages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-support-hours" title="Service Support Hours" class="md-nav__link">
+    Service Support Hours
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-off-hours-support-procedures" title="Service Off-Hours Support Procedures" class="md-nav__link">
+    Service Off-Hours Support Procedures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requests-for-service-enhancement" title="Requests for Service Enhancement" class="md-nav__link">
+    Requests for Service Enhancement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customer-problem-reporting" title="Customer Problem Reporting" class="md-nav__link">
+    Customer Problem Reporting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsibilities" title="Responsibilities" class="md-nav__link">
+    Responsibilities
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customer-responsibilities" title="Customer Responsibilities" class="md-nav__link">
+    Customer Responsibilities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osg-operations-responsibilities" title="OSG Operations Responsibilities" class="md-nav__link">
+    OSG Operations Responsibilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-measuring-and-reporting" title="Service Measuring and Reporting" class="md-nav__link">
+    Service Measuring and Reporting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla-validity-period" title="SLA Validity Period" class="md-nav__link">
+    SLA Validity Period
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla-review-procedure" title="SLA Review Procedure" class="md-nav__link">
+    SLA Review Procedure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../voms/" title="VOMS" class="md-nav__link">
+      VOMS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xdlogin/" title="XDLogin" class="md-nav__link">
+      XDLogin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../external-oasis-repos/" title="External OASIS repositories" class="md-nav__link">
+      External OASIS repositories
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-control" title="Version Control" class="md-nav__link">
+    Version Control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" title="Executive Summary" class="md-nav__link">
+    Executive Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#owners" title="Owners" class="md-nav__link">
+    Owners
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-name-and-description" title="Service Name and Description" class="md-nav__link">
+    Service Name and Description
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" title="Name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description" title="Description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-considerations" title="Security Considerations" class="md-nav__link">
+    Security Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-target-response-priorities-and-response-times" title="Service Target Response Priorities and Response Times" class="md-nav__link">
+    Service Target Response Priorities and Response Times
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation-contacts" title="Escalation Contacts" class="md-nav__link">
+    Escalation Contacts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-availability-and-outages" title="Service Availability and Outages" class="md-nav__link">
+    Service Availability and Outages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-support-hours" title="Service Support Hours" class="md-nav__link">
+    Service Support Hours
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-off-hours-support-procedures" title="Service Off-Hours Support Procedures" class="md-nav__link">
+    Service Off-Hours Support Procedures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requests-for-service-enhancement" title="Requests for Service Enhancement" class="md-nav__link">
+    Requests for Service Enhancement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customer-problem-reporting" title="Customer Problem Reporting" class="md-nav__link">
+    Customer Problem Reporting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsibilities" title="Responsibilities" class="md-nav__link">
+    Responsibilities
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customer-responsibilities" title="Customer Responsibilities" class="md-nav__link">
+    Customer Responsibilities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osg-operations-responsibilities" title="OSG Operations Responsibilities" class="md-nav__link">
+    OSG Operations Responsibilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-measuring-and-reporting" title="Service Measuring and Reporting" class="md-nav__link">
+    Service Measuring and Reporting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla-validity-period" title="SLA Validity Period" class="md-nav__link">
+    SLA Validity Period
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla-review-procedure" title="SLA Review Procedure" class="md-nav__link">
+    SLA Review Procedure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
-                <h1 id="osg-information-management-service-level-agreement">OSG Information Management Service Level Agreement</h1>
-<h2 id="version-control">Version Control</h2>
+                
+                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/oim.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="osg-information-management-service-level-agreement">OSG Information Management Service Level Agreement<a class="headerlink" href="#osg-information-management-service-level-agreement" title="Permanent link">&para;</a></h1>
+<h2 id="version-control">Version Control<a class="headerlink" href="#version-control" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -452,19 +826,19 @@
 </tr>
 </tbody>
 </table>
-<h2 id="executive-summary">Executive Summary</h2>
+<h2 id="executive-summary">Executive Summary<a class="headerlink" href="#executive-summary" title="Permanent link">&para;</a></h2>
 <p>This SLA is an agreement between OSG Operations and the OSG Management and Stakeholders describing details of the OSG Information Management (OIM) registration and topology database and it's API. The OIM service runs on hardware at Indiana University and provides a resource topology database along with a registration API.</p>
-<h2 id="owners">Owners</h2>
+<h2 id="owners">Owners<a class="headerlink" href="#owners" title="Permanent link">&para;</a></h2>
 <p>This SLA is owned by OSG Operations and Indiana University and will be reviewed and agreed upon by the OSG Executive Team and OSG Stakeholders.</p>
-<h2 id="service-name-and-description">Service Name and Description</h2>
-<h3 id="name">Name</h3>
+<h2 id="service-name-and-description">Service Name and Description<a class="headerlink" href="#service-name-and-description" title="Permanent link">&para;</a></h2>
+<h3 id="name">Name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
 <p>Production OIM Service</p>
-<h3 id="description">Description</h3>
+<h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
 <p>The OIM service is the topology management system for the OSG. It holds information about people and resources involved in the OSG. The OIM service consists of a MySQL database and a web-based API.</p>
 <p>OIM is also used to satisfy certificate requests made by OSG users.</p>
-<h2 id="security-considerations">Security Considerations</h2>
+<h2 id="security-considerations">Security Considerations<a class="headerlink" href="#security-considerations" title="Permanent link">&para;</a></h2>
 <p>All information collected and distributed by the OIM is protected by OSG RA certificate authentication. While some information is deemed public, there is restricted access to personal information such as contact email and phone records.</p>
-<h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</h2>
+<h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times<a class="headerlink" href="#service-target-response-priorities-and-response-times" title="Permanent link">&para;</a></h2>
 <p>This section deals with unplanned outages. Please see <a href="#requests-for-service-enhancements">Requests for Service Enhancement</a> for information on planned maintenance outages.</p>
 <table>
 <thead>
@@ -538,7 +912,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="escalation-contacts">Escalation Contacts</h2>
+<h2 id="escalation-contacts">Escalation Contacts<a class="headerlink" href="#escalation-contacts" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -565,26 +939,26 @@
 </tr>
 </tbody>
 </table>
-<p>Detailed information on contacts are viewable on the following <a href="https://myosg.grid.iu.edu/rgsummary/index?datasource=summary&amp;summary_attrs_showhierarchy=on&amp;summary_attrs_showservice=on&amp;summary_attrs_showfqdn=on&amp;summary_attrs_showcontact=on&amp;gip_status_attrs_showtestresults=on&amp;gip_status_attrs_showfqdn=on&amp;account_type=cumulative_hours&amp;ce_account_type=gip_vo&amp;se_account_type=vo_transfer_volume&amp;start_type=7daysago&amp;start_date=09/15/2009&amp;end_type=now&amp;end_date=09/15/2009&amp;site_10047=on&amp;rg=on&amp;rg_246=on&amp;gridtype=on&amp;gridtype_1=on&amp;voown=on&amp;voown_25=on&amp;active=on&amp;active_value=1&amp;disable_value=1">MyOSG URL</a>, and are maintained within the</p>
+<p>Detailed information on contacts are viewable on the following <a href="https://my.opensciencegrid.org/rgsummary/xml?datasource=summary&amp;summary_attrs_showhierarchy=on&amp;summary_attrs_showservice=on&amp;summary_attrs_showfqdn=on&amp;summary_attrs_showcontact=on&amp;gip_status_attrs_showtestresults=on&amp;gip_status_attrs_showfqdn=on&amp;account_type=cumulative_hours&amp;ce_account_type=gip_vo&amp;se_account_type=vo_transfer_volume&amp;start_type=7daysago&amp;start_date=09/15/2009&amp;end_type=now&amp;end_date=09/15/2009&amp;site_10047=on&amp;rg=on&amp;rg_246=on&amp;gridtype=on&amp;gridtype_1=on&amp;voown=on&amp;voown_25=on&amp;active=on&amp;active_value=1&amp;disable_value=1">MyOSG URL</a>, and are maintained within the</p>
 <p>Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly <a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">Operations</a> and <a href="https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes">Production</a> meetings.</p>
-<h2 id="service-availability-and-outages">Service Availability and Outages</h2>
+<h2 id="service-availability-and-outages">Service Availability and Outages<a class="headerlink" href="#service-availability-and-outages" title="Permanent link">&para;</a></h2>
 <p>The GOC will strive for 97% service availability. If service availability falls below 97% monthly as monitored by the GOC on two consecutive months a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.</p>
-<h2 id="service-support-hours">Service Support Hours</h2>
+<h2 id="service-support-hours">Service Support Hours<a class="headerlink" href="#service-support-hours" title="Permanent link">&para;</a></h2>
 <p>The software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.</p>
-<h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures</h2>
+<h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures<a class="headerlink" href="#service-off-hours-support-procedures" title="Permanent link">&para;</a></h2>
 <p>All software issues should be reported to the GOC immediately by <a href="https://ticket.grid.iu.edu/goc/oim">trouble ticket</a> web submission.</p>
-<h2 id="requests-for-service-enhancement">Requests for Service Enhancement</h2>
+<h2 id="requests-for-service-enhancement">Requests for Service Enhancement<a class="headerlink" href="#requests-for-service-enhancement" title="Permanent link">&para;</a></h2>
 <p>This section deals with planned maintenance outages. Please see <a href="#service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</a> for information on unplanned outages.</p>
 <p>The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.</p>
-<h2 id="customer-problem-reporting">Customer Problem Reporting</h2>
+<h2 id="customer-problem-reporting">Customer Problem Reporting<a class="headerlink" href="#customer-problem-reporting" title="Permanent link">&para;</a></h2>
 <p>The GOC provides operators 24x7x365. OIM service problems should be reported immediately by one of the following mechanisms.</p>
 <ul>
 <li>Creating a problem ticket at https://ticket.grid.iu.edu/goc/oim (<em>preferred</em>)</li>
 <li>Calling the GOC phone at 317-278-9699</li>
 <li>Emailing a description to goc@opensciencegrid.org</li>
 </ul>
-<h2 id="responsibilities">Responsibilities</h2>
-<h3 id="customer-responsibilities">Customer Responsibilities</h3>
+<h2 id="responsibilities">Responsibilities<a class="headerlink" href="#responsibilities" title="Permanent link">&para;</a></h2>
+<h3 id="customer-responsibilities">Customer Responsibilities<a class="headerlink" href="#customer-responsibilities" title="Permanent link">&para;</a></h3>
 <p>OIM customers agree to:</p>
 <ul>
 <li>Use the OIM service for purposes of VO or OSG approved work only.</li>
@@ -594,7 +968,7 @@
 <li>Provide testing for the OSG OIM service within the time frame defined in the <a href="#requests-for-service-enhancements">Requests for Service Enhancements</a> section.</li>
 <li>Alert the GOC when problems are encountered during testing.</li>
 </ul>
-<h3 id="osg-operations-responsibilities">OSG Operations Responsibilities</h3>
+<h3 id="osg-operations-responsibilities">OSG Operations Responsibilities<a class="headerlink" href="#osg-operations-responsibilities" title="Permanent link">&para;</a></h3>
 <p>General responsibilities:
    * Create and add appropriate documentation to the OSG TWiki for appropriate use of the OIM.
    * Meet response times associated with the priority assigned to Customer issues.
@@ -608,7 +982,7 @@ Proposed Change:
 <p>Database &amp; Application Services responsibilities:
    * Announce and negotiate maintenance with stakeholders to assure minimal interruption to normal workload.
    * Alert the community of scheduled maintenance periods at least five (5) business days prior to the start of a service affecting maintenance window.</p>
-<h2 id="service-measuring-and-reporting">Service Measuring and Reporting</h2>
+<h2 id="service-measuring-and-reporting">Service Measuring and Reporting<a class="headerlink" href="#service-measuring-and-reporting" title="Permanent link">&para;</a></h2>
 <p>The GOC will provide the customer with the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):</p>
 <table>
 <thead>
@@ -641,22 +1015,22 @@ Proposed Change:
 </tbody>
 </table>
 <p>These reports will be posted in Appendix E of this document.</p>
-<h2 id="sla-validity-period">SLA Validity Period</h2>
+<h2 id="sla-validity-period">SLA Validity Period<a class="headerlink" href="#sla-validity-period" title="Permanent link">&para;</a></h2>
 <p>This SLA will be in affect for one year.</p>
-<h2 id="sla-review-procedure">SLA Review Procedure</h2>
+<h2 id="sla-review-procedure">SLA Review Procedure<a class="headerlink" href="#sla-review-procedure" title="Permanent link">&para;</a></h2>
 <p>This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.</p>
-<h2 id="references">References</h2>
-<h1 id="appendix-a-customer-information">Appendix A - Customer Information</h1>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h1 id="appendix-a-customer-information">Appendix A - Customer Information<a class="headerlink" href="#appendix-a-customer-information" title="Permanent link">&para;</a></h1>
 <p>All OIM service end-users who are members of an OSG VO and OSG Staff are considered customers.</p>
-<h1 id="appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies</h1>
+<h1 id="appendix-b-other-service-dependencies">Appendix B - Other Service Dependencies<a class="headerlink" href="#appendix-b-other-service-dependencies" title="Permanent link">&para;</a></h1>
 <p>The OIM service is dependent on the following services to collect and distribute information:
    * Local Network, Hardware, OS, Apache, and MySQL</p>
-<h1 id="appendix-c-supported-hardware-and-software">Appendix C - Supported Hardware and Software</h1>
-<h2 id="supported-hardware">Supported Hardware</h2>
+<h1 id="appendix-c-supported-hardware-and-software">Appendix C - Supported Hardware and Software<a class="headerlink" href="#appendix-c-supported-hardware-and-software" title="Permanent link">&para;</a></h1>
+<h2 id="supported-hardware">Supported Hardware<a class="headerlink" href="#supported-hardware" title="Permanent link">&para;</a></h2>
 <p>The following hardware is supported:
    * Physical devices used to provide the service.
    * Physical devices used to provide the environment used to house the service.</p>
-<h2 id="hardware-services">Hardware Services</h2>
+<h2 id="hardware-services">Hardware Services<a class="headerlink" href="#hardware-services" title="Permanent link">&para;</a></h2>
 <p>The following hardware services are provided:
    * Recommendations. OSG Operations will be responsible for specifying and recommending for purchase or lease hardware meeting customers' needs.
    * Installation. OSG Operations will install, configure and customize system hardware and operating systems.
@@ -668,11 +1042,11 @@ Proposed Change:
 <ul>
 <li>Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.</li>
 </ul>
-<h2 id="software-services">Software Services</h2>
+<h2 id="software-services">Software Services<a class="headerlink" href="#software-services" title="Permanent link">&para;</a></h2>
 <p>Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the <a href="#osg-operations-responsibilities">OSG Operations Responsibilities</a> section of this document.</p>
-<h2 id="software-costs">Software Costs</h2>
+<h2 id="software-costs">Software Costs<a class="headerlink" href="#software-costs" title="Permanent link">&para;</a></h2>
 <p>IU and the Grid Operations Center bears all costs for new and replacement software.</p>
-<h1 id="appendix-d-approval">Appendix D - Approval</h1>
+<h1 id="appendix-d-approval">Appendix D - Approval<a class="headerlink" href="#appendix-d-approval" title="Permanent link">&para;</a></h1>
 <table>
 <thead>
 <tr>
@@ -689,59 +1063,90 @@ Proposed Change:
 </tr>
 </tbody>
 </table>
-<h1 id="appendix-e-metric-reports">Appendix E - Metric Reports</h1>
+<h1 id="appendix-e-metric-reports">Appendix E - Metric Reports<a class="headerlink" href="#appendix-e-metric-reports" title="Permanent link">&para;</a></h1>
 <ul>
 <li>[[ServiceLevelAgreements#Supporting_Documents][Recent availability statistics]]</li>
 </ul>
+                
+                  
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../voms/" class="btn btn-neutral float-right" title="VOMS">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../oasis-replica/" class="btn btn-neutral" title="OASIS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../oasis-replica/" title="OASIS Replica" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                OASIS Replica
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../voms/" title="VOMS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                VOMS
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
   </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
       
-          <a href="https://github.com/opensciencegrid/operations/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      <script>app.initialize({version:"0.17.1",url:{base:"../.."}})</script>
       
+    
+    
       
-        <span><a href="../oasis-replica/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-69012-29","opensciencegrid.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
-      
-        <span style="margin-left: 15px"><a href="../voms/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-      <script src="../../search/require.js"></script>
-      <script src="../../search/search.js"></script>
-
-</body>
+    
+  </body>
 </html>
