@@ -32,9 +32,10 @@ Before starting the installation process, consider the following points (consult
    - Root access
 
 The GlideinWMS Factory has the following requirements:
-   -   **CPU**: 4-8 cores for a large installation (1 should suffice on a small install)
-   -   **RAM**: 4-8GB on a large installation (1GB should suffice for small installs)
-   -   **Disk**:  10GB will be plenty sufficient for all the binaries, config and log files related to GlideinWMS.  If you are a large site with need to keep significant history and logs, you may want to allocate 100GB+ to store long histories.
+
+-   **CPU**: 4-8 cores for a large installation (1 should suffice on a small install)
+-   **RAM**: 4-8GB on a large installation (1GB should suffice for small installs)
+-   **Disk**:  10GB will be plenty sufficient for all the binaries, config and log files related to GlideinWMS.  If you are a large site with need to keep significant history and logs, you may want to allocate 100GB+ to store long histories.
 
 #### Users
 
@@ -47,8 +48,9 @@ The GlideinWMS Factory installation will create the following users unless they 
 
 To verify that the user *gfactory* has *gfactory* as primary group check the output of 
 
-        :::console
-        root@host # getent passwd gfactory | cut -d: -f4 | xargs getent group
+``` console
+root@host # getent passwd gfactory | cut -d: -f4 | xargs getent group
+```
 
 It should be the `gfactory` group. 
 
@@ -88,13 +90,15 @@ As with all OSG software installations, there are some one-time (per host) steps
 Most required software is installed from the Factory RPM installation. HTCondor is the only exception since there are [many different ways to install it](https://research.cs.wisc.edu/htcondor/downloads/), using the RPM system or not. 
 You need to have HTCondor installed before installing the GlideinWMS Factory. If yum cannot find a HTCondor RPM, it will install the dummy **empty-condor** RPM, assuming that you installed HTCondor using a tarball distribution.
 
-If you don't have HTCondor already installed, you can install the HTCondor RPM from the OSG repository:
+1. If you don't have HTCondor already installed, you can install the HTCondor RPM from the OSG repository:
 
-``` console
-root@host # yum install condor.x86_64
-```
-!!! warning
-    HTCondor does not to support switchboard functionality anymore and it's removed from version 8.7.2. Thus, if condor version installed is >= 8.7.2, it will be needed to install glideinwms-switchboard package in addition.
+        :::console
+        root@host # yum install condor.x86_64
+
+1. If you have installed HTCondor version > 8.7.2, you must install the `glideinwms-switchboard`:
+
+        :::console
+        root@host # yum install glideinwms-switchboard --enablerepo=osg-upcoming
  
 See [this HTCondor document](htcondor.org) for more information on the different options.
 
@@ -116,14 +120,15 @@ Install the RPM and dependencies (be prepared for a lot of dependencies).
 
 ``` console
 root@host # yum install glideinwms-factory
-```   
+```
 
 This will install the current production release verified and tested by OSG with default HTCondor configuration.
 This command will install the GlideinWMS Factory, HTCondor, the OSG client, and all the required dependencies.
 
 If you wish to install a different version of GlideinWMS, add the "--enablerepo" argument to the command as follows:
 
--   `yum install --enablerepo=osg-testing glideinwms-factory`: The most recent production release, still in testing phase.  This will usually match the current tarball version on the !GlideinWMS home page.  (The osg-release production version may lag behind the tarball release by a few weeks as it is verified and packaged by OSG).  Note that this will also take the osg-testing versions of all dependencies as well.
+-   `yum install --enablerepo=osg-testing glideinwms-factory`: The most recent production release, still in testing phase.  This will usually match the current tarball version on the [GlideinWMS home page](http://glideinwms.fnal.gov/doc.prd/index.html).
+    (The osg-release production version may lag behind the tarball release by a few weeks as it is verified and packaged by OSG).  Note that this will also take the osg-testing versions of all dependencies as well.
 -   `yum install --enablerepo=osg-upcoming glideinwms-factory`:  The most recent development series release, ie version 3.3.x release.  This has newer features such as cloud submission support, but is less tested.
 
 #### Download HTCondor tarballs
