@@ -1,8 +1,13 @@
 site_name: OSG Operations
-site_url: https://opensciencegrid.github.io/operations/
+site_url: https://www.opensciencegrid.org/operations/
 repo_url: https://github.com/opensciencegrid/operations/
+google_analytics: ['UA-69012-29', 'opensciencegrid.github.io']
 theme: 
-  name: readthedocs
+  name: material
+  favicon: 'img/favicon.ico'
+
+extra_css:
+  - css/extra.css
 
 pages:
 - Home: 'index.md'
@@ -75,5 +80,7 @@ pages:
 
 markdown_extensions:
   - admonition
+  - codehilite
+  - toc(permalink=true)
   - osg_markdown.colors
 
