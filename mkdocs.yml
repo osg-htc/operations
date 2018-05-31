@@ -7,6 +7,8 @@ theme:
 pages:
 - Home: 'index.md'
 - OSG Operations Mission: 'mission.md'
+- Services:
+  - Installing GlideinWMS Factory: 'services/install-gwms-factory.md'
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
