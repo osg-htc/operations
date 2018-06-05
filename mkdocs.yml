@@ -17,10 +17,8 @@ pages:
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
-  - OASIS (Draft): 'SLA/oasis.md'
   - OASIS Replica: 'SLA/oasis-replica.md'
   - 'OIM': 'SLA/oim.md'
-  - 'VOMS': 'SLA/voms.md'
   - 'XDLogin': 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
 
