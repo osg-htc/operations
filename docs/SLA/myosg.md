@@ -54,7 +54,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 | 4th | OSG Technical Director and Executive Director |
 
 Detailed information on contacts are viewable on the following [MyOSG URL](https://my.opensciencegrid.org/rgsummary/xml?datasource=summary&summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&gip_status_attrs_showfqdn=on&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&start_type=7daysago&start_date=09/15/2009&end_type=now&end_date=09/15/2009&site_10047=on&rg=on&rg_246=on&gridtype=on&gridtype_1=on&voown=on&voown_25=on&active=on&active_value=1&disable_value=1), and are maintained within
-the [OSG Information Management](https://oim.grid.iu.edu) system (for editing purposes only).
+the [OSG Information Management](https://github.com/opensciencegrid/topology/#topology) system (for editing purposes only).
 
 Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and [Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
 
@@ -67,7 +67,7 @@ A maximum of two non-scheduled outages will be accepted by OSG during each six m
 The MyOSG service is supported 24x7 by the GOC and Indiana University. Critical and High level issues will result in response within (1) hour. All other issues will be investigated by the next business day.
 
 ## Service Off-Hours Support Procedures
-All MyOSG issues should be reported to the GOC immediately by [trouble ticket](http://ticket.grid.iu.edu) web submission. If the problem is deemed critical, a GOC staff member will be alerted immediately.
+All MyOSG issues should be reported to the OSG immediately by [trouble ticket](https://support.opensciencegrid.org) web submission. If the problem is deemed critical, a GOC staff member will be alerted immediately.
 
 ## Requests for Service Enhancement
 
@@ -76,11 +76,7 @@ This section deals with planned maintenance outages. Please see [Service Target 
 The OSG Operations will respond to customer requests for service enhancements based on GOC determination of the necessity and desirability of the enhancement. No alteration or deletions will be brought to the production MyOSG without a minimum of ten (10) business days of testing. New human-interface features or new machine readable interfaces may be brought to production with five (5) business days of testing from the feature requester. The GOC reserves the right to enhance the physical environment of the service based on IU and GOC needs. No enhancement will occur without advanced notice to the OSG community.
 
 ## Customer Problem Reporting
-The GOC provides operators 24x7x365. MyOSG problems should be reported immediately by one of the following mechanisms.
-
-   * Creating a problem ticket at https://ticket.grid.iu.edu/goc (*preferred*)
-   * Calling the GOC phone at 317-278-9699
-   * Emailing a description to goc@opensciencegrid.org
+MyOSG problems should be reported immediately by creating a problem ticket at <https://support.opensciencegrid.org>
 
 ## Responsibilities
 ### Customer Responsibilities

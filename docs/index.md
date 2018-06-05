@@ -9,7 +9,7 @@ Welcome to OSG Operations
 
 # Registration (Contact, Resource, VO, or Project)
 
-[Register with OSG](https://oim.grid.iu.edu/oim/home)
+[Register with OSG](https://github.com/opensciencegrid/topology/#topology)
 
 # Archived Meeting Minutes
 

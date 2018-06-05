@@ -66,7 +66,7 @@ The GOC will strive for 97% service availability. If service availability falls 
 The software service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.
 
 ## Service Off-Hours Support Procedures
-All software issues should be reported to the GOC immediately by [trouble ticket](https://ticket.grid.iu.edu/goc/oim) web submission.
+All software issues should be reported to the OSG immediately by [trouble ticket](https://support.opensciencegrid.org) web submission.
 
 ## Requests for Service Enhancement
 

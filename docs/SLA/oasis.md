@@ -65,7 +65,7 @@ The GOC will strive for 97% service availability. If service availability falls 
 The service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.
 
 ## Service Off-Hours Support Procedures
-Users should contact the GOC via the [GOC trouble ticket](https://ticket.grid.iu.edu/goc/submit) system.
+Users should contact the OSG <https://support.opensciencegrid.org>.
 
 ## Requests for Service Enhancements
 

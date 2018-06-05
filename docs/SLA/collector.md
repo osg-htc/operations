@@ -82,12 +82,7 @@ OSG Operations will schedule downtimes and configuration changes during normal b
 
 
 ## Customer Problem Reporting
-The GOC provides operators 24x7x365. Problems should be reported immediately by one of the following mechanisms.
-
-   * Creating a problem ticket at https://ticket.grid.iu.edu/goc/open (*preferred*)
-   * Calling the GOC phone at 317-278-9699
-   * Emailing a description to goc@opensciencegrid.org
-
+Problems should be reported immediately at <https://support.opensciencegrid.org>
 
 ## Responsibilities
 
