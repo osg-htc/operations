@@ -42,12 +42,6 @@
     </url>
         
     <url>
-     <loc>https://www.opensciencegrid.org/operations//SLA/oasis/</loc>
-     <lastmod>2018-06-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>https://www.opensciencegrid.org/operations//SLA/oasis-replica/</loc>
      <lastmod>2018-06-05</lastmod>
      <changefreq>daily</changefreq>
@@ -55,12 +49,6 @@
         
     <url>
      <loc>https://www.opensciencegrid.org/operations//SLA/oim/</loc>
-     <lastmod>2018-06-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://www.opensciencegrid.org/operations//SLA/voms/</loc>
      <lastmod>2018-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
