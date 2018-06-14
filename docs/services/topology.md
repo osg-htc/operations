@@ -2,6 +2,7 @@ Topology Service
 ================
 
 This document contains information about the service that runs <https://topology.opensciencegrid.org> and <https://topology-itb.opensciencegrid.org>.
+(These sites are also accessible as <https://my.osg.org> and <https://my-itb.osg.org>.)
 
 The source code for the service is in <https://github.com/opensciencegrid/topology>, in the `src/` subdirectory.
 This repository also contains the public part of the data that gets served.
