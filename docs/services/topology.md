@@ -42,10 +42,6 @@ The following steps should be done as root.
         # . ./venv/bin/activate
         # pip install -r requirements.txt
 
-1.  Configure httpd, mod_wsgi, and mod_gridsite.  The .so file for mod_wsgi is located in `/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/`.
-
-1.  Ensure all the files listed in the section below exist and have the proper permissions.
-
 
 ### File system locations
 
@@ -73,7 +69,11 @@ use `ssh-keyscan bitbucket.org` to get the appropriate entry.
 Configuration is in `/etc/opt/topology/config-production.py` and `config-itb.py`.
 The files are in Python format and override default settings in `src/webapp/default_config.py` in the topology repo.
 
-HTTPD configuration is in `/etc/httpd` -- **TODO Derek can you write something here?**
+HTTPD configuration is in `/etc/httpd`; we use the modules `mod_ssl`, `mod_gridsite`, and `mod_wsgi`.
+The first two are installed via yum;
+the .so file for mod_wsgi is located in `/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/`.
+
+**TODO Derek can you write something here?**
 
 
 Testing changes on the ITB instance
