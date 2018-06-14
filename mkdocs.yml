@@ -14,6 +14,7 @@ pages:
 - OSG Operations Mission: 'mission.md'
 - Services:
   - Installing GlideinWMS Factory: 'services/install-gwms-factory.md'
+  - Topology Service: 'services/topology.md'
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
