@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.9.2">
     
     
       
@@ -42,7 +42,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
       
       
     
@@ -349,6 +349,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#data-configuration" title="Data configuration" class="md-nav__link">
+    Data configuration
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -567,6 +574,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#data-configuration" title="Data configuration" class="md-nav__link">
+    Data configuration
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -755,30 +769,122 @@ The files are in Python format and override default settings in <code>src/webapp
 The first two are installed via yum;
 the .so file for mod_wsgi is located in <code>/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/</code>.</p>
 <p><strong>TODO Derek can you write something here?</strong></p>
+<h3 id="data-configuration">Data configuration<a class="headerlink" href="#data-configuration" title="Permanent link">&para;</a></h3>
+<p>Configuration is in <code>/etc/opt/topology/config-production.py</code> and <code>config-itb.py</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TOPOLOGY_DATA_DIR</code></td>
+<td>The directory containing a clone of the <code>topology</code> repository for data use</td>
+</tr>
+<tr>
+<td><code>TOPOLOGY_DATA_REPO</code></td>
+<td>The remote tracking repository of <code>TOPOLOGY_DATA_DIR</code></td>
+</tr>
+<tr>
+<td><code>TOPOLOGY_DATA_BRANCH</code></td>
+<td>The remote tracking branch of <code>TOPOLOGY_DATA_DIR</code></td>
+</tr>
+<tr>
+<td><code>CONTACT_DATA_DIR</code></td>
+<td>The directory containing a clone of the <code>contact</code> repository for data use</td>
+</tr>
+<tr>
+<td><code>CONTACT_DATA_REPO</code></td>
+<td>The remote tracking repository of <code>CONTACT_DATA_DIR</code></br>(default: <code>"git@bitbucket.org:opensciencegrid/contact.git"</code>)</td>
+</tr>
+<tr>
+<td><code>CONTACT_DATA_BRANCH</code></td>
+<td>The remote tracking branch of <code>CONTACT_DATA_BRANCH</code></br>(default: <code>"master"</code>)</td>
+</tr>
+<tr>
+<td><code>CACHE_LIFETIME</code></td>
+<td>Frequency of automatic data updates in seconds</br>(default: <code>900</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>Puppet ensures that the production <code>contact</code> and <code>topology</code> clones are up to date with their configured remote tracking
+repo and branch.
+Puppet does not manage the ITB data directories so they need to be updated by hand during testing.</p>
 <h2 id="testing-changes-on-the-itb-instance">Testing changes on the ITB instance<a class="headerlink" href="#testing-changes-on-the-itb-instance" title="Permanent link">&para;</a></h2>
 <p>All changes should be tested on the ITB instance before deploying to production.
 If you can, test them on your local machine first.
 These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
-<p>Update the Git clone at <code>/opt/topology-itb</code>:</p>
+<p>Update the ITB software installation at <code>/opt/topology-itb</code> and note the current branch:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology-itb
 <span class="gp">#</span> git fetch --all
+<span class="gp">#</span> git status
 </pre></div>
 
 
 </li>
 <li>
-<p>Check out the branch you are testing from:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH&gt;
+<p>Check out the branch you are testing.
+    If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a>:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
 </pre></div>
 
 
 </li>
 <li>
-<p>If the data format has changed in an incompatible way, edit <code>/etc/opt/topology/config-itb.py</code>
-    and change <code>TOPOLOGY_DATA_DIR</code> and <code>CONTACT_DATA_DIR</code> to point to a new directory so the previous data
-    does not get overwritten with incompatible data.</p>
+<p>Verify that you are using the intended data associated with the code you are testing:</p>
+<ol>
+<li>
+<p>If the data format has changed in an incompatible way, modify <code>/etc/opt/topology/config-itb.py</code>:</p>
+<ol>
+<li>
+<p>Backup the ITB configuration file:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /etc/opt/topology
+<span class="gp">#</span> cp config-itb.py<span class="o">{</span>,.bak<span class="o">}</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Change the <code>TOPOLOGY_DATA_DIR</code> and/or <code>CONTACT_DATA_DIR</code> lines to point to a new directories so the previous
+   data does not get overwritten with incompatible data.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>If you need to use a different branch for the data, switch to it:</p>
+<ol>
+<li>
+<p>Check the branch of <code>TOPOLOGY_DATA_DIR</code> from  <code>/etc/opt/topology/config-itb.py</code></p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> &lt;TOPOLOGY_DATA_DIR&gt;
+<span class="gp">#</span> git fetch --all
+<span class="gp">#</span> git status
+</pre></div>
+
+
+</li>
+<li>
+<p>Note the previous branch, you will need this later</p>
+</li>
+<li>If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a></li>
+<li>Check out the target branch:<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH NAME&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
+</pre></div>
+
+
+</li>
+</ol>
+</li>
+<li>
+<p>Pull any upstream changes to ensure that your branch is up to date:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> git pull
+</pre></div>
+
+
+</li>
+</ol>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
@@ -803,7 +909,10 @@ These instructions assume that the code has not been merged to master.</p>
 
 </li>
 <li>
-<p>If you made config changes to <code>/etc/opt/topology/config-itb.py</code>, revert them.</p>
+<p>If you made config changes to <code>/etc/opt/topology/config-itb.py</code>, restore the backup.</p>
+</li>
+<li>
+<p>If you checked out a different branch for data, revert it back to the old branch.</p>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
