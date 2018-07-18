@@ -75,6 +75,23 @@ the .so file for mod_wsgi is located in `/opt/topology/venv/lib/python3.6/site-p
 
 **TODO Derek can you write something here?**
 
+### Data configuration
+
+Configuration is in `/etc/opt/topology/config-production.py` and `config-itb.py`.
+
+| Variable               | Purpose                                                                                                               |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `TOPOLOGY_DATA_DIR`    | The directory containing a clone of the `topology` repository for data use                                            |
+| `TOPOLOGY_DATA_REPO`   | The remote tracking repository of `TOPOLOGY_DATA_DIR`                                                                 |
+| `TOPOLOGY_DATA_BRANCH` | The remote tracking branch of `TOPOLOGY_DATA_DIR`                                                                     |
+| `CONTACT_DATA_DIR`     | The directory containing a clone of the `contact` repository for data use                                             |
+| `CONTACT_DATA_REPO`    | The remote tracking repository of `CONTACT_DATA_DIR`</br>(default: `"git@bitbucket.org:opensciencegrid/contact.git"`) |
+| `CONTACT_DATA_BRANCH`  | The remote tracking branch of `CONTACT_DATA_BRANCH`</br>(default: `"master"`)                                         |
+| `CACHE_LIFETIME`       | Frequency of automatic data updates in seconds</br>(default: `900`)                                                   |
+
+Puppet ensures that the production `contact` and `topology` clones are up to date with their configured remote tracking
+repo and branch.
+Puppet does not manage the ITB data directories so they need to be updated by hand during testing.
 
 Testing changes on the ITB instance
 -----------------------------------
@@ -83,20 +100,52 @@ All changes should be tested on the ITB instance before deploying to production.
 If you can, test them on your local machine first.
 These instructions assume that the code has not been merged to master.
 
-1.  Update the Git clone at `/opt/topology-itb`:
+1.  Update the ITB software installation at `/opt/topology-itb` and note the current branch:
 
         :::console
         # cd /opt/topology-itb
         # git fetch --all
+        # git status
 
-1.  Check out the branch you are testing from:
+1.  Check out the branch you are testing.
+    If the target remote is not configured, [add it](https://help.github.com/articles/adding-a-remote/):
 
         :::console
-        # git checkout -b <BRANCH>
+        # git checkout -b <BRANCH> <REMOTE>/<BRANCH NAME>
 
-1.  If the data format has changed in an incompatible way, edit `/etc/opt/topology/config-itb.py`
-    and change `TOPOLOGY_DATA_DIR` and `CONTACT_DATA_DIR` to point to a new directory so the previous data
-    does not get overwritten with incompatible data.
+1.  Verify that you are using the intended data associated with the code you are testing:
+
+    1. If the data format has changed in an incompatible way, modify `/etc/opt/topology/config-itb.py`:
+
+        1. Backup the ITB configuration file:
+
+                :::console
+                # cd /etc/opt/topology
+                # cp config-itb.py{,.bak}
+
+        1. Change the `TOPOLOGY_DATA_DIR` and/or `CONTACT_DATA_DIR` lines to point to a new directories so the previous
+           data does not get overwritten with incompatible data.
+
+    1. If you need to use a different branch for the data, switch to it:
+
+        1. Check the branch of `TOPOLOGY_DATA_DIR` from  `/etc/opt/topology/config-itb.py`
+
+                :::console
+                # cd <TOPOLOGY_DATA_DIR>
+                # git fetch --all
+                # git status
+
+        1. Note the previous branch, you will need this later
+        1. If the target remote is not configured, [add it](https://help.github.com/articles/adding-a-remote/)
+        1. Check out the target branch:
+
+                :::console
+                # git checkout -b <BRANCH NAME> <REMOTE>/<BRANCH NAME>
+
+    1. Pull any upstream changes to ensure that your branch is up to date:
+
+            :::console
+            # git pull
 
 1.  Restart `httpd`:
 
@@ -116,7 +165,9 @@ These instructions assume that the code has not been merged to master.
         # cd /opt/topology-itb
         # git checkout <BRANCH>
 
-1.  If you made config changes to `/etc/opt/topology/config-itb.py`, revert them.
+1.  If you made config changes to `/etc/opt/topology/config-itb.py`, restore the backup.
+
+1.  If you checked out a different branch for data, revert it back to the old branch.
 
 1.  Restart `httpd`:
 
