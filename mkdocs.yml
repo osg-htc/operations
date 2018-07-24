@@ -12,7 +12,6 @@ extra_css:
 
 pages:
 - Home: 'index.md'
-- OSG Operations Mission: 'mission.md'
 - Services:
   - Installing GlideinWMS Factory: 'services/install-gwms-factory.md'
   - Topology Service: 'services/topology.md'

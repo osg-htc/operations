@@ -1,16 +1,35 @@
-# OSG Operations
+OSG Operations
+==============
 
-Welcome to OSG Operations
+Welcome to the home page of the OSG Operations Team documentation area!
 
-# Contact Information
+Mission
+-------
 
-   * [Open a Ticket](https://support.opensciencegrid.org)
-   * Email: <mailto:help@opensciencegrid.org>
+The mission of OSG Operations is to maintain and improve distributed high throughput computing services to support
+research communities.
 
-# Registration (Contact, Resource, VO, or Project)
+This is accomplished by:
 
-[Register with OSG](https://github.com/opensciencegrid/topology/#topology)
+* Operating and maintaining our services in a user-oriented, robust, and reliable manner.
+* Developing a professional and skilled staff dedicated to a service philosophy.
+* Managing resources responsibly, efficiently, and with accountability.
+* Evaluating and continually improving the actions, methods and processes that allow the OSG to operate.
 
-# Archived Meeting Minutes
+Contact Us
+----------
+
+* [Open a Ticket](https://support.opensciencegrid.org)
+* [Slack channel](https://opensciencegrid.slack.com/messages/osg-ops) - if you can't create an account, send an e-mail
+  to <mailto:help@opensciencegrid.org>
+* Email: <mailto:help@opensciencegrid.org>
+
+Registration (Contact, Resource, VO, or Project)
+------------------------------------------------
+
+[Register with OSG](https://opensciencegrid.org/docs/common/registration/)
+
+Archived Meeting Minutes
+------------------------
 
 For archived meeting minutes, see the [GitHub repository](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes)
