@@ -2,18 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OSG Operations\n\n\nWelcome to OSG Operations\n\n\nContact Information\n\n\n\n\nOpen a Ticket\n\n\nEmail: \n\n\n\n\nRegistration (Contact, Resource, VO, or Project)\n\n\nRegister with OSG\n\n\nArchived Meeting Minutes\n\n\nFor archived meeting minutes, see the \nGitHub repository", 
+            "text": "OSG Operations\n\n\nWelcome to the home page of the OSG Operations Team documentation area!\n\n\nMission\n\n\nThe mission of OSG Operations is to maintain and improve distributed high throughput computing services to support\nresearch communities.\n\n\nThis is accomplished by:\n\n\n\n\nOperating and maintaining our services in a user-oriented, robust, and reliable manner.\n\n\nDeveloping a professional and skilled staff dedicated to a service philosophy.\n\n\nManaging resources responsibly, efficiently, and with accountability.\n\n\nEvaluating and continually improving the actions, methods and processes that allow the OSG to operate.\n\n\n\n\nContact Us\n\n\n\n\nOpen a Ticket\n\n\nSlack channel\n - if you can't create an account, send an e-mail\n  to \n\n\nEmail: \n\n\n\n\nRegistration (Contact, Resource, VO, or Project)\n\n\nRegister with OSG\n\n\nArchived Meeting Minutes\n\n\nFor archived meeting minutes, see the \nGitHub repository", 
             "title": "Home"
         }, 
         {
             "location": "/#osg-operations", 
-            "text": "Welcome to OSG Operations", 
+            "text": "Welcome to the home page of the OSG Operations Team documentation area!", 
             "title": "OSG Operations"
         }, 
         {
-            "location": "/#contact-information", 
-            "text": "Open a Ticket  Email:", 
-            "title": "Contact Information"
+            "location": "/#mission", 
+            "text": "The mission of OSG Operations is to maintain and improve distributed high throughput computing services to support\nresearch communities.  This is accomplished by:   Operating and maintaining our services in a user-oriented, robust, and reliable manner.  Developing a professional and skilled staff dedicated to a service philosophy.  Managing resources responsibly, efficiently, and with accountability.  Evaluating and continually improving the actions, methods and processes that allow the OSG to operate.", 
+            "title": "Mission"
+        }, 
+        {
+            "location": "/#contact-us", 
+            "text": "Open a Ticket  Slack channel  - if you can't create an account, send an e-mail\n  to   Email:", 
+            "title": "Contact Us"
         }, 
         {
             "location": "/#registration-contact-resource-vo-or-project", 
@@ -24,16 +29,6 @@
             "location": "/#archived-meeting-minutes", 
             "text": "For archived meeting minutes, see the  GitHub repository", 
             "title": "Archived Meeting Minutes"
-        }, 
-        {
-            "location": "/mission/", 
-            "text": "OSG Operations Mission\n\n\nThe mission of OSG Operations is to maintain and improve distributed high throughput computing services to support research communities.\n\n\nThis is accomplished by:\n\n\n\n\nOperating and maintaining our services in a user-oriented, robust, and reliable manner.\n\n\nDeveloping a professional and skilled staff dedicated to a service philosophy.\n\n\nManaging resources responsibly, efficiently, and with accountability.\n\n\nEvaluating and continually improving the actions, methods and processes that allow the OSG to operate.", 
-            "title": "OSG Operations Mission"
-        }, 
-        {
-            "location": "/mission/#osg-operations-mission", 
-            "text": "The mission of OSG Operations is to maintain and improve distributed high throughput computing services to support research communities.  This is accomplished by:   Operating and maintaining our services in a user-oriented, robust, and reliable manner.  Developing a professional and skilled staff dedicated to a service philosophy.  Managing resources responsibly, efficiently, and with accountability.  Evaluating and continually improving the actions, methods and processes that allow the OSG to operate.", 
-            "title": "OSG Operations Mission"
         }, 
         {
             "location": "/services/install-gwms-factory/", 
