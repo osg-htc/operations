@@ -20,6 +20,7 @@ Certain things to check are:
 
 -   Do contact names and IDs match what's in the contacts data?
     (See below for instructions on how to get that information.)
+    If the person is not in the contacts data, you will need to add them before approving the PR.
 
 -   Is the PR submitter authorized to make changes to that project/VO/resource?
     Can you match them to a person affiliated with that project/VO/site?
@@ -56,13 +57,29 @@ This means that any pushes go directly to the main repo instead of your own fork
     Have someone else review and merge your pull request.
 
 All contact data is stored in `contacts.yaml`.
+The contact info is keyed by a 40-character hexadecimal ID which was generated from their email address when they were first added.
+An example entry is:
+```yaml
+25357f62c7ab2ae11ddda1efd272bb5435dbfacb:
+# ^ this is their ID
+  FullName: Example A. User
+  Profile: This is an example user.
+  GitHub: ExampleUser
+  # ContactInformation data requires authorization to view
+  ContactInformation:
+    DNs:
+    - ...
+    IM: ...
+    PrimaryEmail: user@example.net
+    PrimaryPhone: ...
+```
 
 When making changes to the contact data, first see if a contact is already in the YAML file.
 Search the YAML file for their name.
 Be sure to try variations of their name if you don't find them --
 someone may be listed as "Dave" or "David", or have a middle name or middle initial.
 
-Follow the instructions below for adding or updating a user, as appropriate.
+Follow the instructions below for adding or updating a contact, as appropriate.
 
 
 #### Adding a new contact
@@ -72,17 +89,18 @@ To get the hash used as the ID, run `email-hash` on their email address.
 For example:
 
 ```command
-$ bin/email-hash matyas@cs.wisc.edu
-ec1013224934d6a11a2a46a5234b3337095f5ec4
+$ bin/email-hash user@example.net
+25357f62c7ab2ae11ddda1efd272bb5435dbfacb
 ```
 Then your new entry will look like
 ```yaml
-ec1013224934d6a11a2a46a5234b3337095f5ec4:
-    FullName: Matyas Selmeci
+25357f62c7ab2ae11ddda1efd272bb5435dbfacb:
+    FullName: Example A. User
     ....
 ```
 
-The `PrimaryEmail` field in the `ContactInformation` section should match the hash that you used for the ID.
+The `FullName` field and the `PrimaryEmail` field in the `ContactInformation` section are required.
+`PrimaryEmail` field in the `ContactInformation` section should match the hash that you used for the ID.
 
 
 #### Editing a contact
