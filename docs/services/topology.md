@@ -12,8 +12,8 @@ Deployment
 ----------
 
 Topology is a webapp run with Apache on the host `topology.opensciencegrid.org`.
-The same daemon runs both the production and the ITB instances.
-The host is a VM at Nebraska;
+The ITB instance runs on the host `topology-itb.opensciencegrid.org`.
+The hosts are VMs at Nebraska;
 for SSH access, contact Derek Weitzel or Brian Bockelman.
 
 
@@ -21,6 +21,7 @@ for SSH access, contact Derek Weitzel or Brian Bockelman.
 
 These instructions assume an EL 7 host with the EPEL repositories available.
 The software will be installed into `/opt/topology`.
+(The ITB instance should be installed into `/opt/topology-itb` instead.)
 The following steps should be done as root.
 
 1.  Install prerequisites:
@@ -34,10 +35,11 @@ The following steps should be done as root.
         # cd /opt
         # git clone https://github.com/opensciencegrid/topology
 
-1.  Set up the virtualenv in the clone:
+    (move the resulting directory to `topology-itb` for the ITB instance)
+
+1.  Set up the virtualenv in the clone -- from `/opt/topology` or `/opt/topology-itb`:
 
         :::console
-        # cd topology
         # python36 -m venv venv
         # . ./venv/bin/activate
         # pip install -r requirements.txt
@@ -71,7 +73,8 @@ The files are in Python format and override default settings in `src/webapp/defa
 
 HTTPD configuration is in `/etc/httpd`; we use the modules `mod_ssl`, `mod_gridsite`, and `mod_wsgi`.
 The first two are installed via yum;
-the .so file for mod_wsgi is located in `/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/`.
+the .so file for mod_wsgi is located in `/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/`
+or `/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/` for the ITB instance.
 
 **TODO Derek can you write something here?**
 
@@ -154,7 +157,7 @@ These instructions assume that the code has not been merged to master.
 
 1.  Test the web interface at <https://topology-itb.opensciencegrid.org>.
 
-    Errors and output are in `/var/log/httpd/error_log` (for both production and ITB).
+    Errors and output are in `/var/log/httpd/error_log`.
 
 
 ### Reverting changes
@@ -198,7 +201,7 @@ Updating the production instance is similar to updating ITB instance.
 
 1.  Test the web interface at <https://topology.opensciencegrid.org>.
 
-    Errors and output are in `/var/log/httpd/error_log` (for both production and ITB).
+    Errors and output are in `/var/log/httpd/error_log`.
 
 
 ### Reverting changes
