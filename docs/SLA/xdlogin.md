@@ -21,7 +21,7 @@ the production XD-Login job submission node and an adjunct machine, OSG-FLOCK.
 
 ### Description
 
-The XD-Login submission node allows OSG resources to be accessed by XSEDE users. A complete description is available [here.](https://www.xsede.org/osg-user-guide)
+The XD-Login submission node allows OSG resources to be accessed by XSEDE users. A complete description is available [here.](https://www.xsede.org/OSG-User-Guide)
 
 ## Security Considerations
 
