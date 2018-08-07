@@ -26,7 +26,7 @@ Installation
         [EPEL](https://opensciencegrid.org/docs/common/yum/#install-the-epel-repositories))
 
             :::console
-            yum install git python-requests python-gnupg
+            yum install git python-requests python2-gnupg
 
     -   Ubuntu
 
