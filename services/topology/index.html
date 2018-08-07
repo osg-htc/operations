@@ -652,12 +652,13 @@
 This repository also contains the public part of the data that gets served.</p>
 <h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
 <p>Topology is a webapp run with Apache on the host <code>topology.opensciencegrid.org</code>.
-The same daemon runs both the production and the ITB instances.
-The host is a VM at Nebraska;
+The ITB instance runs on the host <code>topology-itb.opensciencegrid.org</code>.
+The hosts are VMs at Nebraska;
 for SSH access, contact Derek Weitzel or Brian Bockelman.</p>
 <h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
 <p>These instructions assume an EL 7 host with the EPEL repositories available.
 The software will be installed into <code>/opt/topology</code>.
+(The ITB instance should be installed into <code>/opt/topology-itb</code> instead.)
 The following steps should be done as root.</p>
 <ol>
 <li>
@@ -674,11 +675,11 @@ The following steps should be done as root.</p>
 </pre></div>
 
 
+<p>(move the resulting directory to <code>topology-itb</code> for the ITB instance)</p>
 </li>
 <li>
-<p>Set up the virtualenv in the clone:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> topology
-<span class="gp">#</span> python36 -m venv venv
+<p>Set up the virtualenv in the clone -- from <code>/opt/topology</code> or <code>/opt/topology-itb</code>:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> python36 -m venv venv
 <span class="gp">#</span> . ./venv/bin/activate
 <span class="gp">#</span> pip install -r requirements.txt
 </pre></div>
@@ -767,7 +768,8 @@ use <code>ssh-keyscan bitbucket.org</code> to get the appropriate entry.</p>
 The files are in Python format and override default settings in <code>src/webapp/default_config.py</code> in the topology repo.</p>
 <p>HTTPD configuration is in <code>/etc/httpd</code>; we use the modules <code>mod_ssl</code>, <code>mod_gridsite</code>, and <code>mod_wsgi</code>.
 The first two are installed via yum;
-the .so file for mod_wsgi is located in <code>/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/</code>.</p>
+the .so file for mod_wsgi is located in <code>/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/</code>
+or <code>/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/</code> for the ITB instance.</p>
 <p><strong>TODO Derek can you write something here?</strong></p>
 <h3 id="data-configuration">Data configuration<a class="headerlink" href="#data-configuration" title="Permanent link">&para;</a></h3>
 <p>Configuration is in <code>/etc/opt/topology/config-production.py</code> and <code>config-itb.py</code>.</p>
@@ -895,7 +897,7 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>Test the web interface at <a href="https://topology-itb.opensciencegrid.org">https://topology-itb.opensciencegrid.org</a>.</p>
-<p>Errors and output are in <code>/var/log/httpd/error_log</code> (for both production and ITB).</p>
+<p>Errors and output are in <code>/var/log/httpd/error_log</code>.</p>
 </li>
 </ol>
 <h3 id="reverting-changes">Reverting changes<a class="headerlink" href="#reverting-changes" title="Permanent link">&para;</a></h3>
@@ -948,7 +950,7 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>Test the web interface at <a href="https://topology.opensciencegrid.org">https://topology.opensciencegrid.org</a>.</p>
-<p>Errors and output are in <code>/var/log/httpd/error_log</code> (for both production and ITB).</p>
+<p>Errors and output are in <code>/var/log/httpd/error_log</code>.</p>
 </li>
 </ol>
 <h3 id="reverting-changes_1">Reverting changes<a class="headerlink" href="#reverting-changes_1" title="Permanent link">&para;</a></h3>
