@@ -85,7 +85,12 @@ Follow the instructions below for adding or updating a contact, as appropriate.
 
 #### Adding a new contact
 
-If the contact does not exist in the `contacts.yaml` file, fill out the values in `template-contacts.yaml` and add it to `contacts.yaml`.
+Before adding a new contact, verify their VO, site, or project affiliation,
+and get some brief profile information about them.
+The profile does not need to be detailed -- examples are "Neutrino physicist at Fermilab working on the DUNE project"
+or "Administrator for GridUNESP CEs."
+
+After obtaining this information, fill out the values in `template-contacts.yaml` and add it to `contacts.yaml`.
 To get the hash used as the ID, run `email-hash` on their email address.
 For example:
 
@@ -101,8 +106,13 @@ Then your new entry will look like
     ....
 ```
 
-The `FullName` field and the `PrimaryEmail` field in the `ContactInformation` section are required.
-`PrimaryEmail` field in the `ContactInformation` section should match the hash that you used for the ID.
+The `FullName` and `Profile` fields in the main section,
+and the `PrimaryEmail` field in the `ContactInformation` section are required.
+The `PrimaryEmail` field in the `ContactInformation` section should match the hash that you used for the ID.
+
+In addition, if they will be making pull requests against the topology repo,
+e.g. for updating site information, reporting downtime, or updating project or VO information,
+obtain their GitHub username and put it in the `GitHub` field.
 
 
 #### Editing a contact
