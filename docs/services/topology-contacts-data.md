@@ -1,7 +1,8 @@
 Topology and Contacts Data
 ==========================
 
-This document contains information about the data provided by <https://topology.opensciencegrid.org>.
+This is internal documentation intended for OSG Operations staff.
+It contains information about the data provided by <https://topology.opensciencegrid.org>.
 
 The topology data for the service is in <https://github.com/opensciencegrid/topology>, in the `projects/`, `topology/`, and `virtual-organizations/` subdirectories.
 The contacts data is in <https://bitbucket.org/opensciencegrid/contact/>, in `contacts.yaml`.
@@ -41,7 +42,7 @@ The YAML file contains sensitive information and is only visible to people with 
 The contacts repo is hosted on BitBucket.
 You will need an Atlassian account for access to BitBucket.
 The account you use for OSG JIRA should work.
-Once you have an account, request access from Brian Lin or Mat Selmeci.
+Once you have an account, request access from Brian Lin, Mat Selmeci, or Derek Weitzel.
 You should then be able to go to <https://bitbucket.org/opensciencegrid/contact/>.
 
 
@@ -89,6 +90,7 @@ To get the hash used as the ID, run `email-hash` on their email address.
 For example:
 
 ```command
+$ cd contact  # this is your local clone of the "contact" repo
 $ bin/email-hash user@example.net
 25357f62c7ab2ae11ddda1efd272bb5435dbfacb
 ```
@@ -112,6 +114,7 @@ If you want to add information that is not present for that contact, look at `te
     The ID of the contact never changes, even if the user's `PrimaryEmail` changes.
 
 !!!note
-    If you change the contact's `FullName`, you should make the same change to every place that the contact
+    If you change the contact's `FullName`, you **must** make the same change to every place that the contact
     is mentioned in the `topology` repo.
+    Get the contact changes merged in first.
 
