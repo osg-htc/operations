@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://www.opensciencegrid.org/operations/services/sending-announcements/">
+        <link rel="canonical" href="https://www.opensciencegrid.org/operations/services/topology-contacts-data/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Sending Announcements - OSG Operations</title>
+        <title>Topology and Contacts Data - OSG Operations</title>
       
     
     
@@ -94,7 +94,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#sending-announcements" tabindex="1" class="md-skip">
+      <a href="#topology-and-contacts-data" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -120,7 +120,7 @@
                 OSG Operations
               </span>
               <span class="md-header-nav__topic">
-                Sending Announcements
+                Topology and Contacts Data
               </span>
             
           
@@ -292,18 +292,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../topology-contacts-data/" title="Topology and Contacts Data" class="md-nav__link">
-      Topology and Contacts Data
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -315,11 +303,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Sending Announcements
+        Topology and Contacts Data
       </label>
     
-    <a href="./" title="Sending Announcements" class="md-nav__link md-nav__link--active">
-      Sending Announcements
+    <a href="./" title="Topology and Contacts Data" class="md-nav__link md-nav__link--active">
+      Topology and Contacts Data
     </a>
     
       
@@ -333,23 +321,56 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#topology-data" title="Topology Data" class="md-nav__link">
+    Topology Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
-    Installation
+  <a href="#contacts-data" title="Contacts Data" class="md-nav__link">
+    Contacts Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-access-to-the-contact-repo" title="Getting access to the contact repo" class="md-nav__link">
+    Getting access to the contact repo
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sending-the-announcement" title="Sending the announcement" class="md-nav__link">
-    Sending the announcement
+        
+          <li class="md-nav__item">
+  <a href="#using-the-contact-repo" title="Using the contact repo" class="md-nav__link">
+    Using the contact repo
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-new-contact" title="Adding a new contact" class="md-nav__link">
+    Adding a new contact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editing-a-contact" title="Editing a contact" class="md-nav__link">
+    Editing a contact
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -361,6 +382,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sending-announcements/" title="Sending Announcements" class="md-nav__link">
+      Sending Announcements
+    </a>
   </li>
 
         
@@ -498,23 +531,56 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#topology-data" title="Topology Data" class="md-nav__link">
+    Topology Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
-    Installation
+  <a href="#contacts-data" title="Contacts Data" class="md-nav__link">
+    Contacts Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-access-to-the-contact-repo" title="Getting access to the contact repo" class="md-nav__link">
+    Getting access to the contact repo
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sending-the-announcement" title="Sending the announcement" class="md-nav__link">
-    Sending the announcement
+        
+          <li class="md-nav__item">
+  <a href="#using-the-contact-repo" title="Using the contact repo" class="md-nav__link">
+    Using the contact repo
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-new-contact" title="Adding a new contact" class="md-nav__link">
+    Adding a new contact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editing-a-contact" title="Editing a contact" class="md-nav__link">
+    Editing a contact
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -534,153 +600,117 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/sending-announcements.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/topology-contacts-data.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="sending-announcements">Sending Announcements<a class="headerlink" href="#sending-announcements" title="Permanent link">&para;</a></h1>
-<p>Various OSG teams need to send out announcement about various events (releases, security advisories, planned changes,
-etc).
-This page describes how to send announcements using the <code>osg-notify</code> tool.</p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<p>To send announcements, the following conditions must be met:</p>
-<ul>
-<li>A host with an IP address listed in the
-    <a href="https://mxtoolbox.com/SuperTool.aspx?action=spf%3aopensciencegrid.org&amp;run=toolpage">SPF Record</a></li>
-<li>A sufficiently modern Linux operating system.
-    This procedure has been tested on a FermiCloud Scientific Linux 7 VM and a Linux Mint 18.3 laptop.
-    It is known not to work on a FermiCloud Scientific Linux 6 VM.</li>
-<li>A valid OSG user certificate to lookup contacts in the topology database</li>
-<li><strong>(Required for security announcements)</strong> A GPG Key to sign the announcement</li>
-</ul>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>Install the pre-requisites:</p>
+                <h1 id="topology-and-contacts-data">Topology and Contacts Data<a class="headerlink" href="#topology-and-contacts-data" title="Permanent link">&para;</a></h1>
+<p>This is internal documentation intended for OSG Operations staff.
+It contains information about the data provided by <a href="https://topology.opensciencegrid.org">https://topology.opensciencegrid.org</a>.</p>
+<p>The topology data for the service is in <a href="https://github.com/opensciencegrid/topology">https://github.com/opensciencegrid/topology</a>, in the <code>projects/</code>, <code>topology/</code>, and <code>virtual-organizations/</code> subdirectories.
+The contacts data is in <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>, in <code>contacts.yaml</code>.</p>
+<h2 id="topology-data">Topology Data<a class="headerlink" href="#topology-data" title="Permanent link">&para;</a></h2>
+<p>Admins may request changes to data in the topology repo via either a GitHub pull request or a Freshdesk ticket.
+These changes can be to a project, a VO, or a resource.
+The <a href="https://opensciencegrid.org/docs/common/registration">registration document</a> and
+<a href="https://github.com/opensciencegrid/topology/README.md">topology README document</a> should tell them how to do that.</p>
+<p>The CI checks should catch most errors but you should still review the YAML changes.
+Certain things to check are:</p>
 <ul>
 <li>
-<p>Enterprise Linux 7 (first, enable
-    <a href="https://opensciencegrid.org/docs/common/yum/#install-the-epel-repositories">EPEL</a>)</p>
-<div class="codehilite"><pre><span></span><span class="go">yum install git python-requests python2-gnupg</span>
-</pre></div>
-
-
+<p>Do contact names and IDs match what's in the contacts data?
+    (See below for instructions on how to get that information.)
+    If the person is not in the contacts data, you will need to add them before approving the PR.</p>
 </li>
 <li>
-<p>Ubuntu</p>
-<div class="codehilite"><pre><span></span><span class="go">apt install git python-requests python-gnupg</span>
-</pre></div>
-
-
+<p>Is the PR submitter authorized to make changes to that project/VO/resource?
+    Can you match them to a person affiliated with that project/VO/site?
+    (The contacts data now includes the GitHub usernames for some people.
+    See below for instructions on how to get that information.)</p>
 </li>
 </ul>
-</li>
-<li>
-<p>Install the OSG tools:</p>
-<div class="codehilite"><pre><span></span><span class="go">git clone https://github.com/opensciencegrid/topology.git</span>
-</pre></div>
-
-
-</li>
-<li>
-<p>Disable any HTTP proxies by looking in the environment for the following variables and unset them if present:</p>
-<div class="codehilite"><pre><span></span><span class="go">env | grep -i &#39;https*_proxy&#39;</span>
-<span class="go">unset HTTPS_PROXY HTTP_PROXY https_proxy http_proxy</span>
-</pre></div>
-
-
-</li>
-<li>
-<p>If you are on a FermiCloud VM, update <code>postfix</code> to relay through FermiLab's official mail server:</p>
-<div class="codehilite"><pre><span></span><span class="go">echo &quot;transport_maps = hash:/etc/postfix/transport&quot; &gt;&gt; /etc/postfix/main.cf</span>
-<span class="go">echo &quot;*   smtp:smtp.fnal.gov&quot; &gt;&gt; /etc/postfix/transport</span>
-<span class="go">postmap hash:/etc/postfix/transport</span>
-<span class="go">postfix reload</span>
-</pre></div>
-
-
-</li>
-<li>
-<p>Ensure that you can lookup contacts in the topology database by using the <code>osg-topology</code> tool to list the contacts:</p>
-<div class="codehilite"><pre><span></span><span class="go">cd topology</span>
-<span class="go">PYTHONPATH=src python bin/osg-topology --cert publicCert.pem \</span>
-<span class="go">    --key privateKey.pem list-resource-contacts</span>
-</pre></div>
-
-
-<p>If the contacts include email addresses, this is working properly.
-If you type your password incorrectly, the authentication will silently fail and you won't get email addresses</p>
-</li>
-</ol>
-<h2 id="sending-the-announcement">Sending the announcement<a class="headerlink" href="#sending-the-announcement" title="Permanent link">&para;</a></h2>
-<p>Use the <code>osg-notify</code> tool to send the announcement using the relevant options from the following table:</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--dry-run</code></td>
-<td>Use this option until you are ready to actually send the message</td>
-</tr>
-<tr>
-<td><code>--cert &lt;FILE&gt;</code></td>
-<td>File that contains your OSG User Certificate</td>
-</tr>
-<tr>
-<td><code>--key &lt;FILE&gt;</code></td>
-<td>File that contains your Private Key for your OSG User Certificate</td>
-</tr>
-<tr>
-<td><code>--no-sign</code></td>
-<td>Don't GPG sign the message (release only)</td>
-</tr>
-<tr>
-<td><code>--type production</code></td>
-<td>Not a test message</td>
-</tr>
-<tr>
-<td><code>--message &lt;FILE&gt;</code></td>
-<td>File containing your message</td>
-</tr>
-<tr>
-<td><code>--subject &lt;EMAIL SUBJECT&gt;</code></td>
-<td>The subject of your message</td>
-</tr>
-<tr>
-<td><code>--recipients &lt;LIST OF EMAILS&gt;</code></td>
-<td>List of recipient email addresses, must have at least one</td>
-</tr>
-<tr>
-<td><code>--oim-recipients resources</code></td>
-<td>Select contact associated with resources</td>
-</tr>
-<tr>
-<td><code>--oim-contact-type &lt;TYPE&gt;</code></td>
-<td>Replacing <code>&lt;TYPE&gt;</code> with <code>administrative</code> for release announcements or  <code>security</code> for security announcements</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition info">
-<p class="admonition-title">Security requirements</p>
-<p>Security announcements must be signed using the following options:</p>
-<ul>
-<li><code>--sign</code>: GPG sign the message</li>
-<li><code>--sign-id &lt;KEYID&gt;</code>: The ID of the key used for singing</li>
-</ul>
+<h2 id="contacts-data">Contacts Data<a class="headerlink" href="#contacts-data" title="Permanent link">&para;</a></h2>
+<p>Contacts data is either available as XML in <a href="https://topology.opensciencegrid.org/miscuser/xml">https://topology.opensciencegrid.org/miscuser/xml</a> or
+editable YAML in <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>, in <code>contacts.yaml</code>.
+The YAML file contains sensitive information and is only visible to people with access to that repo.</p>
+<h3 id="getting-access-to-the-contact-repo">Getting access to the contact repo<a class="headerlink" href="#getting-access-to-the-contact-repo" title="Permanent link">&para;</a></h3>
+<p>The contacts repo is hosted on BitBucket.
+You will need an Atlassian account for access to BitBucket.
+The account you use for OSG JIRA should work.
+Once you have an account, request access from Brian Lin, Mat Selmeci, or Derek Weitzel.
+You should then be able to go to <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>.</p>
+<h3 id="using-the-contact-repo">Using the contact repo<a class="headerlink" href="#using-the-contact-repo" title="Permanent link">&para;</a></h3>
+<p>BitBucket is similar to GitHub except you don't make a fork of the contact repo,
+you just clone it to your local machine.
+This means that any pushes go directly to the main repo instead of your own fork.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Don't push to master.
+For any changes, always create your own branch, push your changes to that branch, then make a pull request.
+Have someone else review and merge your pull request.</p>
 </div>
-<p>For release announcements use the following command:</p>
-<div class="codehilite"><pre><span></span><span class="go">PYTHONPATH=src python bin/osg-notify --cert your-cert.pem --key your-key.pem \</span>
-<span class="go">    --no-sign --type production --message message-file</span>
-<span class="go">    --subject &#39;&lt;EMAIL SUBJECT&gt;&#39; \</span>
-<span class="go">    --recipients &quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot; \</span>
-<span class="go">    --oim-recipients resources --oim-contact-type administrative</span>
+<p>All contact data is stored in <code>contacts.yaml</code>.
+The contact info is keyed by a 40-character hexadecimal ID which was generated from their email address when they were first added.
+An example entry is:</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">25357f62c7ab2ae11ddda1efd272bb5435dbfacb</span><span class="p p-Indicator">:</span>
+<span class="c1"># ^ this is their ID</span>
+  <span class="l l-Scalar l-Scalar-Plain">FullName</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Example A. User</span>
+  <span class="l l-Scalar l-Scalar-Plain">Profile</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">This is an example user.</span>
+  <span class="l l-Scalar l-Scalar-Plain">GitHub</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">ExampleUser</span>
+  <span class="c1"># ContactInformation data requires authorization to view</span>
+  <span class="l l-Scalar l-Scalar-Plain">ContactInformation</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">DNs</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="l l-Scalar l-Scalar-Plain">IM</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="l l-Scalar l-Scalar-Plain">PrimaryEmail</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">user@example.net</span>
+    <span class="l l-Scalar l-Scalar-Plain">PrimaryPhone</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
 </pre></div>
 
 
-<p>Replacing <code>&lt;EMAIL SUBJECT&gt;</code> with an appropriate subject for your announcement.</p>
+<p>When making changes to the contact data, first see if a contact is already in the YAML file.
+Search the YAML file for their name.
+Be sure to try variations of their name if you don't find them --
+someone may be listed as "Dave" or "David", or have a middle name or middle initial.</p>
+<p>Follow the instructions below for adding or updating a contact, as appropriate.</p>
+<h4 id="adding-a-new-contact">Adding a new contact<a class="headerlink" href="#adding-a-new-contact" title="Permanent link">&para;</a></h4>
+<p>Before adding a new contact, verify their VO, site, or project affiliation,
+and get some brief profile information about them.
+The profile does not need to be detailed -- examples are "Neutrino physicist at Fermilab working on the DUNE project"
+or "Administrator for GridUNESP CEs."</p>
+<p>After obtaining this information, fill out the values in <code>template-contacts.yaml</code> and add it to <code>contacts.yaml</code>.
+To get the hash used as the ID, run <code>email-hash</code> on their email address.
+For example:</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> contact  <span class="c1"># this is your local clone of the &quot;contact&quot; repo</span>
+$ bin/email-hash user@example.net
+25357f62c7ab2ae11ddda1efd272bb5435dbfacb
+</pre></div>
+
+
+<p>Then your new entry will look like</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">25357f62c7ab2ae11ddda1efd272bb5435dbfacb</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">FullName</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Example A. User</span>
+    <span class="l l-Scalar l-Scalar-Plain">....</span>
+</pre></div>
+
+
+<p>The <code>FullName</code> and <code>Profile</code> fields in the main section,
+and the <code>PrimaryEmail</code> field in the <code>ContactInformation</code> section are required.
+The <code>PrimaryEmail</code> field in the <code>ContactInformation</code> section should match the hash that you used for the ID.</p>
+<p>In addition, if they will be making pull requests against the topology repo,
+e.g. for updating site information, reporting downtime, or updating project or VO information,
+obtain their GitHub username and put it in the <code>GitHub</code> field.</p>
+<h4 id="editing-a-contact">Editing a contact<a class="headerlink" href="#editing-a-contact" title="Permanent link">&para;</a></h4>
+<p>Once you have found a contact in the YAML file, edit the attributes by hand.
+If you want to add information that is not present for that contact, look at <code>template-contacts.yaml</code> to find out what the attributes are called.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The ID of the contact never changes, even if the user's <code>PrimaryEmail</code> changes.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>If you change the contact's <code>FullName</code>, you <strong>must</strong> make the same change to every place that the contact
+is mentioned in the <code>topology</code> repo.
+Get the contact changes merged in first.</p>
+</div>
                 
                   
                 
@@ -701,7 +731,7 @@ If you type your password incorrectly, the authentication will silently fail and
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../topology-contacts-data/" title="Topology and Contacts Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../topology/" title="Topology Service" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -710,19 +740,19 @@ If you type your password incorrectly, the authentication will silently fail and
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Topology and Contacts Data
+                Topology Service
               </span>
             </div>
           </a>
         
         
-          <a href="../../SLA/collector/" title="HTCondor Collector" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../sending-announcements/" title="Sending Announcements" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                HTCondor Collector
+                Sending Announcements
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
