@@ -52,7 +52,7 @@ BitBucket is similar to GitHub except you don't make a fork of the contact repo,
 you just clone it to your local machine.
 This means that any pushes go directly to the main repo instead of your own fork.
 
-!!!note
+!!! danger
     Don't push to master.
     For any changes, always create your own branch, push your changes to that branch, then make a pull request.
     Have someone else review and merge your pull request.
@@ -123,7 +123,7 @@ If you want to add information that is not present for that contact, look at `te
 !!!note
     The ID of the contact never changes, even if the user's `PrimaryEmail` changes.
 
-!!!danger
+!!! important
     If you change the contact's `FullName`, you **must** make the same change to every place that the contact
     is mentioned in the `topology` repo.
     Get the contact changes merged in first.
