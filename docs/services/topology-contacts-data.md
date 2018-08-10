@@ -123,7 +123,7 @@ If you want to add information that is not present for that contact, look at `te
 !!!note
     The ID of the contact never changes, even if the user's `PrimaryEmail` changes.
 
-!!!note
+!!!danger
     If you change the contact's `FullName`, you **must** make the same change to every place that the contact
     is mentioned in the `topology` repo.
     Get the contact changes merged in first.
