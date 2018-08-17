@@ -16,6 +16,16 @@ To send announcements, the following conditions must be met:
     This procedure has been tested on a FermiCloud Scientific Linux 7 VM and a Linux Mint 18.3 laptop.
     It is known not to work on a FermiCloud Scientific Linux 6 VM.
 -   A valid OSG user certificate to lookup contacts in the topology database
+-   Local hostname matches DNS
+-   DNS forward and reverse lookups in place
+```console
+[tim@submit-1 topology]$ hostname
+submit-1.chtc.wisc.edu
+[tim@submit-1 topology]$ host submit-1.chtc.wisc.edu
+submit-1.chtc.wisc.edu has address 128.105.244.191
+[tim@submit-1 topology]$ host 128.105.244.191
+191.244.105.128.in-addr.arpa domain name pointer submit-1.chtc.wisc.edu.
+```
 -   **(Required for security announcements)** A GPG Key to sign the announcement
 
 Installation
@@ -85,6 +95,7 @@ Use the `osg-notify` tool to send the announcement using the relevant options fr
 
     - `--sign`: GPG sign the message
     - `--sign-id <KEYID>`: The ID of the key used for singing
+    - `--from security`: The mail comes from the OSG Security Team
 
 For release announcements use the following command:
 
