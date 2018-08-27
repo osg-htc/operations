@@ -550,6 +550,19 @@ This page describes how to send announcements using the <code>osg-notify</code> 
     This procedure has been tested on a FermiCloud Scientific Linux 7 VM and a Linux Mint 18.3 laptop.
     It is known not to work on a FermiCloud Scientific Linux 6 VM.</li>
 <li>A valid OSG user certificate to lookup contacts in the topology database</li>
+<li>Local hostname matches DNS</li>
+<li>DNS forward and reverse lookups in place</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="gp">[tim@submit-1 topology]$</span> hostname
+<span class="go">submit-1.chtc.wisc.edu</span>
+<span class="gp">[tim@submit-1 topology]$</span> host submit-1.chtc.wisc.edu
+<span class="go">submit-1.chtc.wisc.edu has address 128.105.244.191</span>
+<span class="gp">[tim@submit-1 topology]$</span> host <span class="m">128</span>.105.244.191
+<span class="go">191.244.105.128.in-addr.arpa domain name pointer submit-1.chtc.wisc.edu.</span>
+</pre></div>
+
+
+<ul>
 <li><strong>(Required for security announcements)</strong> A GPG Key to sign the announcement</li>
 </ul>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
@@ -669,6 +682,7 @@ If you type your password incorrectly, the authentication will silently fail and
 <ul>
 <li><code>--sign</code>: GPG sign the message</li>
 <li><code>--sign-id &lt;KEYID&gt;</code>: The ID of the key used for singing</li>
+<li><code>--from security</code>: The mail comes from the OSG Security Team</li>
 </ul>
 </div>
 <p>For release announcements use the following command:</p>
