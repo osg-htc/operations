@@ -29,7 +29,19 @@ Registration (Contact, Resource, VO, or Project)
 
 [Register with OSG](https://opensciencegrid.org/docs/common/registration/)
 
-Archived Meeting Minutes
-------------------------
+
+Weekly Operations Meetings
+--------------------------
+
+**When:** 1:00 pm Central
+**URL:** https://unl.zoom.us/j/183382852
+**Phone:** +1 669 900 6833  or +1 408 638 0968  or +1 646 876 9923
+**Meeting ID:** 183 382 852
+
+
+### Meeting Minutes ###
+
+
+### Archived Meeting Minutes ###
 
 For archived meeting minutes, see the [GitHub repository](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes)
