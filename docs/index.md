@@ -34,8 +34,11 @@ Weekly Operations Meetings
 --------------------------
 
 **When:** 1:00 pm Central
+
 **URL:** https://unl.zoom.us/j/183382852
+
 **Phone:** +1 669 900 6833  or +1 408 638 0968  or +1 646 876 9923
+
 **Meeting ID:** 183 382 852
 
 
