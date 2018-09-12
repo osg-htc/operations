@@ -33,7 +33,7 @@ Registration (Contact, Resource, VO, or Project)
 Weekly Operations Meetings
 --------------------------
 
-**When:** 1:00 pm Central
+**When:** Mondays 1:00 pm Central
 
 **URL:** <https://unl.zoom.us/j/183382852>
 
