@@ -537,11 +537,11 @@
                   <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/sending-announcements.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="sending-announcements">Sending Announcements<a class="headerlink" href="#sending-announcements" title="Permanent link">&para;</a></h1>
+                <h1 id="sending-announcements">Sending Announcements</h1>
 <p>Various OSG teams need to send out announcement about various events (releases, security advisories, planned changes,
 etc).
 This page describes how to send announcements using the <code>osg-notify</code> tool.</p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>To send announcements, the following conditions must be met:</p>
 <ul>
 <li>A host with an IP address listed in the
@@ -565,7 +565,7 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 <ul>
 <li><strong>(Required for security announcements)</strong> A GPG Key to sign the announcement</li>
 </ul>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<h2 id="installation">Installation</h2>
 <ol>
 <li>
 <p>Install the pre-requisites:</p>
@@ -604,8 +604,8 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 </li>
 <li>
 <p>If you are on a FermiCloud VM, update <code>postfix</code> to relay through FermiLab's official mail server:</p>
-<div class="codehilite"><pre><span></span><span class="go">echo &quot;transport_maps = hash:/etc/postfix/transport&quot; &gt;&gt; /etc/postfix/main.cf</span>
-<span class="go">echo &quot;*   smtp:smtp.fnal.gov&quot; &gt;&gt; /etc/postfix/transport</span>
+<div class="codehilite"><pre><span></span><span class="go">echo &quot;transport_maps = hash:/etc/postfix/transport&quot; &amp;gt;&amp;gt; /etc/postfix/main.cf</span>
+<span class="go">echo &quot;*   smtp:smtp.fnal.gov&quot; &amp;gt;&amp;gt; /etc/postfix/transport</span>
 <span class="go">postmap hash:/etc/postfix/transport</span>
 <span class="go">postfix reload</span>
 </pre></div>
@@ -624,7 +624,7 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 If you type your password incorrectly, the authentication will silently fail and you won't get email addresses</p>
 </li>
 </ol>
-<h2 id="sending-the-announcement">Sending the announcement<a class="headerlink" href="#sending-the-announcement" title="Permanent link">&para;</a></h2>
+<h2 id="sending-the-announcement">Sending the announcement</h2>
 <p>Use the <code>osg-notify</code> tool to send the announcement using the relevant options from the following table:</p>
 <table>
 <thead>

@@ -603,12 +603,12 @@
                   <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/topology-contacts-data.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="topology-and-contacts-data">Topology and Contacts Data<a class="headerlink" href="#topology-and-contacts-data" title="Permanent link">&para;</a></h1>
+                <h1 id="topology-and-contacts-data">Topology and Contacts Data</h1>
 <p>This is internal documentation intended for OSG Operations staff.
 It contains information about the data provided by <a href="https://topology.opensciencegrid.org">https://topology.opensciencegrid.org</a>.</p>
 <p>The topology data for the service is in <a href="https://github.com/opensciencegrid/topology">https://github.com/opensciencegrid/topology</a>, in the <code>projects/</code>, <code>topology/</code>, and <code>virtual-organizations/</code> subdirectories.
 The contacts data is in <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>, in <code>contacts.yaml</code>.</p>
-<h2 id="topology-data">Topology Data<a class="headerlink" href="#topology-data" title="Permanent link">&para;</a></h2>
+<h2 id="topology-data">Topology Data</h2>
 <p>Admins may request changes to data in the topology repo via either a GitHub pull request or a Freshdesk ticket.
 These changes can be to a project, a VO, or a resource.
 The <a href="https://opensciencegrid.org/docs/common/registration">registration document</a> and
@@ -628,17 +628,17 @@ Certain things to check are:</p>
     See below for instructions on how to get that information.)</p>
 </li>
 </ul>
-<h2 id="contacts-data">Contacts Data<a class="headerlink" href="#contacts-data" title="Permanent link">&para;</a></h2>
+<h2 id="contacts-data">Contacts Data</h2>
 <p>Contacts data is either available as XML in <a href="https://topology.opensciencegrid.org/miscuser/xml">https://topology.opensciencegrid.org/miscuser/xml</a> or
 editable YAML in <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>, in <code>contacts.yaml</code>.
 The YAML file contains sensitive information and is only visible to people with access to that repo.</p>
-<h3 id="getting-access-to-the-contact-repo">Getting access to the contact repo<a class="headerlink" href="#getting-access-to-the-contact-repo" title="Permanent link">&para;</a></h3>
+<h3 id="getting-access-to-the-contact-repo">Getting access to the contact repo</h3>
 <p>The contacts repo is hosted on BitBucket.
 You will need an Atlassian account for access to BitBucket.
 The account you use for OSG JIRA should work.
 Once you have an account, request access from Brian Lin, Mat Selmeci, or Derek Weitzel.
 You should then be able to go to <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>.</p>
-<h3 id="using-the-contact-repo">Using the contact repo<a class="headerlink" href="#using-the-contact-repo" title="Permanent link">&para;</a></h3>
+<h3 id="using-the-contact-repo">Using the contact repo</h3>
 <p>BitBucket is similar to GitHub except you don't make a fork of the contact repo,
 you just clone it to your local machine.
 This means that any pushes go directly to the main repo instead of your own fork.</p>
@@ -671,7 +671,7 @@ Search the YAML file for their name.
 Be sure to try variations of their name if you don't find them --
 someone may be listed as "Dave" or "David", or have a middle name or middle initial.</p>
 <p>Follow the instructions below for adding or updating a contact, as appropriate.</p>
-<h4 id="adding-a-new-contact">Adding a new contact<a class="headerlink" href="#adding-a-new-contact" title="Permanent link">&para;</a></h4>
+<h4 id="adding-a-new-contact">Adding a new contact</h4>
 <p>Before adding a new contact, verify their VO, site, or project affiliation,
 and get some brief profile information about them.
 The profile does not need to be detailed -- examples are "Neutrino physicist at Fermilab working on the DUNE project"
@@ -698,7 +698,7 @@ The <code>PrimaryEmail</code> field in the <code>ContactInformation</code> secti
 <p>In addition, if they will be making pull requests against the topology repo,
 e.g. for updating site information, reporting downtime, or updating project or VO information,
 obtain their GitHub username and put it in the <code>GitHub</code> field.</p>
-<h4 id="editing-a-contact">Editing a contact<a class="headerlink" href="#editing-a-contact" title="Permanent link">&para;</a></h4>
+<h4 id="editing-a-contact">Editing a contact</h4>
 <p>Once you have found a contact in the YAML file, edit the attributes by hand.
 If you want to add information that is not present for that contact, look at <code>template-contacts.yaml</code> to find out what the attributes are called.</p>
 <div class="admonition note">

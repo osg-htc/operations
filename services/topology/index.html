@@ -657,17 +657,17 @@
                   <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/topology.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="topology-service">Topology Service<a class="headerlink" href="#topology-service" title="Permanent link">&para;</a></h1>
+                <h1 id="topology-service">Topology Service</h1>
 <p>This document contains information about the service that runs <a href="https://topology.opensciencegrid.org">https://topology.opensciencegrid.org</a> and <a href="https://topology-itb.opensciencegrid.org">https://topology-itb.opensciencegrid.org</a>.
 (These sites are also accessible as <a href="https://my.opensciencegrid.org">https://my.opensciencegrid.org</a> and <a href="https://my-itb.opensciencegrid.org">https://my-itb.opensciencegrid.org</a>.)</p>
 <p>The source code for the service is in <a href="https://github.com/opensciencegrid/topology">https://github.com/opensciencegrid/topology</a>, in the <code>src/</code> subdirectory.
 This repository also contains the public part of the data that gets served.</p>
-<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
+<h2 id="deployment">Deployment</h2>
 <p>Topology is a webapp run with Apache on the host <code>topology.opensciencegrid.org</code>.
 The ITB instance runs on the host <code>topology-itb.opensciencegrid.org</code>.
 The hosts are VMs at Nebraska;
 for SSH access, contact Derek Weitzel or Brian Bockelman.</p>
-<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<h3 id="installation">Installation</h3>
 <p>These instructions assume an EL 7 host with the EPEL repositories available.
 The software will be installed into <code>/opt/topology</code>.
 (The ITB instance should be installed into <code>/opt/topology-itb</code> instead.)
@@ -699,7 +699,7 @@ The following steps should be done as root.</p>
 
 </li>
 </ol>
-<h3 id="file-system-locations">File system locations<a class="headerlink" href="#file-system-locations" title="Permanent link">&para;</a></h3>
+<h3 id="file-system-locations">File system locations</h3>
 <p>The following files/directories must exist and have the proper permissions:</p>
 <table>
 <thead>
@@ -775,7 +775,7 @@ The following steps should be done as root.</p>
 </table>
 <p><code>~apache/.ssh/known_hosts</code> must contain an entry for <code>bitbucket.org</code>;
 use <code>ssh-keyscan bitbucket.org</code> to get the appropriate entry.</p>
-<h3 id="software-configuration">Software configuration<a class="headerlink" href="#software-configuration" title="Permanent link">&para;</a></h3>
+<h3 id="software-configuration">Software configuration</h3>
 <p>Configuration is in <code>/etc/opt/topology/config-production.py</code> and <code>config-itb.py</code>.
 The files are in Python format and override default settings in <code>src/webapp/default_config.py</code> in the topology repo.</p>
 <p>HTTPD configuration is in <code>/etc/httpd</code>; we use the modules <code>mod_ssl</code>, <code>mod_gridsite</code>, and <code>mod_wsgi</code>.
@@ -783,7 +783,7 @@ The first two are installed via yum;
 the .so file for mod_wsgi is located in <code>/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/</code>
 or <code>/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/</code> for the ITB instance.</p>
 <p><strong>TODO Derek can you write something here?</strong></p>
-<h3 id="data-configuration">Data configuration<a class="headerlink" href="#data-configuration" title="Permanent link">&para;</a></h3>
+<h3 id="data-configuration">Data configuration</h3>
 <p>Configuration is in <code>/etc/opt/topology/config-production.py</code> and <code>config-itb.py</code>.</p>
 <table>
 <thead>
@@ -826,7 +826,7 @@ or <code>/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/</co
 <p>Puppet ensures that the production <code>contact</code> and <code>topology</code> clones are up to date with their configured remote tracking
 repo and branch.
 Puppet does not manage the ITB data directories so they need to be updated by hand during testing.</p>
-<h2 id="testing-changes-on-the-itb-instance">Testing changes on the ITB instance<a class="headerlink" href="#testing-changes-on-the-itb-instance" title="Permanent link">&para;</a></h2>
+<h2 id="testing-changes-on-the-itb-instance">Testing changes on the ITB instance</h2>
 <p>All changes should be tested on the ITB instance before deploying to production.
 If you can, test them on your local machine first.
 These instructions assume that the code has not been merged to master.</p>
@@ -843,7 +843,7 @@ These instructions assume that the code has not been merged to master.</p>
 <li>
 <p>Check out the branch you are testing.
     If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
+<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b <span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>REMOTE<span class="p">&amp;</span>gt<span class="p">;</span>/<span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span>
 </pre></div>
 
 
@@ -873,7 +873,7 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Check the branch of <code>TOPOLOGY_DATA_DIR</code> from  <code>/etc/opt/topology/config-itb.py</code></p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> &lt;TOPOLOGY_DATA_DIR&gt;
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> <span class="p">&amp;</span>lt<span class="p">;</span>TOPOLOGY_DATA_DIR<span class="p">&amp;</span>gt<span class="p">;</span>
 <span class="gp">#</span> git fetch --all
 <span class="gp">#</span> git status
 </pre></div>
@@ -884,7 +884,7 @@ These instructions assume that the code has not been merged to master.</p>
 <p>Note the previous branch, you will need this later</p>
 </li>
 <li>If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a></li>
-<li>Check out the target branch:<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH NAME&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
+<li>Check out the target branch:<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b <span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>REMOTE<span class="p">&amp;</span>gt<span class="p">;</span>/<span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span>
 </pre></div>
 
 
@@ -912,12 +912,12 @@ These instructions assume that the code has not been merged to master.</p>
 <p>Errors and output are in <code>/var/log/httpd/error_log</code>.</p>
 </li>
 </ol>
-<h3 id="reverting-changes">Reverting changes<a class="headerlink" href="#reverting-changes" title="Permanent link">&para;</a></h3>
+<h3 id="reverting-changes">Reverting changes</h3>
 <ol>
 <li>
 <p>Switch <code>/opt/topology-itb</code> to the previous branch:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology-itb
-<span class="gp">#</span> git checkout &lt;BRANCH&gt;
+<span class="gp">#</span> git checkout <span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span>
 </pre></div>
 
 
@@ -939,7 +939,7 @@ These instructions assume that the code has not been merged to master.</p>
 <p>Test the web interface at <a href="https://topology-itb.opensciencegrid.org">https://topology-itb.opensciencegrid.org</a>.</p>
 </li>
 </ol>
-<h2 id="updating-the-production-instance">Updating the production instance<a class="headerlink" href="#updating-the-production-instance" title="Permanent link">&para;</a></h2>
+<h2 id="updating-the-production-instance">Updating the production instance</h2>
 <p>Updating the production instance is similar to updating ITB instance.</p>
 <ol>
 <li>
@@ -965,13 +965,13 @@ These instructions assume that the code has not been merged to master.</p>
 <p>Errors and output are in <code>/var/log/httpd/error_log</code>.</p>
 </li>
 </ol>
-<h3 id="reverting-changes_1">Reverting changes<a class="headerlink" href="#reverting-changes_1" title="Permanent link">&para;</a></h3>
+<h3 id="reverting-changes_1">Reverting changes</h3>
 <ol>
 <li>
 <p>Switch <code>/opt/topology</code> to the previous master:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology
 <span class="gp">#</span><span class="c1">## (use `git reflog` to find the previous commit that was used)</span>
-<span class="gp">#</span> git reset --hard &lt;COMMIT&gt;
+<span class="gp">#</span> git reset --hard <span class="p">&amp;</span>lt<span class="p">;</span>COMMIT<span class="p">&amp;</span>gt<span class="p">;</span>
 </pre></div>
 
 

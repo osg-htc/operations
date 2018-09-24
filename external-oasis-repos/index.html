@@ -549,7 +549,7 @@
                   <a href="https://github.com/opensciencegrid/operations/edit/master/docs/external-oasis-repos.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="external-oasis-repositories">External OASIS Repositories<a class="headerlink" href="#external-oasis-repositories" title="Permanent link">&para;</a></h1>
+                <h1 id="external-oasis-repositories">External OASIS Repositories</h1>
 <p>We offer hosting of non-OSG CVMFS repositories on OASIS. This means that requests to create, rename, remove, or blanking OASIS repositories will come in as GOC tickets. This document contains instructions for handling those tickets.</p>
 <div class="admonition note">
 <p class="admonition-title">Also see</p>
@@ -558,7 +558,7 @@
 <li><a href="https://opensciencegrid.github.io/docs/data/external-oasis-repos/">External OASIS repository</a></li>
 </ul>
 </div>
-<h2 id="requests-to-host-a-repository-on-oasis">Requests to Host a Repository on OASIS<a class="headerlink" href="#requests-to-host-a-repository-on-oasis" title="Permanent link">&para;</a></h2>
+<h2 id="requests-to-host-a-repository-on-oasis">Requests to Host a Repository on OASIS</h2>
 <ol>
 <li>
 <p>Ensure that the repository administrator is valid for the VO. This can be done by (a) OSG already having a
@@ -592,10 +592,10 @@
     fully replicated on the OSG and close the ticket.</p>
 </li>
 </ol>
-<h2 id="requests-to-change-the-url-of-an-external-repository">Requests to Change the URL of an External Repository<a class="headerlink" href="#requests-to-change-the-url-of-an-external-repository" title="Permanent link">&para;</a></h2>
+<h2 id="requests-to-change-the-url-of-an-external-repository">Requests to Change the URL of an External Repository</h2>
 <p>If there is a request to change the URL of an external repository, update the registered value in OIM for the VO in <code>OASIS Repo URLs</code>.<br />
 Tell the requester that it is ready 15 minutes after OIM is updated.</p>
-<h2 id="requests-to-remove-an-external-repository">Requests to Remove an External Repository<a class="headerlink" href="#requests-to-remove-an-external-repository" title="Permanent link">&para;</a></h2>
+<h2 id="requests-to-remove-an-external-repository">Requests to Remove an External Repository</h2>
 <ol>
 <li>After validating that the ticket submitter is authorized by the VO's OASIS manager, delete the registered value
     for <span style="color:red">example.opensciencegrid.org</span> in OIM for the VO in OASIS Repo URLs.</li>
@@ -609,7 +609,7 @@ Tell the requester that it is ready 15 minutes after OIM is updated.</p>
 
 </li>
 </ol>
-<h2 id="requests-to-blank-an-external-repository">Requests to Blank an External Repository<a class="headerlink" href="#requests-to-blank-an-external-repository" title="Permanent link">&para;</a></h2>
+<h2 id="requests-to-blank-an-external-repository">Requests to Blank an External Repository</h2>
 <ol>
 <li>If there is a need to shut down the distribution of a repository, run <code>blank_osg_repository</code> on <code>oasis-replica</code> and
     give it the full name of the repository. This will rename the repository directories to a name with the current

@@ -787,10 +787,10 @@
                   <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/collector.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="goc-condor-collector-service-level-agreement">GOC Condor Collector Service Level Agreement<a class="headerlink" href="#goc-condor-collector-service-level-agreement" title="Permanent link">&para;</a></h1>
-<h2 id="about-this-document">About This Document<a class="headerlink" href="#about-this-document" title="Permanent link">&para;</a></h2>
+                <h1 id="goc-condor-collector-service-level-agreement">GOC Condor Collector Service Level Agreement</h1>
+<h2 id="about-this-document">About This Document</h2>
 <p>This document details a service level agreement which outlines production expectations for the GOC Condor Collector and defines general support infrastructure for the service.</p>
-<h2 id="version-control">Version Control<a class="headerlink" href="#version-control" title="Permanent link">&para;</a></h2>
+<h2 id="version-control">Version Control</h2>
 <table>
 <thead>
 <tr>
@@ -809,19 +809,19 @@
 </tr>
 </tbody>
 </table>
-<h2 id="executive-summary">Executive Summary<a class="headerlink" href="#executive-summary" title="Permanent link">&para;</a></h2>
+<h2 id="executive-summary">Executive Summary</h2>
 <p>This SLA is an agreement between OSG and OSG Stakeholders pertaining to the operation of the OSG Condor Collector service.</p>
-<h2 id="owners">Owners<a class="headerlink" href="#owners" title="Permanent link">&para;</a></h2>
+<h2 id="owners">Owners</h2>
 <p>The Condor Collector SLA is owned by OSG Operations. It will be reviewed by and agreed upon by the OSG Executive Team.</p>
-<h2 id="service-name-and-description">Service Name and Description<a class="headerlink" href="#service-name-and-description" title="Permanent link">&para;</a></h2>
-<h3 id="name">Name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
+<h2 id="service-name-and-description">Service Name and Description</h2>
+<h3 id="name">Name</h3>
 <p>GOC Condor Collector</p>
-<h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
+<h3 id="description">Description</h3>
 <p>The grid-facing component of the HTCondor compute element system available for use by all OSG VOs.</p>
-<h2 id="security-considerations">Security Considerations<a class="headerlink" href="#security-considerations" title="Permanent link">&para;</a></h2>
+<h2 id="security-considerations">Security Considerations</h2>
 <p>All information associated with the service is covered by the Indiana University <a href="https://github.com/opensciencegrid/operations/blob/master/SLA/IUPrivacyPolicy">privacy policy</a>.
 Effect of compromise of this service are limited to the service. A compromise may make the service unusable by compute elements using it.</p>
-<h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times<a class="headerlink" href="#service-target-response-priorities-and-response-times" title="Permanent link">&para;</a></h2>
+<h2 id="service-target-response-priorities-and-response-times">Service Target Response Priorities and Response Times</h2>
 <p>This section deals with unplanned outages. Please see <a href="#requests-for-service-enhancements">Requests for Service Enhancement</a> for information on planned maintenance outages.</p>
 <table>
 <thead>
@@ -883,7 +883,7 @@ Effect of compromise of this service are limited to the service. A compromise ma
 </tr>
 </tbody>
 </table>
-<h2 id="escalation-contacts">Escalation Contacts<a class="headerlink" href="#escalation-contacts" title="Permanent link">&para;</a></h2>
+<h2 id="escalation-contacts">Escalation Contacts</h2>
 <table>
 <thead>
 <tr>
@@ -913,29 +913,29 @@ Effect of compromise of this service are limited to the service. A compromise ma
 <p>Critical Level Security Issues will be elevated immediately to the OSG Security Team.</p>
 <p>Detailed information on contacts are viewable on the following <a href="https://my.opensciencegrid.org/rgsummary/xml?datasource=summary&amp;summary_attrs_showhierarchy=on&amp;summary_attrs_showservice=on&amp;summary_attrs_showfqdn=on&amp;summary_attrs_showcontact=on&amp;gip_status_attrs_showtestresults=on&amp;gip_status_attrs_showfqdn=on&amp;account_type=cumulative_hours&amp;ce_account_type=gip_vo&amp;se_account_type=vo_transfer_volume&amp;start_type=7daysago&amp;start_date=09/15/2009&amp;end_type=now&amp;end_date=09/15/2009&amp;site_10047=on&amp;rg=on&amp;rg_246=on&amp;gridtype=on&amp;gridtype_1=on&amp;voown=on&amp;voown_25=on&amp;active=on&amp;active_value=1&amp;disable_value=1">MyOSG URL</a>, and are maintained within the</p>
 <p>Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly <a href="https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes">Operations</a> and <a href="https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes">Production</a> meetings.</p>
-<h2 id="service-availability-and-outages">Service Availability and Outages<a class="headerlink" href="#service-availability-and-outages" title="Permanent link">&para;</a></h2>
+<h2 id="service-availability-and-outages">Service Availability and Outages</h2>
 <p>The GOC will strive for 90% service availability. If service availability falls below 90% monthly as monitored by the GOC a root cause analysis and service plan will be submitted to the OSG stakeholders for plans to restore an acceptable level of service availability.</p>
 <p>Reliability and availability will be determined by 2 critical RSV probes and the OSG availability algorithm.
    * One probe will verify the Condor collector is queryable whenever the host is pingable (i.e., reasonably not a network failure).
    * The other probe will verify an automatically generated configuration file has been updated recently</p>
-<h2 id="service-support-hours">Service Support Hours<a class="headerlink" href="#service-support-hours" title="Permanent link">&para;</a></h2>
+<h2 id="service-support-hours">Service Support Hours</h2>
 <p>This service will be run for 24x7, but support will primarily be within business hours. The exception is for security incidents.</p>
-<h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures<a class="headerlink" href="#service-off-hours-support-procedures" title="Permanent link">&para;</a></h2>
+<h2 id="service-off-hours-support-procedures">Service Off-Hours Support Procedures</h2>
 <p>All operational issues should be reported as per <a href="#customer-problem-reporting">Customer Problem Reporting</a> section.</p>
-<h2 id="requests-for-service-enhancements">Requests for Service Enhancements<a class="headerlink" href="#requests-for-service-enhancements" title="Permanent link">&para;</a></h2>
+<h2 id="requests-for-service-enhancements">Requests for Service Enhancements</h2>
 <p>OSG Operations will provide enhancement capabilities only as they are released by the HTCondor project or OSG Technology Group.
 Requests for customization of the deployed service may be made; OSG Operations has the right of up to one month of testing of any change.</p>
 <p>OSG will give 1 week of warning prior to any change in the Collector service version.
 At any time during this week, Stakeholders are permitted to request a delay for up to 1 week after the originally scheduled upgrade.</p>
 <p>OSG Operations will schedule downtimes and configuration changes during normal business hours unless approved by affected stakeholders. This is done so affected stakeholders are always on-hand in case if the downtime and changes cause further issues.</p>
-<h2 id="customer-problem-reporting">Customer Problem Reporting<a class="headerlink" href="#customer-problem-reporting" title="Permanent link">&para;</a></h2>
+<h2 id="customer-problem-reporting">Customer Problem Reporting</h2>
 <p>Problems should be reported immediately at <a href="https://support.opensciencegrid.org">https://support.opensciencegrid.org</a></p>
-<h2 id="responsibilities">Responsibilities<a class="headerlink" href="#responsibilities" title="Permanent link">&para;</a></h2>
+<h2 id="responsibilities">Responsibilities</h2>
 <ul>
 <li>The Collector will be run by OSG Operations and accessible to HTCondor compute elements.</li>
 <li>Problems not associated with the hardware, operating system or network are the responsibilty of the Technology Group.</li>
 </ul>
-<h2 id="service-measuring-and-reporting">Service Measuring and Reporting<a class="headerlink" href="#service-measuring-and-reporting" title="Permanent link">&para;</a></h2>
+<h2 id="service-measuring-and-reporting">Service Measuring and Reporting</h2>
 <p>The GOC will provide the following reports in the intervals indicated (monthly, quarterly, semi-annually, or annually):</p>
 <table>
 <thead>
@@ -955,12 +955,12 @@ At any time during this week, Stakeholders are permitted to request a delay for 
 </tr>
 </tbody>
 </table>
-<h2 id="sla-validity-period">SLA Validity Period<a class="headerlink" href="#sla-validity-period" title="Permanent link">&para;</a></h2>
+<h2 id="sla-validity-period">SLA Validity Period</h2>
 <p>This SLA will be in affect for one year.</p>
-<h2 id="sla-review-procedure">SLA Review Procedure<a class="headerlink" href="#sla-review-procedure" title="Permanent link">&para;</a></h2>
+<h2 id="sla-review-procedure">SLA Review Procedure</h2>
 <p>This SLA will renew automatically on a yearly basis unless change or update is requested by the OSG Operations Coordinator, the OSG Executive Team or the Stakeholders.</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<h1 id="appendix-a-approval">Appendix A - Approval<a class="headerlink" href="#appendix-a-approval" title="Permanent link">&para;</a></h1>
+<h2 id="references">References</h2>
+<h1 id="appendix-a-approval">Appendix A - Approval</h1>
 <table>
 <thead>
 <tr>
@@ -978,8 +978,8 @@ At any time during this week, Stakeholders are permitted to request a delay for 
 </tbody>
 </table>
 <p>&lt;-- CONTENT MANAGEMENT PROJECT</p>
-<h6 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h6>
-<h1 id="dear-document-owner">DEAR DOCUMENT OWNER<a class="headerlink" href="#dear-document-owner" title="Permanent link">&para;</a></h1>
+<h6 id="_1"></h6>
+<h1 id="dear-document-owner">DEAR DOCUMENT OWNER</h1>
 <p>Thank you for claiming ownership for this document Please fill in your FirstLast name here:
    * Local OWNER = RobQ</p>
 <p>Please define the document area, choose one of the defined areas from the next line
@@ -1001,17 +1001,17 @@ DOC_TYPE = (HowTo|Installation|Knowledge|Navigation|Planning|Training|Troublesho
    * Local TEST_READY = <span style="color:red">NO</span></p>
 <p>change to <span style="color:red">YES</span> only if the document has passed the review and the test (if applicable) and is ready for release
    * Local RELEASE_READY = <span style="color:red">NO</span></p>
-<h1 id="dear-document-reviewer">DEAR DOCUMENT REVIEWER<a class="headerlink" href="#dear-document-reviewer" title="Permanent link">&para;</a></h1>
+<h1 id="dear-document-reviewer">DEAR DOCUMENT REVIEWER</h1>
 <p>Thank for reviewing this document Please fill in your FirstLast name here:
    * Local REVIEWER = ScottTeige</p>
 <p>Please define the review status for this document to be in progress ( <span style="color:red">IN_PROGRESS</span> ), failed ( <span style="color:red">NO</span> ) or passed ( <span style="color:red">YES</span> )
    * Local REVIEW_PASSED = <span style="color:red">YES</span></p>
-<h1 id="dear-document-tester">DEAR DOCUMENT TESTER<a class="headerlink" href="#dear-document-tester" title="Permanent link">&para;</a></h1>
+<h1 id="dear-document-tester">DEAR DOCUMENT TESTER</h1>
 <p>Thank for testing this document Please fill in your FirstLast name here:
    * Local TESTER = ScottTeige</p>
 <p>Please define the test status for this document to be in progress ( <span style="color:red">IN_PROGRESS</span> ), failed ( <span style="color:red">NO</span> ) or passed ( <span style="color:red">YES</span> )
    * Local TEST_PASSED = <span style="color:red">IN_PROGRESS</span></p>
-<h6 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h6>
+<h6 id="_2"></h6>
 <p>--&gt;</p>
                 
                   
