@@ -37,8 +37,6 @@ Requests to Host a Repository on OASIS
 dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done
     ```
 
-    After that, ask repository adminstrator add `dune.osgstorage.org` to the `hcc-cvmfs-repo.unl.edu:/etc/cron.d/fetch-cvmfs-whitelist`.
-
 1.  If the respository ends in a new domain name `domain.name` that has not been distributed before, then place a copy of the
     `domain.name.pub` public key into `/srv/etc/keys` on both `oasis-replica` and
     `oasis-replica-itb`. If you do not have that key, then ask the repository service representative how to obtain it. In
