@@ -44,6 +44,7 @@ Weekly Operations Meetings
 
 ### Meeting Minutes ###
 
+- [October 15, 2018](https://docs.google.com/document/d/1TQu-gb-QUYqbv52ULrFoOy_G1xdfwSswhwsEp9Gut6g/edit?usp=sharing)
 - [October 8, 2018](https://docs.google.com/document/d/1kqguEvR-tht-Od0ADHempsKqyx2Sb3s-2D89gGm1Lis/edit?usp=sharing)
 - [October 1, 2018](https://docs.google.com/document/d/14-yW8BSeKKp4WIiLWGJ3u7EnsOMvVfDQNo6H2yJ-q9E/edit?usp=sharing)
 - [September 24, 2018](https://docs.google.com/document/d/1hFg1kOybF0ZQhj5ecH4bRw3tV-jwMgl-P1AdE4yWE8o/edit?usp=sharing)
