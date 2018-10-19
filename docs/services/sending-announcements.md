@@ -48,12 +48,6 @@ Installation
         :::console
         git clone https://github.com/opensciencegrid/topology.git
 
-1.  Disable any HTTP proxies by looking in the environment for the following variables and unset them if present:
-
-        :::console
-        env | grep -i 'https*_proxy'
-        unset HTTPS_PROXY HTTP_PROXY https_proxy http_proxy
-
 1. If you are on a FermiCloud VM, update `postfix` to relay through FermiLab's official mail server:
 
         :::console
@@ -66,7 +60,7 @@ Installation
 
         :::console
         cd topology
-        PYTHONPATH=src python bin/osg-topology --cert publicCert.pem \
+        bin/osg-topology --cert publicCert.pem \
             --key privateKey.pem list-resource-contacts
 
     If the contacts include email addresses, this is working properly.
@@ -74,6 +68,13 @@ Installation
 
 Sending the announcement
 ------------------------
+
+Before using `osg-notify`, update your clone of the `topology` repo by running:
+
+```console
+$ cd topology
+$ git pull
+```
 
 Use the `osg-notify` tool to send the announcement using the relevant options from the following table:
 
@@ -100,7 +101,7 @@ Use the `osg-notify` tool to send the announcement using the relevant options fr
 For release announcements use the following command:
 
 ```console
-PYTHONPATH=src python bin/osg-notify --cert your-cert.pem --key your-key.pem \
+bin/osg-notify --cert your-cert.pem --key your-key.pem \
     --no-sign --type production --message message-file \
     --subject '<EMAIL SUBJECT>' \
     --recipients "osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org" \
