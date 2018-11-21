@@ -16,6 +16,7 @@ pages:
   - Installing GlideinWMS Factory: 'services/install-gwms-factory.md'
   - Topology Service: 'services/topology.md'
   - Topology and Contacts Data: 'services/topology-contacts-data.md'
+  - Enable Cache: 'services/enable-cache.md'
   - Sending Announcements: 'services/sending-announcements.md'
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
