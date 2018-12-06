@@ -639,10 +639,22 @@ Certain things to check are:</p>
     (The contacts data now includes the GitHub usernames for some people.
     See below for instructions on how to get that information.)</p>
 </li>
+<li>
+<p>Is their GitHub ID registered in the <a href="#contacts-data">contact database</a> and are they associated with the relevant
+    resource, site, facility, or VO?</p>
+</li>
 </ul>
 <h2 id="contacts-data">Contacts Data</h2>
-<p>Contacts data is either available as XML in <a href="https://topology.opensciencegrid.org/miscuser/xml">https://topology.opensciencegrid.org/miscuser/xml</a> or
-editable YAML in <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>, in <code>contacts.yaml</code>.
+<p>The OSG keeps contact data for administrators and maintainers of OSG resources and VOs for the purpose of distributing
+security, software, and adminstrative (e.g., OSG All-Hands dates) announcements.
+Additionally, OSG contacts have the following abilities:</p>
+<ul>
+<li>View other contacts' information (via <a href="https://topology.opensciencegrid.org/contacts">HTML</a> and
+  <a href="https://topology.opensciencegrid.org/miscuser/xml">XML</a>) with a registered certificate</li>
+<li><a href="https://opensciencegrid.org/docs/common/registration/#registering-resource-downtimes">Register resource downtimes</a>
+  for resources that they are listed as an administrative contact, if they have a registered GitHub ID</li>
+</ul>
+<p>Contact data is kept as editable YAML in <a href="https://bitbucket.org/opensciencegrid/contact/">https://bitbucket.org/opensciencegrid/contact/</a>, in <code>contacts.yaml</code>.
 The YAML file contains sensitive information and is only visible to people with access to that repo.</p>
 <h3 id="getting-access-to-the-contact-repo">Getting access to the contact repo</h3>
 <p>The contacts repo is hosted on BitBucket.
@@ -684,11 +696,15 @@ Be sure to try variations of their name if you don't find them --
 someone may be listed as "Dave" or "David", or have a middle name or middle initial.</p>
 <p>Follow the instructions below for adding or updating a contact, as appropriate.</p>
 <h4 id="adding-a-new-contact">Adding a new contact</h4>
-<p>Before adding a new contact, verify their VO, site, or project affiliation,
-and get some brief profile information about them.
-The profile does not need to be detailed -- examples are "Neutrino physicist at Fermilab working on the DUNE project"
-or "Administrator for GridUNESP CEs."</p>
-<p>After obtaining this information, fill out the values in <code>template-contacts.yaml</code> and add it to <code>contacts.yaml</code>.
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Any new contacts need to have their association with the OSG verified by a known contact within the relevant VO,
+site, or project.</p>
+</div>
+<p>When registering a new contact, first obtain the required
+<a href="https://opensciencegrid.org/docs/common/registration/#registering-contacts">contact information</a>.</p>
+<p>After obtaining this information and verifying their association with the OSG, fill out the values in
+<code>template-contacts.yaml</code> and add it to <code>contacts.yaml</code>.
 To get the hash used as the ID, run <code>email-hash</code> on their email address.
 For example:</p>
 <div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> contact  <span class="c1"># this is your local clone of the &quot;contact&quot; repo</span>
