@@ -28,6 +28,8 @@ Certain things to check are:
     (The contacts data now includes the GitHub usernames for some people.
     See below for instructions on how to get that information.)
 
+-   Is their GitHub ID registered in the [contact database](#contacts-data) and are they associated with the relevant
+    resource, site, facility, or VO?
 
 Contacts Data
 -------------
