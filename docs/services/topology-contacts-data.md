@@ -28,12 +28,22 @@ Certain things to check are:
     (The contacts data now includes the GitHub usernames for some people.
     See below for instructions on how to get that information.)
 
+-   Is their GitHub ID registered in the [contact database](#contacts-data) and are they associated with the relevant
+    resource, site, facility, or VO?
 
 Contacts Data
 -------------
 
-Contacts data is either available as XML in <https://topology.opensciencegrid.org/miscuser/xml> or
-editable YAML in <https://bitbucket.org/opensciencegrid/contact/>, in `contacts.yaml`.
+The OSG keeps contact data for administrators and maintainers of OSG resources and VOs for the purpose of distributing
+security, software, and adminstrative (e.g., OSG All-Hands dates) announcements.
+Additionally, OSG contacts have the following abilities:
+
+- View other contacts' information (via [HTML](https://topology.opensciencegrid.org/contacts) and
+  [XML](https://topology.opensciencegrid.org/miscuser/xml)) with a registered certificate
+- [Register resource downtimes](https://opensciencegrid.org/docs/common/registration/#registering-resource-downtimes)
+  for resources that they are listed as an administrative contact, if they have a registered GitHub ID
+
+Contact data is kept as editable YAML in <https://bitbucket.org/opensciencegrid/contact/>, in `contacts.yaml`.
 The YAML file contains sensitive information and is only visible to people with access to that repo.
 
 
@@ -85,12 +95,15 @@ Follow the instructions below for adding or updating a contact, as appropriate.
 
 #### Adding a new contact
 
-Before adding a new contact, verify their VO, site, or project affiliation,
-and get some brief profile information about them.
-The profile does not need to be detailed -- examples are "Neutrino physicist at Fermilab working on the DUNE project"
-or "Administrator for GridUNESP CEs."
+!!! danger
+    Any new contacts need to have their association with the OSG verified by a known contact within the relevant VO,
+    site, or project.
 
-After obtaining this information, fill out the values in `template-contacts.yaml` and add it to `contacts.yaml`.
+When registering a new contact, first obtain the required
+[contact information](https://opensciencegrid.org/docs/common/registration/#registering-contacts).
+
+After obtaining this information and verifying their association with the OSG, fill out the values in
+`template-contacts.yaml` and add it to `contacts.yaml`.
 To get the hash used as the ID, run `email-hash` on their email address.
 For example:
 
