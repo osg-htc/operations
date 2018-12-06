@@ -607,14 +607,6 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 
 </li>
 <li>
-<p>Disable any HTTP proxies by looking in the environment for the following variables and unset them if present:</p>
-<div class="codehilite"><pre><span></span><span class="go">env | grep -i &#39;https*_proxy&#39;</span>
-<span class="go">unset HTTPS_PROXY HTTP_PROXY https_proxy http_proxy</span>
-</pre></div>
-
-
-</li>
-<li>
 <p>If you are on a FermiCloud VM, update <code>postfix</code> to relay through FermiLab's official mail server:</p>
 <div class="codehilite"><pre><span></span><span class="go">echo &quot;transport_maps = hash:/etc/postfix/transport&quot; &amp;gt;&amp;gt; /etc/postfix/main.cf</span>
 <span class="go">echo &quot;*   smtp:smtp.fnal.gov&quot; &amp;gt;&amp;gt; /etc/postfix/transport</span>
@@ -627,7 +619,7 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 <li>
 <p>Ensure that you can lookup contacts in the topology database by using the <code>osg-topology</code> tool to list the contacts:</p>
 <div class="codehilite"><pre><span></span><span class="go">cd topology</span>
-<span class="go">PYTHONPATH=src python bin/osg-topology --cert publicCert.pem \</span>
+<span class="go">bin/osg-topology --cert publicCert.pem \</span>
 <span class="go">    --key privateKey.pem list-resource-contacts</span>
 </pre></div>
 
@@ -637,6 +629,12 @@ If you type your password incorrectly, the authentication will silently fail and
 </li>
 </ol>
 <h2 id="sending-the-announcement">Sending the announcement</h2>
+<p>Before using <code>osg-notify</code>, update your clone of the <code>topology</code> repo by running:</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> topology
+<span class="gp">$</span> git pull
+</pre></div>
+
+
 <p>Use the <code>osg-notify</code> tool to send the announcement using the relevant options from the following table:</p>
 <table>
 <thead>
@@ -698,7 +696,7 @@ If you type your password incorrectly, the authentication will silently fail and
 </ul>
 </div>
 <p>For release announcements use the following command:</p>
-<div class="codehilite"><pre><span></span><span class="go">PYTHONPATH=src python bin/osg-notify --cert your-cert.pem --key your-key.pem \</span>
+<div class="codehilite"><pre><span></span><span class="go">bin/osg-notify --cert your-cert.pem --key your-key.pem \</span>
 <span class="go">    --no-sign --type production --message message-file \</span>
 <span class="go">    --subject &#39;&lt;EMAIL SUBJECT&gt;&#39; \</span>
 <span class="go">    --recipients &quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot; \</span>
