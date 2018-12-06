@@ -32,8 +32,16 @@ Certain things to check are:
 Contacts Data
 -------------
 
-Contacts data is either available as XML in <https://topology.opensciencegrid.org/miscuser/xml> or
-editable YAML in <https://bitbucket.org/opensciencegrid/contact/>, in `contacts.yaml`.
+The OSG keeps contact data for administrators and maintainers of OSG resources and VOs for the purpose of distributing
+security, software, and adminstrative (i.e., OSG All-Hands dates) announcements.
+Additionally, OSG contacts have the following abilities:
+
+- View other contacts' information (via [HTML](https://topology.opensciencegrid.org/contacts) and
+  [XML](https://topology.opensciencegrid.org/miscuser/xml)) with a registered certificate
+- [Register resource downtimes](https://opensciencegrid.org/docs/common/registration/#registering-resource-downtimes)
+  for resources that they are listed as an administrative contact, if they have a registered GitHub ID
+
+Contact data is kept as editable YAML in <https://bitbucket.org/opensciencegrid/contact/>, in `contacts.yaml`.
 The YAML file contains sensitive information and is only visible to people with access to that repo.
 
 
