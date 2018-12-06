@@ -66,6 +66,9 @@ Installation
     If the contacts include email addresses, this is working properly.
     If you type your password incorrectly, the authentication will silently fail and you won't get email addresses
 
+6.  Test this setup by sending a message to yourself only.
+    Bonus points for using an email address that goes to a site with aggressive SPAM filtering.
+
 Sending the announcement
 ------------------------
 
