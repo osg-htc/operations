@@ -93,12 +93,15 @@ Follow the instructions below for adding or updating a contact, as appropriate.
 
 #### Adding a new contact
 
-Before adding a new contact, verify their VO, site, or project affiliation,
-and get some brief profile information about them.
-The profile does not need to be detailed -- examples are "Neutrino physicist at Fermilab working on the DUNE project"
-or "Administrator for GridUNESP CEs."
+!!! danger
+    Any new contacts need to have their association with the OSG verified by a known contact within the relevant VO,
+    site, or project.
 
-After obtaining this information, fill out the values in `template-contacts.yaml` and add it to `contacts.yaml`.
+When registering a new contact, first obtain the required
+[contact information](https://opensciencegrid.org/docs/common/registration/#registering-contacts).
+
+After obtaining this information and verifying their association with the OSG, fill out the values in
+`template-contacts.yaml` and add it to `contacts.yaml`.
 To get the hash used as the ID, run `email-hash` on their email address.
 For example:
 
