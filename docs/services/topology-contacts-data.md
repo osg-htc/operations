@@ -33,7 +33,7 @@ Contacts Data
 -------------
 
 The OSG keeps contact data for administrators and maintainers of OSG resources and VOs for the purpose of distributing
-security, software, and adminstrative (i.e., OSG All-Hands dates) announcements.
+security, software, and adminstrative (e.g., OSG All-Hands dates) announcements.
 Additionally, OSG contacts have the following abilities:
 
 - View other contacts' information (via [HTML](https://topology.opensciencegrid.org/contacts) and
