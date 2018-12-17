@@ -675,18 +675,18 @@ Have someone else review and merge your pull request.</p>
 <p>All contact data is stored in <code>contacts.yaml</code>.
 The contact info is keyed by a 40-character hexadecimal ID which was generated from their email address when they were first added.
 An example entry is:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">25357f62c7ab2ae11ddda1efd272bb5435dbfacb</span><span class="p p-Indicator">:</span>
+<div class="codehilite"><pre><span></span><span class="nt">25357f62c7ab2ae11ddda1efd272bb5435dbfacb</span><span class="p">:</span>
 <span class="c1"># ^ this is their ID</span>
-  <span class="l l-Scalar l-Scalar-Plain">FullName</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Example A. User</span>
-  <span class="l l-Scalar l-Scalar-Plain">Profile</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">This is an example user.</span>
-  <span class="l l-Scalar l-Scalar-Plain">GitHub</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">ExampleUser</span>
+  <span class="nt">FullName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Example A. User</span>
+  <span class="nt">Profile</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">This is an example user.</span>
+  <span class="nt">GitHub</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ExampleUser</span>
   <span class="c1"># ContactInformation data requires authorization to view</span>
-  <span class="l l-Scalar l-Scalar-Plain">ContactInformation</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">DNs</span><span class="p p-Indicator">:</span>
+  <span class="nt">ContactInformation</span><span class="p">:</span>
+    <span class="nt">DNs</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
-    <span class="l l-Scalar l-Scalar-Plain">IM</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
-    <span class="l l-Scalar l-Scalar-Plain">PrimaryEmail</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">user@example.net</span>
-    <span class="l l-Scalar l-Scalar-Plain">PrimaryPhone</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="nt">IM</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="nt">PrimaryEmail</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">user@example.net</span>
+    <span class="nt">PrimaryPhone</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">...</span>
 </pre></div>
 
 
@@ -714,8 +714,8 @@ $ bin/email-hash user@example.net
 
 
 <p>Then your new entry will look like</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">25357f62c7ab2ae11ddda1efd272bb5435dbfacb</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">FullName</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Example A. User</span>
+<div class="codehilite"><pre><span></span><span class="nt">25357f62c7ab2ae11ddda1efd272bb5435dbfacb</span><span class="p">:</span>
+    <span class="nt">FullName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Example A. User</span>
     <span class="l l-Scalar l-Scalar-Plain">....</span>
 </pre></div>
 
