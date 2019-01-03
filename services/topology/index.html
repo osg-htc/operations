@@ -855,7 +855,7 @@ These instructions assume that the code has not been merged to master.</p>
 <li>
 <p>Check out the branch you are testing.
     If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b <span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>REMOTE<span class="p">&amp;</span>gt<span class="p">;</span>/<span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
 </pre></div>
 
 
@@ -885,7 +885,7 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Check the branch of <code>TOPOLOGY_DATA_DIR</code> from  <code>/etc/opt/topology/config-itb.py</code></p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> <span class="p">&amp;</span>lt<span class="p">;</span>TOPOLOGY_DATA_DIR<span class="p">&amp;</span>gt<span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> &lt;TOPOLOGY_DATA_DIR&gt;
 <span class="gp">#</span> git fetch --all
 <span class="gp">#</span> git status
 </pre></div>
@@ -896,7 +896,7 @@ These instructions assume that the code has not been merged to master.</p>
 <p>Note the previous branch, you will need this later</p>
 </li>
 <li>If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a></li>
-<li>Check out the target branch:<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b <span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span> <span class="p">&amp;</span>lt<span class="p">;</span>REMOTE<span class="p">&amp;</span>gt<span class="p">;</span>/<span class="p">&amp;</span>lt<span class="p">;</span>BRANCH NAME<span class="p">&amp;</span>gt<span class="p">;</span>
+<li>Check out the target branch:<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH NAME&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
 </pre></div>
 
 
@@ -929,7 +929,7 @@ These instructions assume that the code has not been merged to master.</p>
 <li>
 <p>Switch <code>/opt/topology-itb</code> to the previous branch:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology-itb
-<span class="gp">#</span> git checkout <span class="p">&amp;</span>lt<span class="p">;</span>BRANCH<span class="p">&amp;</span>gt<span class="p">;</span>
+<span class="gp">#</span> git checkout &lt;BRANCH&gt;
 </pre></div>
 
 
@@ -983,7 +983,7 @@ These instructions assume that the code has not been merged to master.</p>
 <p>Switch <code>/opt/topology</code> to the previous master:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology
 <span class="gp">#</span><span class="c1">## (use `git reflog` to find the previous commit that was used)</span>
-<span class="gp">#</span> git reset --hard <span class="p">&amp;</span>lt<span class="p">;</span>COMMIT<span class="p">&amp;</span>gt<span class="p">;</span>
+<span class="gp">#</span> git reset --hard &lt;COMMIT&gt;
 </pre></div>
 
 

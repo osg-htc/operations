@@ -608,8 +608,8 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 </li>
 <li>
 <p>If you are on a FermiCloud VM, update <code>postfix</code> to relay through FermiLab's official mail server:</p>
-<div class="codehilite"><pre><span></span><span class="go">echo &quot;transport_maps = hash:/etc/postfix/transport&quot; &amp;gt;&amp;gt; /etc/postfix/main.cf</span>
-<span class="go">echo &quot;*   smtp:smtp.fnal.gov&quot; &amp;gt;&amp;gt; /etc/postfix/transport</span>
+<div class="codehilite"><pre><span></span><span class="go">echo &quot;transport_maps = hash:/etc/postfix/transport&quot; &gt;&gt; /etc/postfix/main.cf</span>
+<span class="go">echo &quot;*   smtp:smtp.fnal.gov&quot; &gt;&gt; /etc/postfix/transport</span>
 <span class="go">postmap hash:/etc/postfix/transport</span>
 <span class="go">postfix reload</span>
 </pre></div>
