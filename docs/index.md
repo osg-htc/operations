@@ -44,6 +44,7 @@ Weekly Operations Meetings
 
 ### Meeting Minutes ###
 
+- January 28, 2019 (canceled due to F2F meeting)
 - [January 22, 2019](https://docs.google.com/document/d/1cqodXPssCwiqJf5l_naOQXaN-Ntrv6zE728xip1u-MY/edit?usp=sharing)
 - [January 14, 2019](https://docs.google.com/document/d/1dbRa6zsJ27YMXISC_Gmo63in0JZLC9STVjNsYZiRAM0/edit?usp=sharing)
 - [January 7, 2019](https://docs.google.com/document/d/1hcNU5VOCgPELyS4bw5sGwioUEGzc4OPhV-sjwsy9Awg/edit?usp=sharing)
