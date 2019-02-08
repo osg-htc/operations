@@ -125,6 +125,16 @@ Puppet ensures that the production `contact` and `topology` clones are up to dat
 repo and branch.
 Puppet does not manage the ITB data directories so they need to be updated by hand during testing.
 
+
+### Required System Packages
+
+Currently the webhook app uses the `mailx` command to send email.
+If not already installed, install it with:
+
+        :::console
+        # yum install mailx
+
+
 Testing changes on the ITB instance
 -----------------------------------
 
