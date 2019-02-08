@@ -53,17 +53,27 @@ The following files/directories must exist and have the proper permissions:
 | --------                                 | -------                                                         | ---------     | ---- |
 | `/opt/topology`                          | Production software install                                     | root:root     | 0755 |
 | `/opt/topology-itb`                      | ITB software install                                            | root:root     | 0755 |
+| `/opt/topology-webhook`                  | Production webhook software install                             | root:root     | 0755 |
+| `/opt/topology-itb-webhook`              | ITB webhook software install                                    | root:root     | 0755 |
 | `/etc/opt/topology/config-production.py` | Production config                                               | root:root     | 0644 |
 | `/etc/opt/topology/config-itb.py`        | ITB config                                                      | root:root     | 0644 |
 | `/etc/opt/topology/bitbucket`            | Private key for contact info repo                               | apache:root   | 0600 |
 | `/etc/opt/topology/bitbucket.pub`        | Public key for contact info repo                                | apache:root   | 0644 |
 | `~apache/.ssh`                           | SSH dir for Apache                                              | apache:root   | 0700 |
 | `~apache/.ssh/known_hosts`               | Known hosts file for Apache                                     | apache:root   | 0644 |
+| `~topomerge`                             | Home dir for `topomerge` Apache user                            | topomerge:root| 0755 |
+| `~topomerge/.ssh`                        | SSH dir for `topomerge` Apache user                             | topomerge:root| 0700 |
+| `~topomerge/.ssh/known_hosts`            | Known hosts file for `topomerge` Apache user                    | topomerge:root| 0644 |
 | `/var/cache/topology`                    | Checkouts of topology and contacts data for production instance | apache:apache | 0755 |
 | `/var/cache/topology-itb`                | Checkouts of topology and contacts data for ITB instance        | apache:apache | 0755 |
+| `/var/cache/topology-webhook`            | Topology repo and state info for production webhook instance    | topomerge:topomerge | 0755 |
+| `/var/cache/topology-itb-webhook`        | Topology repo and state info for ITB webhook instance           | topomerge:topomerge | 0755 |
 
 `~apache/.ssh/known_hosts` must contain an entry for `bitbucket.org`;
 use `ssh-keyscan bitbucket.org` to get the appropriate entry.
+
+`~topomerge/.ssh/known_hosts` must contain an entry for `github.com`;
+use `ssh-keyscan github.com` to get the appropriate entry.
 
 
 ### Software configuration
