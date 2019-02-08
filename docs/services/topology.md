@@ -51,8 +51,8 @@ The following files/directories must exist and have the proper permissions:
 
 | Location                                 | Purpose                                                         | Ownership     | Mode |
 | --------                                 | -------                                                         | ---------     | ---- |
-| `/opt/topology`                          | Production software install                                     | root:root     | 0644 |
-| `/opt/topology-itb`                      | ITB software install                                            | root:root     | 0644 |
+| `/opt/topology`                          | Production software install                                     | root:root     | 0755 |
+| `/opt/topology-itb`                      | ITB software install                                            | root:root     | 0755 |
 | `/etc/opt/topology/config-production.py` | Production config                                               | root:root     | 0644 |
 | `/etc/opt/topology/config-itb.py`        | ITB config                                                      | root:root     | 0644 |
 | `/etc/opt/topology/bitbucket`            | Private key for contact info repo                               | apache:root   | 0600 |
