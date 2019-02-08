@@ -179,6 +179,9 @@ These instructions assume that the code has not been merged to master.
             :::console
             # git pull
 
+1.  For updates to the webhook app, follow the above instructions for the ITB webhook instance under
+`/opt/topology-itb-webhook` and its corresponding config file, `/etc/opt/topology/config-itb-webhook.py`.
+
 1.  Restart `httpd`:
 
         :::console
@@ -197,7 +200,13 @@ These instructions assume that the code has not been merged to master.
         # cd /opt/topology-itb
         # git checkout <BRANCH>
 
-1.  If you made config changes to `/etc/opt/topology/config-itb.py`, restore the backup.
+1.  For updates to the webhook app, switch `/opt/topology-itb-webhook` to the previous master:
+
+        :::console
+        # cd /opt/topology-itb-webhook
+        # git checkout <BRANCH>
+
+1.  If you made config changes to `/etc/opt/topology/config-itb.py` or `config-itb-webhook.py`, restore the backup.
 
 1.  If you checked out a different branch for data, revert it back to the old branch.
 
@@ -221,7 +230,12 @@ Updating the production instance is similar to updating ITB instance.
         # cd /opt/topology
         # git pull origin master
 
-1.  Make config changes to `/etc/opt/topology/config-production.py` if necessary.
+1.  For updates to the webhook app, update master on the Git clone at `/opt/topology-webhook`:
+
+        # cd /opt/topology-webhook
+        # git pull origin master
+
+1.  Make config changes to `/etc/opt/topology/config-production.py` and/or `config-production-webhook.py` if necessary.
 
 1.  Restart `httpd`:
 
@@ -242,7 +256,13 @@ Updating the production instance is similar to updating ITB instance.
         ### (use `git reflog` to find the previous commit that was used)
         # git reset --hard <COMMIT>
 
-1.  If you made config changes to `/etc/opt/topology/config-production.py`, revert them.
+1.  For updates to the webhook app, switch `/opt/topology-webhook` to the previous master:
+
+        # cd /opt/topology-webhook
+        ### (use `git reflog` to find the previous commit that was used)
+        # git reset --hard <COMMIT>
+
+1.  If you made config changes to `/etc/opt/topology/config-production.py` or `config-production-webhook.py`, revert them.
 
 1.  Restart `httpd`:
 
