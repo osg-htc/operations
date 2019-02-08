@@ -126,6 +126,21 @@ repo and branch.
 Puppet does not manage the ITB data directories so they need to be updated by hand during testing.
 
 
+### GitHub Configuration for Webhook App
+
+1.   Go to the [webhook settings](https://github.com/opensciencegrid/topology/settings/hooks) page on GitHub.
+     There are four webhooks to set up; `pull_request` and `status` for both the topology and topology-itb hosts.
+
+     | Payload URL                                                   | Content type     | Events to trigger webhook |
+     |---------------------------------------------------------------|------------------|---------------------------|
+     | https://topology.opensciencegrid.org/webhook/status           | application/json | Statuses                  |
+     | https://topology.opensciencegrid.org/webhook/pull_request     | application/json | Pull requests             |
+     | https://topology-itb.opensciencegrid.org/webhook/status       | application/json | Statuses                  |
+     | https://topology-itb.opensciencegrid.org/webhook/pull_request | application/json | Pull requests             |
+
+     For each webhook, "Secret" should be a random 40 digit hex string, which should match the contents of the file
+     `/etc/opt/topology/github_webhook_secret` (the path configured in `WEBHOOK_SECRET_KEY`).
+
 ### Required System Packages
 
 Currently the webhook app uses the `mailx` command to send email.
