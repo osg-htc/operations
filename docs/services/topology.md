@@ -111,6 +111,11 @@ and `config-production-webhook.py` and `config-itb-webhook.py`.
 | `TOPOLOGY_DATA_DIR`    | The directory containing a clone of the `topology` repository for data use                                            |
 | `TOPOLOGY_DATA_REPO`   | The remote tracking repository of `TOPOLOGY_DATA_DIR`                                                                 |
 | `TOPOLOGY_DATA_BRANCH` | The remote tracking branch of `TOPOLOGY_DATA_DIR`                                                                     |
+| `WEBHOOK_DATA_DIR`     | The directory containing a mirror-clone of the `topology` repository for webhook use                                  |
+| `WEBHOOK_DATA_REPO`    | The remote tracking repository of `WEBHOOK_DATA_DIR`                                                                  |
+| `WEBHOOK_DATA_BRANCH`  | The remote tracking branch of `WEBHOOK_DATA_DIR`                                                                      |
+| `WEBHOOK_STATE_DIR`    | Directory containing webhook state information between pull request and status hooks                                  |
+| `WEBHOOK_SECRET_KEY`   | Secret key configured on GitHub for webhook delivery                                                                  |
 | `CONTACT_DATA_DIR`     | The directory containing a clone of the `contact` repository for data use                                             |
 | `CONTACT_DATA_REPO`    | The remote tracking repository of `CONTACT_DATA_DIR`</br>(default: `"git@bitbucket.org:opensciencegrid/contact.git"`) |
 | `CONTACT_DATA_BRANCH`  | The remote tracking branch of `CONTACT_DATA_BRANCH`</br>(default: `"master"`)                                         |
