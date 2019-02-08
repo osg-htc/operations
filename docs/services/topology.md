@@ -90,7 +90,8 @@ use `ssh-keyscan github.com` to get the appropriate entry.
 
 ### Software configuration
 
-Configuration is in `/etc/opt/topology/config-production.py` and `config-itb.py`.
+Configuration is under `/etc/opt/topology/`, in `config-production.py` and `config-itb.py` for the main app,
+and `config-production-webhook.py` and `config-itb-webhook.py` for the webhook app.
 The files are in Python format and override default settings in `src/webapp/default_config.py` in the topology repo.
 
 HTTPD configuration is in `/etc/httpd`; we use the modules `mod_ssl`, `mod_gridsite`, and `mod_wsgi`.
@@ -102,7 +103,8 @@ or `/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/` for the
 
 ### Data configuration
 
-Configuration is in `/etc/opt/topology/config-production.py` and `config-itb.py`.
+Configuration is in `/etc/opt/topology/config-production.py` and `config-itb.py`;
+and `config-production-webhook.py` and `config-itb-webhook.py`.
 
 | Variable               | Purpose                                                                                                               |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
