@@ -21,7 +21,8 @@ for SSH access, contact Derek Weitzel or Brian Bockelman.
 
 These instructions assume an EL 7 host with the EPEL repositories available.
 The software will be installed into `/opt/topology`.
-(The ITB instance should be installed into `/opt/topology-itb` instead.)
+A second instance for the webhook app will be installed into `/opt/topology-webhook`.
+(The ITB instance should be installed into `/opt/topology-itb` and `/opt/topology-itb-webhook` instead.)
 The following steps should be done as root.
 
 1.  Install prerequisites:
@@ -31,11 +32,17 @@ The following steps should be done as root.
 
 1.  Clone the repository:
 
-        :::console
-        # cd /opt
-        # git clone https://github.com/opensciencegrid/topology
+    For the production topology host:
 
-    (move the resulting directory to `topology-itb` for the ITB instance)
+        :::console
+        # git clone https://github.com/opensciencegrid/topology /opt/topology
+        # git clone https://github.com/opensciencegrid/topology /opt/topology-webhook
+
+    For the topology-itb host:
+
+        :::console
+        # git clone https://github.com/opensciencegrid/topology /opt/topology-itb
+        # git clone https://github.com/opensciencegrid/topology /opt/topology-itb-webhook
 
 1.  Set up the virtualenv in the clone -- from `/opt/topology` or `/opt/topology-itb`:
 
@@ -43,6 +50,8 @@ The following steps should be done as root.
         # python36 -m venv venv
         # . ./venv/bin/activate
         # pip install -r requirements.txt
+
+1.  Repeat for the webhook instance -- from `/opt/topology-webhook` or `/opt/topology-itb-webhook`.
 
 
 ### File system locations
