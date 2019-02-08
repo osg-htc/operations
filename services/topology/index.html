@@ -344,6 +344,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#github-configuration-for-webhook-app" title="GitHub Configuration for Webhook App" class="md-nav__link">
+    GitHub Configuration for Webhook App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-system-packages" title="Required System Packages" class="md-nav__link">
+    Required System Packages
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -605,6 +619,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#github-configuration-for-webhook-app" title="GitHub Configuration for Webhook App" class="md-nav__link">
+    GitHub Configuration for Webhook App
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-system-packages" title="Required System Packages" class="md-nav__link">
+    Required System Packages
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -682,7 +710,8 @@ for SSH access, contact Derek Weitzel or Brian Bockelman.</p>
 <h3 id="installation">Installation</h3>
 <p>These instructions assume an EL 7 host with the EPEL repositories available.
 The software will be installed into <code>/opt/topology</code>.
-(The ITB instance should be installed into <code>/opt/topology-itb</code> instead.)
+A second instance for the webhook app will be installed into <code>/opt/topology-webhook</code>.
+(The ITB instance should be installed into <code>/opt/topology-itb</code> and <code>/opt/topology-itb-webhook</code> instead.)
 The following steps should be done as root.</p>
 <ol>
 <li>
@@ -694,12 +723,18 @@ The following steps should be done as root.</p>
 </li>
 <li>
 <p>Clone the repository:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt
-<span class="gp">#</span> git clone https://github.com/opensciencegrid/topology
+<p>For the production topology host:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology
+<span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology-webhook
 </pre></div>
 
 
-<p>(move the resulting directory to <code>topology-itb</code> for the ITB instance)</p>
+<p>For the topology-itb host:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology-itb
+<span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology-itb-webhook
+</pre></div>
+
+
 </li>
 <li>
 <p>Set up the virtualenv in the clone -- from <code>/opt/topology</code> or <code>/opt/topology-itb</code>:</p>
@@ -709,6 +744,9 @@ The following steps should be done as root.</p>
 </pre></div>
 
 
+</li>
+<li>
+<p>Repeat for the webhook instance -- from <code>/opt/topology-webhook</code> or <code>/opt/topology-itb-webhook</code>.</p>
 </li>
 </ol>
 <h3 id="file-system-locations">File system locations</h3>
@@ -727,13 +765,25 @@ The following steps should be done as root.</p>
 <td><code>/opt/topology</code></td>
 <td>Production software install</td>
 <td>root:root</td>
-<td>0644</td>
+<td>0755</td>
 </tr>
 <tr>
 <td><code>/opt/topology-itb</code></td>
 <td>ITB software install</td>
 <td>root:root</td>
-<td>0644</td>
+<td>0755</td>
+</tr>
+<tr>
+<td><code>/opt/topology-webhook</code></td>
+<td>Production webhook software install</td>
+<td>root:root</td>
+<td>0755</td>
+</tr>
+<tr>
+<td><code>/opt/topology-itb-webhook</code></td>
+<td>ITB webhook software install</td>
+<td>root:root</td>
+<td>0755</td>
 </tr>
 <tr>
 <td><code>/etc/opt/topology/config-production.py</code></td>
@@ -760,6 +810,24 @@ The following steps should be done as root.</p>
 <td>0644</td>
 </tr>
 <tr>
+<td><code>/etc/opt/topology/github</code></td>
+<td>Private key for pushing automerge commits</td>
+<td>topomerge:root</td>
+<td>0600</td>
+</tr>
+<tr>
+<td><code>/etc/opt/topology/github.pub</code></td>
+<td>Public key for pushing automerge commits</td>
+<td>topomerge:root</td>
+<td>0644</td>
+</tr>
+<tr>
+<td><code>/etc/opt/topology/github_webhook_secret</code></td>
+<td>GitHub webhook secret for validating webhooks</td>
+<td>topomerge:root</td>
+<td>0600</td>
+</tr>
+<tr>
 <td><code>~apache/.ssh</code></td>
 <td>SSH dir for Apache</td>
 <td>apache:root</td>
@@ -769,6 +837,24 @@ The following steps should be done as root.</p>
 <td><code>~apache/.ssh/known_hosts</code></td>
 <td>Known hosts file for Apache</td>
 <td>apache:root</td>
+<td>0644</td>
+</tr>
+<tr>
+<td><code>~topomerge</code></td>
+<td>Home dir for <code>topomerge</code> Apache user</td>
+<td>topomerge:root</td>
+<td>0755</td>
+</tr>
+<tr>
+<td><code>~topomerge/.ssh</code></td>
+<td>SSH dir for <code>topomerge</code> Apache user</td>
+<td>topomerge:root</td>
+<td>0700</td>
+</tr>
+<tr>
+<td><code>~topomerge/.ssh/known_hosts</code></td>
+<td>Known hosts file for <code>topomerge</code> Apache user</td>
+<td>topomerge:root</td>
 <td>0644</td>
 </tr>
 <tr>
@@ -783,12 +869,27 @@ The following steps should be done as root.</p>
 <td>apache:apache</td>
 <td>0755</td>
 </tr>
+<tr>
+<td><code>/var/cache/topology-webhook</code></td>
+<td>Topology repo and state info for production webhook instance</td>
+<td>topomerge:topomerge</td>
+<td>0755</td>
+</tr>
+<tr>
+<td><code>/var/cache/topology-itb-webhook</code></td>
+<td>Topology repo and state info for ITB webhook instance</td>
+<td>topomerge:topomerge</td>
+<td>0755</td>
+</tr>
 </tbody>
 </table>
 <p><code>~apache/.ssh/known_hosts</code> must contain an entry for <code>bitbucket.org</code>;
 use <code>ssh-keyscan bitbucket.org</code> to get the appropriate entry.</p>
+<p><code>~topomerge/.ssh/known_hosts</code> must contain an entry for <code>github.com</code>;
+use <code>ssh-keyscan github.com</code> to get the appropriate entry.</p>
 <h3 id="software-configuration">Software configuration</h3>
-<p>Configuration is in <code>/etc/opt/topology/config-production.py</code> and <code>config-itb.py</code>.
+<p>Configuration for the main app is under <code>/etc/opt/topology/</code>, in <code>config-production.py</code> and <code>config-itb.py</code>.
+The webhook app configuration is in <code>config-production-webhook.py</code> and <code>config-itb-webhook.py</code>.
 The files are in Python format and override default settings in <code>src/webapp/default_config.py</code> in the topology repo.</p>
 <p>HTTPD configuration is in <code>/etc/httpd</code>; we use the modules <code>mod_ssl</code>, <code>mod_gridsite</code>, and <code>mod_wsgi</code>.
 The first two are installed via yum;
@@ -796,7 +897,8 @@ the .so file for mod_wsgi is located in <code>/opt/topology/venv/lib/python3.6/s
 or <code>/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/</code> for the ITB instance.</p>
 <p><strong>TODO Derek can you write something here?</strong></p>
 <h3 id="data-configuration">Data configuration</h3>
-<p>Configuration is in <code>/etc/opt/topology/config-production.py</code> and <code>config-itb.py</code>.</p>
+<p>Configuration is in <code>/etc/opt/topology/config-production.py</code> and <code>config-itb.py</code>;
+and <code>config-production-webhook.py</code> and <code>config-itb-webhook.py</code>.</p>
 <table>
 <thead>
 <tr>
@@ -818,6 +920,26 @@ or <code>/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/</co
 <td>The remote tracking branch of <code>TOPOLOGY_DATA_DIR</code></td>
 </tr>
 <tr>
+<td><code>WEBHOOK_DATA_DIR</code></td>
+<td>The directory containing a mirror-clone of the <code>topology</code> repository for webhook use</td>
+</tr>
+<tr>
+<td><code>WEBHOOK_DATA_REPO</code></td>
+<td>The remote tracking repository of <code>WEBHOOK_DATA_DIR</code></td>
+</tr>
+<tr>
+<td><code>WEBHOOK_DATA_BRANCH</code></td>
+<td>The remote tracking branch of <code>WEBHOOK_DATA_DIR</code></td>
+</tr>
+<tr>
+<td><code>WEBHOOK_STATE_DIR</code></td>
+<td>Directory containing webhook state information between pull request and status hooks</td>
+</tr>
+<tr>
+<td><code>WEBHOOK_SECRET_KEY</code></td>
+<td>Secret key configured on GitHub for webhook delivery</td>
+</tr>
+<tr>
 <td><code>CONTACT_DATA_DIR</code></td>
 <td>The directory containing a clone of the <code>contact</code> repository for data use</td>
 </tr>
@@ -833,11 +955,80 @@ or <code>/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/</co
 <td><code>CACHE_LIFETIME</code></td>
 <td>Frequency of automatic data updates in seconds</br>(default: <code>900</code>)</td>
 </tr>
+<tr>
+<td><code>GIT_SSH_KEY</code></td>
+<td>Location of ssh public key file for git access.<br/></td>
+</tr>
+<tr>
+<td><code>/etc/opt/topology/bitbucket.pub</code> for the main app, and <code>/etc/opt/topology/github.pub</code> for the webhook app</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <p>Puppet ensures that the production <code>contact</code> and <code>topology</code> clones are up to date with their configured remote tracking
 repo and branch.
 Puppet does not manage the ITB data directories so they need to be updated by hand during testing.</p>
+<h3 id="github-configuration-for-webhook-app">GitHub Configuration for Webhook App</h3>
+<ol>
+<li>
+<p>Go to the <a href="https://github.com/opensciencegrid/topology/settings/hooks">webhook settings</a> page on GitHub.
+     There are four webhooks to set up; <code>pull_request</code> and <code>status</code> for both the topology and topology-itb hosts.</p>
+<table>
+<thead>
+<tr>
+<th>Payload URL</th>
+<th>Content type</th>
+<th>Events to trigger webhook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://topology.opensciencegrid.org/webhook/status</td>
+<td>application/json</td>
+<td>Statuses</td>
+</tr>
+<tr>
+<td>https://topology.opensciencegrid.org/webhook/pull_request</td>
+<td>application/json</td>
+<td>Pull requests</td>
+</tr>
+<tr>
+<td>https://topology-itb.opensciencegrid.org/webhook/status</td>
+<td>application/json</td>
+<td>Statuses</td>
+</tr>
+<tr>
+<td>https://topology-itb.opensciencegrid.org/webhook/pull_request</td>
+<td>application/json</td>
+<td>Pull requests</td>
+</tr>
+</tbody>
+</table>
+<p>For each webhook, "Secret" should be a random 40 digit hex string, which should match the contents of the file
+ <code>/etc/opt/topology/github_webhook_secret</code> (the path configured in <code>WEBHOOK_SECRET_KEY</code>).</p>
+</li>
+<li>
+<p>The OSG's dedicated GitHub user for automating pushes is currently <a href="https://github.com/osg-bot">osg-bot</a>.</p>
+<ol>
+<li>
+<p>This user needs to have write access to the <a href="https://github.com/opensciencegrid/topology">topology</a> repo on GitHub.</p>
+</li>
+<li>
+<p>The ssh public key in <code>/etc/opt/topology/github.pub</code> should be registered with the <code>osg-bot</code> GitHub user.</p>
+<p>This can be done by logging into GitHub as <code>osg-bot</code>, and adding the new ssh key under the
+ <a href="https://github.com/settings/keys">settings</a> page.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="required-system-packages">Required System Packages</h3>
+<p>Currently the webhook app uses the <code>mailx</code> command to send email.
+If not already installed, install it with:</p>
+<div class="codehilite"><pre><span></span>    :::console
+    # yum install mailx
+</pre></div>
+
+
 <h2 id="testing-changes-on-the-itb-instance">Testing changes on the ITB instance</h2>
 <p>All changes should be tested on the ITB instance before deploying to production.
 If you can, test them on your local machine first.
@@ -869,7 +1060,7 @@ These instructions assume that the code has not been merged to master.</p>
 <li>
 <p>Backup the ITB configuration file:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /etc/opt/topology
-<span class="gp">#</span> cp config-itb.py<span class="o">{</span>,.bak<span class="o">}</span>
+<span class="gp">#</span> cp -p config-itb.py<span class="o">{</span>,.bak<span class="o">}</span>
 </pre></div>
 
 
@@ -913,6 +1104,10 @@ These instructions assume that the code has not been merged to master.</p>
 </ol>
 </li>
 <li>
+<p>For updates to the webhook app, follow the above instructions for the ITB webhook instance under
+<code>/opt/topology-itb-webhook</code> and its corresponding config file, <code>/etc/opt/topology/config-itb-webhook.py</code>.</p>
+</li>
+<li>
 <p>Restart <code>httpd</code>:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> systemctl restart httpd
 </pre></div>
@@ -935,7 +1130,15 @@ These instructions assume that the code has not been merged to master.</p>
 
 </li>
 <li>
-<p>If you made config changes to <code>/etc/opt/topology/config-itb.py</code>, restore the backup.</p>
+<p>For updates to the webhook app, switch <code>/opt/topology-itb-webhook</code> to the previous master:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology-itb-webhook
+<span class="gp">#</span> git checkout &lt;BRANCH&gt;
+</pre></div>
+
+
+</li>
+<li>
+<p>If you made config changes to <code>/etc/opt/topology/config-itb.py</code> or <code>config-itb-webhook.py</code>, restore the backup.</p>
 </li>
 <li>
 <p>If you checked out a different branch for data, revert it back to the old branch.</p>
@@ -963,7 +1166,15 @@ These instructions assume that the code has not been merged to master.</p>
 
 </li>
 <li>
-<p>Make config changes to <code>/etc/opt/topology/config-production.py</code> if necessary.</p>
+<p>For updates to the webhook app, update master on the Git clone at <code>/opt/topology-webhook</code>:</p>
+<div class="codehilite"><pre><span></span># cd /opt/topology-webhook
+# git pull origin master
+</pre></div>
+
+
+</li>
+<li>
+<p>Make config changes to <code>/etc/opt/topology/config-production.py</code> and/or <code>config-production-webhook.py</code> if necessary.</p>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
@@ -989,7 +1200,16 @@ These instructions assume that the code has not been merged to master.</p>
 
 </li>
 <li>
-<p>If you made config changes to <code>/etc/opt/topology/config-production.py</code>, revert them.</p>
+<p>For updates to the webhook app, switch <code>/opt/topology-webhook</code> to the previous master:</p>
+<div class="codehilite"><pre><span></span># cd /opt/topology-webhook
+### (use `git reflog` to find the previous commit that was used)
+# git reset --hard &lt;COMMIT&gt;
+</pre></div>
+
+
+</li>
+<li>
+<p>If you made config changes to <code>/etc/opt/topology/config-production.py</code> or <code>config-production-webhook.py</code>, revert them.</p>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
