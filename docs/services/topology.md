@@ -153,7 +153,7 @@ These instructions assume that the code has not been merged to master.
 
                 :::console
                 # cd /etc/opt/topology
-                # cp config-itb.py{,.bak}
+                # cp -p config-itb.py{,.bak}
 
         1. Change the `TOPOLOGY_DATA_DIR` and/or `CONTACT_DATA_DIR` lines to point to a new directories so the previous
            data does not get overwritten with incompatible data.
