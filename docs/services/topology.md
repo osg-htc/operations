@@ -68,6 +68,9 @@ The following files/directories must exist and have the proper permissions:
 | `/etc/opt/topology/config-itb.py`        | ITB config                                                      | root:root     | 0644 |
 | `/etc/opt/topology/bitbucket`            | Private key for contact info repo                               | apache:root   | 0600 |
 | `/etc/opt/topology/bitbucket.pub`        | Public key for contact info repo                                | apache:root   | 0644 |
+| `/etc/opt/topology/github`               | Private key for pushing automerge commits                       | topomerge:root   | 0600 |
+| `/etc/opt/topology/github.pub`           | Public key for pushing automerge commits                        | topomerge:root   | 0644 |
+| `/etc/opt/topology/github_webhook_secret`| GitHub webhook secret for validating webhooks                   | topomerge:root   | 0600 |
 | `~apache/.ssh`                           | SSH dir for Apache                                              | apache:root   | 0700 |
 | `~apache/.ssh/known_hosts`               | Known hosts file for Apache                                     | apache:root   | 0644 |
 | `~topomerge`                             | Home dir for `topomerge` Apache user                            | topomerge:root| 0755 |
