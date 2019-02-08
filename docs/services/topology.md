@@ -120,6 +120,8 @@ and `config-production-webhook.py` and `config-itb-webhook.py`.
 | `CONTACT_DATA_REPO`    | The remote tracking repository of `CONTACT_DATA_DIR`</br>(default: `"git@bitbucket.org:opensciencegrid/contact.git"`) |
 | `CONTACT_DATA_BRANCH`  | The remote tracking branch of `CONTACT_DATA_BRANCH`</br>(default: `"master"`)                                         |
 | `CACHE_LIFETIME`       | Frequency of automatic data updates in seconds</br>(default: `900`)                                                   |
+| `GIT_SSH_KEY`          | Location of ssh public key file for git access.<br/>
+                           `/etc/opt/topology/bitbucket.pub` for the main app, and `/etc/opt/topology/github.pub` for the webhook app            |
 
 Puppet ensures that the production `contact` and `topology` clones are up to date with their configured remote tracking
 repo and branch.
