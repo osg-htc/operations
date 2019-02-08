@@ -141,6 +141,15 @@ Puppet does not manage the ITB data directories so they need to be updated by ha
      For each webhook, "Secret" should be a random 40 digit hex string, which should match the contents of the file
      `/etc/opt/topology/github_webhook_secret` (the path configured in `WEBHOOK_SECRET_KEY`).
 
+1.   The OSG's dedicated GitHub user for automating pushes is currently [osg-bot](https://github.com/osg-bot).
+
+     1.  This user needs to have write access to the [topology](https://github.com/opensciencegrid/topology) repo on GitHub.
+
+     1.  The ssh public key in `/etc/opt/topology/github.pub` should be registered with the `osg-bot` GitHub user.
+
+         This can be done by logging into GitHub as `osg-bot`, and adding the new ssh key under the
+         [settings](https://github.com/settings/keys) page.
+
 ### Required System Packages
 
 Currently the webhook app uses the `mailx` command to send email.
