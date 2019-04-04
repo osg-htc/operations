@@ -49,7 +49,7 @@ The following steps should be done as root.
         :::console
         # python36 -m venv venv
         # . ./venv/bin/activate
-        # pip install -r requirements.txt
+        # pip install -r requirements-apache.txt
 
 1.  Repeat for the webhook instance -- from `/opt/topology-webhook` or `/opt/topology-itb-webhook`.
 
