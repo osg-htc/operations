@@ -1,8 +1,14 @@
 Topology Service
 ================
 
-This document contains information about the service that runs <https://topology.opensciencegrid.org> and <https://topology-itb.opensciencegrid.org>.
-(These sites are also accessible as <https://my.opensciencegrid.org> and <https://my-itb.opensciencegrid.org>.)
+This document contains information about the service that runs:
+
+* <https://topology.opensciencegrid.org>
+* <https://topology-itb.opensciencegrid.org>
+* <https://my.opensciencegrid.org>
+* <https://my-itb.opensciencegrid.org>
+* <https://myosg.opensciencegrid.org>
+* <https://map.opensciencegrid.org>: Generates the topology map used on [OSG Display](https://display.opensciencegrid.org)
 
 The source code for the service is in <https://github.com/opensciencegrid/topology>, in the `src/` subdirectory.
 This repository also contains the public part of the data that gets served.
@@ -99,7 +105,15 @@ The first two are installed via yum;
 the .so file for mod_wsgi is located in `/opt/topology/venv/lib/python3.6/site-packages/mod_wsgi/server/`
 or `/opt/topology-itb/venv/lib/python3.6/site-packages/mod_wsgi/server/` for the ITB instance.
 
-**TODO Derek can you write something here?**
+Each of the hostnames are VHosts in the apache configuration.  Some special notes:
+
+* <https://map.opensciencegrid.org> runs in the same wsgi process as the production topology, but the URL is limited to only the map code.  Further, it does not use mod_gridsite so that users are not asked to present a client certificate.
+* VHosts are configured:
+
+        :::console
+        ServerName topology.opensciencegrid.org
+        ServerAlias my.opensciencegrid.org myosg.opensciencegrid.org
+
 
 ### Data configuration
 
