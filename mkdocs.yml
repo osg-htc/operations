@@ -12,10 +12,12 @@ extra_css:
 
 pages:
 - Home: 'index.md'
-- OSG Operations Mission: 'mission.md'
 - Services:
   - Installing GlideinWMS Factory: 'services/install-gwms-factory.md'
   - Topology Service: 'services/topology.md'
+  - Topology and Contacts Data: 'services/topology-contacts-data.md'
+  - Finalize Cache Registration: 'services/finalize-cache-registration.md'
+  - Sending Announcements: 'services/sending-announcements.md'
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
@@ -28,6 +30,7 @@ pages:
 markdown_extensions:
   - admonition
   - codehilite
-  - toc(permalink=true)
+#  - toc(permalink=true)
+  - toc
   - osg_markdown.colors
   - pymdownx.details
