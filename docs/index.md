@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [June 10, 2019](https://docs.google.com/document/d/1IvNlrk0ql_bNZPwQbbkttdBwzDCBpRsxm-kPnzfnGRU/edit?usp=sharing)
 - [June 3, 2019](https://docs.google.com/document/d/1smmHBA0MiEPD_CA2G8_0pmeexY34NeLP5Sshf-xVlmo/edit?usp=sharing)
 - [May 28, 2019](https://docs.google.com/document/d/1qcd_Ig4wOdSYEaSiKw8x3U8av7N5c56p4JnwRn18dpI/edit?usp=sharing)
 - [May 20, 2019](https://docs.google.com/document/d/197wKNicPobFJZ8bIkBd6RiBG-Zk6i984zFzhNxl-s4Y/edit?usp=sharing)
