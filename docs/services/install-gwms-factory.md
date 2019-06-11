@@ -389,7 +389,7 @@ The *valid-target-uids* and *valid-target-gids* should be a colon-separated list
 users and groups.  This should match the security_classes section in `/etc/gwms-factory/glideinWMS.xml`.
 
 !!! note
-    Please notice that from version 3.5, there is no need of configuring HTCondor privilege separation. The Factory and all pilot jobs run under a single user (gfactory) to eliminate the need of switchboard and setuid/user-switching.
+    Please notice that from version 3.5, there is no need to configure HTCondor privilege separation. The Factory and all pilot jobs run under a single user (gfactory), which eliminates the need for the switchboard and setuid/user-switching.
 
 ## Create a HTCondor grid mapfile.
 
