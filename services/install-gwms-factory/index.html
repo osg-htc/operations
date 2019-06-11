@@ -1486,6 +1486,10 @@ passed to it by the frontends.</p>
 <p>Thus, the <em>valid-called-uids</em> and <em>valid-caller-gids</em> should match the user/group of your Factory user.
 The <em>valid-target-uids</em> and <em>valid-target-gids</em> should be a colon-separated list of all the frontend
 users and groups.  This should match the security_classes section in <code>/etc/gwms-factory/glideinWMS.xml</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please notice that from version 3.5, there is no need to configure HTCondor privilege separation. The Factory and all pilot jobs run under a single user (gfactory), which eliminates the need for the switchboard and setuid/user-switching.</p>
+</div>
 <h2 id="create-a-htcondor-grid-mapfile">Create a HTCondor grid mapfile.</h2>
 <p>The HTCondor grid mapfile <code>/etc/condor/certs/condor_mapfile</code> is used for authentication between the glidein running on a remote worker node, and the local collector.  HTCondor uses the mapfile to map certificates to pseudo-users on the local machine.  It is important that you map the DN's of each frontend you are talking to.</p>
 <p>Below is an example mapfile, by default found in <code>/etc/condor/certs/condor_mapfile</code>:</p>
@@ -1543,6 +1547,20 @@ users and groups.  This should match the security_classes section in <code>/etc/
 <p>Start the <code>condor</code> and <code>gwms-factory</code> services (see next part).</p>
 </li>
 </ol>
+<p><strong>Important:</strong></p>
+<p>If you are upgrading to v3.5.x from 3.4.x or earlier you need some additional steps. The Factory and all pilot jobs will run under a single user (gfactory) to eliminate the need of switchboard and setuid/user-switching, no more separated users per-VO). After the RPM upgrade, you will need to::</p>
+<div class="codehilite"><pre><span></span><span class="mf">1.</span><span class="w"> </span><span class="n">Stop</span><span class="w"> </span><span class="n">Factory</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">HTCondor</span><span class="w"></span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">Migrate</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">HTCondor</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">fact_chown</span><span class="w"> </span><span class="n">script</span><span class="p">,</span><span class="w"> </span><span class="n">located</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">factory</span><span class="o">/</span><span class="n">tools</span><span class="p">.</span><span class="w"> </span><span class="k">Add</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="c1">--backup to have backup of everything:</span>
+
+<span class="w">        </span><span class="o">::</span><span class="err">:</span><span class="n">console</span><span class="w"></span>
+<span class="w">        </span><span class="n">root</span><span class="nv">@host</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">fact_chown</span><span class="w"> </span><span class="c1">--user=gfactory --group=gfactory --backup</span>
+
+<span class="mf">3.</span><span class="w"> </span><span class="n">Restart</span><span class="w"> </span><span class="n">HTCondor</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Factory</span><span class="p">.</span><span class="w"></span>
+</pre></div>
+
+
+<p>To revert to a version of GlideinWMS lower than 3.5, you need to restore the job_queue files and change back the permissions of the log directories. Those operations need to be also performed with both HTCondor and Factory stoppped. </p>
+<p>For detailed instructions see <a href="http://glideinwms.fnal.gov/doc.dev/factory/configuration.html#single_user">reference documentation</a></p>
 <h3 id="service-activation-and-deactivation">Service Activation and Deactivation</h3>
 <p>To <em>start the Factory</em> you must start also <strong>HTCondor</strong> and the <strong>Web server</strong> beside the Factory itself:</p>
 <div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
@@ -1745,6 +1763,10 @@ Often, this will be a pilot unable to access a web server or with an invalid pro
 to ensure that all scripts are created correctly. Just make sure that gwms-factory is stopped.</p>
 <p>Next verify <code>/etc/condor/privsep_config</code> to make sure the users and groups are listed correctly.</p>
 <p>Lastly, verify that permissions are correct.  The parent directories (all the way to the root) of all valid-dirs in the file must be owned by root.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please notice that from version 3.5, Factory and all pilot jobs run under a single user (gfactory) to eliminate the need of switchboard and setuid/user-switching. Therefore, these errors will not exist in v3.5.</p>
+</div>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="http://glideinwms.fnal.gov/doc.prd/">http://glideinwms.fnal.gov/doc.prd/</a></li>
