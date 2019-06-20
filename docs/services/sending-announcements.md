@@ -93,6 +93,8 @@ Use the `osg-notify` tool to send the announcement using the relevant options fr
 | `--recipients <LIST OF EMAILS>` | List of recipient email addresses, must have at least one                                                    |
 | `--oim-recipients resources`    | Select contact associated with resources                                                                     |
 | `--oim-contact-type <TYPE>`     | Replacing `<TYPE>` with `administrative` for release announcements or  `security` for security announcements |
+| `--bypass-dns-check`            | Use this option to skip the check that one of the host's IP addresses matches with the hostname resolution |
+
 
 !!! info "Security requirements"
     Security announcements must be signed using the following options:
