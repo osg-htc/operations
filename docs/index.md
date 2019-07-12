@@ -33,7 +33,7 @@ Registration (Contact, Resource, VO, or Project)
 Weekly Operations Meetings
 --------------------------
 
-**When:** Mondays 1:00 pm Central
+**When:** Fridays 12:30 pm Central
 
 **URL:** <https://unl.zoom.us/j/183382852>
 
@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [July 12, 2019](https://docs.google.com/document/d/1V3vsg9-x1lUMF6VC634ki9r3HwrW00vRtn08PB83Cd0/edit?usp=sharing)
 - [July 8, 2019](https://docs.google.com/document/d/1nj8PpOehn0SSRVb2gj3askNqMb1L_3sZhcSw0OfzqU8/edit?usp=sharing)
 - [July 1, 2019](https://docs.google.com/document/d/1a4Se1aCW8bSnHMnhYShSqdhkF0SkekThivveRxNNmvU/edit?usp=sharing)
 - [June 24, 2019](https://docs.google.com/document/d/17n7oGYC_4UR9KL5bBgDy3PaVKJwGdycosaKJcJMazsI/edit?usp=sharing)
