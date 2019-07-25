@@ -37,6 +37,10 @@ Certain things to check are:
 A resource can be disabled in its topology yaml file by setting `Active: false`.
 However the resource entry should not be immediately deleted from the yaml file.
 
+One reason for this is that the WLCG accounting info configured for resources is used to determine which resources to
+send APEL numbers for.
+Removing resources prematurely could prevent resummarized GRACC data from getting sent appropriately.
+
 Resources that have been inactive for at least two years are eligible to be deleted from the topology database.
 The GRACC records for this resource can be inspected in [Kibana](https://gracc.opensciencegrid.org/kibana).
 
