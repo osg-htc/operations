@@ -325,6 +325,19 @@
     Topology Data
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retiring-resources" title="Retiring resources" class="md-nav__link">
+    Retiring resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -547,6 +560,19 @@
     Topology Data
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retiring-resources" title="Retiring resources" class="md-nav__link">
+    Retiring resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -644,6 +670,30 @@ Certain things to check are:</p>
     resource, site, facility, or VO?</p>
 </li>
 </ul>
+<h3 id="retiring-resources">Retiring resources</h3>
+<p>A resource can be disabled in its topology yaml file by setting <code>Active: false</code>.
+However the resource entry should not be immediately deleted from the yaml file.</p>
+<p>One reason for this is that the WLCG accounting info configured for resources is used to determine which resources to
+send APEL numbers for.
+Removing resources prematurely could prevent resummarized GRACC data from getting sent appropriately.</p>
+<p>Resources that have been inactive for at least two years are eligible to be deleted from the topology database.
+The GRACC records for this resource can be inspected in <a href="https://gracc.opensciencegrid.org/kibana">Kibana</a>.</p>
+<ul>
+<li>
+<p>In the search bar, enter <code>ProbeName:*\:FQDN</code> in the search bar, where <code>FQDN</code> is the FQDN defined for your resource</p>
+<p>For example, if your resource FQDN is <code>cmsgrid01.hep.wisc.edu</code> you would enter <code>ProbeName:*\:cmsgrid01.hep.wisc.edu</code></p>
+</li>
+<li>
+<p>In the upper-right corner, use the Time Range selection to pick "Last 2 years"</p>
+</li>
+</ul>
+<p>With this criteria selected, Kibana will show you if it has received any records for this resource in the past two
+years.</p>
+<p>If there are no records returned, you may remove the resource from the resource group yaml file in the topology repo.
+Any downtime entries for this resource in the corresponding downtime yaml file for the resource group must be removed
+also.
+If you remove the last resource in the resource group yaml file, you should remove the resource group and corresponding
+downtime yaml files as well.</p>
 <h2 id="contacts-data">Contacts Data</h2>
 <p>The OSG keeps contact data for administrators and maintainers of OSG resources and VOs for the purpose of distributing
 security, software, and adminstrative (e.g., OSG All-Hands dates) announcements.
