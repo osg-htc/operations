@@ -56,7 +56,7 @@ years.
 If there are no records returned, you may remove the resource from the resource group yaml file in the topology repo.
 Any downtime entries for this resource in the corresponding downtime yaml file for the resource group must be removed
 also.
-If you remove the last resource in the resource group yaml file, you may remove the resource group and corresponding
+If you remove the last resource in the resource group yaml file, you should remove the resource group and corresponding
 downtime yaml files as well.
 
 
