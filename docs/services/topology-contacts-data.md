@@ -31,6 +31,35 @@ Certain things to check are:
 -   Is their GitHub ID registered in the [contact database](#contacts-data) and are they associated with the relevant
     resource, site, facility, or VO?
 
+
+### Retiring resources
+
+A resource can be disabled in its topology yaml file by setting `Active: false`.
+However the resource entry should not be immediately deleted from the yaml file.
+
+One reason for this is that the WLCG accounting info configured for resources is used to determine which resources to
+send APEL numbers for.
+Removing resources prematurely could prevent resummarized GRACC data from getting sent appropriately.
+
+Resources that have been inactive for at least two years are eligible to be deleted from the topology database.
+The GRACC records for this resource can be inspected in [Kibana](https://gracc.opensciencegrid.org/kibana).
+
+-   In the search bar, enter `ProbeName:*\:FQDN` in the search bar, where `FQDN` is the FQDN defined for your resource
+
+    For example, if your resource FQDN is `cmsgrid01.hep.wisc.edu` you would enter `ProbeName:*\:cmsgrid01.hep.wisc.edu`
+
+-   In the upper-right corner, use the Time Range selection to pick "Last 2 years"
+
+With this criteria selected, Kibana will show you if it has received any records for this resource in the past two
+years.
+
+If there are no records returned, you may remove the resource from the resource group yaml file in the topology repo.
+Any downtime entries for this resource in the corresponding downtime yaml file for the resource group must be removed
+also.
+If you remove the last resource in the resource group yaml file, you should remove the resource group and corresponding
+downtime yaml files as well.
+
+
 Contacts Data
 -------------
 
