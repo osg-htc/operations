@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://www.opensciencegrid.org/operations/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/services/install-gwms-factory/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/services/topology/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/services/topology-contacts-data/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/services/finalize-cache-registration/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/services/sending-announcements/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/SLA/collector/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/SLA/myosg/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/SLA/oasis/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/SLA/oasis-replica/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/SLA/oim/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/SLA/xdlogin/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.opensciencegrid.org/operations/external-oasis-repos/</loc>
-     <lastmod>2019-08-30</lastmod>
+     <lastmod>2019-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
