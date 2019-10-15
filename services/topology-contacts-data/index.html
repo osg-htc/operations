@@ -651,6 +651,16 @@ The contacts data is in <a href="https://bitbucket.org/opensciencegrid/contact/"
 These changes can be to a project, a VO, or a resource.
 The <a href="https://opensciencegrid.org/docs/common/registration">registration document</a> and
 <a href="https://github.com/opensciencegrid/topology/README.md">topology README document</a> should tell them how to do that.</p>
+<p>In the case of a GitHub pull request, you will need to provide IDs using the <code>next_*_id</code> tools in the Topology
+<a href="https://github.com/opensciencegrid/topology/tree/master/bin">bin/ dir</a> and potentially fix-up other data.
+To assist the user, do one of the following, depending on the severity of the fixes required for the PR:</p>
+<ul>
+<li>For minor issues, submit a "Comment" review using
+  <a href="https://help.github.com/en/articles/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request">GitHub suggestions</a>
+  and ask the user to <a href="https://help.github.com/en/articles/incorporating-feedback-in-your-pull-request">incorporate your suggestions</a>.</li>
+<li>For major issues, create a branch based off of their PR, make changes, and submit your own PR that
+  <a href="https://help.github.com/en/articles/closing-issues-using-keywords">closes</a> the original user's PR.</li>
+</ul>
 <p>The CI checks should catch most errors but you should still review the YAML changes.
 Certain things to check are:</p>
 <ul>
