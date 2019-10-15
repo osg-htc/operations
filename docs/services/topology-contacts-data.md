@@ -16,6 +16,16 @@ These changes can be to a project, a VO, or a resource.
 The [registration document](https://opensciencegrid.org/docs/common/registration) and
 [topology README document](https://github.com/opensciencegrid/topology/README.md) should tell them how to do that.
 
+In the case of a GitHub pull request, you will need to provide IDs using the `next_*_id` tools in the Topology
+[bin/ dir](https://github.com/opensciencegrid/topology/tree/master/bin) and potentially fix-up other data.
+To assist the user, do one of the following, depending on the severity of the fixes required for the PR:
+
+- For minor issues, submit a "Comment" review using
+  [GitHub suggestions](https://help.github.com/en/articles/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request)
+  and ask the user to [incorporate your suggestions](https://help.github.com/en/articles/incorporating-feedback-in-your-pull-request).
+- For major issues, create a branch based off of their PR, make changes, and submit your own PR that
+  [closes](https://help.github.com/en/articles/closing-issues-using-keywords) the original user's PR.
+
 The CI checks should catch most errors but you should still review the YAML changes.
 Certain things to check are:
 
