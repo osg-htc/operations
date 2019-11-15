@@ -418,6 +418,12 @@ After changing the configuration of GlideinWMS and making sure that Factory is r
     Notice that, in the case of Enterprise Linux 7 `systemctl reload gwms-factory` will work only if:
     - gwms-factory service is running
     - gwms-factory service was started with systemctl
+    
+    Otherwise, you will get the following error in any of the cases:
+    ``` console
+    # systemctl reload gwms-factory
+    Job for gwms-factory.service invalid.
+    ```
 
 
 ### Upgrading GlideinWMS ###
