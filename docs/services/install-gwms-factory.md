@@ -420,10 +420,10 @@ After changing the configuration of GlideinWMS and making sure that Factory is r
     - gwms-factory service was started with systemctl
     
     Otherwise, you will get the following error in any of the cases:
-    ``` console
-    # systemctl reload gwms-factory
-    Job for gwms-factory.service invalid.
-    ```
+
+        :::console
+        # systemctl reload gwms-factory
+        Job for gwms-factory.service invalid.
 
 
 ### Upgrading GlideinWMS ###
