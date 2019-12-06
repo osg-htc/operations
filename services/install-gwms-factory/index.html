@@ -1327,7 +1327,7 @@ Suggested is that you put these binaries in <code>/var/lib/gwms-factory/condor</
 
 
 <p>Note that the identity of the Frontend must match what HTCondor authenticates the DN of the frontend to.  In <code>/etc/condor/certs/condor_mapfile</code>, there must be an entry with <strong>vofrontend_service</strong> definition (in this case):</p>
-<div class="codehilite"><pre><span></span><span class="n">GSI</span> <span class="ss">&quot;^\/DC\=org\/DC\=doegrids\/OU\=Services\/CN\=Some\ Name\ 834323</span>$&quot;</span> <span class="o">%</span><span class="n">GREEN</span><span class="o">%</span><span class="n">vofrontend_service</span><span class="o">%</span><span class="n">ENDCOLOR</span><span class="o">%</span>
+<div class="codehilite"><pre><span></span><span class="err">GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=Services\/CN\=Some\ Name\ 834323</span>$&quot; <span style="color:green">vofrontend_service</span></span>
 </pre></div>
 
 
@@ -1470,16 +1470,16 @@ a Factory with multiple frontends, you will have to modify this file.</p>
 <p>This file controls the HTCondor root switchboard, which allows the Factory
 to change permissions of files, specifically the proxies and files
 passed to it by the frontends.</p>
-<div class="codehilite"><pre><span></span><span class="k">valid</span><span class="o">-</span><span class="n">caller</span><span class="o">-</span><span class="n">uids</span> <span class="o">=</span> <span class="n">gfactory</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">caller</span><span class="o">-</span><span class="n">gids</span> <span class="o">=</span> <span class="n">gfactory</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">uids</span> <span class="o">=</span> <span class="n">fecmsucsd</span> <span class="p">:</span> <span class="n">fehcc</span> <span class="p">:</span> <span class="n">fecmscern</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">gids</span> <span class="o">=</span> <span class="n">fecmsucsd</span> <span class="p">:</span> <span class="n">fehcc</span> <span class="p">:</span> <span class="n">fecmscern</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span><span class="o">/</span><span class="n">client</span><span class="o">-</span><span class="n">proxies</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span><span class="o">/</span><span class="n">client</span><span class="o">-</span><span class="n">logs</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span><span class="o">/</span><span class="n">client</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span>
-<span class="k">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span>
-<span class="n">procd</span><span class="o">-</span><span class="n">executable</span> <span class="o">=</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">sbin</span><span class="o">/</span><span class="n">condor_procd</span>
+<div class="codehilite"><pre><span></span><span class="err">valid-caller-uids = gfactory</span>
+<span class="err">valid-caller-gids = gfactory</span>
+<span class="err">valid-target-uids = fecmsucsd : fehcc : fecmscern</span>
+<span class="err">valid-target-gids = fecmsucsd : fehcc : fecmscern</span>
+<span class="err">valid-dirs = /var/lib/gwms-factory/client-proxies</span>
+<span class="err">valid-dirs = /var/lib/gwms-factory/client-logs</span>
+<span class="err">valid-dirs = /var/log/gwms-factory/client</span>
+<span class="err">valid-dirs = /var/lib/gwms-factory</span>
+<span class="err">valid-dirs = /var/log/gwms-factory</span>
+<span class="err">procd-executable = /usr/sbin/condor_procd</span>
 </pre></div>
 
 
@@ -1493,9 +1493,9 @@ users and groups.  This should match the security_classes section in <code>/etc/
 <h2 id="create-a-htcondor-grid-mapfile">Create a HTCondor grid mapfile.</h2>
 <p>The HTCondor grid mapfile <code>/etc/condor/certs/condor_mapfile</code> is used for authentication between the glidein running on a remote worker node, and the local collector.  HTCondor uses the mapfile to map certificates to pseudo-users on the local machine.  It is important that you map the DN's of each frontend you are talking to.</p>
 <p>Below is an example mapfile, by default found in <code>/etc/condor/certs/condor_mapfile</code>:</p>
-<div class="codehilite"><pre><span></span><span class="n">GSI</span> <span class="ss">&quot;^\/DC\=org\/DC\=doegrids\/OU\=People\/CN\=Some\ Name\ 123456$&quot;</span> <span class="n">frontend</span>
-<span class="n">GSI</span> <span class="p">(.</span><span class="o">*</span><span class="p">)</span> <span class="n">anonymous</span>
-<span class="n">FS</span> <span class="p">(.</span><span class="o">*</span><span class="p">)</span> <span class="err">\</span><span class="mi">1</span> 
+<div class="codehilite"><pre><span></span><span class="err">GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=People\/CN\=Some\ Name\ 123456$&quot; frontend</span>
+<span class="err">GSI (.*) anonymous</span>
+<span class="err">FS (.*) \1 </span>
 </pre></div>
 
 
@@ -1675,7 +1675,7 @@ If you have already configured the frontends, you will also have one glidefactor
 </ul>
 <h4 id="check-web-server-configuration-for-the-monitoring">Check Web server configuration for the monitoring</h4>
 <p>Verify path and specially the URL for the GlideinWMS files served by your web server:</p>
-<div class="codehilite"><pre><span></span><span class="n">stage</span> <span class="n">base_dir</span><span class="o">=</span><span class="ss">&quot;/var/lib/gwms-factory/web-area/stage&quot;</span> <span class="n">use_symlink</span><span class="o">=</span><span class="ss">&quot;True&quot;</span> <span class="n">web_base_url</span><span class="o">=</span><span class="ss">&quot;http://HOSTNAME:PORT/factory/stage&quot;</span>
+<div class="codehilite"><pre><span></span><span class="err">stage base_dir=&quot;/var/lib/gwms-factory/web-area/stage&quot; use_symlink=&quot;True&quot; web_base_url=&quot;http://HOSTNAME:PORT/factory/stage&quot;</span>
 </pre></div>
 
 

@@ -1040,8 +1040,8 @@ Puppet does not manage the ITB data directories so they need to be updated by ha
 <h3 id="required-system-packages">Required System Packages</h3>
 <p>Currently the webhook app uses the <code>mailx</code> command to send email.
 If not already installed, install it with:</p>
-<div class="codehilite"><pre><span></span>    <span class="p">:::</span><span class="n">console</span>
-    <span class="o">#</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">mailx</span>
+<div class="codehilite"><pre><span></span><span class="err">    :::console</span>
+<span class="err">    # yum install mailx</span>
 </pre></div>
 
 
@@ -1183,8 +1183,8 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>For updates to the webhook app, update master on the Git clone at <code>/opt/topology-webhook</code>:</p>
-<div class="codehilite"><pre><span></span><span class="o">#</span> <span class="n">cd</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">topology</span><span class="o">-</span><span class="n">webhook</span>
-<span class="o">#</span> <span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
+<div class="codehilite"><pre><span></span><span class="err"># cd /opt/topology-webhook</span>
+<span class="err"># git pull origin master</span>
 </pre></div>
 
 
@@ -1217,9 +1217,9 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>For updates to the webhook app, switch <code>/opt/topology-webhook</code> to the previous master:</p>
-<div class="codehilite"><pre><span></span><span class="o">#</span> <span class="n">cd</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">topology</span><span class="o">-</span><span class="n">webhook</span>
-<span class="o">###</span> <span class="p">(</span><span class="n">use</span> <span class="o">`</span><span class="n">git</span> <span class="n">reflog</span><span class="o">`</span> <span class="k">to</span> <span class="n">find</span> <span class="n">the</span> <span class="n">previous</span> <span class="k">commit</span> <span class="n">that</span> <span class="n">was</span> <span class="n">used</span><span class="p">)</span>
-<span class="o">#</span> <span class="n">git</span> <span class="k">reset</span> <span class="c1">--hard &lt;COMMIT&gt;</span>
+<div class="codehilite"><pre><span></span><span class="err"># cd /opt/topology-webhook</span>
+<span class="err">### (use `git reflog` to find the previous commit that was used)</span>
+<span class="err"># git reset --hard &lt;COMMIT&gt;</span>
 </pre></div>
 
 
