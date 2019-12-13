@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [December 13, 2019](https://docs.google.com/document/d/18tayBD64ODVf84cz-47CN-VQReySD6GTNUyZSlUKl6g/edit?usp=sharing)
 - [December 6, 2019](https://docs.google.com/document/d/1Ex3sijS9kWhRQ4_4r6ounpBOaP88qRQMkMNofHMSmh0/edit?usp=sharing)
 - November 29, 2019 (canceled)
 - [November 22, 2019](https://docs.google.com/document/d/13b9KUXZr_xbGDeLUWSV1KlmSZ5StJlkQmCIGVZNa4qM/edit?usp=sharing)
