@@ -580,28 +580,11 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 <h2 id="installation">Installation</h2>
 <ol>
 <li>
-<p>Install the pre-requisites:</p>
-<ul>
-<li>
-<p>Enterprise Linux 7 (first, enable
-    <a href="https://opensciencegrid.org/docs/common/yum/#install-the-epel-repositories">EPEL</a>)</p>
-<div class="codehilite"><pre><span></span><span class="go">yum install git python-requests python2-gnupg</span>
-</pre></div>
-
-
-</li>
-<li>
-<p>Ubuntu</p>
-<div class="codehilite"><pre><span></span><span class="go">apt install git python-requests python-gnupg</span>
-</pre></div>
-
-
-</li>
-</ul>
+<p>Install the required <a href="https://opensciencegrid.org/docs/common/yum/#installing-yum-repositories">Yum repositories</a>:</p>
 </li>
 <li>
 <p>Install the OSG tools:</p>
-<div class="codehilite"><pre><span></span><span class="go">git clone https://github.com/opensciencegrid/topology.git</span>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> yum install --enablerepo<span class="o">=</span>devops topology-client
 </pre></div>
 
 
@@ -617,28 +600,11 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 
 </li>
 <li>
-<p>Ensure that you can lookup contacts in the topology database by using the <code>osg-topology</code> tool to list the contacts:</p>
-<div class="codehilite"><pre><span></span><span class="go">cd topology</span>
-<span class="go">bin/osg-topology --cert publicCert.pem \</span>
-<span class="go">    --key privateKey.pem list-resource-contacts</span>
-</pre></div>
-
-
-<p>If the contacts include email addresses, this is working properly.
-If you type your password incorrectly, the authentication will silently fail and you won't get email addresses</p>
-</li>
-<li>
 <p>Test this setup by sending a message to yourself only.
     Bonus points for using an email address that goes to a site with aggressive SPAM filtering.</p>
 </li>
 </ol>
 <h2 id="sending-the-announcement">Sending the announcement</h2>
-<p>Before using <code>osg-notify</code>, update your clone of the <code>topology</code> repo by running:</p>
-<div class="codehilite"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> topology
-<span class="gp">$</span> git pull
-</pre></div>
-
-
 <p>Use the <code>osg-notify</code> tool to send the announcement using the relevant options from the following table:</p>
 <table>
 <thead>
@@ -704,15 +670,16 @@ If you type your password incorrectly, the authentication will silently fail and
 </ul>
 </div>
 <p>For release announcements use the following command:</p>
-<div class="codehilite"><pre><span></span><span class="go">bin/osg-notify --cert your-cert.pem --key your-key.pem \</span>
-<span class="go">    --no-sign --type production --message message-file \</span>
+<div class="codehilite"><pre><span></span><span class="go">osg-notify --cert your-cert.pem --key your-key.pem \</span>
+<span class="go">    --no-sign --type production --message &lt;PATH TO MESSAGE FILE&gt; \</span>
 <span class="go">    --subject &#39;&lt;EMAIL SUBJECT&gt;&#39; \</span>
 <span class="go">    --recipients &quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot; \</span>
 <span class="go">    --oim-recipients resources --oim-contact-type administrative</span>
 </pre></div>
 
 
-<p>Replacing <code>&lt;EMAIL SUBJECT&gt;</code> with an appropriate subject for your announcement.</p>
+<p>Replacing <code>&lt;EMAIL SUBJECT&gt;</code> with an appropriate subject for your announcement and <code>&lt;PATH TO MESSAGE FILE&gt;</code> with the path
+to the file containing your message in plain text.</p>
                 
                   
                 
