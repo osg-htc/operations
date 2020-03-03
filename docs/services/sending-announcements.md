@@ -31,22 +31,12 @@ submit-1.chtc.wisc.edu has address 128.105.244.191
 Installation
 ------------
 
-1.  Install the pre-requisites:
-    -   Enterprise Linux 7 (first, enable
-        [EPEL](https://opensciencegrid.org/docs/common/yum/#install-the-epel-repositories))
-
-            :::console
-            yum install git python-requests python2-gnupg
-
-    -   Ubuntu
-
-            :::console
-            apt install git python-requests python-gnupg
+1.  Install the required [Yum repositories](https://opensciencegrid.org/docs/common/yum/#installing-yum-repositories):
 
 1.  Install the OSG tools:
 
         :::console
-        git clone https://github.com/opensciencegrid/topology.git
+        # yum install --enablerepo=devops topology-client
 
 1. If you are on a FermiCloud VM, update `postfix` to relay through FermiLab's official mail server:
 
@@ -56,28 +46,11 @@ Installation
         postmap hash:/etc/postfix/transport
         postfix reload
 
-5.  Ensure that you can lookup contacts in the topology database by using the `osg-topology` tool to list the contacts:
-
-        :::console
-        cd topology
-        bin/osg-topology --cert publicCert.pem \
-            --key privateKey.pem list-resource-contacts
-
-    If the contacts include email addresses, this is working properly.
-    If you type your password incorrectly, the authentication will silently fail and you won't get email addresses
-
-6.  Test this setup by sending a message to yourself only.
+1.  Test this setup by sending a message to yourself only.
     Bonus points for using an email address that goes to a site with aggressive SPAM filtering.
 
 Sending the announcement
 ------------------------
-
-Before using `osg-notify`, update your clone of the `topology` repo by running:
-
-```console
-$ cd topology
-$ git pull
-```
 
 Use the `osg-notify` tool to send the announcement using the relevant options from the following table:
 
@@ -106,11 +79,12 @@ Use the `osg-notify` tool to send the announcement using the relevant options fr
 For release announcements use the following command:
 
 ```console
-bin/osg-notify --cert your-cert.pem --key your-key.pem \
-    --no-sign --type production --message message-file \
+osg-notify --cert your-cert.pem --key your-key.pem \
+    --no-sign --type production --message <PATH TO MESSAGE FILE> \
     --subject '<EMAIL SUBJECT>' \
     --recipients "osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org" \
     --oim-recipients resources --oim-contact-type administrative
 ```
 
-Replacing `<EMAIL SUBJECT>` with an appropriate subject for your announcement.
+Replacing `<EMAIL SUBJECT>` with an appropriate subject for your announcement and `<PATH TO MESSAGE FILE>` with the path
+to the file containing your message in plain text.
