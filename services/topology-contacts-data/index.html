@@ -335,6 +335,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#reviewing-project-prs" title="Reviewing project PRs" class="md-nav__link">
+    Reviewing project PRs
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -570,6 +577,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#reviewing-project-prs" title="Reviewing project PRs" class="md-nav__link">
+    Reviewing project PRs
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -704,6 +718,68 @@ Any downtime entries for this resource in the corresponding downtime yaml file f
 also.
 If you remove the last resource in the resource group yaml file, you should remove the resource group and corresponding
 downtime yaml files as well.</p>
+<h3 id="reviewing-project-prs">Reviewing project PRs</h3>
+<p>New projects are typically created by the Research Facilitation team.
+Here are a few things to check:</p>
+<ul>
+<li>
+<p>Does the "Name" in the YAML match the file name of the project?</p>
+</li>
+<li>
+<p>Did osg-bot warn about a "New Organization"?
+    If so, search around in the projects directory and make sure the "Organization" in the YAML
+    is not a typo or alternate spelling for an existing organization.
+    grep around in the <code>/projects/</code> directory for substrings of the organization.
+    For example, if the new org is "University of Wisconsin Madison", do:</p>
+<div class="codehilite"><pre><span></span>$ grep -i wisconsin projects/*.yaml
+</pre></div>
+
+
+<p>and you will see that it's supposed to be "University of Wisconsin-Madison".</p>
+<p>If the new organization is not a typo or alternate spelling,
+dismiss osg-bot's review with the comment "new org is legit".</p>
+</li>
+<li>
+<p>Is the project name is of the form <code>&lt;INSTITUTION&gt;_&lt;PINAME&gt;</code>, e.g. <code>UWMadison_Parks</code>?
+    (This is recommended but not required for new projects.)
+    If so:</p>
+<p>Is the short name -&gt; organization mapping for the institution in <code>/mappings/project_institution.yaml</code>
+(e.g. <code>UWMadison: "University of Wisconsin-Madison"</code>)?
+If not, ask the PR author to add it.</p>
+</li>
+<li>
+<p>Does the "FieldOfScience" in the YAML match one of the keys in <code>/mappings/nsfscience.yaml</code>?
+    (The list is also available on the <em>left</em> column of <a href="https://topology.opensciencegrid.org/nsfscience/csv">this CSV</a>.)</p>
+</li>
+<li>
+<p>Is the "ID" unique?</p>
+</li>
+<li>
+<p>Is the "Sponsor" correct?  The sponsor depends on where the users will be submitting jobs from:</p>
+<ul>
+<li>
+<p>If they primarily submit from some CI Connect interface such as "OSG Connect", use:</p>
+<div class="codehilite"><pre><span></span><span class="nt">Sponsor</span><span class="p">:</span>
+    <span class="nt">CampusGrid</span><span class="p">:</span>
+        <span class="nt">Name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;CAMPUS_GRID&gt;</span>
+</pre></div>
+
+
+<p>The campus grid name must be one of the ones in the <code>/projects/_CAMPUS_GRIDS.yaml</code> file..</p>
+</li>
+<li>
+<p>Otherwise, the project must be sponsored by a VO:</p>
+<div class="codehilite"><pre><span></span><span class="nt">Sponsor</span><span class="p">:</span>
+    <span class="nt">VirtualOrganization</span><span class="p">:</span>
+        <span class="nt">Name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;VO&gt;</span>
+</pre></div>
+
+
+<p>The VO name must be one of the ones in the <code>/virtual-organizations/</code> dir.</p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="contacts-data">Contacts Data</h2>
 <p>The OSG keeps contact data for administrators and maintainers of OSG resources and VOs for the purpose of distributing
 security, software, and adminstrative (e.g., OSG All-Hands dates) announcements.
