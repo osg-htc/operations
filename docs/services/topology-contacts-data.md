@@ -70,6 +70,51 @@ If you remove the last resource in the resource group yaml file, you should remo
 downtime yaml files as well.
 
 
+### Reviewing project PRs
+
+New projects are typically created by the Research Facilitation team.
+Here are a few things to check:
+
+-   Does the "Name" in the YAML match the file name of the project?
+
+-   Did osg-bot warn about a "New Organization"?
+    If so, search around in the projects directory and make sure the "Organization" in the YAML
+    is not a typo or alternate spelling for an existing organization.
+    If it's not, dismiss osg-bot's review with the comment "new org is legit".
+
+-   Is the project name is of the form `<INSTITUTION>_<PINAME>`, e.g. `UWMadison_Parks`?
+    (This is recommended but not required for new projects.)
+    If so:
+    -   Is the short name -> organization mapping for the institution in `/mappings/project_institution.yaml`
+        (e.g. `UWMadison: "University of Wisconsin-Madison"`)?
+        If not, either ask the PR author to add it, or add it yourself after you merge the PR.
+
+-   Does the "FieldOfScience" in the YAML match one of the keys in `/mappings/nsfscience.yaml`?
+    (The list is also available on the _left_ column of [this CSV](https://topology.opensciencegrid.org/nsfscience/csv).)
+
+-   Is the "ID" unique?
+
+-   Is the "Sponsor" correct?  The sponsor depends on where the users will be submitting jobs from:
+
+    -   If they primarily submit from some Campus Grid/CI-Connect interface such as "OSG Connect", use:
+
+            :::yaml
+            Sponsor:
+                CampusGrid:
+                    Name: <CAMPUS_GRID>
+
+        The campus grid name must be one of the ones in the `/projects/_CAMPUS_GRIDS.yaml` file..
+
+    -   Else, if they are part of a VO and will be submitting from their own institutions, use:
+
+            :::yaml
+            Sponsor:
+                VirtualOrganization:
+                    Name: <VO>
+
+        The VO name must be one of the ones in the `/virtual-organizations/` dir.
+
+
 Contacts Data
 -------------
 
