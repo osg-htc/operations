@@ -96,7 +96,7 @@ Here are a few things to check:
 
 -   Is the "Sponsor" correct?  The sponsor depends on where the users will be submitting jobs from:
 
-    -   If they primarily submit from some Campus Grid/CI-Connect interface such as "OSG Connect", use:
+    -   If they primarily submit from some CI Connect interface such as "OSG Connect", use:
 
             :::yaml
             Sponsor:
@@ -105,7 +105,7 @@ Here are a few things to check:
 
         The campus grid name must be one of the ones in the `/projects/_CAMPUS_GRIDS.yaml` file..
 
-    -   Else, if they are part of a VO and will be submitting from their own institutions, use:
+    -  Otherwise, the project must be sponsored by a VO:
 
             :::yaml
             Sponsor:
@@ -224,4 +224,3 @@ If you want to add information that is not present for that contact, look at `te
     If you change the contact's `FullName`, you **must** make the same change to every place that the contact
     is mentioned in the `topology` repo.
     Get the contact changes merged in first.
-
