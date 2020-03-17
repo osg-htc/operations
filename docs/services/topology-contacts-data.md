@@ -97,7 +97,7 @@ Here are a few things to check:
     
     Is the short name -> organization mapping for the institution in `/mappings/project_institution.yaml`
     (e.g. `UWMadison: "University of Wisconsin-Madison"`)?
-    If not, either ask the PR author to add it.
+    If not, ask the PR author to add it.
 
 -   Does the "FieldOfScience" in the YAML match one of the keys in `/mappings/nsfscience.yaml`?
     (The list is also available on the _left_ column of [this CSV](https://topology.opensciencegrid.org/nsfscience/csv).)
