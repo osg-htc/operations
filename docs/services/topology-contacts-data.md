@@ -70,6 +70,61 @@ If you remove the last resource in the resource group yaml file, you should remo
 downtime yaml files as well.
 
 
+### Reviewing project PRs
+
+New projects are typically created by the Research Facilitation team.
+Here are a few things to check:
+
+-   Does the "Name" in the YAML match the file name of the project?
+
+-   Did osg-bot warn about a "New Organization"?
+    If so, search around in the projects directory and make sure the "Organization" in the YAML
+    is not a typo or alternate spelling for an existing organization.
+    grep around in the `/projects/` directory for substrings of the organization.
+    For example, if the new org is "University of Wisconsin Madison", do:
+    
+    	:::command
+    	$ grep -i wisconsin projects/*.yaml
+    	
+    and you will see that it's supposed to be "University of Wisconsin-Madison".
+    
+    If the new organization is not a typo or alternate spelling,
+    dismiss osg-bot's review with the comment "new org is legit".
+
+-   Is the project name is of the form `<INSTITUTION>_<PINAME>`, e.g. `UWMadison_Parks`?
+    (This is recommended but not required for new projects.)
+    If so:
+    
+    Is the short name -> organization mapping for the institution in `/mappings/project_institution.yaml`
+    (e.g. `UWMadison: "University of Wisconsin-Madison"`)?
+    If not, ask the PR author to add it.
+
+-   Does the "FieldOfScience" in the YAML match one of the keys in `/mappings/nsfscience.yaml`?
+    (The list is also available on the _left_ column of [this CSV](https://topology.opensciencegrid.org/nsfscience/csv).)
+
+-   Is the "ID" unique?
+
+-   Is the "Sponsor" correct?  The sponsor depends on where the users will be submitting jobs from:
+
+    -   If they primarily submit from some CI Connect interface such as "OSG Connect", use:
+
+            :::yaml
+            Sponsor:
+                CampusGrid:
+                    Name: <CAMPUS_GRID>
+
+        The campus grid name must be one of the ones in the `/projects/_CAMPUS_GRIDS.yaml` file..
+
+    -  Otherwise, the project must be sponsored by a VO:
+
+            :::yaml
+            Sponsor:
+                VirtualOrganization:
+                    Name: <VO>
+
+        The VO name must be one of the ones in the `/virtual-organizations/` dir.
+
+
 Contacts Data
 -------------
 
@@ -179,4 +234,3 @@ If you want to add information that is not present for that contact, look at `te
     If you change the contact's `FullName`, you **must** make the same change to every place that the contact
     is mentioned in the `topology` repo.
     Get the contact changes merged in first.
-
