@@ -26,6 +26,8 @@ pages:
   - 'OIM': 'SLA/oim.md'
   - 'XDLogin': 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
+- Troubleshooting:
+  - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
 
 markdown_extensions:
   - admonition
