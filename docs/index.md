@@ -43,7 +43,8 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
-- [April 4, 2020](https://docs.google.com/document/d/1HRKlYdWw_IXfpETgmb2dbSZYNfUZmoFewIYFJsmu0oQ/edit?usp=sharing)
+- [April 10, 2020](https://docs.google.com/document/d/1dNjNW1pyQDuxgr50WaOiSiRrWMNpFN80_StfoyNmMnw/edit?usp=sharing)
+- [April 3, 2020](https://docs.google.com/document/d/1HRKlYdWw_IXfpETgmb2dbSZYNfUZmoFewIYFJsmu0oQ/edit?usp=sharing)
 - [March 27, 2020](https://docs.google.com/document/d/1CsoAqT5-LpJymAQ1Rc0eIZc4Ai_J1UuMIZoX31qgrHA/edit?usp=sharing)
 - [March 20, 2020](https://docs.google.com/document/d/1w-YVEb1QIOXc8lb26ascbE9vUEEl5bDv27rwrpoVOlA/edit?usp=sharing)
 - [March 13, 2020](https://docs.google.com/document/d/1VvtkP7AoOeut_fbMAGucjny1FccoLQFrNEi70yxHAjM/edit?usp=sharing)
