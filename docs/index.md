@@ -39,7 +39,7 @@ Weekly Operations Meetings
 
 **Phone:** +1 669 900 6833  or +1 408 638 0968  or +1 646 876 9923
 
-**Meeting ID:** 183 382 852
+**Meeting ID:** 183 382 852 (password required; available on request)
 
 
 ### Meeting Minutes ###
