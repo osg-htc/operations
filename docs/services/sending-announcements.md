@@ -64,7 +64,7 @@ Use the `osg-notify` tool to send the announcement using the relevant options fr
 | `--message <FILE>`              | File containing your message                                                                                 |
 | `--subject <EMAIL SUBJECT>`     | The subject of your message                                                                                  |
 | `--recipients <LIST OF EMAILS>` | List of recipient email addresses, must have at least one                                                    |
-| `--oim-recipients resources`    | Select contact associated with resources                                                                     |
+| `--oim-recipients <resources|vos>`    | Select contacts associated with resources and/or VOs                                                                    |
 | `--oim-contact-type <TYPE>`     | Replacing `<TYPE>` with `administrative` for release announcements or  `security` for security announcements |
 | `--bypass-dns-check`            | Use this option to skip the check that one of the host's IP addresses matches with the hostname resolution |
 
@@ -83,7 +83,7 @@ osg-notify --cert your-cert.pem --key your-key.pem \
     --no-sign --type production --message <PATH TO MESSAGE FILE> \
     --subject '<EMAIL SUBJECT>' \
     --recipients "osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org" \
-    --oim-recipients resources --oim-contact-type administrative
+    --oim-recipients resources --oim-recipients vos --oim-contact-type administrative
 ```
 
 Replacing `<EMAIL SUBJECT>` with an appropriate subject for your announcement and `<PATH TO MESSAGE FILE>` with the path
