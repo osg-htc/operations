@@ -659,8 +659,8 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 <td>List of recipient email addresses, must have at least one</td>
 </tr>
 <tr>
-<td><code>--oim-recipients resources</code></td>
-<td>Select contact associated with resources</td>
+<td><code>--oim-recipients &lt;resources|vos&gt;</code></td>
+<td>Select contacts associated with resources and/or VOs</td>
 </tr>
 <tr>
 <td><code>--oim-contact-type &lt;TYPE&gt;</code></td>
@@ -686,7 +686,7 @@ This page describes how to send announcements using the <code>osg-notify</code> 
 <span class="go">    --no-sign --type production --message &lt;PATH TO MESSAGE FILE&gt; \</span>
 <span class="go">    --subject &#39;&lt;EMAIL SUBJECT&gt;&#39; \</span>
 <span class="go">    --recipients &quot;osg-general@opensciencegrid.org osg-operations@opensciencegrid.org osg-sites@opensciencegrid.org vdt-discuss@opensciencegrid.org&quot; \</span>
-<span class="go">    --oim-recipients resources --oim-contact-type administrative</span>
+<span class="go">    --oim-recipients resources --oim-recipients vos --oim-contact-type administrative</span>
 </pre></div>
 
 
