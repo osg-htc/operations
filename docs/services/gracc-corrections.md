@@ -44,7 +44,7 @@ For example, for the VO correction:
     Field(s) to correct:
         VOName: <vo>
         ReportableVOName: <reportable_vo>
-    Corrected VOName: <new_vo_name
+    Corrected VOName: <new_vo_name>
 
 ### CSV File
 
