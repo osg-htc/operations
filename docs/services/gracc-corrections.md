@@ -51,7 +51,7 @@ For example, for the VO correction:
 A CSV file can be specified in order to specify multiple corrections in a single batch update.  The CSV file must be of a certain format.
 
 * No Header Row
-* The number of columns must be at least the number of matching attribute and the corrected attribute.
+* The number of columns must be at least the number of matching attributes and the corrected attribute.
 
 For example, a CSV file for VO corrections would be of format:
 
