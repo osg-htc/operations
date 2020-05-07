@@ -32,7 +32,7 @@ Command Line
 
 The [gracc-correct](https://github.com/opensciencegrid/gracc-tools/tree/master/gracc-correct) tool is used to create, update, and delete corrections.  The tool must be run from a host that can write to GRACC, which is very restricted.  It is recommended to run the _gracc-correct_ tool directly from the gracc.opensciencegrid.org host.
 
-The _gracc-correct_ tool is able to parse new corrections from either user input or many from a CSV file.
+The _gracc-correct_ tool is able to parse new corrections either individually from user input or many at once from a CSV file.
 
 ### User Input
 
