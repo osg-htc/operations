@@ -20,7 +20,7 @@ We can currently correct:
 Limitations
 -----------
 
-Additional corrections can be written, but some attributes are protected.  GRACC uses specific attributes to detect duplicate records.  Protected records for summarization are:
+Additional corrections can be written, but some attributes are used to detect duplicate records, and are therefore protected from corrections.  Protected records for summarization are:
 
     EndTime, RawVOName, RawProjectName, DN, Processors, ResourceType, CommonName,
     Host_description, Resource_ExitCode, Grid, ReportableVOName, ProbeName
