@@ -14,7 +14,7 @@ To monitor the repository hosts for proper *mash* operation, do the following st
        **Note:** The timestamps are displayed in UTC, so convert to local time accordingly</p>
    1. If the timestamps are all less than 2 hours old, life is good and you can skip the remaining steps below
    1. Otherwise, examine the “Last modified” timestamp of the *update\_all\_repos.err* file
-   1. If the *update\_all\_repos.err* timestamp is current, there may be a *mash* process that is hung; see the Troubleshooting steps below
+   1. If the *update\_all\_repos.err* timestamp is current, there may be a *mash* process that is hung; see the [Troubleshooting steps below](#troubleshooting-and-mitigation)
    1. If **all** timestamps are more than 6 hours old, something may be wrong with cron or its mash entries:
       1. If possible, verify that cron is running and that the cron entries for mash are still present; if not, try to restore things
       1. Otherwise, create a GOC ticket with a subject like “Repo update logs are too old on repo**N**” and with relevant details in the body
