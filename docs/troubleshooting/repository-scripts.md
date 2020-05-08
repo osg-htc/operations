@@ -40,7 +40,6 @@ If a mash update process hangs, all future invocations from cron of the mash scr
  
     This message indicates that the most recent update attempt quit early due to the presence of a lock file, most likely from a hung *mash* process.
  
-1. Log on to the host as *root* or with your regular user account
 1. Look for *mash* processes:  
    
         :::console
