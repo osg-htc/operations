@@ -2,7 +2,7 @@ Troubleshooting Guide for Yum Repository Scripts
 ================================================
 
 
-The *repo1.grid.iu.edu* and *repo2.grid.iu.edu* hosts contain the OSG Yum software repositories plus related services and tools. In particular, the *mash* software is used to download RPMs from where they are built (at the University of Wisconsin–Madison), and there are some associated scripts to configure and invoke *mash* periodically. Use this guide to monitor the *mash* system for problems and to perform basic troubleshooting when such problems arise.
+The *repo.opensciencegrid.org* and *repo-itb.opensciencegrid.org* hosts contain the OSG Yum software repositories plus related services and tools. In particular, the *mash* software is used to download RPMs from where they are built (at the University of Wisconsin–Madison), and there are some associated scripts to configure and invoke *mash* periodically. Use this guide to monitor the *mash* system for problems and to perform basic troubleshooting when such problems arise.
 
 Monitoring 
 ----------
@@ -64,4 +64,3 @@ If a mash update process hangs, all future invocations from cron of the mash scr
    1. Create a GOC ticket with a subject like “Problems with mash on repo<strong>N</strong>” and with relevant details in the body
    1. Assign the ticket to “Software Support (Triage)”
    1. Email Carl Edquist <edquist@cs.wisc.edu> and CC Tim Cartwright <cat@cs.wisc.edu> with the ticket URL
-
