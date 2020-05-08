@@ -48,7 +48,7 @@ If a mash update process hangs, all future invocations from cron of the mash scr
         24551 24549 23455  Jan 15 /usr/bin/python /usr/bin/mash osg-3.1-el5-release -o
         24552 24551 23455  Jan 15 /usr/bin/python /usr/bin/mash osg-3.1-el5-release -o
    
-1. If there are *mash* processes that started on a previous date or more than 2 hours ago, it is best to remove their corresponding process groups (PGID, highlighted above):  
+1. If there are *mash* processes that started on a previous date or more than 2 hours ago, it is best to remove their corresponding process groups (PGID above):  
     
         :::console
         root@host # kill -TERM -23455
