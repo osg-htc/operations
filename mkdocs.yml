@@ -19,6 +19,7 @@ pages:
   - Finalize Cache Registration: 'services/finalize-cache-registration.md'
   - Sending Announcements: 'services/sending-announcements.md'
   - GRACC Corrections: 'services/gracc-corrections.md'
+  - Hosted CE Definitions: 'services/hosted-ce-definitions.md'
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
