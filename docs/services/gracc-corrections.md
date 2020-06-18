@@ -25,7 +25,7 @@ Additional corrections can be written, but some attributes are protected.  GRACC
     EndTime, RawVOName, RawProjectName, DN, Processors, ResourceType, CommonName,
     Host_description, Resource_ExitCode, Grid, ReportableVOName, ProbeName
 
-For example, we could not write a correction for the `Host_description`.  If we had a correction that changed `Host_description`, then the duplicate detection would not detect the same record during resummarization and it would have duplicates summarized records.
+For example, we could not write a correction for the `Host_description`.  If we had a correction that changed `Host_description`, then the duplicate detection would not detect the same record during resummarization.
 
 Command Line
 ------------
