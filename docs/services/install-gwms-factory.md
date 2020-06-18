@@ -53,9 +53,6 @@ root@host # getent passwd gfactory | cut -d: -f4 | xargs getent group
 
 It should be the `gfactory` group. 
 
-!!! note
-    If you get another one, you just need to modify the **PrivSep Kernel configuration file** `/etc/condor/privsep_config` as indicated above and establish the corresponding GID. The lists that you see in this file, specify the IDs of all users and groups that HTCondor jobs may use on the given execute machine. In other words, users and groups that HTCondor will be allowed to act on behalf of.
-
 
 #### Certificates 
 
@@ -94,10 +91,6 @@ You need to have HTCondor installed before installing the GlideinWMS Factory. If
         :::console
         root@host # yum install condor.x86_64
 
-1. If you have installed HTCondor version > 8.7.2, you must install the `glideinwms-switchboard`:
-
-        :::console
-        root@host # yum install glideinwms-switchboard --enablerepo=osg-upcoming
  
 ### Installing HTCondor-BOSCO
 
@@ -360,37 +353,6 @@ After configuring HTCondor, be sure to restart HTCondor:
 root@host # service condor restart
 ```
 
-#### Configuring HTCondor Privilege Separation
-
-Lastly, verify the settings in `/etc/condor/privsep_config`.  By default,
-the values in this file should not need to be modified.  However,
-if your user/group differs from *gfactory* / *gfactory*, or if you are operating
-a Factory with multiple frontends, you will have to modify this file.
-
-This file controls the HTCondor root switchboard, which allows the Factory
-to change permissions of files, specifically the proxies and files
-passed to it by the frontends.
-
-``` file
-valid-caller-uids = gfactory
-valid-caller-gids = gfactory
-valid-target-uids = fecmsucsd : fehcc : fecmscern
-valid-target-gids = fecmsucsd : fehcc : fecmscern
-valid-dirs = /var/lib/gwms-factory/client-proxies
-valid-dirs = /var/lib/gwms-factory/client-logs
-valid-dirs = /var/log/gwms-factory/client
-valid-dirs = /var/lib/gwms-factory
-valid-dirs = /var/log/gwms-factory
-procd-executable = /usr/sbin/condor_procd
-```
-
-Thus, the *valid-called-uids* and *valid-caller-gids* should match the user/group of your Factory user.
-The *valid-target-uids* and *valid-target-gids* should be a colon-separated list of all the frontend
-users and groups.  This should match the security_classes section in `/etc/gwms-factory/glideinWMS.xml`.
-
-!!! note
-    Please notice that from version 3.5, there is no need to configure HTCondor privilege separation. The Factory and all pilot jobs run under a single user (gfactory), which eliminates the need for the switchboard and setuid/user-switching.
-
 ## Create a HTCondor grid mapfile.
 
 The HTCondor grid mapfile `/etc/condor/certs/condor_mapfile` is used for authentication between the glidein running on a remote worker node, and the local collector.  HTCondor uses the mapfile to map certificates to pseudo-users on the local machine.  It is important that you map the DN's of each frontend you are talking to.
@@ -446,21 +408,6 @@ Before you start the Factory service for the first time or after an update of th
 
 1. Start the `condor` and `gwms-factory` services (see next part).
 
-**Important:**
-
-If you are upgrading to v3.5.x from 3.4.x or earlier you need some additional steps. The Factory and all pilot jobs will run under a single user (gfactory) to eliminate the need of switchboard and setuid/user-switching, no more separated users per-VO). After the RPM upgrade, you will need to::
-    
-    1. Stop Factory and HTCondor
-    2. Migrate the HTCondor status running the fact_chown script, located in factory/tools. Add the flag --backup to have backup of everything:
-    
-            :::console
-            root@host # sudo fact_chown --user=gfactory --group=gfactory --backup
-	    
-    3. Restart HTCondor and the Factory. 
- 
-To revert to a version of GlideinWMS lower than 3.5, you need to restore the job_queue files and change back the permissions of the log directories. Those operations need to be also performed with both HTCondor and Factory stoppped. 
-    
- For detailed instructions see [reference documentation](http://glideinwms.fnal.gov/doc.dev/factory/configuration.html#single_user)
 
 ### Service Activation and Deactivation
 
@@ -644,17 +591,6 @@ If the glideins are running on a resource (entry) but the jobs are not running a
 
 This can be fixed by setting `DELEGATE_JOB_GSI_CREDENTIALS = FALSE` as suggested in the [CE install document](https://opensciencegrid.org/docs/#installing-and-configuring-the-compute-element).
 
-### Condor_root_switchboard errors
-
-Make sure that you run `service gwms-factory upgrade` instead of the more light-weight `service gwms-factory reconfig`
-to ensure that all scripts are created correctly. Just make sure that gwms-factory is stopped.
-
-Next verify `/etc/condor/privsep_config` to make sure the users and groups are listed correctly.
-
-Lastly, verify that permissions are correct.  The parent directories (all the way to the root) of all valid-dirs in the file must be owned by root.
-
-!!! note
-    Please notice that from version 3.5, Factory and all pilot jobs run under a single user (gfactory) to eliminate the need of switchboard and setuid/user-switching. Therefore, these errors will not exist in v3.5.
 
 References
 ----------
