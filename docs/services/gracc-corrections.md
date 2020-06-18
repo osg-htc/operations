@@ -1,7 +1,9 @@
 Installing GRACC Corrections
 ============================
 
-GRACC Corrections are used to modify records during the summarization process.  RAW records are not modified in the correction process.  The correction is applied after summarization and aggregation, but before the record is enriched with data from [Topology](https://topology.opensciencegrid.org/).
+GRACC Corrections are used to modify records during the summarization process.  
+RAW records are not modified in the correction process.  
+The correction is applied after summarization and aggregation, but before the record is enriched with data from [Topology](https://topology.opensciencegrid.org/).
 
 The correction is step 3 in the GRACC summary record workflow:
 
@@ -20,7 +22,7 @@ We can currently correct:
 Limitations
 -----------
 
-Additional corrections can be written, but some attributes are protected.  GRACC uses specific attributes to detect duplicate records.  Protected records for summarization are:
+Corrections can be written for all attributes except for a few that are protected.  GRACC uses these protected attributes to detect duplicate records.  Protected attributes for summarization are:
 
     EndTime, RawVOName, RawProjectName, DN, Processors, ResourceType, CommonName,
     Host_description, Resource_ExitCode, Grid, ReportableVOName, ProbeName
@@ -30,9 +32,11 @@ For example, we could not write a correction for the `Host_description`.  If we 
 Command Line
 ------------
 
-The [gracc-correct](https://github.com/opensciencegrid/gracc-tools/tree/master/gracc-correct) tool is used to create, update, and delete corrections.  The tool must be run from a host that can write to GRACC, which is very restricted.  It is recommended to run the _gracc-correct_ tool directly from the gracc.opensciencegrid.org host.
+The [gracc-correct](https://github.com/opensciencegrid/gracc-tools/tree/master/gracc-correct) tool is used to create, update, and delete corrections.  
+The tool must be run from a host that can write to GRACC, which is very restricted.  
+It is recommended to run the _gracc-correct_ tool directly from the gracc.opensciencegrid.org host.
 
-The _gracc-correct_ tool is able to parse new corrections from either user input or many from a CSV file.
+The _gracc-correct_ tool is able to parse new corrections from either individually from user input or many at once from a CSV file.
 
 ### User Input
 
@@ -55,7 +59,7 @@ A CSV file can be specified in order to specify multiple corrections in a single
 
 For example, a CSV file for VO corrections would be of format:
 
-    VOName,ReportableVOName,CorrectedVOName,....
+    <VOName>,<ReportableVOName>,<CorrectedVOName>,....
 
 The CSV file can be specified on the command line with the option `--csv`, for example:
 
