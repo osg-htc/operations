@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [July 17, 2020](https://docs.google.com/document/d/1KeC25cCKPJyve0y_zAXAxxobEMPDcfpmo-F2QeONxys/edit?usp=sharing)
 - [July 10, 2020](https://docs.google.com/document/d/1WcqZIGfaILwwkNJN5JoTqDQjPFfH9Hwl-LuokQNZpWc/edit?usp=sharing)
 - July 3, 2020 (canceled)
 - [June 26, 2020](https://docs.google.com/document/d/1LPTHqIlXM9uZUCaG_2xJogOiIxaIbojonEcQX9WJmrc/edit?usp=sharing)
