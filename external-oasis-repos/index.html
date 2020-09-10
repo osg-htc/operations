@@ -654,9 +654,9 @@ Tell the requester that it is ready 15 minutes after topology is updated.</p>
     for <span style="color:red">example.opensciencegrid.org</span> in OIM for the VO in OASIS Repo URLs.</li>
 <li>Add the FNAL and BNL Stratum-1 operators to the ticket and ask them to remove the repository. Wait for the
     Stratum-1 operators to finish before proceeding.</li>
-<li>Run <code>cvmfs_server rmfs -f <span style="color:red">example.opensciencegrid.org</span></code> and <code>rm -r
+<li>Run <code>cvmfs_server rmfs -f <span style="color:red">example.opensciencegrid.org</span></code> and <code>rm -rf
     /oasissrv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></code> on <code>oasis-replica-itb</code> and <code>oasis-replica</code></li>
-<li>Run the following command on <code>oasis-itb</code> and <code>oasis</code>:<div class="codehilite"><pre><span></span><span class="go">rm -r /srv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></span>
+<li>Run the following command on <code>oasis-itb</code> and <code>oasis</code>:<div class="codehilite"><pre><span></span><span class="go">rm -rf /srv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></span>
 </pre></div>
 
 
