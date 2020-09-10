@@ -69,12 +69,12 @@ Requests to Remove an External Repository
     for %RED%example.opensciencegrid.org%ENDCOLOR% in OIM for the VO in OASIS Repo URLs.
 1.  Add the FNAL and BNL Stratum-1 operators to the ticket and ask them to remove the repository. Wait for the
     Stratum-1 operators to finish before proceeding.
-1.  Run `cvmfs_server rmfs -f %RED%example.opensciencegrid.org%ENDCOLOR%` and `rm -r
+1.  Run `cvmfs_server rmfs -f %RED%example.opensciencegrid.org%ENDCOLOR%` and `rm -rf
     /oasissrv/cvmfs/%RED%example.opensciencegrid.org%ENDCOLOR%` on `oasis-replica-itb` and `oasis-replica`
 1.  Run the following command on `oasis-itb` and `oasis`:
 
         :::console
-        rm -r /srv/cvmfs/%RED%example.opensciencegrid.org%ENDCOLOR%
+        rm -rf /srv/cvmfs/%RED%example.opensciencegrid.org%ENDCOLOR%
 
 Requests to Blank an External Repository
 ----------------------------------------
