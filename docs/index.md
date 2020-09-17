@@ -39,10 +39,34 @@ Weekly Operations Meetings
 
 **Phone:** +1 669 900 6833  or +1 408 638 0968  or +1 646 876 9923
 
-**Meeting ID:** 183 382 852
+**Meeting ID:** 183 382 852 (password required; available on request)
 
 
 ### Meeting Minutes ###
+- [September 11, 2020](https://docs.google.com/document/d/1SCASwPhoa3tDi3HYDrcrCqEFX9c2UKVcS7DfdvTKiy8/edit?usp=sharing)
+- September 4, 2020 (canceled)
+- [August 28, 2020](https://docs.google.com/document/d/1_m728hsbnwVCSYABs2X7dyEtIMy3cmYjUxpH1oddbeo/edit?usp=sharing)
+- [August 21, 2020](https://docs.google.com/document/d/1rfMMil2mVfbprmbYGY0R7_xOtVmD9d0QC2fuSg257jw/edit?usp=sharing)
+- [August 14, 2020](https://docs.google.com/document/d/1aQT_fJUqdSfXA0S0OFIVz0U0rUTztDucmOvpHE2ZegY/edit?usp=sharing)
+- [August 7, 2020](https://docs.google.com/document/d/1wzTSg-POKKPR03qS7cDX3m7CcqskGtXaJC0U4L8LmIo/edit?usp=sharing)
+- [July 31, 2020](https://docs.google.com/document/d/1XZKwsMnZTWOl7b1Rng0zCGLmEFzzBFGjQOcFKUQeuRE/edit?usp=sharing)
+- [July 24, 2020](https://docs.google.com/document/d/13NvpvWhdWTBq8LosCt0qX36LT_9OdM9T4vEEENoIgzw/edit?usp=sharing)
+- [July 17, 2020](https://docs.google.com/document/d/1KeC25cCKPJyve0y_zAXAxxobEMPDcfpmo-F2QeONxys/edit?usp=sharing)
+- [July 10, 2020](https://docs.google.com/document/d/1WcqZIGfaILwwkNJN5JoTqDQjPFfH9Hwl-LuokQNZpWc/edit?usp=sharing)
+- July 3, 2020 (canceled)
+- [June 26, 2020](https://docs.google.com/document/d/1LPTHqIlXM9uZUCaG_2xJogOiIxaIbojonEcQX9WJmrc/edit?usp=sharing)
+- [June 19, 2020](https://docs.google.com/document/d/1HkZrPuE-cQKlOYxRlIjmgWobrmW7gMhs2q3PZm8MMX8/edit?usp=sharing)
+- [June 12, 2020](https://docs.google.com/document/d/19R-UGL2mTVCXBag4qMWjmkAXjJfm0SWc3EadeuA7dvQ/edit?usp=sharing)
+- [June 5, 2020](https://docs.google.com/document/d/1oJKSlDHt3FSjeyhAuJ6zJEn76O2OnpYpAEMGWT5nYRc/edit?usp=sharing)
+- May 29, 2020 (canceled)
+- [May 22, 2020](https://docs.google.com/document/d/16FPIN0FDPVVf8bJ7jNP1-4-eML0jdaoyEuP-eC5Q6rQ/edit?usp=sharing)
+- [May 15, 2020](https://docs.google.com/document/d/1lLcJnlscNFlIPtF9_XEkSafIT_e87S-YneAIJ9CXmRg/edit?usp=sharing)
+- [May 8, 2020](https://docs.google.com/document/d/1UpbETq_Iuno2RUOiGBLbRLIqLrkovT32ew74pbuoAFE/edit?usp=sharing)
+- [May 1, 2020](https://docs.google.com/document/d/12doqvdWbYhIIS_sC1cdT5o5d0rClUH49QbtZzy_49ug/edit?usp=sharing)
+- [April 24, 2020](https://docs.google.com/document/d/1NxluVJ6OipXH1cpuLSJ8Rs_C7yhXZsRnbtHqovFdBNo/edit?usp=sharing)
+- [April 17, 2020](https://docs.google.com/document/d/1JOKtrFbdOBbR6oXu2CaTctOJLNFDH90y-4hVILaaaOI/edit?usp=sharing)
+- [April 10, 2020](https://docs.google.com/document/d/1dNjNW1pyQDuxgr50WaOiSiRrWMNpFN80_StfoyNmMnw/edit?usp=sharing)
+- [April 3, 2020](https://docs.google.com/document/d/1HRKlYdWw_IXfpETgmb2dbSZYNfUZmoFewIYFJsmu0oQ/edit?usp=sharing)
 - [March 27, 2020](https://docs.google.com/document/d/1CsoAqT5-LpJymAQ1Rc0eIZc4Ai_J1UuMIZoX31qgrHA/edit?usp=sharing)
 - [March 20, 2020](https://docs.google.com/document/d/1w-YVEb1QIOXc8lb26ascbE9vUEEl5bDv27rwrpoVOlA/edit?usp=sharing)
 - [March 13, 2020](https://docs.google.com/document/d/1VvtkP7AoOeut_fbMAGucjny1FccoLQFrNEi70yxHAjM/edit?usp=sharing)
