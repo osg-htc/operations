@@ -54,6 +54,5 @@ If a mash update process hangs, all future invocations from cron of the mash scr
         PID  PPID  PGID  STARTED COMMAND
 
 1. If any part of this process does not look or work as expected:
-   1. Create a GOC ticket with a subject like “Problems with mash on repo<strong>N</strong>” and with relevant details in the body
-   1. Assign the ticket to “Software Support (Triage)”
-   1. Email Carl Edquist <edquist@cs.wisc.edu> and CC Tim Cartwright <cat@cs.wisc.edu> with the ticket URL
+   1. Create a Freshdesk ticket with a subject like “Repo update logs are too old on <HOST>” and with relevant details in the body
+   1. Assign the ticket to the “Software” group
