@@ -9,9 +9,8 @@ Monitoring
 
 To monitor the repository hosts for proper *mash* operation, do the following steps on each host:
 
-   1. Access http://repo1.grid.iu.edu/web/log/ or http://repo2.grid.iu.edu/web/log/ to view logs from *mash* updates
-   1. Examine the “Last modified” timestamp of all of the *update\_repo.\*.log* files  
-       **Note:** The timestamps are displayed in UTC, so convert to local time accordingly</p>
+   1. `ssh` to repo.opensciencegrid.org and `cd` into `/var/log/repo` to view logs from *mash* updates
+   1. Examine the “Last modified” timestamp of all of the *update\_repo.\*.log* files
    1. If the timestamps are all less than 2 hours old, life is good and you can skip the remaining steps below
    1. Otherwise, examine the “Last modified” timestamp of the *update\_all\_repos.err* file
    1. If the *update\_all\_repos.err* timestamp is current, there may be a *mash* process that is hung; see the [Troubleshooting steps below](#troubleshooting-and-mitigation)
@@ -27,7 +26,7 @@ Troubleshooting and Mitigation
 
 If a mash update process hangs, all future invocations from cron of the mash scripts will exit without taking action because of the hung process. Thus, it is important to identify and remove any hung processes so that future updates can proceed. Use the procedure below to remove any hung mash processes; doing so is safe in that it will not adversely affect the Yum repositories being served from the host.
 
-1. On the web listing of log files (see above), click on the =update_all_repos.err= link
+1. In the listing of log files (see above), view the file =update_all_repos.err=
 1. In the error log file, look for messages such as:  
 
         :::file
