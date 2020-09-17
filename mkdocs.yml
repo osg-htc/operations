@@ -18,6 +18,8 @@ pages:
   - Topology and Contacts Data: 'services/topology-contacts-data.md'
   - Finalize Cache Registration: 'services/finalize-cache-registration.md'
   - Sending Announcements: 'services/sending-announcements.md'
+  - Yum Repository:
+    - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
@@ -26,8 +28,6 @@ pages:
   - 'OIM': 'SLA/oim.md'
   - 'XDLogin': 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
-- Troubleshooting:
-  - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
 
 markdown_extensions:
   - admonition
