@@ -691,6 +691,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Yum Repository
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        Yum Repository
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/repository-scripts/" title="Troubleshooting Guide for Yum Repository Scripts" class="md-nav__link">
+      Troubleshooting Guide for Yum Repository Scripts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1494,16 +1530,16 @@ a Factory with multiple frontends, you will have to modify this file.</p>
 <p>This file controls the HTCondor root switchboard, which allows the Factory
 to change permissions of files, specifically the proxies and files
 passed to it by the frontends.</p>
-<div class="codehilite"><pre><span></span><span class="err">valid-caller-uids = gfactory</span>
-<span class="err">valid-caller-gids = gfactory</span>
-<span class="err">valid-target-uids = fecmsucsd : fehcc : fecmscern</span>
-<span class="err">valid-target-gids = fecmsucsd : fehcc : fecmscern</span>
-<span class="err">valid-dirs = /var/lib/gwms-factory/client-proxies</span>
-<span class="err">valid-dirs = /var/lib/gwms-factory/client-logs</span>
-<span class="err">valid-dirs = /var/log/gwms-factory/client</span>
-<span class="err">valid-dirs = /var/lib/gwms-factory</span>
-<span class="err">valid-dirs = /var/log/gwms-factory</span>
-<span class="err">procd-executable = /usr/sbin/condor_procd</span>
+<div class="codehilite"><pre><span></span><span class="n">valid</span><span class="o">-</span><span class="n">caller</span><span class="o">-</span><span class="n">uids</span> <span class="o">=</span> <span class="n">gfactory</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">caller</span><span class="o">-</span><span class="n">gids</span> <span class="o">=</span> <span class="n">gfactory</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">uids</span> <span class="o">=</span> <span class="n">fecmsucsd</span> <span class="p">:</span> <span class="n">fehcc</span> <span class="p">:</span> <span class="n">fecmscern</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">target</span><span class="o">-</span><span class="n">gids</span> <span class="o">=</span> <span class="n">fecmsucsd</span> <span class="p">:</span> <span class="n">fehcc</span> <span class="p">:</span> <span class="n">fecmscern</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span><span class="o">/</span><span class="n">client</span><span class="o">-</span><span class="n">proxies</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span><span class="o">/</span><span class="n">client</span><span class="o">-</span><span class="n">logs</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span><span class="o">/</span><span class="n">client</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span>
+<span class="n">valid</span><span class="o">-</span><span class="n">dirs</span> <span class="o">=</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">gwms</span><span class="o">-</span><span class="n">factory</span>
+<span class="n">procd</span><span class="o">-</span><span class="n">executable</span> <span class="o">=</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">sbin</span><span class="o">/</span><span class="n">condor_procd</span>
 </pre></div>
 
 
@@ -1585,13 +1621,13 @@ users and groups.  This should match the security_classes section in <code>/etc/
 </ol>
 <p><strong>Important:</strong></p>
 <p>If you are upgrading to v3.5.x from 3.4.x or earlier you need some additional steps. The Factory and all pilot jobs will run under a single user (gfactory) to eliminate the need of switchboard and setuid/user-switching, no more separated users per-VO). After the RPM upgrade, you will need to::</p>
-<div class="codehilite"><pre><span></span><span class="mf">1.</span><span class="w"> </span><span class="n">Stop</span><span class="w"> </span><span class="n">Factory</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">HTCondor</span><span class="w"></span>
-<span class="mf">2.</span><span class="w"> </span><span class="n">Migrate</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">HTCondor</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">fact_chown</span><span class="w"> </span><span class="n">script</span><span class="p">,</span><span class="w"> </span><span class="n">located</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">factory</span><span class="o">/</span><span class="n">tools</span><span class="p">.</span><span class="w"> </span><span class="k">Add</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">flag</span><span class="w"> </span><span class="c1">--backup to have backup of everything:</span>
+<div class="codehilite"><pre><span></span><span class="mf">1.</span> <span class="n">Stop</span> <span class="n">Factory</span> <span class="ow">and</span> <span class="n">HTCondor</span>
+<span class="mf">2.</span> <span class="n">Migrate</span> <span class="n">the</span> <span class="n">HTCondor</span> <span class="n">status</span> <span class="n">running</span> <span class="n">the</span> <span class="n">fact_chown</span> <span class="n">script</span><span class="p">,</span> <span class="n">located</span> <span class="ow">in</span> <span class="n">factory</span><span class="o">/</span><span class="n">tools</span><span class="o">.</span> <span class="n">Add</span> <span class="n">the</span> <span class="n">flag</span> <span class="o">--</span><span class="n">backup</span> <span class="n">to</span> <span class="n">have</span> <span class="n">backup</span> <span class="n">of</span> <span class="n">everything</span><span class="p">:</span>
 
-<span class="w">        </span><span class="o">::</span><span class="err">:</span><span class="n">console</span><span class="w"></span>
-<span class="w">        </span><span class="n">root</span><span class="nv">@host</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">fact_chown</span><span class="w"> </span><span class="c1">--user=gfactory --group=gfactory --backup</span>
+        <span class="p">:::</span><span class="n">console</span>
+        <span class="n">root</span><span class="err">@</span><span class="n">host</span> <span class="c1"># sudo fact_chown --user=gfactory --group=gfactory --backup</span>
 
-<span class="mf">3.</span><span class="w"> </span><span class="n">Restart</span><span class="w"> </span><span class="n">HTCondor</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Factory</span><span class="p">.</span><span class="w"></span>
+<span class="mf">3.</span> <span class="n">Restart</span> <span class="n">HTCondor</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">Factory</span><span class="o">.</span>
 </pre></div>
 
 
@@ -1699,7 +1735,7 @@ If you have already configured the frontends, you will also have one glidefactor
 </ul>
 <h4 id="check-web-server-configuration-for-the-monitoring">Check Web server configuration for the monitoring</h4>
 <p>Verify path and specially the URL for the GlideinWMS files served by your web server:</p>
-<div class="codehilite"><pre><span></span><span class="err">stage base_dir=&quot;/var/lib/gwms-factory/web-area/stage&quot; use_symlink=&quot;True&quot; web_base_url=&quot;http://HOSTNAME:PORT/factory/stage&quot;</span>
+<div class="codehilite"><pre><span></span><span class="n">stage</span> <span class="n">base_dir</span><span class="o">=</span><span class="s2">&quot;/var/lib/gwms-factory/web-area/stage&quot;</span> <span class="n">use_symlink</span><span class="o">=</span><span class="s2">&quot;True&quot;</span> <span class="n">web_base_url</span><span class="o">=</span><span class="s2">&quot;http://HOSTNAME:PORT/factory/stage&quot;</span>
 </pre></div>
 
 
