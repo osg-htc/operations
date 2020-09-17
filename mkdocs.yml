@@ -20,6 +20,8 @@ pages:
   - Sending Announcements: 'services/sending-announcements.md'
   - GRACC Corrections: 'services/gracc-corrections.md'
   - Hosted CE Definitions: 'services/hosted-ce-definitions.md'
+  - Yum Repository:
+    - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
 - Service Level Agreements:
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
