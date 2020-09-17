@@ -16,17 +16,12 @@ To monitor the repository hosts for proper *mash* operation, do the following st
    1. Otherwise, examine the “Last modified” timestamp of the *update\_all\_repos.err* file
    1. If the *update\_all\_repos.err* timestamp is current, there may be a *mash* process that is hung; see the [Troubleshooting steps below](#troubleshooting-and-mitigation)
    1. If **all** timestamps are more than 6 hours old, something may be wrong with cron or its mash entries:
-      1. If possible, verify that cron is running and that the cron entries for mash are still present; if not, try to restore things
-      1. Otherwise, create a GOC ticket with a subject like “Repo update logs are too old on repo**N**” and with relevant details in the body
-      1. Assign the ticket to “Software Support (Triage)”
-      1. Email Carl Edquist <edquist@cs.wisc.edu> and CC Tim Cartwright <cat@cs.wisc.edu> with the ticket URL
+      1. Verify that cron is running and that the cron entries for mash are still present; if not, try to restore things
+      1. Otherwise, create a Freshdesk ticket with a subject like “Repo update logs are too old on <HOST>” and with relevant details in the body
+      1. Assign the ticket to the “Software” group
 
 Troubleshooting and Mitigation
 ------------------------------
-<style type="text/css">
-  em.pgid { color: red; font-weight: bold; }
-  em.start { color: blue; font-weight: bold; }
-</style>
 
 ### Identifying and fixing a hung mash process
 
