@@ -52,7 +52,7 @@ send APEL numbers for.
 Removing resources prematurely could prevent resummarized GRACC data from getting sent appropriately.
 
 Resources that have been inactive for at least two years are eligible to be deleted from the topology database.
-The GRACC records for this resource can be inspected in [Kibana](https://gracc.opensciencegrid.org/kibana).
+The GRACC records for this resource can be inspected in [Kibana](https://gracc.opensciencegrid.org/kibana/app/kibana#/discover).
 
 -   In the search bar, enter `ProbeName:*\:FQDN` in the search bar, where `FQDN` is the FQDN defined for your resource
 
