@@ -686,13 +686,31 @@ dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done</code></
 Tell the requester that it is ready 15 minutes after topology is updated.</p>
 <h2 id="requests-to-remove-an-external-repository">Requests to Remove an External Repository</h2>
 <ol>
-<li>After validating that the ticket submitter is authorized by the VO's OASIS manager, delete the registered value
-    for <span style="color:red">example.opensciencegrid.org</span> in OIM for the VO in OASIS Repo URLs.</li>
-<li>Add the FNAL and BNL Stratum-1 operators to the ticket and ask them to remove the repository. Wait for the
-    Stratum-1 operators to finish before proceeding.</li>
-<li>Run <code>cvmfs_server rmfs -f <span style="color:red">example.opensciencegrid.org</span></code> and <code>rm -rf
-    /oasissrv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></code> on <code>oasis-replica-itb</code> and <code>oasis-replica</code></li>
-<li>Run the following command on <code>oasis-itb</code> and <code>oasis</code>:<div class="codehilite"><pre><span></span><span class="go">rm -rf /srv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></span>
+<li>
+<p>After validating that the ticket submitter is authorized by the VO's OASIS manager, delete the registered value
+    for <span style="color:red">example.opensciencegrid.org</span> in topology for the VO in OASIS Repo URLs.
+    Verify that it is removed by running the following on any oasis machine
+    to make sure it is missing from the list:</p>
+<div class="codehilite"><pre><span></span><span class="go">print_osg_repos|grep <span style="color:red">example.opensciencegrid.org</span></span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Add the FNAL and BNL Stratum-1 operators to the ticket and ask them to remove the repository. Wait for the
+    Stratum-1 operators to finish before proceeding.</p>
+</li>
+<li>
+<p>Run the following commands on <code>oasis-replica-itb</code> and <code>oasis-replica</code>:</p>
+<div class="codehilite"><pre><span></span><span class="go">remove_osg_repository -f <span style="color:red">example.opensciencegrid.org</span></span>
+<span class="go">rm -rf /oasissrv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Run the following command on <code>oasis-itb</code> and <code>oasis</code>:</p>
+<div class="codehilite"><pre><span></span><span class="go">rm -rf /srv/cvmfs/<span style="color:red">example.opensciencegrid.org</span></span>
 </pre></div>
 
 
