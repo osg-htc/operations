@@ -20,6 +20,7 @@ pages:
   - Sending Announcements: 'services/sending-announcements.md'
   - GRACC Corrections: 'services/gracc-corrections.md'
   - Hosted CE Definitions: 'services/hosted-ce-definitions.md'
+  - CE Monitoring Dashboards: 'services/ce-monitoring-dashboards.md'
   - Yum Repository:
     - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
 - Service Level Agreements:
