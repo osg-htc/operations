@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [December 4, 2020](https://docs.google.com/document/d/1RPsxWrLFVLeI1RcjgXbELRZciVRMhpuOPMnAfBGrTlQ/edit?usp=sharing)
 - [November 20, 2020](https://docs.google.com/document/d/1ZsKBPX3BoPqyvmK17WriHKUK0STitWEpT3E2N6vkpWw/edit?usp=sharing)
 - [November 13, 2020](https://docs.google.com/document/d/1Ey_v85nOZVQklEiOzJaNe3ILODQj4rMI5iheEm3vowA/edit?usp=sharing)
 - [November 6, 2020](https://docs.google.com/document/d/1iLEfk5h35zBVcDHUFx85Mg9igA-QWI4MddlzX1PpYi0/edit?usp=sharing)
