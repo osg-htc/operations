@@ -14,9 +14,10 @@ Requests to Host a Repository on OASIS
     relationship with the person or (b) the contacting the VO manager to find out. Also, the person should be
     listed in the OSG topology [contacts list](https://topology.opensciencegrid.org/contacts).
 
-1.  Review provided URL and verify that it is appropriate for the VO. Then, add the repository URL to the topology 
-    for given VO under the `OASISRepoURLs`. This should cause the repository's configuration
-    to be added to the OSG Stratum-0 within 15 minutes after URL is added into the topology.
+1.  Review provided URL and verify that it is appropriate for the VO and no other project uses it already. In order to make 
+    sure the name in URL is appropriate, check that the name is derived from the VO name or one of its projects.
+    Then, add the repository URL to the topology for given VO under the `OASISRepoURLs`. This should cause 
+    the repository's configuration to be added to the OSG Stratum-0 within 15 minutes after URL is added into the topology.
     For example, if new URL is for the VO DUNE `http://hcc-cvmfs-repo.unl.edu:8000/cvmfs/dune.osgstorage.org` 
     edit the following under the OASIS section and create PR:
 
