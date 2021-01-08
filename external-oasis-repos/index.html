@@ -650,9 +650,10 @@
     listed in the OSG topology <a href="https://topology.opensciencegrid.org/contacts">contacts list</a>.</p>
 </li>
 <li>
-<p>Review provided URL and verify that it is appropriate for the VO. Then, add the repository URL to the topology 
-    for given VO under the <code>OASISRepoURLs</code>. This should cause the repository's configuration
-    to be added to the OSG Stratum-0 within 15 minutes after URL is added into the topology.
+<p>Review provided URL and verify that it is appropriate for the VO and no other project uses it already. In order to make 
+    sure the name in URL is appropriate, check that the name is derived from the VO name or one of its projects.
+    Then, add the repository URL to the topology for given VO under the <code>OASISRepoURLs</code>. This should cause 
+    the repository's configuration to be added to the OSG Stratum-0 within 15 minutes after URL is added into the topology.
     For example, if new URL is for the VO DUNE <code>http://hcc-cvmfs-repo.unl.edu:8000/cvmfs/dune.osgstorage.org</code> 
     edit the following under the OASIS section and create PR:</p>
 <div class="codehilite"><pre><span></span><span class="go">git clone git://github.com/opensciencegrid/topology.git</span>
