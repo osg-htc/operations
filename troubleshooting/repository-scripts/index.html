@@ -667,7 +667,7 @@
 </li>
 <li>
 <p>Look for <em>mash</em> processes:  </p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> ps -C mash -o pid,ppid,pgid,start,command
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>ps -C mash -o pid,ppid,pgid,start,command
 <span class="go">  PID  PPID  PGID  STARTED COMMAND</span>
 <span class="go">24551 24549 23455  Jan 15 /usr/bin/python /usr/bin/mash osg-3.1-el5-release -o</span>
 <span class="go">24552 24551 23455  Jan 15 /usr/bin/python /usr/bin/mash osg-3.1-el5-release -o</span>
@@ -677,12 +677,12 @@
 </li>
 <li>
 <p>If there are <em>mash</em> processes that started on a previous date or more than 2 hours ago, it is best to remove their corresponding process groups (PGID above):  </p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> <span class="nb">kill</span> -TERM -23455
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span><span class="nb">kill</span> -TERM -23455
 </pre></div>
 
 
 <p>Then verify that the old processes are gone using the same <em>ps</em> command as above:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> ps -C mash -o pid,ppid,pgid,start,command
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>ps -C mash -o pid,ppid,pgid,start,command
 <span class="go">PID  PPID  PGID  STARTED COMMAND</span>
 </pre></div>
 

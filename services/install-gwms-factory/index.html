@@ -1255,7 +1255,7 @@
 </tbody>
 </table>
 <p>To verify that the user <em>gfactory</em> has <em>gfactory</em> as primary group check the output of </p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> getent passwd gfactory <span class="p">|</span> cut -d: -f4 <span class="p">|</span> xargs getent group
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>getent passwd gfactory <span class="p">|</span> cut -d: -f4 <span class="p">|</span> xargs getent group
 </pre></div>
 
 
@@ -1300,14 +1300,14 @@ You need to have HTCondor installed before installing the GlideinWMS Factory. If
 <ol>
 <li>
 <p>If you don't have HTCondor already installed, you can install the HTCondor RPM from the OSG repository:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install condor.x86_64
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>yum install condor.x86_64
 </pre></div>
 
 
 </li>
 <li>
 <p>If you have installed HTCondor version &gt; 8.7.2, you must install the <code>glideinwms-switchboard</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install glideinwms-switchboard --enablerepo<span class="o">=</span>osg-upcoming
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>yum install glideinwms-switchboard --enablerepo<span class="o">=</span>osg-upcoming
 </pre></div>
 
 
@@ -1315,16 +1315,16 @@ You need to have HTCondor installed before installing the GlideinWMS Factory. If
 </ol>
 <h3 id="installing-htcondor-bosco">Installing HTCondor-BOSCO</h3>
 <p>If you plan to send jobs using <a href="http://glideinwms.fnal.gov/doc.prd/recipes/batch.html">direct batch submission</a> (aka BOSCO), then you need also the <strong>condor-bosco</strong> package. You'll have to install the package and remove one of its files <code>/etc/condor/config.d/60-campus_factory.config</code> because it interferes with the Factory configuration.</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install condor-bosco
-<span class="gp">root@host #</span> rm /etc/condor/config.d/60-campus_factory.config
-<span class="gp">root@host #</span> touch /etc/condor/config.d/60-campus_factory.config
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>yum install condor-bosco
+<span class="gp">root@host # </span>rm /etc/condor/config.d/60-campus_factory.config
+<span class="gp">root@host # </span>touch /etc/condor/config.d/60-campus_factory.config
 </pre></div>
 
 
 <h3 id="install-gwms-factory">Install GWMS Factory</h3>
 <h4 id="download-and-install-the-factory-rpm">Download and install the Factory RPM</h4>
 <p>Install the RPM and dependencies (be prepared for a lot of dependencies).</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> yum install glideinwms-factory
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>yum install glideinwms-factory
 </pre></div>
 
 
@@ -1469,8 +1469,8 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <li>10-batch_gahp_blahp.config</li>
 </ul>
 <p>Get rid of the pre-loaded HTCondor default</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> rm /etc/condor/config.d/00personal_condor.config
-<span class="gp">root@host #</span> touch /etc/condor/config.d/00personal_condor.config
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>rm /etc/condor/config.d/00personal_condor.config
+<span class="gp">root@host # </span>touch /etc/condor/config.d/00personal_condor.config
 </pre></div>
 
 
@@ -1514,7 +1514,7 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <li>Note that the variable LOCAL_DIR is set differently in UW Madison and OSG RPMs. This should not cause any more problems in the Glideinwms RPMs, but please take note if you use this variable in your job submissions or other customizations.</li>
 </ul>
 <p>In general if you are using a non OSG RPM or if you added custom configuration files for HTCondor please check the order of the configuration files:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> condor_config_val -config
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>condor_config_val -config
 <span class="go">Configuration source:</span>
 <span class="go">    /etc/condor/condor_config</span>
 <span class="go">Local configuration sources:</span>
@@ -1530,7 +1530,7 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 
 <h4 id="restarting-htcondor">Restarting HTCondor</h4>
 <p>After configuring HTCondor, be sure to restart HTCondor:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> service condor restart
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>service condor restart
 </pre></div>
 
 
@@ -1598,7 +1598,7 @@ users and groups.  This should match the security_classes section in <code>/etc/
 - gwms-factory service is running
 - gwms-factory service was started with systemctl</p>
 <p>Otherwise, you will get the following error in any of the cases:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> systemctl reload gwms-factory
+<div class="codehilite"><pre><span></span><span class="gp"># </span>systemctl reload gwms-factory
 <span class="go">Job for gwms-factory.service invalid.</span>
 </pre></div>
 
@@ -1615,14 +1615,14 @@ users and groups.  This should match the security_classes section in <code>/etc/
 </li>
 <li>
 <p>If you are using Enterprise Linux 7:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> /usr/sbin/gwms-factory upgrade
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>/usr/sbin/gwms-factory upgrade
 </pre></div>
 
 
 </li>
 <li>
 <p>If you are using Enterprise Linux 6:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> service gwms-factory upgrade
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>service gwms-factory upgrade
 </pre></div>
 
 
@@ -1647,15 +1647,15 @@ users and groups.  This should match the security_classes section in <code>/etc/
 <p>For detailed instructions see <a href="http://glideinwms.fnal.gov/doc.dev/factory/configuration.html#single_user">reference documentation</a></p>
 <h3 id="service-activation-and-deactivation">Service Activation and Deactivation</h3>
 <p>To <em>start the Factory</em> you must start also <strong>HTCondor</strong> and the <strong>Web server</strong> beside the Factory itself:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
-<span class="gp">root@host #</span> service condor start
-<span class="gp">root@host #</span> service httpd start
-<span class="gp">root@host #</span> service gwms-factory start
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
+<span class="gp">root@host # </span>service condor start
+<span class="gp">root@host # </span>service httpd start
+<span class="gp">root@host # </span>service gwms-factory start
 
-<span class="gp">#</span> <span style="color:red"> For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
-<span class="gp">root@host #</span> systemctl start condor
-<span class="gp">root@host #</span> systemctl start httpd
-<span class="gp">root@host #</span> systemctl start gwms-factory
+<span class="gp"># </span><span style="color:red"> For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
+<span class="gp">root@host # </span>systemctl start condor
+<span class="gp">root@host # </span>systemctl start httpd
+<span class="gp">root@host # </span>systemctl start gwms-factory
 </pre></div>
 
 
@@ -1663,17 +1663,17 @@ users and groups.  This should match the security_classes section in <code>/etc/
 <p class="admonition-title">Note</p>
 <p>Once you successfully start using the Factory service, anytime you change the <code>/etc/gwms-factory/glideinWMS.xml</code> file you will need to run a reconfig/reload command. If you change also some code you need the upgrade command mentioned above:</p>
 </div>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red"> For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
-<span class="gp">root@host #</span> service gwms-factory reconfig
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red"> For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
+<span class="gp">root@host # </span>service gwms-factory reconfig
 
 
-<span class="gp">#</span> <span style="color:red"> But the situation is a bit more complicated in RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7 due to systemd restrictions</span>
-<span class="gp">#</span> <span style="color:green"> For reconfig:</span>
+<span class="gp"># </span><span style="color:red"> But the situation is a bit more complicated <span class="k">in</span> RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7 due to systemd restrictions</span>
+<span class="gp"># </span><span style="color:green"> For reconfig:</span>
 <span class="go">A. <span style="color:red"> when the Factory is running</span></span>
 <span class="go">A.1 <span style="color:red"> without any additional options</span></span>
-<span class="gp">root@host #</span> /usr/sbin/gwms-factory reconfig</span>
+<span class="gp">root@host # </span>/usr/sbin/gwms-factory reconfig</span>
 <span class="go">or</span>
-<span class="gp">root@host #</span> systemctl reload gwms-factory
+<span class="gp">root@host # </span>systemctl reload gwms-factory
 
 <span class="go">A.2 <span style="color:red"> if you want to give additional options </span></span>
 <span class="go">systemctl stop gwms-factory</span>
@@ -1681,31 +1681,31 @@ users and groups.  This should match the security_classes section in <code>/etc/
 <span class="go">systemctl start gwms-factory</span>
 
 <span class="go">B. <span style="color:red"> when the Factory is NOT running </span></span>
-<span class="gp">root@host #</span> /usr/sbin/gwms-factory reconfig <span class="o">(</span><span class="s2">&quot;and your options&quot;</span><span class="o">)</span>
+<span class="gp">root@host # </span>/usr/sbin/gwms-factory reconfig <span class="o">(</span><span class="s2">&quot;and your options&quot;</span><span class="o">)</span>
 </pre></div>
 
 
 <p>To enable the services so that they restart after a reboot:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red"># For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
-<span class="gp">root@host #</span> /sbin/chkconfig fetch-crl-cron on 
-<span class="gp">root@host #</span> /sbin/chkconfig fetch-crl-boot on 
-<span class="gp">root@host #</span> /sbin/chkconfig condor on
-<span class="gp">root@host #</span> /sbin/chkconfig httpd on
-<span class="gp">root@host #</span> /sbin/chkconfig gwms-factory on
-<span class="gp">#</span> <span style="color:red"># For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
-<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> fetch-crl-cron 
-<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> fetch-crl-boot
-<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> condor 
-<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> httpd 
-<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> gwms-factory
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red"># For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
+<span class="gp">root@host # </span>/sbin/chkconfig fetch-crl-cron on 
+<span class="gp">root@host # </span>/sbin/chkconfig fetch-crl-boot on 
+<span class="gp">root@host # </span>/sbin/chkconfig condor on
+<span class="gp">root@host # </span>/sbin/chkconfig httpd on
+<span class="gp">root@host # </span>/sbin/chkconfig gwms-factory on
+<span class="gp"># </span><span style="color:red"># For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
+<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> fetch-crl-cron 
+<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> fetch-crl-boot
+<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> condor 
+<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> httpd 
+<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> gwms-factory
 </pre></div>
 
 
 <p>To stop the Factory:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6 </span>
-<span class="gp">root@host #</span> service gwms-factory stop
-<span class="gp">#</span> <span style="color:red">For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
-<span class="gp">root@host #</span> systemctl stop gwms-factory
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6 </span>
+<span class="gp">root@host # </span>service gwms-factory stop
+<span class="gp"># </span><span style="color:red">For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
+<span class="gp">root@host # </span>systemctl stop gwms-factory
 </pre></div>
 
 
@@ -1713,7 +1713,7 @@ users and groups.  This should match the security_classes section in <code>/etc/
 <h2 id="validating-glideinwms-factory">Validating GlideinWMS Factory</h2>
 <p>The complete validation of the Factory is the submission of actual jobs.</p>
 <p>You can also check that the services are up and running:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host #</span> condor_status -any
+<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>condor_status -any
 
 <span class="go">MyType               TargetType           Name</span>
 

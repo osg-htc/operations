@@ -795,7 +795,7 @@ The following steps should be done as root.</p>
 <ol>
 <li>
 <p>Install prerequisites:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> yum install python36 gridsite httpd mod_ssl
+<div class="codehilite"><pre><span></span><span class="gp"># </span>yum install python36 gridsite httpd mod_ssl
 </pre></div>
 
 
@@ -803,23 +803,23 @@ The following steps should be done as root.</p>
 <li>
 <p>Clone the repository:</p>
 <p>For the production topology host:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology
-<span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology-webhook
+<div class="codehilite"><pre><span></span><span class="gp"># </span>git clone https://github.com/opensciencegrid/topology /opt/topology
+<span class="gp"># </span>git clone https://github.com/opensciencegrid/topology /opt/topology-webhook
 </pre></div>
 
 
 <p>For the topology-itb host:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology-itb
-<span class="gp">#</span> git clone https://github.com/opensciencegrid/topology /opt/topology-itb-webhook
+<div class="codehilite"><pre><span></span><span class="gp"># </span>git clone https://github.com/opensciencegrid/topology /opt/topology-itb
+<span class="gp"># </span>git clone https://github.com/opensciencegrid/topology /opt/topology-itb-webhook
 </pre></div>
 
 
 </li>
 <li>
 <p>Set up the virtualenv in the clone -- from <code>/opt/topology</code> or <code>/opt/topology-itb</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> python36 -m venv venv
-<span class="gp">#</span> . ./venv/bin/activate
-<span class="gp">#</span> pip install -r requirements-apache.txt
+<div class="codehilite"><pre><span></span><span class="gp"># </span>python36 -m venv venv
+<span class="gp"># </span>. ./venv/bin/activate
+<span class="gp"># </span>pip install -r requirements-apache.txt
 </pre></div>
 
 
@@ -1124,9 +1124,9 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Update the ITB software installation at <code>/opt/topology-itb</code> and note the current branch:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology-itb
-<span class="gp">#</span> git fetch --all
-<span class="gp">#</span> git status
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span class="nb">cd</span> /opt/topology-itb
+<span class="gp"># </span>git fetch --all
+<span class="gp"># </span>git status
 </pre></div>
 
 
@@ -1134,7 +1134,7 @@ These instructions assume that the code has not been merged to master.</p>
 <li>
 <p>Check out the branch you are testing.
     If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
+<div class="codehilite"><pre><span></span><span class="gp"># </span>git checkout -b &lt;BRANCH&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
 </pre></div>
 
 
@@ -1147,8 +1147,8 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Backup the ITB configuration file:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /etc/opt/topology
-<span class="gp">#</span> cp -p config-itb.py<span class="o">{</span>,.bak<span class="o">}</span>
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span class="nb">cd</span> /etc/opt/topology
+<span class="gp"># </span>cp -p config-itb.py<span class="o">{</span>,.bak<span class="o">}</span>
 </pre></div>
 
 
@@ -1164,9 +1164,9 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Check the branch of <code>TOPOLOGY_DATA_DIR</code> from  <code>/etc/opt/topology/config-itb.py</code></p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> &lt;TOPOLOGY_DATA_DIR&gt;
-<span class="gp">#</span> git fetch --all
-<span class="gp">#</span> git status
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span class="nb">cd</span> &lt;TOPOLOGY_DATA_DIR&gt;
+<span class="gp"># </span>git fetch --all
+<span class="gp"># </span>git status
 </pre></div>
 
 
@@ -1175,7 +1175,7 @@ These instructions assume that the code has not been merged to master.</p>
 <p>Note the previous branch, you will need this later</p>
 </li>
 <li>If the target remote is not configured, <a href="https://help.github.com/articles/adding-a-remote/">add it</a></li>
-<li>Check out the target branch:<div class="codehilite"><pre><span></span><span class="gp">#</span> git checkout -b &lt;BRANCH NAME&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
+<li>Check out the target branch:<div class="codehilite"><pre><span></span><span class="gp"># </span>git checkout -b &lt;BRANCH NAME&gt; &lt;REMOTE&gt;/&lt;BRANCH NAME&gt;
 </pre></div>
 
 
@@ -1184,7 +1184,7 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>Pull any upstream changes to ensure that your branch is up to date:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> git pull
+<div class="codehilite"><pre><span></span><span class="gp"># </span>git pull
 </pre></div>
 
 
@@ -1197,7 +1197,7 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> systemctl restart httpd
+<div class="codehilite"><pre><span></span><span class="gp"># </span>systemctl restart httpd
 </pre></div>
 
 
@@ -1211,16 +1211,16 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Switch <code>/opt/topology-itb</code> to the previous branch:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology-itb
-<span class="gp">#</span> git checkout &lt;BRANCH&gt;
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span class="nb">cd</span> /opt/topology-itb
+<span class="gp"># </span>git checkout &lt;BRANCH&gt;
 </pre></div>
 
 
 </li>
 <li>
 <p>For updates to the webhook app, switch <code>/opt/topology-itb-webhook</code> to the previous master:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology-itb-webhook
-<span class="gp">#</span> git checkout &lt;BRANCH&gt;
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span class="nb">cd</span> /opt/topology-itb-webhook
+<span class="gp"># </span>git checkout &lt;BRANCH&gt;
 </pre></div>
 
 
@@ -1233,7 +1233,7 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> systemctl restart httpd
+<div class="codehilite"><pre><span></span><span class="gp"># </span>systemctl restart httpd
 </pre></div>
 
 
@@ -1247,8 +1247,8 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Update master on the Git clone at <code>/opt/topology</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology
-<span class="gp">#</span> git pull origin master
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span class="nb">cd</span> /opt/topology
+<span class="gp"># </span>git pull origin master
 </pre></div>
 
 
@@ -1266,7 +1266,7 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> systemctl restart httpd
+<div class="codehilite"><pre><span></span><span class="gp"># </span>systemctl restart httpd
 </pre></div>
 
 
@@ -1280,9 +1280,9 @@ These instructions assume that the code has not been merged to master.</p>
 <ol>
 <li>
 <p>Switch <code>/opt/topology</code> to the previous master:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> /opt/topology
+<div class="codehilite"><pre><span></span><span class="gp"># </span><span class="nb">cd</span> /opt/topology
 <span class="gp">#</span><span class="c1">## (use `git reflog` to find the previous commit that was used)</span>
-<span class="gp">#</span> git reset --hard &lt;COMMIT&gt;
+<span class="gp"># </span>git reset --hard &lt;COMMIT&gt;
 </pre></div>
 
 
@@ -1301,7 +1301,7 @@ These instructions assume that the code has not been merged to master.</p>
 </li>
 <li>
 <p>Restart <code>httpd</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">#</span> systemctl restart httpd
+<div class="codehilite"><pre><span></span><span class="gp"># </span>systemctl restart httpd
 </pre></div>
 
 
