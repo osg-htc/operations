@@ -10,7 +10,7 @@ theme:
 extra_css:
   - css/extra.css
 
-pages:
+nav:
 - Home: 'index.md'
 - Services:
   - Installing GlideinWMS Factory: 'services/install-gwms-factory.md'

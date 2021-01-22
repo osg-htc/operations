@@ -5,7 +5,7 @@ This document describes how to install a Glidein Workflow Managment System (Glid
 
 This document assumes expertise with HTCondor and familiarity with the GlideinWMS software.  It **does not** cover anything but the simplest possible install.   Please consult the [GlideinWMS reference documentation](http://glideinwms.fnal.gov/doc.prd/install.html) for advanced topics, including non-root, non-RPM-based installation.  In this document the terms glidein and pilot (job) will be used interchangeably.
 
-![GlideinWMS Architecture](/img/gwms_arch.png)
+![GlideinWMS Architecture](../img/gwms_arch.png)
 
 This parts covers these primary components of the GlideinWMS system:
  
