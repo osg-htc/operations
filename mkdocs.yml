@@ -37,5 +37,5 @@ markdown_extensions:
   - codehilite
 #  - toc(permalink=true)
   - toc
-  - osg_markdown.colors
+#  - osg_markdown.colors
   - pymdownx.details
