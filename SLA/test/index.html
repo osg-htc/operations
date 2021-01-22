@@ -1,0 +1,1837 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.opensciencegrid.org/operations/SLA/test/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+    
+    
+      
+        <title>Procedures for handling OASIS externally-hosted CVMFS repositories - OSG Operations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#procedures-for-handling-oasis-externally-hosted-cvmfs-repositories" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                OSG Operations
+              </span>
+              <span class="md-header-nav__topic">
+                Procedures for handling OASIS externally-hosted CVMFS repositories
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    OSG Operations
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyTemplate/" title="Operations Meeting February 20, 2017" class="md-nav__link">
+      Operations Meeting February 20, 2017
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../external-oasis-repos/" title="External oasis repos" class="md-nav__link">
+      External oasis repos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../privacy/" title="Privacy" class="md-nav__link">
+      Privacy
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      SLA
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        SLA
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ReleaseSchedule/" title="GOC Release Schedule Guidelines" class="md-nav__link">
+      GOC Release Schedule Guidelines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ServiceTypeDefinition/" title="OSG Service Types" class="md-nav__link">
+      OSG Service Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cadist/" title="OSG Certificate Authority Distribution and Software Cache Service Level Agreement" class="md-nav__link">
+      OSG Certificate Authority Distribution and Software Cache Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cilogon/" title="CILogon Service Level Agreement" class="md-nav__link">
+      CILogon Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../collector/" title="GOC Condor Collector Service Level Agreement" class="md-nav__link">
+      GOC Condor Collector Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../display/" title="OSG Display Service Level Agreement -- *DRAFT*" class="md-nav__link">
+      OSG Display Service Level Agreement -- *DRAFT*
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docrepo/" title="OSG Document Repository Service Level Agreement -- *DRAFT*" class="md-nav__link">
+      OSG Document Repository Service Level Agreement -- *DRAFT*
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../event/" title="RabbitMQ Message Bus Service Level Agreement" class="md-nav__link">
+      RabbitMQ Message Bus Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../glidein/" title="Glide-In Factory Service Level Agreement" class="md-nav__link">
+      Glide-In Factory Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gocfp/" title="OSG Ticket Exchange Service Level Agreement -- *DRAFT*" class="md-nav__link">
+      OSG Ticket Exchange Service Level Agreement -- *DRAFT*
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../jira/" title="Jira" class="md-nav__link">
+      Jira
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../myosg/" title="MyOSG Service Level Agreement" class="md-nav__link">
+      MyOSG Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../oasis-replica/" title="OASIS Replica Service Level Agreement" class="md-nav__link">
+      OASIS Replica Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../oasis/" title="OASIS Service Level Agreement -- *DRAFT*" class="md-nav__link">
+      OASIS Service Level Agreement -- *DRAFT*
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../oim/" title="OSG Information Management Service Level Agreement" class="md-nav__link">
+      OSG Information Management Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../osgconnect/" title="*OSG Connect Service Level Agreement*" class="md-nav__link">
+      *OSG Connect Service Level Agreement*
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../osgweb/" title="OSG Web Portal Service Level Agreement -- *DRAFT*" class="md-nav__link">
+      OSG Web Portal Service Level Agreement -- *DRAFT*
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../perfsonar/" title="OSG PerfSonar Service Level Agreement" class="md-nav__link">
+      OSG PerfSonar Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rpmdist/" title="Rpmdist" class="md-nav__link">
+      Rpmdist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../servicedesk/" title="GOC Service Desk Service Level Agreement" class="md-nav__link">
+      GOC Service Desk Service Level Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Procedures for handling OASIS externally-hosted CVMFS repositories" class="md-nav__link md-nav__link--active">
+      Procedures for handling OASIS externally-hosted CVMFS repositories
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ticket/" title="Ticket" class="md-nav__link">
+      Ticket
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xdlogin/" title="Xdlogin" class="md-nav__link">
+      Xdlogin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      ServiceManagement
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        ServiceManagement
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/ResponsibilityMatrix/" title="ResponsibilityMatrix" class="md-nav__link">
+      ResponsibilityMatrix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/placeholder/" title="Placeholder" class="md-nav__link">
+      Placeholder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
+    
+    <label class="md-nav__link" for="nav-6-3">
+      ServiceCatalog
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        ServiceCatalog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/ServiceCatalog/SC_Display/" title="SC Display" class="md-nav__link">
+      SC Display
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/ServiceCatalog/SC_GRACC/" title="SC GRACC" class="md-nav__link">
+      SC GRACC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/ServiceCatalog/SC_GlideInFactory/" title="SC GlideInFactory" class="md-nav__link">
+      SC GlideInFactory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/ServiceCatalog/SC_HostedCE/" title="SC HostedCE" class="md-nav__link">
+      SC HostedCE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/ServiceCatalog/SC_OIM/" title="SC OIM" class="md-nav__link">
+      SC OIM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      ServiceProfile
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        ServiceProfile
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ServiceManagement/ServiceProfile/SP_Display/" title="SP Display" class="md-nav__link">
+      SP Display
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      WeeklyMinutes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        WeeklyMinutes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/01May2017/" title="01May2017" class="md-nav__link">
+      01May2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/02Apr2018/" title="02Apr2018" class="md-nav__link">
+      02Apr2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/02Oct2017/" title="02Oct2017" class="md-nav__link">
+      02Oct2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/03Apr2017/" title="03Apr2017" class="md-nav__link">
+      03Apr2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/03Jul2017/" title="03Jul2017" class="md-nav__link">
+      03Jul2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/04Dec2017/" title="04Dec2017" class="md-nav__link">
+      04Dec2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/05Feb2018/" title="05Feb2018" class="md-nav__link">
+      05Feb2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/05Jun2017/" title="05Jun2017" class="md-nav__link">
+      05Jun2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/05Mar2018/" title="05Mar2018" class="md-nav__link">
+      05Mar2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/06Nov2017/" title="06Nov2017" class="md-nav__link">
+      06Nov2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/07Aug2017/" title="07Aug2017" class="md-nav__link">
+      07Aug2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/08Jan2018/" title="08Jan2018" class="md-nav__link">
+      08Jan2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/08May2017/" title="08May2017" class="md-nav__link">
+      08May2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/09Apr2018/" title="09Apr2018" class="md-nav__link">
+      09Apr2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/09Oct2017/" title="09Oct2017" class="md-nav__link">
+      09Oct2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/10Apr2017/" title="10Apr2017" class="md-nav__link">
+      10Apr2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/10Jul2017/" title="10Jul2017" class="md-nav__link">
+      10Jul2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/11Dec2017/" title="11Dec2017" class="md-nav__link">
+      11Dec2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/11Sep2017/" title="11Sep2017" class="md-nav__link">
+      11Sep2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/12Feb2018/" title="12Feb2018" class="md-nav__link">
+      12Feb2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/12Jun2017/" title="12Jun2017" class="md-nav__link">
+      12Jun2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/12Mar2018/" title="12Mar2018" class="md-nav__link">
+      12Mar2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/13Mar2017/" title="13Mar2017" class="md-nav__link">
+      13Mar2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/13Nov2017/" title="13Nov2017" class="md-nav__link">
+      13Nov2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/14Aug2017/" title="14Aug2017" class="md-nav__link">
+      14Aug2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/15May2017/" title="15May2017" class="md-nav__link">
+      15May2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/16Apr2018/" title="16Apr2018" class="md-nav__link">
+      16Apr2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/16Oct2017/" title="16Oct2017" class="md-nav__link">
+      16Oct2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/17Apr2017/" title="17Apr2017" class="md-nav__link">
+      17Apr2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/17Jul2017/" title="17Jul2017" class="md-nav__link">
+      17Jul2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/18Dec2017/" title="18Dec2017" class="md-nav__link">
+      18Dec2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/18Sep2017/" title="18Sep2017" class="md-nav__link">
+      18Sep2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/19Feb2018/" title="19Feb2018" class="md-nav__link">
+      19Feb2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/19Jun2017/" title="19Jun2017" class="md-nav__link">
+      19Jun2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/20Mar2017/" title="20Mar2017" class="md-nav__link">
+      20Mar2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/20Nov2017/" title="20Nov2017" class="md-nav__link">
+      20Nov2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/21Aug2017/" title="21Aug2017" class="md-nav__link">
+      21Aug2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/22Jan2018/" title="22Jan2018" class="md-nav__link">
+      22Jan2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/22May2017/" title="22May2017" class="md-nav__link">
+      22May2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/23Apr2018/" title="23Apr2018" class="md-nav__link">
+      23Apr2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/23Oct2017/" title="23Oct2017" class="md-nav__link">
+      23Oct2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/24Apr2017/" title="24Apr2017" class="md-nav__link">
+      24Apr2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/24Jul2017/" title="24Jul2017" class="md-nav__link">
+      24Jul2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/25Sep2017/" title="25Sep2017" class="md-nav__link">
+      25Sep2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/26Feb2018/" title="26Feb2018" class="md-nav__link">
+      26Feb2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/26Jun2017/" title="26Jun2017" class="md-nav__link">
+      26Jun2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/26Mar2018/" title="26Mar2018" class="md-nav__link">
+      26Mar2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/27Feb2017/" title="27Feb2017" class="md-nav__link">
+      27Feb2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/27Mar2017/" title="27Mar2017" class="md-nav__link">
+      27Mar2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/27Nov2017/" title="27Nov2017" class="md-nav__link">
+      27Nov2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/28Aug2017/" title="28Aug2017" class="md-nav__link">
+      28Aug2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/29Jan2018/" title="29Jan2018" class="md-nav__link">
+      29Jan2018
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/30Oct2017/" title="30Oct2017" class="md-nav__link">
+      30Oct2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/31Jul2017/" title="31Jul2017" class="md-nav__link">
+      31Jul2017
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/Canceled/" title="Canceled" class="md-nav__link">
+      Canceled
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../WeeklyMinutes/MeetingIndex/" title="MeetingIndex" class="md-nav__link">
+      MeetingIndex
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/ce-monitoring-dashboards/" title="Ce monitoring dashboards" class="md-nav__link">
+      Ce monitoring dashboards
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/finalize-cache-registration/" title="Finalize cache registration" class="md-nav__link">
+      Finalize cache registration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/gracc-corrections/" title="Gracc corrections" class="md-nav__link">
+      Gracc corrections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/hosted-ce-definitions/" title="Hosted ce definitions" class="md-nav__link">
+      Hosted ce definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/install-gwms-factory/" title="Install gwms factory" class="md-nav__link">
+      Install gwms factory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/sending-announcements/" title="Sending announcements" class="md-nav__link">
+      Sending announcements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/topology-contacts-data/" title="Topology contacts data" class="md-nav__link">
+      Topology contacts data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../services/topology/" title="Topology" class="md-nav__link">
+      Topology
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/repository-scripts/" title="Repository scripts" class="md-nav__link">
+      Repository scripts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/test.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="procedures-for-handling-oasis-externally-hosted-cvmfs-repositories">Procedures for handling OASIS externally-hosted CVMFS repositories</h1>
+<p><em>Technical information contained here is believed to be reliable but administrative procedures, particularly as concerns organizational entities outside the OSG, should be considered unapproved proposals.</em></p>
+<p><noautolink></p>
+<h1 id="about-oasis">About OASIS</h1>
+<p>OASIS is the OSG Application Software Installation Service. It is the recommended method to install software on the Open Science Grid. It is implemented using CernVM FileSystem (CVMFS) technology.</p>
+<h1 id="about-this-document">About this Document</h1>
+<p>This document describes the detailed procedures for dealing with CVMFS repositories that are part of the OASIS system but are not hosted at the OSG Global Operations Center (GOC). Rather, they are hosted at the home institution of a Virtual Organization (VO). The procedures include the steps performed by both the GOC and by the repository service administrator. If you are only interested in using an OASIS repository that is hosted at the GOC, see instead [[UpdateOasis]].</p>
+<p>see:{"Documentation/DocumentationTeam/DocConventions" section="Header"}%</p>
+<p>see:{"Documentation/DocumentationTeam/DocConventions" section="CommandLine"}%</p>
+<h1 id="policies">Policies</h1>
+<p>These are the policies regarding OSG CVMFS repositories:
+1. The GOC will not host VO-specific CVMFS repositories. This means it will not use its machines to publish files to a repository that is dedicated to a VO. The GOC hosts one and only one repository and that is oasis.opensciencegrid.org.
+1. The GOC will replicate an external repository of a VO or provide access to use oasis.opensciencegrid.org per the existing mechanisms but not both for a given VO.
+1. Quotas on size of repos may be implemented at the discretion of the GOC. A minimum of 100 GB per VO/repo is guaranteed, larger limits may be requested.
+1. The fully qualified repository names of CVMFS repositories distributed to the OSG may be in any domain, but only those in the opensciencegrid.org domain may be requested to be exported to the European grid EGI at this time. There must be one secured master key for all the repositories in a domain. (Although note that the OSG OASIS servers replace that key with their own when distributing non-opensciencegrid.org repositories to OSG sites.)</p>
+<h1 id="requirements-setting-up-a-cvmfs-repository-server">Requirements: setting up a CVMFS repository server</h1>
+<p>This document doesn't cover requirements for the GOC computers since those are already set up. The requirements for a CVMFS repository server are that it have installed cvmfs-server and cvmfs client, both version 2.2.2 or greater; version 2.3.3 or greater is recommended on EL6 and required on EL7. This requires using aufs or OverlayFS: aufs requires a modified kernel from CERN for Redhat EL6-based systems, and OverlayFS requires at least EL7.3; the latter uses a standard kernel so it is highly recommended. Also an apache httpd server needs to be enabled. NOTE: multiple cvmfs repositories can be hosted on the same machine.</p>
+<p>/srv/cvmfs will hold all the published data, so make sure it is large enough to hold all the repositories hosted on the machine. /var/spool/cvmfs will hold files during publish, so it should be large enough to hold the most amount of data that might be attempted to be published at once. In addition, on EL7.3 and cvmfs-server-2.3.3 or 2.3.5, /var/spool/cvmfs needs to be of filesystem type 'ext4' or the cvmfs_server command will not allow it. There is a variable to override the filesystem type check, but other filesystem types are not guaranteed to work (ext3 and xfs created with ftype=1 should work with CVMFS_DONT_CHECK_OVERLAYFS_VERSION=yes).</p>
+<p>This is a procedure for installing it on a Redhat EL6-based system:
+<pre class="rootscreen">
+[root@client ~]$ rpm -i https://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-release-latest.noarch.rpm
+[root@client ~]$ rpm -i https://repo.grid.iu.edu/osg/3.3/osg-3.3-el6-release-latest.rpm
+[root@client ~]$ yum install --enablerepo=cernvm-kernel --disablerepo=cernvm kernel aufs2-util cvmfs-server.x86_64 cvmfs.x86_64 cvmfs-config-osg
+[root@client ~]$ echo "cvmfs_server mount -a" &gt;&gt;/etc/rc.local
+[root@client ~]$ reboot
+</pre></p>
+<p>This is the procedure for installing on a Redhat EL7.3-based system:
+<pre class="rootscreen">
+[root@client ~]$ rpm -i https://repo.grid.iu.edu/osg/3.3/osg-3.3-el7-release-latest.rpm
+[root@client ~]$ yum install cvmfs-server.x86_64 osg-oasis
+[root@client ~]$ echo "cvmfs_server mount -a" &gt;&gt;/etc/rc.local
+</pre></p>
+<p>In addition, apache should listen on port 8000, have KeepAlive enabled, and be started. Use commands like these:
+<pre class="rootscreen">
+[root@client ~]$ echo Listen 8000 &gt;&gt;/etc/httpd/conf.d/cvmfs.conf
+[root@client ~]$ echo KeepAlive on &gt;&gt;/etc/httpd/conf.d/cvmfs.conf
+[root@client ~]$ chkconfig httpd on
+[root@client ~]$ service httpd start
+</pre>
+Make sure that port 8000 is available to the internet through any firewalls.</p>
+<h1 id="procedure-to-add-an-externally-hosted-repository-to-oasis">Procedure to add an externally-hosted repository to OASIS</h1>
+<ol>
+<li>A VO representative who will have responsibility for the contents of the repository chooses a name for the repository. This name should be the name of the VO or be derived from it (or a project in the VO for the case of the OSG VO), and in a domain that has a secured master key. The recommended domain name for a new repository that originates at an OSG site is opensciencegrid.org. The full name used as an example in this document is <em>repo.domain.name</em>. Note: the VO representative's name will be registered in OIM as an OASIS manager for the VO, and names can be added or changed later with GOC tickets. If there is more than one repository for the VO, all the OASIS managers are assumed to be contacts for all the repositories.</li>
+<li>Using whatever mechanism is appropriate at their institution, the VO representative requests the local CVMFS repository service administrator to create this repository called =repo.domain.name=.</li>
+<li>The repository service administrator creates the repository with these command like these, where ownerid is the user id that will have write access:
+    <pre class="rootscreen">
+    [root@client ~]$ echo -e "*tt-tnofilett16384" &gt;&gt;/etc/security/limits.conf
+    [root@client ~]$ ulimit -n 16384
+    [root@client ~]$ cvmfs_server mkfs -o ownerid repo.domain.name
+    [root@client ~]$ echo "CVMFS_AUTO_TAG=false" &gt;&gt;/etc/cvmfs/repositories.d/repo.domain.name/server.conf
+    [root@client ~]$ (echo Order deny,allow;echo Deny from all;echo Allow from 127.0.0.1;echo Allow from ::1;echo Allow from  129.79.53.0/24;echo Allow from 2001:18e8:2:6::/56) &gt;/srv/cvmfs/repo.domain.name/.htaccess
+    </pre>
+    If you might be hosting any hardlinks that span directories (e.g. the git package) and are using aufs (that is, EL6), also do the following:
+    <pre class="rootscreen">
+    [root@client ~]$ echo "CVMFS_IGNORE_XDIR_HARDLINKS=true" &gt;&gt;/etc/cvmfs/repositories.d/repo.domain.name/server.conf
+    </pre>
+    Verify that the repository is readable over http with the following command:
+    <pre class="rootscreen">
+    [root@client ~]$ wget -qO- http://localhost:8000/cvmfs/repo.domain.name/.cvmfswhitelist|cat -v
+    </pre>
+    That should print several lines including some gibberish at the end.</li>
+<li>The repository service administrator next creates a <a href="https://ticket.grid.iu.edu/goc/submit">GOC ticket</a> using the following format:
+    <pre class="file">
+    Please add a new CVMFS repository to OASIS for VO voname using the URL
+    http://fully.qualified.domain:8000/cvmfs/repo.domain.name
+    by doing step #5 at
+    https://twiki.grid.iu.edu/bin/view/Documentation/Release3/OasisExternalRepositories
+    The VO responsible manager will be Vorep Name.
+    </pre>
+    replacing "voname" with the VO's name, "fully.qualified.domain" with the full name of the repository server, "repo.domain.name" with the full name of the repository, and "Vorep Name" with the name of the VO representative.</li>
+<li>The GOC representative next ensures that the repository service administrator is a valid representative of a host site for the VO. This can be done by (a) the GOC representative already having a relationship with the person or (b) the GOC representative contacting the VO manager to find out. The GOC representative makes sure that the repo.domain.name in the URL is derived from the VO name. Next, on the oasis machine the GOC representative temporarily installs the oasis signing key and runs <a href="http://svn.usatlas.bnl.gov/svn/oasis/oasis-server/trunk/bin/add_osg_repository">add_osg_repository</a>, giving it as a parameter the given URL. This will download the =.cvmfswhitelist= file from the repository, sign it, publish it back on the oasis http server, and set it to be re-signed every time repository keys are signed (which is about every 20 days). The ticket should remain open because there's another step to do after the next step.</li>
+<li>If the repository name matches =<em>.opensciencegrid.org= or =</em>.osgstorage.org=, the GOC representative responds in the ticket to ask that step #6 be done; all other repositories (such as =<em>.egi.eu=) skip this step. The repository service administrator next executes the following commands (replacing repo.opensciencegrid.org with repo.osgstorage.org when needed):
+    <pre class="rootscreen">
+    [root@client ~]$ wget -O /srv/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist       http://oasis.opensciencegrid.org/cvmfs/repo.opensciencegrid.org/.cvmfswhitelist
+    [root@client ~]$ /bin/cp /etc/cvmfs/keys/opensciencegrid.org/opensciencegrid.org.pub        /etc/cvmfs/keys/repo.opensciencegrid.org.pub
+    </pre>
+    Next the administrator verifies that a publish operation using the owner's privileges succeeds by making sure there's no errors from the following commands replacing "ownerid" with the owner's username:
+    <pre class="rootscreen">
+    [root@client ~]$ su ownerid -c "cvmfs_server transaction repo.opensciencegrid.org"
+    [root@client ~]$ su ownerid -c "cvmfs_server publish repo.opensciencegrid.org"<br />
+    </pre>
+    If that works then add the wget command to a daily cron:
+    <pre class="rootscreen">
+    [root@client ~]$ echo "5 4 * </em> * ownerid cd /srv/cvmfs/repo.opensciencgrid.org &amp;&amp; wget -qO .cvmfswhitelist.new      http://oasis.opensciencegrid.org/cvmfs/repo.opensciencgrid.org/.cvmfswhitelist &amp;&amp; mv .cvmfswhitelist.new .cvmfswhitelist"   &gt;&gt;/etc/cron.d/fetch-cvmfs-whitelist
+    </pre>
+    Note that this eliminates the need for the repository service administrator to periodically use "cvmfs_server resign" to    update .cvmfswhitelist.
+    Then the repository service administrator goes back to the open GOC ticket and asks to proceed to step #7.</li>
+<li>If domain.name is a new domain that has not been distributed before, the GOC representative next places a copy of the domain.name.pub public key from domain.name into /srv/etc/keys on both oasis-replica and oasis-replica-itb. If the GOC representative does not have that key, he or she can ask the repository service representative in the ticket how to get it. In addition, in order to support cvmfs client versions 2.2.X (both older and newer clients do not need it), a symbolic link of <domain.name>.conf has to be made in /cvmfs/config-osg.opensciencegrid.org/etc/cvmfs/domain.d pointing to default.conf. This symbolic link has to be created on the oasis-itb machine's copy of the config-osg.opensciencegrid.org repository and then copied to production with the copy_config_osg command on the oasis machine.</li>
+<li>The GOC representative then adds the URL in OIM under OASIS Repo URLs for the VO. The repository will then be added to the GOC stratum 1 and the FNAL stratum 1 within an hour.</li>
+<li>The GOC representative then asks the administrators of the BNL stratum 1 to also add the new repository. He should set up his stratum 1s to read from =http://oasis-replica.opensciencegrid.org:8000/cvmfs/repo.domain.name=. When he has reported back that the replication is ready, the GOC representative reports in the ticket that the repository is ready on the OSG and closes the ticket.</li>
+<li>The repository service administrator then gives the VO representative access to the repository under the "ownerid" login, informs them of the <a href="http://cernvm.cern.ch/portal/filesystem/maintain-repositories">CVMFS documentation on maintaining repositories</a> and requests that they adhere to the</li>
+</ol>
+<h1 id="emergency-procedure-to-blank-an-externally-hosted-repository-to-oasis">Emergency procedure to blank an externally-hosted repository to OASIS</h1>
+<ol>
+<li>If there is an emergency request from OSG security to shut down the distribution of a repository, the GOC representative just needs to run <a href="http://svn.usatlas.bnl.gov/svn/oasis/oasis-server/trunk/bin/blank_osg_repository">blank_osg_repository</a> on oasis-replica and give it the full name of the repository. This will rename the repository directories to a name with the current timestamp and replace it with a blank repository. It includes a step to run on the oasis machine, and attempts to do it with ssh, but if that fails it prints instructions on how to finish by logging in to the oasis machine manually. That step on the oasis machine requires the signing key to be temporarily installed there.</li>
+<li>When it is time to put the repository back into production, the GOC representative runs <a href="http://svn.usatlas.bnl.gov/svn/oasis/oasis-server/trunk/bin/unblank_osg_repository">unblank_osg_repository</a> on oasis-replica and gives it the full name of the repository again. This will find the directory with the old timestamp and put it back into service. This step also attempts to ssh to the oasis machine.</li>
+</ol>
+<h1 id="procedure-to-change-the-url-of-an-external-repository">Procedure to change the URL of an external repository</h1>
+<ol>
+<li>The repository service administrator opens a GOC ticket with the value of the new URL.</li>
+<li>The GOC representative then changes the registered value in OIM for the VO in OASIS Repo URLs. The GOC stratum 1 will then be updated within an hour.</li>
+</ol>
+<h1 id="procedure-to-shut-down-and-remove-an-external-repository">Procedure to shut down and remove an external repository</h1>
+<ol>
+<li>First, if the repository has been replicated outside of the U.S., the repository service administrator should open a GGUS ticket asking that the replication be removed from EGI stratum 1s. Wait until they say they are finished before going to the next step.</li>
+<li>Next, the repository service administrator opens a GOC ticket asking to shut down the repository, giving the repository name, for example =repo.domain.name=, and the VO it belongs to.</li>
+<li>After validating that the ticket submitter is authorized by a registered OASIS manager, the GOC representative next deletes the registered value for =repo.domain.name= in OIM for the VO in OASIS Repo URLs.</li>
+<li>Next, the GOC representative adds the FNAL and BNL stratum 1 administrators to the ticket to asks them to remove the repository.</li>
+<li>When the FNAL and BNL stratum 1 administrators say they have finished, the GOC representative then runs =cvmfs_server rmfs -f repo.domain.name= and =rm -r /oasissrv/cvmfs/repo.domain.name= on oasis-replica-itb and oasis-replica.</li>
+<li>Finally, the GOC representative does =rm -r /srv/cvmfs/repo.domain.name= on oasis-itb and oasis.</li>
+</ol>
+<p></noautolink></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../servicedesk/" title="GOC Service Desk Service Level Agreement" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                GOC Service Desk Service Level Agreement
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../ticket/" title="Ticket" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Ticket
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.30f6b8b1.js"></script>
+      
+      <script>app.initialize({version:"0.17.5",url:{base:"../.."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-69012-29","opensciencegrid.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
