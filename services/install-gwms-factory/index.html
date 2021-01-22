@@ -1,151 +1,129 @@
 
-
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
       
       
         <link rel="canonical" href="https://www.opensciencegrid.org/operations/services/install-gwms-factory/">
       
       
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
-        <title>Install gwms factory - OSG Operations</title>
+        <title>Installing GlideinWMS Factory - OSG Operations</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.358818c7.min.css">
       
-      
-    
-    
-      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
-    
-    
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-      
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f0267088.min.css">
+        
       
     
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
     
       <link rel="stylesheet" href="../../css/extra.css">
     
     
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-69012-29","opensciencegrid.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
   </head>
   
-    <body dir="ltr">
   
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
-        
-      </defs>
-    </svg>
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#glideinwms-factory-installation" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-header-nav__button md-logo">
-          
-            <i class="md-icon"></i>
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            
-              <span class="md-header-nav__topic">
-                OSG Operations
-              </span>
-              <span class="md-header-nav__topic">
-                Install gwms factory
-              </span>
-            
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-          
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        <a href="#glideinwms-factory-installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-header-nav__button md-logo" aria-label="OSG Operations">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            OSG Operations
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
             
+              Installing GlideinWMS Factory
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Type to start searching
+            Initializing search
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -153,80 +131,60 @@
     </div>
   </div>
 </div>
-          
+    
+    
+      <div class="md-header-nav__source">
         
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
-
-
-  
-
-
-  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
     
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
       </div>
     
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-          </div>
-        </div>
-      
-    </div>
   </nav>
 </header>
     
-    <div class="md-container">
+    <div class="md-container" data-md-component="container">
+      
       
         
       
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
           
             
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-nav__button md-logo">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://www.opensciencegrid.org/operations/" title="OSG Operations" class="md-nav__button md-logo" aria-label="OSG Operations">
       
-        <i class="md-icon"></i>
-      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
     </a>
     OSG Operations
   </label>
   
     <div class="md-nav__source">
       
-
-
-  
-
-
-  <a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/opensciencegrid/operations/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
     
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -237,1209 +195,9 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       Home
     </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyTemplate/" title="Operations Meeting February 20, 2017" class="md-nav__link">
-      Operations Meeting February 20, 2017
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../external-oasis-repos/" title="External oasis repos" class="md-nav__link">
-      External oasis repos
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../privacy/" title="Privacy" class="md-nav__link">
-      Privacy
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      SLA
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        SLA
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/ReleaseSchedule/" title="GOC Release Schedule Guidelines" class="md-nav__link">
-      GOC Release Schedule Guidelines
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/ServiceTypeDefinition/" title="OSG Service Types" class="md-nav__link">
-      OSG Service Types
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/cadist/" title="OSG Certificate Authority Distribution and Software Cache Service Level Agreement" class="md-nav__link">
-      OSG Certificate Authority Distribution and Software Cache Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/cilogon/" title="CILogon Service Level Agreement" class="md-nav__link">
-      CILogon Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/collector/" title="GOC Condor Collector Service Level Agreement" class="md-nav__link">
-      GOC Condor Collector Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/display/" title="OSG Display Service Level Agreement -- *DRAFT*" class="md-nav__link">
-      OSG Display Service Level Agreement -- *DRAFT*
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/docrepo/" title="OSG Document Repository Service Level Agreement -- *DRAFT*" class="md-nav__link">
-      OSG Document Repository Service Level Agreement -- *DRAFT*
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/event/" title="RabbitMQ Message Bus Service Level Agreement" class="md-nav__link">
-      RabbitMQ Message Bus Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/glidein/" title="Glide-In Factory Service Level Agreement" class="md-nav__link">
-      Glide-In Factory Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/gocfp/" title="OSG Ticket Exchange Service Level Agreement -- *DRAFT*" class="md-nav__link">
-      OSG Ticket Exchange Service Level Agreement -- *DRAFT*
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/jira/" title="Jira" class="md-nav__link">
-      Jira
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/myosg/" title="MyOSG Service Level Agreement" class="md-nav__link">
-      MyOSG Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/oasis-replica/" title="OASIS Replica Service Level Agreement" class="md-nav__link">
-      OASIS Replica Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/oasis/" title="OASIS Service Level Agreement -- *DRAFT*" class="md-nav__link">
-      OASIS Service Level Agreement -- *DRAFT*
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/oim/" title="OSG Information Management Service Level Agreement" class="md-nav__link">
-      OSG Information Management Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/osgconnect/" title="*OSG Connect Service Level Agreement*" class="md-nav__link">
-      *OSG Connect Service Level Agreement*
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/osgweb/" title="OSG Web Portal Service Level Agreement -- *DRAFT*" class="md-nav__link">
-      OSG Web Portal Service Level Agreement -- *DRAFT*
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/perfsonar/" title="OSG PerfSonar Service Level Agreement" class="md-nav__link">
-      OSG PerfSonar Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/rpmdist/" title="Rpmdist" class="md-nav__link">
-      Rpmdist
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/servicedesk/" title="GOC Service Desk Service Level Agreement" class="md-nav__link">
-      GOC Service Desk Service Level Agreement
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/test/" title="Procedures for handling OASIS externally-hosted CVMFS repositories" class="md-nav__link">
-      Procedures for handling OASIS externally-hosted CVMFS repositories
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/ticket/" title="OSG Public Ticketing Tools Service Level Agreement -- *DRAFT*" class="md-nav__link">
-      OSG Public Ticketing Tools Service Level Agreement -- *DRAFT*
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../SLA/xdlogin/" title="XD-Login Service Level Agreement" class="md-nav__link">
-      XD-Login Service Level Agreement
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      ServiceManagement
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        ServiceManagement
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/ResponsibilityMatrix/" title="Responsibility Matrix" class="md-nav__link">
-      Responsibility Matrix
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/placeholder/" title="Placeholder" class="md-nav__link">
-      Placeholder
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
-    
-    <label class="md-nav__link" for="nav-6-3">
-      ServiceCatalog
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-3">
-        ServiceCatalog
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/ServiceCatalog/SC_Display/" title="Service Catalog for the OSG Display Service" class="md-nav__link">
-      Service Catalog for the OSG Display Service
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/ServiceCatalog/SC_GRACC/" title="Service Catalog for the OSG GRACC (Accounting) Service" class="md-nav__link">
-      Service Catalog for the OSG GRACC (Accounting) Service
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/ServiceCatalog/SC_GlideInFactory/" title="Service Catalog for the OSG GlideIn Factory Service" class="md-nav__link">
-      Service Catalog for the OSG GlideIn Factory Service
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/ServiceCatalog/SC_HostedCE/" title="Service Catalog for the OSG Hosted-CE Service" class="md-nav__link">
-      Service Catalog for the OSG Hosted-CE Service
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/ServiceCatalog/SC_OIM/" title="Service Catalog for the OSG Information Management (OIM) Service" class="md-nav__link">
-      Service Catalog for the OSG Information Management (OIM) Service
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
-    
-    <label class="md-nav__link" for="nav-6-4">
-      ServiceProfile
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-4">
-        ServiceProfile
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../ServiceManagement/ServiceProfile/SP_Display/" title="Service Portfolio for the OSG Display Service" class="md-nav__link">
-      Service Portfolio for the OSG Display Service
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
-    
-    <label class="md-nav__link" for="nav-7">
-      WeeklyMinutes
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        WeeklyMinutes
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/01May2017/" title="Operations Meeting May 1st, 2017" class="md-nav__link">
-      Operations Meeting May 1st, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/02Apr2018/" title="02Apr2018" class="md-nav__link">
-      02Apr2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/02Oct2017/" title="Operations Meeting October 2nd, 2017" class="md-nav__link">
-      Operations Meeting October 2nd, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/03Apr2017/" title="Operations Meeting April 3, 2017" class="md-nav__link">
-      Operations Meeting April 3, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/03Jul2017/" title="Operations Meeting July 3rd, 2017" class="md-nav__link">
-      Operations Meeting July 3rd, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/04Dec2017/" title="Operations Meeting December 4th, 2017" class="md-nav__link">
-      Operations Meeting December 4th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/05Feb2018/" title="Operations Meeting February 5th, 2018" class="md-nav__link">
-      Operations Meeting February 5th, 2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/05Jun2017/" title="Operations Meeting June 5th, 2017" class="md-nav__link">
-      Operations Meeting June 5th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/05Mar2018/" title="05Mar2018" class="md-nav__link">
-      05Mar2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/06Nov2017/" title="Operations Meeting November 6th, 2017" class="md-nav__link">
-      Operations Meeting November 6th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/07Aug2017/" title="Operations Meeting August 7th, 2017" class="md-nav__link">
-      Operations Meeting August 7th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/08Jan2018/" title="Operations Meeting January 8th, 2018" class="md-nav__link">
-      Operations Meeting January 8th, 2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/08May2017/" title="Operations Meeting May 8th, 2017" class="md-nav__link">
-      Operations Meeting May 8th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/09Apr2018/" title="09Apr2018" class="md-nav__link">
-      09Apr2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/09Oct2017/" title="Operations Meeting October 9th, 2017" class="md-nav__link">
-      Operations Meeting October 9th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/10Apr2017/" title="Operations Meeting Apr 10, 2017" class="md-nav__link">
-      Operations Meeting Apr 10, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/10Jul2017/" title="Operations Meeting July 10th, 2017" class="md-nav__link">
-      Operations Meeting July 10th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/11Dec2017/" title="Operations Meeting December 11th, 2017" class="md-nav__link">
-      Operations Meeting December 11th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/11Sep2017/" title="Operations Meeting September 11th, 2017" class="md-nav__link">
-      Operations Meeting September 11th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/12Feb2018/" title="Operations Meeting February 12th, 2018" class="md-nav__link">
-      Operations Meeting February 12th, 2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/12Jun2017/" title="Operations Meeting June 12th, 2017" class="md-nav__link">
-      Operations Meeting June 12th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/12Mar2018/" title="12Mar2018" class="md-nav__link">
-      12Mar2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/13Mar2017/" title="Operations Meeting March 13, 2017" class="md-nav__link">
-      Operations Meeting March 13, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/13Nov2017/" title="Operations Meeting November 13th, 2017" class="md-nav__link">
-      Operations Meeting November 13th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/14Aug2017/" title="Operations Meeting August14th, 2017" class="md-nav__link">
-      Operations Meeting August14th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/15May2017/" title="Operations Meeting May 15th, 2017" class="md-nav__link">
-      Operations Meeting May 15th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/16Apr2018/" title="16Apr2018" class="md-nav__link">
-      16Apr2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/16Oct2017/" title="Operations Meeting October 16th, 2017" class="md-nav__link">
-      Operations Meeting October 16th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/17Apr2017/" title="Operations Meeting Apr 17, 2017" class="md-nav__link">
-      Operations Meeting Apr 17, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/17Jul2017/" title="Operations Meeting July 17th, 2017" class="md-nav__link">
-      Operations Meeting July 17th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/18Dec2017/" title="Operations Meeting December 18th, 2017" class="md-nav__link">
-      Operations Meeting December 18th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/18Sep2017/" title="Operations Meeting September 18th, 2017" class="md-nav__link">
-      Operations Meeting September 18th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/19Feb2018/" title="Operations Meeting February 19th, 2018" class="md-nav__link">
-      Operations Meeting February 19th, 2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/19Jun2017/" title="Operations Meeting June 19th, 2017" class="md-nav__link">
-      Operations Meeting June 19th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/20Mar2017/" title="Operations Meeting March 20, 2017" class="md-nav__link">
-      Operations Meeting March 20, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/20Nov2017/" title="Operations Meeting November 20th, 2017" class="md-nav__link">
-      Operations Meeting November 20th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/21Aug2017/" title="Operations Meeting August14th, 2017" class="md-nav__link">
-      Operations Meeting August14th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/22Jan2018/" title="Operations Meeting January 22nd, 2018" class="md-nav__link">
-      Operations Meeting January 22nd, 2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/22May2017/" title="Operations Meeting May 22nd, 2017" class="md-nav__link">
-      Operations Meeting May 22nd, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/23Apr2018/" title="23Apr2018" class="md-nav__link">
-      23Apr2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/23Oct2017/" title="Operations Meeting October 23rd, 2017" class="md-nav__link">
-      Operations Meeting October 23rd, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/24Apr2017/" title="Operations Meeting Apr 24, 2017" class="md-nav__link">
-      Operations Meeting Apr 24, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/24Jul2017/" title="Operations Meeting July 24th, 2017" class="md-nav__link">
-      Operations Meeting July 24th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/25Sep2017/" title="Operations Meeting September 25th, 2017" class="md-nav__link">
-      Operations Meeting September 25th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/26Feb2018/" title="Operations Meeting February 26th, 2018" class="md-nav__link">
-      Operations Meeting February 26th, 2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/26Jun2017/" title="Operations Meeting June 26th, 2017" class="md-nav__link">
-      Operations Meeting June 26th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/26Mar2018/" title="26Mar2018" class="md-nav__link">
-      26Mar2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/27Feb2017/" title="Operations Meeting February 27, 2017" class="md-nav__link">
-      Operations Meeting February 27, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/27Mar2017/" title="Operations Meeting March 27, 2017" class="md-nav__link">
-      Operations Meeting March 27, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/27Nov2017/" title="Operations Meeting November 27th, 2017" class="md-nav__link">
-      Operations Meeting November 27th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/28Aug2017/" title="Operations Meeting August 28th, 2017" class="md-nav__link">
-      Operations Meeting August 28th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/29Jan2018/" title="Operations Meeting January 29th, 2018" class="md-nav__link">
-      Operations Meeting January 29th, 2018
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/30Oct2017/" title="Operations Meeting October 30th, 2017" class="md-nav__link">
-      Operations Meeting October 30th, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/31Jul2017/" title="Operations Meeting July 31st, 2017" class="md-nav__link">
-      Operations Meeting July 31st, 2017
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/Canceled/" title="No meeting this week due to the holiday." class="md-nav__link">
-      No meeting this week due to the holiday.
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../WeeklyMinutes/MeetingIndex/" title="Operations Meeting Weekly Index" class="md-nav__link">
-      Operations Meeting Weekly Index
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -1452,65 +210,19 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-2">
       Services
+      <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+    <nav class="md-nav" aria-label="Services" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
         Services
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ce-monitoring-dashboards/" title="Ce monitoring dashboards" class="md-nav__link">
-      Ce monitoring dashboards
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../finalize-cache-registration/" title="Finalize cache registration" class="md-nav__link">
-      Finalize cache registration
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gracc-corrections/" title="Gracc corrections" class="md-nav__link">
-      Gracc corrections
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../hosted-ce-definitions/" title="Hosted ce definitions" class="md-nav__link">
-      Hosted ce definitions
-    </a>
-  </li>
-
         
           
           
@@ -1521,76 +233,80 @@
 
   <li class="md-nav__item md-nav__item--active">
     
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
       
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Install gwms factory
+        Installing GlideinWMS Factory
+        <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Install gwms factory" class="md-nav__link md-nav__link--active">
-      Install gwms factory
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Installing GlideinWMS Factory
     </a>
     
       
-<nav class="md-nav md-nav--secondary">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-starting" title="Before Starting" class="md-nav__link">
+  <a href="#before-starting" class="md-nav__link">
     Before Starting
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Before Starting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     Requirements
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Requirements">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#host-and-os" title="Host and OS" class="md-nav__link">
+  <a href="#host-and-os" class="md-nav__link">
     Host and OS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#users" title="Users" class="md-nav__link">
+  <a href="#users" class="md-nav__link">
     Users
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#certificates" title="Certificates" class="md-nav__link">
+  <a href="#certificates" class="md-nav__link">
     Certificates
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#networking" title="Networking" class="md-nav__link">
+  <a href="#networking" class="md-nav__link">
     Networking
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Networking">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#firewalls" title="Firewalls" class="md-nav__link">
+  <a href="#firewalls" class="md-nav__link">
     Firewalls
   </a>
   
@@ -1612,44 +328,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-procedure" title="Installation Procedure" class="md-nav__link">
+  <a href="#installation-procedure" class="md-nav__link">
     Installation Procedure
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Installation Procedure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installing-htcondor" title="Installing HTCondor" class="md-nav__link">
+  <a href="#installing-htcondor" class="md-nav__link">
     Installing HTCondor
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installing-htcondor-bosco" title="Installing HTCondor-BOSCO" class="md-nav__link">
+  <a href="#installing-htcondor-bosco" class="md-nav__link">
     Installing HTCondor-BOSCO
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-gwms-factory" title="Install GWMS Factory" class="md-nav__link">
+  <a href="#install-gwms-factory" class="md-nav__link">
     Install GWMS Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Install GWMS Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#download-and-install-the-factory-rpm" title="Download and install the Factory RPM" class="md-nav__link">
+  <a href="#download-and-install-the-factory-rpm" class="md-nav__link">
     Download and install the Factory RPM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-htcondor-tarballs" title="Download HTCondor tarballs" class="md-nav__link">
+  <a href="#download-htcondor-tarballs" class="md-nav__link">
     Download HTCondor tarballs
   </a>
   
@@ -1666,36 +382,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-procedure" title="Configuration Procedure" class="md-nav__link">
+  <a href="#configuration-procedure" class="md-nav__link">
     Configuration Procedure
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-factory" title="Configuring the Factory" class="md-nav__link">
+  <a href="#configuring-the-factory" class="md-nav__link">
     Configuring the Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Configuring the Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#security-configuration" title="Security configuration" class="md-nav__link">
+  <a href="#security-configuration" class="md-nav__link">
     Security configuration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#entry-configuration" title="Entry configuration" class="md-nav__link">
+  <a href="#entry-configuration" class="md-nav__link">
     Entry configuration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configuring-tarballs" title="Configuring Tarballs" class="md-nav__link">
+  <a href="#configuring-tarballs" class="md-nav__link">
     Configuring Tarballs
   </a>
   
@@ -1707,22 +423,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-htcondor" title="Configuring HTCondor" class="md-nav__link">
+  <a href="#configuring-htcondor" class="md-nav__link">
     Configuring HTCondor
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Configuring HTCondor">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm" title="Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM" class="md-nav__link">
+  <a href="#using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm" class="md-nav__link">
     Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#restarting-htcondor" title="Restarting HTCondor" class="md-nav__link">
+  <a href="#restarting-htcondor" class="md-nav__link">
     Restarting HTCondor
   </a>
   
@@ -1734,29 +450,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-htcondor-grid-mapfile" title="Create a HTCondor grid mapfile." class="md-nav__link">
+  <a href="#create-a-htcondor-grid-mapfile" class="md-nav__link">
     Create a HTCondor grid mapfile.
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Create a HTCondor grid mapfile.">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reconfiguring-glideinwms" title="Reconfiguring GlideinWMS" class="md-nav__link">
+  <a href="#reconfiguring-glideinwms" class="md-nav__link">
     Reconfiguring GlideinWMS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#upgrading-glideinwms" title="Upgrading GlideinWMS" class="md-nav__link">
+  <a href="#upgrading-glideinwms" class="md-nav__link">
     Upgrading GlideinWMS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#service-activation-and-deactivation" title="Service Activation and Deactivation" class="md-nav__link">
+  <a href="#service-activation-and-deactivation" class="md-nav__link">
     Service Activation and Deactivation
   </a>
   
@@ -1768,15 +484,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#validating-glideinwms-factory" title="Validating GlideinWMS Factory" class="md-nav__link">
+  <a href="#validating-glideinwms-factory" class="md-nav__link">
     Validating GlideinWMS Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Validating GlideinWMS Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#check-web-server-configuration-for-the-monitoring" title="Check Web server configuration for the monitoring" class="md-nav__link">
+  <a href="#check-web-server-configuration-for-the-monitoring" class="md-nav__link">
     Check Web server configuration for the monitoring
   </a>
   
@@ -1788,43 +504,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting-glideinwms-factory" title="Troubleshooting GlideinWMS Factory" class="md-nav__link">
+  <a href="#troubleshooting-glideinwms-factory" class="md-nav__link">
     Troubleshooting GlideinWMS Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Troubleshooting GlideinWMS Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#file-locations" title="File Locations" class="md-nav__link">
+  <a href="#file-locations" class="md-nav__link">
     File Locations
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#increase-the-log-level-and-change-rotation-policies" title="Increase the log level and change rotation policies" class="md-nav__link">
+  <a href="#increase-the-log-level-and-change-rotation-policies" class="md-nav__link">
     Increase the log level and change rotation policies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#failed-authentication-errors" title="Failed authentication errors" class="md-nav__link">
+  <a href="#failed-authentication-errors" class="md-nav__link">
     Failed authentication errors
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#glideins-start-but-do-not-connect-to-user-pool-vo-frontend" title="Glideins start but do not connect to User pool / VO Frontend" class="md-nav__link">
+  <a href="#glideins-start-but-do-not-connect-to-user-pool-vo-frontend" class="md-nav__link">
     Glideins start but do not connect to User pool / VO Frontend
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough" title="Glideins start but fail before running job with error "Proxy not long lived enough"" class="md-nav__link">
+  <a href="#glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough" class="md-nav__link">
     Glideins start but fail before running job with error "Proxy not long lived enough"
   </a>
   
@@ -1836,15 +552,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#references" title="References" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     References
   </a>
   
 </li>
-      
-      
-      
-      
       
     </ul>
   
@@ -1859,8 +571,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../sending-announcements/" title="Sending announcements" class="md-nav__link">
-      Sending announcements
+    <a href="../topology/" class="md-nav__link">
+      Topology Service
     </a>
   </li>
 
@@ -1871,8 +583,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../topology-contacts-data/" title="Topology contacts data" class="md-nav__link">
-      Topology contacts data
+    <a href="../topology-contacts-data/" class="md-nav__link">
+      Topology and Contacts Data
     </a>
   </li>
 
@@ -1883,9 +595,95 @@
 
 
   <li class="md-nav__item">
-    <a href="../topology/" title="Topology" class="md-nav__link">
-      Topology
+    <a href="../finalize-cache-registration/" class="md-nav__link">
+      Finalize Cache Registration
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sending-announcements/" class="md-nav__link">
+      Sending Announcements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gracc-corrections/" class="md-nav__link">
+      GRACC Corrections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hosted-ce-definitions/" class="md-nav__link">
+      Hosted CE Definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ce-monitoring-dashboards/" class="md-nav__link">
+      CE Monitoring Dashboards
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9">
+    
+    <label class="md-nav__link" for="nav-2-9">
+      Yum Repository
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Yum Repository" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-9">
+        <span class="md-nav__icon md-icon"></span>
+        Yum Repository
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/repository-scripts/" class="md-nav__link">
+      Troubleshooting Guide for Yum Repository Scripts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1901,14 +699,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
-    <label class="md-nav__link" for="nav-9">
-      Troubleshooting
+    <label class="md-nav__link" for="nav-3">
+      Service Level Agreements
+      <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        Troubleshooting
+    <nav class="md-nav" aria-label="Service Level Agreements" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Service Level Agreements
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1919,14 +719,86 @@
 
 
   <li class="md-nav__item">
-    <a href="../../troubleshooting/repository-scripts/" title="Repository scripts" class="md-nav__link">
-      Repository scripts
+    <a href="../../SLA/collector/" class="md-nav__link">
+      HTCondor Collector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/myosg/" class="md-nav__link">
+      MyOSG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/oasis/" class="md-nav__link">
+      OASIS Stratum-0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/oasis-replica/" class="md-nav__link">
+      OASIS Replica
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/oim/" class="md-nav__link">
+      OIM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../SLA/xdlogin/" class="md-nav__link">
+      XDLogin
     </a>
   </li>
 
         
       </ul>
     </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../external-oasis-repos/" class="md-nav__link">
+      External OASIS repositories
+    </a>
   </li>
 
     
@@ -1941,62 +813,65 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-<nav class="md-nav md-nav--secondary">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#before-starting" title="Before Starting" class="md-nav__link">
+  <a href="#before-starting" class="md-nav__link">
     Before Starting
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Before Starting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     Requirements
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Requirements">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#host-and-os" title="Host and OS" class="md-nav__link">
+  <a href="#host-and-os" class="md-nav__link">
     Host and OS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#users" title="Users" class="md-nav__link">
+  <a href="#users" class="md-nav__link">
     Users
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#certificates" title="Certificates" class="md-nav__link">
+  <a href="#certificates" class="md-nav__link">
     Certificates
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#networking" title="Networking" class="md-nav__link">
+  <a href="#networking" class="md-nav__link">
     Networking
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Networking">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#firewalls" title="Firewalls" class="md-nav__link">
+  <a href="#firewalls" class="md-nav__link">
     Firewalls
   </a>
   
@@ -2018,44 +893,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-procedure" title="Installation Procedure" class="md-nav__link">
+  <a href="#installation-procedure" class="md-nav__link">
     Installation Procedure
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Installation Procedure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installing-htcondor" title="Installing HTCondor" class="md-nav__link">
+  <a href="#installing-htcondor" class="md-nav__link">
     Installing HTCondor
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installing-htcondor-bosco" title="Installing HTCondor-BOSCO" class="md-nav__link">
+  <a href="#installing-htcondor-bosco" class="md-nav__link">
     Installing HTCondor-BOSCO
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-gwms-factory" title="Install GWMS Factory" class="md-nav__link">
+  <a href="#install-gwms-factory" class="md-nav__link">
     Install GWMS Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Install GWMS Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#download-and-install-the-factory-rpm" title="Download and install the Factory RPM" class="md-nav__link">
+  <a href="#download-and-install-the-factory-rpm" class="md-nav__link">
     Download and install the Factory RPM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-htcondor-tarballs" title="Download HTCondor tarballs" class="md-nav__link">
+  <a href="#download-htcondor-tarballs" class="md-nav__link">
     Download HTCondor tarballs
   </a>
   
@@ -2072,36 +947,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-procedure" title="Configuration Procedure" class="md-nav__link">
+  <a href="#configuration-procedure" class="md-nav__link">
     Configuration Procedure
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-factory" title="Configuring the Factory" class="md-nav__link">
+  <a href="#configuring-the-factory" class="md-nav__link">
     Configuring the Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Configuring the Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#security-configuration" title="Security configuration" class="md-nav__link">
+  <a href="#security-configuration" class="md-nav__link">
     Security configuration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#entry-configuration" title="Entry configuration" class="md-nav__link">
+  <a href="#entry-configuration" class="md-nav__link">
     Entry configuration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configuring-tarballs" title="Configuring Tarballs" class="md-nav__link">
+  <a href="#configuring-tarballs" class="md-nav__link">
     Configuring Tarballs
   </a>
   
@@ -2113,22 +988,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-htcondor" title="Configuring HTCondor" class="md-nav__link">
+  <a href="#configuring-htcondor" class="md-nav__link">
     Configuring HTCondor
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Configuring HTCondor">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm" title="Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM" class="md-nav__link">
+  <a href="#using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm" class="md-nav__link">
     Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#restarting-htcondor" title="Restarting HTCondor" class="md-nav__link">
+  <a href="#restarting-htcondor" class="md-nav__link">
     Restarting HTCondor
   </a>
   
@@ -2140,29 +1015,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-htcondor-grid-mapfile" title="Create a HTCondor grid mapfile." class="md-nav__link">
+  <a href="#create-a-htcondor-grid-mapfile" class="md-nav__link">
     Create a HTCondor grid mapfile.
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Create a HTCondor grid mapfile.">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reconfiguring-glideinwms" title="Reconfiguring GlideinWMS" class="md-nav__link">
+  <a href="#reconfiguring-glideinwms" class="md-nav__link">
     Reconfiguring GlideinWMS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#upgrading-glideinwms" title="Upgrading GlideinWMS" class="md-nav__link">
+  <a href="#upgrading-glideinwms" class="md-nav__link">
     Upgrading GlideinWMS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#service-activation-and-deactivation" title="Service Activation and Deactivation" class="md-nav__link">
+  <a href="#service-activation-and-deactivation" class="md-nav__link">
     Service Activation and Deactivation
   </a>
   
@@ -2174,15 +1049,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#validating-glideinwms-factory" title="Validating GlideinWMS Factory" class="md-nav__link">
+  <a href="#validating-glideinwms-factory" class="md-nav__link">
     Validating GlideinWMS Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Validating GlideinWMS Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#check-web-server-configuration-for-the-monitoring" title="Check Web server configuration for the monitoring" class="md-nav__link">
+  <a href="#check-web-server-configuration-for-the-monitoring" class="md-nav__link">
     Check Web server configuration for the monitoring
   </a>
   
@@ -2194,43 +1069,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting-glideinwms-factory" title="Troubleshooting GlideinWMS Factory" class="md-nav__link">
+  <a href="#troubleshooting-glideinwms-factory" class="md-nav__link">
     Troubleshooting GlideinWMS Factory
   </a>
   
-    <nav class="md-nav">
+    <nav class="md-nav" aria-label="Troubleshooting GlideinWMS Factory">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#file-locations" title="File Locations" class="md-nav__link">
+  <a href="#file-locations" class="md-nav__link">
     File Locations
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#increase-the-log-level-and-change-rotation-policies" title="Increase the log level and change rotation policies" class="md-nav__link">
+  <a href="#increase-the-log-level-and-change-rotation-policies" class="md-nav__link">
     Increase the log level and change rotation policies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#failed-authentication-errors" title="Failed authentication errors" class="md-nav__link">
+  <a href="#failed-authentication-errors" class="md-nav__link">
     Failed authentication errors
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#glideins-start-but-do-not-connect-to-user-pool-vo-frontend" title="Glideins start but do not connect to User pool / VO Frontend" class="md-nav__link">
+  <a href="#glideins-start-but-do-not-connect-to-user-pool-vo-frontend" class="md-nav__link">
     Glideins start but do not connect to User pool / VO Frontend
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough" title="Glideins start but fail before running job with error "Proxy not long lived enough"" class="md-nav__link">
+  <a href="#glideins-start-but-fail-before-running-job-with-error-proxy-not-long-lived-enough" class="md-nav__link">
     Glideins start but fail before running job with error "Proxy not long lived enough"
   </a>
   
@@ -2242,15 +1117,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#references" title="References" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     References
   </a>
   
 </li>
-      
-      
-      
-      
       
     </ul>
   
@@ -2264,7 +1135,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/install-gwms-factory.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/services/install-gwms-factory.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
                 
                 
                 <h1 id="glideinwms-factory-installation">GlideinWMS Factory Installation</h1>
@@ -2319,9 +1192,8 @@
 </tbody>
 </table>
 <p>To verify that the user <em>gfactory</em> has <em>gfactory</em> as primary group check the output of </p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>getent passwd gfactory <span class="p">|</span> cut -d: -f4 <span class="p">|</span> xargs getent group
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> getent passwd gfactory <span class="p">|</span> cut -d: -f4 <span class="p">|</span> xargs getent group
+</code></pre></div>
 
 <p>It should be the <code>gfactory</code> group. </p>
 <h4 id="certificates">Certificates</h4>
@@ -2358,26 +1230,23 @@
 <p>Most required software is installed from the Factory RPM installation. HTCondor is the only exception since there are <a href="https://research.cs.wisc.edu/htcondor/downloads/">many different ways to install it</a>, using the RPM system or not. 
 You need to have HTCondor installed before installing the GlideinWMS Factory. If yum cannot find a HTCondor RPM, it will install the dummy <strong>empty-condor</strong> RPM, assuming that you installed HTCondor using a tarball distribution.</p>
 <ol>
-<li>If you don't have HTCondor already installed, you can install the HTCondor RPM from the OSG repository:<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>yum install condor.x86_64
-</pre></div>
-
+<li>If you don't have HTCondor already installed, you can install the HTCondor RPM from the OSG repository:<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> yum install condor.x86_64
+</code></pre></div>
 
 </li>
 </ol>
 <h3 id="installing-htcondor-bosco">Installing HTCondor-BOSCO</h3>
 <p>If you plan to send jobs using <a href="http://glideinwms.fnal.gov/doc.prd/recipes/batch.html">direct batch submission</a> (aka BOSCO), then you need also the <strong>condor-bosco</strong> package. You'll have to install the package and remove one of its files <code>/etc/condor/config.d/60-campus_factory.config</code> because it interferes with the Factory configuration.</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>yum install condor-bosco
-<span class="gp">root@host # </span>rm /etc/condor/config.d/60-campus_factory.config
-<span class="gp">root@host # </span>touch /etc/condor/config.d/60-campus_factory.config
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> yum install condor-bosco
+<span class="gp">root@host #</span> rm /etc/condor/config.d/60-campus_factory.config
+<span class="gp">root@host #</span> touch /etc/condor/config.d/60-campus_factory.config
+</code></pre></div>
 
 <h3 id="install-gwms-factory">Install GWMS Factory</h3>
 <h4 id="download-and-install-the-factory-rpm">Download and install the Factory RPM</h4>
 <p>Install the RPM and dependencies (be prepared for a lot of dependencies).</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>yum install glideinwms-factory
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> yum install glideinwms-factory
+</code></pre></div>
 
 <p>This will install the current production release verified and tested by OSG with default HTCondor configuration.
 This command will install the GlideinWMS Factory, HTCondor, the OSG client, and all the required dependencies.</p>
@@ -2403,17 +1272,16 @@ Suggested is that you put these binaries in <code>/var/lib/gwms-factory/condor</
 <p>The configuration file is <code>/etc/gwms-factory/glideinWMS.xml</code>.  The next steps will describe each line that you will need to edit for most cases, but you may want to review the whole file to be sure that it is configured correctly.</p>
 <h3 id="security-configuration">Security configuration</h3>
 <p>In the security section, you will need to provide <strong>each Frontend</strong> that is allowed to communicate with the Factory:</p>
-<div class="codehilite"><pre><span></span>security key_length=&quot;2048&quot; pub_key=&quot;RSA&quot; remove_old_cred_age=&quot;30&quot; remove_old_cred_freq=&quot;24&quot; reuse_oldkey_onstartup_gracetime=&quot;900&quot;&gt;
+<div class="codehilite"><pre><span></span><code>security key_length=&quot;2048&quot; pub_key=&quot;RSA&quot; remove_old_cred_age=&quot;30&quot; remove_old_cred_freq=&quot;24&quot; reuse_oldkey_onstartup_gracetime=&quot;900&quot;&gt;
   <span class="nt">&lt;frontends&gt;</span>
-     <span class="nt">&lt;frontend</span> <span class="na">identity=</span><span class="s">&quot;vofrontend_service@FACTORY_COLLECTOR_HOSTNAME&quot;</span> <span class="na">name=</span><span class="s">&quot;<span style="color:red">ORANGE</span>vofrontend_sec_name</span>&quot;</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;frontend</span> <span class="na">identity=</span><span class="s">&quot;vofrontend_service@FACTORY_COLLECTOR_HOSTNAME&quot;</span> <span class="na">name=</span><span class="s">&quot;%ORANGE%vofrontend_sec_name%ENDCOLOR%&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;security_classes&gt;</span>
-           <span class="nt">&lt;security_class</span> <span class="na">name=</span><span class="s">&quot;<span style="color:red">frontend_sec_class</span>&quot;</span> <span class="na">username=</span><span class="s">&quot;frontend&quot;</span> <span class="nt">/&gt;</span>
+           <span class="nt">&lt;security_class</span> <span class="na">name=</span><span class="s">&quot;%RED%frontend_sec_class%ENDCOLOR%&quot;</span> <span class="na">username=</span><span class="s">&quot;frontend&quot;</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;/security_classes&gt;</span>
      <span class="nt">&lt;/frontend&gt;</span>
   <span class="nt">&lt;/frontends&gt;</span>
 <span class="nt">&lt;/security&gt;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>These attributes are very important to get exactly right or the Frontend will not be trusted.  This should match one of the <strong>factory</strong> and <strong>security</strong> sections of the Frontend configuration <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/#osg-factory-access">Configuring the GlideinWMS Frontend</a> in the following way:</p>
 <div class="admonition note">
@@ -2421,22 +1289,21 @@ Suggested is that you put these binaries in <code>/var/lib/gwms-factory/condor</
 <p>This is a snippet from the Frontend configuration (for reference), not the Factory that you are configuring now!</p>
 </div>
 <p>For the factory section:</p>
-<div class="codehilite"><pre><span></span># from frontend.xml
+<div class="codehilite"><pre><span></span><code># from frontend.xml
 <span class="nt">&lt;factory</span> <span class="na">query_expr=</span><span class="s">&#39;((stringListMember(&quot;VO&quot;, GLIDEIN_Supported_VOs)))&#39;</span><span class="nt">&gt;</span>
 ....
    <span class="nt">&lt;collectors&gt;</span>
       <span class="nt">&lt;collector</span> <span class="na">DN=</span><span class="s">&quot;/DC=org/DC=doegrids/OU=Services/CN=FACTORY_COLLECTOR_HOSTNAME&quot;</span> 
       <span class="na">comment=</span><span class="s">&quot;Define factory collector globally for simplicity&quot;</span>            
       <span class="na">factory_identity=</span><span class="s">&quot;gfactory@FACTORY_COLLECTOR_HOSTNAME&quot;</span> 
-      <span class="na">my_identity=</span><span class="s">&quot;<span style="color:green">username</span>@FACTORY_COLLECTOR_HOSTNAME&quot;</span> 
+      <span class="na">my_identity=</span><span class="s">&quot;%GREEN%username%ENDCOLOR%@FACTORY_COLLECTOR_HOSTNAME&quot;</span> 
       <span class="na">node=</span><span class="s">&quot;FACTORY_COLLECTOR_HOSTNAME&quot;</span><span class="nt">/&gt;</span>
    <span class="nt">&lt;/collectors&gt;</span>
 <span class="nt">&lt;/factory&gt;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>For the security:</p>
-<div class="codehilite"><pre><span></span># from frontend.xml
+<div class="codehilite"><pre><span></span><code># from frontend.xml
 <span class="nt">&lt;security</span> <span class="na">classad_proxy=</span><span class="s">&quot;/tmp/vo_proxy&quot;</span> <span class="na">proxy_DN=</span><span class="s">&quot;DN of vo_proxy&quot;</span>
       <span class="na">proxy_selection_plugin=</span><span class="s">&quot;ProxyAll&quot;</span>
       <span class="na">security_name=</span><span class="s">&quot;The security name, this is used by factory&quot;</span>
@@ -2446,30 +1313,27 @@ Suggested is that you put these binaries in <code>/var/lib/gwms-factory/condor</
          <span class="na">trust_domain=</span><span class="s">&quot;OSG&quot;</span> <span class="na">type=</span><span class="s">&quot;grid_proxy&quot;</span><span class="nt">/&gt;</span>
       <span class="nt">&lt;/credentials&gt;</span>
 <span class="nt">&lt;/security&gt;</span>        
-</pre></div>
-
+</code></pre></div>
 
 <p>Note that the identity of the Frontend must match what HTCondor authenticates the DN of the frontend to.  In <code>/etc/condor/certs/condor_mapfile</code>, there must be an entry with <strong>vofrontend_service</strong> definition (in this case):</p>
-<div class="codehilite"><pre><span></span><span class="err">GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=Services\/CN\=Some\ Name\ 834323</span>$&quot; <span style="color:green">vofrontend_service</span></span>
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="err">GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=Services\/CN\=Some\ Name\ 834323%ENDCOLOR%$&quot; %GREEN%vofrontend_service%ENDCOLOR%</span>
+</code></pre></div>
 
 <h3 id="entry-configuration">Entry configuration</h3>
 <p>Entries are grid/cloud endpoints (aka Compute Elements, or gatekeepers) that can accept job requests and run pilots (which will run user jobs).
 Each entry needs to be configured to communicate to a specific gatekeeper.</p>
 <p>An example test entry is provided in the default GlideinWMS configuration file.  At the very least, you will need to modify the entry line:</p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;entry</span> <span class="na">name=</span><span class="s">&quot;<span style="color:red">ENTRY_NAME</span>&quot;</span> <span class="na">enabled=</span><span class="s">&quot;True&quot;</span> <span class="na">auth_method=</span><span class="s">&quot;grid_proxy&quot;</span> <span class="na">trust_domain=</span><span class="s">&quot;OSG&quot;</span> 
-<span class="na">gatekeeper=</span><span class="s">&quot;<span style="color:red">gatekeeper.domain.tld/jobmanager-type</span>&quot;</span> <span class="na">gridtype=</span><span class="s">&quot;gt2&quot;</span> <span class="na">rsl=</span><span class="s">&quot;(queue=default)(jobtype=single)&quot;</span>
-<span class="na">schedd_name=</span><span class="s">&quot;<span style="color:red">schedd_glideins2@FACTORY_HOSTNAME</span>&quot;</span> <span class="na">verbosity=</span><span class="s">&quot;std&quot;</span> <span class="na">work_dir=</span><span class="s">&quot;OSG&quot;</span><span class="nt">&gt;</span>
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;entry</span> <span class="na">name=</span><span class="s">&quot;%RED%ENTRY_NAME%ENDCOLOR%&quot;</span> <span class="na">enabled=</span><span class="s">&quot;True&quot;</span> <span class="na">auth_method=</span><span class="s">&quot;grid_proxy&quot;</span> <span class="na">trust_domain=</span><span class="s">&quot;OSG&quot;</span> 
+<span class="na">gatekeeper=</span><span class="s">&quot;%RED%gatekeeper.domain.tld/jobmanager-type%ENDCOLOR%&quot;</span> <span class="na">gridtype=</span><span class="s">&quot;gt2&quot;</span> <span class="na">rsl=</span><span class="s">&quot;(queue=default)(jobtype=single)&quot;</span>
+<span class="na">schedd_name=</span><span class="s">&quot;%RED%schedd_glideins2@FACTORY_HOSTNAME%ENDCOLOR%&quot;</span> <span class="na">verbosity=</span><span class="s">&quot;std&quot;</span> <span class="na">work_dir=</span><span class="s">&quot;OSG&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
 
 <p>You will need to modify the entry <strong>name</strong> and <strong>gatekeeper</strong>.  This will determine the gatekeeper that you access.  Specific gatekeepers often require specific "rsl" attributes that determine the job queue that you are submitting to, or other attributes.  Add them in the <em>rsl</em> attribute.  </p>
 <p>Also, be sure to distribute your entries across the various HTCondor schedd work managers to balance load.  To see the available schedd use <code>condor_status -schedd -l | grep Name</code>.  </p>
 <p>Several schedd options are configured by default for you:  <em>schedd_glideins2, schedd_glideins3, schedd_glideins4, schedd_glideins5</em>, as well as the default <em>schedd</em>. This can be modified in the HTCondor configuration.  Add any specific options, such as limitations on jobs/pilots or glexec/voms requirements in the entry section below the above line. More details are in the <a href="http://glideinwms.fnal.gov/doc.prd/factory/configuration.html">GlideinWMS Factory configuration guide</a>.</p>
 <p>!!! warning
       If there is no match between <em>auth_metod</em> and <em>trust_domain</em> of the entry and the <em>type</em> and <em>trust_domain</em> listed in one of the <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">credentials of one of the Frontends</a> using this Factory, then no job can run on that entry.</p>
-<p>The Factory must advertise the correct Resource Name of each entry for accounting purposes. Then the Factory must also advertise in the entry all the attributes that will allow to match the query expression used in the Frontends connecting to this Factory (e.g. <code>&lt;factory query_expr='((stringListMember("<span style="color:red">PINK</span>VO</span>", GLIDEIN_Supported_VOs)))'&gt;</code> as explained in the <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">VO frontend configuration document</a> ). </p>
+<p>The Factory must advertise the correct Resource Name of each entry for accounting purposes. Then the Factory must also advertise in the entry all the attributes that will allow to match the query expression used in the Frontends connecting to this Factory (e.g. <code>&lt;factory query_expr='((stringListMember("%PINK%VO%ENDCOLOR%", GLIDEIN_Supported_VOs)))'&gt;</code> as explained in the <a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">VO frontend configuration document</a> ). </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Keep an eye on this part as we're dealing with singularity.
@@ -2478,20 +1342,19 @@ If it does not set <em>GLEXEC_BIN</em> to <em>NONE</em>, if <strong>gLExec</stro
 otherwise set it to the path of gLExec.</p>
 </div>
 <p>For example this snippet advertises <strong>GLIDEIN_Supported_VOs</strong> attribute with the supported VO so that can be used with the query above in the VO frontend and says that the resource does not support gLExec:</p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;entry</span> <span class="na">name=</span><span class="s">&quot;RESOURCE_NAME&quot;</span> <span class="err">...</span>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;entry</span> <span class="na">name=</span><span class="s">&quot;RESOURCE_NAME&quot;</span> <span class="err">...</span>
    <span class="err">&lt;config</span><span class="nt">&gt;</span>
    ...
       <span class="nt">&lt;attrs&gt;</span>
       ...
          <span class="nt">&lt;attr</span> <span class="na">name=</span><span class="s">&quot;GLIDEIN_Supported_VOs&quot;</span> <span class="na">const=</span><span class="s">&quot;True&quot;</span> <span class="na">glidein_publish=</span><span class="s">&quot;True&quot;</span> <span class="na">job_publish=</span><span class="s">&quot;True&quot;</span> 
-         <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;<span style="color:red">PINK</span>VO</span>&quot;</span><span class="nt">/&gt;</span>
+         <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;%PINK%VO%ENDCOLOR%&quot;</span><span class="nt">/&gt;</span>
          <span class="nt">&lt;attr</span> <span class="na">name=</span><span class="s">&quot;GLEXEC_BIN&quot;</span> <span class="na">const=</span><span class="s">&quot;True&quot;</span> <span class="na">glidein_publish=</span><span class="s">&quot;False&quot;</span> <span class="na">job_publish=</span><span class="s">&quot;False&quot;</span> <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> 
-         <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;<span style="color:red">NONE</span>&quot;</span><span class="nt">/&gt;</span>
+         <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;%RED%NONE%ENDCOLOR%&quot;</span><span class="nt">/&gt;</span>
          <span class="nt">&lt;attr</span> <span class="na">name=</span><span class="s">&quot;GLIDEIN_Resource_Name&quot;</span> <span class="na">const=</span><span class="s">&quot;True&quot;</span> <span class="na">glidein_publish=</span><span class="s">&quot;True&quot;</span> <span class="na">job_publish=</span><span class="s">&quot;True&quot;</span> 
-       <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;<span style="color:red">SiteNameFromOIM</span>&quot;</span><span class="nt">/&gt;</span>
+       <span class="na">parameter=</span><span class="s">&quot;True&quot;</span> <span class="na">publish=</span><span class="s">&quot;True&quot;</span> <span class="na">type=</span><span class="s">&quot;string&quot;</span> <span class="na">value=</span><span class="s">&quot;%RED%SiteNameFromOIM%ENDCOLOR%&quot;</span><span class="nt">/&gt;</span>
      <span class="nt">&lt;/attrs&gt;</span>
-</pre></div>
-
+</code></pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2503,9 +1366,8 @@ otherwise set it to the path of gLExec.</p>
 Currently, you will need to provide at least one tarball for GlideinWMS to use.  (Using the system binaries is currently not supported).</p>
 <p>Download a HTCondor tarball from <a href="http://research.cs.wisc.edu/condor/downloads-v2/download.pl">here</a>.  Suggested is to put the binaries in <code>/var/lib/gwms-factory/condor</code>, but any factory-accessible location will do just fine.</p>
 <p>Once you have downloaded the tarball, configure it in <code>/etc/gwms-factory/glideinWMS.xml</code> like in the following:</p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;condor_tarball</span> <span class="na">arch=</span><span class="s">&quot;default&quot;</span> <span class="na">base_dir=</span><span class="s">&quot;/var/lib/gwms-factory/condor/condor-8.7.6-x86_64_RedHat6-stripped&quot;</span> <span class="na">os=</span><span class="s">&quot;rhel6&quot;</span> <span class="na">version=</span><span class="s">&quot;default&quot;</span><span class="nt">/&gt;</span>
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;condor_tarball</span> <span class="na">arch=</span><span class="s">&quot;default&quot;</span> <span class="na">base_dir=</span><span class="s">&quot;/var/lib/gwms-factory/condor/condor-8.7.6-x86_64_RedHat6-stripped&quot;</span> <span class="na">os=</span><span class="s">&quot;rhel6&quot;</span> <span class="na">version=</span><span class="s">&quot;default&quot;</span><span class="nt">/&gt;</span>
+</code></pre></div>
 
 <p>Remember also to modify the <code>condor_os</code> and <code>condor_arch</code> attributes in the entries (the configured Compute Elements) to pick the correct HTCondor binary.
 <a href="http://glideinwms.fnal.gov/doc.prd/factory/configuration.html#tarballs">Here</a> are more details on using multiple HTCondor binaries. Note that is sufficient to set the <code>base_dir</code>; the reconfigure command will prepare the tarball and add it to the XML config file.</p>
@@ -2520,10 +1382,9 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <li>10-batch_gahp_blahp.config</li>
 </ul>
 <p>Get rid of the pre-loaded HTCondor default</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>rm /etc/condor/config.d/00personal_condor.config
-<span class="gp">root@host # </span>touch /etc/condor/config.d/00personal_condor.config
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> rm /etc/condor/config.d/00personal_condor.config
+<span class="gp">root@host #</span> touch /etc/condor/config.d/00personal_condor.config
+</code></pre></div>
 
 <p>For most installations, the items you need to modify are in <code>03_gwms_factory_local.config</code>.  The lines you will have to edit are:</p>
 <ol>
@@ -2531,7 +1392,7 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <li>HTCondor ids in the form UID.GID (both are integers)</li>
 <li>HTCondor admin email. Will receive messages when services fail.</li>
 </ol>
-<div class="codehilite"><pre><span></span><span class="o">#</span><span class="c1">-- HTCondor user: condor</span>
+<div class="codehilite"><pre><span></span><code><span class="o">#</span><span class="c1">-- HTCondor user: condor</span>
 <span class="n">CONDOR_IDS</span> <span class="o">=</span>
 <span class="o">#</span><span class="c1">--  Contact (via email) when problems occur</span>
 <span class="n">CONDOR_ADMIN</span> <span class="o">=</span>
@@ -2553,8 +1414,7 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <span class="o">#</span> <span class="n">Whitelist</span> <span class="k">of</span> <span class="n">HTCondor</span> <span class="n">daemon</span> <span class="n">DNs</span>
 <span class="o">###################################</span>
 <span class="o">#</span><span class="n">DAEMON_LIST</span> <span class="o">=</span> <span class="n">COLLECTOR</span><span class="p">,</span> <span class="n">MASTER</span><span class="p">,</span> <span class="n">NEGOTIATOR</span><span class="p">,</span> <span class="n">SCHEDD</span><span class="p">,</span> <span class="n">STARTD</span>
-</pre></div>
-
+</code></pre></div>
 
 <h4 id="using-other-htcondor-rpms-eg-uw-madison-htcondor-rpm">Using other HTCondor RPMs, e.g. UW Madison HTCondor RPM</h4>
 <p>The above procedure will work if you are using the OSG HTCondor RPMS. You can verify that you used the OSG HTCondor RPM by using <code>yum list condor</code>. The version name should include "osg", e.g. <code>8.6.9-1.1.osg34.el7</code>.</p>
@@ -2565,7 +1425,7 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <li>Note that the variable LOCAL_DIR is set differently in UW Madison and OSG RPMs. This should not cause any more problems in the Glideinwms RPMs, but please take note if you use this variable in your job submissions or other customizations.</li>
 </ul>
 <p>In general if you are using a non OSG RPM or if you added custom configuration files for HTCondor please check the order of the configuration files:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>condor_config_val -config
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> condor_config_val -config
 <span class="go">Configuration source:</span>
 <span class="go">    /etc/condor/condor_config</span>
 <span class="go">Local configuration sources:</span>
@@ -2576,23 +1436,20 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <span class="go">    /etc/condor/config.d/03_gwms_local.config</span>
 <span class="go">    /etc/condor/config.d/10-batch_gahp_blahp.config</span>
 <span class="go">    /etc/condor/condor_config.local</span>
-</pre></div>
-
+</code></pre></div>
 
 <h4 id="restarting-htcondor">Restarting HTCondor</h4>
 <p>After configuring HTCondor, be sure to restart HTCondor:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>service condor restart
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> service condor restart
+</code></pre></div>
 
 <h2 id="create-a-htcondor-grid-mapfile">Create a HTCondor grid mapfile.</h2>
 <p>The HTCondor grid mapfile <code>/etc/condor/certs/condor_mapfile</code> is used for authentication between the glidein running on a remote worker node, and the local collector.  HTCondor uses the mapfile to map certificates to pseudo-users on the local machine.  It is important that you map the DN's of each frontend you are talking to.</p>
 <p>Below is an example mapfile, by default found in <code>/etc/condor/certs/condor_mapfile</code>:</p>
-<div class="codehilite"><pre><span></span><span class="err">GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=People\/CN\=Some\ Name\ 123456$&quot; frontend</span>
+<div class="codehilite"><pre><span></span><code><span class="err">GSI &quot;^\/DC\=org\/DC\=doegrids\/OU\=People\/CN\=Some\ Name\ 123456$&quot; frontend</span>
 <span class="err">GSI (.*) anonymous</span>
 <span class="err">FS (.*) \1 </span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Each frontend needs a line that maps to the user specified in the identity argument in the frontend security section of the Factory configuration.</p>
 <h3 id="reconfiguring-glideinwms">Reconfiguring GlideinWMS</h3>
@@ -2621,10 +1478,9 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 - gwms-factory service is running
 - gwms-factory service was started with systemctl</p>
 <p>Otherwise, you will get the following error in any of the cases:</p>
-<div class="codehilite"><pre><span></span><span class="gp"># </span>systemctl reload gwms-factory
+<div class="codehilite"><pre><span></span><code><span class="gp">#</span> systemctl reload gwms-factory
 <span class="go">Job for gwms-factory.service invalid.</span>
-</pre></div>
-
+</code></pre></div>
 
 </div>
 <h3 id="upgrading-glideinwms">Upgrading GlideinWMS</h3>
@@ -2638,16 +1494,14 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 </li>
 <li>
 <p>If you are using Enterprise Linux 7:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>/usr/sbin/gwms-factory upgrade
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> /usr/sbin/gwms-factory upgrade
+</code></pre></div>
 
 </li>
 <li>
 <p>If you are using Enterprise Linux 6:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>service gwms-factory upgrade
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> service gwms-factory upgrade
+</code></pre></div>
 
 </li>
 <li>
@@ -2656,73 +1510,69 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 </ol>
 <h3 id="service-activation-and-deactivation">Service Activation and Deactivation</h3>
 <p>To <em>start the Factory</em> you must start also <strong>HTCondor</strong> and the <strong>Web server</strong> beside the Factory itself:</p>
-<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
-<span class="gp">root@host # </span>service condor start
-<span class="gp">root@host # </span>service httpd start
-<span class="gp">root@host # </span>service gwms-factory start
+<div class="codehilite"><pre><span></span><code><span class="gp">#</span> %RED%For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6%ENDCOLOR%
+<span class="gp">root@host #</span> service condor start
+<span class="gp">root@host #</span> service httpd start
+<span class="gp">root@host #</span> service gwms-factory start
 
-<span class="gp"># </span><span style="color:red"> For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
-<span class="gp">root@host # </span>systemctl start condor
-<span class="gp">root@host # </span>systemctl start httpd
-<span class="gp">root@host # </span>systemctl start gwms-factory
-</pre></div>
-
+<span class="gp">#</span> %RED% For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7%ENDCOLOR%
+<span class="gp">root@host #</span> systemctl start condor
+<span class="gp">root@host #</span> systemctl start httpd
+<span class="gp">root@host #</span> systemctl start gwms-factory
+</code></pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Once you successfully start using the Factory service, anytime you change the <code>/etc/gwms-factory/glideinWMS.xml</code> file you will need to run a reconfig/reload command. If you change also some code you need the upgrade command mentioned above:</p>
 </div>
-<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red"> For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
-<span class="gp">root@host # </span>service gwms-factory reconfig
+<div class="codehilite"><pre><span></span><code><span class="gp">#</span> %RED% For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6%ENDCOLOR%
+<span class="gp">root@host #</span> service gwms-factory reconfig
 
 
-<span class="gp"># </span><span style="color:red"> But the situation is a bit more complicated <span class="k">in</span> RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7 due to systemd restrictions</span>
-<span class="gp"># </span><span style="color:green"> For reconfig:</span>
-<span class="go">A. <span style="color:red"> when the Factory is running</span></span>
-<span class="go">A.1 <span style="color:red"> without any additional options</span></span>
-<span class="gp">root@host # </span>/usr/sbin/gwms-factory reconfig</span>
+<span class="gp">#</span> %RED% But the situation is a bit more complicated in RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7 due to systemd restrictions%ENDCOLOR%
+<span class="gp">#</span> %GREEN% For reconfig:%ENDCOLOR%
+<span class="go">A. %RED% when the Factory is running%ENDCOLOR%</span>
+<span class="go">A.1 %RED% without any additional options%ENDCOLOR%</span>
+<span class="gp">root@host #</span> /usr/sbin/gwms-factory reconfig%ENDCOLOR%
 <span class="go">or</span>
-<span class="gp">root@host # </span>systemctl reload gwms-factory
+<span class="gp">root@host #</span> systemctl reload gwms-factory
 
-<span class="go">A.2 <span style="color:red"> if you want to give additional options </span></span>
+<span class="go">A.2 %RED% if you want to give additional options %ENDCOLOR%</span>
 <span class="go">systemctl stop gwms-factory</span>
 <span class="go">/usr/sbin/gwms-factory reconfig &quot;and your options&quot;</span>
 <span class="go">systemctl start gwms-factory</span>
 
-<span class="go">B. <span style="color:red"> when the Factory is NOT running </span></span>
-<span class="gp">root@host # </span>/usr/sbin/gwms-factory reconfig <span class="o">(</span><span class="s2">&quot;and your options&quot;</span><span class="o">)</span>
-</pre></div>
-
+<span class="go">B. %RED% when the Factory is NOT running %ENDCOLOR%</span>
+<span class="gp">root@host #</span> /usr/sbin/gwms-factory reconfig <span class="o">(</span><span class="s2">&quot;and your options&quot;</span><span class="o">)</span>
+</code></pre></div>
 
 <p>To enable the services so that they restart after a reboot:</p>
-<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red"># For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6</span>
-<span class="gp">root@host # </span>/sbin/chkconfig fetch-crl-cron on 
-<span class="gp">root@host # </span>/sbin/chkconfig fetch-crl-boot on 
-<span class="gp">root@host # </span>/sbin/chkconfig condor on
-<span class="gp">root@host # </span>/sbin/chkconfig httpd on
-<span class="gp">root@host # </span>/sbin/chkconfig gwms-factory on
-<span class="gp"># </span><span style="color:red"># For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
-<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> fetch-crl-cron 
-<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> fetch-crl-boot
-<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> condor 
-<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> httpd 
-<span class="gp">root@host # </span>systemctl <span class="nb">enable</span> gwms-factory
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">#</span> %RED%# For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6%ENDCOLOR%
+<span class="gp">root@host #</span> /sbin/chkconfig fetch-crl-cron on 
+<span class="gp">root@host #</span> /sbin/chkconfig fetch-crl-boot on 
+<span class="gp">root@host #</span> /sbin/chkconfig condor on
+<span class="gp">root@host #</span> /sbin/chkconfig httpd on
+<span class="gp">root@host #</span> /sbin/chkconfig gwms-factory on
+<span class="gp">#</span> %RED%# For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7%ENDCOLOR%
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> fetch-crl-cron 
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> fetch-crl-boot
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> condor 
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> httpd 
+<span class="gp">root@host #</span> systemctl <span class="nb">enable</span> gwms-factory
+</code></pre></div>
 
 <p>To stop the Factory:</p>
-<div class="codehilite"><pre><span></span><span class="gp"># </span><span style="color:red">For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6 </span>
-<span class="gp">root@host # </span>service gwms-factory stop
-<span class="gp"># </span><span style="color:red">For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7</span>
-<span class="gp">root@host # </span>systemctl stop gwms-factory
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="gp">#</span> %RED%For RHEL <span class="m">6</span>, CentOS <span class="m">6</span>, and SL6 %ENDCOLOR%
+<span class="gp">root@host #</span> service gwms-factory stop
+<span class="gp">#</span> %RED%For RHEL <span class="m">7</span>, CentOS <span class="m">7</span>, and SL7%ENDCOLOR%
+<span class="gp">root@host #</span> systemctl stop gwms-factory
+</code></pre></div>
 
 <p>And you can stop also the other services if you are not using them independently of the Factory.</p>
 <h2 id="validating-glideinwms-factory">Validating GlideinWMS Factory</h2>
 <p>The complete validation of the Factory is the submission of actual jobs.</p>
 <p>You can also check that the services are up and running:</p>
-<div class="codehilite"><pre><span></span><span class="gp">root@host # </span>condor_status -any
+<div class="codehilite"><pre><span></span><code><span class="gp">root@host #</span> condor_status -any
 
 <span class="go">MyType               TargetType           Name</span>
 
@@ -2739,8 +1589,7 @@ Currently, you will need to provide at least one tarball for GlideinWMS to use. 
 <span class="go">Scheduler            None                 schedd_glideins4@hostname</span>
 <span class="go">Scheduler            None                 schedd_glideins5@hostname</span>
 <span class="go">Collector            None                 wmscollector_service@hostname</span>
-</pre></div>
-
+</code></pre></div>
 
 <ul>
 <li>
@@ -2756,9 +1605,8 @@ If you have already configured the frontends, you will also have one glidefactor
 </ul>
 <h4 id="check-web-server-configuration-for-the-monitoring">Check Web server configuration for the monitoring</h4>
 <p>Verify path and specially the URL for the GlideinWMS files served by your web server:</p>
-<div class="codehilite"><pre><span></span><span class="n">stage</span> <span class="n">base_dir</span><span class="o">=</span><span class="s2">&quot;/var/lib/gwms-factory/web-area/stage&quot;</span> <span class="n">use_symlink</span><span class="o">=</span><span class="s2">&quot;True&quot;</span> <span class="n">web_base_url</span><span class="o">=</span><span class="s2">&quot;http://HOSTNAME:PORT/factory/stage&quot;</span>
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="n">stage</span> <span class="n">base_dir</span><span class="o">=</span><span class="s2">&quot;/var/lib/gwms-factory/web-area/stage&quot;</span> <span class="n">use_symlink</span><span class="o">=</span><span class="s2">&quot;True&quot;</span> <span class="n">web_base_url</span><span class="o">=</span><span class="s2">&quot;http://HOSTNAME:PORT/factory/stage&quot;</span>
+</code></pre></div>
 
 <p><strong>This will determine the location of your web server</strong>.  Make sure that the URL is visible. Depending on your firewall or the one of your organization, you may need to change the port here and in the httpd configuration (by modifying the "Listen" directive in <code>/etc/httpd/conf/httpd.conf</code>).  Note that web servers are an often an attacked piece of infrastruture, so you may want to go through the Apache configuration in <code>/etc/httpd/conf/httpd.conf</code> and disable unneeded modules.</p>
 <h2 id="troubleshooting-glideinwms-factory">Troubleshooting GlideinWMS Factory</h2>
@@ -2816,11 +1664,10 @@ If you have already configured the frontends, you will also have one glidefactor
 </table>
 <h3 id="increase-the-log-level-and-change-rotation-policies">Increase the log level and change rotation policies</h3>
 <p>You can increase the log level of the frontend. To add a log file with all the log information add the following line with all the message types in the <code>process_log</code> section of <code>/etc/gwms-factory/glideinWMS.xml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;log_retention&gt;</span>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;log_retention&gt;</span>
    <span class="nt">&lt;process_logs&gt;</span>
        <span class="nt">&lt;process_log</span> <span class="na">extension=</span><span class="s">&quot;all&quot;</span> <span class="na">max_days=</span><span class="s">&quot;7.0&quot;</span> <span class="na">max_mbytes=</span><span class="s">&quot;100.0&quot;</span> <span class="na">min_days=</span><span class="s">&quot;3.0&quot;</span> <span class="na">msg_types=</span><span class="s">&quot;DEBUG,EXCEPTION,INFO,ERROR,ERR&quot;</span><span class="nt">/&gt;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>You can also change the rotation policy and choose whether compress the rotated files, all in the same section of the config files:</p>
 <ul>
@@ -2832,16 +1679,14 @@ If you have already configured the frontends, you will also have one glidefactor
 <p>Further details are in the <a href="http://glideinwms.fnal.gov/doc.prd/frontend/configuration.html#process_logs">reference documentation</a>.</p>
 <h3 id="failed-authentication-errors">Failed authentication errors</h3>
 <p>If you get messages such as these in the logs, the Factory does not trust the frontend and will not submit glideins.</p>
-<div class="codehilite"><pre><span></span><span class="go">WARNING: Client fermicloud128-fnal-gov_OSG_gWMSFrontend.main (secid: frontend_name) not in white list. Skipping request</span>
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code><span class="go">WARNING: Client fermicloud128-fnal-gov_OSG_gWMSFrontend.main (secid: frontend_name) not in white list. Skipping request</span>
+</code></pre></div>
 
 <p>This error means that the frontend name in the security section of the Factory does not match the <code>security_name</code> in the frontend.</p>
-<div class="codehilite"><pre><span></span><span class="go">Client fermicloud128-fnal-gov_OSG_gWMSFrontend.main (secid: frontend_name) is not coming from a trusted source;</span>
+<div class="codehilite"><pre><span></span><code><span class="go">Client fermicloud128-fnal-gov_OSG_gWMSFrontend.main (secid: frontend_name) is not coming from a trusted source;</span>
 <span class="go"> AuthenticatedIdentity vofrontend_condor@fermicloud130.fnal.gov!=vofrontend_factory@fermicloud130.fnal.gov. </span>
 <span class="go">Skipping for security reasons.</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>This error means that the identity in the security section of the Factory does not match what the <code>/etc/condor/certs/condor_mapfile</code> authenticates the Frontend to in HTCondor (!Authenticated Identity in the classad).</p>
 <p>Make sure the attributes are correctly lined up as in the Frontend security configuration section above.</p>
@@ -2856,8 +1701,6 @@ Often, this will be a pilot unable to access a web server or with an invalid pro
 <li><a href="http://glideinwms.fnal.gov/doc.prd/">http://glideinwms.fnal.gov/doc.prd/</a></li>
 <li><a href="https://opensciencegrid.org/docs/other/install-gwms-frontend/">https://opensciencegrid.org/docs/other/install-gwms-frontend/</a></li>
 </ul>
-                
-                  
                 
               
               
@@ -2874,34 +1717,34 @@ Often, this will be a pilot unable to access a web server or with an invalid pro
 <footer class="md-footer">
   
     <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../hosted-ce-definitions/" title="Hosted ce definitions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hosted ce definitions
-              </span>
+                Home
+              </div>
             </div>
           </a>
         
         
-          <a href="../sending-announcements/" title="Sending announcements" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
+          <a href="../topology/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Sending announcements
-              </span>
+                Topology Service
+              </div>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
             </div>
           </a>
         
@@ -2912,14 +1755,11 @@ Often, this will be a pilot unable to access a web server or with an invalid pro
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
       </div>
-      
-        
       
     </div>
   </div>
@@ -2927,14 +1767,18 @@ Often, this will be a pilot unable to access a web server or with an invalid pro
       
     </div>
     
-      <script src="../../assets/javascripts/application.30f6b8b1.js"></script>
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
-      <script>app.initialize({version:"0.17.5",url:{base:"../.."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-69012-29","opensciencegrid.github.io"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
       
     
   </body>
