@@ -24,6 +24,7 @@ nav:
   - Yum Repository:
     - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
 - Service Level Agreements:
+  - 'General': 'SLA/general.md'
   - 'HTCondor Collector': 'SLA/collector.md'
   - 'MyOSG': 'SLA/myosg.md'
   - OASIS Stratum-0: 'SLA/oasis.md'
