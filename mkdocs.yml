@@ -26,11 +26,8 @@ nav:
 - Service Level Agreements:
   - General: 'SLA/general.md'
   - CE Collector: 'SLA/collector.md'
-  - 'MyOSG': 'SLA/myosg.md'
   - OASIS: 'SLA/oasis.md'
-  - OASIS Replica: 'SLA/oasis-replica.md'
-  - 'OIM': 'SLA/oim.md'
-  - 'XDLogin': 'SLA/xdlogin.md'
+  - XDLogin: 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
 
 markdown_extensions:
