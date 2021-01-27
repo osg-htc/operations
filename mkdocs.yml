@@ -28,8 +28,9 @@ nav:
   - CE Collector: 'SLA/collector.md'
   - GRACC: 'SLA/gracc.md'
   - Message Broker: 'SLA/message-broker.md'
-  - PerfSonar: 'SLA/perfsonar.md'
   - OASIS: 'SLA/oasis.md'
+  - PerfSonar: 'SLA/perfsonar.md'
+  - Software Repository: 'SLA/software-repo.md'
   - XDLogin: 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
 
