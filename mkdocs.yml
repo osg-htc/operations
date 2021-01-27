@@ -31,6 +31,7 @@ nav:
   - OASIS: 'SLA/oasis.md'
   - PerfSonar: 'SLA/perfsonar.md'
   - Software Repository: 'SLA/software-repo.md'
+  - Topology: 'SLA/topology.md'
   - XDLogin: 'SLA/xdlogin.md'
 - External OASIS repositories: 'external-oasis-repos.md'
 
