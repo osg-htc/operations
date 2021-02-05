@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [February 5, 2021](https://docs.google.com/document/d/17igH2QDZs7wR6rBaYVyZrBcAJp52_Xh240fm3lUOzXU/edit?usp=sharing)
 - [January 29, 2021](https://docs.google.com/document/d/15dlzxR31QDkwSqvlTPv5samGoeV5aydwEN8hVI0BYbI/edit?usp=sharing)
 - [January 22, 2021](https://docs.google.com/document/d/1fdY59r4HYU0IXXt41505gGrt8-PRhuplR9F3Kjd8x4g/edit?usp=sharing)
 - [January 15, 2021](https://docs.google.com/document/d/1TTIBYwJPPk8IG4tDdP6na25M0xb0BD4eGRqVDvdZNZs/edit?usp=sharing)
