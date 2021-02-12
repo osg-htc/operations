@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://www.opensciencegrid.org/operations/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/install-gwms-factory/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/topology/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/topology-contacts-data/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/finalize-cache-registration/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/sending-announcements/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/gracc-corrections/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/hosted-ce-definitions/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/services/ce-monitoring-dashboards/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/troubleshooting/repository-scripts/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/general/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/collector/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/gracc/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/message-broker/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/oasis/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/perfsonar/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/software-repo/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/topology/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/web-pages/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/SLA/xdlogin/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.opensciencegrid.org/operations/external-oasis-repos/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
