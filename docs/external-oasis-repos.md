@@ -86,12 +86,15 @@ Requests to Remove an External Repository
         :::console
         print_osg_repos|grep <EXAMPLE.OPENSCIENCEGRID.ORG>
 
-1.  Add the FNAL and BNL Stratum-1 operators to the ticket and ask them to remove the repository. Wait for the
-    Stratum-1 operators to finish before proceeding.
+1.  Add the BNL Stratum-1 operator to the ticket and ask him to remove the repository. Wait for
+    him to finish before proceeding.
 1.  Run the following command on `oasis`, `oasis-itb`, `oasis-replica` and `oasis-replica-itb`:
 
         :::console
         remove_osg_repository -f <EXAMPLE.OPENSCIENCEGRID.ORG>
+1. Immediately add the FNAL Stratum-1 operator to the ticket and ask him to remove the repository as well.
+    This one cannot be done earlier because that Stratum-1 automatically adds all repositories oasis-replica has,
+    but it has to be done within 8 hours or an alarm will start going off.
 
 
 Response to Security Incident on an External Repository
