@@ -39,21 +39,22 @@ dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done
     ```
 
 1.  If the respository ends in a new domain name that has not been distributed before, 
-    a new domain key will be needed on oasis-replica which should get automatically downloaded from github.
+    a new domain key will be needed on oasis-replica which should get automatically downloaded from 
+    the etc/cvmfs/keys directory in the master branch of the [config-repo github repository](https://github.com/cvmfs-contrib/config-repo).
     There should be a message about downloading it in the log file `/var/log/cvmfs/generate_replicas.log`.
-    The key has to first exist in the master branch of the [config-repo github repository](https://github.com/cvmfs-contrib/config-repo).
     After the key is downloaded the repository should also be automatically added, with messages in the same log file.
 
     After the repository is successfully on oasis-replica, in addition you need to update the
     OSG configuration repository.  Make changes in a workspace cloned from the
     [config-repo github repository](https://github.com/cvmfs-contrib/config-repo)
-    and use the osg branch (or a branch made from it) in a personal account on oasis-itb.
+    and use the osg branch (or a branch made from it) in a personal account on `oasis-itb`.
     Add a domain configuration in `etc/cvmfs/domain.d` that's a lot like one of the other imported domains, for example `egi.eu.conf`.
     The server urls might be slightly different; use the URLs of the stratum 1s where it is already hosted if there are any,
     and you can add at least the FNAL and BNL stratum 1s.
     Copy key(s) for the domain into `etc/cvmfs/keys` from the master branch, either a single .pub file or a directory, whichever the master branch has.
-    Test all these changes out on the `config-osg.opensciencegrid.org` repository on oasis-itb
-    using the `copy_config_osg` command and configure a test client to read from oasis-itb instead of oasis to test it.
+    Test all these changes out on the `config-osg.opensciencegrid.org` repository on `oasis-itb`
+    using the `copy_config_osg` command, and configure a test client to read from `oasis-itb.opensciencegrid.org`
+    instead of `oasis.opensciencegrid.org`.
     Then commit those changes into a new branch you made from the osg branch, and make a pull request.
     Once that PR is approved and merged, log in to the oasis machine and run `copy_config_osg` as root there
     to copy from github to the production configuration repository on the oasis machine.
