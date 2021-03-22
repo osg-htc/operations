@@ -93,6 +93,7 @@ Requests to Remove an External Repository
 
         :::console
         remove_osg_repository -f <EXAMPLE.OPENSCIENCEGRID.ORG>
+
 1. Immediately add the FNAL Stratum-1 operator to the ticket and ask him to remove the repository as well.
     This one cannot be done earlier because that Stratum-1 automatically adds all repositories oasis-replica has,
     but it has to be done within 8 hours or an alarm will start going off.
