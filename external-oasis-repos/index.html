@@ -565,8 +565,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requests-to-blank-an-external-repository" class="md-nav__link">
-    Requests to Blank an External Repository
+  <a href="#response-to-security-incident-on-an-external-repository" class="md-nav__link">
+    Response to Security Incident on an External Repository
   </a>
   
 </li>
@@ -623,8 +623,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requests-to-blank-an-external-repository" class="md-nav__link">
-    Requests to Blank an External Repository
+  <a href="#response-to-security-incident-on-an-external-repository" class="md-nav__link">
+    Response to Security Incident on an External Repository
   </a>
   
 </li>
@@ -678,31 +678,43 @@
 <span class="go">...</span>
 </code></pre></div>
 
-<p>When PR is approved, check on the <code>oasis.opensciencegrid.org</code> host whether the new repository was successfuly signed.
-There should be sign of it in the log file <code>/var/log/oasis/generate_whitelists.log</code>:</p>
+<p>When the PR is approved, check on the <code>oasis.opensciencegrid.org</code> host whether the new repository was successfuly signed.
+There should be message about it in the log file <code>/var/log/oasis/generate_whitelists.log</code>:</p>
 <p><code>Tue Sep 25 17:34:02 2018 Running add_osg_repository http://hcc-cvmfs-repo.unl.edu:8000/cvmfs/dune.osgstorage.org
 dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done</code></p>
 </li>
 <li>
-<p>If the respository ends in a new domain name <code>domain.name</code> that has not been distributed before, then place a copy of the
-    <code>domain.name.pub</code> public key into <code>/srv/etc/keys</code> on both <code>oasis-replica</code> and
-    <code>oasis-replica-itb</code>. If you do not have that key, then ask the repository service representative how to obtain it. In
-    order to support CVMFS client versions 2.2.X, also make a symbolic link of <code>domain.name.conf</code>
-    <code>/cvmfs/config-osg.opensciencegrid.org/etc/cvmfs/domain.d</code> pointing to <code>default.conf</code>. This symbolic link has to be
-    created on the <code>oasis-itb</code> machine's copy of the <code>config-osg.opensciencegrid.org</code> repository and then copied to
-    production with the <code>copy_config_osg</code> command on the oasis machine.</p>
+<p>If the respository ends in a new domain name that has not been distributed before, 
+    a new domain key will be needed on oasis-replica which should get automatically downloaded from 
+    the etc/cvmfs/keys directory in the master branch of the <a href="https://github.com/cvmfs-contrib/config-repo">config-repo github repository</a>.
+    There should be a message about downloading it in the log file <code>/var/log/cvmfs/generate_replicas.log</code>.
+    After the key is downloaded the repository should also be automatically added, with messages in the same log file.</p>
+<p>After the repository is successfully on oasis-replica, in addition you need to update the
+OSG configuration repository.  Make changes in a workspace cloned from the
+<a href="https://github.com/cvmfs-contrib/config-repo">config-repo github repository</a>
+and use the osg branch (or a branch made from it) in a personal account on <code>oasis-itb</code>.
+Add a domain configuration in <code>etc/cvmfs/domain.d</code> that's a lot like one of the other imported domains, for example <code>egi.eu.conf</code>.
+The server urls might be slightly different; use the URLs of the stratum 1s where it is already hosted if there are any,
+and you can add at least the FNAL and BNL stratum 1s.
+Copy key(s) for the domain into <code>etc/cvmfs/keys</code> from the master branch, either a single .pub file or a directory, whichever the master branch has.
+Test all these changes out on the <code>config-osg.opensciencegrid.org</code> repository on <code>oasis-itb</code>
+using the <code>copy_config_osg</code> command, and configure a test client to read from <code>oasis-itb.opensciencegrid.org</code>
+instead of <code>oasis.opensciencegrid.org</code>.
+Then commit those changes into a new branch you made from the osg branch, and make a pull request.
+Once that PR is approved and merged, log in to the oasis machine and run <code>copy_config_osg</code> as root there
+to copy from github to the production configuration repository on the oasis machine.</p>
 </li>
 <li>
 <p>If the repository name does not match <code>*.opensciencegrid.org</code> or <code>*.osgstorage.org</code>, skip this step and go on to your next step.
     If it does match one of those two patterns, then respond to the ticket to tell the administrator to continue with their next step (their step 4).<br />
-    We don't want them to continue before 15 minutes has elapsed after step 2 above, so either wait that much time or tell them the time they may proceed (15 minutes after you updated OIM).
+    We don't want them to continue before 15 minutes has elapsed after step 2 above, so either wait that much time or tell them the time they may proceed (15 minutes after you updated topology).
     Then wait until the admin has updated the ticket to indicate that they have completed their step before moving on. </p>
 </li>
 <li>
-<p>Ask the administrator of the BNL stratum 1 <a href="mailto:jd@bnl.org">John S. De Stefano Jr.</a> also add the new repository. The BNL Stratum-1 administrator
+<p>Ask the administrator of the BNL stratum 1 <a href="mailto:jd@bnl.org">John S. De Stefano Jr.</a> to also add the new repository. The BNL Stratum-1 administrator
     should set the service to read from
-    <code>http://oasis-replica.opensciencegrid.org:8000/cvmfs/%RED%example.opensciencegrid.org%ENDCOLOR%</code>. When the BNL
-    Stratum-1 operator has reported back that the replication is ready, respond to the requester that the repository is
+    <code>http://oasis-replica.opensciencegrid.org:8000/cvmfs/&lt;EXAMPLE.OPENSCIENCEGRID.ORG&gt;</code>. When the BNL
+    Stratum-1 administrator has reported back that the replication is ready, respond to the requester that the repository is
     fully replicated on the OSG and close the ticket.</p>
 </li>
 </ol>
@@ -713,42 +725,37 @@ Tell the requester that it is ready 15 minutes after topology is updated.</p>
 <ol>
 <li>
 <p>After validating that the ticket submitter is authorized by the VO's OASIS manager, delete the registered value
-    for %RED%example.opensciencegrid.org%ENDCOLOR% in topology for the VO in OASIS Repo URLs.
+    for <EXAMPLE.OPENSCIENCEGRID.ORG> in topology for the VO in OASIS Repo URLs.
     Verify that it is removed by running the following on any oasis machine
     to make sure it is missing from the list:</p>
-<div class="codehilite"><pre><span></span><code><span class="go">print_osg_repos|grep %RED%example.opensciencegrid.org%ENDCOLOR%</span>
+<div class="codehilite"><pre><span></span><code><span class="go">print_osg_repos|grep &lt;EXAMPLE.OPENSCIENCEGRID.ORG&gt;</span>
 </code></pre></div>
 
 </li>
 <li>
-<p>Add the FNAL and BNL Stratum-1 operators to the ticket and ask them to remove the repository. Wait for the
-    Stratum-1 operators to finish before proceeding.</p>
+<p>Add the BNL Stratum-1 operator to the ticket and ask him to remove the repository. Wait for
+    him to finish before proceeding.</p>
 </li>
-<li>
-<p>Run the following commands on <code>oasis-replica-itb</code> and <code>oasis-replica</code>:</p>
-<div class="codehilite"><pre><span></span><code><span class="go">remove_osg_repository -f %RED%example.opensciencegrid.org%ENDCOLOR%</span>
-<span class="go">rm -rf /oasissrv/cvmfs/%RED%example.opensciencegrid.org%ENDCOLOR%</span>
+<li>Run the following command on <code>oasis</code>, <code>oasis-itb</code>, <code>oasis-replica</code> and <code>oasis-replica-itb</code>:<div class="codehilite"><pre><span></span><code><span class="go">remove_osg_repository -f &lt;EXAMPLE.OPENSCIENCEGRID.ORG&gt;</span>
 </code></pre></div>
 
-</li>
-<li>
-<p>Run the following command on <code>oasis-itb</code> and <code>oasis</code>:</p>
-<div class="codehilite"><pre><span></span><code><span class="go">rm -rf /srv/cvmfs/%RED%example.opensciencegrid.org%ENDCOLOR%</span>
-</code></pre></div>
-
-</li>
-</ol>
-<h2 id="requests-to-blank-an-external-repository">Requests to Blank an External Repository</h2>
 <ol>
-<li>If there is a need to shut down the distribution of a repository, run <code>blank_osg_repository</code> on <code>oasis-replica</code> and
-    give it the full name of the repository. This will rename the repository directories to a name with the current
-    timestamp and replace it with a blank repository.  It includes a step to run on the <code>oasis</code> machine, and attempts to
-    do it with <code>ssh</code>, but if that fails it prints instructions on how to finish by logging in to the <code>oasis</code> machine
-    manually.</li>
-<li>When it is time to put the repository back into production, run <code>unblank_osg_repository</code> on <code>oasis-replica</code> and
-    gives it the full name of the repository again. This will find the directory with the old timestamp and put it back
-    into service. This step also attempts to <code>ssh</code> to the <code>oasis</code> machine.</li>
+<li>Immediately add the FNAL Stratum-1 operator to the ticket and ask him to remove the repository as well.
+This one cannot be done earlier because that Stratum-1 automatically adds all repositories oasis-replica has,
+but it has to be done within 8 hours or an alarm will start going off.</li>
 </ol>
+</li>
+</ol>
+<h2 id="response-to-security-incident-on-an-external-repository">Response to Security Incident on an External Repository</h2>
+<p>If there is a security incident on the publishing machine of an
+external repository and a publishing key is compromised, the
+fingerprint of that key should be added to
+<code>/cvmfs/config-osg.opensciencegrid.org/etc/cvmfs/blacklist</code>.
+In addition, another line should be added in the form
+<code>&lt;repository.name NNN</code> with the repository name and a revision
+number that's one higher than the currently published revision.
+For more details see the
+<a href="https://cvmfs.readthedocs.io/en/stable/cpt-details.html#blacklisting">cvmfs documentation on blacklisting</a>.</p>
                 
               
               
