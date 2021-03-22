@@ -736,14 +736,16 @@ Tell the requester that it is ready 15 minutes after topology is updated.</p>
 <p>Add the BNL Stratum-1 operator to the ticket and ask him to remove the repository. Wait for
     him to finish before proceeding.</p>
 </li>
-<li>Run the following command on <code>oasis</code>, <code>oasis-itb</code>, <code>oasis-replica</code> and <code>oasis-replica-itb</code>:<div class="codehilite"><pre><span></span><code><span class="go">remove_osg_repository -f &lt;EXAMPLE.OPENSCIENCEGRID.ORG&gt;</span>
+<li>
+<p>Run the following command on <code>oasis</code>, <code>oasis-itb</code>, <code>oasis-replica</code> and <code>oasis-replica-itb</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="go">remove_osg_repository -f &lt;EXAMPLE.OPENSCIENCEGRID.ORG&gt;</span>
 </code></pre></div>
 
-<ol>
-<li>Immediately add the FNAL Stratum-1 operator to the ticket and ask him to remove the repository as well.
-This one cannot be done earlier because that Stratum-1 automatically adds all repositories oasis-replica has,
-but it has to be done within 8 hours or an alarm will start going off.</li>
-</ol>
+</li>
+<li>
+<p>Immediately add the FNAL Stratum-1 operator to the ticket and ask him to remove the repository as well.
+    This one cannot be done earlier because that Stratum-1 automatically adds all repositories oasis-replica has,
+    but it has to be done within 8 hours or an alarm will start going off.</p>
 </li>
 </ol>
 <h2 id="response-to-security-incident-on-an-external-repository">Response to Security Incident on an External Repository</h2>
