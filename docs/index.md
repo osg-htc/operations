@@ -20,7 +20,7 @@ Contact Us
 ----------
 
 * [Open a Ticket](https://support.opensciencegrid.org)
-* [Slack channel](https://opensciencegrid.slack.com/messages/osg-ops) - if you can't create an account, send an e-mail
+* [Slack channel](https://opensciencegrid.slack.com/messages/operations) - if you can't create an account, send an e-mail
   to <mailto:help@opensciencegrid.org>
 * Email: <mailto:help@opensciencegrid.org>
 
