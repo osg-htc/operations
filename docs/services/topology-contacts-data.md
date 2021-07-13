@@ -14,7 +14,7 @@ Topology Data
 Admins may request changes to data in the topology repo via either a GitHub pull request or a Freshdesk ticket.
 These changes can be to a project, a VO, or a resource.
 The [registration document](https://opensciencegrid.org/docs/common/registration) and
-[topology README document](https://github.com/opensciencegrid/topology/README.md) should tell them how to do that.
+[topology README document](https://github.com/opensciencegrid/topology/#readme) should tell them how to do that.
 
 In the case of a GitHub pull request, you will need to provide IDs using the `next_*_id` tools in the Topology
 [bin/ dir](https://github.com/opensciencegrid/topology/tree/master/bin) and potentially fix-up other data.
