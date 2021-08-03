@@ -66,7 +66,7 @@ dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done
 
 1.  Ask the administrator of the BNL stratum 1 [John S. De Stefano Jr.](mailto:jd@bnl.org) to also add the new repository. The BNL Stratum-1 administrator
     should set the service to read from
-    `http://oasis-replica.opensciencegrid.org:8000/cvmfs/<EXAMPLE.OPENSCIENCEGRID.ORG>`. When the BNL
+    `http://oasis-replica.opensciencegrid.org:8002/cvmfs/<EXAMPLE.OPENSCIENCEGRID.ORG>`. When the BNL
     Stratum-1 administrator has reported back that the replication is ready, respond to the requester that the repository is
     fully replicated on the OSG and close the ticket.
 
