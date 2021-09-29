@@ -11,7 +11,6 @@
    * [05 February 2018](05Feb2018.md)
    * [29 January 2018](29Jan2018.md)
    * [22 January 2018](22Jan2018.md)
-   * [08 January 2018](08Jan2017.md)
    
 ## 2017
    * [18 December 2017](18Dec2017.md)
@@ -49,7 +48,7 @@
    * [24 April 2017](24Apr2017.md)
    * [17 April 2017](17Apr2017.md)
    * [10 April 2017](10Apr2017.md)
-   * [3 April 2017](3Apr2017.md)
+   * [3 April 2017](03Apr2017.md)
    * [27 March 2017](27Mar2017.md)
    * [20 March 2017](20Mar2017.md)
    * [13 March 2017](13Mar2017.md)
