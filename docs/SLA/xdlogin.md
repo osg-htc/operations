@@ -66,7 +66,7 @@ The GOC will strive for 97% service availability. If service availability falls 
 The service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.
 
 ## Service Off-Hours Support Procedures
-XSEDE users should report problems via the [XSEDE trouble ticket](https://tickets.xsede.org) system. Others should contact the GOC via the
+XSEDE users should report problems via the [XSEDE trouble ticket](https://portal.xsede.org/help-desk) system. Others should contact the GOC via the
 
 ## Requests for Service Enhancements
 
@@ -92,7 +92,7 @@ XD-Login customers agree to:
    * Be willing and available to provide information within one business day for any High level issues reported.
 
 
-### Responsibilities
+### OSG Operations Responsibilities
 
 GOC operations:
    * Maintain the physical machine hosting the service
@@ -163,7 +163,7 @@ Obtaining repair services: The Service Provider analyst will recommend a service
    * Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.
 
 ## Software Services
-Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [OSG Operations Responsibilities](https://github.com/opensciencegrid/operations/blob/master/SLA/XDLoginServiceLevelAgreement#osg-operations-responsibilities) section of this document.
+Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [OSG Operations Responsibilities](#osg-operations-responsibilities) section of this document.
 
 ## Software Costs
 
