@@ -29,6 +29,7 @@ nav:
   - GRACC: 'SLA/gracc.md'
   - Message Broker: 'SLA/message-broker.md'
   - OASIS: 'SLA/oasis.md'
+  - OSDF Core: 'SLA/osdf-core.md'
   - PerfSonar: 'SLA/perfsonar.md'
   - Software Repository: 'SLA/software-repo.md'
   - Topology: 'SLA/topology.md'
