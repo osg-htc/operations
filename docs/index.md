@@ -211,4 +211,4 @@ Weekly Operations Meetings
 
 ### Archived Meeting Minutes ###
 
-For archived meeting minutes, see the [GitHub repository](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes)
+For archived meeting minutes, see the [GitHub repository](https://github.com/opensciencegrid/operations/tree/master/WeeklyMinutes)
