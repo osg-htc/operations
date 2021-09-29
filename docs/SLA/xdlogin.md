@@ -97,7 +97,7 @@ XD-Login customers agree to:
 GOC operations:
    * Maintain the physical machine hosting the service
    * Assure the service is accessible via its advertised URL
-   * Make changes and updates within the normal GOC [release schedule](https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule.md)
+   * Make changes and updates within the normal GOC release schedule
    * Meet response times associated with the priority assigned by users for issues related to the hardware.
    * Maintain appropriately trained staff.
    * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
