@@ -657,17 +657,17 @@ $ curl http://hcc-stash.unl.edu:8000/user/rynge/public/test.txt
 Hello!</code></p>
 </li>
 <li>
-<p>Open a pull request to add the cache to <a href="https://github.com/opensciencegrid/StashCache/blob/master/bin/caches.json"><code>caches.json</code></a> file within the StashCache repo.</p>
+<p>Open a pull request to add the cache to <code>https://github.com/opensciencegrid/StashCache/blob/master/bin/caches.json</code> (obsolete) file within the StashCache repo.</p>
 </li>
 <li>
-<p>Open a pull request adding the cache to <code>CVMFS_EXTERNAL_URL</code> in the  <a href="https://github.com/opensciencegrid/oasis-server/blob/master/goc/config-osg/etc/cvmfs/domain.d/osgstorage.org.conf">osgstorage.org.conf</a> file.</p>
+<p>Open a pull request adding the cache to <code>CVMFS_EXTERNAL_URL</code> in the  <code>https://github.com/opensciencegrid/oasis-server/blob/master/goc/config-osg/etc/cvmfs/domain.d/osgstorage.org.conf</code> (obsolete) file.</p>
 </li>
 </ol>
 <h2 id="authenticated-cache">Authenticated Cache</h2>
-<p>For an authenticated cache, it will need to be added to the specific CVMFS configuration for the authenticated domain.  For example, if it is a LIGO authenticated cache, it will need to be added to the <code>CVMFS_EXTERNAL_URL</code> within the <code>ligo.osgstorage.org.conf</code> file in the <a href="https://github.com/opensciencegrid/oasis-server/tree/master/goc/config-osg/etc/cvmfs/config.d"><code>config.d</code></a> directory.  A CMS authenticated cache will need to be added to the <code>cms.osgstorage.org.conf</code> file</p>
+<p>For an authenticated cache, it will need to be added to the specific CVMFS configuration for the authenticated domain.  For example, if it is a LIGO authenticated cache, it will need to be added to the <code>CVMFS_EXTERNAL_URL</code> within the <code>ligo.osgstorage.org.conf</code> file in the <code>https://github.com/opensciencegrid/oasis-server/tree/master/goc/config-osg/etc/cvmfs/config.d</code> (obsolete) directory.  A CMS authenticated cache will need to be added to the <code>cms.osgstorage.org.conf</code> file</p>
 <ol>
 <li>
-<p>Open a pull request adding the authenticated cache to <code>CVMFS_EXTERNAL_URL</code> in the appropriate domain configuration file within <a href="https://github.com/opensciencegrid/oasis-server/tree/master/goc/config-osg/etc/cvmfs/config.d"><code>config.d</code></a>.</p>
+<p>Open a pull request adding the authenticated cache to <code>CVMFS_EXTERNAL_URL</code> in the appropriate domain configuration file within <code>https://github.com/opensciencegrid/oasis-server/tree/master/goc/config-osg/etc/cvmfs/config.d</code> (obsolete).</p>
 </li>
 <li>
 <p>Coordinate with the VO to test that authorization works.  As each VO is expected to export a different directory and require different authorizations, a custom test
