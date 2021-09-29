@@ -20,7 +20,7 @@ This parts covers these primary components of the GlideinWMS system:
 Before Starting
 ---------------
 
-Before starting the installation process, consider the following points (consulting [the Reference section below](#reference) as needed):
+Before starting the installation process, consider the following points (consulting [the Reference section below](#references) as needed):
 
 ### Requirements
 
