@@ -5,9 +5,6 @@ This document contains information about the service that runs:
 
 * <https://topology.opensciencegrid.org>
 * <https://topology-itb.opensciencegrid.org>
-* <https://my.opensciencegrid.org>
-* <https://my-itb.opensciencegrid.org>
-* <https://myosg.opensciencegrid.org>
 * <https://map.opensciencegrid.org>: Generates the topology map used on [OSG Display](https://display.opensciencegrid.org)
 
 The source code for the service is in <https://github.com/opensciencegrid/topology>, in the `src/` subdirectory.
@@ -144,7 +141,7 @@ Puppet does not manage the ITB data directories so they need to be updated by ha
 
 ### GitHub Configuration for Webhook App
 
-1.   Go to the [webhook settings](https://github.com/opensciencegrid/topology/settings/hooks) page on GitHub.
+1.   Go to the `https://github.com/opensciencegrid/topology/settings/hooks` page on GitHub.
      There are four webhooks to set up; `pull_request` and `status` for both the topology and topology-itb hosts.
 
      | Payload URL                                                   | Content type     | Events to trigger webhook |

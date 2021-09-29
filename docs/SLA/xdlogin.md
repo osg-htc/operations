@@ -56,7 +56,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 
 Detailed information on contacts are viewable on the following [MyOSG URL](https://my.opensciencegrid.org/rgsummary/xml?summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&downtime_attrs_showpast=&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&bdiitree_type=total_jobs&bdii_object=service&bdii_server=is-osg&start_type=7daysago&start_date=09%2F15%2F2009&end_type=now&end_date=09%2F15%2F2009&site_10047=on&rg=on&rg_336=on&gridtype=on&gridtype_1=on&active=on&active_value=1&disable_value=1), and are maintained within the
 
-Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://github.com/opensciencegrid/operations/tree/master/docs/WeeklyMinutes) and [Production](https://github.com/opensciencegrid/production/tree/master/docs/WeeklyMinutes) meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://opensciencegrid.org/operations/#weekly-operations-meetings) and [Production](https://opensciencegrid.org/production/#weekly-production-meetings)) meetings.
 
 ## Service Availability and Outages
 
@@ -66,7 +66,7 @@ The GOC will strive for 97% service availability. If service availability falls 
 The service is supported 24x7 by the GOC and Indiana University. All issues will be investigated by the next business day.
 
 ## Service Off-Hours Support Procedures
-XSEDE users should report problems via the [XSEDE trouble ticket](https://tickets.xsede.org) system. Others should contact the GOC via the
+XSEDE users should report problems via the [XSEDE trouble ticket](https://portal.xsede.org/help-desk) system. Others should contact the GOC via the
 
 ## Requests for Service Enhancements
 
@@ -92,12 +92,12 @@ XD-Login customers agree to:
    * Be willing and available to provide information within one business day for any High level issues reported.
 
 
-### Responsibilities
+### OSG Operations Responsibilities
 
 GOC operations:
    * Maintain the physical machine hosting the service
    * Assure the service is accessible via its advertised URL
-   * Make changes and updates within the normal GOC [release schedule](https://github.com/opensciencegrid/operations/tree/master/docs/SLA/ReleaseSchedule.md)
+   * Make changes and updates within the normal GOC release schedule
    * Meet response times associated with the priority assigned by users for issues related to the hardware.
    * Maintain appropriately trained staff.
    * The OSG and GOC are not responsible if a customer does not provide testing during the testing period. In such cases, the GOC has final discretion in what remedial actions to take.
@@ -163,7 +163,7 @@ Obtaining repair services: The Service Provider analyst will recommend a service
    * Backup. Service Provider agrees to fully back up all Service Provider-supported software and data nightly every business day.
 
 ## Software Services
-Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [OSG Operations Responsibilities](https://github.com/opensciencegrid/operations/blob/master/SLA/XDLoginServiceLevelAgreement#osg-operations-responsibilities) section of this document.
+Service Provider agrees to cover software support services, including software installations and upgrades. All software maintenance periods will be announced via the policy put forth in the [OSG Operations Responsibilities](#osg-operations-responsibilities) section of this document.
 
 ## Software Costs
 

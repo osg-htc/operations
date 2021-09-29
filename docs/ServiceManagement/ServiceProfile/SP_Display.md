@@ -10,7 +10,7 @@
 | Competitors and Similar Services | | 
 | Unique Selling Points | Layperson view of overall OSG activity. | 
 | Service Area        | OSG Operations |
-| Service Level Agreement | [OSG Display SLA](https://github.com/opensciencegrid/operations/blob/master/docs/SLA/display.md) |
+| Service Level Agreement |  |
 | Support Unit        | OSG Operations | 
 | Additional Service Components | Monitoring, Availability calculation, Configuration Management Database entries. | 
 | Support Contact Address | help@opensciencegrid.org | 
