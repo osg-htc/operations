@@ -36,6 +36,7 @@ nav:
   - OASIS: 'SLA/oasis.md'
   - OSDF Core: 'SLA/osdf-core.md'
   - OSDF Cache: 'SLA/osdf-cache.md'
+  - OSDF Origin: 'SLA/osdf-origin.md'
   - PerfSonar: 'SLA/perfsonar.md'
   - Software Repository: 'SLA/software-repo.md'
   - Topology: 'SLA/topology.md'
