@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [October 29, 2021](https://docs.google.com/document/d/1vkF8lZj5XHqnh6WhFtuDUV1Q6VP1rCwkYLIosl_cCqQ/edit?usp=sharing)
 - [October 22, 2021](https://docs.google.com/document/d/104TFYEBYf4GrMzuO5OGAtBH0Bf-IT2ED1MLnpPLo4qg/edit?usp=sharing)
 - October 15, 2021 (canceled)
 - [October 8, 2021](https://docs.google.com/document/d/1R6pCWVRORdBHEzInhNbfj54nNxSZjR2LvyHyNxyMzm8/edit?usp=sharing)
