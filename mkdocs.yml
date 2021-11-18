@@ -25,6 +25,7 @@ nav:
     - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
 - Service Level Agreements:
   - General: 'SLA/general.md'
+  - Access Point: 'SLA/access-point.md'
   - CE Collector: 'SLA/collector.md'
   - GRACC: 'SLA/gracc.md'
   - GWMS Factory: 'SLA/gwms-factory.md'
