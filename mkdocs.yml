@@ -30,6 +30,7 @@ nav:
   - GRACC: 'SLA/gracc.md'
   - GWMS Factory: 'SLA/gwms-factory.md'
   - HTCSS Central Manager: 'SLA/htcss-central-manager.md'
+  - Hosted CE: 'SLA/hosted-ce.md'
   - Message Broker: 'SLA/message-broker.md'
   - OASIS: 'SLA/oasis.md'
   - PerfSonar: 'SLA/perfsonar.md'
