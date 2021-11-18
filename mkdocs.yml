@@ -28,6 +28,7 @@ nav:
   - CE Collector: 'SLA/collector.md'
   - GRACC: 'SLA/gracc.md'
   - GWMS Factory: 'SLA/gwms-factory.md'
+  - HTCSS Central Manager: 'SLA/htcss-central-manager.md'
   - Message Broker: 'SLA/message-broker.md'
   - OASIS: 'SLA/oasis.md'
   - PerfSonar: 'SLA/perfsonar.md'
