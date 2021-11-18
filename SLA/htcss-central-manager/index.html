@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://www.opensciencegrid.org/operations/SLA/message-broker/">
+        <link rel="canonical" href="https://www.opensciencegrid.org/operations/SLA/htcss-central-manager/">
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>Message Broker - OSG Operations</title>
+        <title>HTCSS Central Manager - OSG Operations</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#message-broker-service-level-agreement" class="md-skip">
+        <a href="#htcss-pool-central-manager-service-level-agreement" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Message Broker
+              HTCSS Central Manager
             
           </span>
         </div>
@@ -452,18 +452,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../htcss-central-manager/" class="md-nav__link">
-        HTCSS Central Manager
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -475,12 +463,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Message Broker
+          HTCSS Central Manager
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Message Broker
+        HTCSS Central Manager
       </a>
       
         
@@ -555,6 +543,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../message-broker/" class="md-nav__link">
+        Message Broker
+      </a>
     </li>
   
 
@@ -743,24 +743,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/message-broker.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/opensciencegrid/operations/edit/master/docs/SLA/htcss-central-manager.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="message-broker-service-level-agreement">Message Broker Service Level Agreement</h1>
+                <h1 id="htcss-pool-central-manager-service-level-agreement">HTCSS Pool Central Manager Service Level Agreement</h1>
 <h2 id="service-names">Service Name(s)</h2>
-<p>Message Broker</p>
+<p>Central Manager</p>
 <h2 id="description">Description</h2>
-<p>This service allows short, text based messages to be exchanged between OSG operated computers. Uses include transport of accounting information to GRACC and network performance metrics to perfsonar. Service subscribers access queues to exchange data using point-to-point or publish and subscribe patterns. See <a href="https://en.wikipedia.org/wiki/Message_queuing_service">the Wikipedia article on message queueing services</a> for further discussion.</p>
-<p>The OSG uses a commercial vendor which provides their own <a href="https://www.cloudamqp.com/sla.html">SLA</a>. However, their SLA does not cover "overuse of resources," which is a common reason for downtime of the message broker.</p>
+<p>The  Central Manager is the HTCondor service that represents a HTCondor pool. It is the central database of available resources and users who submit to them. Submit hosts communicate user information to the Collector from the VO Schedds. When pilots or containers claim resources, they connect to the collector to describe the claimed machine. HTCondor can then match user jobs to resources using the normal matchmaking mechanisms.</p>
 <h2 id="general-service-level-agreement">General Service Level Agreement</h2>
 <p><a href="https://opensciencegrid.org/operations/SLA/general/">https://opensciencegrid.org/operations/SLA/general/</a></p>
 <h2 id="security-considerations">Security Considerations</h2>
-<p>All data transmitted to or by the service shall be considered disclosable without condition. Security of the message broker is handled by the commercial vendor. Accounts / passwords are administered by the OSG.</p>
+<p>Schedds and pilots are authenticated and authorized to write ads to the collector using GSI or IDTOKENS.</p>
 <h2 id="service-availability">Service Availability</h2>
 <h4 id="availability-definition">Availability Definition</h4>
-<p>Messages can be successfully posted and received.</p>
+<ul>
+<li>The collector responds to condor_status queries</li>
+<li>The negotiator process posts submitter priority summaries in the collector</li>
+</ul>
 <h4 id="target-availability-95">Target Availability: 95%</h4>
                 
               
@@ -780,7 +782,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../htcss-central-manager/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../gwms-factory/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -789,19 +791,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              HTCSS Central Manager
+              GWMS Factory
             </div>
           </div>
         </a>
       
       
-        <a href="../oasis/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../message-broker/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              OASIS
+              Message Broker
             </div>
           </div>
           <div class="md-footer__button md-icon">
