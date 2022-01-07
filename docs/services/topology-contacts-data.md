@@ -75,8 +75,6 @@ downtime yaml files as well.
 New projects are typically created by the Research Facilitation team.
 Here are a few things to check:
 
--   Does the "Name" in the YAML match the file name of the project?
-
 -   Did osg-bot warn about a "New Organization"?
     If so, search around in the projects directory and make sure the "Organization" in the YAML
     is not a typo or alternate spelling for an existing organization.
@@ -101,8 +99,6 @@ Here are a few things to check:
 
 -   Does the "FieldOfScience" in the YAML match one of the keys in `/mappings/nsfscience.yaml`?
     (The list is also available on the _left_ column of [this CSV](https://topology.opensciencegrid.org/nsfscience/csv).)
-
--   Is the "ID" unique?
 
 -   Is the "Sponsor" correct?  The sponsor depends on where the users will be submitting jobs from:
 
