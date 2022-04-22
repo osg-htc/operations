@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [April 22, 2022](https://docs.google.com/document/d/1EDJ6GSUtFJ-PYi9RLYY-2OB9NaHLOz65wLGCw4pfsRc/edit?usp=sharing)
 - [April 15, 2022](https://docs.google.com/document/d/1B9019Wov0yjzTNspdj3Vquy_-Ba40q7zREOxTPNLyEg/edit?usp=sharing)
 - [April 8, 2022](https://docs.google.com/document/d/1KH_om2W7LsadT1ugQSFRTnHPkD2abe0isaamYBBQVLs/edit?usp=sharing)
 - [April 1, 2022](https://docs.google.com/document/d/1yvhA8sB-yed5TfIcnkkifC6xA6Ojl_V683Tn7kHx_VI/edit?usp=sharing)
