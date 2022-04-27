@@ -14,7 +14,7 @@ Server that holds the data in the OSDF federation for a particular organization
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

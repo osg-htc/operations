@@ -14,7 +14,7 @@ A preliminary description of the service is available [here](https://docs.google
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

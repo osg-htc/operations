@@ -14,7 +14,7 @@ The  Central Manager is the HTCondor service that represents a HTCondor pool. It
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

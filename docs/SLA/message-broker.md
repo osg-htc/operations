@@ -16,7 +16,7 @@ The OSG uses a commercial vendor which provides their own [SLA](https://www.clou
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

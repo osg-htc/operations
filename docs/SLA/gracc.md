@@ -14,7 +14,7 @@ GRACC is a large database of usage information for the OSG.  GRACC includes the 
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

@@ -14,7 +14,7 @@ The GlideinWMS Frontend is responsible for monitoring a GWMS HTCondor pool, and 
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

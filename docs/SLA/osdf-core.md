@@ -14,7 +14,7 @@ The Redirector routes cache requests to be served by the respective data origin 
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

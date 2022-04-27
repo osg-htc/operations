@@ -14,7 +14,7 @@ Clients contact the closest Cache to access data from the OSDF federation. This 
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

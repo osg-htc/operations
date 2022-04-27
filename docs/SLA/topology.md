@@ -16,7 +16,7 @@ The Topology Web service is a user facing web page that exports topology data.
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

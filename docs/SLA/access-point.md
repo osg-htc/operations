@@ -14,7 +14,7 @@ The Access Point is a HTCondor-based service that runs a submit host, and manage
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

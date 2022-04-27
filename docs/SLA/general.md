@@ -35,7 +35,7 @@ Once a service can not be restored within the SLA Resolution Time specified, it 
 | 2nd | OSG Operations Coordinator |
 | 3rd | OSG Technical Director and Executive Director |
 
-Any ongoing issues will be discussed at the weekly [Operations](https://opensciencegrid.org/operations/#weekly-operations-meetings) and [Production](https://opensciencegrid.org/production/#weekly-production-meetings) meetings. "High" and possibly "Elevated" level issues will in addition require more frequent meetings of the appropriate set of people to resolve the issue in a timely manner.
+Any ongoing issues will be discussed at the weekly [Operations](/#weekly-operations-meetings) and [Production](https://osg-htc.org/production/#weekly-production-meetings) meetings. "High" and possibly "Elevated" level issues will in addition require more frequent meetings of the appropriate set of people to resolve the issue in a timely manner.
 
 Service Availability and Outages
 --------------------------------
