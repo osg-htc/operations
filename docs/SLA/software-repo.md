@@ -14,7 +14,7 @@ The OSG RPM Software Repository hold files necessary to update the OSG CA distri
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

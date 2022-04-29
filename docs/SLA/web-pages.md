@@ -14,7 +14,7 @@ User facing web pages that display usage statistics, and homepage for OSG Connec
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

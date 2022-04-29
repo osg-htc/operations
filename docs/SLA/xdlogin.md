@@ -56,7 +56,7 @@ This section deals with unplanned outages. Please see [Requests for Service Enha
 
 Detailed information on contacts are viewable on the following [MyOSG URL](https://my.opensciencegrid.org/rgsummary/xml?summary_attrs_showhierarchy=on&summary_attrs_showservice=on&summary_attrs_showfqdn=on&summary_attrs_showcontact=on&gip_status_attrs_showtestresults=on&downtime_attrs_showpast=&account_type=cumulative_hours&ce_account_type=gip_vo&se_account_type=vo_transfer_volume&bdiitree_type=total_jobs&bdii_object=service&bdii_server=is-osg&start_type=7daysago&start_date=09%2F15%2F2009&end_type=now&end_date=09%2F15%2F2009&site_10047=on&rg=on&rg_336=on&gridtype=on&gridtype_1=on&active=on&active_value=1&disable_value=1), and are maintained within the
 
-Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](https://opensciencegrid.org/operations/#weekly-operations-meetings) and [Production](https://opensciencegrid.org/production/#weekly-production-meetings)) meetings.
+Any ongoing "Normal" or "Elevated" level issues will be discussed at the weekly [Operations](/#weekly-operations-meetings) and [Production](https://osg-htc.org/production/#weekly-production-meetings)) meetings.
 
 ## Service Availability and Outages
 

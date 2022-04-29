@@ -14,7 +14,7 @@ The GlideinWMS Factory is responsible for serving GWMS Frontend requests and sub
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------

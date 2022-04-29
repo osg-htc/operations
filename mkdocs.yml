@@ -1,6 +1,6 @@
 site_name: OSG Operations
-site_url: https://www.opensciencegrid.org/operations/
-repo_url: https://github.com/opensciencegrid/operations/
+site_url: https://osg-htc.org/operations/
+repo_url: https://github.com/osg-htc/operations/
 google_analytics: ['UA-69012-29', 'opensciencegrid.github.io']
 theme: 
   name: material

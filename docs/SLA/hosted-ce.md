@@ -14,7 +14,7 @@ The Hosted CE (Compute Entrypoint) is a door into a computing site. Sites that p
 General Service Level Agreement
 -------------------------------
 
-<https://opensciencegrid.org/operations/SLA/general/>
+<https://osg-htc.org/operations/SLA/general/>
 
 Security Considerations
 -----------------------
