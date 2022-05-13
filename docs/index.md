@@ -44,13 +44,14 @@ Weekly Operations Meetings
 
 ### Meeting Minutes ###
 - [May 13, 2022](https://docs.google.com/document/d/1fwcBLOo2SHQw3I9lWhU8dPQx18Em-w6QJKOQ8dlWM-0/edit?usp=sharing)
+- May 6, 2022 (canceled)
 - [April 29, 2022](https://docs.google.com/document/d/1BIzmg8fcj0FKk7wgZmJ2gR94o4JiWgr0RbLFv4BBOOw/edit?usp=sharing)
 - [April 22, 2022](https://docs.google.com/document/d/1EDJ6GSUtFJ-PYi9RLYY-2OB9NaHLOz65wLGCw4pfsRc/edit?usp=sharing)
 - [April 15, 2022](https://docs.google.com/document/d/1B9019Wov0yjzTNspdj3Vquy_-Ba40q7zREOxTPNLyEg/edit?usp=sharing)
 - [April 8, 2022](https://docs.google.com/document/d/1KH_om2W7LsadT1ugQSFRTnHPkD2abe0isaamYBBQVLs/edit?usp=sharing)
 - [April 1, 2022](https://docs.google.com/document/d/1yvhA8sB-yed5TfIcnkkifC6xA6Ojl_V683Tn7kHx_VI/edit?usp=sharing)
 - [March 25, 2022](https://docs.google.com/document/d/1uKsQg_uvxKhBhbr-_HIY-T7zwgsPU5I93955uZ59GZM/edit?usp=sharing)
-- March 18, 2021 (canceled)
+- March 18, 2022 (canceled)
 - [March 11, 2022](https://docs.google.com/document/d/1G4DCWTc22OBSmzZbqQtTScdq3-b4mQZj4pq7yVrFjN4/edit?usp=sharing)
 - [March 4, 2022](https://docs.google.com/document/d/1gnC740u7INHouEaj03ABqHP2ZRYDuSsGCIQfCiNte04/edit?usp=sharing)
 - [February 25, 2022](https://docs.google.com/document/d/1UD_8AfmsIbTqd44iJjM1GgkDvhVmTDtVU1FAIuuxV_8/edit?usp=sharing)
