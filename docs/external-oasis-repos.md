@@ -64,9 +64,9 @@ dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done
     We don't want them to continue before 15 minutes has elapsed after step 2 above, so either wait that much time or tell them the time they may proceed (15 minutes after you updated topology).
     Then wait until the admin has updated the ticket to indicate that they have completed their step before moving on. 
 
-1.  Ask the administrator of the BNL stratum 1 [John S. De Stefano Jr.](mailto:jd@bnl.org) to also add the new repository. The BNL Stratum-1 administrator
+1.  Ask the administrator of the BNL stratum 1 (John De Stefano) to also add the new repository. The BNL Stratum-1 administrator
     should set the service to read from
-    `http://oasis-replica.opensciencegrid.org:8002/cvmfs/<EXAMPLE.OPENSCIENCEGRID.ORG>`. When the BNL
+    `http://oasis-replica.opensciencegrid.org:8000/cvmfs/<EXAMPLE.OPENSCIENCEGRID.ORG>`. When the BNL
     Stratum-1 administrator has reported back that the replication is ready, respond to the requester that the repository is
     fully replicated on the OSG and close the ticket.
 
@@ -87,16 +87,24 @@ Requests to Remove an External Repository
         :::console
         print_osg_repos|grep <EXAMPLE.OPENSCIENCEGRID.ORG>
 
-1.  Add the BNL Stratum-1 operator to the ticket and ask him to remove the repository. Wait for
+1.  Check if the repository has been replicated to RAL by looking in their
+    [repositories.json](http://cernvmfs.gridpp.rl.ac.uk:8000/cvmfs/info/v1/repositories.json).
+    The [user documentation](https://osg-htc.org/docs/data/external-oasis-repos/#removing-a-repository-from-oasis)
+    requests the user to make a GGUS ticket to do this, so either ask them to do it or do it yourself.
+
+1.  Add the BNL Stratum-1 operator (John De Stefano) to the ticket and ask him to remove the repository. Wait for
     him to finish before proceeding.
+
+1. Add the FNAL Stratum-1 operators (Merina Albert, Hyun Woo Kim) to the ticket and ask them when they can be ready to delete the repository.
+    They can't remove it before it is removed from oasis-replica because their Stratum-1 automatically adds all repositories oasis-replica has.
+    However, it has to be done within 8 hours of removal on oasis-replica or an alarm will start going off.
+
 1.  Run the following command on `oasis`, `oasis-itb`, `oasis-replica` and `oasis-replica-itb`:
 
         :::console
         remove_osg_repository -f <EXAMPLE.OPENSCIENCEGRID.ORG>
 
-1. Immediately add the FNAL Stratum-1 operator to the ticket and ask him to remove the repository as well.
-    This one cannot be done earlier because that Stratum-1 automatically adds all repositories oasis-replica has,
-    but it has to be done within 8 hours or an alarm will start going off.
+1. Tell the FNAL Stratum-1 operators to go ahead and remove the repository.
 
 
 Response to Security Incident on an External Repository
