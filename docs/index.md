@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [August 19, 2022](https://docs.google.com/document/d/1sCD5bdzzGjLrFSYbYGZtAh4Y0LPrZVym7yCB2gFsfnA/edit?usp=sharing)
 - [August 12, 2022](https://docs.google.com/document/d/1GmOv0vMrU7RL9c-HxlQwcVjTQAX4COWrn2r93TKn2ew/edit?usp=sharing)
 - August 5, 2022 (canceled)
 - [July 29, 2022](https://docs.google.com/document/d/16M4dh9H_pd1WdBWKatLSEOSusVGaGXYi62-Crsh8DX0/edit?usp=sharing)
