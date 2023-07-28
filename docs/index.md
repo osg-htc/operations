@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [July 28, 2023](https://docs.google.com/document/d/1w66U7Ibz3nEGBH5PA6BOPazhXRID1SFV4CQ_qOvGWR4/edit?usp=sharing)
 - [July 21, 2023](https://docs.google.com/document/d/10g7co5QdYydLLWbt36S7D3vvbtNjA6UHYwdAq-Ya5ew/edit?usp=sharing)
 - [July 7, 2023](https://docs.google.com/document/d/1-_nQPyHe_4ZESeTDPUm8qsjItoRtQ7SUyosXvDc8OYY/edit?usp=sharing)
 - [June 30, 2023](https://docs.google.com/document/d/1j0N318KCq17a41-XIgAhk8EdlKjGRdR25c-s9R_hyPs/edit?usp=sharing)
