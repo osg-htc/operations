@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [November 3, 2023](https://docs.google.com/document/d/1mTCs2Io059T2Ox4V_8FQiSYb6NcVefjVRazkvD8kKEE/edit?usp=sharing)
 - [October 27, 2023](https://docs.google.com/document/d/1BVyKXx41RKAnzDBL00iUHnS4yWoVFMyfVqXFQ4RKV6o/edit?usp=sharing)
 - [October 20, 2023](https://docs.google.com/document/d/1pDa38Ct2wH2D8UnI_DrgkNU4ObkD-di5f7jrFHdczkA/edit?usp=sharing)
 - [October 13, 2023](https://docs.google.com/document/d/1GWxIJv0O9P34f8zgOHGo1Xe-qxVdKE6ieFmdnSjQAjg/edit?usp=sharing)
