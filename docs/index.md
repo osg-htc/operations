@@ -43,10 +43,13 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [January 5, 2024](https://docs.google.com/document/d/1jc8hLVreVEHBAnV6SdSV34hWw8RWKuhuG3CoJgUawmM/edit?usp=sharing)
+- December 29, 2023 (canceled)
+- December 22, 2023 (canceled)
 - [December 15, 2023](https://docs.google.com/document/d/1Bs3RQcHh86f3V9_drl3Lr-vfTeqzgVFA1MBmHKMOIfM/edit?usp=sharing)
 - [December 8, 2023](https://docs.google.com/document/d/1DWNAtukFd3cDfhI8vjHdQP7HpafTPV2g-sXk2DQNJTc/edit?usp=sharing)
 - [December 1, 2023](https://docs.google.com/document/d/18rnRIt6yYq7_5vopEfTwsT-wYr-oqLCd1CQKSOXkOGk/edit?usp=sharing)
-- November 24, 2022 (canceled)
+- November 24, 2023 (canceled)
 - [November 17, 2023](https://docs.google.com/document/d/1OsDAZgYkA3GQludzLEzptDfgA-9jRS4iTdg4kA52bdc/edit?usp=sharing)
 - [November 10, 2023](https://docs.google.com/document/d/1fzSc11J1Q0PAhvY9Djrsk6R-KoVZbQyfyxOspdPl9FY/edit?usp=sharing)
 - [November 3, 2023](https://docs.google.com/document/d/1mTCs2Io059T2Ox4V_8FQiSYb6NcVefjVRazkvD8kKEE/edit?usp=sharing)
@@ -65,7 +68,7 @@ Weekly Operations Meetings
 - [August 4, 2023](https://docs.google.com/document/d/1giQWr0POJQ5kiPYX6ft1GBEysk2HAVOsv5yP8HlZixg/edit?usp=sharing)
 - [July 28, 2023](https://docs.google.com/document/d/1w66U7Ibz3nEGBH5PA6BOPazhXRID1SFV4CQ_qOvGWR4/edit?usp=sharing)
 - [July 21, 2023](https://docs.google.com/document/d/10g7co5QdYydLLWbt36S7D3vvbtNjA6UHYwdAq-Ya5ew/edit?usp=sharing)
-- January 14, 2022 (canceled due to Throughput Computing 23)
+- January 14, 2023 (canceled due to Throughput Computing 23)
 - [July 7, 2023](https://docs.google.com/document/d/1-_nQPyHe_4ZESeTDPUm8qsjItoRtQ7SUyosXvDc8OYY/edit?usp=sharing)
 - [June 30, 2023](https://docs.google.com/document/d/1j0N318KCq17a41-XIgAhk8EdlKjGRdR25c-s9R_hyPs/edit?usp=sharing)
 - [June 23, 2023](https://docs.google.com/document/d/1LrOkq6SXsYyM7rXWuOGG_hwuggu3mGiBQhnKxjnbmg8/edit?usp=sharing)
@@ -92,7 +95,7 @@ Weekly Operations Meetings
 - [January 27, 2023](https://docs.google.com/document/d/1vQjJ4FIOjQyzOHR3ilnI0RxAcD7c90WQrmWn24t0_pU/edit?usp=sharing)
 - [January 20, 2023](https://docs.google.com/document/d/1SSOhwsYFx5oeFwHNFggbIvTnJlHePSbdvtkOVnkdtPE/edit?usp=sharing)
 - [January 13, 2023](https://docs.google.com/document/d/10vfc3aX9PikPXuWxrVCCz0lOi6NIK9gC9xLvmEAIZk0/edit?usp=sharing)
-- January 6, 2022 (canceled)
+- January 6, 2023 (canceled)
 - December 30, 2022 (canceled)
 - December 23, 2022 (canceled)
 - [December 16, 2022](https://docs.google.com/document/d/1S2DkyUnkFqEDRYw5l23zlfupSO2jk1RQi6w_bRChAXY/edit?usp=sharing)
