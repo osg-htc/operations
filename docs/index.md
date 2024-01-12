@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [January 12, 2024](https://docs.google.com/document/d/1jLvh7LkpXjVdTOgSsIr-HqbnR2uA8p3qYmyqNXvjfoI/edit?usp=sharing)
 - [January 5, 2024](https://docs.google.com/document/d/1jc8hLVreVEHBAnV6SdSV34hWw8RWKuhuG3CoJgUawmM/edit?usp=sharing)
 - December 29, 2023 (canceled)
 - December 22, 2023 (canceled)
