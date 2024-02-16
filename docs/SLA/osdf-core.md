@@ -27,8 +27,5 @@ Service Availability
 #### Availability Definition
 
    - Redirector: Able to redirect a known file
-   - Monitoring Collector: Outgoing queues in message bus is above 1/sec, or prometheus endpoint is responding
-   - Shoveler: Message bus queue for ingestion by the shoveler stays beneath 10,000 queued messages
-
 
 #### Target Availability: 95%
