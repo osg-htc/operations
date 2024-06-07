@@ -88,7 +88,13 @@ Here are a few things to check:
     
     If the new organization is not a typo or alternate spelling,
     dismiss osg-bot's review with the comment "new org is legit".
-
+    - If osg-bot included a message about "Unrecognized InstitutionID" alongside this warning, check that the
+      "InstitutionID" field in the project contains an ID that's found in [the OSG institutions database](https://topology-institutions.osg-htc.org/).
+      The topology project web-form should automatically populate the InstitutionID field for known institutions,
+      but may fail in the case of spelling discrepancies.
+    - If the organization is absent from the institutions database, add a comment to the pull request mentioning `@opensciencegrid/project-office`
+      to request permission to add the institution. Once you have obtained permission, search for the institution's canonical name in the
+      [Research Organization Registry](https://ror.org/) before adding it to the database.
 -   Is the project name is of the form `<INSTITUTION>_<PINAME>`, e.g. `UWMadison_Parks`?
     (This is recommended but not required for new projects.)
     If so:
