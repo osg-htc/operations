@@ -42,12 +42,12 @@ You may need to edit the override file in the directory above to change the user
 
 Enable the timer:
 ```
-systemctl enable cvmfs-data-update@public.uc.osgstorage.org.timer
-systemctl start cvmfs-data-update@public.uc.osgstorage.org.timer
+systemctl enable cvmfs-data-update@<reponame>.timer
+systemctl start cvmfs-data-update@<reponame>.timer
 ```
 
 ## Checking cvmfs-sync
 ```
-journalctl -u cvmfs-data-update@public.uc.osgstorage.org
+journalctl -u cvmfs-data-update@<reponame>
 ```
 
