@@ -23,6 +23,7 @@ nav:
   - CE Monitoring Dashboards: 'services/ce-monitoring-dashboards.md'
   - Yum Repository:
     - Troubleshooting Guide for Yum Repository Scripts: 'troubleshooting/repository-scripts.md'
+  - Adding External CVMFS repos: 'services/adding-external-cvmfs-repos.md'
 - Service Level Agreements:
   - General: 'SLA/general.md'
   - Access Point: 'SLA/access-point.md'
