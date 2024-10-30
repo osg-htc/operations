@@ -873,9 +873,13 @@ Tell the requester that it is ready 15 minutes after topology is updated.</p>
     him to finish before proceeding.</p>
 </li>
 <li>
-<p>Add the FNAL Stratum-1 operators (Merina Albert, Hyun Woo Kim) to the ticket and ask them when they can be ready to delete the repository.
-    They can't remove it before it is removed from oasis-replica because their Stratum-1 automatically adds all repositories oasis-replica has.
-    However, it has to be done within 8 hours of removal on oasis-replica or an alarm will start going off.</p>
+<p>Add the FNAL Stratum-1 operators (Merina Albert, Hyun Woo Kim)
+    and SAMPA Stratum-1 operator (Ricardo Romao Da Silva) to the ticket
+    and ask them when they can be ready to delete the repository.
+    They can't remove it before it is removed from oasis-replica because
+    their Stratum-1s automatically add all repositories oasis-replica has.
+    However, they have to remove the repository within 8 hours of removal
+    on oasis-replica or an alarm will start going off.</p>
 </li>
 <li>
 <p>Run the following command on <code>oasis</code>, <code>oasis-itb</code>, <code>oasis-replica</code> and <code>oasis-replica-itb</code>:</p>
