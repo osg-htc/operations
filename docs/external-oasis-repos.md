@@ -95,7 +95,7 @@ Requests to Remove an External Repository
 1.  Add the BNL Stratum-1 operator (John De Stefano) to the ticket and ask him to remove the repository. Wait for
     him to finish before proceeding.
 
-1. Add the FNAL Stratum-1 operators (Arshad Ahmad and Shreyas Bhat))
+1. Add the FNAL Stratum-1 operators (Arshad Ahmad and Shreyas Bhat)
     and SAMPA Stratum-1 operator (Ricardo Romao Da Silva) to the ticket
     and ask them when they can be ready to delete the repository.
     They can't remove it before it is removed from oasis-replica because
