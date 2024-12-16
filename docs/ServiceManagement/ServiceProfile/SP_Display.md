@@ -13,7 +13,7 @@
 | Service Level Agreement |  |
 | Support Unit        | OSG Operations | 
 | Additional Service Components | Monitoring, Availability calculation, Configuration Management Database entries. | 
-| Support Contact Address | help@opensciencegrid.org | 
+| Support Contact Address | support@osg-htc.org | 
 | Dependencies | GRACC, OIM |
 | Cost to Provide | Unused |
 | Funding Source | Unused | 

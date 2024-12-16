@@ -9,5 +9,5 @@
 | Service Area        | OSG Operations at UCSD |
 | Service Level Agreement |  |
 | Support Unit        | OSG Operations | 
-| Support Contact Address | help@opensciencegrid.org | 
+| Support Contact Address | support@osg-htc.org | 
 | Dependencies | GlideinWMS, HTCondor, python, httpd, osg-ca-certs, fetch-crl, javascriptrrd, m2crypto |

@@ -63,7 +63,7 @@ Customer Problem Reporting
 Service problems should be reported immediately by opening a ticket:
 
    - Either directly at <https://support.opensciencegrid.org>
-   - Or by emailing a description to <help@opensciencegrid.org>
+   - Or by emailing a description to <support@osg-htc.org>
 
 Responsibilities
 ----------------

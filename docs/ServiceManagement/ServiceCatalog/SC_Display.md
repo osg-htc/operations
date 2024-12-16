@@ -9,5 +9,5 @@
 | Service Area        | OSG Operations |
 | Service Level Agreement |  |
 | Support Unit        | OSG Operations | 
-| Support Contact Address | help@opensciencegrid.org | 
+| Support Contact Address | support@osg-htc.org | 
 | Dependencies | GRACC, OIM |
