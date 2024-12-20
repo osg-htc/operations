@@ -8,5 +8,5 @@
 | Service Users       | OSG and other VO Glidein Factories |
 | Service Area        | OSG User Support |
 | Service Level Agreement | N/A | 
-| Support Contact Address | user-support@opensciencegrid.org | 
+| Support Contact Address | support@osg-htc.org | 
 | Dependencies | HTCondor |

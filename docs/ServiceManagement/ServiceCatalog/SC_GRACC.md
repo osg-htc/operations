@@ -9,5 +9,5 @@
 | Service Area        | OSG Technology |
 | Service Level Agreement | In progress |
 | Support Unit        | OSG Operations and Technology | 
-| Support Contact Address | help@opensciencegrid.org | 
+| Support Contact Address | support@osg-htc.org | 
 | Dependencies | RabbitMQ, RSV-perfSONAR, UNL HDFS, FNAL dCache, OIM |
