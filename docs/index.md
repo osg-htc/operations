@@ -43,6 +43,7 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [January 10, 2025](https://docs.google.com/document/d/1JkJoVQ_mdpYJD2SE9eyMTkGgNPPBIsHKKZuC220lP0M/edit?usp=sharing)
 - [December 20, 2024](https://docs.google.com/document/d/1TwF0w8BWLGRvLrEuqbaYo9lNnyEPYY_sAxu2A6UfxEQ/edit?usp=sharing)
 - [December 13, 2024](https://docs.google.com/document/d/15OY6oZce6EcgTPT57t59MF1uSC5TnBXiro4MB2oQjeU/edit?usp=sharing)
 - [December 6, 2024](https://docs.google.com/document/d/1S3_OkyzrTPVakuFVrod7orPg17hCKu0ABKQS-S-6ci4/edit?usp=sharing)
