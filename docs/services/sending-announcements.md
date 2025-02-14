@@ -12,10 +12,8 @@ To send announcements, the following conditions must be met:
 
 -   A host with an IP address listed in the
     [SPF Record](https://mxtoolbox.com/SuperTool.aspx?action=spf%3aopensciencegrid.org&run=toolpage)
--   A sufficiently modern Linux operating system.
-    This procedure has been tested on a FermiCloud Scientific Linux 7 VM and a Linux Mint 18.3 laptop.
-    It is known not to work on a FermiCloud Scientific Linux 6 VM.
 -   A valid OSG user certificate to lookup contacts in the topology database
+    -   See [Toplogy and Contacts Data](https://osg-htc.org/operations/services/topology-contacts-data/#contacts-data) for details
 -   Local hostname matches DNS
 -   DNS forward and reverse lookups in place
 ```console
