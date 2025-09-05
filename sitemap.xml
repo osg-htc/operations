@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://osg-htc.org/operations/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/install-gwms-factory/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/topology/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/topology-contacts-data/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/finalize-cache-registration/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/sending-announcements/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/gracc-corrections/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/hosted-ce-definitions/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/ce-monitoring-dashboards/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/troubleshooting/repository-scripts/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/services/adding-external-cvmfs-repos/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/general/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/access-point/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/collector/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/gracc/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/gwms-factory/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/gwms-frontend/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/htcss-central-manager/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/hosted-ce/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/message-broker/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/oasis/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/osdf-core/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/osdf-cache/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/osdf-origin/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/perfsonar/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/software-repo/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/topology/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/web-pages/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/SLA/xdlogin/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://osg-htc.org/operations/external-oasis-repos/</loc>
-     <lastmod>2025-08-29</lastmod>
+     <lastmod>2025-09-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
