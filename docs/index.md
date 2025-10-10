@@ -43,10 +43,10 @@ Weekly Operations Meetings
 
 
 ### Meeting Minutes ###
+- [October 10, 2025](https://docs.google.com/document/d/1C5JomLUOhjpa-aD1O4GmJXhrZhXH1bJOH0rL8SZRtA8/edit?usp=sharing)
 - [October 3, 2025](https://docs.google.com/document/d/1sL4UHn3FE6Q9M7U5C-3rIeAeB19IAEhtCQUG5C6STDY/edit?usp=sharing)
 - [September 26, 2025](https://docs.google.com/document/d/15Ke23n-kDX4gkPorhfHc5I4po_oJUPK4lV1TEdhhycs/edit?usp=sharing)
 - [September 19, 2025](https://docs.google.com/document/d/1AuCD3lRRSnKinbw0GeH4Zl9pDCFxdTcowldQCs5-wwI/edit?usp=sharing)
-- [October 10, 2025](https://docs.google.com/document/d/1C5JomLUOhjpa-aD1O4GmJXhrZhXH1bJOH0rL8SZRtA8/edit?usp=sharing)
 - [September 12, 2025](https://docs.google.com/document/d/1vB_GbPjndbcT7ZEKP2kZt1Py8j1SzxbfWjBcoh5j458/edit?usp=sharing)
 - [September 5, 2025](https://docs.google.com/document/d/1wk3PP9YFg63QOcOth4zpBcP0Xo8V2i8lT3liMMl7yKs/edit?usp=sharing)
 - [August 29, 2025](https://docs.google.com/document/d/14tSBGONvRIWRRjvzyec-cJdxU9pD6q3OcTm84tLoGj8/edit?usp=sharing)
