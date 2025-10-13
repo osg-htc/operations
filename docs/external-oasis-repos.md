@@ -90,10 +90,15 @@ Requests to Remove an External Repository
 1.  Check if the repository has been replicated to RAL by looking in their
     [repositories.json](http://cernvmfs.gridpp.rl.ac.uk:8000/cvmfs/info/v1/repositories.json).
     The [user documentation](https://osg-htc.org/docs/data/external-oasis-repos/#removing-a-repository-from-oasis)
-    requests the user to make a GGUS ticket to do this, so either ask them to do it or do it yourself.
+    requests the user to make a GGUS ticket to do this,
+    so either ask them to do it or do it yourself.
+    If you make the ticket, remind them to also ask other dependent
+    world-wide Stratum 1s to remove the repository after they remove it.
+    Don't proceed until it has been removed from all those Stratum 1s.
 
-1.  Add the BNL Stratum-1 operator (John De Stefano) to the ticket and ask him to remove the repository. Wait for
-    him to finish before proceeding.
+1.  Add the BNL Stratum-1 operators at RT-RACF-StorageManagement@bnl.gov
+    to the ticket and ask them to remove the repository.
+    Wait for them to finish before proceeding.
 
 1. Add the FNAL Stratum-1 operators (Arshad Ahmad and Shreyas Bhat)
     and SAMPA Stratum-1 operator (Ricardo Romao Da Silva) to the ticket
@@ -108,7 +113,8 @@ Requests to Remove an External Repository
         :::console
         remove_osg_repository -f <EXAMPLE.OPENSCIENCEGRID.ORG>
 
-1. Tell the FNAL Stratum-1 operators to go ahead and remove the repository.
+1. Tell the FNAL and SAMPA Stratum-1 operators to go ahead and remove the
+    repository.
 
 
 Response to Security Incident on an External Repository
