@@ -841,6 +841,12 @@ to copy from github to the production configuration repository on the oasis mach
     Then wait until the admin has updated the ticket to indicate that they have completed their step before moving on. </p>
 </li>
 <li>
+<p>Verify that the repository has been added to <code>oasis-replica.opensciencegrid.org</code>.
+    There should be message about it in the log file <code>/var/log/oasis/generate_whitelists.log</code> that looks something like this:</p>
+<p><code>Tue Sep 25 17:34:02 2018 Running add_osg_repository http://hcc-cvmfs-repo.unl.edu:8000/cvmfs/dune.osgstorage.org</code></p>
+<p>Look at the following lines to make sure that the operation succeeded.</p>
+</li>
+<li>
 <p>Ask the administrator of the BNL stratum 1 (John De Stefano) to also add the new repository. The BNL Stratum-1 administrator
     should set the service to read from
     <code>http://oasis-replica.opensciencegrid.org:8002/cvmfs/&lt;EXAMPLE.OPENSCIENCEGRID.ORG&gt;</code>. When the BNL
