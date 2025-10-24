@@ -64,6 +64,15 @@ dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done
     We don't want them to continue before 15 minutes has elapsed after step 2 above, so either wait that much time or tell them the time they may proceed (15 minutes after you updated topology).
     Then wait until the admin has updated the ticket to indicate that they have completed their step before moving on. 
 
+1.  Verify that the repository has been added to `oasis-replica.opensciencegrid.org`.
+    There should be message about it in the log file `/var/log/oasis/generate_whitelists.log` that looks something like this:
+
+    ```
+    Tue Sep 25 17:34:02 2018 Running add_osg_repository http://hcc-cvmfs-repo.unl.edu:8000/cvmfs/dune.osgstorage.org
+    ```
+
+    Look at the following lines to make sure that the operation succeeded.
+
 1.  Ask the administrator of the BNL stratum 1 (John De Stefano) to also add the new repository. The BNL Stratum-1 administrator
     should set the service to read from
     `http://oasis-replica.opensciencegrid.org:8002/cvmfs/<EXAMPLE.OPENSCIENCEGRID.ORG>`. When the BNL
