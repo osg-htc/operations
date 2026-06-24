@@ -65,7 +65,7 @@ dune.osgstorage.org: Signing 7 day whitelist with masterkeycard... done
     Then wait until the admin has updated the ticket to indicate that they have completed their step before moving on. 
 
 1.  Verify that the repository has been added to `oasis-replica.opensciencegrid.org`.
-    There should be message about it in the log file `/var/log/oasis/generate_whitelists.log` that looks something like this:
+    There should be message about it in the log file `/var/log/cvmfs/generate_replicas.log` that looks something like this:
 
     ```
     Tue Sep 25 17:34:02 2018 Running add_osg_repository http://hcc-cvmfs-repo.unl.edu:8000/cvmfs/dune.osgstorage.org
