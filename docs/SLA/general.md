@@ -111,7 +111,7 @@ Service customers agree to:
    - The OSG and Operations team are not responsible to meet target Resolution Times if a customer does not provide
      sufficient feedback.
    - Log and track all customer requests for service through the OSG ticketing system.
-   - Announce planned changes to stakeholders in accordance with the 
+   - Announce planned changes to stakeholders in accordance with the
      [Planned Service Changes](#planned-service-changes) section above and try to minimize adverse effects on stakeholders.
 
 SLA Change Procedure
