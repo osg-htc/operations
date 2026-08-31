@@ -22,7 +22,7 @@ General Service Level Agreement
 Security Considerations
 -----------------------
 
--   If the client uses a SciToken to retrieve a file, the cache may contact the director with the SciTokento determine
+-   If the client uses a SciToken to retrieve a file, the cache may contact the director with the SciToken to determine
     the origin that holds the file.
 -   The Monitoring Collector receives messages from XRootD caches that may include DNs, though not the actual
     certificates and not SciTokens.
