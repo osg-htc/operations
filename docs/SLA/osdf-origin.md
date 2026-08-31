@@ -10,7 +10,7 @@ Description
 -----------
 
 OSDF Origins are a door into a data store, providing remote access to OSDF clients through OSDF Caches.
-OSG staff may operate origins on behalf of sites or projects through the Open Science Store.
+OSG staff may operate Origins on behalf of sites or projects through the Open Science Store.
 
 General Service Level Agreement
 -------------------------------
@@ -20,7 +20,7 @@ General Service Level Agreement
 Security Considerations
 -----------------------
 
-When clients use SciTokens to interact with objects made available through an origin, the bearer token is passed to the
+When clients use SciTokens to interact with objects made available through an Origin, the bearer token is passed to the
 Origin from an OSDF Cache.
 
 Service Availability
