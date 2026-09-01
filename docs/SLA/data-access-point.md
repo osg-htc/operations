@@ -1,15 +1,16 @@
-Access Point Service Level Agreement
-================================
+Data Access Point Service Level Agreement
+=========================================
 
 Service Name(s)
 ---------------
 
-Access Point
+Data Access Point (DAP)
 
 Description
 -----------
 
-The Access Point is a HTCondor-based service that runs a submit host, and manages the queue of user jobs submitted to a HTCondor pool.
+The Data Access Point is a service for placing workloads and managing their storage and I/O capacity.
+From a Data Access Point, users have the ability to access a range of capacity and place objects across a data federation.
 
 General Service Level Agreement
 -------------------------------
@@ -19,7 +20,10 @@ General Service Level Agreement
 Security Considerations
 -----------------------
 
-The Schedd is usually on a host that requires interactive logins for users. Access is generally provided via SSH. The Schedd authenticates with other daemons in the HTCondor pool with either GSI or IDTOKENS.
+The Data Access Point is often on a host that requires interactive logins for users.
+Access is generally provided via SSH.
+The Access Point authenticates with HTCSS daemons through IDTOKENS and may generate SciTokens for users to access
+objects available through a data federation.
 
 Service Availability
 --------------------
