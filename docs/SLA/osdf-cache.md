@@ -30,7 +30,7 @@ Service Availability
 
 #### Availability Definition
 
--   Web engine, director, and federation health API endpoints report as healthy
+-   Director and federation health API endpoints report as healthy
 -   Client can successfully read a known test file through the Cache
 
 #### Target Availability: 95%

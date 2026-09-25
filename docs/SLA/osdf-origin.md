@@ -28,6 +28,6 @@ Service Availability
 
 #### Availability Definition
 
-Web engine and federation API health endpoints report as healthy
+Federation API health endpoint reports as healthy
 
 #### Target Availability: 95%
