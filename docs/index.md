@@ -19,7 +19,7 @@ This is accomplished by:
 Contact Us
 ----------
 
-* [Open a Ticket](https://support.opensciencegrid.org)
+* [Open a Ticket](https://support.osg-htc.org)
 * [Slack channel](https://opensciencegrid.slack.com/messages/operations) - if you can't create an account, send an e-mail
   to <mailto:support@osg-htc.org>
 * Email: <mailto:support@osg-htc.org>
@@ -27,7 +27,7 @@ Contact Us
 Registration (Contact, Resource, VO, or Project)
 ------------------------------------------------
 
-[Register with OSG](https://opensciencegrid.org/docs/common/registration/)
+[Register with OSG](https://osg-htc.org/docs/common/registration/)
 
 
 Weekly Operations Meetings
